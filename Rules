@@ -1,0 +1,88 @@
+#!/usr/bin/env ruby
+
+require 'compass'
+Compass.add_project_configuration 'config.rb'
+
+## javascript
+
+compile '/js/**/*' do
+end
+
+## CSS
+
+compile '/css/**/*.scss' do
+  filter :sass, Compass.sass_engine_options.merge(
+    :syntax => :scss,
+    :style => :compressed
+  )
+end
+
+route '/css/**/_*' do
+  nil
+end
+
+route '/css/**/*.scss' do
+  @item.identifier.without_ext + ".css"
+end
+
+compile '/css/**/*.css' do
+  filter :minify
+end
+
+route '/css/**/*.css' do
+  item.identifier.to_s
+end
+
+
+## htaccess
+
+compile '/htaccess.txt' do
+  filter :erb
+end
+route '/htaccess.txt' do
+  '/.htaccess'
+end
+
+
+## defaults
+
+compile '/**/*.md' do
+  filter :erb
+  filter :kramdown, {
+    :smart_quotes => "apos,apos,quot,quot",
+    :coderay_line_numbers => nil,
+    :coderay_tab_width => 4,
+    :coderay_wrap => :div,
+    :coderay_css => :class
+  }
+
+  # read layout from items
+  if item[:layout] != nil
+    layout item[:layout]
+  else
+    layout '/default.html'
+  end
+
+  filter :md_links
+  #filter :relativize_paths, :type => :html
+  filter :htmlcompressor
+end
+
+compile '/**/*' do
+end
+
+route '/**/*.{html,md}' do
+  if item.identifier =~ '/index.*'
+    '/index.html'
+  else
+    item.identifier.without_ext + '.html'
+  end
+end
+
+route '/**/*' do
+  item.identifier.to_s
+end
+
+## Layout rule
+
+layout '/**/*', :erb

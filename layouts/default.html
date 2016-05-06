@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+	<%= yield %>
+
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+</body>
+</html>
