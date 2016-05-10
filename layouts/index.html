@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<%= render '/_head.html', :title => "Index title" %>
+	<%= render '/_head.html', :title => "VDB 2016" %>
 </head>
-<body>
-	<div>
-	Hello! This is index page
+<body class="home-bg">
+	<div class="container">
+		<%= render '/_header.html'%>
+		<div class="home-logo"></div>
+		<div class="scroll-indicator"></div>
+		<div class="about-text">
+			Balkan’s Leading Community<br><span>Technology & Entrepreneurship</span><br>Conference
+		</div>
+		<div class="steam-separator"></div>
+		<div class="home-block-grid container">
+			<div class="block-grid-sm-1 block-grid-lg-2">
+		    <div class="item-block-holder">
+					<div class="home-block-item">
+		        Super <span>committed</span> to share<br>the <span>excellence</span>.
+		    	</div>
+				</div>
+				<div class="item-block-holder">
+			    <div class="home-block-item">
+			        3 full days, <span>3 tracks</span>,<br><span>800+</span> awesome participants.
+			    </div>
+				</div>
+				<div class="item-block-holder">
+			    <div class="home-block-item">
+			        <span>Fun</span> is the side effect and<br>already <span>confirmed fact</span>.
+			    </div>
+				</div>
+				<div class="item-block-holder">
+			    <div class="home-block-item">
+			        Exciting <span>speakers</span>, groundbreaking<br>talks, and <span>workshops</span>!
+			    </div>
+				</div>
+			</div>
+			<div class="home-circle-logo"><img src="images/vx_logo_small_mono.png"></div>
+		</div>
 	</div>
+	<div class="info-block">
+		<div class="container info-content">
+			<button type="button" class="btn btn-primary btn-lg green">Get my tickets</button>
+			<button type="button" class="btn btn-primary btn-lg red">Call for Papers</button>
+			<button type="button" class="btn btn-primary btn-lg blue">Need more info</button>
+		</div>
+	</div>
+	<%= render '/_footer.html'%>
 	<%= render '/_bottomscripts.html'%>
 </body>
 </html>

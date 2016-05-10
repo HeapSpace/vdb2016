@@ -1,0 +1,11 @@
+@import "bootstrap-variables";
+
+$screen-xs-max: 480px;
+
+$screen-sm-min: $screen-xs-max+1;
+$screen-sm-max: 640px;
+
+$screen-md-min: $screen-sm-max+1;
+$screen-md-max: 768px;
+
+$screen-lg-min: $screen-md-max+1;

@@ -36,6 +36,8 @@ GEM
       colored (~> 1.2)
     execjs (2.6.0)
     ffi (1.9.10-x64-mingw32)
+    font-awesome-sass (4.6.2)
+      sass (>= 3.2)
     formatador (0.2.5)
     guard (2.13.0)
       formatador (>= 0.2.4)
@@ -100,6 +102,7 @@ DEPENDENCIES
   builder
   coderay
   compass
+  font-awesome-sass
   guard-nanoc
   haml
   htmlcompressor

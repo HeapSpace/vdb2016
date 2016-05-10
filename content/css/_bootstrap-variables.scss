@@ -16,6 +16,9 @@
 // $gray-lighter:           lighten($gray-base, 93.5%) // #eee
 
 // $brand-primary:         darken(#428bca, 6.5%) // #337ab7
+   $brand-primary: #efc233;
+   $brand-secondary: #988578;
+   $white: #FFFFFF;
 // $brand-success:         #5cb85c
 // $brand-info:            #5bc0de
 // $brand-warning:         #f0ad4e
@@ -26,7 +29,7 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
- $body-bg:               #ccc;
+ $body-bg:               #1b1713 !important;
 //** Global text color on `<body>`.
 // $text-color:            $gray-dark
 
@@ -279,7 +282,7 @@
 
 // Extra small screen / phone
 //** Deprecated `$screen-xs` as of v3.0.1
-// $screen-xs:                  480px
+$screen-xs:                  480px;
 //** Deprecated `$screen-xs-min` as of v3.2.0
 // $screen-xs-min:              $screen-xs
 //** Deprecated `$screen-phone` as of v3.0.1
@@ -287,21 +290,21 @@
 
 // Small screen / tablet
 //** Deprecated `$screen-sm` as of v3.0.1
-// $screen-sm:                  768px
+$screen-sm:                  640px;
 // $screen-sm-min:              $screen-sm
 //** Deprecated `$screen-tablet` as of v3.0.1
 // $screen-tablet:              $screen-sm-min
 
 // Medium screen / desktop
 //** Deprecated `$screen-md` as of v3.0.1
-// $screen-md:                  992px
+$screen-md:                  768px;
 // $screen-md-min:              $screen-md
 //** Deprecated `$screen-desktop` as of v3.0.1
 // $screen-desktop:             $screen-md-min
 
 // Large screen / wide desktop
 //** Deprecated `$screen-lg` as of v3.0.1
-// $screen-lg:                  1200px
+$screen-lg:                  950px;
 // $screen-lg-min:              $screen-lg
 //** Deprecated `$screen-lg-desktop` as of v3.0.1
 // $screen-lg-desktop:          $screen-lg-min
@@ -349,7 +352,7 @@
 //##
 
 // Basics of a navbar
-// $navbar-height:                    50px
+$navbar-height:                    90px;
 // $navbar-margin-bottom:             $line-height-computed
 // $navbar-border-radius:             $border-radius-base
 // $navbar-padding-horizontal:        floor(($grid-gutter-width / 2))
@@ -357,7 +360,7 @@
 // $navbar-collapse-max-height:       340px
 
 // $navbar-default-color:             #777
-// $navbar-default-bg:                #f8f8f8
+$navbar-default-bg: rgba(27,23,19,0.4);
 // $navbar-default-border:            darken($navbar-default-bg, 6.5%)
 
 // Navbar links
@@ -428,7 +431,7 @@
 // $nav-tabs-justified-active-link-border-color:     $body-bg
 
 //== Pills
-// $nav-pills-border-radius:                   $border-radius-base
+$nav-pills-border-radius:                   0; //$border-radius-base
 // $nav-pills-active-link-hover-bg:            $component-active-bg
 // $nav-pills-active-link-hover-color:         $component-active-color
 

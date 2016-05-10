@@ -13,6 +13,7 @@ gem 'json'
 gem 'rainpress'
 gem 'jsmin'
 gem 'bootstrap-sass'
+gem 'font-awesome-sass'
 gem 'htmlcompressor'
 gem 'nanoc'				# Nanoc 4
 gem 'nanoc-external',	# :external filter

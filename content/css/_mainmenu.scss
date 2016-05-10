@@ -1,0 +1,38 @@
+@import "bootstrap-variables";
+
+.navbar {
+  border: 0;
+}
+
+.nav.main-menu {
+  margin-top: 10px;
+}
+
+.nav-pills>li {
+  text-align: center;
+}
+
+.nav-pills>li>a, .nav-pills>li.active>a {
+  background: transparent;
+  display: inline-block;
+  padding: 0 25px 15px 25px;
+  &:hover, &:active, &:focus {
+    background: transparent;
+  }
+}
+
+.main-menu-item {
+  padding: 35px 0 0 0;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  display: inline-block;
+  margin: 30px 40px 0;
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+  & > a.active {
+    border-bottom: 5px solid $brand-primary;
+  }
+}

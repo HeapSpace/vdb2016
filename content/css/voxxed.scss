@@ -6,3 +6,33 @@
 
 // Import Bootstrap for Sass
 @import "bootstrap";
+
+@import "bootstrap3-block-grid";
+
+@import "font-awesome-compass";
+@import "font-awesome";
+
+@import "homepage";
+@import "mainmenu";
+@import "footer";
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700&subset=latin,latin-ext);
+
+body {
+  padding-top: 110px;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}

@@ -1,0 +1,110 @@
+@import "bootstrap-variables";
+
+.home-logo {
+  background: url(../images/home-logo.png) center center no-repeat;
+  margin: 180px auto;
+  height: 160px;
+}
+
+.home-bg {
+  background: url(../images/home-main-bg.png) top center no-repeat;
+}
+
+.scroll-indicator {
+  width: 32px;
+  height: 54px;
+  background: url(../images/scroll-indicator.png) center center no-repeat;
+  margin: 235px auto 240px auto;
+}
+
+.about-text {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 40px;
+  color: $white;
+  text-align: center;
+  span {
+    color: $brand-primary;
+  }
+}
+
+.steam-separator {
+  width: 361px;
+  height: 70px;
+  opacity: 0.25;
+  background: url(../images/separator_steam.png) center center no-repeat;
+  margin: 75px auto 125px auto;
+}
+
+ .item-block-holder {
+   padding: 0;
+ }
+
+.home-block-item {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  padding: 30px 20px;
+  margin: 3px;
+  background: rgba(17,14,11,0.3);
+  color: $brand-secondary;
+  span {
+    color: $white;
+  }
+  &:hover {
+    cursor: pointer;
+    background: rgba(17,14,11,0.8);
+  }
+}
+
+.home-block-grid {
+  position: relative;
+  margin-bottom: 150px;
+}
+
+.home-circle-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -40px;
+  height: 80px;
+  width: 80px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: rgba(27,23,19,1);
+  text-align: center;
+  img {
+    opacity: 0.2;
+    margin: 24px 0 0 0;
+  }
+}
+
+.info-block {
+  background: url(../images/cfp-img-bg.png) center center no-repeat;
+  height: 326px;
+  .info-content {
+    text-align: center;
+    padding: 155px 0;
+    button {
+      -webkit-border-radius: 24px;
+      -moz-border-radius: 24px;
+      border-radius: 24px;
+      width: 260;
+      border: 0;
+      margin: 0 40px;
+      padding: 10px 50px;
+    }
+    .green {
+      background-color: #358024;
+    }
+    .red {
+      background-color: #a13717;
+    }
+    .blue {
+      background-color: #0e5d6e;
+    }
+  }
+}

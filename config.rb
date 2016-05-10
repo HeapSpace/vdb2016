@@ -1,4 +1,5 @@
 require 'bootstrap-sass'
+require 'font-awesome-sass'
 
 output_style = "compact"
 line_comments = false
