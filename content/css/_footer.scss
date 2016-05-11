@@ -4,21 +4,28 @@ footer {
     opacity: 0.5;
     position: relative;
     height: 80px;
-    padding: 30px 0;
+    padding: 15px 0;
     background: rgba(17,14,11,0.8);
     .footer-copyright {
-      float: left;
+      padding: 15px 0;
+      text-align: center;
       color: $brand-secondary;
       font-size: 16px;
       font-family: "Roboto";
+      @media (min-width: 639px) {
+        float: left;
+      }
       span {
         color: $brand-primary;
       }
     }
     .footer-social {
-      text-align: right;
-      float: right;
-      display: inline-block;
+      text-align: center;
+      padding: 15px 0;
+      @media (min-width: 639px) {
+        float: right;
+        display: inline-block;
+      }
       .fa {
         margin-left: 20px;
         -webkit-border-radius: 50%;

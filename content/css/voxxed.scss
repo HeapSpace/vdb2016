@@ -12,7 +12,8 @@
 @import "font-awesome-compass";
 @import "font-awesome";
 
-@import "homepage";
+@import "overrides";
+@import "general";
 @import "mainmenu";
 @import "footer";
 
@@ -21,7 +22,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700&subset=latin,latin-ext);
 
 body {
-  padding-top: 110px;
+  /* padding-top: 110px; */
 }
 
 /* centered columns styles */

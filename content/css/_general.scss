@@ -6,6 +6,22 @@
   height: 160px;
 }
 
+.mobile-menu-logo {
+  float: left;
+  height: 70px;
+  width: 70px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: transparent;
+  text-align: center;
+  margin: 10px;
+  img {
+    opacity: 0.4;
+    margin: 22px 0 0 10px;
+  }
+}
+
 .home-bg {
   background: url(../images/home-main-bg.png) top center no-repeat;
 }
@@ -47,14 +63,14 @@
   text-align: center;
   padding: 30px 20px;
   margin: 3px;
-  background: rgba(17,14,11,0.3);
+  background: rgba(17,14,11,0.4);
   color: $brand-secondary;
-  span {
+  span.accent {
     color: $white;
   }
   &:hover {
     cursor: pointer;
-    background: rgba(17,14,11,0.8);
+    background: rgba(17,14,11,0.9);
   }
 }
 
@@ -87,14 +103,17 @@
   height: 326px;
   .info-content {
     text-align: center;
-    padding: 155px 0;
+    padding: 145px 0;
+    @media (max-width: 639px) {
+      padding: 55px 0;
+    }
     button {
       -webkit-border-radius: 24px;
       -moz-border-radius: 24px;
       border-radius: 24px;
       width: 260;
       border: 0;
-      margin: 0 40px;
+      margin: 15px 40px;
       padding: 10px 50px;
     }
     .green {
