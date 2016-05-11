@@ -1,4 +1,4 @@
-require 'Nokogiri'
+require 'nokogiri'
 
 class MdLinks < Nanoc::Filter
   identifier :md_links
