@@ -115,6 +115,7 @@ DEPENDENCIES
   nokogiri
   rainpress
   sass
+  echoe
   wdm (>= 0.1.0)
 
 BUNDLED WITH
