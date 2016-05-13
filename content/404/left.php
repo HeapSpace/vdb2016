@@ -15,7 +15,7 @@ if (file_exists($filename)) {
 
 	echo json_encode(array("$count"));
 } else {
-	$fp = fopen($filename, "a") or die ("?!?");
+	$fp = fopen($filename, "a") or die ("!?!");
 	flock($fp, 1);
 	fputs($fp, 1);
 	flock($fp, 3);
