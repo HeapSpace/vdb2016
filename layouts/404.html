@@ -9,8 +9,10 @@
 
 	<%= yield %>
 
-	<div id="left">levo</div>
-	<div id="right">desno</div>
+	<div style="text-align: center; color: white;">
+		<div id="left">levo</div>
+		<div id="right">desno</div>
+	</div>
 
 	<%= render '/_footer.html'%>
 	<%= render '/_bottomscripts.html'%>
@@ -21,6 +23,7 @@ var left = 0;
 var right = 0;
 
 function left() {
+	alert("L");
 	left = left + 1;
 	$.ajax({
 		type: "POST",
@@ -36,6 +39,7 @@ function left() {
 	});
 }
 function right() {
+	alert("R");
 	right = right + 1;
 	$.ajax({
 		type: "POST",
@@ -67,14 +71,10 @@ function refresh() {
 }
 
 $(function() {
+	$("#left").click(left);
+    $("#right").click(right);
 	refresh();
 	setInterval(refresh, 1000);
-	$("#left").click(function() {
-        left();
-    });
-    $("#right").click(function() {
-        right();
-    });
 });
 </script>
 
