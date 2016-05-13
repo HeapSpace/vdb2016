@@ -8,6 +8,10 @@
   color: $brand-secondary;
 }
 
+.accent {
+  color: $white;
+}
+
 .home-logo {
   background: url(../images/home-logo.png) center center no-repeat;
   margin: 180px auto;
@@ -30,15 +34,23 @@
   }
 }
 
-.home-bg {
+.main-bg {
   position: absolute;
   z-index: -1000;
-  height: 880px;
-  top: 0;
-  left: 0;
-  right: 0;
   background: url(../images/home-main-bg.png) top center no-repeat;
   background-size: cover;
+  &.home {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 880px;
+  }
+  &.page {
+    top: -450px;
+    left: 0;
+    right: 0;
+    height: 1080px;
+  }
 }
 
 .scroll-indicator {
@@ -46,6 +58,19 @@
   height: 54px;
   background: url(../images/scroll-indicator.png) center center no-repeat;
   margin: 235px auto 240px auto;
+}
+
+.plain {
+  font-family: "Roboto";
+  font-weight: 300;
+}
+
+.pad-vertical-big {
+  padding: 190px 0;
+}
+
+.margin-top-big {
+  margin-top: 125px;
 }
 
 h1 {
@@ -69,6 +94,13 @@ h3 {
   color: $white;
 }
 
+h4 {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 24px;
+  color: $white;
+}
+
 .steam-separator {
   width: 361px;
   height: 70px;
@@ -77,31 +109,57 @@ h3 {
   margin: 75px auto 125px auto;
 }
 
- .item-block-holder {
+.item-block-holder {
    padding: 0;
+   .block-item {
+     text-align: center;
+     background: rgba(17,14,11,0.4);
+     &:hover {
+       cursor: pointer;
+       background: rgba(17,14,11,0.9);
+     }
+   }
  }
 
-.home-block-item {
+.block-item {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 24px;
-  text-align: center;
   padding: 30px 20px;
   margin: 3px;
-  background: rgba(17,14,11,0.4);
   color: $brand-secondary;
-  span.accent {
-    color: $white;
-  }
-  &:hover {
-    cursor: pointer;
-    background: rgba(17,14,11,0.9);
-  }
 }
 
 .home-block-grid {
   position: relative;
   margin-bottom: 150px;
+}
+
+.card {
+  padding: 50px 0 0 0;
+  .thumb {
+    text-align: center;
+    img {
+      background-color: $brand-secondary;
+      height: 150px;
+      width: 150px;
+      -webkit-border-radius: $border-radius-large;
+      -moz-border-radius: $border-radius-large;
+      border-radius: $border-radius-large;
+    }
+  }
+  h3 {
+    text-align: center;
+    padding-bottom: 15px
+  }
+  .desc {
+    font-size: 18px;
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 300;
+    color: $brand-secondary;
+    padding: 0 15px;
+  }
 }
 
 .home-circle-logo {
