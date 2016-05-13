@@ -1,4 +1,5 @@
-/.git
-/.sass-cache
-/output
+.git
+.sass-cache
+output
 Gemfile.lock
+tmp
