@@ -1,9 +1,9 @@
 <?php
 
-$filename = "left.txt" ;
+$filename = "right.txt" ;
 
 if (file_exists($filename)) {
-	$fp = fopen($filename, "r+") or die ("?Left");
+	$fp = fopen($filename, "r+") or die ("?Right");
 	flock($fp, 1);
 	$count = fgets($fp, 1024);
 	$count += 1;
