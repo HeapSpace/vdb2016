@@ -1,5 +1,5 @@
 <div class="container">
-  <nav class="navbar navbar-default navbar-top">
+  <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
@@ -11,12 +11,12 @@
       </div>
       <div class="collapse navbar-collapse" id="mainmenu">
         <ul class="nav nav-pills nav-justified main-menu">
-          <li role="presentation" class="main-menu-item"><a href="#" class="active">Home</a></li>
-          <li role="presentation" class="main-menu-item"><a href="#">Info</a></li>
-          <li role="presentation" class="main-menu-item"><a href="#">Call for papers</a></li>
-          <li role="presentation" class="main-menu-item"><a href="#">Tickets</a></li>
-          <li role="presentation" class="main-menu-item"><a href="#">Sponsors</a></li>
-          <li role="presentation" class="main-menu-item"><a href="#">FAQ</a></li>
+          <%= link_to_unless_current('Home', '/') %>
+          <%= link_to_unless_current('Info', '/info.html') %>
+          <%= link_to_unless_current('Call for Papers', '/cfp.html') %>
+          <%= link_to_unless_current('Tickets', '/teckets.html') %>
+          <%= link_to_unless_current('Sponsors', '/sponsors.html') %>
+          <%= link_to_unless_current('FAQ', '/faq.html') %>
         </ul>
       </div>
     </div>

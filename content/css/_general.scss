@@ -1,5 +1,13 @@
 @import "bootstrap-variables";
 
+.yellow {
+  color: $brand-primary;
+}
+
+.brown {
+  color: $brand-secondary;
+}
+
 .home-logo {
   background: url(../images/home-logo.png) center center no-repeat;
   margin: 180px auto;
@@ -23,7 +31,14 @@
 }
 
 .home-bg {
+  position: absolute;
+  z-index: -1000;
+  height: 880px;
+  top: 0;
+  left: 0;
+  right: 0;
   background: url(../images/home-main-bg.png) top center no-repeat;
+  background-size: cover;
 }
 
 .scroll-indicator {
@@ -33,15 +48,25 @@
   margin: 235px auto 240px auto;
 }
 
-.about-text {
+h1 {
+  font-family: "Roboto Slab";
+  font-weight: 700;
+  font-size: 60px;
+  color: $white;
+}
+
+h2 {
   font-family: "Roboto Slab";
   font-weight: 700;
   font-size: 40px;
   color: $white;
-  text-align: center;
-  span {
-    color: $brand-primary;
-  }
+}
+
+h3 {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 30px;
+  color: $white;
 }
 
 .steam-separator {
@@ -100,10 +125,14 @@
 
 .info-block {
   background: url(../images/cfp-img-bg.png) center center no-repeat;
+  background-size: cover;
   height: 326px;
   .info-content {
     text-align: center;
-    padding: 145px 0;
+    padding: 95px 0 145px 0;;
+    &.home {
+      padding: 145px 0;
+    }
     @media (max-width: 639px) {
       padding: 55px 0;
     }
