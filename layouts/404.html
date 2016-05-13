@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_tag :keywords %>
+<script type="text/javascript">
+
+var left = 0;
+var right = 0;
+
+function left() {
+	left = left + 1;
+	$.ajax({
+		type: "POST",
+		url: "404/left.php",
+		data: "",
+		success: function(msg) {
+			if (msg == 'err') {
+				return;
+			}
+			var arr = eval(msg);
+			left = arr[0];
+		}
+	});
+}
+function right() {
+	right = right + 1;
+	$.ajax({
+		type: "POST",
+		url: "404/right.php",
+		data: "",
+		success: function(msg) {
+			if (msg == 'err') {
+				return;
+			}
+			var arr = eval(msg);
+			right = arr[0];
+		}
+	});
+}
+
+function refresh() {
+	$.ajax({
+		type: "GET",
+		url: "404/read.php",
+		data: "",
+		success: function(msg){
+			var arr = eval(msg);
+			left = arr[0];
+			right = arr[1];
+			$("#left").text(left);
+			$("#right").text(right);
+		}
+	});
+}
+
+$(function() {
+	refresh();
+	setInterval(refresh, 1000);
+	$("#left").click(function() {
+        left();
+    });
+    $("#right").click(function() {
+        right();
+    });
+});
+</script>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+	<%= yield %>
+
+	<div id="left">levo</div>
+	<div id="right">desno</div>
+
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+</body>
+</html>

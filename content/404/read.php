@@ -11,4 +11,4 @@ fclose($fd)
 
 echo "[$count1, $count2]";
 
-;?>
+?>
