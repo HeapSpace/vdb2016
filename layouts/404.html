@@ -3,6 +3,18 @@
 <head>
 	<%= render '/_head.html', :title => 'Default title'%>
 	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+	<%= yield %>
+
+	<div id="left">levo</div>
+	<div id="right">desno</div>
+
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+
 <script type="text/javascript">
 
 var left = 0;
@@ -65,16 +77,6 @@ $(function() {
     });
 });
 </script>
-</head>
-<body>
-	<%= render '/_header.html'%>
 
-	<%= yield %>
-
-	<div id="left">levo</div>
-	<div id="right">desno</div>
-
-	<%= render '/_footer.html'%>
-	<%= render '/_bottomscripts.html'%>
 </body>
 </html>
