@@ -122,7 +122,7 @@ def link_to_unless_current(text, target, attributes = {})
   # Find path
   path = target.is_a?(String) ? target : target.path
 
-  if @item_rep && @item_rep.path == path
+  if @item_rep && '.'+@item_rep.path == path
     # Create message
     "<li role=\"presentation\" class=\"main-menu-item active\">#{text}</li>"
   else
