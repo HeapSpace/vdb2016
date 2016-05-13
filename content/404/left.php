@@ -4,7 +4,7 @@ $filename = "left.txt" ;
 
 if (file_exists($filename)) {
 	// increments count
-	$fp = fopen($filename, "r+") or die ("?!?");
+	$fp = fopen($filename, "r+") or die ("?!?" + error_get_last());
 	flock($fp, 1);
 	$count = fgets($fp, 1024);
 	$count += 1;
@@ -15,7 +15,7 @@ if (file_exists($filename)) {
 
 	echo json_encode(array("$count"));
 } else {
-	$fp = fopen($filename, "a") or die ("!?!");
+	$fp = fopen($filename, "a") or die ("!?!" + error_get_last());
 	flock($fp, 1);
 	fputs($fp, 1);
 	flock($fp, 3);
