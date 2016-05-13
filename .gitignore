@@ -1,0 +1,5 @@
+.git
+.sass-cache
+output
+Gemfile.lock
+tmp
