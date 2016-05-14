@@ -71,7 +71,7 @@ compile '/**/*.md' do
 
   filter :md_links
   #filter :relativize_paths, :type => :html
-  filter :htmlcompressor
+  #filter :htmlcompressor
 end
 
 compile '/**/*' do

@@ -42,6 +42,7 @@ Tags: $tags <br />
 ------------<br />
 Level of code: $code <br />
 ------------<br />
+<br />
 EOD;
 
 $headers = 'From: ' . $email . "\r\n" .
