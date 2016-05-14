@@ -6,7 +6,7 @@ $formsubmitted = date("Y/m/d H:i:s");
 
 $name = $_POST['form-name'];
 $email = $_POST['form-email'];
-$title = $_POST['form-'];
+$title = $_POST['form-title'];
 $language = $_POST['form-language'];
 $shortdesc= $_POST['form-short-desc'];
 $fulldesc = $_POST['form-long-desc'];
@@ -15,7 +15,7 @@ $audience = $_POST['form-audience'];
 $tags = $_POST['form-tags'];
 $code = $_POST['form-code'];
 
-$fp = fopen("../submittalk.csv", 'a');
+$fp = fopen("./submittalk.csv", 'a');
 fputcsv($fp, array($formsubmitted, $name, $email, $title, $shortdesc, $fulldesc, $type, $language, $audience, $tags, $code));
 fclose($fp);
 
