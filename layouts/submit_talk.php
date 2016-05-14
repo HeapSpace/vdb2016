@@ -15,7 +15,14 @@ $audience = $_POST['formaudience'];
 $tags = $_POST['formtags'];
 $code = $_POST['formcode'];
 
-$fp = fopen("./submittalk.csv", 'a');
+$file = 'submittalk.csv';
+$newfile = './csvbackup/submittalk.csv.bak-'.date('Y-m-d-H-i-s');
+
+if (!copy($file, $newfile)) {
+
+}
+
+$fp = fopen(realpath(dirname(__FILE__) . '/submittalk.csv'), 'a') or die("cannot open file");
 fputcsv($fp, array($formsubmitted, $name, $email, $title, $shortdesc, $fulldesc, $type, $language, $audience, $tags, $code));
 fclose($fp);
 
@@ -54,22 +61,10 @@ $headers = 'From: ' . $email . "\r\n" .
 $success = mail("dtasic@gmail.com", $emailSubject, $body, $headers);
 $success2 = mail($email, $emailSubject, $body, $headers);
 
+if ($success && $success2) {
+  header("Location: thankyou.html");
+} else {
+  header("Location: formerror.html");
+}
+
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-	<%= render '/_head.html', :title => 'Default title'%>
-	<%= meta_tag :keywords %>
-</head>
-<body>
-	<%= render '/_header.html'%>
-
-	<div>
-		Thanks for submitting
-	</div>
-
-	<%= render '/_footer.html'%>
-	<%= render '/_bottomscripts.html'%>
-</body>
-</html>

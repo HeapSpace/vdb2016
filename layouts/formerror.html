@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+	<div class="main-bg page"></div>
+	<div class="container">
+	  <h1 class="text-center pad-vertical-big">
+	    Sorry!<br><span class="yellow">Something went wrong</span>
+	  </h1>
+	  <div class="row-centered">
+	    <div class="col-sm-8 col-centered">
+	      <div class="block-text text-center">
+	        <h3>Please, <span class="accent"><a href="cfp.html">try again</a></span>.</h3>
+					<br><br>
+					If you have any questions related to the submission process be sure to contact us at <span class="yellow">hello@heapspace.rs</span>.
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="info-block info margin-top-big">
+	  <div class="container info-content ">
+	    <h2 class="text-center">
+				Have any other <span class="yellow"><a href="./faq.html">questions</a></span> about VDB 2016?<br>
+				WAnt to make suggestions? Or <span class="yellow"><a href="./sponsors.html">support us</a></span>?
+			</h2>
+	    <div class="block-text text-center">
+				Drop us a line or two at <span class="yellow">voxxed@heapspace.rs</span><br>
+				We would love to hear from you.
+			</div>
+	  </div>
+	</div>
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+</body>
+</html>
