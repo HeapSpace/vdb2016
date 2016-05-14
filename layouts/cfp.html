@@ -119,46 +119,67 @@
 	  <h2 class="text-center">
 	    <span class="yellow">Submit</span> your talk!
 	  </h2>
-		<form class="margin-top-small" action="mailer.php">
+		<form class="margin-top-small" action="submit_talk.php">
 			<div class="row">
 		    <div class="col-sm-6">
 		      <div class="form-group">
-				    <label for="form-name">Full name</label>
-				    <input type="text" class="form-control" id="form-name" placeholder="What is Your Full Name?">
+				    <input type="text" class="form-control float-label" required="required" id="form-name" placeholder="What is Your Full Name?">
 				  </div>
 		    </div>
 				<div class="col-sm-6">
 		      <div class="form-group">
-				    <label for="form-email">Email address</label>
-				    <input type="email" class="form-control" id="form-email" placeholder="Email">
+				    <input type="email" class="form-control float-label" required="required" id="form-email" placeholder="Your Email Address">
 				  </div>
 		    </div>
 		  </div>
 			<div class="row">
 		    <div class="col-sm-6">
 		      <div class="form-group">
-				    <label for="form-title">The title of your presentation <span>(required)</span></label>
-				    <input type="text" class="form-control" id="form-title" placeholder="Email">
+				    <input type="text" class="form-control float-label" required="required" id="form-title" placeholder="The title of your presentation (required)">
 				  </div>
 		    </div>
 				<div class="col-sm-6">
 		      <div class="form-group">
-				    <label for="form-language">Language of presentation</label>
-				    <input type="email" class="form-control" id="form-language" placeholder="Email">
+				    <input type="email" class="form-control float-label" id="form-language" placeholder="Language of presentation">
 				  </div>
 		    </div>
 		  </div>
 			<div class="row">
 		    <div class="col-sm-6">
 		      <div class="form-group">
-				    <label for="form-short-desc">Full name</label>
-				    <textarea rows="7" class="form-control" id="form-short-desc" placeholder="Email"></textarea>
+				    <textarea rows="7" class="form-control float-label" id="form-short-desc" placeholder="Short Abstract"></textarea>
 				  </div>
 		    </div>
 				<div class="col-sm-6">
 		      <div class="form-group">
-				    <label for="form-full-desc">Email address</label>
-				    <textarea rows="7" class="form-control" id="form-full-desc" placeholder="Email"></textarea>
+				    <textarea rows="7" class="form-control float-label" id="form-full-desc" placeholder="Full Abstract"></textarea>
+				  </div>
+		    </div>
+		  </div>
+			<div class="row">
+		    <div class="col-sm-6">
+		      <div class="form-group">
+						<label class="radio">Type of Presentation</label>
+				    <label class="radio-inline"><input type="radio" name="form-type" value="presentation">presentation</label>
+						<label class="radio-inline"><input type="radio" name="form-type" value="talk">Lightning talk</label>
+						<label class="radio-inline"><input type="radio" name="form-type" value="workshop">Workshop</label>
+				  </div>
+		    </div>
+				<div class="col-sm-6">
+		      <div class="form-group">
+				    <input type="text" class="form-control float-label" id="form-audience" placeholder="Audience">
+				  </div>
+		    </div>
+		  </div>
+			<div class="row">
+		    <div class="col-sm-6">
+		      <div class="form-group">
+				    <input type="text" class="form-control float-label" id="form-tags" placeholder="Tags">
+				  </div>
+		    </div>
+				<div class="col-sm-6">
+		      <div class="form-group">
+				    <input type="text" class="form-control float-label" id="form-code" placeholder="Code level">
 				  </div>
 		    </div>
 		  </div>

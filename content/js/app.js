@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+    $(".float-label").jvFloat();
 
     (function ($) {
         $.fn.CustomMap = function( options ) {

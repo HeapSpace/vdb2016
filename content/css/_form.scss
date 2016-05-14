@@ -23,6 +23,7 @@
   opacity: 0.5;
 }
 
+
 .form-group {
   label {
     color: $brand-secondary;
@@ -45,4 +46,70 @@
       border-bottom: 2px solid $brand-primary !important;
     }
   }
+}
+
+/*
+ * Default jvFloat theme.
+ * modify it as you wish!
+ */
+
+.jvFloat {
+        position: relative;
+        display: block;
+        margin-top: 1em;
+        width: 100%;
+}
+
+/* Start CSS3 Animations on supported browser */
+.jvFloat .placeHolder {
+        position: absolute;
+        width: 100%;
+        color: $brand-secondary;
+        font-size: 1em;
+        font-weight: 300;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+        -webkit-transition: -webkit-transform 150ms, opacity 5s;
+        transition: transform 150ms, opacity 5s;
+        opacity: 0;
+        visibility: hidden;
+}
+.jvFloat .placeHolder.active {
+        display: block;
+        visibility: visible;
+        -webkit-transform: translate(0, -1.5em);
+        -moz-transform: translate(0, -1.5em);
+        -o-transform: translate(0, -1.5em);
+        -ms-transform: translate(0, -1.5em);
+        transform: translate(0, -1.5em);
+        -webkit-transition: -webkit-transform 100ms, opacity 120ms;
+        transition: transform 100ms, opacity 120ms;
+        opacity: 1;
+}
+/* End CSS3 */
+
+/* Legacy browser */
+/*.jvFloat .placeHolder {
+        position: absolute;
+        top: -1em;
+        left: 0;
+        color: #0c61fc;
+        font-size: .85em;
+        font-weight: bold;
+        opacity: 0;
+        visibility: hidden;
+}
+.jvFloat .placeHolder.active {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+}*/
+/* End Legacy */
+
+label.radio {
+  display: block;
+  margin: 10px 0;
 }

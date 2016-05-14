@@ -3,6 +3,12 @@
 require 'compass'
 Compass.add_project_configuration 'config.rb'
 
+## PHP
+
+route "/submit_talk.md" do
+  "/submit_talk.php"
+end
+
 ## javascript
 
 compile '/js/**/*' do
