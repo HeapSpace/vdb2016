@@ -2,7 +2,7 @@
 
 $emailSubject = 'VoxxedDays Belgrade - Submit Talk';
 
-$formsubmitted = date("Y/m/d H:i:s")
+$formsubmitted = date("Y/m/d H:i:s");
 
 $name = $_POST['form-name'];
 $email = $_POST['form-email'];
