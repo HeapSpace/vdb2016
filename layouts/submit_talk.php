@@ -1,7 +1,5 @@
 <?php
 
-/* These are the variable that tell the subject of the email and where the email will be sent. */
-
 $emailSubject = 'VoxxedDays Belgrade - Submit Talk';
 
 $formsubmitted = date("Y/m/d H:i:s")
@@ -17,10 +15,9 @@ $audience = $_POST['form-audience'];
 $tags = $_POST['form-tags'];
 $code = $_POST['form-code'];
 
-$fp = fopen("../submittalk.csv", 'a');  //Open file for append
-//fwrite($fp, $row1.",".$row2); //Append row,row to file
+$fp = fopen("../submittalk.csv", 'a');
 fputcsv($fp, array($formsubmitted, $name, $email, $title, $shortdesc, $fulldesc, $type, $language, $audience, $tags, $code));
-fclose($fp); //Close the file to free memory.
+fclose($fp);
 
 $body = <<<EOD
 <br />
@@ -57,3 +54,21 @@ $success = mail("dtasic@gmail.com", $emailSubject, $body, $headers);
 $success2 = mail($email, $emailSubject, $body, $headers);
 
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+	<div>
+		Thanks for submitting
+	</div>
+
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+</body>
+</html>
