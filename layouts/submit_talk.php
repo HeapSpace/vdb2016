@@ -4,16 +4,16 @@ $emailSubject = 'VoxxedDays Belgrade - Submit Talk';
 
 $formsubmitted = date("Y/m/d H:i:s");
 
-$name = $_POST['form-name'];
-$email = $_POST['form-email'];
-$title = $_POST['form-title'];
-$language = $_POST['form-language'];
-$shortdesc= $_POST['form-short-desc'];
-$fulldesc = $_POST['form-long-desc'];
-$type = $_POST['form-type'];
-$audience = $_POST['form-audience'];
-$tags = $_POST['form-tags'];
-$code = $_POST['form-code'];
+$name = $_POST['formname'];
+$email = $_POST['formemail'];
+$title = $_POST['formtitle'];
+$language = $_POST['formlanguage'];
+$shortdesc= $_POST['formshortdesc'];
+$fulldesc = $_POST['formlongdesc'];
+$type = $_POST['formtype'];
+$audience = $_POST['formaudience'];
+$tags = $_POST['formtags'];
+$code = $_POST['formcode'];
 
 $fp = fopen("./submittalk.csv", 'a');
 fputcsv($fp, array($formsubmitted, $name, $email, $title, $shortdesc, $fulldesc, $type, $language, $audience, $tags, $code));
