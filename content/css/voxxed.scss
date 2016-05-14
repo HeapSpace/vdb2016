@@ -13,9 +13,12 @@
 @import "font-awesome";
 
 @import "overrides";
+@import "mixins";
 @import "general";
 @import "mainmenu";
+@import "form";
 @import "footer";
+
 
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin,latin-ext);
@@ -23,17 +26,4 @@
 
 body {
   /* padding-top: 110px; */
-}
-
-/* centered columns styles */
-.row-centered {
-    text-align:center;
-}
-.col-centered {
-    display:inline-block;
-    float:none;
-    /* reset the text-align */
-    text-align:left;
-    /* inline-block space fix */
-    margin-right:-4px;
 }

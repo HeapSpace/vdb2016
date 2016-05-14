@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+	<%= yield %>
+
+	<div class="main-bg page"></div>
+	<div class="container">
+	  <h1 class="text-center pad-vertical-big">
+	    We're eager<br><span class="yellow">to hear from you!</span>
+	  </h1>
+	  <h4 class="text-center plain">VoxxedDays Belgrade 2016 returns bigger and brighter!<br>We can’t wait to start a new, 3-days round<br>of learning and sharing!</h4>
+		<div class="text-center info-content margin-top-small"><a href="#" class="btn btn-primary btn-lg green" role="button">Don't wait, submit your talk!</a></div>
+	  <div class="steam-separator"></div>
+	  <h2 class="text-center">
+	    Let's make <span class="yellow">something awsm!</span>
+	  </h2>
+	  <div class="row-centered">
+	    <div class="col-sm-8 col-centered">
+	      <div class="block-text">
+	        If you are:
+					<br><br>
+					&bull; a <span class="accent">tech-loving</span> enthusiast<br>
+					&bull; who enjoys <span class="accent">friendly and constructive</span> discussions<br>
+					&bull; knows how to trigger them<br>
+					&bull; and <span class="accent">ready to present</span> your research or ideas on 28th, 29th or 30th of September<br>
+					<br><br>
+					do not hesitate <span class="yellow">to submit</span> your great proposal!  to network, hack, get inspired and learn.
+	      </div>
+	    </div>
+	  </div>
+	  <div class="steam-separator"></div>
+	  <h2 class="text-center">
+	    <span class="yellow">Topics and dates</span><br>to take into account
+	  </h2>
+		<div class="row margin-top-small">
+			<div class="col-md-6 text-center">
+				<div class="block-item info rounded-left">
+					<h4 class="bold">Technology topics</h4>
+					<div class="line-subtitle">
+						<h5>Emerging Architectures</h5>
+					</div>
+					<div class="false-btn green"><span>Architecture & Security</span></div>
+					<div class="false-btn green"><span>Infrastructure</span></div>
+					<div class="false-btn green"><span>Cloud</span></div>
+					<div class="false-btn green"><span>Containers</span></div>
+					<div class="false-btn green"><span>Microservices</span></div>
+					<div class="false-btn green"><span>APIs</span></div>
+					<div class="line-subtitle">
+						<h5>Disruptive Machines</h5>
+					</div>
+					<div class="false-btn blue"><span>Hardware</span></div>
+					<div class="false-btn blue"><span>Embedded</span></div>
+					<div class="false-btn blue"><span>IoT</span></div>
+					<div class="false-btn blue"><span>Robotics</span></div>
+					<div class="false-btn blue"><span>AI</span></div>
+					<div class="false-btn blue"><span>Virtual Reality</span></div>
+					<div class="line-subtitle">
+						<h5>Software World</h5>
+					</div>
+					<div class="false-btn green"><span>Big Data</span></div>
+					<div class="false-btn green"><span>Data Analytics</span></div>
+					<div class="false-btn green"><span>Modern Web</span></div>
+					<div class="false-btn green"><span>Mobile</span></div>
+					<div class="false-btn green"><span>UX Design</span></div>
+					<div class="false-btn green"><span>Tools</span></div>
+					<div class="false-btn green"><span>Languages & Frameworks</span></div>
+				</div>
+			</div>
+			<div class="col-md-6 text-center">
+				<div class="block-item info rounded-right">
+					<h4 class="bold">Business topics</h4>
+					<div class="line-subtitle">
+						<h5></h5>
+					</div>
+					<div class="false-btn red"><span>Digital Innovation</span></div>
+					<div class="false-btn red"><span>Entrepreneurship</span></div>
+					<div class="false-btn red"><span>Growth Acceleration</span></div>
+					<div class="false-btn red"><span>Collaborative Economy</span></div>
+				</div>
+			</div>
+		</div>
+		<h4 class="bold text-center margin-top-med">Important dates to have in mind</h4>
+		<div class="row margin-top-small">
+			<div class="col-md-4 flag-col">
+				<div class="flag first">
+					June 1st
+				</div>
+				<div class="block-text text-center">
+					<span class="accent">Call For Papers</span><br>
+					closing
+	      </div>
+			</div>
+			<div class="col-md-4 flag-col">
+				<div class="flag second">
+					June 10th
+				</div>
+				<div class="block-text text-center">
+					<span class="accent">Notification</span> of<br>
+					Acceptance/Rejection
+	      </div>
+			</div>
+			<div class="col-md-4 flag-col">
+				<div class="flag">
+					September 28th
+				</div>
+				<div class="block-text text-center">
+					<span class="accent">VoxxedDays Belgrade 2016</span><br>
+					3 days full of fun!
+	      </div>
+			</div>
+		</div>
+		<div class="steam-separator"></div>
+	  <h2 class="text-center">
+	    <span class="yellow">Submit</span> your talk!
+	  </h2>
+		<form class="margin-top-small" action="mailer.php">
+			<div class="row">
+		    <div class="col-sm-6">
+		      <div class="form-group">
+				    <label for="form-name">Full name</label>
+				    <input type="text" class="form-control" id="form-name" placeholder="What is Your Full Name?">
+				  </div>
+		    </div>
+				<div class="col-sm-6">
+		      <div class="form-group">
+				    <label for="form-email">Email address</label>
+				    <input type="email" class="form-control" id="form-email" placeholder="Email">
+				  </div>
+		    </div>
+		  </div>
+			<div class="row">
+		    <div class="col-sm-6">
+		      <div class="form-group">
+				    <label for="form-title">The title of your presentation <span>(required)</span></label>
+				    <input type="text" class="form-control" id="form-title" placeholder="Email">
+				  </div>
+		    </div>
+				<div class="col-sm-6">
+		      <div class="form-group">
+				    <label for="form-language">Language of presentation</label>
+				    <input type="email" class="form-control" id="form-language" placeholder="Email">
+				  </div>
+		    </div>
+		  </div>
+			<div class="row">
+		    <div class="col-sm-6">
+		      <div class="form-group">
+				    <label for="form-short-desc">Full name</label>
+				    <textarea rows="7" class="form-control" id="form-short-desc" placeholder="Email"></textarea>
+				  </div>
+		    </div>
+				<div class="col-sm-6">
+		      <div class="form-group">
+				    <label for="form-full-desc">Email address</label>
+				    <textarea rows="7" class="form-control" id="form-full-desc" placeholder="Email"></textarea>
+				  </div>
+		    </div>
+		  </div>
+			<div class="text-center info-content margin-top-small">
+				<button type="submit" class="btn btn-primary btn-lg green blue">Smash this button and send your proposal</button>
+			</div>
+		</form>
+		<div class="steam-separator"></div>
+		<div class="row-centered">
+	    <div class="col-sm-8 col-centered">
+	      <div class="block-text">
+	        Your submission will be peer reviewed and honestly evaluated based on <span class="accent">originality, content depth and relevance</span> to the conference.
+					<br><br>
+					If you have any questions related to the submission process be sure to contact us at <span class="yellow">hello@heapspace.rs</span>.
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="info-block info margin-top-big">
+	  <div class="container info-content ">
+	    <h2 class="text-center">
+				Have any other <span class="yellow"><a href="./faq.html">questions</a></span> about VDB 2016?<br>
+				WAnt to make suggestions? Or <span class="yellow"><a href="./sponsors.html">support us</a></span>?
+			</h2>
+	    <div class="block-text text-center">
+				Drop us a line or two at <span class="yellow">voxxed@heapspace.rs</span><br>
+				We would love to hear from you.
+			</div>
+	  </div>
+	</div>
+
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+
+</body>
+</html>

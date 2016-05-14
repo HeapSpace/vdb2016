@@ -1,0 +1,48 @@
+@import "bootstrap-variables";
+@import "mixins";
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $brand-secondary;
+  font-size: 20px;
+  opacity: 0.5;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $brand-secondary;
+  font-size: 20px;
+  opacity: 0.5;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $brand-secondary;
+  font-size: 20px;
+  opacity: 0.5;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $brand-secondary;
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.form-group {
+  label {
+    color: $brand-secondary;
+    span {
+      opacity: 0.5;
+    }
+  }
+  textarea {
+    resize:vertical;
+  }
+  textarea.form-control, input.form-control {
+    background-color: rgba(17,14,11,0.9);
+    border: 0;
+    border-bottom: 2px solid $brand-secondary;
+    padding: 25px 20px;
+    font-size: 20px;
+    color: $white;
+    @include round-corners(0px);
+    &:focus {
+      border-bottom: 2px solid $brand-primary !important;
+    }
+  }
+}

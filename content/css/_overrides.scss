@@ -1,1 +1,10 @@
 @import "bootstrap-variables";
+
+a {
+  text-decoration: none !important;
+}
+
+textarea, input, select, a {
+  outline: none !important;
+  box-shadow: none !important;
+}

@@ -1,4 +1,18 @@
 @import "bootstrap-variables";
+@import "mixins";
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
 
 .yellow {
   color: $brand-primary;
@@ -40,10 +54,10 @@
   background: url(../images/home-main-bg.png) top center no-repeat;
   background-size: cover;
   &.home {
-    top: 0;
+    top: -42px;
     left: 0;
     right: 0;
-    height: 880px;
+    height: 1080px;
   }
   &.page {
     top: -450px;
@@ -53,16 +67,24 @@
   }
 }
 
+#map {
+  height: 500px;
+  margin: 55px 0 25px 0;
+}
+
 .scroll-indicator {
   width: 32px;
   height: 54px;
   background: url(../images/scroll-indicator.png) center center no-repeat;
-  margin: 235px auto 240px auto;
+  margin: 425px auto 175px auto;
 }
 
 .plain {
   font-family: "Roboto";
-  font-weight: 300;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 .pad-vertical-big {
@@ -71,6 +93,25 @@
 
 .margin-top-big {
   margin-top: 125px;
+}
+
+.margin-top-med {
+  margin-top: 90px;
+}
+
+.margin-top-small {
+  margin-top: 55px;
+}
+
+.rounded-left {
+  @media (min-width: $screen-md) {
+    @include round-left-corners();
+  }
+}
+.rounded-right {
+  @media (min-width: $screen-md) {
+    @include round-right-corners();
+  }
 }
 
 h1 {
@@ -88,16 +129,26 @@ h2 {
 }
 
 h3 {
-  font-family: "Roboto";
+  font-family: "Roboto Slab";
   font-weight: 500;
   font-size: 30px;
   color: $white;
 }
 
 h4 {
-  font-family: "Roboto";
+  font-family: "Roboto Slab";
   font-weight: 300;
   font-size: 24px;
+  color: $white;
+  &.bold {
+    padding-bottom: 10px;
+  }
+}
+
+h5 {
+  font-size: 20px;
+  font-family: "Roboto Slab";
+  font-weight: 500;
   color: $white;
 }
 
@@ -118,16 +169,27 @@ h4 {
        cursor: pointer;
        background: rgba(17,14,11,0.9);
      }
+     &.info {
+       background: rgba(17,14,11,0.9);
+       cursor: default;
+     }
    }
  }
 
-.block-item {
+.block-item, .block-text {
   font-family: "Roboto";
   font-weight: 300;
-  font-size: 24px;
+  font-size: 22px;
   padding: 30px 20px;
   margin: 3px;
   color: $brand-secondary;
+}
+
+.block-text {
+  h4 {
+    font-weight: 500;
+    margin: 25px 0;
+  }
 }
 
 .home-block-grid {
@@ -181,36 +243,127 @@ h4 {
   }
 }
 
+.false-btn {
+  @include round-corners(24px);
+  display: inline-block;
+  margin: 5px 1px;
+  border: 0 !important;
+  padding: 0px 25px 5px 25px;
+  span {
+    font-size: 16px;
+    opacity: 0.5;
+    color: $white;
+  }
+}
+
+div.line-subtitle > h5 {
+  opacity: 0.2;
+  display: inline-table;
+  white-space: nowrap;
+  font-size: 16px !important;
+  margin: 25px 0 15px 0;
+  &:before, &:after {
+    border-top: 1px solid $white;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 0.6em;
+    width: 45%;
+  }
+  &:before { right: 5%; }
+  &:after { left: 5%; }
+}
+
+.green {
+  background-color: #358024;
+}
+.red {
+  background-color: #a13717;
+}
+.blue {
+  background-color: #0e5d6e;
+}
+
 .info-block {
-  background: url(../images/cfp-img-bg.png) center center no-repeat;
-  background-size: cover;
-  height: 326px;
+  background-size: cover !important;
+  &.home {
+    height: 326px;
+    background: url(../images/cfp-img-bg.png) center center no-repeat;
+  }
+  &.info {
+    height: 326px;
+    background: url(../images/cfp-img-bg.png) center center no-repeat;
+  }
+}
+
+.info-content {
+  text-align: center;
+  button, a[role="button"] {
+    @include round-corners(24px);
+    width: 260;
+    margin: 8px 0px;
+    border: 0 !important;
+    margin: 15px 40px;
+    padding: 10px 50px;
+  }
+}
+
+.info-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .info-content {
-    text-align: center;
-    padding: 95px 0 145px 0;;
-    &.home {
-      padding: 145px 0;
+    padding: 1em;
+  }
+}
+
+.flag-col {
+  padding: 0 8px;
+}
+
+.flag {
+  width: 100%;
+  height: 56px;
+  padding: 10px;
+  position: relative;
+  background-color: $brand-primary;
+  font-size: 24px !important;
+  font-family: "Roboto Slab";
+  font-weight: 700 !important;
+  color: $body-bg;
+  text-align: center;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 56px;
+    border-left: 10px solid $body-bg;
+    border-bottom: 28px solid transparent;
+    border-top: 28px solid transparent;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 0;
+    width: 0;
+    height: 56px;
+    border-left: 10px solid $brand-primary;
+    border-bottom: 28px solid transparent;
+    border-top: 28px solid transparent;
+  }
+  &.first {
+    background-color: rgba(239,194,51,0.3);
+    &:after {
+      opacity: 0.3;
     }
-    @media (max-width: 639px) {
-      padding: 55px 0;
-    }
-    button {
-      -webkit-border-radius: 24px;
-      -moz-border-radius: 24px;
-      border-radius: 24px;
-      width: 260;
-      border: 0;
-      margin: 15px 40px;
-      padding: 10px 50px;
-    }
-    .green {
-      background-color: #358024;
-    }
-    .red {
-      background-color: #a13717;
-    }
-    .blue {
-      background-color: #0e5d6e;
+  }
+  &.second {
+    background-color: rgba(239,194,51,0.6);
+    &:after {
+      opacity: 0.6;
     }
   }
 }

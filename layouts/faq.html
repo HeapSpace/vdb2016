@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+	<%= yield %>
+
+	<div class="main-bg page"></div>
+	<div class="container">
+	  <h1 class="text-center pad-vertical-big">
+	    WAnt to know more?<br><span class="yellow">FAQ at its finest</span>
+	  </h1>
+	  <!-- <h4 class="text-center plain">VoxxedDays Belgrade 2016 returns bigger and brighter!<br>We can’t wait to start a new, 3-days round<br>of learning and sharing!</h4> -->
+	  <div class="steam-separator"></div>
+	  <h2 class="text-center">
+	    <span class="yellow">"</span>I'm at the airport, now what?<span class="yellow">"</span>
+	  </h2>
+	  <div class="row-centered">
+	    <div class="col-sm-8 col-centered">
+
+	      <div class="block-text">
+					<h4>Taxi</h4>
+	        For the use of taxi services from Belgrade Nikola Tesla Airport to any destination in Belgrade area and further, please contact the city service TAXI INFO desk, located in the baggage reclaim area. If this one is not working, there is one located immediately after you exit the baggage reclaim area, right next to the exit door.
+					<br><br>
+					Just be aware NOT taking the taxi from anyone who approaches you – they usually charge much more. Please take a taxi receipt at the information desk – it should state your end destination in Belgrade and the ride price. The price is fixed (1800 dinars for any location in the city center). See more info about the taxi <span class="accent"><a href="http://www.beg.aero/en/strana/8871" target="_blank">here</a></span>.
+	      </div>
+
+	      <div class="block-text">
+					<h4>Minibus</h4>
+	        A1 is the only bus taking passengers right from the Airport to the city center. This bus has a couple of stops before it reaches its final destination, Square Slavija. Slavija is well-connected with the rest of the city and you can use the public transport or a taxi from there.
+					<br><br>
+					The price for the ride is 150rsd (~1.2 euros).
+	      </div>
+	    </div>
+	  </div>
+		<div class="steam-separator"></div>
+	  <h2 class="text-center">
+	    <span class="yellow">"</span>Where to go:<br>The venue location?<span class="yellow">"</span>
+	  </h2>
+	</div>
+	<!-- map -->
+	<div id="map" position-latitude="44.809871" position-longitude="20.413875"></div>
+	<!-- end map -->
+	<div class="container">
+	  <div class="steam-separator"></div>
+	  <h2 class="text-center">
+	    <span class="yellow">"</span>How to buy a ticket<br>for public transport?<span class="yellow">"</span>
+	  </h2>
+	  <div class="row-centered">
+	    <div class="col-sm-8 col-centered">
+	      <div class="block-text">
+	        There is only one BusPlus ticket for every type of transport. You can buy them at any paper store in the town. They are pre-paid, hence you need to buy a BusPlus card (once) and then fill it up with the amount you want. One ride is 89 dinars, so you can fill it up with e.g. 500din if you plan to use it!.
+	      </div>
+	    </div>
+	  </div>
+		<div class="steam-separator"></div>
+	  <h2 class="text-center">
+	    <span class="yellow">"</span>Can I use $ or € in Serbia?<span class="yellow">"</span>
+	  </h2>
+	  <div class="row-centered">
+	    <div class="col-sm-8 col-centered">
+	      <div class="block-text">
+	        The official currency in Serbia is Serbia Dinar (RSD). <span class="yellow"><a href="http://www.xe.com/currencyconverter/convert/?Amount=1&From=EUR&To=RSD" target="_blank">Click here for currency rate</a></span>. You can find many ATMs and Currency Exchange offices in the city center.
+	      </div>
+	    </div>
+	  </div>
+		<div class="steam-separator"></div>
+	  <h2 class="text-center">
+	    <span class="yellow">"</span>Which plug should I bring<br>for all of my beloved devices?<span class="yellow">"</span>
+	  </h2>
+	  <div class="row-centered">
+	    <div class="col-sm-8 col-centered">
+	      <div class="block-text">
+	        Nominal voltage is 220V and frequency of the current is 50Hz. Type C is the common type of plug.
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div class="info-block info margin-top-big">
+	  <div class="container info-content ">
+	    <h2 class="text-center">
+				Have any other <span class="yellow"><a href="./faq.html">questions</a></span> about VDB 2016?<br>
+				WAnt to make suggestions? Or <span class="yellow"><a href="./sponsors.html">support us</a></span>?
+			</h2>
+	    <div class="block-text text-center">
+				Drop us a line or two at <span class="yellow">voxxed@heapspace.rs</span><br>
+				We would love to hear from you.
+			</div>
+	  </div>
+	</div>
+
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+
+</body>
+</html>
