@@ -1,6 +1,6 @@
 <?php
 
-$emailSubject = 'VoxxedDays Belgrade - Submit Talk';
+$emailSubject = 'VoxxedDays Belgrade - Submit Talk (new site test)';
 
 $formsubmitted = date("Y/m/d H:i:s");
 
@@ -58,7 +58,7 @@ $headers = 'From: ' . $email . "\r\n" .
 	'Content-type: text/html' . "\r\n";
 
 
-$success = mail("dtasic@gmail.com", $emailSubject, $body, $headers);
+$success = mail("voxxed@heapspace.rs", $emailSubject, $body, $headers);
 $success2 = mail($email, $emailSubject, $body, $headers);
 
 if ($success && $success2) {
