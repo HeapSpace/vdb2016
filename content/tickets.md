@@ -1,4 +1,4 @@
 ---
-title: Info
-layout: '/info.html'
+title: Tickets
+layout: '/tickets.html'
 ---

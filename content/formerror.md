@@ -1,4 +1,4 @@
 ---
-title: Info
+title: Error
 layout: '/formerror.html'
 ---

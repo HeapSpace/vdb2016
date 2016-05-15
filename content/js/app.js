@@ -2,10 +2,10 @@ $(document).ready(function() {
 
     $(".float-label").jvFloat();
 
-    $('.header-holder').affix({
-      offset: {
-        top: $('header').height() + 1
-      }
-    });
+    // $('.header-holder').affix({
+    //   offset: {
+    //     top: $('header').height() + 1
+    //   }
+    // });
 
 });

@@ -1,4 +1,4 @@
 ---
 title: Submit Talk
-layout: '/submit_talk.php'
+layout: '/contact_us.php'
 ---

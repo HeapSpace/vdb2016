@@ -155,6 +155,7 @@ h4 {
   font-weight: 300;
   font-size: 24px;
   color: $white;
+  margin-top: 20px;
   &.bold {
     padding-bottom: 10px;
   }
@@ -173,6 +174,12 @@ h5 {
   opacity: 0.25;
   background: url(../images/separator_steam.png) center center no-repeat;
   margin: 75px auto 125px auto;
+}
+
+.sponsor-logo {
+  img {
+    opacity: 0.25;
+  }
 }
 
 .item-block-holder {

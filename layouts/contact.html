@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+	<div class="main-bg page"></div>
+	<div class="container">
+	  <h1 class="text-center pad-vertical-big">
+	    We would love<br><span class="yellow">to hear from you!</span>
+	  </h1>
+	  <!-- <h4 class="text-center plain">VoxxedDays Belgrade 2016 returns bigger and brighter!<br>We can’t wait to start a new, 3-days round<br>of learning and sharing!</h4> -->
+
+	  <h2 class="text-center margin-top-big">
+	    <span class="yellow">Contact</span> Us
+	  </h2>
+		<form class="margin-top-small" action="contact_us.php" method="post">
+			<div class="row-centered">
+		    <div class="col-sm-8 col-centered">
+		      <div class="form-group">
+				    <input type="text" class="form-control float-label" required="required" name="formname" placeholder="Your name (required)">
+				  </div>
+		    </div>
+		  </div>
+			<div class="row-centered">
+		    <div class="col-sm-8 col-centered">
+		      <div class="form-group">
+				    <input type="email" class="form-control float-label" required="required" name="formemail" placeholder="Your e-mail (required)">
+				  </div>
+		    </div>
+		  </div>
+			<div class="row-centered">
+		    <div class="col-sm-8 col-centered">
+		      <div class="form-group">
+				    <input type="text" class="form-control float-label" name="formsubject" placeholder="Subject">
+				  </div>
+		    </div>
+		  </div>
+			<div class="row-centered">
+		    <div class="col-sm-8 col-centered">
+		      <div class="form-group">
+				    <textarea rows="7" class="form-control float-label" name="formmessage" placeholder="Your message"></textarea>
+				  </div>
+		    </div>
+		  </div>
+			<div class="row-centered">
+		    <div class="col-sm-8 col-centered">
+		      <div class="form-group">
+						<label class="checkbox">I am not a bot!</label>
+						<label class="checkbox-inline"><input type="checkbox" required="required">Workshop</label>
+				  </div>
+		    </div>
+		  </div>
+			<div class="text-center info-content margin-top-small">
+				<button type="submit" class="btn btn-primary btn-lg green blue">Send</button>
+			</div>
+		</form>
+	</div>
+	<div class="info-block info margin-top-big">
+	  <div class="container info-content ">
+	    <h2 class="text-center">
+				Have any other <span class="yellow"><a href="./faq.html">questions</a></span> about VDB 2016?<br>
+				Want to make suggestions? Or <span class="yellow"><a href="./sponsors.html">support us</a></span>?
+			</h2>
+	    <!-- <div class="block-text text-center">
+				Drop us a line or two at <span class="yellow">voxxed@heapspace.rs</span><br>
+				We would love to hear from you.
+			</div> -->
+	  </div>
+	</div>
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+	<div class="main-bg page"></div>
+	<div class="container">
+	  <h1 class="text-center pad-vertical-big">
+	    Our vision<br><span class="yellow">resonates with you?</span>
+	  </h1>
+		<h4 class="text-center plain">A ticket for Voxxed Days Belgrade 2016 is your entrance to the 3-day world of opportunities:<br>learn about hot topics, get new business ideas, meet old + make new friends,<br>dive straight into the unstoppable enthusiasm!</h4>
+		<div class="steam-separator"></div>
+		<h3 class="margin-top-small bold text-center">
+	    Platinum <span class="yellow">sponsors</span>
+	  </h3>
+		<div class="margin-top-small row-centered">
+			<div class="sponsor-logo col-sm-2 col-centered">
+				<img class="img-responsive" src="images/sponsor-test.png" />
+			</div>
+			<div class="sponsor-logo col-sm-2 col-centered">
+				<img class="img-responsive" src="images/sponsor-test.png" />
+			</div>
+			<div class="sponsor-logo col-sm-2 col-centered">
+				<img class="img-responsive" src="images/sponsor-test.png" />
+			</div>
+		</div>
+		<h3 class="margin-top-small bold text-center">
+	    Gold <span class="yellow">sponsors</span>
+	  </h3>
+		<div class="margin-top-small row-centered">
+			<div class="sponsor-logo col-sm-2 col-centered">
+				<img class="img-responsive" src="images/sponsor-test.png" />
+			</div>
+			<div class="sponsor-logo col-sm-2 col-centered">
+				<img class="img-responsive" src="images/sponsor-test.png" />
+			</div>
+			<div class="sponsor-logo col-sm-2 col-centered">
+				<img class="img-responsive" src="images/sponsor-test.png" />
+			</div>
+		</div>
+		<h3 class="margin-top-small bold text-center">
+	    Silver <span class="yellow">sponsors</span>
+	  </h3>
+		<div class="margin-top-small row-centered">
+			<div class="sponsor-logo col-sm-2 col-centered">
+				<img class="img-responsive" src="images/sponsor-test.png" />
+			</div>
+			<div class="sponsor-logo col-sm-2 col-centered">
+				<img class="img-responsive" src="images/sponsor-test.png" />
+			</div>
+			<div class="sponsor-logo col-sm-2 col-centered">
+				<img class="img-responsive" src="images/sponsor-test.png" />
+			</div>
+		</div>
+		<div class="steam-separator"></div>
+		<h2 class="text-center">
+			Become a <span class="yellow">Sponsor</span>
+		</h2>
+		<div class="row-centered">
+			<div class="col-sm-8 col-centered">
+				<div class="block-text text-center">
+					Learn how to enjoy <span class="accent">all the benefits</span> VDB 2016 has to offer<br>and become one of the sponsors!
+					<br><br>
+					<span class="accent">Get in touch</span> – we will get back to you very soon!
+				</div>
+			</div>
+		</div>
+		<form class="margin-top-small" action="contact_us.php" method="post">
+			<div class="row-centered">
+		    <div class="col-sm-8 col-centered">
+		      <div class="form-group">
+				    <input type="text" class="form-control float-label" name="formname" placeholder="Name">
+				  </div>
+		    </div>
+		  </div>
+			<div class="row-centered">
+		    <div class="col-sm-8 col-centered">
+		      <div class="form-group">
+				    <input type="text" class="form-control float-label" name="formcompany" placeholder="Company">
+				  </div>
+		    </div>
+		  </div>
+			<div class="row-centered">
+		    <div class="col-sm-8 col-centered">
+		      <div class="form-group">
+				    <input type="email" class="form-control float-label" required="required" name="formemail" placeholder="E-mail (required)">
+				  </div>
+		    </div>
+		  </div>
+			<div class="row-centered">
+		    <div class="col-sm-8 col-centered">
+		      <div class="form-group">
+				    <input type="text" class="form-control float-label" name="formphone" placeholder="Phone">
+				  </div>
+		    </div>
+		  </div>
+
+			<div class="text-center info-content margin-top-small">
+				<button type="submit" class="btn btn-primary btn-lg green blue">Send</button>
+			</div>
+		</form>
+	</div>
+	<div class="info-block info margin-top-big">
+	  <div class="container info-content ">
+	    <h2 class="text-center">
+				Have any other <span class="yellow"><a href="./faq.html">questions</a></span> about VDB 2016?<br>
+				WAnt to make suggestions? Or <span class="yellow"><a href="./sponsors.html">support us</a></span>?
+			</h2>
+	    <div class="block-text text-center">
+				Drop us a line or two at <span class="yellow">voxxed@heapspace.rs</span><br>
+				We would love to hear from you.
+			</div>
+	  </div>
+	</div>
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+</body>
+</html>
