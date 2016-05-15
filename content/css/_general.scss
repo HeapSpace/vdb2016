@@ -67,6 +67,21 @@
   }
 }
 
+.map-holder {
+  position: relative;
+  height: 500px;
+  .map-info {
+    position: absolute;
+    margin: 100px;
+    height: 300px;
+    width: 300px;
+    background: rgba(17,14,11,0.8);
+    z-index: 100;
+    right: 0;
+    padding: 15px 30px;
+  }
+}
+
 #map {
   height: 500px;
   margin: 55px 0 25px 0;
