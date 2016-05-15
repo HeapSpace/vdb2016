@@ -1,5 +1,33 @@
 @import "bootstrap-variables";
 
+.header-holder {
+  background: rgba(27,23,19,0.4);
+  .main-menu-logo {
+    display: none;
+  }
+  &.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+    background: rgba(17,14,11,0.9);
+    .main-menu-item {
+      padding-top: 10px;
+    }
+    .main-menu-logo {
+        width: 100%;
+        display: block;
+        z-index: 200;
+        padding: 15px;
+        border-bottom: 1px solid rgba(152,133,120, 0.3);
+        text-align: center;
+      img {
+        width: 126px;
+      }
+    }
+  }
+}
+
 .navbar {
   border: 0;
   min-height: 0;
@@ -38,7 +66,7 @@
   }
   &.active {
     border-bottom: 5px solid $brand-primary;
-    background-color:  rgba(27,23,19,0.6);
+    background-color: rgba(17,14,11,0.4);
     color: $white;
     padding-left: 15px;
     padding-right: 15px;

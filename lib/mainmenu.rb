@@ -1,39 +1,4 @@
-require 'erb'
-
 include Nanoc::Helpers::LinkTo
-include Nanoc::Helpers::Rendering
-include Nanoc::Helpers::XMLSitemap
-
-include ERB::Util
-
-# Output a meta-tag for use in your site header. The key you supply is looked
-# up in the configuration under 'meta_data'. You can override it on a per-item
-# basis.
-#
-# Usage:
-#
-#   <%= meta_tag :keywords %>
-#
-# This will output:
-#
-#   <meta name="keywords" value="...">
-#
-# Here, '...' is either the value of @item[:keywords] or that of
-# @config[:keywords].
-def meta_tag(key)
-  value = @item[key] || @config[:site][key]
-  '<meta name="%s" content="%s">' % [h(key), h(value)] if value
-end
-
-#
-# Usage:
-#
-#  <%= val :title %>
-#
-def val(key)
-  value = @item[key] || @config[:site][key]
-  '%s' % h(value) if value
-end
 
 # Creates a HTML link to the given path or item representation, and with
 # the given text. All attributes of the `a` element, including the `href`
@@ -136,6 +101,6 @@ def logo_unless_page(target)
 
   if @item_rep && '.'+@item_rep.path != path
     # Create message
-    "<li role=\"presentation\" class=\"main-menu-item\"><img class=\"img-responsive\" src=\"images/home-logo.png\"></li>"
+    "<li role=\"presentation\" class=\"main-menu-logo\"><img class=\"\" src=\"images/home-logo.png\"></li>"
   end
 end

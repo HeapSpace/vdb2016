@@ -1,24 +1,27 @@
-<div class="container">
-  <nav class="navbar navbar-default navbar-static-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="visible-xs-inline-block" href="#"><div class="mobile-menu-logo"><img src="images/vx_logo_small_mono.png"></div></a>
+<div class="header-holder">
+  <div class="container">
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="visible-xs-inline-block" href="#"><div class="mobile-menu-logo"><img src="images/vx_logo_small_mono.png"></div></a>
+        </div>
+        <div class="collapse navbar-collapse" id="mainmenu">
+          <ul class="nav nav-pills nav-justified main-menu">
+            <%= logo_unless_page('./none') %>
+            <%= link_to_unless_current('Home', './') %>
+            <%= link_to_unless_current('Info', './info.html') %>
+            <%= link_to_unless_current('Call for Papers', './cfp.html') %>
+            <%= link_to_unless_current('Tickets', './tickets.html') %>
+            <%= link_to_unless_current('Sponsors', './sponsors.html') %>
+            <%= link_to_unless_current('FAQ', './faq.html') %>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="mainmenu">
-        <ul class="nav nav-pills nav-justified main-menu">
-          <%= link_to_unless_current('Home', './') %>
-          <%= link_to_unless_current('Info', './info.html') %>
-          <%= link_to_unless_current('Call for Papers', './cfp.html') %>
-          <%= link_to_unless_current('Tickets', './tickets.html') %>
-          <%= link_to_unless_current('Sponsors', './sponsors.html') %>
-          <%= link_to_unless_current('FAQ', './faq.html') %>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </div>
