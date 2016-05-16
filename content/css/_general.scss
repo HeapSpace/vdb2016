@@ -203,13 +203,14 @@ h5 {
        cursor: default;
 
      }
-     .fa-star {
-       color: $white;
-       margin-right: 8px;
-       font-size: 80%;
-       opacity: 0.6;
-     }
    }
+ }
+
+ .fa-star {
+   color: $white;
+   margin-right: 8px;
+   font-size: 80%;
+   opacity: 0.6;
  }
 
 .block-item, .block-text {
