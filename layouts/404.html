@@ -22,8 +22,7 @@
 var left = 0;
 var right = 0;
 
-function left() {
-	alert("L");
+function left404() {
 	left = left + 1;
 	$.ajax({
 		type: "POST",
@@ -38,8 +37,7 @@ function left() {
 		}
 	});
 }
-function right() {
-	alert("R");
+function right404() {
 	right = right + 1;
 	$.ajax({
 		type: "POST",
@@ -71,8 +69,8 @@ function refresh() {
 }
 
 $(function() {
-	$("#left").click(left);
-    $("#right").click(right);
+	$("#left").click(left404);
+    $("#right").click(right404);
 	refresh();
 	setInterval(refresh, 1000);
 });
