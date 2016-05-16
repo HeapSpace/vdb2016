@@ -26,7 +26,7 @@ function left404() {
 	left = left + 1;
 	$.ajax({
 		type: "POST",
-		url: "404/left.php",
+		url: "left.php",
 		data: "",
 		success: function(msg) {
 			if (msg == 'err') {
@@ -41,7 +41,7 @@ function right404() {
 	right = right + 1;
 	$.ajax({
 		type: "POST",
-		url: "404/right.php",
+		url: "right.php",
 		data: "",
 		success: function(msg) {
 			if (msg == 'err') {
@@ -56,7 +56,7 @@ function right404() {
 function refresh() {
 	$.ajax({
 		type: "GET",
-		url: "404/read.php",
+		url: "read.php",
 		data: "",
 		success: function(msg){
 			var arr = eval(msg);
