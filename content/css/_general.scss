@@ -28,7 +28,7 @@
 
 .home-logo {
   background: url(../images/home-logo.png) center center no-repeat;
-  margin: 180px auto;
+  margin: 180px auto 840px auto;
   height: 160px;
 }
 
@@ -57,13 +57,13 @@
     top: -42px;
     left: 0;
     right: 0;
-    height: 1080px;
+    height: 1280px;
   }
   &.page {
-    top: -450px;
+    top: -600px;
     left: 0;
     right: 0;
-    height: 1080px;
+    height: 1280px;
   }
 }
 
@@ -91,7 +91,10 @@
   width: 32px;
   height: 54px;
   background: url(../images/scroll-indicator.png) center center no-repeat;
-  margin: 425px auto 175px auto;
+  margin: 425px auto 15px auto;
+  position: absolute;
+  bottom: 20px;
+  left: 49%;
 }
 
 .plain {
@@ -103,7 +106,7 @@
 }
 
 .pad-vertical-big {
-  padding: 190px 0;
+  padding: 210px 0;
 }
 
 .margin-top-big {
@@ -174,6 +177,8 @@ h5 {
   opacity: 0.25;
   background: url(../images/separator_steam.png) center center no-repeat;
   margin: 75px auto 125px auto;
+  max-width: 100%;
+  display:block
 }
 
 .sponsor-logo {
@@ -194,9 +199,17 @@ h5 {
      &.info {
        background: rgba(17,14,11,0.9);
        cursor: default;
+
      }
    }
  }
+
+.fa-tags {
+  color: $white;
+  margin-right: 8px;
+  font-size: 80%;
+  opacity: 0.6;
+}
 
 .block-item, .block-text {
   font-family: "Roboto";
@@ -325,8 +338,10 @@ div.line-subtitle > h5 {
     width: 260;
     margin: 8px 0px;
     border: 0 !important;
-    margin: 15px 40px;
     padding: 10px 50px;
+    @media (min-width: $screen-md) {
+      margin: 15px 40px;
+    }
   }
 }
 

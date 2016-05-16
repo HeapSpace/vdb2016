@@ -57,12 +57,12 @@
   display: inline-block;
 
   @media (min-width: 639px) {
-    margin: 30px 0 0 0;
-    padding: 40px 0 0 0;
+    padding: 30px 0 0 0;
   }
   a {
     color: $white;
     text-decoration: none;
+    padding-bottom: 15px !important;
   }
   &.active {
     border-bottom: 5px solid $brand-primary;

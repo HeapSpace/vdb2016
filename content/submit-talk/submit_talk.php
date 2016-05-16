@@ -53,12 +53,12 @@ Level of code: $code <br />
 EOD;
 
 $headers = 'From: ' . $email . "\r\n" .
-    'Reply-To: voxxed@heapspace.rs' . "\r\n" .
+    'Reply-To: voxxed-cfp@heapspace.rs' . "\r\n" .
     'X-Mailer: PHP/' . phpversion() . "\r\n" .
 	'Content-type: text/html' . "\r\n";
 
 
-$success = mail("voxxed@heapspace.rs", $emailSubject, $body, $headers);
+$success = mail("voxxed-cfp@heapspace.rs", $emailSubject, $body, $headers);
 $success2 = mail($email, $emailSubject, $body, $headers);
 
 if ($success && $success2) {

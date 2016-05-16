@@ -2,10 +2,14 @@ $(document).ready(function() {
 
     $(".float-label").jvFloat();
 
-    // $('.header-holder').affix({
-    //   offset: {
-    //     top: $('header').height() + 1
-    //   }
-    // });
+    $("a").attr("href", function(i, href) {
+      return '/new-site' + href;
+    });
+
+    $('.header-holder').affix({
+      offset: {
+        top: $('header').height() + 1
+      }
+    });
 
 });

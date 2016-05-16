@@ -1,24 +1,43 @@
+<% @test = '/new-site' %>
 <meta charset="utf-8">
 <title><%= val(:title) || title %></title>
-<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-touch-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-touch-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-touch-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-touch-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-touch-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="favicon/manifest.json">
+<meta name="description" content="Balkan&#039;s Leading Community Technology and Entrepreneurship Conference 2nd instalment. 2x bigger then last year, 4x more fun. CFP is open!"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="https://belgrade.voxxeddays.com/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Voxxed Days Belgrade 2016 - 28-30 September" />
+<meta property="og:description" content="Balkan&#039;s Leading Community Technology and Entrepreneurship Conference 2nd instalment. 2x bigger then last year, 4x more fun. CFP is open!" />
+<meta property="og:url" content="https://belgrade.voxxeddays.com/" />
+<meta property="og:site_name" content="Voxxed Days Belgrade" />
+<meta property="og:image" content="https://belgrade.voxxeddays.com/images/vdb-illustration-small.jpg" />
+<meta property="og:image:width" content="1600" />
+<meta property="og:image:height" content="1165" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Balkan&#039;s Leading Community Technology and Entrepreneurship Conference 2nd instalment. 2x bigger then last year, 4x more fun. CFP is open!" />
+<meta name="twitter:title" content="Voxxed Days Belgrade 2016 - 28-30 September" />
+<meta name="twitter:site" content="@voxxedbelgrade" />
+<meta name="twitter:image" content="https://belgrade.voxxeddays.com/images/vdb-illustration-small.jpg" />
+<meta name="twitter:creator" content="@voxxedbelgrade" />
+<link rel="apple-touch-icon" sizes="57x57" href="<%= @test %>/favicon/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="<%= @test %>/favicon/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="<%= @test %>/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="<%= @test %>/favicon/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="<%= @test %>/favicon/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="<%= @test %>/favicon/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="<%= @test %>/favicon/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="<%= @test %>/favicon/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="<%= @test %>/favicon/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="<%= @test %>/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="<%= @test %>/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="<%= @test %>/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="<%= @test %>/favicon/favicon-16x16.png">
+<link rel="manifest" href="<%= @test %>/favicon/manifest.json">
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png">
+<meta name="msapplication-TileImage" content="<%= @test %>/favicon/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="css/voxxed.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="<%= @test %>/css/voxxed.css" />
 <!-- <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyA3JQOqnA29_8q982bNgzDPPX3gsVqK5oY" type="text/javascript"></script> -->
 <!-- <% for p in @item.fetch(:head, []) %>
 	<%= render "/_#{p}.*" %>

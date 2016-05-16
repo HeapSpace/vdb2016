@@ -49,8 +49,7 @@
 			<div class="row-centered">
 		    <div class="col-sm-8 col-centered">
 		      <div class="form-group">
-						<label class="checkbox">I am not a bot!</label>
-						<label class="checkbox-inline"><input type="checkbox" required="required">Workshop</label>
+						<label class="checkbox-inline"><input type="checkbox" required="required">I am not a bot!</label>
 				  </div>
 		    </div>
 		  </div>
@@ -60,16 +59,7 @@
 		</form>
 	</div>
 	<div class="info-block info margin-top-big">
-	  <div class="container info-content ">
-	    <h2 class="text-center">
-				Have any other <span class="yellow"><a href="./faq.html">questions</a></span> about VDB 2016?<br>
-				Want to make suggestions? Or <span class="yellow"><a href="./sponsors.html">support us</a></span>?
-			</h2>
-	    <!-- <div class="block-text text-center">
-				Drop us a line or two at <span class="yellow">voxxed@heapspace.rs</span><br>
-				We would love to hear from you.
-			</div> -->
-	  </div>
+	  <%= render '/_footer_cta.html', :template => 'contact' %>
 	</div>
 	<%= render '/_footer.html'%>
 	<%= render '/_bottomscripts.html'%>

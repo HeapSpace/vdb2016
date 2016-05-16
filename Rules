@@ -5,8 +5,8 @@ Compass.add_project_configuration 'config.rb'
 
 ## PHP
 
-route "/submit_talk.md" do
-  "/submit_talk.php"
+route "/**/*.mkd" do
+  @item.identifier.without_ext + ".php"
 end
 
 ## javascript

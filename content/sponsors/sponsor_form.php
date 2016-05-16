@@ -22,12 +22,12 @@ Phone: $phone <br />
 EOD;
 
 $headers = 'From: ' . $email . "\r\n" .
-    'Reply-To: voxxed@heapspace.rs' . "\r\n" .
+    'Reply-To: sponsors@heapspace.rs' . "\r\n" .
     'X-Mailer: PHP/' . phpversion() . "\r\n" .
 	'Content-type: text/html' . "\r\n";
 
 
-$success = mail("voxxed@heapspace.rs", $emailSubject, $body, $headers);
+$success = mail("sponsors@heapspace.rs", $emailSubject, $body, $headers);
 $success2 = mail($email, $emailSubject, $body, $headers);
 
 if ($success && $success2) {

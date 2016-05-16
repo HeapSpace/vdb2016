@@ -13,7 +13,7 @@
 	    We're eager<br><span class="yellow">to hear from you!</span>
 	  </h1>
 	  <h4 class="text-center plain">VoxxedDays Belgrade 2016 returns bigger and brighter!<br>We can’t wait to start a new, 3-days round<br>of learning and sharing!</h4>
-		<div class="text-center info-content margin-top-small"><a href="#" class="btn btn-primary btn-lg green" role="button">Don't wait, submit your talk!</a></div>
+		<div class="text-center info-content margin-top-small"><a href="#submitform" class="btn btn-primary btn-lg green" role="button">Don't wait, submit your talk!</a></div>
 	  <div class="steam-separator"></div>
 	  <h2 class="text-center">
 	    Let's make <span class="yellow">something awsm!</span>
@@ -113,7 +113,7 @@
 	      </div>
 			</div>
 		</div>
-		<div class="steam-separator"></div>
+			<div id="submitform" class="steam-separator"></div>
 	  <h2 class="text-center">
 	    <span class="yellow">Submit</span> your talk!
 	  </h2>
@@ -197,16 +197,7 @@
 	  </div>
 	</div>
 	<div class="info-block info margin-top-big">
-	  <div class="container info-content ">
-	    <h2 class="text-center">
-				Have any other <span class="yellow"><a href="./faq.html">questions</a></span> about VDB 2016?<br>
-				WAnt to make suggestions? Or <span class="yellow"><a href="./sponsors.html">support us</a></span>?
-			</h2>
-	    <div class="block-text text-center">
-				Drop us a line or two at <span class="yellow">voxxed@heapspace.rs</span><br>
-				We would love to hear from you.
-			</div>
-	  </div>
+	  <%= render '/_footer_cta.html' %>
 	</div>
 
 	<%= render '/_footer.html'%>

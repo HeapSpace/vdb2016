@@ -1,0 +1,757 @@
+Submitted,name,email,title,short-abstract,full-abstract,type,language,audience,tags,code-level
+2016-05-13 18:30:43 +00:00,DOAN Duy Hai,doanduyhai@gmail.com,"SASI, Cassandra on the full text search ride !","Apache Cassandra is a scalable database with high availability features. But they come with severe limitations in term of querying capabilities. Since the introduction of SASI in Cassandra 3.5, the limitations belong to the pass. Now you can create performant indices on your columns as well as benefit from full text search capabilities with the introduction of the new `LIKE %term%` syntax. To illustrate how SASI works, we'll use a database of 100 000 albums and artists. We'll also show how SASI can help to accelerate analytics scenarios with Spark using SparkSQL predicate-pushdown
+","Apache Cassandra is a scalable database with high availability features. But they come with severe limitations in term of querying capabilities. Since the introduction of SASI in Cassandra 3.5, the limitations belong to the pass. Now you can create performant indices on your columns as well as benefit from full text search capabilities with the introduction of the new `LIKE %term%` syntax. To illustrate how SASI works, we'll use a database of 100 000 albums and artists. We'll also show how SASI can help to accelerate analytics scenarios with Spark using SparkSQL predicate-pushdown",Presentation,English,Beginner,"""cassandra"",""nosql"",""big data"",""full text search""",No code
+2016-05-12 15:19:26 +00:00,Dejan Bosanac,dbosanac@redhat.com,Open stack for building end-to-end IoT solutions,"There's a lot of pieces needed to build a scalable IoT solution. Today most of these components exists as open source projects, which makes it easier than ever to connect large number devices to the cloud. This session will describe architecture and components of the scalable IoT solutions and open source projects that can be used to build them.
+","The session will start by covering the general architecture of end-to-end IoT systems and describe in more details the role of every component. Next, it will dig deeper into all the components and explain open source projects that implement them. For example, we will see what are field gateways and how Eclipse Kura project implements those functionalities. IoT server connector's role will be described next and we'll see how Eclipse Hono helps connecting devices to the cloud. Finally, we'll examine an architecture of the IoT Cloud and see what it takes to handle and manage large number of devices. We'll also see how IoT cloud will be implemented in the upcoming open source project (which should be public by the time of the session). After this session, you'll have the big picture of how to connect devices to the cloud in scalable way and what open source projects to use to achieve that.",Presentation,English,Developers interested in IoT. They will get a good introduction to open source projects for building scalable IoT solutions,iot messaging eclipse kura hono,No code
+2016-05-12 09:32:06 +00:00,Sebastian Faulhaber,sebastian.faulhaber@redhat.com,Faster and more efficient processes by combining BPM and Mobile,"A lot has happened in the area of mobile since Apple kicked off the revolution by announcing the first iPhone. However, the overall mobile market still has to be considered as young and especially unstandardized. This really puts a lot of organizations in front of huge challenges concerning the efficient development of mobile applications and the secure integration into backend IT systems. - But there is no way around mobile in the next years! The smart combination of mobile techniques (mBaaS, microservices, etc.) and business process management approaches will definitely drive process efficiency and speed to a whole new level. 
+
+In this presentation I will outline the floating icebergs you should look at when implementing mobile and BPM in your enterprise. In addition to that you will learn how other companies have successfully implemented mobile to optimize their processes. ",See http://www.slideshare.net/sebastianfaulhaber5/faster-and-more-efficient-processes-by-combining-bpm-and-mobile-yes-we-can for more information on my story.,Presentation,English,Architects (Operations & Development); the attendees will know how to implement a mobile architecture on enterprise level.,"mobile, mbaas, security, bpm, redhat, jboss, middleware, feedhenry",No code
+2016-05-10 22:28:05 +00:00,Caroline Smith,caroline.smith@blonde.net,A UX formula for designing for the Internet of Sh*t,"This session is a beginners guide to thinking, planning and designing a truly valuable UX for the IoT. With any new device, it takes a period of time to fully understand how users will want to use it, should use it, and if there is any real value in them using it. Covering both practical tips and conceptual thinking, audience members will be able to walk away with a comfortable starting place for designing their own IoT UX systems while understanding the strategy behind it. ","The session is a beginners guide to developing a valuable UX for IoT devices. The learnings can be translated into any IoT product, current, emerging or future innovations. The session begins by giving users background into the IoT industry, and a nod to the fact that not everything is always a good idea. “Don’t you wish your toothbrush had more wifi?”. The Internet of Shit gives a humorous look at what happens when the IoT trend goes too far. However, just incase we ever find ourselves needing to design for a device we’ve never used before, this UX formula will help get you started.
+
+I cover “6 tips” in the UX formula for getting started with IoT;
+
+1 - Understand the device;
+We look at the importance of understanding the environment that your app or software will live on as much as possible, both physically and emotionally.
+
+2 - Understand your users, what do they do, where, when and why?
+We explore how building up a better view on who your users are and their motivations will allow you to bring real purpose and value to your app or software.
+
+3 - Prioritise you app functionality; what will add value to users lives?
+We look at how we can take advantage of the device for key functions to enhance daily life.
+
+4 - Think about navigation; how should users find content?
+We look at how to choose a structure that you think best reflects the content and functionality you are providing within your user experience.
+
+5- Get familiar with interface elements; what are the native ones?
+I always think that it’s a good idea to have a solid understanding of the native building blocks that you can create your app with, as it helps you to focus on the purpose rather than the razzmatazz around it.
+
+6 - Prototype, test, learn, repeat; what can I do to get the most insight?
+We look at how prototyping can mean many things and can be achieved in a number of ways. You don’t always need to go into code to gain valuable learnings.
+
+The session will end with taking these tips and applying them to a fake new IoT device. This lets us test the theory of the formula in a real-ish life case study.
+",Presentation,English,"ux designers, mobile developers, interface designers, people with an interest in future tech","ux, interface design, internet of things, mobile",No code
+2016-05-08 20:41:38 +00:00,DEJAN DIMIC,dejan.dimic@gmail.com,Sex Lies and Design patterns,"Almost all in software industry agrees that design patterns are important and beneficial for success of any project. Some regard them as an essential part of ‘good practices”. In a perspective there is something sexy and awesome in reading some code and recognize applied design patterns.
+
+In real situations, one of the things that fall in oblivion and somehow get lost from developers perspective, right after documentation and most probably side by side with tests, are design patterns. Both in design and architecture phase and implementation phase.
+Nowadays, the software solutions are more and more complex. The need to mimic the real life is greater and greater. Ergo the need to use and apply the proven solution from real life and software industry described as “design patterns“ should be more in our focus and part of our solutions.
+Knowledge to recognize the problem, the context and to pick appropriate design patterns will become essential for creating any worth mention solution.
+In this presentation I would like to share some of the real life design patterns that can improve your software solution and drive your product to a golden state","Almost all in software industry agrees that design patterns are important and beneficial for success of any project. Some regard them as an essential part of ‘good practices”. In a perspective there is something sexy and awesome in reading some code and recognize applied design patterns.
+On the other hand, more in the land of reality, most development efforts are done under various pressures, from vague specifications, short schedules, ridiculous time to market constraints and similar. As a result what is called good practices usually suffer and get substitute with just practices, or less.
+One of the things that fall in oblivion and somehow get lost from developers perspective, right after documentation and most probably side by side with tests, are design patterns. Both in design and architecture phase and implementation phase.
+There are numerous excuses reported by various developers why the design patterns are only consequence of implementation instead of  deliberate action of software architecture design in their projects.
+This is totally bizarre to not use the tool whose main purpose is to show success path in order to solve the encountered problem. It’s even more strange as we know that all of design patterns come out of experience and long process of real life validation.
+Regardless are we talking about design patterns or anti-patterns, they represent essence of the knowledge needed in order to overcome some obstacles in software we develop or in plain real life situations, usually both.
+Nowadays, the software solutions are more and more complex. The need to mimic the real life is greater and greater. Ergo the need to use and apply the proven solution from real life and software industry described as “design patterns“ should be more in our focus and part of our solutions.
+Knowledge to recognize the problem, the context and to pick appropriate design patterns will become essential for creating any worth mention solution.
+In this presentation I would like to share some of the real life design patterns that can improve your software solution and drive your product to a golden state.",Presentation,Serbia,all as they will grasp the importance of design patterns and how to use them to be golden,"design patterns, software development, architecture  ",Code in slides
+2016-05-07 14:50:00 +00:00,Andrei Pfeiffer,andrei@upsidedown.ro,Testing from the proper angle,"This talk is about understading the trade-offs between unit-testing, integration testing, end-to-end testing and manual testing.","Writing code without tests is like taking a sky dive without checking your parachute.
+But writing tests from the wrong perspective is like taking your umbrella when it’s sunny outside.
+This talk aims to demystify the difference between the various layers and types of testing and choosing the proper approach.",Presentation,English,people with some experience in unit testing or integration testing or end to end testing,"testing, unit tests, integration tests, end to end",Code in slides
+2016-05-07 14:45:01 +00:00,Andrei Pfeiffer,andrei@upsidedown.ro,Eradicating testofobia,This talk is for all developers that don't write tests.,"Writing code without tests is like taking a sky dive without checking your parachute. This is also known as ""programming by coincidence"".
+People usually tend to cut corners when it comes to writing tests, and treat them as 2nd-class citizen.
+This talk is a myth buster for all common excused to avoid testing.",Presentation,English,developers that don't write tests & developers that would like to write tests but have various excuses not to start,"testing, development, tdd, maintenance, refactoring",No code
+2016-05-05 15:33:54 +00:00,Mark Heckler,mark@thehecklers.org,Living on the Edge (Service): Bundling Microservices to Optimize Consumption for Devices with Spring Cloud & Netflix OSS,"Devices (phones, tablets, etc.) already consume most services/data, but they have to get those services somewhere! In this session, learn how to use proven patterns & open source software to quickly and effectively build edge services - API gateways - that marshal & streamline communication between your key services and end-users with devices in hand. The presenter will demonstrate how to develop & manage microservices & expose them via an edge service, securely, using OSS tools employed by Netflix to keep movies streaming globally 24x7.","Devices (phones, tablets, etc.) already consume most services/data, but they have to get those services somewhere! In this session, learn how to use proven patterns & open source software to quickly and effectively build edge services - API gateways - that marshal & streamline communication between your key services and end-users with devices in hand. This session addresses vital points such as:
+
+* Leveraging OAuth2 for service security
+* Configuration services
+* Microservice registration and discovery
+* Circuit breakers for graceful degradation
+
+Additional topics discussed include logging & tracing, testing approaches, and migration patterns.
+
+The presenter will demonstrate how to develop & manage microservices & expose them via an edge service, securely, using OSS tools employed by Netflix to keep movies streaming globally 24x7.",Presentation,English + Java :),Participants will learn:  * how to quickly and effectively build edge services * how to integrate edge services with existing services * how to optimize for mobile devices * how to leverage edge services securely,"microservices, Spring, Boot, Netflix, Zuul, OAuth, edge, devices, mobile, live code",Live coding
+2016-05-05 15:31:35 +00:00,Mark Heckler,mark@thehecklers.org,Microservices Minus the Hype: How to Build and Why,"It's time to strip away the hype and speak frankly of the upsides and downsides of adopting a microservices architecture and why, with certain exceptions, the pros far outweigh the cons. The presenter will demonstrate how to build & integrate microservices applications using Spring Boot, various data sources, & REST resources built to task. Risks & mitigation strategies will be discussed & shown, including load balancers, circuit breakers, tests, & other mechanisms at your disposal to increase software quality.
+
+Leave this session knowing how and why to max out on microservices!","Few topics in software architecture discussions yield as much heat as that of microservices. Monolithic applications have dominated the landscape for years, and a large number of monoliths run a great many critical processes used to this day. More recently, companies with requirements for rapid release cycles and key ""ilities"" (maintainability, scalability, reliability, flexibility, extensibility) have chosen another approach, deploying functionality in more granular, API-driven modules: microservices.
+
+In this session, the presenter will strip away the hype and speak frankly of the upsides & downsides of adopting a microservices architecture and why, with certain exceptions, the pros far outweigh the cons. Topics include Domain Driven Design & bounded contexts, increasing quality & velocity, horizontal vs. vertical scaling, portability, & more. The presenter will then show how to build & integrate microservices applications using Spring Boot, various data sources, & REST resources built to task. Load balancers, circuit breakers, tests, & other risk mitigation mechanisms will be demonstrated & discussed.",Presentation,English + Java :),"German composer Carl Orff once said, ""Tell me, I forget; show me, I remember; involve me, I understand."" A key part of this session is a coding demo completed by the presenter with audience collaboration. This is not a high-level overview, nor is it a code dump; the goal of this session is for every participant to understand the numerous reasons for embracing microservices and how to do so.","microservices, architecture, Spring Boot, monolith, velocity, REST, JSON, live code",Live coding
+2016-05-05 15:27:57 +00:00,Mark Heckler,mark@thehecklers.org,"This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT? Businessing the S*** out of Transformative Development!","Cloud Native, containers, DevOps, microservices, etc.: we go to conferences & get excited about things that could revolutionize our development & change our organizational & professional lives! And then, we go home...and hit the wall. If you've ever asked yourself, ""This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT??!"", this is the session for you.
+
+Learn from an experienced software developer (who also happens to have an MBA) how to make your case to leadership, presenting management-ready justifications for changes in ""your world"" that will positively impact the business as a whole.","Cloud Native, containers, DevOps, microservices, and more: we go to conferences and get excited about the potential of so many things that could revolutionize our development and change our organizational and professional lives! And then, we go home...and hit the wall. If you've ever asked yourself, ""This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT??!"", this is the session for you.
+
+Learn from an experienced software developer (who also happens to have an MBA) how to make your case to leadership, presenting management-ready justifications for changes in ""your world"" that will positively impact the business as a whole. Topics include:
+
+* How would this change affect your organization's/group's/team's work?
+* How would this change impact (positively and negatively) your tech stack (internal considerations)?
+* How would this change contribute to recruitment/retention (external considerations)?
+* Seeing beyond your borders: how could this change positively - and negatively - affect the business?
+* Putting numbers with it: pros, cons, and caveats
+
+Come to this session to dramatically boost your chances of making an actual, positive change to your organization!",Presentation,English,"Attendees will leave with a better understanding of useful software development concepts and how they can be applied to their organization's development teams to positively impact their organizations' bottom line. More importantly, participants will learn how to tie those concepts directly to business measurements and financial formulas and build compelling business justifications.  Attendees will return to their organizations with a much better chance to _execute_.","business justification, business case, software development, ROI, NPV, payback, leadership",No code
+2016-05-04 10:56:21 +00:00,Jaksa Vuckovic,jaksa.vuckovic@zuehlke.com,Why are Actors Great?,This is the second part of the introduction to actors. Here we do a hands on session to learn to take advantage of using actors to develop concurrent and distributed fault tolerant systems. We will teach how to use actors properly avoiding the major pitfalls that a lot of novices make on their first approach to the actor based model.,"Concurrent and distributed development has always been notoriously difficult to test. Methods like ad-hoc correctness proofs, temporal logic and model checking have been used for decades, but have always had downsides which prevented them from going mainstream. In this workshop we build on the theory presented in ""why are actors terrible"" and teach a more efficient and effective method for building testable actor based systems. The approach presented uses some properties of the actor model and builds on TDD, property based testing and model checking in order to allow effective testing of distributed systems.
+The workshop will include some hands on development using java+akka (or scala+akka if preferred). Attendees will have to use their laptops or work in pairs. We will try to build and test a correct implementation of a simple distributed algorithm such as the two phase commit. Ideally it should be 4 hours but we can adapt. Attendees will learn how to take advantage of the benefits of the actor model.
+",Workshop,English,intermediate to senior developers and architects,"actors, akka, testing, distributed systems, concurrency, java, scala",Live coding
+2016-05-04 10:53:33 +00:00,Jaksa Vuckovic,jaksa.vuckovic@zuehlke.com,Why are Actors Terrible?,"This is the first part of the introduction to actors. Here we will cover only the negative side of actors. This presentation is complemented by a workshop which teaches ""proper"" actor development. We will be debunking some common myths about the actor model. This talk is intentionally polemical and presents only one side of the story.","As distributed systems are becoming the norm, more demand rises for tools and methods for reliably building such systems. However, there is no silver bullet and just adopting a tool, technology or model does not make it easy to build reliable distributed systems. The actor based model existed since the 70s, but its popularity rose just in the last decade thanks to Erlang and Akka. As the actor model is adopted by more developers so are the misconceptions related to it. These misconceptions arise from marketing material and a general lack of understanding of distributed systems theory.
+In this presentation we will analyse and debunk some myths that are typically attributed to the actor model such as:
+1. ease of development
+2. lack of deadlocks
+3. the readability of the code
+4. the implicit fault tolerance
+5. high parallelisation
+This presentation does not present a fair view on the actor model and relies on a complementary workshop ""Why are actors great"" to mitigate that. Attendees will better understand when and why to use the actor model and the associated costs and benefits. The ""how"" part of using the actor model will be presented in the ""Why are Actors Great"" workshop.",Presentation,English,intermediate to senior developers and architects,"actors, akka, distributed systems, concurrency",No code
+2016-05-04 07:44:31 +00:00,Igor Spasić III,igor.spasic@gmail.com,"Now when I do microservices, what's next?",Concept of microservices is simple. Implementation of production-grade applications based on microservices is hard.,"Everyone today is high on microservices. Even my cat gives me an API to feed her. But if you want to build an application, a real application, using microservices you will probably bump into many challenges you need to solve. Then you might realize why your devops friend does not have a girl and has adopted new sleeping schedule. This is the story about hard part of the microservices.",Presentation,English,Developers. They will learn. Maybe. And my cat.,"microservices, docker, devops",No code
+2016-05-04 07:20:43 +00:00,Jan Paul Posma,me@janpaulposma.nl,Managing implicit CSS dependencies,"In most programming languages, it is guaranteed that objects behave in the same way, no matter where they are instantiated. Unfortunately we don’t have this guarantee with web programming, when composing components/views, because of how CSS works. This becomes problematic when building large web applications. 
+
+In this talk I’ll cover why some CSS features made sense for static pages, but are harmful to modern single-page applications; a rapid-fire set of tricks to guarantee encapsulation of your components (including positioned elements, z-index, inherited properties, selectors, block formatting context, margin collapsing, flex box, and more); and ways of organising your JS/CSS to speed up development (such as combining JS and CSS, BEM/css-loader, live-updating sandboxes, linting, and visual regression testing).","Attendees will learn:
+- why and how tons of CSS functionality breaks guarantees of encapsulation that we see as given in other languages, and that are still rarely talked about or misunderstood (even by programmers who do care about these things in other languages!);
+- practical ways of adding back these guarantees in CSS;
+- how to spot code that breaks or weakens encapsulation, using examples in CSS, but transfers to other languages;
+- a deep understanding of the most misunderstood parts of the the browser's rendering engine, such as the visual formatting model, stacking contexts, margin collapsing, rule specificity — explicitly *not* the hot new tricks like flex box, they are well-covered elsewhere;
+- if time permits, how to solidify these practices, using linters, visual regression testing, and some new tools, like inlining CSS in JS and Webpack's css-loader;
+
+- and of course, learn that like JS, CSS has a weird history, but makes for a neat language, when used properly. It's time we bring higher engineering standards to the language that powers rendering of the web!",Presentation,English,People developing single-page web applications / anyone interested in CSS,"css, engineering, architecture, best practices",Live coding
+2016-05-03 14:11:12 +00:00,James Thomas,james@jamesthom.as,Microservices Without Servers,"Developers spend too much time maintaining servers, rather than writing software. 
+Recently, new cloud solutions, known as ""serverless"" platforms, allow developers to write microservices without servers. What does a ""serverless"" application look like, how do you create one and what are the challenges?
+
+In this session, we'll introduce the ""serverless"" stack, showing developers how to write microservices using these platforms. We'll look at migrating existing applications over to this new stack, common issues and challenges that you need to consider and tools to support serverless development.","Servers are killing your productivity.
+
+Rather than building better software for your users, you end up constantly distracted by maintaining computers.
+
+Wasn't the ""cloud"" supposed to fix this? It sounded so promising until we realised it was just renting VMs in someone else's datacenter. We couldn't escape ""servers"".
+
+Until now...
+
+With the launch of services like AWS Lambda, Google Cloud Functions and OpenWhisk, you can now run code on the cloud without servers!
+
+These platforms let you build stateless microservices, combining APIs with business logic, without servers. Microservices are executed on-demand, in milliseconds, rather than having to sit idle waiting for incoming requests. Users pay only for the raw computation time used.
+
+...but how?
+
+In this session, developers will learn how to write “microservices” for a popular serverless platform, understanding the capabilities and constraints for the platform. We’ll look at common challenges, such as handling static file hosting, exposing services as public APIs and managing application dependencies, before explaining the solutions. Exploring emerging “serverless” design patterns will give developers the knowledge to build application architectures using these new platforms.
+
+This session is aimed at software developers experienced in building traditional backend web applications, who want to learn how to build microservices without servers.
+
+If you’re spending too much time managing computers, rather than writing software, come to this session to learn how to banish your servers from application development forever!",Presentation,English,"Software developers experienced in building traditional backend web applications, who want to learn how to build microservices without servers.","serverless, cloud",Live coding
+2016-05-03 14:05:38 +00:00,James Thomas,james@jamesthom.as,Internet of (JavaScript) Things,"What do you need to know to build Internet of Things applications? Embedded C? Soldiering Iron skills? Low-level controller programming?
+
+Wrong. 
+
+There's an incredible ecosystem of tools, libraries and platforms to help developers build their own Internet of Things solutions using nothing more than humble ol' JavaScript.
+
+In this talk, I'll teach developers how to use popular open-source tools to build their own solutions. We'll look at interfacing with common consumer products, before explaining how to hook up almost any device and then scaling solution with MQTT.","Why do you need low-level programming experience, hardware hacking skills and the ability to speak hexadecimal to build applications for the ""Internet of Things""? Can’t we just use JavaScript?
+
+Actually, you can!
+
+This session will introduce the open-source tools for “wiring” the Internet of Things using JavaScript. Once we’ve learnt to control hardware devices from JavaScript, we’ll show you how to use these tools to build applications combining hardware devices with web APIs. We'll explain the messaging protocols that allow us to connect remote devices over the Internet before demonstrating how to use the cloud for scaling applications to support thousands of simultaneous devices.
+
+This practical session will teach developers the tools, platforms and protocols needed to create ""Internet of Things"" applications powered by JavaScript. If you want to build applications connecting devices without breaking out the soldering iron, this session will show you how!",Presentation,English,"JavaScript developers, front-end or back-end, who want to play with building IoT solutions. They will learn the tools and libraries to help them construct custom IoT apps without breaking out a soldiering iron!","iot, javascript",Live coding
+2016-05-03 08:07:23 +00:00,Nenad Bozic,nenad.bozic@smartcat.io,FUNCTIONAL TESTING OF RESTFUL APPLICATIONS - TOOLS AND TECHNIQUES,"This talk is about functional testing of application which have REST API. It consists of three parts, first part is setting a stage and talks about blackbox testing and explains tools you can use to do it. Next part is talking about dependencies and how to cut them off with graybox testing and last part is about bringing tests closer to business with DSL language. Some of tools covered in this talk are Cucumber, WireMock, Spring Retry mechanism.","Rise in popularity of the microservice architecture on one side and need to have the server which has many clients (mobile, web, machine to machine) brought both the challenge and the opportunity to better test RESTful applications on level of features. Main feature of RESTful application are exposed endpoints which enable creating test application as REST client which will view our application as blackbox. Test application can prepare input and wait for output which can be compared against expected one.
+
+In this presentation we will give overview of types of test you can do, concentrate on blackbox testing over REST Api, touch the terms of whitebox testing and graybox testing and why later approach is useful for external dependencies outside of our control and explain why you should use tools such as Cucumber to better communicate features with business people. Presentation will walk through our experiences and how we overcame problems along the way.
+",Presentation,English,Software engineers and leads searching for good stack to test applications on API level.,"""microservices"", ""testing"", ""API"", ""monitoring"", ""blackbox testing""",No code
+2016-05-02 08:47:29 +00:00,Christopher Batey,christopher.batey@gmail.com,The Java developers' guide to asynchronous programming,"
+Blocking/synchronous programming has been the norm in Java. However this programming model has a major limitation: it requires the use of a thread per concurrent request. This means that the number of requests you can process concurrently cannot exceed the number of threads, which limits scaling. This talk will explore how an asynchronous programming model can be used to avoid this limitation. ","We'll start with an introduction to asynchronous design and motivations, then there will be a live coding session where we will build an example service that calls out to another HTTP service and a database without blocking.
+
+We will cover the following tools:
+- The Java Future
+- New in Java 8: The CompletableFuture
+- RxJava Observables
+- The async Servlet, Spring and JAX-RS APIs
+- The Ratpack Promise
+
+The following common patterns will be demonstrated:
+- Merging multiple concurrent calls into a single result
+- Returning a result when a subset of multiple concurrent calls return without blocking waiting for the rest (e.g. saving an audit log without blocking the user request)
+- Executing multiple concurrent calls and creating a result from the one that returns first
+- Streaming records in the order they come from an external system 
+
+We'll finish up with a quick look at some of the tools we didn't have time to cover in depth such as Akka and Vert.x.
+
+By the end of the session you should be aware of the popular tools you have for non-blocking programming in Java and when and why you should use them.
+",Presentation,English,"Java deveopers who haven't yet looked in detail at non-blocking tools/frameworks like Netty, Akka, Ratpack but think  they will need to know about them in the future.","async,future,completablefuture,non-blocking,ratpack",Live coding
+2016-05-02 08:40:51 +00:00,Christopher Batey,christopher.batey@gmail.com,"Docker and the JVM, a good idea?",Containers are the latest hype. It goes without saying that Docker for the development environment is a good thing but what about running our production Java applications inside a container? This talk will cover all the pain points from running hundreds of JVMs inside containers over the last year and you should leave with a good understanding of how Docker uses Linux features such as namespces and cgroups under the covers.,"What is the point of putting a JVM inside a linux container?
+
+One of the well known benefits of containers is that they provide a self-contained way to package and ship applications. However, it is already common practice to build fat executable jars that require only a JRE so what advantages would containers actually offer a pure Java shop?
+
+
+
+On my latest project our motivation is  efficient utilisation of hardware. We used to run single purpose VMs, which makes sense for  production but for our countless test environments it became prohibitively expensive. Even IaaS is still too slow to provision new environments and bootstrap new applications. This talk will be focusing on the downsides and lessons learned from running JVMs inside containers.
+
+
+We will cover the following topics:
+
+
+* The benefits, downsides and complexities of running a Java application inside a container.
+
+* Tuning memory limits taking into account Heap, Native memory, Metaspace, Stacks to avoid being OOM killed
+
+* Tracking native memory with jcmd
+
+* Avoiding the container swap problem
+
+* Operating system tools that are/are not container aware
+
+* What tools should you include in your container for debugging/analysis e.g. the Swiss Java Tools https://github.com/aragozin/jvm-tools
+
+* External tools for monitoring containers
+* Tuning thread pools for various frameworks/servers such as Jetty, Tomcat, Ratpack, GC
+
+* Motivation for moving to non-blocking frameworks like Ratpack to avoid the cost of one thread per request",Presentation,English,Java devs. Ops people running any JVM program in production. Everyone should get a good understanding of how containers work under the covers and the main pain points.,"docker,rkt,containers,jvm",Code in slides
+2016-05-01 15:38:57 +00:00,Stéphanie Walter,stephanie.walter.pro@gmail.com,"Forget about apps, the future is in the mobile browser","Do you dream of pushing notifications to your website users to tell them the conference they signed up for is starting in 10 minutes? Of a browser-based chatting system with video and audio directly available without needing to download a single mobile application or plugin? Of transforming your website into a fully functional web app with a launch icon and a cache system? Let's check out a few tangible examples to see what HTML5 APIs and CSS3 will achieve for our mobile browsers in a really close future.
+","Our browsers have evolved a lot, and they are now able to do many things that only native applications could do. I’m a UX Designer, not a Developer. I know how a service worker works, I’m not able to write the code. So this talk will NOT be about how to write code.. WebRTC, getUserMedia, WebSockets, Service Worker, Push notifications, Offline, Geolocation : those technologies are great, they are a lot of tutorials that explain you how to code with those, but I think we don’t get enough of “ yeah what can we actually do, in real life, for our users, with those lines of code “. 
+So, I want to show real case studies, tell the story of a user and see what can be achieved today (and in a near future) in our mobile browsers, how can we use those technologies to make her life easier. I’ll be using the example of a user that will attend a conference, and show how to transform the conference website into a full enhanced experience using progressive webapps of course as well. I deeply think that the future is in the browser, that we might not need an app for everything. And I want to share this with as many developers and designers as possible.
+",Presentation,English ,"Design, but also developers who are curious about what we can do now (and in the future) in our mobile browsers","mobile, future of mobile, webapps",Code in slides
+2016-05-01 15:20:52 +00:00,Stéphanie Walter,stephanie.walter.pro@gmail.com,Help me use your mobile form!,"Sure, we all think that everybody knows about HTML5 forms by now, right? And yet, why are so many websites doing it wrong and damaging their user experience? In 2016, humans and robots expect better! Let’s look at some essential things regarding input types, form elements and formats, to improve your mobile experience. And as a fun side note, we’ll go beyond classic form elements to make unique and enjoyable web applications and websites. ","(I want to show a few real example of bad practise regarding web forms I saw on real websites and show people : 
+- why this damages the UX
+- how to make it better
+
+I also want to go deeper into HTML5 form elements and not only show where and when to use those, but also how to use them properly (like disable autocomplete and autocorrect on some fields where it does not make sense). I will show real demos.
+As a last point, I want to go beyond HTML5, show that sometimes the most obvious solution is not the best one for users (like for country list, a list of 70 countries is not usable on mobile, your user would benefit from an input with complete suggestions for example), and show all the nice things you can do so that users won't need to type anything (geolocation, scanners, etc.)
+Takeaways : some concrete best practices that are a mix between usability and HTML and a few examples for real websites I've worked on.
+",Presentation,English (can speak French too if you want ^^),"Designer who want to know a little bit more HTML5 forms, front-end who sometimes need to make UI/UX decisions","HTML5, UX, form, mobile",Code in slides
+2016-04-30 22:04:30 +00:00,Myriam Jessier,jessiermyriam@gmail.com,E-commerce search patterns: there's a method to the shopping madness,"Did you know there are 12 distinct search patterns we use as humans when we look (or shop) for things online? Most internal search engine design don't account for this incredibly wide range of ways people try to find things online. This talk aims to help you make the delightful content, cupcakes or cat Tshirts that you sell more visible and relevant to the customers that are looking for them! How can you do that? By tweaking the way you approach search servers to reflect UX patterns. This talk will show you how!
+","There are 12 distinct search patterns that have been observed during user testing. These patterns are often combined by humans in order to find things online, especially when they are shopping.
+
+One of the great things about internal search on any e-commerce website is that it's an investment that can't be easily copied by the competition...and it increases revenue because it really helps customers find what they need.
+
+Ever been frustrated because you get a 0 result page when you KNOW this website sells what you are looking for? Well, it's often because the site's internal search doesn't work for humans. 
+
+How is it that I can go on Canadian Tire (an online shop that carries almost every type of product in Canada) and not find something to dry my hair? Simply because they only have one word for the product (hair dryer) whereas people have different spellings and different words (hairdryer, blow dryer, etc.). That's a type of search pattern (synonym search) that can be easily handled.
+
+That's one of the many things that bug me as a customer and as someone who's been working in web for a long time. Why? Because I know how we can fix it and the solution isn't that hard!
+
+",Lightning talk,English,,,No code
+2016-04-30 21:38:39 +00:00,Myriam Jessier,jessiermyriam@gmail.com,The MacGyver guide to usability testing,"MacGyver is a different kind of hero: he doesn't use weapons, he's afraid of heights, and he's an expert at making complicated machines out of ordinary things. In this talk, we want to show how YOU can create and carry out a usability test. Just like MacGyver, we need you to be a different kind of hero: someone who doesn't hide behind code, someone who may be afraid of users (sometimes) and someone that can make an impact by improving how humans use your app or website. This talk is like a Swiss army knife - it will provide you an easy way to find usability problems and learn from real users' struggles. ","So, before I found myself filling out this call for speakers, I asked for some feedback from friends that attend Voxxed Days. This is the most recent one:  ""YES. YES! THIS PLEASE!"".
+
+I want to provide some solid insights and clear steps to help anyone in the audience achieve 3 things:
+- convince internal stakeholders to say yes to usability testing
+- create and plan a usability test
+- leverage insights to improve UX
+
+Here is a quick preview:
+
+- tools (to recruit participants, to record them, etc.)
+- process:
+step 1: determine tasks
+step 2: prioritize the tasks
+step 3: create scenarios
+step 4: recruit participants
+step 5: TEST!
+step 6: gather insights
+step 7: fix problems
+- tips
+- how to integrate usability testing at all stages ",Presentation,English,I think anyone that makes things with end users that happen to be human could be interested by this talk. ,"UX, usability testing",No code
+2016-04-29 21:18:49 +00:00,Martin Toshev,marto8808@gmail.com,JVM++: The Graal VM,In this session we will provide an overview on how is the Graal VM evolving from an Oracle research project to a potential candidate for subsequent JVM releases. During the talk we will provide details on how does the Graal VM aim to improve the runtime compilation of the JVM in order to bring the performance of Java to interpreted languages.,"In this session we will provide an overview on how is the Graal VM evolving from an Oracle research project to a potential candidate for subsequent JVM releases. During the talk we will provide details on how does the Graal VM aim to improve the runtime compilation of the JVM in order to bring the performance of Java to interpreted languages. The first part of the talk discussed in general what is the Graal VM in general. The second part of the talk discusses details around the Graal VM along with some benchmark on how does it improve the performance of the JVM in some particular cases and how does the Graal compiler cooperate with the Java compiler API targeted for Java 9  (proposed as JEP243).
+",Presentation,English,mid-level to senior Java developers,"jit, performance, graal",Live coding
+2016-04-29 21:11:37 +00:00,Martin Toshev,marto8808@gmail.com,Spring RabbitMQ,"In this session we will provide a practical overview of the support that the Spring framework provides for the AMQP protocol and in particular - 
+the utilities provided by the framework for integration with the RabbitMQ message broker. Several demonstrations during the talk will be provided in order to illustrate the presented concepts.","In this session we will provide a practical overview of the support that the Spring framework provides for the AMQP protocol and in particular - 
+the utilities provided by the framework for integration with the RabbitMQ message broker. Several demonstrations during the talk will be provided in order to illustrate the presented concepts. The first part of the talk serves as a recap on RabbitMQ and describes why messaging is important, what is the AMQP protocol along with its basics, what are the different types of units in AMQP such as exchanges, bindings and queues and what are the different types of messaging patterns that can be established with them by means of RabbitMQ, what are the additional types of units used by the message broker such as vhosts, users, parameters and policies. The first part ends with an overview on how clustering and high availability are implemented in RabbitMQ and a practical demo. The second part of the talk builds upon the first one and discusses the general support provided by the Spring Framework for integration with RabbitMQ and in particular - the Spring AMQP framework that provides the RabbitAdmin, RabbitTemplate and listener container utilities as wrappers around the RabbitMQ client library. The second part of the talk ends with a practical demo on the Spring AMQP utilities used via XML and annotation-based configuration.",Presentation,English,mid-level to senior Java developers,"rabbitmq, spring, amqp",Live coding
+2016-04-28 15:37:09 +00:00,Ryan Baxter,rjbaxter@us.ibm.com,Building An IoT App Using MQTT,"MQTT is an standards based, lightweight pub/sub messaging protocol ideal for internet of things use cases.  With implementations in a number of different languages, using MQTT in your applications is simple and strait forward.  In this session we will build an application that connects to an MQTT broker and can receive data from and issue commands to a number of different  IoT devices.  We will cover topics related to security, scalability, device management and much more.  If you are looking for an easy to use protocol for your IoT apps be sure to check out this session.","MQTT is an standards based, lightweight pub/sub messaging protocol ideal for internet of things use cases.  With implementations in a number of different languages, using MQTT in your applications is simple and strait forward.  In this session we will build an application that connects to an MQTT broker and can receive data from and issue commands to a number of different  IoT devices.
+
+Topics That We Will Cover Include:
+*An overview of MQTT
+*The different types of messages you can send through an MQTT broker
+*How to send messages securely through the broker
+*How you can use MQTT to perform device management
+*Scalability concerns (ie how many devices can the broker handle and at what frequency can you send messages)
+
+The cloud will also be a focus of this session.  Since the typical scale of IoT applications often require the cloud we will take a look at how cloud based MQTT solutions can make building IoT apps even easier.
+",Presentation,English,Anyone interrested in building IoT applications.  Attendees will learn about MQTT and how it can be used to build and IoT solution.,"iot, cloud, standards",Live coding
+2016-04-28 13:58:13 +00:00,Amir Golan,agolan@amazon.de,DevOps on AWS: Deep Dive on Continuous Delivery and the AWS Developer Tools,"Continues delivery in the cloud, learn how you can automate build and test processes, that allow you to continuously deploy all code changes. ","Today’s cutting-edge companies have software release cycles measured in days instead of months. This agility is enabled by the DevOps practice of continuous delivery, which automates building, testing, and deploying all code changes. This automation helps you catch bugs sooner and accelerates developer productivity. In this session, we’ll share the processes that Amazon’s engineers use to practice DevOps and discuss how you can bring these processes to your company by using a set of AWS tools (AWS CodePipeline and AWS CodeDeploy, AWS OpsWorks). ",Presentation,English,"DevOps, Devs, Operations","DevOps, Pipeline, Configuration",Code in slides
+2016-04-28 07:34:50 +00:00,Mario Fusco,mario.fusco@gmail.com,g ∘ f patterns,"The book of design patterns known as Gang of Four has been a kind o Bibble  for all the developers of my generation. Its main pro has been giving us a common vocabulary: when a programmer says ""here I used a strategy pattern"" all colleagues know of what he speaking about. Nevertheless the biggest issue with this is that almost all pattern listen in that book, especially the behavioral ones, are a only workaround for a missing abstraction: higher order functions. The introduction of lambda expressions in Java 8 finally allows all Java developers to remove this no longer necessary and cumbersome object oriented infrastructure from their code. The purpose of this talk is showing, through a series of live coding examples, how the most common GoF patterns can be rethought and reimplemented in a simpler and more concise functional way leveraging Java 8 lambdas.","In this presentation I have no slides, just live coding. I'll start with the canonical implementations of 8 GoF patterns (Command, Strategy, Template, Observer, Decorator, Chain of Responsibility, Interpreter, Visitor) and rewrite it in a more functional style using Java 8 lambdas.",Presentation,English,Developers,"""design patterns"", ""functional programming""",Live coding
+2016-04-27 19:31:16 +00:00,Liviu Costea,email.lcostea@gmail.com,Edge Performance with In-memory NoSQL,"first we started with memcache, the veteran of in-memory NoSQL. Our goal was always auto scaling on AWS and that's when we started using Redis, around 2 years ago, and it has our session, cached items and static data. But then we had bigger needs and for those we recently discovered Aerospike","We are going to talk about in-memory NoSQL databases and how they can integrate in your current architecture in order to deliver high performance applications to your users. These can be used as session storage, a cache or a real database. We will talk at least about Memcache (the veteran), Redis (the mature) and Aerospike (the new guy), see where they excel and how you can add them to your existing stack.
+
+
+This presentation was first held at iasi.codecamp.ro, April 2016.
+
+It can be also made into a workshop, especially on Redis, where we install it on a CentOs, configure it and see how to model the data for it. And then we do troubleshooting of different scenarios that can appear. And we will compare it to other similar options: memcached, aerospike, couchdb. It will take around 2 - 3 hours.
+I held such a workshop at Voxxed Days Bucharest, March 2016.
+",Presentation,English,Intermediate Developers. They will see the main problems and possible solutions when stuff from your memory is on another process/server.,"NoSQL, Redis, Aerospike, Cloud",Live coding
+2016-04-27 13:38:41 +00:00,Milen Dyankov,milendyankov@gmail.com,What's NOT new in modular Java,"With Java 9 and Jigsaw project around the corner (this time apparently for real), we finally need to stop pretending we can simply ignore the concept of modularity in Java! The thing is - modularity is NOT just some new framework! Neither it is a simple set of APIs! It's a complex concept that has been around for almost as long as the industry itself. So in this talk I'd like to take a step back and reason about the fundamental idea of modularity in Java by comparing the concepts of Jigsaw with other Java modularity approaches and implementations that have been around for quite some time.","With Java 9 and Jigsaw project around the corner (this time apparently for real), we finally need to stop pretending we can simply ignore the concept of modularity in Java! The thing is - modularity is NOT just some new framework! Neither it is a simple set of APIs! It's a complex concept that has been around for almost as long as the industry itself. So in this talk I'd like to take a step back and reason about the fundamental idea of modularity in Java by comparing the concepts of Jigsaw with other Java modularity approaches and implementations that have been around for quite some time.",Presentation,English,Java developers interested in modularity or simply curious about Java 9 and jigsaw,"Java, modularity, jigsaw, osgi",Code in slides
+2016-04-26 21:08:26 +00:00,DEJAN DIMIC,dejan.dimic@gmail.com,The Magic of new Storytelling,"As humans we tell stories, our own stories.
+
+Some of them are professional, some of them are personal. Nowadays, these stories altogether constitute the Web.
+
+As Frank Rose stated: ""Stories are recognizable patterns, and in those patterns we find meaning. We use stories to make sense of our world and to share that understanding with others. They are the signal within the noise.""
+
+The Semantic Web,  aided by Internet of Things emerging needs and capabilities will provide us the tools and means to make sense of our world in a new and more profound  way with the possibility to share that understanding with others.
+
+
+Unless we start to learn more about this new pattern of storytelling, it will be difficult to lead to the next true leap forward in the Web evolution, prosperity and business opportunities.
+
+Let me show some of ""The Magic of new Storytelling"" and light the spark of your future bestseller. 
+","As humans we tell stories, our own stories.
+
+Some of them are professional, some of them are personal. Nowadays, these stories altogether constitute the Web.
+
+As Frank Rose stated: ""Stories are recognizable patterns, and in those patterns we find meaning. We use stories to make sense of our world and to share that understanding with others. They are the signal within the noise."" 
+
+A successful storytelling consist of the narrative (one who tells story), the conceptual (one who creates the theme), the stylist (one who decorates the story), and the systemic (one thinker who constructs and directs the distribution of the story).
+
+Information always means something. It becomes a signal that acquires relevance in the right context.
+
+The Semantic Web, known as Web 3.0 is expected to dominate the next generation of the intelligent web, encompassing Semantic processing, machine learning, Artificial Intelligence and cognitive computing.
+
+The Internet of Things (IoT), with the connection of billions of devices to various systems is expected to emulate basic “reasoning” and “inferencing” similar to the functioning of the human brain.
+
+The key elements for this reasoning is not the connection of devices to servers. It is the ability for a system to streamline their data collection. For this data to be useful, the sending and receiving systems must all be able to understand it.
+
+Semantic Web methods help us describe various piece types of the information puzzle. Once those pieces are described, machines can help us more.
+
+The modern data analysts can improve the understanding of the data by utilising contextual support information, using more automated solutions, that provide better quality data and meaning for more comprehensive and predictive decision making in research and commercial investigations.
+
+Ergo, new stories are destined to be find and old ones are enthusiastic to get a new perspective and presentation.
+
+Unless we start to learn more about this new pattern of storytelling, it will be difficult to lead to the next true leap forward in the Web evolution.
+
+
+Tomorrow’s businesses need to take advantage of semantic search or humanity will be stuck in stories already told.",Presentation,english,"software developers, software architects, business developers and general inquisitive population","Semantic Web, Internet of Things, business opportunities, Web 3.0",Live coding
+2016-04-26 19:57:13 +00:00,Jens Deters,jens.deters@codecentric.de,MQTT: The glue for the Internet of Things,"This session is about a real MQTT-driven IoT stack with several sensors, remote-controlled switches. Via a secured connection to a remote MQTT broker I will show how data measured by microcontroller driven sensors transmitted and then displayed by JavaFX based MQTT applications on different platforms (desktop, embedded and mobile devices) and custom NeoPixel driven gauges.","A full IoT stack with sensors, actors and (mobile) clients glued together by MQTT  
+
+The Internet of Things becomes more and more part of our life. A fast growing number of different kind of devices provide programming interfaces. The more heterogeneous these environments are, the more increases the need for consistant transmission and control protocols. 
+
+By end of the 1990s IBM invented the Message Queue Telemetry Transport called MQTT.
+MQTT is a very lightweight, easy to use ""publish/subscribe "" M2M / IoT communication protocol that rapidly gains importance in the IoT ecosystem. 
+
+This session is about a real MQTT-driven IoT stack with several sensors, remote-controlled switches. Via a secured connection to a remote MQTT broker I will show how data measured by microcontroller driven sensors transmitted and then displayed by JavaFX based MQTT applications on different platforms (desktop, embedded and mobile devices) and custom NeoPixel driven gauges.
+
+Additionally I will introduce how to use MQTT.fx for testing, simulating, and debugging MQTT communications. MQTT.fx is a free desktop application available for Windwos, OS X and Linux.
+
+Session schedule:
+- Introduction of the IoT network architecture and the involved components
+- Introduction of the MQTT protocol
+- Overview of securing MQTT traffic
+- Overview of the very active MQTT ecosystem
+- Introducing MQTT.fx
+- Live demo
+",Presentation,English,I assume a certain interest in IoT protocols. No programming knowledge required.,"MQTT, IoT, MQTT.fx, JavaFX, ",No code
+2016-04-26 19:57:13 +00:00,Jens Deters,jens.deters@codecentric.de,MQTT: The glue for the Internet of Things,"This session is about a real MQTT-driven IoT stack with several sensors, remote-controlled switches. Via a secured connection to a remote MQTT broker I will show how data measured by microcontroller driven sensors transmitted and then displayed by JavaFX based MQTT applications on different platforms (desktop, embedded and mobile devices) and custom NeoPixel driven gauges.","A full IoT stack with sensors, actors and (mobile) clients glued together by MQTT  
+
+The Internet of Things becomes more and more part of our life. A fast growing number of different kind of devices provide programming interfaces. The more heterogeneous these environments are, the more increases the need for consistant transmission and control protocols. 
+
+By end of the 1990s IBM invented the Message Queue Telemetry Transport called MQTT.
+MQTT is a very lightweight, easy to use ""publish/subscribe "" M2M / IoT communication protocol that rapidly gains importance in the IoT ecosystem. 
+
+This session is about a real MQTT-driven IoT stack with several sensors, remote-controlled switches. Via a secured connection to a remote MQTT broker I will show how data measured by microcontroller driven sensors transmitted and then displayed by JavaFX based MQTT applications on different platforms (desktop, embedded and mobile devices) and custom NeoPixel driven gauges.
+
+Additionally I will introduce how to use MQTT.fx for testing, simulating, and debugging MQTT communications. MQTT.fx is a free desktop application available for Windwos, OS X and Linux.
+
+Session schedule:
+- Introduction of the IoT network architecture and the involved components
+- Introduction of the MQTT protocol
+- Overview of securing MQTT traffic
+- Overview of the very active MQTT ecosystem
+- Introducing MQTT.fx
+- Live demo
+",Presentation,English,I assume a certain interest in IoT protocols. No programming knowledge required.,"MQTT, IoT, MQTT.fx, JavaFX, ",No code
+2016-04-25 18:54:13 +00:00,Yann Cébron,yann.cebron@jetbrains.com,Developing on the IntelliJ Platform,Learn how to extend IntelliJ IDEA (and its variants) with your own plugins.,"The OSS platform on which IntelliJ IDEA is based is used by a number of commercial as well as free IDEs, supporting a large number of programming languages and frameworks. And certainly Google's move to use it for their Android Studio increased its usage noticeably.
+
+So what kind of possibilities does it offer for plugin developers? What are the differences compared to Eclipse or NetBeans? What kind of extensions can be developed, is there tooling support and documentation available to guide me?
+
+After discussing these basic questions, we'll take a look at concrete samples: supporting new programming languages, frameworks, small utilities for daily routine tasks and much more. Maybe by now you already have an idea for your first plugin?
+
+And of course, IntelliJ Platform is open source itself, so we'll take a look how you can contribute to it. Or maybe you even want to start working on your own standalone IDE?
+
+You'll have the chance to take away a number of ""Lessons Learned"" as well as Best Practices from my own 10+ years of experience developing plugins for IntelliJ IDEA.",Presentation,English,Developers interested in extend IDEs based on the IntelliJ Platform,"IDE, Plugins, IntelliJ IDEA",No code
+2016-04-25 15:30:20 +00:00,Maximiliano Firtman,firtman@gmail.com,"The Offline Web, Push notifications and Progressive Web Apps","In this workshop we will get into practical examples of how to make an offline application for the web, using the latest specs.
+
+We will cover desktop and mobile webapps, using Appllication Cache, Service Workers, and other specs. We will learn how to detect connection and how to create a successful offline experience. Also, we will introduce Web Push for sending notifications when the user is not using your website and how to convert your website into a Progressive Web App.
+","If you want to improve the performance of your website, and your users' experience when using a bad connection or even when they don't have connection, new Web technologies can help you. In this Offline Web workshop we will cover with hands-on labs the technologies involved into an Offline Web experience including:
+
+* Offline and network problems detection APIs
+* AppCache 
+* Service Workers and Cache Storage API
+* Libraries, Frameworks and Debugging tools
+
+We will also cover how to use Push Notifications for the Web using Safari and Chrome (both desktop and Android), how to setup notifications server-side using Node.js to connect to browsers' servers. 
+
+Finally, we will cover the concept of a Progressive Webapp -promoted by the Chrome team- that will create an immersive offline experience that can compete with a native app in a mobile phone using these technologies. 
+
+We will end the day with a fully working Progressive Webapp, with offline support and push notifications.",Workshop,English,JavaScript developers,"offline,service workers,appcache,mobile",Live coding
+2016-04-25 15:23:25 +00:00,Maximiliano Firtman,firtman@gmail.com,Advanced Modern Web Workshop,"The Web changes so fast that sometimes Web designers and developers don't catch up with latest technologies. In this full day workshop we will see what you need to know today to create modern web experiences using latest compatible technologies for every device, including desktop and mobile browsers.
+
+The workshop is fully hands-on including live coding with the option to test everything live in your mobile phone without setting up any special server.","The workshop cover in one full day (6 hours) the following topics:
+* Current status of the mobile Web
+* The new responsive world
+* CSS mobile tricks: mobile-specific attributes, scroll snap, blur effects, scroll, position: sticky, and more
+* Responsive images and new formats
+* AMP: accelerated mobile pages
+* Media and AirPlay APIs
+* Hardware access: sensors, bluetooth, the physical Web
+* Touch, gestures, pointers, and 3D touch
+
+",Workshop,English,Web Developers and Designers with experience writing code,,Live coding
+2016-04-25 15:19:21 +00:00,Maximiliano Firtman,firtman@gmail.com,Breaking the Limits of the Web,"The web platform has evolved a lot in the last few years thanks to mobile devices. However not everyone is updated with the latest specs, meta tags, CSS additions, hacks and JavaScript APIs. In this video we will cover several practical examples of what you can do today for your users today, mostly on mobile browsers, that you might now know.
+","More than 15 hacks that will surprise you on mobile browsers, such as Safari on iOS, Chrome for Android, Samsung Browser, IE and Edge on Windows. Quickly, we will go though the problem, the code and the live demo of the feature working on a real device; you will also be able to test them live directly on your device.
+
+The list of examples covered includes:
+* Push Notifications
+* High Resolution Canvas
+* Streaming content to Apple TV and Google Cast
+* Latest APIs for hardware access and sensors
+* CSS Scroll Snapping & other additions
+* Using Web Speech and Synthesis APIs
+* Detecting 3D Touch and other pointer mechanisms
+* Responsive Images, formats and animations
+* Lock the screen orientation
+* The Web and IoT using Bluetooth
+",Presentation,English,"Web designers, web developers","mobile,css,javascript,hacks,frontend",Code in slides
+2016-04-25 15:15:30 +00:00,Maximiliano Firtman,firtman@gmail.com,The Physical World meets the Web,"New APIs and specs are now joining the Web that let us connect the Physical World with the Web. In this talk we will cover the Physical Web and the streaming of URLs through beacons, new APIs, such as Web Bluetooth and Web NFC, Geofencing, current and future compatibility and live demos with sensors and hardware examples.","We will start talking about the Physical Web standard including how to use Bluetooth beacons to broadcast a URL from a physical location. We will have beacons on stage so attendees will be able to test them directly on their mobile phones (Android or iOS). 
+
+Then, we will jump into the new JavaScript APIs available that will let us connect to Bluetooth devices and NFC with samples on stage and what's next, such as Geofencing and beacon discovery. 
+
+We will analyze the Progressive Webapp concept and how can conceptually replace native apps for IoT temporary usage, such as when you are in a conference room and you want to participate live with the audience.",Presentation,English,Web developers,"iot,bluetooth,beacons,javascript,mobile",Code in slides
+2016-04-25 15:12:58 +00:00,Yann Cébron/Stéphane Nicoll,yann.cebron@jetbrains.com,40 Tips & Tricks for Spring in IntelliJ IDEA,Learn the best tricks directly from the developers of Spring Boot/IntelliJ IDEA. Live coding ahead!,"IDEs can be powerful, but hard to learn. Some features are hidden or simply not well known.
+
+Let’s end this dilemma and make you more productive and efficient when working on Spring applications.
+Learn how to navigate, edit and perform refactorings across a variety of common Spring technologies.  
+
+You’ll leave this session with a whole stack of power tricks - right from the developers working on it.
+
+",Presentation,English,Developers familiar with Spring,"Spring, Tooling, IDE, Live Coding",Live coding
+2016-04-25 15:12:27 +00:00,Maximiliano Firtman,firtman@gmail.com,Understanding Mobile Web Today,"The mobile web changes every year. During 2016 we have several new challenges that we need to understand when we are working for the web, both client and server-side. In this talk we will cover the current state of the Web on mobile devices, the priorities, and the new things you need to understand.","We will cover several topics for Web developers:
+
+* What's AMP - Google's Accelerated Mobile Pages project- and Facebook Instant Articles and how to serve them
+* When to use Responsive Web Design and when to use other techniques
+* Libraries for mobile detection
+* New HTTP specs, including HTTP/2 and HTTP Client Hints for mobile detection
+* How to integrate your website with your native app serving meta data, files and HTTP headers
+",Presentation,English,"Web Developers, Web Designers","mobile,frontend,javascript",Code in slides
+2016-04-25 15:10:57 +00:00,Maximiliano Firtman,firtman@gmail.com,Extreme Web Performance Workshop,"In this tutorial we will first go through the state of the art in terms of browsers and mobile web views available, including what you might not know about web engines on Android and iOS today. We will also look at how to measure mobile and responsive websites, and how to detect when you are seriously harming performance, with real examples on screen that attendees can execute on their own mobile devices and live coding with basic labs.
+","During the first practical section of this tutorial we will look at the main techniques and tools available today, using real mobile devices on stage, covering:
+
+* Remote inspector tools
+* Traffic analyzers and bandwidth simulators
+* Profiling tools
+* When (not) to use emulators and simulators
+* Tracking with the Web Navigation Timing API
+
+Finally, we will see examples of techniques that are harming performance on the mobile web, and tips to achieve extreme web performance, including the use of HTTP/2 and the latest techniques to work with the illusion of performance.
+
+You will be able to test live, on your own mobile device, the most common performance issues on mobile websites, webapps, and hybrid apps.
+
+After this tutorial you will see the full picture of mobile engines today, how to measure performance on them, and best practices to deliver the fastest experience on mobile browsers and webapp platforms.
+",Workshop,English,"Web Developers, Web Designers, Full-stack engineers","performance,javascript,frontend,design,responsive",Code in slides
+2016-04-25 15:07:39 +00:00,Maximiliano Firtman,firtman@gmail.com,Delivering High Performance Websites,"Performance is the most important feature on a website today. In this talk we will explain why performance is a key issue, the relationship with SEO, the most important differences on mobile that most of us underestimate and how to achieve extreme performance, including new metrics, how to measure and analyze improvements. 
+","Web Performance Optimization (WPO) is a discipline for web designers, web developers, front-end and full-stack engineers. It involves the analysis of current performance -including the understanding of new metrics-, the implementation of change in the source code and inside server's configuration and the measure of improvements, including the new HTTP/2 protocol.
+
+We will also discuss how Responsive Web Design can potentially harm your performance and conversions if you don't pay enough attention to the details. 
+
+At the end of the talk the attendees will understand why Performance is really important, how to measure metrics today and a list of things to check and implement asap in their websites.
+",Presentation,English,"Web Developers, Web Designers, Full-stack engineers","performance,javascript,frontend,design,responsive",Code in slides
+2016-04-25 14:11:18 +00:00,Tim Perry,pimterry@gmail.com,Your Web Stack Would Betray You In An Instant,"Security is hard, everybody fails, and a single flaw can have catastrophic consequences.
+
+In this talk we'll look at recent disastrous security holes in a range of modern tools from common web stacks, to see how they work, and what we can do to avoid them when building and using such tools in future.","In this talk we'll be examining real life vulnerabilities, looking at genuine crippling security holes that exist in tools you've almost certainly used. We'll dig deeper into these and see just how they might be exploited to hurt real web applications, so you can understand the risks and the effectiveness of the mitigations available.
+
+Along the way we'll pick out some wider lessons too, looking at techniques and ideas that can help you avoid making the mistakes made in these tools, both when building such tools or using other people's components in your own codebase. 
+
+We'll cover tools from the Ruby, PHP and Java communities, and more, to find the common threads of failure that break systems everywhere. This will be detailed and technical, but this session doesn't require any previous specific language knowledge at all.",Presentation,English,Anybody developing software,"security, ruby, java, php, postgres, dns",Code in slides
+2016-04-25 13:50:18 +00:00,Tim Perry,pimterry@gmail.com,Microservice Pipeline Architecture,"It's tough to understand and get started with microservices until you've seen them in practice, looked at the challenges and benefits up close, and seen how they fit into different use cases.
+
+In this talk we'll look at microservice pipeline architecture, taking a deep look inside the content pipeline powering BBC Newsbeat. We'll examine the architecture, tools and processes that make this effective, the benefits, and our solutions to all the new challenges microservices can bring in practice.","This talk is an architectural case study, looking at the real-world rewrite of BBC Newsbeat, a high-profile responsive news website and pair of mobile apps. We'll look at the key challenges the BBC faced, a selection of high-level approaches (and the weaknesses with each), the finer details of resulting architecture we ended up with, and finally the problems, benefits and solutions we discovered en route.
+
+This talk assumes you're aware of microservices, but doesn't require any detailed implementation knowledge, and the talk is language agnostic.
+
+This isn't a theoretical microservices talk. Examining the principles and ideas behind these architectures is important, but it's difficult to implement them until you've seen one in practice and become familiar with the real benefits and challenges you'll face en route. In this talk you'll gain a deeper understanding of the reality, to help you design and build such architectures yourself. ",Presentation,English,"Developers, tech leads, software architects.","architecture, microservices, case study, aws",Code in slides
+2016-04-25 13:33:14 +00:00,Tim Perry,pimterry@gmail.com,Opening Open-Source with DevOps,"DevOps has made great strides, but not yet in open-source. In this talk we'll look at real examples of DevOps practices in use simplifying setup, development and deployment for open-source projects, and learn how you too can use DevOps to make open-source more open, for everybody.","DevOps techniques and tools have made great strides across the software world. There's more gains to be had though, and that's most obvious in the open-source world. Open source has never been the most accessible part of software development to jump into, but with DevOps we can fix that.
+
+In this talk we'll look at devops tools in practice in open-source projects, and how they can be used to solve common problems that projects like these face, examining a range of real-world challenges and solutions. We'll see how Vagrant, Ansible and Docker can be used to improve on-boarding in teams of distributed and independent developers, help developers who need to work in difficult testing and development environments, and improve deployment processes for the end users of these libraries.
+
+This talk won't assume familiarity with these tools in advance. We'll be looking at how they work from the basics, examining the problems they can be used to solve (in open source and elsewhere) , and seeing the steps required to solve these problems in practice for real projects. You'll leave with a better understanding of the DevOps options available, the benefits they can provide, and (hopefully) an urge to start using them to improve open source for everybody.",Presentation,English,"Developers, tech leads, beginner devops practitioners, and open-source advocates.","devops, open-source, docker, ansible, vagrant, deployment, testing",Code in slides
+2016-04-25 06:18:46 +00:00,Victor Rentea,victorrentea@gmail.com,The Art of Clean Code,"After 10 years of hard work experience in Java Enterprise applications, I started several years ago teaching various topics that I mastered (www.victorrentea.ro). Among all these topics, by far the most important topic, that I always include in all my training sessions is ""Clean Code"". It's essential to be able to keep 'alive' 100k-2M lines of code. And I was told that this module has the biggest impact in day-to-day life of the dev.
+
+Also, this talk will also show how a professional developer should behave in code, the ""ethics code"" that ough to be followed by everyone. We will go from the most basic concerns like how should we choose our names, how should we write our functions, format and (not) comment them, to more advanced topics of true Objects. The entire presentation is spiced with numerous esay to understand examples and code snippets. 
+
+The contents of the material mainly revolves around the Clean Code boogvof Uncle Bob plus many other sourcesm","The primary value of software is to be flexible. The secondary value of software is to do what business wants it to do.
+
+Sounds insane? Just think a bit: what's the difference between IT and regular engineering? What propulsated IT that much? The ability to evolve, to adapt to new business needs. And we all know how difficult it is to adapt and strech old, dirty, rigid code.
+
+Financially, the fact that 80% of the costs of a software project are in maintenance may not concern you, the developer, directly. But the fact that you read 10x times more time than you write code should make it clear to you: do your very best to write clean, beautiful code that is easy to maintain. This module explains how do such art.
+
+Besides the bare act of writing code, the module also tackles the problematic of team work, code responsibility and cooperation necessary to any professional software engineer.
+
+The module covers the most important practical aspects from the reference book 'Clean Code' by Robert C. Martin, along with many other sources. The training material was reviewed and discussed with numerous seniors to reach a wider consensus regarding the ideas and their nuances.
+
+This is the module which is most likely to have the deepest impact on your day-to-day work, changing the way you exercise your profession. That's why I allways recommend to add this module to any training.
+
+Agenda:
+
+What is Clean Code
+Names
+Express intent
+Parts of speech
+Functions
+Function Size
+Extracting Method Objects
+Function Signature
+Side Effects & Temporal Coupling
+Command/Query separation
+
+Classes
+Basic Shape
+True Encapsulation
+Data Structures vs. True Objects
+Switch+Data Structures vs. Polymorphic Objects (opt)
+'Tell, Don't Ask' Principle
+Feature Envy
+The Plugin Model: Dependency Inversion (opt)
+Code Formatting
+Comments are failures",Presentation,English,Min 2-3 years working experienxe in Java,"Ethics, maintainance, legacy, enterprise applications, technical debt, teamwork, craftman, senior",Code in slides
+2016-04-24 17:03:44 +00:00,Ionut Balosin,ibalosin@luxoft.com,From Bytecode to Native Code in HotSpot JVM,"During this session I will present the process of bytecode interpretation and compilation inside HotSpot JVM. The attendees will understand how Java Virtual Machine internally works in regards to Interpreter and Just-In-Time compiler, as well as few optimizations achieved to gain better performance.","During this session I will present the process of bytecode interpretation and compilation inside HotSpot JVM. It reveals how and under which circumstances Java code is optimized, few optimization techniques and when the HotSpot JVM produces best code in terms of performance. 
+
+This subject is useful for all developers who would like to understand what happens during runtime execution with the bytecode and how this is compiled to get better performance. They will know how to write better performance tests for their applications and what really matters to speed up the program execution.
+
+I will try to make an interactive and practical session for the audience including a demonstration that figures out optimizations occurred during Just-In-Time compilation process. A tool for visualizing the generated assembly code will be used. 
+",Presentation,English,"Experienced software developers, architects, passionate programmers willing to understand things ""under the hood""",performance compiler interpretor bytecode hotspot jvm,Code in slides
+2016-04-24 16:21:44 +00:00,Wojciech Indyk,wojciechindyk@gmail.com,How to build a scalable recommendation system? A case study.,"If you need a scalable recommendation library you probably look at MlLib from Spark. Is it always a good choice? Is it the best solution for You? In this presentation I help you to understand what are strong and week points of MlLib and when MlLib is not for you. It could happens (and probably will), that MlLib is not for you. Then I'll show you how to design an architecture of your own efficient and scalable system generating and storing recommendations. All of this is covered by a real story of building a recommendation system for one of the biggest media company in Poland and decrease a processing time from hours to minutes!","If you need a scalable recommendation library you probably look at MlLib from Spark. Is it always a good choice? Is it the best solution for You? In this presentation I help you to understand what are strong and week points of MlLib and when MlLib is not for you. It could happens (and probably will), that MlLib is not for you. Then I'll show you how to design an architecture of your own efficient and scalable system generating (using Spark) and storing (using HBase) recommendations. Based on own experience show tricky questions regarding an architecture you need to answer if you don't want to suffer from bad choices (or no choice at all). I'll focus on technical aspects, but always refer to the business needs. The presentation describes problems of processing performance using medium-size data (hundreds thousand items, million users) in Agora- one of the largest media company in Poland. The presentation also contains tips on how to find bottlenecks of the presented solution, as well as general aspects of optimization a recommendation system according to Spark and HBase architecture and business needs and in consequence how to calculate recommendations in minutes instead of hours! ",Presentation,English,"People with basic knowledge of recommendations and recommendation systems. Willing to build a scalable solutions, learn tricky aspects of system architecture to consider in their business needs. Want to hear real story of build a recommendation system tailored for specific business needs.","recommendations, spark, mllib, collaborative filtering, scalability, big data, scala",No code
+2016-04-24 15:30:53 +00:00,Nicolas De Loof,nicolas.deloof@gmail.com,"(Docker,  Jenkins) -> { Orchestrating Continuous Delivery }","During this session, I'll demonstrate how to setup a CD pipeline using Jenkins, from a classic ""there's a plugin for that"" approach (sic) to 2016's way to combine Pipeline plugin with Docker flexibility","""Continuous Delivery"" is a major Buzz word, as ""Docker"" is, but in most blog I've read so far only minimalist trivial pipelines have been considered : compile, test, push docker image, that's it.
+Jenkins definitively is more than Continuous Integration, and with recently introduced workflow plugin we can fully automate in plain DSL a complex pipeline. Integration with Docker gives it even more power.
+During this session, I'll build such a pipeline from scratch to demonstrate workflow DSL usage and flexibility, as well as Docker support to run an actual Continuous Delivery process.",Presentation,English,"Developers, QA automation engineers","devops, continuous delivery, docker",Code in slides
+2016-04-23 17:48:31 +00:00,Marko Kažić,marko.kazic@zamphyr.com,Where we fail at teaching programming,"What is wrong with teaching programming? Why are some things like CSS so hard to figure out, and why we don't have a model for teaching UX properly? How teaching has to evolve to change that, and what's the role of alternative education in it. How formal education has to evolve to prevent its own demise.
+",I can do one better. You can see the whole thing in moving images as presented in Ljubljana: http://video.webcamp.si/wc2016_kazic_where_we_fail_at_teaching_programming,Presentation,English,"Coders, educators, managers. It's beneficial to understand why education in CS is a personal thing rather than institutional.","education, programming, css, ux",No code
+2016-04-22 15:37:13 +00:00,Kenan Sevindik,ksevindik@harezmi.com.tr,Employing a View Model API Based on Dynamic Proxies,"Enterprise apps are mainly built upon layered architecture. Each layer only speaks to its below layer, and data among layers are shared via persistent domain objects. However, employing same domain objects in each layer causes some problems. Data might be modified unintentionally in which an ORM tool or a UI framework like JSF is used. Binding domain objects with UI fields directly creates a mess inside domain classes because of UI only fields added. To prevent such problems, it's better to employ a separate model, specific to the UI layer. Such a separate model is employed to convert data obtained from back, and deliver it to the UI layer for presentation. UI components are bound to view model objects so that user input is first accumulated into those objects and delivered to back when appropriate. However, creating such a view model mainly overlaps with persistent domain model, and job of handling data transformations between two model is a tedious task. We propose a solution based on dynamic proxies to create view model classes automatically and an API to handle various tasks occur during those data transformations. We will present our solution and discuss about the API evolved over time.","In todays world, layered architecture is a very common approach among enterprise applications. Each layer has a specific task of its own, and each one is only allowed to speak just one below. For example, data access layer deals with querying and persistence of data, service layer coordinates business operations and interacts with data access layer, presentation layer handles rendering of suitable user interface as well as processing user requests while talking with service layer. In this picture, data transfer throughout the layers is achieved using domain objects. For example, data is fetched from target datastore, then transformed into domain objects in data access layer, and delivered to the presentation layer for rendering purposes. In a similar way, domain objects bound to UI are filled with user input, then passed into backend layers for processing.
+	However, employing same domain classes in every layer can cause some data related problems in those applications. One might see that data might get inserted, updated or deleted unintentionally, especially when an ORM tool, like Hibernate is used for persisting data, UI frameworks like JSF or Vaadin, in which state management is handled on server side, while domain objects are directly bound to user interface components, used to collect user input and deliver it to the backend. Moreover, employing domain objects UI interaction might cause several fields and methods which are only needed by presentation layer get added into them. For example, adding a selected field and its corresponding getter/setter is a very common issue in order to identify which rows are selected in a UI table. That “selected” property has nothing to the with the domain model at all.
+	In order to prevent such data integrity problems, and keep domain classes clean from UI specific attributes and methods, one needs to create and use a separate model targeted to the presentation layer. It may appear with different names, like “data transfer object, “data value object” or “view model” in different projects, and whatever you call it for, its main duty is to prevent direct interaction and manipulation of domain objects via user interface components.
+	Although, we take it as a separate model, view model classes mostly overlap with domain model classes. Indeed, domain model classes can easily be transformed into view model classes with some additions of fields and methods. Actually, it becomes a burden for developers to just create and use a second set of model classes which are almost identical to domain model.
+	We propose a solution to automatically derive those view model classes from domain model classes using proxy pattern, and define an API to handle various data related tasks which occur while transforming domain objects into view model objects, apply those user changes occurred in those view model objects during UI interaction back again to domain instances etc. With the help of such an automatic view model creation mechanism, task of creating view model classes manually becomes unnecessary. In addition, view model – domain model back and forth transformations and data related operations can be performed easily through a standard API. In this session, I am going to talk about how to employ dynamic proxy class generation to obtain view model out of domain model classes, and discuss view model API in detail.",Presentation,English,Enterprise Java developers,enterprise java view model proxy UI persistence ORM vaadin JSF JPA Hibernate,Code in slides
+2016-04-22 12:31:02 +00:00,Martin Naumann,mr.avgp@gmail.com,Creating interactive 3D worlds on the web,"Ever wondered what WebGL can do for you, besides games and eye candy demos? 
+
+Let's go and explore! 
+
+This talk gives you the why and how of WebGL - not just for 3D. ","A lot of developers have started to build complex application and hit performance issues left and right. 
+
+While WebGL is an established standard since 201?, we as a community have not really started tapping into its potential. 
+
+Any application that is focused on video or graphics, not just for 3D can benefit from the power of programming the GPU. 
+
+This talk shows what can be achieved by looking at a few case studies. 
+
+Once people know what is in shop, we will start untangling the jungle that is hiding the road to using WebGL - we'll talk vocabulary, shaders and getting stuff on screen. 
+
+This talk touches all concepts and the API to bring 3D and 2D to live in the browser. ",Presentation,English ,Javascript developers ,"graphics, canvas, 3D,WebGL ",Live coding
+2016-04-22 06:47:09 +00:00,Adam Tornhill,adam@adamtornhill.com,Seven Secrets of Maintainable Codebases,"In this session you'll learn novel techniques that help you make sense of large codebases. You'll learn to identify the code that really matters for your ability to maintain a system, how to prioritize improvements and even evaluate your architecture based on how you actually work with the code.  Each point is illustrated with a case study from a real-world project.","In this session you'll learn novel techniques that help you make sense of large codebases. You'll learn to identify the code that really matters for your ability to maintain a system, how to prioritize improvements and even evaluate your architecture based on how you actually work with the code. We'll also cover the people side of programming as you learn to mine social information such as communication paths, developer knowledge and hotspots.
+
+All techniques are based on software evolution. They use data from the most underused informational source that we have in our industry: our version-control system. Each point is illustrated with a case study from a real-world project. This is a new perspective on software development that will change how you work with large systems. Come join the hunt for better code!",Presentation,English,"Programmers, Software Architects, Technical Leaders","legacy code, software evolution, architecture",Code in slides
+2016-04-21 21:14:31 +00:00,Luis Mineiro,luis.mineiro@zalando.de,The frontend taboo: a story of full stack microservices,"Microservices are not news anymore. They allow multiple teams to work autonomously by choosing their own technology stacks and having their own release cycles. There is something not being addressed though, like if it is some kind of dirty little secret, and that is frontend development. The common practice for building websites remains ""the monolith"": a single frontend codebase that consumes multiple APIs. We believe we found a better solution.
+","Microservices are not news anymore. They allow multiple teams to work autonomously by choosing their own technology stacks and having their own release cycles. There is something not being addressed though, like if it is some kind of dirty little secret, and that is frontend development. The common practice for building websites remains ""the monolith"": a single frontend codebase that consumes multiple APIs. We believe we found a better solution.
+
+Last year, a handful of Zalando engineers came up with an innovative solution for this exact problem - project Mosaic. Mosaic is a new architecture for websites where microservices are used in the entire stack, all the way to the frontend.
+
+We’ve published Mosaic as open source. Its main components are:
+- Skipper - an HTTP router with runtime update of routes
+- Tailor - a streaming layout service with runtime update of templates
+The network is the glue putting it all together.
+
+In this talk we want to share our motivation to build Mosaic, how to perform such migration without downtime, and the advantages it has to offer to other organizations, regardless of their size.
+
+We'll go through the operational details about Skipper and how it can be customized to answer many other different requirements. I'll also describe in detail how Tailor can dramatically improve the perceived performance of your website by streaming frontend content, from multiple fragments, in parallel.
+",Presentation,English,"Developers, Architects, C-Levels","autonomy,frontend,microservices,mosaic,skipper,tailor",No code
+2016-04-21 14:40:19 +00:00,Dusan Zamurovic,ezamur@gmail.com,Building company culture - leading the change,This is the talk that will answer what it takes to build and influence evolution of a culture inside an organisation. It is a retrospective of culture building process both from  employee's personal point of view and from organisational point of view.,"Working in awesome environment with cool culture has became almost a requirement number one for people inside IT industry when choosing their employer.
+There are cultural factors that we often don't get as very important. Which factors are those? What does 'a company' really means? What does it take to build and evolve the culture?
+This session aims to offer direct answers to those and similar questions, derived from personal working experience in several domestic and foreign IT companies in different roles - from junior developer, over technical team lead to operations manager.
+This is not a technical talk but a talk tightly bound to development process of a single person, colleagues, teams and a company.
+
+This is a recording of the talk given on DaFED meetup in November 2015: https://www.youtube.com/watch?v=JYHXhwLoO8Y
+VoxxedDays session would be further fine-tuned based on comments received after this talk and with some additional content.",Presentation,English/Serbian (both are fine),"Developers of all kinds, managers, HR people, entrepreneurs - they will benefit from getting a extracted digest of problems they are facing every single day and some possible answers given from employee/organisation point of view - every single question in the session will have at least one answer offered",#culture #building #environment #HR #people #entrepreneurship ,No code
+2016-04-20 09:57:22 +00:00,Alvaro Sanchez-Mariscal,alvaro.sanchezmariscal@gmail.com,"Creating applications with Grails, Angular JS and Spring Security","In this session, Álvaro (member of the Grails team at OCI, Grails committer and author of several plugins) will demonstrate how to use the Angular profile to create an application using Grails 3.1, Angular JS and Spring Security REST.","Grails is a powerful web framework for the Java platform, aimed at multiplying developers? productivity thanks to a Convention-over-Configuration, sensible defaults and opinionated APIs. It integrates smoothly with the JVM, allowing you to be immediately productive whilst providing powerful features, including integrated ORM, Domain-Specific Languages, runtime and compile-time meta-programming and Asynchronous programming.
+
+In Grails 3.0 (released a year ago), the latest major version of the framework and based on Spring Boot, a new feature was introduced: profiles. A profile is a set of command-line hooks, templates and plugins. One of the new profiles available ease the creation and development of applications where the the front-end is an Angular JS application, and the backend is a Grails REST API.
+
+In this session, Álvaro (member of the Grails team at OCI, Grails committer and author of several plugins) will demonstrate how to use the Angular profile to create an application using Grails 3.1, Angular JS and Spring Security REST.",Presentation,English,Some experience with Java/Groovy and/or Spring/Grails and/or Javascript/AngularJs is desirable,"grails, angularjs, groovy",Code in slides
+2016-04-15 16:40:14 +00:00,Karina Popova,karin-a@mail.ru,Increasing Sensing Quality of Life with a SIM based connectivity solution for IoT,The proposal idea is the “wherever SIM” that provides the network coverage wherever devices may roam – integrating 400+ radio networks in 160+ countries all around the world. SIM cards and endpoints can be easily managed in real-time via the intuitive user-interface or directly from the customer’s software application via an easy-to-integrate API.,"The insights to be gained from data are endless. In light of this a, new paradigm of the real-time communication between things has emerged, in which the quality of life of citizens in dense urban environments is increased through the use big data and cloud technology. 
+Future cities are likely to feature thousands of strategically placed sensors that would record everything from air pressure and temperature to microbial content, and the data would be relayed instantly to the laptops of actively participating smart citizens, who will make critical contributions to urban planning, reducing pollution, and making the best use of finite resources. 
+The rapidly changing social and environmental order is becoming more complex as resources grow scarcer and populations increase, it requires just one technical integration point in IoT, which will provide technological fluency in the use big data for public benefit. 
+The IoT market is growing rapidly. Mobile connectivity is becoming more and more a key success factor for many IoT projects, as most use cases are designed for mobility. But even for scenarios with immobile endpoints it often makes sense to include mobile connectivity as a fallback option, especially for time critical services. 
+The key features, implementation and development process of whereverSIM will be discussed.
+",Lightning talk,English,"Key industries, developers and IoT enthusiasts from all around the world, Knowledgesharing about IoT future in SIM based connectivity area, solutions and use cases. ","IoT, implementation, m2m, API, trending, IoE, IIoT, microservices",No code
+2016-04-13 13:13:53 +00:00,Grace Chang,gchang@yammer-inc.com,Herding Cats to a Firefight: The evolution of an engineering on-call team,"Production issues aren't an easy thing to learn to deal with. Yammer went from having one person on-call, to having the whole engineering team taking ownership of their code and services in production. This talk goes over what things worked, and what didn't, to get us there.","Your organisation has grown from a small and scrappy app to a full-fledged SaaS behemoth. It's 3AM on a Friday night (or is it Saturday?) and things are looking bad. Servers are on fire, exceptions are flooding the logs, and your customers are taking their frustration to Twitter. What do you do?
+
+Every company that succeeds (and that's what we're all aiming for, right?) will have to solve this problem eventually. We'll talk about how Yammer evolved from having just a single person as 'the' on-call engineer, to a cross-geo follow-the-sun on-call team that satisfies customer needs, meets Microsoft standards, and doesn't kill engineers. You'll leave this talk with tips on what worked and what didn’t, to help you build this process for your team.",Presentation,English,All,site reliability,No code
+2016-04-13 12:26:08 +00:00,David Pilato,david@pilato.fr,Ingest node: (re)indexing and enriching documents within Elasticsearch,"When ingesting data into Elasticsearch, sometimes only simple transforms need to be performed on the data prior to indexing. Enter Ingest Node: a new node type that will allow you to do just that! This talk will introduce you to Ingest Node and how to integrate it with the rest of the Elastic Stack.
+
+The talk will also cover the reindex api, which can be used in combination with ingest pipelines to modify data while reindexing.","I will also show how to write an Ingest plugin for elasticsearch.
+For example, I'm building a new one which can generate the location (lat, lon) from a postal address in France. Very handy to show on a map where your users/customers are...",Presentation,English,Beginners and Java developpers,"elasticsearch, ingest",Live coding
+2016-04-13 12:22:41 +00:00,David Pilato,david@pilato.fr,Make sense of your (BIG) data!,"Elasticsearch: you know, for search!
+
+But you can use it as well to compute information on live data.
+
+During this session, you will discover how elasticsearch actually works. We will inject marketing data into elasticsearch and build a live dashboard using Kibana, our generic and powerful visualisation tool under Apache2 license.
+
+In minutes, you will know how to build YOUR own dashboard and make sense of YOUR data!","Overview of what people call ""Big Data"" and what is today IMO the biggest concern: velocity.
+How you can solve that and understand your data in real time...
+
+This talk comes with a great Demo where we inject live 1 million of marketing data and get immediate insights with Kibana.
+I will also explain how this works internally in elasticsearch (Sharding/Scaling...)",Presentation,English,Beginners,"elasticsearch, nosql, databases",No code
+2016-04-13 12:14:53 +00:00,David Pilato,david@pilato.fr,Advanced search for your legacy application,"How do you mix SQL and NoSQL worlds without starting a messy revolution?
+
+This live coding talk will show you how to add Elasticsearch to your legacy application without changing all your current development habits. Your application will have suddenly have advanced search features, all without the need to write complex SQL code!
+
+David will start from a RestX, Hibernate and Postgresql/MySQL based application and will add a complete integration of Elasticsearch, all live from the stage during his presentation.
+","Mainly a live coding session with some slides to show the architecture at the beginning and what we want to build. That's why I'm writing ""code only"" but it will be 80% live and 20% slides.
+
+This talk has been played multiple times, for example for Devoxx UK 2014, Voxxed Istanbul 2015.
+
+Repo used is here: https://github.com/dadoonet/legacy-search Blog post about it: http://david.pilato.fr/blog/2015/05/09/advanced-search-for-your-legacy-application/
+",Presentation,English,Java dev using SQL backends for search,"elasticsearch, nosql, databases",Live coding
+2016-04-12 21:50:40 +00:00,Peter Van de Voorde,pvandevoorde@atlassian.com,Get Out of Your Comfort Zone!,"Would you like to discover the world? Meet interesting people? Be amazed over and over again?
+
+Then get out of your comfort zone and discover the world around you! Come to this talk to learn how you can get started!
+","I want to entice people to come out of their comfy chairs and follow their dreams.
+I did and I want to inspire people to do the same.
+
+Following my dream enabled me to travel the world, work for an amazing company doing the things I like doing!
+
+But it can be scary to take those first steps. So I want to show people how they can take those first small steps and the amazing things that can happen because of that first little step.",Lightning talk,English,Everybody :),"fun, ignite, dreams",No code
+2016-04-12 21:46:41 +00:00,Peter Van de Voorde,pvandevoorde@atlassian.com,Stop Doing Scrum; Start Being Agile!,"In my career as an Agile Coach and ALM Consultant I noticed the following way to many times: people think Scrum == Agile. 
+
+I had to get this out of their head and open their eyes to the possibilities of Kanban, TDD, XP, and more. 
+
+Based on my experiences I now want to educate as many people as possible about the   possibilities offered by Agile.","“If I got a cent for each time I heard a variant of ‘We implemented Agile/Scrum/Kanban/Xp at our company, but it didn’t work for us, because we do things differently,’ I would have 4.10 € (or $).”
+
+During this session, I'll go into why you should stop trying to implement a methodology from a book in just one team and instead try to create an agile methodology for your company as a whole.
+
+I'll present to you:
+- The history of agile and the ideas behind it
+- How you can enlighten your company about the advantages of agile
+- Successes and failures and how we can learn from them.
+
+At the end of this session, you’ll have ideas, tips, and tricks to help you in your adaptation of agile.
+
+Disclaimer: Don't let the title fool you. I love Scrum, it's a great methodology. It's just being abused so much. ",Presentation,English,Anybody who's working in an Agile environment and is wondering why some things are going wrong and what to do about them.,"agile, scrum, kanban, culture",No code
+2016-04-12 00:50:48 +00:00,Jean-Philippe Côté,jp@cote.cc,Physical Computing for Web Developers,"In this workshop, web developers will discover how they can leverage their existing web stack knowledge to interact with the good old analog world. They will learn how to use JavaScript to process data gathered by sensors and how to use that data to act upon the real, physical world.","
+With their existing HTML, CSS and JavaScript knowledge, web developers already possess most of what is required to create applications that interact with the real, physical world. During the course of this full day workshop (6 hours), attendees will use their existing web skills to both gather data from the world and act upon it.
+
+Specifically, participants will learn how to use NW.js to create desktop applications from HTML, CSS and JavaScript. They will also learn how this amazing tool frees them from the traditional browser’s security sandbox and how it allows them to use various JavaScript libraries to access external devices.
+
+One such library is Johnny-Five. It is a robotics and physical computing library that can interface with various microcontroller boards. Using an Arduino-compatible board, attendees will be able to retrieve data about the environment from various sensors (motion sensor, distance sensor, etc.). They will also allow be able to act upon the environment using various actuators (lights, motors, etc.).
+
+In a single day, attendees are able to create an application that interacts with the real world using the web stack knowledge they already have. At the end of the day, they go back home happy with their own physical computing hardware kit. The kit includes an Arduino-compatible board, sensors, buttons, LEDs, motors, etc. 
+
+In essence, this workshop opens up a world of new opportunities for web developers. While pushing pixels around on a screen may be cool, pushing objects in the real world is… awesome!
+
+***
+Full disclosure: I will also host this workshop during the FITC Toronto Conference in April. The workshop is sold out.",Workshop,English,"Web Developers (and anybody comfortable with HTML, CSS and JavaScript)","Physical Computing, Web Stack, HTML/CSS/JavaScript, Front-End, Sensors, Physical World",Live coding
+2016-04-11 19:20:00 +00:00,Bartek Zdanowski,bartek.zdanowski@gmail.com,"Developer, develop yourself!","I invite you for a story about things you can do as developers to keep developing yourself. 
+I will tell you about workshops, hackathons, code review techniques, blog writing, attending and speaking at conferences, sharing knowledge and a lot more.
+All those activities support learning new things, experimenting and having fun. Without that we have only our day-to-day job that can be tough or boring. 
+Everything comes from my personal experience. I will show you examples with do’s and don’ts. I will share lot’s of tips how to introduce those techniques at your work.","Not all of you have very modern technologies in you project. In fact, sometimes you have very old language and/or libraries. Not all of you have mythical 20% spare time for experimenting. Not all of you have open-minded management that allows you to gather and have some internal workshops or spare time on research.
+
+But there are various ways to learn new stuff even if you don’t have time or money available at your work or in your pocket.
+
+I invite you to a story about things you can do as a developer to improve yourself and/or your team. It will be about workshops, hackathons, code review, writing blogs, doing open source, speaking at meetups and conferences and lot more. I did all of that and I want to share my wide experience with lots of advice how to do it right.
+
+Some of them are expensive but most is quite cheap.
+
+The purpose of that is to learn new things, experiment with technologies, advance and have fun. Without that we could have only our day to day tasks which can be boring or frustrating.
+
+I will share with you my wide experience with lots of advice how to do it right.",Presentation,English,"Developers, team leaders","soft talk, self development, advance, fun, :-D",No code
+2016-04-09 20:15:04 +00:00,Seth samuel,sethfsamuel@gmail.com,Arbitrary Computation on the GPU Using WebGL,"WebGL is already widely in use for 3D graphics and image processing but could be used for much more. We'll learn how to pass arbitrary data to the GPU for parallel processing, how to get that processed data back into Javascript, and all the reasons this doesn't work even when it should.","This talk starts with a review of WebGL shaders and how data is passed through the WebGL pipeline and processed in parallel. Next I'll show some examples of traditional image processing using WebGL. After that, I'll explain how to pass arbitrary data into the GPU and how to retrieve output from those parallel calculations. Finally, there will be an example of this system in action, and then several examples that don't work as expected with explanations of the limitations of the current WebGL architecture.
+",Presentation,English,Anyone with an interest in learning about how WebGL works by looking at an edge case where it fails to work as expected,webgl,Code in slides
+2016-04-09 12:31:18 +00:00,Viktor Farcic,viktor@farcic.com,Self-Healing Systems,We'll explore practices and tools required to set up fully autonomous self-healing systems capable of both reactive recuperation from failures and proactive predictions of steps that should be taken to prevent failures before they happen.,"We can think of the whole computer systems like a human body that consist of cells of various types. They can be hardware or software. When they are software units, the smaller they are, the easier it is for them to self-heal, recuperate from failures, multiply or even get destroyed when that is needed. We call those small units microservices, and they can indeed have behaviours similar to those observed in a human body.  Microservices-based systems can be made in a way that they have the ability to self-heal. That is not to say that self-healing we are about to explore is applicable only to microservices. It is not. However, self-healing can be applied to almost any type of the architecture but provides best results when combined with microservices.
+
+We'll explore practices and tools required to set up fully autonomous self-healing systems capable of both reactive recuperation from failures and proactive predictions of steps that should be taken to prevent failures before they happen.",Presentation,English,"Developers, operators, architects","Fault tolerant systems, Microservices, Clustering, Jenkins Pipeline, Self-healing, Docker Containers, Service Discovery",Code in slides
+2016-04-09 12:29:17 +00:00,Viktor Farcic,viktor@farcic.com,Microservices Lifecycle Workshop,"This workshop will go through the whole microservices development lifecycle. We'll start from the very beginning. We'll define and design architecture. From there on we'll move from requirements, technological choices and development environment setup, through coding and testing all the way until the final deployment to production. We won't stop there. Once our new services are up and running we'll see how to maintain them, scale them depending on resource utilization and response time, recuperate them in case of failures and create central monitoring and notifications system. We'll try to balance the need for creative manual work and the need to automate as much of the process as possible.","Microservices are becoming more and more popular and, as with every other new trend, often implemented without enough experience. Idea behind them is easy to explain. Brake monolithic application into smaller independent services. That's it. That is what many think microservices are about. However, implementation is much harder to master. There are many things to consider when embarking down this path. How do we organize microservices? Which technologies to use and how? Should they be mutable or not? How to test them? How to deploy them? How to create scalable and fault tolerant systems? Self-healing, zero-downtime and logging? How should the teams be organized? Today's successful implementations of microservices require all those and many other questions to be answered. It's not only about splitting things into smaller pieces. The whole development ecosystem needs to be changed and we need to take a hard look at the microservices development lifecycle.
+
+This workshop will go through the whole microservices development lifecycle. We'll start from the very beginning. We'll define and design architecture. From there on we'll move from requirements, technological choices and development environment setup, through coding and testing all the way until the final deployment to production. We won't stop there. Once our new services are up and running we'll see how to maintain them, scale them depending on resource utilization and response time, recuperate them in case of failures and create central monitoring and notifications system. We'll try to balance the need for creative manual work and the need to automate as much of the process as possible.
+
+This will be a journey through all the aspects of the lives of microservices and everything that surrounds them. We'll see how microservices fit into continuous deployment and immutable containers concepts and why the best results are obtained when those three are combined into one unique framework.
+
+During the workshop we'll explore tools like Docker, Docker Swarm, Docker Compose, Ansible, Consul, etcd, confd, Registrator, nginx, HAProxy, ElasticSearch, LogStash, Kibana, and so on.",Workshop,English,"Developers, architects, testers, operators","Microservices, Immutable deployments, Docker, containers, Continuous deployment, Auto-discovery, Failure recuperation, Zero-downtime, Self-healing, Scaling, Fault tolerant and self-healing systems",Live coding
+2016-04-09 12:26:28 +00:00,Viktor Farcic,viktor@farcic.com,Understanding the Life of Microservices,"This talk will go through the whole microservices development lifecycle. We'll start from the very beginning. We'll define and design architecture. From there on we'll move from requirements, technological choices and development environment setup, through coding and testing all the way until the final deployment to production. We won't stop there. Once our new services are up and running we'll see how to maintain them, scale them depending on resource utilization and response time, recuperate them in case of failures and create central monitoring and notifications system. We'll try to balance the need for creative manual work and the need to automate as much of the process as possible.","Microservices are becoming more and more popular and, as with every other new trend, often implemented without enough experience. Idea behind them is easy to explain. Brake monolithic application into smaller independent services. That's it. That is what many think microservices are about. However, implementation is much harder to master. There are many things to consider when embarking down this path. How do we organize microservices? Which technologies to use and how? Should they be mutable or not? How to test them? How to deploy them? How to create scalable and fault tolerant systems? Self-healing, zero-downtime and logging? How should the teams be organized? Today's successful implementations of microservices require all those and many other questions to be answered. It's not only about splitting things into smaller pieces. The whole development ecosystem needs to be changed and we need to take a hard look at the microservices development lifecycle.
+
+This talk will go through the whole microservices development lifecycle. We'll start from the very beginning. We'll define and design architecture. From there on we'll move from requirements, technological choices and development environment setup, through coding and testing all the way until the final deployment to production. We won't stop there. Once our new services are up and running we'll see how to maintain them, scale them depending on resource utilization and response time, recuperate them in case of failures and create central monitoring and notifications system. We'll try to balance the need for creative manual work and the need to automate as much of the process as possible.
+
+This will be a journey through all the aspects of the lives of microservices and everything that surrounds them. We'll see how microservices fit into continuous deployment and immutable containers concepts and why the best results are obtained when those three are combined into one unique framework.",Presentation,English,,"microservices, Docker, immutable deployments, auto discovery, fault tolerance, zero-downtime, self-healing, scaling",No code
+2016-04-08 14:21:23 +00:00,Sean Patrick Floyd,seanpfloyd@googlemail.com,Advanced testing patterns in Java and Scala,"Not your father's unit testing. This talk will deal with advanced testing patterns: rules, dynamic test generation, property and parameterized testing, assumptions etc. We'll feature both Java and Scala testing frameworks and also show how to mix them.","Most Java developers are only familiar with very basic testing patterns. Their testing style hasn't really changed since the ""good old days"" of JUnit 3.x.
+
+The first part will be dealing with Java tests using JUnit 4.x. A first step towards more expressive and less fragile tests is to use assumptions, rules and Hamcrest Matchers. Assumptions allow conditional execution of tests, e.g. “Run this test only if the database is available”. Rules are powerful tools for extending tests in a crosscutting way, including custom setup. Hamcrest matchers provide a variety of custom assertions for various data structures, including the ability to create your own. We’ll wrap up this chapter with a short preview of the upcoming JUnit 5.
+
+The second part will deal with testing in Scala, using its more advanced language features to take testing to the next level. Most Scala testing frameworks support a DSL for BDD-style testing, and because of that, the actual declaration of tests can be done dynamically, which leads to interesting possibilities, e.g. reading test cases from a database. Another feature that’s not available in any Java framework (at least not fully) is property testing. This technique originally comes from Haskell and allows testing of a method with randomized data. The best part of this is that the framework will automatically narrow down failing cases to the least significant data that still reproduces the failure, thus helping find the exact point where the bug occurs in the tested code.
+
+In the third part, we’ll discuss how to integrate the approaches with each other (e.g. Java production code with Scala tests, or vice-versa)",Presentation,English,"Intermediate to advanced developers, as well as their managers.","testing, java, scala, junit, scalacheck, tdd, bdd",Code in slides
+2016-04-08 05:51:39 +00:00,Bart Blommaerts,bart@daggie.be,The Serverless Cloud,"In recent years, the uprise of the cloud has brought us a lot of new and disruptive technology. Everybody is talking about SaaS, PaaS, IaaS and other aaS'es. In 2014 Amazon launched AWS Lambda as the pinnacle of the cloud computing. It allows developers to focus on code, without spending time on managing servers.
+
+The goal of this talk is not only introducing the serverless architecture style, but it will also contain demos (eg. using AWS Lambda and Google Cloud Functions) on how to make this style work. Expect Lambda functions in NodeJS, using DynamoDB, consuming other functions via the AWS API Gateway.
+
+The talk will conclude with best practices on how to use these serverless functions.","Rough outline:
+
+* Intro on cloud + evolution + current state
+* Intro on Serverless
+** Detail for AWS Lambda
+** Detail for Google Cloud Functions
+** Detail for IBM OpenWhisk
+** ..
+* Demo (AWS Lambda with NodeJS and Serverless (JAWS), Google Cloud Functions, ...)
+* Pratical use case for serverless today (real world example from Government in Belgium)
+* Best practices (eg. on size, metrics, ..)
+* Next Gen Serverless
+
+
+I also want to transfer a ""sense of urgency"" to the developers. By early adoption, we have opportunities to influence the outcome. Serverless will change everything. It will be a game-changer for developers (how we think about writing software), development tools (integration and closely aligned with consumed services) and for a lot of software (and hardware) companies. ",Presentation,English,"Everybody interested in cloud, the evolution of cloud and serverless functions","cloud, serverless, functions, disruptor",Code in slides
+2016-04-07 11:57:17 +00:00,Bart Blommaerts,bart@daggie.be,10 tips to become an awesome Technical Lead,"As you grow in your career, chances are that one day you will end up as the Technical Lead of 1 or more projects. Often not by choice. The role of Technical Lead is quite different from the role of (senior) Software Developer and this talk will bring you answers on questions like: 
+
+* How do I do technical interviews?
+* How do I lead a team? How do I lead multiple teams?
+* How do I cope with my new responsibilities?
+* How do I cope with success / failure?
+* How do I prevent losing focus on the technical challenges?
+* ...
+
+In summary, everything you want(ed) to know on your first day as a Technical Lead and that you can use every day from that point onwards.","I've been a Technical Lead for over 9 years .. a role I never requested. I worked with small teams (2 people) and with larger teams (20+ people) as a Technical Lead. And a couple of times, I needed to do some firefighting on other projects, because of the missing experience of the Technical Lead (eg. when leading a team of offshore developers).
+
+I started a Technical Lead training program at HP to overcome issues senior developers are likely to face when becoming a Technical Lead (eg. how to do technical interviews .. Which questions are useful? Should you focus on the resume? etc. ).
+
+I would like to share my personal experience on this topic, because I believe a good Technical Lead is a key role within most development teams.",Presentation,English,"All developers who are, or want to become a Technical Lead","career, tech lead, tips, from the field",No code
+2016-04-05 07:04:26 +00:00,Chris van Beek,chris.vanbeek@luminis.eu,Typescript," JavaScript can be very complex. JavaScript is not a very simple language to write your logic in.
+
+It is not object oriented, it is weakly typed and it has lot of strange and difficult to understand language constructs!
+
+Typescript is a new scripting language based on ECMA 6. It will give you true object orientation, strong typing and built in support for modules with RequireJS.
+
+And it compiles to just JavaScript so it runs in any browser!
+
+In this session we will deep dive in to Typescript. You will learn a new language in one hour.
+
+This will also give you a head start with Angular 2.0, as it built from the ground up with Typescript."," JavaScript can be very complex. JavaScript is not a very simple language to write your logic in.
+
+It is not object oriented, it is weakly typed and it has lot of strange and difficult to understand language constructs!
+
+Typescript is a new scripting language based on ECMA 6. It will give you true object orientation, strong typing and built in support for modules with RequireJS.
+
+And it compiles to just JavaScript so it runs in any browser!
+
+In this session we will deep dive in to Typescript. You will learn a new language in one hour.
+
+This will also give you a head start with Angular 2.0, as it built from the ground up with Typescript.",Presentation,English,You will need to have a understanding of javascript and OO. Code in slides and live coding.,"Typescript, javascript",
+2016-04-05 06:52:55 +00:00,Chris van Beek,chris.vanbeek@luminis.eu,AngularJS Best practices,"Nowadays when you think about a front-end Javascript framework, You will think of AngularJS.
+
+Whether you are building a very modern single page application or a hybrid mobile application, you can use AngularJS for both scenario's.
+
+The AngularJS framework is famous for its clear MVC like structure, but also infamous for it's complexity. A bad implementation of AngularJS can lead to all kinds of problems: from an application that does not perform to a code-base that is not maintainable to unsatisfied users. 
+
+In this session we will look at the things that should do when you are building a modern structured web application. All the best practices come from lots of experience with big single page applications.
+
+Some things we will have a look at will not only help with Angular but with front-end development in general, e.g. Typescript and Gulp. We will switch between pieces of theory and examples from a real life application!
+","Nowadays when you think about a front-end Javascript framework, You will think of AngularJS.
+
+Whether you are building a very modern single page application or a hybrid mobile application, you can use AngularJS for both scenario's.
+
+The AngularJS framework is famous for its clear MVC like structure, but also infamous for it's complexity. A bad implementation of AngularJS can lead to all kinds of problems: from an application that does not perform to a code-base that is not maintainable to unsatisfied users. 
+
+In this session we will look at the things that should do when you are building a modern structured web application. All the best practices come from lots of experience with big single page applications.
+
+Some things we will have a look at will not only help with Angular but with front-end development in general, e.g. Typescript and Gulp. We will switch between pieces of theory and examples from a real life application!
+",Presentation,English,You will need to have some angularjs and javascript knowledge.,"javascript, angularjs",
+2016-04-05 06:51:21 +00:00,chris ,chris.vanbeek@luminis.eu,"Angular, Typescript and RequireJS: The great alltogether","When you are doing front-end web development, three technologies are currently very hot! On top of that they seem to be made for each other.
+ 
+You will come across AngularJS to structure your application logically, do databinding and create a responsive single page application.
+ 
+RequireJS is used to do lazy loading of JavaScript files and to get some much needed dependency management within JavaScript.
+But RequireJS and JavaScript can be very complex. JavaScript is not a very simple language to write your logic in!
+It is not object oriented, it is weakly typed and it has lot of strange language constructs!
+ 
+Typescript is a new scripting language based on ECMA 6. It will give you true object orientation, strong typing and built in support for modules with RequireJS.
+And it compiles to just JavaScript so it runs in any browser!
+ 
+In this session I will explain how we used Angluar, TypeScript and RequireJs to create interactive web applications. You will learn how these three technologies work together and I will explain our best practices when building these front-ends. Iwill be showing some of our real life applications to explain the different concepts. ","When you are doing front-end web development, three technologies are currently very hot! On top of that they seem to be made for each other.
+ 
+You will come across AngularJS to structure your application logically, do databinding and create a responsive single page application.
+ 
+RequireJS is used to do lazy loading of JavaScript files and to get some much needed dependency management within JavaScript.
+But RequireJS and JavaScript can be very complex. JavaScript is not a very simple language to write your logic in!
+It is not object oriented, it is weakly typed and it has lot of strange language constructs!
+ 
+Typescript is a new scripting language based on ECMA 6. It will give you true object orientation, strong typing and built in support for modules with RequireJS.
+And it compiles to just JavaScript so it runs in any browser!
+ 
+In this session I will explain how we used Angluar, TypeScript and RequireJs to create interactive web applications. You will learn how these three technologies work together and I will explain our best practices when building these front-ends. Iwill be showing some of our real life applications to explain the different concepts. ",Presentation,English,You need to have a understanding of front-end javascript development. The presentations will contain code in slides and live coding demo's.,"typescript,angular, requirejs",

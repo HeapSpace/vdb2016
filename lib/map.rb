@@ -4,7 +4,7 @@ def map_on_page(target)
   # Find path
   path = target.is_a?(String) ? target : target.path
 
-  if @item_rep && '.'+@item_rep.path == path
+  if @item_rep && @item_rep.path == path
     # Create message
 
     "<script>
@@ -17,7 +17,7 @@ def map_on_page(target)
         center: coords,
         home: coords,
         text: '<div class=\"map-popup\"><h5>Black Glass servis</h5>Novi Beograd<br />Ivana Markovića Irca 17<br />063/ 822-90-96<br />062/ 8-400-400<br />office@blackglass.rs</div>',
-        icon_url: 'images/map-pin-vdb.png',
+        icon_url: '/images/map-pin-vdb.png',
         zoom: 15,
         mapTypeId: google.maps.MapTypeId.ROADMAP,
         mapTypeControl: false,
