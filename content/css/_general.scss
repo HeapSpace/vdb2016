@@ -182,8 +182,10 @@ h5 {
 }
 
 .sponsor-logo {
+  text-align: center;
   img {
-    opacity: 0.25;
+    // background: rgba(17,14,11,0.4);
+    opacity: 0.55;
   }
 }
 
@@ -201,15 +203,14 @@ h5 {
        cursor: default;
 
      }
+     .fa-star {
+       color: $white;
+       margin-right: 8px;
+       font-size: 80%;
+       opacity: 0.6;
+     }
    }
  }
-
-.fa-tags {
-  color: $white;
-  margin-right: 8px;
-  font-size: 80%;
-  opacity: 0.6;
-}
 
 .block-item, .block-text {
   font-family: "Roboto";
@@ -236,13 +237,16 @@ h5 {
   padding: 50px 0 0 0;
   .thumb {
     text-align: center;
-    img {
-      background-color: $brand-secondary;
-      height: 150px;
-      width: 150px;
-      -webkit-border-radius: $border-radius-large;
-      -moz-border-radius: $border-radius-large;
-      border-radius: $border-radius-large;
+    background-color: #342D27;
+    -webkit-border-radius: $border-radius-large;
+    -moz-border-radius: $border-radius-large;
+    border-radius: $border-radius-large;
+    height: 150px;
+    width: 150px;
+    padding: 25px;
+    margin: 0 auto;
+    &:hover {
+      background-color: $brand-primary;
     }
   }
   h3 {
