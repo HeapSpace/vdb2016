@@ -100,10 +100,14 @@ var msgs = [
 	"CSS and SASS rulez"
 ];
 
+function barbar() {
+	$("#barbar").css("width", left*100/(left+right) + "%");
+}
 function click() {
 	var ndx = Math.floor((Math.random() * msgs.length));
 	$("#msg").text(msgs[ndx]);
 	$("#knights").css("left", ((msgs.length/2) - ndx * 10) + "px");
+	barbar();
 }
 
 function left404() {
@@ -148,8 +152,7 @@ function refresh() {
 			var arr = eval(msg);
 			left = arr[0];
 			right = arr[1];
-
-			$("#barbar").css("width", left*100/(left+right) + "%");
+			barbar();
 			//$("#left").text(left);
 			//$("#right").text(right);
 		}
