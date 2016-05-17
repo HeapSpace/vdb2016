@@ -16,9 +16,7 @@ $(document).ready(function() {
     		return false;
   	});
 
-    $("a").attr("href", function(i, href) {
-      return '/new-site' + href;
-    });
+    
 
     $(".float-label").jvFloat();
 
