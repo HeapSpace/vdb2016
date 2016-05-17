@@ -107,8 +107,8 @@ function click() {
 }
 
 function left404() {
-	click();
 	left = left + 1;
+	click();
 	$.ajax({
 		type: "POST",
 		url: "left.php",
@@ -123,8 +123,8 @@ function left404() {
 	});
 }
 function right404() {
-	click();
 	right = right + 1;
+	click();
 	$.ajax({
 		type: "POST",
 		url: "right.php",
