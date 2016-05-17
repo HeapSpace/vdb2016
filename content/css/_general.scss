@@ -187,9 +187,16 @@ h5 {
 
 .sponsor-logo {
   text-align: center;
-  img {
-    // background: rgba(17,14,11,0.4);
-    opacity: 0.55;
+  a {
+    img {
+      // background: rgba(17,14,11,0.4);
+      opacity: 0.55;
+    }
+    &:hover {
+      img {
+        opacity: 0.85;
+      }
+    }
   }
 }
 
