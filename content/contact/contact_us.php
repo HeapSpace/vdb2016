@@ -30,9 +30,8 @@ $headers = 'From: ' . $emailFrom . "\r\n" .
 
 $success = mail($emailFrom, $emailSubject, $body, $headers);
 $success2 = mail($email, $emailSubject, $body, $headers);
-$failtest = false;
 
-if ($success && $success2 && $failtest) {
+if ($success && $success2) {
   header("Location: thanks/");
 } else {
   header("Location: error/");

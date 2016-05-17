@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<%= render '/_head.html', :title => 'Default title'%>
+	<%= render '/_head.html', :title => 'Default title' %>
 	<%= meta_tag :keywords %>
 </head>
 <body>
-	<%= render '/_header.html'%>
+	<%= render '/_header.html' %>
 
 	<div class="main-bg page"></div>
 	<div class="container">
@@ -13,29 +13,7 @@
 	    Our vision<br><span class="yellow">resonates with you?</span>
 	  </h1>
 		<h4 class="text-center plain">We have to say a big thank you to our awesome partners for sharing our beliefs and our dreams:</h4>
-		<div class="steam-separator"></div>
-		<h3 class="margin-top-small bold text-center">
-	    Diamond <span class="yellow">sponsors</span>
-	  </h3>
-		<div class="row-centered">
-			<div class="sponsor-logo col-sm-4 col-centered">
-				<img class="" src="/images/logo-sb.png" />
-			</div>
-		</div>
-		<h3 class="bold text-center">
-	    Bronze <span class="yellow">sponsors</span>
-	  </h3>
-		<div class="row-centered">
-			<div class="sponsor-logo col-sm-3 col-centered">
-				<img class="" src="/images/logo-3am.png" />
-			</div>
-			<div class="sponsor-logo col-sm-3 col-centered">
-				<img class="" src="/images/logo-qacube.png" />
-			</div>
-			<div class="sponsor-logo col-sm-3 col-centered">
-				<img class="" src="/images/logo-zuehlke.png" />
-			</div>
-		</div>
+		<%= render '/sponsors-logos.html' %>
 		<div class="steam-separator"></div>
 		<h2 class="text-center">
 			Become a <span class="yellow">Sponsor</span>
@@ -49,7 +27,7 @@
 				</div>
 			</div>
 		</div>
-		<form class="margin-top-small" action="contact_us.php" method="post">
+		<form class="margin-top-small" action="sponsor_form.php" method="post">
 			<div class="row-centered">
 		    <div class="col-sm-8 col-centered">
 		      <div class="form-group">
