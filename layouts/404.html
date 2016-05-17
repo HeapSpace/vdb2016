@@ -3,15 +3,78 @@
 <head>
 	<%= render '/_head.html', :title => 'Default title'%>
 	<%= meta_tag :keywords %>
+	<style>
+#scene {
+	background-color: #5d714c;
+	overflow: hidden;
+  	position: relative;
+  	height: 50px;
+  	width: 100%;
+}
+#barbar {
+	background-color: #cc4b11;
+	width: 100%;
+	height: 50px;
+}
+#knights {
+	position:relative;
+	background: url("vitezi.png") no-repeat center -250px;
+	width: 100%;
+	height: 300px;
+}
+#msg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	color: black;
+	text-align: center;
+	width: 100%;
+	padding-top: 10px;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+#choice {
+	width: 50%;
+    margin: 0 auto;
+    overflow: auto;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.shield {
+	color: white;
+	text-align: center;
+	padding: 20px;
+	cursor: pointer;
+	width: 40%;
+}
+#left {
+	background-color: #cc4b11;
+	float: left;
+}
+#right {
+	background-color: #5d714c;
+	float: right;
+}
+
+	</style>
+
+
 </head>
 <body>
 	<%= render '/_header.html'%>
 
 	<%= yield %>
 
-	<div style="text-align: center; color: white;">
-		<div id="left">levo</div>
-		<div id="right">desno</div>
+	<div id="knights"></div>
+	<div id="scene">
+		<div id="msg">Choose your knight!</div>
+		<div id="barbar" style="width: 50%"></div>
+	</div>
+
+	<div id="choice">
+		<div id="left" class="shield">RED RULEZ!</div>
+		<div id="right" class="shield">GREEN FTW!</div>
 	</div>
 
 	<%= render '/_footer.html'%>
@@ -22,7 +85,29 @@
 var left = 0;
 var right = 0;
 
+var msgs = [
+	"I will fight until VoxxedBelgrade comes!",
+	"You dirty scam! Run! Your! Tests!",
+	"Die, but don't throw checked exception!",
+	"Java is my weapon!",
+	"Lambda this, you functional animal!",
+	"Give me that VoxxedBelgrade ticket!",
+	"No, I will come first to the VoxxedBelgrade!",
+	"All tickets are mine!",
+	"My containers are better then yours!",
+	"Startup this, you dirty piper!",
+	"JavaScript for my Lady",
+	"CSS and SASS rulez"
+];
+
+function click() {
+	var ndx = Math.floor((Math.random() * msgs.length));
+	$("#msg").text(msgs[ndx]);
+	$("#knights").css("left", ((msgs.length/2) - ndx * 10) + "px");
+}
+
 function left404() {
+	click();
 	left = left + 1;
 	$.ajax({
 		type: "POST",
@@ -38,6 +123,7 @@ function left404() {
 	});
 }
 function right404() {
+	click();
 	right = right + 1;
 	$.ajax({
 		type: "POST",
@@ -62,8 +148,10 @@ function refresh() {
 			var arr = eval(msg);
 			left = arr[0];
 			right = arr[1];
-			$("#left").text(left);
-			$("#right").text(right);
+
+			$("#barbar").css("width", left*100/(left+right) + "%");
+			//$("#left").text(left);
+			//$("#right").text(right);
 		}
 	});
 }
