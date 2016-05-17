@@ -1,6 +1,6 @@
 <?php
 
-$emailSubject = 'VoxxedDays Belgrade - Submit Talk (new site test)';
+$emailSubject = 'VoxxedDays Belgrade - Submit Talk';
 $emailFrom = "voxxed-cfp@heapspace.rs";
 $formsubmitted = date("Y/m/d H:i:s");
 

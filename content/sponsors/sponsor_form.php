@@ -1,6 +1,6 @@
 <?php
 
-$emailSubject = 'VoxxedDays Belgrade - Sponsor Form (new site test)';
+$emailSubject = 'VoxxedDays Belgrade - Sponsor Form';
 $emailFrom = "sponsors@heapspace.rs";
 
 $name = $_POST['formname'];
