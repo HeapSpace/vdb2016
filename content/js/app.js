@@ -16,6 +16,8 @@ $(document).ready(function() {
     		return false;
   	});
 
+    
+
     $(".float-label").jvFloat();
 
     $('.header-holder').affix({
