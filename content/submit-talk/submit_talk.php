@@ -52,14 +52,18 @@ Level of code: $code <br />
 <br />
 EOD;
 
-$headers = 'From: ' . $emailFrom . "\r\n" .
+$headers = 'From: ' . $email . "\r\n" .
+    'Reply-To: ' . $email . "\r\n" .
+    'X-Mailer: PHP/' . phpversion() . "\r\n" .
+	'Content-type: text/html' . "\r\n";
+
+$headers2 = 'From: ' . $emailFrom . "\r\n" .
     'Reply-To: ' . $emailFrom . "\r\n" .
     'X-Mailer: PHP/' . phpversion() . "\r\n" .
 	'Content-type: text/html' . "\r\n";
 
-
 $success = mail($emailFrom, $emailSubject, $body, $headers);
-$success2 = mail($email, $emailSubject, $body, $headers);
+$success2 = mail($email, $emailSubject, $body, $headers2);
 
 if ($success && $success2) {
   header("Location: thanks/");

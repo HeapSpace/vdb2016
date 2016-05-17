@@ -42,7 +42,7 @@ $headers2 = 'From: ' . $emailFrom . "\r\n" .
 	'Content-type: text/html' . "\r\n";
 
 $success = mail($emailFrom, $emailSubject, $body, $headers);
-$success2 = mail($email, $emailSubject, $body, $headers);
+$success2 = mail($email, $emailSubject, $body2, $headers2);
 
 if ($success && $success2) {
   header("Location: thanks/");
