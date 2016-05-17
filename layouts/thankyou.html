@@ -9,6 +9,35 @@
 
 	<div class="main-bg page"></div>
 	<div class="container">
+
+	<% if @item[:formtype] == 'contact'	 %>
+	  <h1 class="text-center pad-vertical-big">
+	    Thank you<br><span class="yellow">for your time!</span>
+	  </h1>
+		<div class="row-centered">
+			<div class="col-sm-8 col-centered">
+				<div class="block-text text-center">
+					We will get back to you very soon!
+				</div>
+			</div>
+		</div>
+	<% end %>
+
+	<% if @item[:formtype] == 'sponsors' %>
+	  <h1 class="text-center pad-vertical-big">
+	    Thank you for expressing interest in<br><span class="yellow">being a partner of</span>Voxxed Days Belgrade 2016
+	  </h1>
+		<h4 class="bold text-center margin-top-med"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Download <span class="yellow"><a href="https://www.dropbox.com/s/ouaikw0onl9j1f2/Sponsorship%20Opportunities%20-%20VDB16%20-%20offer.pdf?dl=0">Sponsorship Opportunities - VDB16 Offer</a></span></h4>
+		<div class="row-centered">
+			<div class="col-sm-8 col-centered">
+				<div class="block-text text-center">
+					Our team will soon reach out to you.
+				</div>
+			</div>
+		</div>
+	<% end %>
+
+	<% if @item[:formtype] == 'submittalk' %>
 	  <h1 class="text-center pad-vertical-big">
 	    Thank you<br><span class="yellow">for submitting!</span>
 	  </h1>
@@ -51,8 +80,9 @@
 	      </div>
 			</div>
 		</div>
+		<% end %>
 	</div>
-	
+
 	<%= render '/_footer.html'%>
 	<%= render '/_bottomscripts.html'%>
 </body>

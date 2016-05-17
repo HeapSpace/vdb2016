@@ -1,51 +1,55 @@
-Crashlog created at 2016-05-15 22:56:53 +0200
+Crashlog created at 2016-05-17 13:33:56 +0200
 
 ===== MESSAGE:
 
-Nanoc::Int::Errors::UnknownLayout: The site does not have a layout with identifier “/sponsors.html”.
+NoMethodError: undefined method `[]=' for #<Nanoc::ItemWithRepsView:0x00000005a49c78>
 
 ===== COMPILATION STACK:
 
-  - [item]   /sponsors.md (rep default)
+  - [item]   /contact/thanks/index.md (rep default)
 
 ===== STACK TRACE:
 
-  0. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/services/executor.rb:141:in `find_layout'
-  1. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/services/executor.rb:58:in `layout'
-  2. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/compiler.rb:257:in `block in recalculate_content_for_rep'
-  3. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/entities/rule_memory.rb:44:in `block in each'
-  4. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/entities/rule_memory.rb:44:in `each'
-  5. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/entities/rule_memory.rb:44:in `each'
-  6. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/compiler.rb:252:in `recalculate_content_for_rep'
-  7. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/compiler.rb:227:in `compile_rep'
-  8. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/compiler.rb:202:in `block in compile_reps'
-  9. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/services/item_rep_selector.rb:18:in `block in each'
-  10. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/services/item_rep_selector.rb:13:in `loop'
-  11. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/services/item_rep_selector.rb:13:in `each'
-  12. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/compiler.rb:200:in `compile_reps'
-  13. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/compiler.rb:103:in `block in run'
-  14. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/dependency_tracker.rb:18:in `run'
-  15. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/compiler.rb:102:in `run'
-  16. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/compiler.rb:89:in `run_all'
-  17. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/entities/site.rb:24:in `compile'
-  18. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/commands/compile.rb:375:in `block in run'
-  19. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/commands/compile.rb:417:in `run_listeners_while'
-  20. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/commands/compile.rb:374:in `run'
-  21. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/command_runner.rb:12:in `block in call'
-  22. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
-  23. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
-  24. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/command_runner.rb:11:in `call'
-  25. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command_dsl.rb:233:in `block in runner'
-  26. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command.rb:294:in `call'
-  27. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command.rb:294:in `run_this'
-  28. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command.rb:247:in `run'
-  29. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command.rb:260:in `run'
-  30. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli.rb:53:in `block in run'
-  31. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
-  32. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
-  33. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli.rb:51:in `run'
-  34. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/bin/nanoc:9:in `<top (required)>'
-  35. C:/Ruby22-x64/bin/nanoc:23:in `load'
+  0. layout /thankyou.html:12:in `get_binding'
+  1. C:/Ruby22-x64/lib/ruby/2.2.0/erb.rb:863:in `eval'
+  2. C:/Ruby22-x64/lib/ruby/2.2.0/erb.rb:863:in `result'
+  3. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/filters/erb.rb:32:in `run'
+  4. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/filter.rb:130:in `setup_and_run'
+  5. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/services/executor.rb:91:in `layout'
+  6. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/compiler.rb:257:in `block in recalculate_content_for_rep'
+  7. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/entities/rule_memory.rb:44:in `block in each'
+  8. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/entities/rule_memory.rb:44:in `each'
+  9. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/entities/rule_memory.rb:44:in `each'
+  10. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/compiler.rb:252:in `recalculate_content_for_rep'
+  11. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/compiler.rb:227:in `compile_rep'
+  12. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/compiler.rb:202:in `block in compile_reps'
+  13. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/services/item_rep_selector.rb:18:in `block in each'
+  14. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/services/item_rep_selector.rb:13:in `loop'
+  15. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/services/item_rep_selector.rb:13:in `each'
+  16. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/compiler.rb:200:in `compile_reps'
+  17. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/compiler.rb:103:in `block in run'
+  18. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/dependency_tracker.rb:18:in `run'
+  19. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/compiler.rb:102:in `run'
+  20. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/compilation/compiler.rb:89:in `run_all'
+  21. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/base/entities/site.rb:24:in `compile'
+  22. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/commands/compile.rb:375:in `block in run'
+  23. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/commands/compile.rb:417:in `run_listeners_while'
+  24. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/commands/compile.rb:374:in `run'
+  25. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/command_runner.rb:12:in `block in call'
+  26. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
+  27. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
+  28. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/command_runner.rb:11:in `call'
+  29. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command_dsl.rb:233:in `block in runner'
+  30. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command.rb:294:in `call'
+  31. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command.rb:294:in `run_this'
+  32. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command.rb:247:in `run'
+  33. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/cri-2.7.0/lib/cri/command.rb:260:in `run'
+  34. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli.rb:53:in `block in run'
+  35. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/error_handler.rb:64:in `handle_while'
+  36. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli/error_handler.rb:22:in `handle_while'
+  37. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/lib/nanoc/cli.rb:51:in `run'
+  38. C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/nanoc-4.1.6/bin/nanoc:9:in `<top (required)>'
+  39. C:/Ruby22-x64/bin/nanoc:23:in `load'
 
 ===== VERSION INFORMATION:
 

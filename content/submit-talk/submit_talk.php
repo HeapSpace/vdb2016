@@ -1,7 +1,7 @@
 <?php
 
 $emailSubject = 'VoxxedDays Belgrade - Submit Talk (new site test)';
-
+$emailFrom = "voxxed-cfp@heapspace.rs";
 $formsubmitted = date("Y/m/d H:i:s");
 
 $name = $_POST['formname'];
@@ -52,19 +52,19 @@ Level of code: $code <br />
 <br />
 EOD;
 
-$headers = 'From: ' . $email . "\r\n" .
-    'Reply-To: voxxed-cfp@heapspace.rs' . "\r\n" .
+$headers = 'From: ' . $emailFrom . "\r\n" .
+    'Reply-To: ' . $emailFrom . "\r\n" .
     'X-Mailer: PHP/' . phpversion() . "\r\n" .
 	'Content-type: text/html' . "\r\n";
 
 
-$success = mail("voxxed-cfp@heapspace.rs", $emailSubject, $body, $headers);
+$success = mail($emailFrom, $emailSubject, $body, $headers);
 $success2 = mail($email, $emailSubject, $body, $headers);
 
 if ($success && $success2) {
-  header("Location: thankyou.html");
+  header("Location: thanks/");
 } else {
-  header("Location: formerror.html");
+  header("Location: error/");
 }
 
 ?>

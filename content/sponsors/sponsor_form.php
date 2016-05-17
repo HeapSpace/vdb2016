@@ -1,6 +1,7 @@
 <?php
 
 $emailSubject = 'VoxxedDays Belgrade - Sponsor Form (new site test)';
+$emailFrom = "sponsors@heapspace.rs";
 
 $name = $_POST['formname'];
 $company = $_POST['formcompany'];
@@ -21,19 +22,19 @@ Phone: $phone <br />
 <br />
 EOD;
 
-$headers = 'From: ' . $email . "\r\n" .
-    'Reply-To: sponsors@heapspace.rs' . "\r\n" .
+$headers = 'From: ' . $emailFrom . "\r\n" .
+    'Reply-To: ' . $emailFrom . "\r\n" .
     'X-Mailer: PHP/' . phpversion() . "\r\n" .
 	'Content-type: text/html' . "\r\n";
 
 
-$success = mail("sponsors@heapspace.rs", $emailSubject, $body, $headers);
+$success = mail($emailFrom, $emailSubject, $body, $headers);
 $success2 = mail($email, $emailSubject, $body, $headers);
 
 if ($success && $success2) {
-  header("Location: thankyou_contact.html");
+  header("Location: thanks/");
 } else {
-  header("Location: formerror_contact.html");
+  header("Location: error/");
 }
 
 ?>
