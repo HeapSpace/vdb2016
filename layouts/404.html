@@ -82,8 +82,8 @@
 
 <script type="text/javascript">
 
-var left = 0;
-var right = 0;
+var left = 50;
+var right = 100;
 
 var msgs = [
 	"I will fight until VoxxedBelgrade comes!",
@@ -101,7 +101,7 @@ var msgs = [
 ];
 
 function barbar() {
-	$("#barbar").css("width", left*100/(left+right) + "%");
+	$("#barbar").css("width", left + "%");
 }
 function click() {
 	var ndx = Math.floor((Math.random() * msgs.length));
@@ -138,7 +138,7 @@ function right404() {
 				return;
 			}
 			var arr = eval(msg);
-			right = arr[0];
+			left = arr[0];
 		}
 	});
 }
@@ -151,7 +151,6 @@ function refresh() {
 		success: function(msg){
 			var arr = eval(msg);
 			left = arr[0];
-			right = arr[1];
 			barbar();
 			//$("#left").text(left);
 			//$("#right").text(right);
