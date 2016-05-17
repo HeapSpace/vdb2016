@@ -111,7 +111,10 @@ function click() {
 }
 
 function left404() {
-	left = left + 1;
+	left = left - 1;
+	if (left < 1) {
+		left = 1;
+	}
 	click();
 	$.ajax({
 		type: "POST",
@@ -127,7 +130,10 @@ function left404() {
 	});
 }
 function right404() {
-	right = right + 1;
+	left = left + 1;
+	if (left > 100) {
+		left = 100;
+	}
 	click();
 	$.ajax({
 		type: "POST",
