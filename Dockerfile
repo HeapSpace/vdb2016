@@ -1,11 +1,11 @@
 FROM ruby:2.3.1
 
-VOLUME ~/output
+VOLUME root/output
 
-COPY . ~/
-WORKDIR /~
+COPY . /root/
+WORKDIR /root
+
+ENV LANG C.UTF-8
 
 RUN rm Gemfile.lock
 RUN bundle install
-
-CMD ["bundle exec nanoc -v"]

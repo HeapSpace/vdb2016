@@ -14,3 +14,7 @@ Nanoc4 project template
 
     bundle exec nanoc view
 
+## Docker
+
+	d build -t vdb .
+	d run -v output:/root/output vdb ./build.sh
