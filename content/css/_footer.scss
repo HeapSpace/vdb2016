@@ -1,5 +1,40 @@
 @import "bootstrap-variables";
 
+#scroll-to-top {
+  background: $brand-primary;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  padding: 11px 0 0 0;
+  position: fixed !important;
+  bottom: 45px;
+  right: 55px;
+  display: none;
+  z-index: 1700;
+  border: 1px solid $white;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75); opacity: 0.75;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  cursor: pointer;
+  i {
+    color: white;
+  }
+  &:hover {
+    cursor: pointer;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+}
+
+@media (max-width: $screen-md) {
+  #scroll-to-top {
+    bottom: 8px; right: 6px;
+  }
+}
+
 footer {
     opacity: 0.5;
     position: relative;
