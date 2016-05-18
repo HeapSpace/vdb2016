@@ -6,7 +6,7 @@ $count = -1;
 if (file_exists($filename)) {
 	$fp = fopen($filename, "r+") or die ("?Right");
 	if (flock($fp, LOCK_EX)) {
-		$count = intval(trim(fgets($fp, 1024)));
+		$count = intval(trim(fgets($fp)));
 		$count = $count + 1;
 		if ($count > 100) {
 			$count = 100;
