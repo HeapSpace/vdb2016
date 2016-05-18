@@ -1,23 +1,23 @@
 <?php
 
-$filename = "left.txt" ;
+$filename = "left.txt";
+$count = -1;
 
 if (file_exists($filename)) {
 	$fp = fopen($filename, "r+") or die ("?Right");
-	flock($fp, 1);
-	$count = fgets($fp, 1024);
-	$count += 1;
-	if ($count > 100) {
-		$count = 100;
+	if (flock($fp, LOCK_EX)) {
+		$count = intval(trim(fgets($fp, 1024)));
+		$count = $count + 1;
+		if ($count > 100) {
+			$count = 100;
+		}
+		ftruncate($fp, 0);
+		$val = strval($count);
+		fwrite($fp, $val);
+		flock($fp, LOCK_UN);
 	}
-	fseek($fp, 0);
-	fputs($fp, $count);
-	flock($fp, 3);
 	fclose($fp);
-
-	echo json_encode(array("$count"));
-} else {
-	echo json_encode(array("-1"));
 }
+echo json_encode(array($count));
 
 ?>

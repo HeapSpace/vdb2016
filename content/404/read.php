@@ -1,14 +1,10 @@
 <?php
+
 $filename = "left.txt";
-$fd = fopen($filename , "r") or die ("!?!");
-$count1 = fread($fd , filesize($filename));
-fclose($fd);
+$fp = fopen($filename , "r") or die ("!?!");
+$count = intval(trim(fgets($fp, 1024)));
+fclose($fp);
 
-//$filename = "right.txt";
-//$fd = fopen($filename , "r") or die ("!?!");
-//$count2 = fread($fd , filesize($filename));
-//fclose($fd);
-
-echo "[$count1]";
+echo "[$count]";
 
 ?>
