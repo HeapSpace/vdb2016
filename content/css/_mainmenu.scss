@@ -88,7 +88,9 @@
     width: 100% !important;
     display: inline-block;
     border: 0;
-    background: rgba(27,23,19,0.9);
+  }
+  .in {
+    background: rgba(27,23,19,0.9) !important;
   }
   .nav-justified, .nav-tabs.nav-justified {
     border: 0;
@@ -96,7 +98,6 @@
   .nav-justified>li, .nav-tabs.nav-justified>li {
     display: block;
     width: auto;
-    padding: 5px;
   }
 }
 
