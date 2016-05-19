@@ -23,7 +23,6 @@
   opacity: 0.5;
 }
 
-
 .form-group {
   label {
     color: $brand-secondary;
@@ -38,12 +37,22 @@
     background-color: rgba(17,14,11,0.9);
     border: 0;
     border-bottom: 2px solid $brand-secondary;
-    padding: 25px 20px;
+    padding: 30px 20px;
     font-size: 20px;
     color: $white;
     @include round-corners(0px);
     &:focus {
       border-bottom: 2px solid $brand-primary !important;
+    }
+  }
+  .small-desc {
+    width: 75%;
+    font-size: 85%;
+    color: $brand-secondary;
+    opacity: 0.55;
+    padding: 8px 0 0 0;
+    &.mt12 {
+      margin-top: 15px;
     }
   }
 }

@@ -297,6 +297,15 @@ h5 {
   }
 }
 
+.block-item, .block-text {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 22px;
+  padding: 30px 20px;
+  margin: 3px;
+  color: $brand-secondary;
+}
+
 .item-block-holder {
    padding: 0;
    .block-item {
@@ -309,7 +318,7 @@ h5 {
      &.info {
        background: rgba(17,14,11,0.9);
        cursor: default;
-
+       padding-bottom: 48px;
      }
    }
  }
@@ -321,14 +330,7 @@ h5 {
    opacity: 0.6;
  }
 
-.block-item, .block-text {
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 22px;
-  padding: 30px 20px;
-  margin: 3px;
-  color: $brand-secondary;
-}
+
 
 .block-text {
   h4 {
