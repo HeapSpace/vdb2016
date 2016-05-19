@@ -33,6 +33,18 @@
   min-height: 0;
 }
 
+.affix-top {
+  .navbar {
+    background: rgba(27,23,19,0.4);
+  }
+}
+
+.affix {
+  .navbar {
+    background: rgba(27,23,19,0.9);
+  }
+}
+
 .nav.main-menu {
   margin-top: 0px;
 }
