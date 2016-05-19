@@ -291,21 +291,21 @@ $screen-xs:                  480px;
 // Small screen / tablet
 //** Deprecated `$screen-sm` as of v3.0.1
 $screen-sm:                  640px;
-// $screen-sm-min:              $screen-sm
+$screen-sm-min:              $screen-sm;
 //** Deprecated `$screen-tablet` as of v3.0.1
 // $screen-tablet:              $screen-sm-min
 
 // Medium screen / desktop
 //** Deprecated `$screen-md` as of v3.0.1
 $screen-md:                  768px;
-// $screen-md-min:              $screen-md
+$screen-md-min:              $screen-md;
 //** Deprecated `$screen-desktop` as of v3.0.1
 // $screen-desktop:             $screen-md-min
 
 // Large screen / wide desktop
 //** Deprecated `$screen-lg` as of v3.0.1
-$screen-lg:                  950px;
-// $screen-lg-min:              $screen-lg
+$screen-lg:                  1200px;
+$screen-lg-min:              $screen-lg;
 //** Deprecated `$screen-lg-desktop` as of v3.0.1
 // $screen-lg-desktop:          $screen-lg-min
 
@@ -324,9 +324,9 @@ $screen-lg:                  950px;
 // $grid-gutter-width:         30px
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
-// $grid-float-breakpoint:     $screen-sm-min
+$grid-float-breakpoint:     $screen-lg-min;
 //** Point at which the navbar begins collapsing.
-// $grid-float-breakpoint-max: ($grid-float-breakpoint - 1)
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1);
 
 //== Container sizes
 //
@@ -357,7 +357,7 @@ $navbar-margin-bottom:             0; //$line-height-computed
 // $navbar-border-radius:             $border-radius-base
 // $navbar-padding-horizontal:        floor(($grid-gutter-width / 2))
 // $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2)
-// $navbar-collapse-max-height:       340px
+$navbar-collapse-max-height:       none;
 
 // $navbar-default-color:             #777
 $navbar-default-bg: transparent;

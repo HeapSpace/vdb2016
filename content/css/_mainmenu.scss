@@ -30,18 +30,44 @@
 
 .navbar {
   border: 0;
-  min-height: 0;
 }
 
 .affix-top {
   .navbar {
     background: rgba(27,23,19,0.4);
   }
+  .navbar, .navbar-header {
+    height: 90px;
+  }
 }
 
 .affix {
   .navbar {
     background: rgba(27,23,19,0.9);
+  }
+  .navbar, .navbar-header {
+    height: 90px;
+  }
+}
+
+.navbar-default .navbar-toggle {
+  opacity: 0.75;
+  margin-bottom: 0;
+  .icon-bar {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: $brand-secondary;
+  }
+  border: 0;
+  &:focus {
+   background: transparent;
+  }
+  &:hover {
+    background: transparent;
+    .icon-bar {
+      background: $brand-primary;
+    }
   }
 }
 
@@ -53,10 +79,30 @@
   text-align: center;
 }
 
+@media (max-width: $screen-lg) {
+  .container {
+    width: 100%;
+  }
+  .navbar-collapse {
+    overflow: hidden;
+    width: 100% !important;
+    display: inline-block;
+    border: 0;
+  }
+  .nav-justified, .nav-tabs.nav-justified {
+    background: rgba(27,23,19,0.9);
+    border: 0;
+  }
+  .nav-justified>li, .nav-tabs.nav-justified>li {
+    display: block;
+    width: auto;
+    padding: 5px;
+  }
+}
+
 .nav-pills>li>a, .nav-pills>li.active>a {
   background: transparent;
   display: inline-block;
-
   &:hover, &:active, &:focus {
     background: transparent;
   }
@@ -68,19 +114,19 @@
   font-size: 18px;
   display: inline-block;
 
-  @media (min-width: 639px) {
-    padding: 30px 0 0 0;
+  @media (min-width: $screen-lg) {
+    padding: 40px 0 0 0;
   }
+
   a {
     color: $white;
     text-decoration: none;
     padding-bottom: 15px !important;
   }
   &.active {
-    border-bottom: 5px solid $brand-primary;
     background-color: rgba(17,14,11,0.4);
     color: $white;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 10px;
+    border-bottom: 5px solid $brand-primary;
   }
 }

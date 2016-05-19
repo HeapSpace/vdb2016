@@ -1,7 +1,7 @@
 @import "bootstrap-variables";
 
 #scroll-to-top {
-  background: $brand-primary;
+  background: $brand-secondary;
   width: 55px;
   height: 55px;
   text-align: center;
@@ -10,10 +10,10 @@
   bottom: 45px;
   right: 55px;
   display: none;
-  z-index: 1700;
+  z-index: 1600;
   border: 1px solid $white;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
-  opacity: 0.75;
+  opacity: 0.55;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;

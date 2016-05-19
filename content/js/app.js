@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-    var offset = 500;
-  	var duration = 500;
+    var offset = 300;
+  	var duration = 400;
   	$(window).scroll(function() {
     	if ($(this).scrollTop() > offset) {
     	   $('#scroll-to-top').fadeIn(duration);
@@ -12,11 +12,9 @@ $(document).ready(function() {
 
   	$('#scroll-to-top').click(function(event) {
     		event.preventDefault();
-    	$('html, body').animate({scrollTop: 0}, 1200);
+    	$('html, body').animate({scrollTop: 0}, 800);
     		return false;
   	});
-
-    
 
     $(".float-label").jvFloat();
 

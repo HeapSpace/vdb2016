@@ -87,10 +87,99 @@
   margin: 55px 0 25px 0;
 }
 
+// Animations
+@-webkit-keyframes scroll-ani {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+
+@-moz-keyframes scroll-ani {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+
+@keyframes scroll-ani {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+
+// The Mouse
+.mouse {
+  position: relative;
+  display: block;
+  width: 32px;
+  height:54px;
+  margin: 0 auto 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid $brand-primary;
+  border-radius: 23px;
+  opacity: 0.55;
+  // Scroll Indicator
+  .mouse-movement {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: $white;
+    border-radius: 50%;
+    -webkit-animation: scroll-ani 2s linear infinite;
+    -moz-animation: scroll-ani 2s linear infinite;
+    animation: scroll-ani 2s linear infinite;
+  }
+
+}
+
 .scroll-indicator {
   width: 32px;
   height: 54px;
-  background: url(../images/scroll-indicator.png) center center no-repeat;
+  //background: url(../images/scroll-indicator.png) center center no-repeat;
   margin: 425px auto 15px auto;
   position: absolute;
   bottom: 20px;
