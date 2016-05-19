@@ -87,6 +87,12 @@
   margin: 55px 0 25px 0;
 }
 
+.tickets-holder {
+  padding: 20px 10px 10px 10px; background: rgba(17,14,11,0.9);
+  @include round-left-corners();
+  @include round-right-corners();
+}
+
 // Animations
 @-webkit-keyframes scroll-ani {
   0% {
