@@ -56,7 +56,7 @@ def link_to(text, target, attributes = {})
   end
 
   # Create link
-  "<li role=\"presentation\" class=\"main-menu-item\"><a #{attributes} href=\"#{h path}\">#{text}</a></li>"
+  "<li class=\"menu_item\"><a #{attributes} href=\"#{h path}\" class=\"item_link\">#{text}</a></li>"
 end
 
 # Creates a HTML link using {#link_to}, except when the linked item is
@@ -89,7 +89,7 @@ def link_to_unless_current(text, target, attributes = {})
 
   if @item_rep && @item_rep.path == path
     # Create message
-    "<li role=\"presentation\" class=\"main-menu-item active\">#{text}</li>"
+    "<li class=\"menu_item active\">#{text}</li>"
   else
     link_to(text, target, attributes)
   end

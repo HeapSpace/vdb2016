@@ -76,6 +76,114 @@
   text-align: center;
 }
 
+///////
+
+.mainmenu {
+  margin:  0;
+  padding: 0;
+  list-style: none;
+  display: table; /* [1] */
+  table-layout: fixed; /* [2] */
+  width: 100%; /* [3] */
+}
+
+.menu_item {
+  width: 100%;
+  float: left;
+  font-size: 1.25em;
+  font-weight: 300;
+  font-family: Roboto;
+  color: $brand-secondary;
+  a {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+  }
+  &.active {
+    -webkit-transition: padding 0.5s;
+    -moz-transition: padding 0.5s;
+    -o-transition: padding 0.5s;
+    -ms-transition: padding 0.5s;
+    transition: padding 0.5s;
+    background-color: rgba(17,14,11,0.4);
+    color: $white;
+    cursor: default;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+    padding: 3em 1em .75em 1em;
+    border-bottom: 5px solid $brand-primary;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .menu_item {
+    display: table-cell; /* [4] */
+    float: none;
+    width: auto;
+  }
+}
+
+.item_link {
+    display: block; /* [5] */
+}
+
+
+/**
+ * Primary nav. Extends `.tabs`.
+ *
+ * 1. Stop tabs’ corners leaking out beyond our 4px round.
+ */
+.primary-nav {
+  text-align: center;
+  border-radius: 0;
+  overflow: hidden; /* [1] */
+  a {
+    opacity: 0.65;
+    padding: 3em 1em .75em 1em;
+    color: white;
+    background: transparent;
+    text-decoration: none;
+    &:hover {
+      padding: 3em 1em .75em 1em;
+      border-bottom: 5px solid $brand-secondary;
+      opacity: 1;
+    }
+  }
+}
+
+/* Responsive-nav.js */
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.nav-collapse.opened {
+  max-height: 9999px;
+}
+
+.disable-pointer-events {
+  pointer-events: none !important;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+///////
+
 @media (max-width: $screen-lg) {
   .container {
     width: 100%;
@@ -102,43 +210,6 @@
   }
 }
 
-.nav-pills>li>a, .nav-pills>li.active>a {
-  background: transparent;
-  display: inline-block;
-  &:hover, &:active, &:focus {
-    background: transparent;
-  }
-}
-
 .mm-item-pad {
-  padding-top: 10px !important;
-}
-
-.main-menu-item {
-
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 18px;
-  display: inline-block;
-  padding: 10px 0 0 0;
-  @media (min-width: $screen-lg) {
-    padding: 40px 0 0 0;
-    -webkit-transition: padding 0.5s;
-    -moz-transition: padding 0.5s;
-    -o-transition: padding 0.5s;
-    -ms-transition: padding 0.5s;
-    transition: padding 0.5s;
-  }
-
-  a {
-    color: $white;
-    text-decoration: none;
-    padding-bottom: 15px !important;
-  }
-  &.active {
-    background-color: rgba(17,14,11,0.4);
-    color: $white;
-    padding: 10px 0;
-    border-bottom: 5px solid $brand-primary;
-  }
+  padding-top: 0.5em !important;
 }

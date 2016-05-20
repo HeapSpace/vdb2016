@@ -39,6 +39,17 @@ route '/css/**/*.css' do
   item.identifier.to_s
 end
 
+## BLOG
+
+route '/blog/**/*.md' do
+  blogdate = item[:created_at].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  blogtitle = item[:title].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+  '/'+ blogdate + '-' + blogtitle + ".html"
+end
+
+compile '/blog/**/*.md' do
+
+end
 
 ## htaccess
 

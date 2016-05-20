@@ -10,9 +10,9 @@ $(document).ready(function() {
     	   $('#scroll-to-top').fadeOut(duration);
     	}
       if ($(this).scrollTop() > shrinkoffset) {
-         $('.main-menu-item').addClass('mm-item-pad');
+         $('.menu_item, .item_link').addClass('mm-item-pad');
     	} else {
-         $('.main-menu-item').removeClass('mm-item-pad');
+         $('.menu_item, .item_link').removeClass('mm-item-pad');
     	}
   	});
 

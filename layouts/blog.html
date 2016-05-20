@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+	<div class="main-bg page"></div>
+	<div class="container">
+	  <h1 class="text-center pad-vertical-big">
+	    <%= @item[:title] %>
+	  </h1>
+	  <h4 class="text-center plain">
+			<%= @item[:date] %>
+		</h4>
+	  <div class="steam-separator"></div>
+
+		<%= yield %>
+
+	</div>
+	<div class="info-block info margin-top-big">
+	  <%= render '/_footer_cta.html' %>
+	</div>
+
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+
+</body>
+</html>
