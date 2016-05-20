@@ -88,13 +88,18 @@
 }
 
 .menu_item {
+  -webkit-transition: padding 0.5s;
+  -moz-transition: padding 0.5s;
+  -o-transition: padding 0.5s;
+  -ms-transition: padding 0.5s;
+  transition: padding 0.5s;
   width: 100%;
   float: left;
   font-size: 1.25em;
   font-weight: 300;
   font-family: Roboto;
-  color: $brand-secondary;
   a {
+    color: $white;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: -moz-none;
@@ -128,10 +133,10 @@
   }
 }
 
+
 .item_link {
     display: block; /* [5] */
 }
-
 
 /**
  * Primary nav. Extends `.tabs`.
@@ -144,12 +149,10 @@
   overflow: hidden; /* [1] */
   a {
     opacity: 0.65;
-    padding: 3em 1em .75em 1em;
-    color: white;
     background: transparent;
     text-decoration: none;
     &:hover {
-      padding: 3em 1em .75em 1em;
+      padding: 1em 1em .75em 1em;
       border-bottom: 5px solid $brand-secondary;
       opacity: 1;
     }
@@ -201,15 +204,25 @@
   .in {
     background: rgba(27,23,19,0.9) !important;
   }
-  .nav-justified, .nav-tabs.nav-justified {
-    border: 0;
-  }
-  .nav-justified>li, .nav-tabs.nav-justified>li {
-    display: block;
-    width: auto;
+  .menu_item {
+    &.active, a {
+      padding: 0.5em 0;
+    }
+    a {
+      padding: 0.5em 0;
+      &:hover {
+        padding: 0.5em 0;
+        border: 0;
+      }
+    }
   }
 }
 
 .mm-item-pad {
-  padding-top: 0.5em !important;
+  a {
+    padding-top: 0.5em !important;
+  }
+  @media (min-width: $screen-lg) {
+    padding-top: 0.5em !important;
+  }
 }
