@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-
+require 'date'
 require 'compass'
 Compass.add_project_configuration 'config.rb'
 
@@ -42,12 +42,25 @@ end
 ## BLOG
 
 route '/blog/**/*.md' do
-  blogdate = item[:created_at].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  blogtitle = item[:title].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  '/'+ blogdate + '-' + blogtitle + ".html"
+  if @item.identifier.without_ext != '/blog/index'
+    blogdate = Time.parse(item[:created_at]).strftime("%d-%m-%Y")
+    blogtitle = item[:title].downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+    '/blog/'+ blogdate + '-' + blogtitle + "/index.html"
+  else
+    item.identifier.without_ext + '.html'
+  end
 end
 
 compile '/blog/**/*.md' do
+  filter :erb
+  filter :kramdown
+  filter :md_links
+  # read layout from items
+  if item[:layout] != nil
+    layout item[:layout]
+  else
+    layout '/default.html'
+  end
 
 end
 

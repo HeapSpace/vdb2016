@@ -17,7 +17,12 @@
 		</h4>
 	  <div class="steam-separator"></div>
 
-		<%= yield %>
+		<% grouped_articles.each do |yearmonth, articles_this_month| %>
+		    <h2>Year <%= yearmonth.first %>, month <%= yearmonth.last %></h2>
+		    <% articles_this_month.each do |article| %>
+		        <h3><%= link_to(article[:title], article) %></h3>
+		    <% end %>
+		<% end %>
 
 	</div>
 	<div class="info-block info margin-top-big">
