@@ -21,7 +21,7 @@
 		    <% articles_this_month.each do |article| %>
 					<div class="item-blog-holder">
 						<div class="blog-item">
-							<h3 class="bold text-cener"><%= link_blog(article[:title], article, {class: 'blog_link'}) %></h3>
+							<h3 class="bold text-cener"><%= link_blog(article, article) %></h3>
 						</div>
 					</div>
 		  	<% end %>

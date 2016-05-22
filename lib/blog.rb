@@ -10,7 +10,7 @@ def grouped_articles
   end.sort.reverse
 end
 
-def link_blog(text, target, attributes = {})
+def link_blog(article, target, attributes = {})
   # Find path
   path =
     case target
@@ -28,6 +28,23 @@ def link_blog(text, target, attributes = {})
     memo + key.to_s + '="' + h(value) + '" '
   end
 
+  text = article[:title]
+  image = article[:image]
+
   # Create link
-  "<a #{attributes} href=\"#{h path}\">#{text}</a>"
+  "<a class=\"blog_link\" href=\"#{h path}\">#{text}
+  <br>
+  <img class=\"blog_thumb\" src=\"./#{image}\" alt=\"#{text}\" />
+  </a>"
+end
+
+
+def blog_image(article)
+
+  text = article[:title]
+  image = article[:image]
+
+  # Create link
+  "<img class=\"blog_image\" src=\"../#{image}\" alt=\"#{text}\" />"
+
 end
