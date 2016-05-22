@@ -16,14 +16,17 @@
 			<%= @item[:date] %>
 		</h4>
 	  <div class="steam-separator"></div>
-
-		<% grouped_articles.each do |yearmonth, articles_this_month| %>
-		    <h2>Year <%= yearmonth.first %>, month <%= yearmonth.last %></h2>
+		<div class="block-grid-sm-1 block-grid-md-3">
+			<% grouped_articles.each do |yearmonth, articles_this_month| %>
 		    <% articles_this_month.each do |article| %>
-		        <h3><%= link_to(article[:title], article) %></h3>
-		    <% end %>
-		<% end %>
-
+					<div class="item-blog-holder">
+						<div class="blog-item">
+							<h3 class="bold text-cener"><%= link_blog(article[:title], article, {class: 'blog_link'}) %></h3>
+						</div>
+					</div>
+		  	<% end %>
+			<% end %>
+		</div>
 	</div>
 	<div class="info-block info margin-top-big">
 	  <%= render '/_footer_cta.html' %>

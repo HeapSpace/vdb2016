@@ -1,0 +1,39 @@
+@import "bootstrap-variables";
+@import "mixins";
+
+.blogpost {
+  img {
+    max-width: 100%;
+    height: auto;
+    display:block;
+    margin: 45px 0;
+    border: 1px solid $brand-secondary;
+    @include round-left-corners();
+    @include round-right-corners();
+  }
+  p {
+    color: $brand-secondary;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px;
+  }
+}
+
+.item-blog-holder {
+   padding: 0;
+   .blog-item {
+     text-align: center;
+     padding-bottom: 48px;
+     &:hover {
+       cursor: pointer;
+       //background: rgba(17,14,11,0.9);
+     }
+     &.blog  {
+       //background: rgba(17,14,11,0.9);
+       cursor: default;
+     }
+   }
+   .blog_link {
+     color: $white;
+   }
+}

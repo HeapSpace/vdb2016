@@ -37,7 +37,7 @@ include Nanoc::Helpers::LinkTo
 #
 #   link_to('Blog', '/blog/', :title => 'My super cool blog')
 #   # => '<a title="My super cool blog" href="/blog/">Blog</a>'
-def link_to(text, target, attributes = {})
+def link_menu(text, target, attributes = {})
   # Find path
   path =
     case target
@@ -56,7 +56,7 @@ def link_to(text, target, attributes = {})
   end
 
   # Create link
-  "<li class=\"menu_item\"><a #{attributes} href=\"#{h path}\" class=\"item_link\">#{text}</a></li>"
+  "<li class=\"menu_item\"><a #{attributes} href=\"#{h path}\" class=\"item_link\" data-toggle=\"collapse\" data-target=\"#mainmenu\">#{text}</a></li>"
 end
 
 # Creates a HTML link using {#link_to}, except when the linked item is
@@ -91,7 +91,7 @@ def link_to_unless_current(text, target, attributes = {})
     # Create message
     "<li class=\"menu_item active\">#{text}</li>"
   else
-    link_to(text, target, attributes)
+    link_menu(text, target, attributes)
   end
 end
 

@@ -15,10 +15,12 @@
 	  <h4 class="text-center plain">
 			<%= @item[:date] %>
 		</h4>
-	  <div class="steam-separator"></div>
 
-		<%= yield %>
-
+		<div class="row-centered">
+			<div class="col-sm-8 col-centered blogpost">
+				<%= yield %>
+			</div>
+		</div>
 	</div>
 	<div class="info-block info margin-top-big">
 	  <%= render '/_footer_cta.html' %>

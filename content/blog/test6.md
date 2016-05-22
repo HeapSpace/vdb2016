@@ -1,11 +1,12 @@
 ---
 kind: article
-created_at: 21 May 2016
-title: We Support Young Students!
+created_at: 23 May 2016
+title: We Support Young Students 2
 layout: '/blog_single.html'
 ---
 
 ## We Support Young Students
+{: .yellow}
 
 ![vdb2016](https://voxxeddays.com/belgrade15/wp-content/uploads/sites/8/2015/09/Volonteri-TS-Milenko-Verkic-Nesa.jpeg "Logo Title Text 1")
 
