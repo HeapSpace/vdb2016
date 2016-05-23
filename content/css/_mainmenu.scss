@@ -120,7 +120,7 @@
     -moz-user-select: -moz-none;
     -o-user-select: none;
     user-select: none;
-    padding: 3em 1em .75em 1em;
+    padding: 3em 0em .75em 0em;
     border-bottom: 5px solid $brand-primary;
   }
 }
@@ -152,7 +152,7 @@
     background: transparent;
     text-decoration: none;
     &:hover {
-      padding: 1em 1em .75em 1em;
+      padding: 1em 0em .75em 0em;
       border-bottom: 5px solid $brand-secondary;
       opacity: 1;
     }
