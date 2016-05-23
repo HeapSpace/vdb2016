@@ -15,13 +15,14 @@
 	  <h4 class="text-center plain">
 			<%= @item[:date] %>
 		</h4>
-	  <div class="steam-separator"></div>
-		<div class="block-grid-sm-1 block-grid-md-3">
+		<div class="row row-centered">
 			<% grouped_articles.each do |yearmonth, articles_this_month| %>
 		    <% articles_this_month.each do |article| %>
-					<div class="item-blog-holder">
-						<div class="blog-item">
-							<h3 class="bold text-cener"><%= link_blog(article, article) %></h3>
+					<div class="col-md-4 col-centered">
+						<div class="item-blog-holder">
+							<div class="blog-item">
+								<h3 class="bold text-cener"><%= link_blog(article, article) %></h3>
+							</div>
 						</div>
 					</div>
 		  	<% end %>

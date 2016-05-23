@@ -37,13 +37,13 @@
      color: $white;
    }
    img {
-     max-width: 100%;
-     height: auto;
-     display: block;
-     margin: 25px 0;
-     border: 1px solid $brand-secondary;
-     @include round-left-corners();
-     @include round-right-corners();
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 25px 0;
+      border: 1px solid $brand-secondary;
+      @include round-left-corners();
+      @include round-right-corners();
       -webkit-filter: sepia(1);
       -webkit-filter: sepia(100%);
       -moz-filter: sepia(100%);

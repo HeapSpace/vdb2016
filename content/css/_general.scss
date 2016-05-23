@@ -277,7 +277,10 @@ h5 {
   background: url(../images/separator_steam.png) center center no-repeat;
   margin: 75px auto 125px auto;
   max-width: 100%;
-  display:block
+  display:block;
+  &.half-space {
+    margin: 25px auto 55px auto;
+  }
 }
 
 .test-line {}
