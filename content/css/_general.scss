@@ -32,6 +32,13 @@
   height: 160px;
 }
 
+#home-main-text {
+  margin-top: 240px;
+  @media (max-width: $screen-md) {
+    margin-bottom: 740px;
+  }
+}
+
 .mobile-menu-logo {
   float: left;
   height: 70px;
