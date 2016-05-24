@@ -42,16 +42,16 @@ $(document).ready(function() {
 		var tweenminutes = TweenMax.to($sclockminutes, 0.1, {rotation: 180*25,  ease:Linear.easeNone, transformOrigin: "center bottom"});
     var tweenhours = TweenMax.to($sclockhours, 0.1, {rotation: 360+255, ease:Linear.easeNone, transformOrigin: "center bottom"});
 
-    new ScrollMagic.Scene({duration: 2400})
+    new ScrollMagic.Scene({triggerElement: "#schedule-list",duration: 2400})
       .setTween(tweenminutes)
       .addTo(controller);
 
-    new ScrollMagic.Scene({duration: 2400})
+    new ScrollMagic.Scene({triggerElement: "#schedule-list",duration: 2400})
       .setTween(tweenhours)
       .addTo(controller);
 
 		// build scene
-		new ScrollMagic.Scene({duration: 2400})
+		new ScrollMagic.Scene({triggerElement: "#schedule-list", duration: 2400})
 			//.setTween(tween)
 			.setPin('#s-clock')
 			.addTo(controller);
