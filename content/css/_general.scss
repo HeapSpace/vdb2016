@@ -78,6 +78,12 @@
   border-radius: 25%;
   background: black;
   margin: 0 auto !important;
+  // -ms-transform: rotate(180deg); /* IE 9 */
+  // -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  // transform: rotate(180deg);
+  // -ms-transform-origin: center bottom; /* IE 9 */
+  // -webkit-transform-origin: center bottom; /* Chrome, Safari, Opera */
+  // transform-origin: center bottom;
 }
 
 #s-clock-hours {
@@ -91,6 +97,12 @@
   border-radius: 25%;
   background: black;
   margin: 0 auto !important;
+  // -ms-transform: rotate(255deg); /* IE 9 */
+  // -webkit-transform: rotate(255deg); /* Chrome, Safari, Opera */
+  // transform: rotate(255deg);
+  // -ms-transform-origin: center bottom; /* IE 9 */
+  // -webkit-transform-origin: center bottom; /* Chrome, Safari, Opera */
+  // transform-origin: center bottom;
 }
 
 
