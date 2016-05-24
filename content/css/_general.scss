@@ -59,12 +59,20 @@
   position: relative;
   height: 2400px;
   .schedule-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-top: 1px solid $brand-primary;
-    padding: 0 0 20px 0;
-    color: $brand-secondary;
-    font-family: "Roboto";
-    font-size: 16px;
-    text-align: center;
+    padding: 10px 0;
+    background-color: rgba($brand-secondary, 0.075);
+    .item-content {
+      padding: 0 10px 10px 10px;
+      width: 100%;
+      color: $brand-secondary;
+      font-family: "Roboto";
+      font-size: 16px;
+      text-align: center;
+    }
     &.min30 {
       height: 100px;
     }
@@ -76,6 +84,9 @@
     }
     &.min120 {
       height: 400px;
+    }
+    &:last-child {
+      border-bottom: 1px solid $brand-primary;
     }
   }
 }

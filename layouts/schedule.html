@@ -15,7 +15,7 @@
 	  <h4 class="text-center plain">VoxxedDays Belgrade 2016 returns bigger and brighter!<br>We can’t wait to start a new, 3-days round<br>of learning and sharing!</h4>
 		<div class="steam-separator"></div><br><br><br>
 		<div id="schedule-list">
-			<div id="s-clock">
+			<div id="s-clock" class="visible-lg">
 				<div id="s-clock-minutes"></div>
 				<div id="s-clock-hours"></div>
 				<div id="s-clock-background"></div>
@@ -23,64 +23,88 @@
 			</div>
 			<div class="abs-holder">
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-lg-3">
 						<h3 class="bold yellow text-center">Track 1</h3>
 						<div class="schedule-item min30">
-							<h4>Full Name</h4>
-							description text
+							<div class="item-content">
+								<h5 class="bold">Full Name</h5>
+								description text
+							</div>
 						</div>
 						<div class="schedule-item min30">
-							<h4>Full Name</h4>
-							description text
+							<div class="item-content">
+								<h5 class="bold">Full Name</h5>
+								description text
+							</div>
 						</div>
 						<div class="schedule-item min60">
-							<h4>Full Name</h4>
-							description text
+							<div class="item-content">
+								<h5 class="bold">Full Name</h5>
+								description text
+							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-lg-3">
 						<h3 class="bold yellow text-center">Track 2</h3>
 						<div class="schedule-item min60">
-							<h4>Full Name</h4>
-							description text
+							<div class="item-content">
+								<h5 class="bold">Full Name</h5>
+								description text
+							</div>
 						</div>
 						<div class="schedule-item min30">
-							<h4>Full Name</h4>
-							description text
+							<div class="item-content">
+								<h5 class="bold">Full Name</h5>
+								description text
+							</div>
 						</div>
 						<div class="schedule-item min30">
-							<h4>Full Name</h4>
-							description text
+							<div class="item-content">
+								<h5 class="bold">Full Name</h5>
+								description text
+							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-lg-3">
 						<h3 class="bold yellow text-center">Track 3</h3>
 						<div class="schedule-item min120">
-							<h4>Full Name</h4>
-							description text
+							<div class="item-content">
+								<h5 class="bold">Full Name</h5>
+								description text
+							</div>
 						</div>
 						<div class="schedule-item min30">
-							<h4>Full Name</h4>
-							description text
+							<div class="item-content">
+								<h5 class="bold">Full Name</h5>
+								description text
+							</div>
 						</div>
 						<div class="schedule-item min60">
-							<h4>Full Name</h4>
-							description text
+							<div class="item-content">
+								<h5 class="bold">Full Name</h5>
+								description text
+							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-lg-3">
 						<h3 class="bold yellow text-center">Track 4</h3>
 						<div class="schedule-item min30">
-							<h4>Full Name</h4>
-							description text
+							<div class="item-content">
+								<h5 class="bold">Full Name</h5>
+								description text
+							</div>
 						</div>
 						<div class="schedule-item min60">
-							<h4>Full Name</h4>
-							description text
+							<div class="item-content">
+								<h5 class="bold">Full Name</h5>
+								description text
+							</div>
 						</div>
 						<div class="schedule-item min60">
-							<h4>Full Name</h4>
-							description text
+							<div class="item-content">
+								<h5 class="bold">Full Name</h5>
+								description text
+							</div>
 						</div>
 					</div>
 				</div>
@@ -94,6 +118,10 @@
 
 	<%= render '/_footer.html'%>
 	<%= render '/_bottomscripts.html'%>
-
+	<script>
+		$(window).on('unload', function() {
+		   $(window).scrollTop(0);
+		});
+	</script>
 </body>
 </html>
