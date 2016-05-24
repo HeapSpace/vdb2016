@@ -62,21 +62,22 @@
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background: $white;
+  background: transparent url(../images/clock-bg.svg);
   top: -50px;
   margin: 0 auto !important;
+  background-size: cover;
 }
 
 #s-clock-minutes {
   position: absolute;
   left: 48px;
-  top: 5px;
-  height: 45px;
+  top: 15px;
+  height: 35px;
   width: 4px;
   -webkit-border-radius: 25%;
   -moz-border-radius: 25%;
   border-radius: 25%;
-  background: black;
+  background: $brand-secondary;
   margin: 0 auto !important;
   // -ms-transform: rotate(180deg); /* IE 9 */
   // -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
@@ -89,13 +90,13 @@
 #s-clock-hours {
   position: absolute;
   left: 48px;
-  top: 15px;
-  height: 35px;
+  top: 25px;
+  height: 25px;
   width: 4px;
   -webkit-border-radius: 25%;
   -moz-border-radius: 25%;
   border-radius: 25%;
-  background: black;
+  background: $brand-secondary;
   margin: 0 auto !important;
   // -ms-transform: rotate(255deg); /* IE 9 */
   // -webkit-transform: rotate(255deg); /* Chrome, Safari, Opera */
