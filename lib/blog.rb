@@ -3,6 +3,7 @@ require 'date'
 
 include Nanoc::Helpers::Blogging
 include Nanoc::Helpers::LinkTo
+include Nanoc::Helpers::Text
 
 def grouped_articles
   sorted_articles.group_by do |a|
@@ -10,7 +11,7 @@ def grouped_articles
   end.sort.reverse
 end
 
-def link_blog(article, target, attributes = {})
+def blog_post(article, target, attributes = {})
   # Find path
   path =
     case target
@@ -31,11 +32,12 @@ def link_blog(article, target, attributes = {})
   text = article[:title]
   image = article[:image]
 
+  colors = ['red', 'blue', 'green']
   # Create link
   "<a class=\"blog_link\" href=\"#{h path}\">#{text}
   <br>
   <img class=\"blog_thumb\" src=\"./#{image}\" alt=\"#{text}\" />
-  </a>"
+  <div class=\"excerpt\">" + article[:excerpt].to_s + "</div></a>"
 end
 
 

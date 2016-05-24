@@ -15,12 +15,14 @@
 	  <h4 class="text-center plain">
 			<%= @item[:date] %>
 		</h4>
-
 		<div class="row-centered">
 			<div class="col-sm-8 col-centered blogpost">
 				<%= blog_image(@item) %>
 				<%= yield %>
 			</div>
+		</div>
+		<div class="text-center margin-top-small">
+			<a href="/blog/" class="btn btn-primary btn-lg blue" role="button">Back to list</a>
 		</div>
 	</div>
 	<div class="info-block info margin-top-big">
