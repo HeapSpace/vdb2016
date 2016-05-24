@@ -30,4 +30,29 @@ $(document).ready(function() {
       }
     });
 
+    // init controller
+    var controller = new ScrollMagic.Controller();
+
+    var $sclockminutes = $('#s-clock-minutes');
+    var $sclockhours = $('#s-clock-hours');
+
+		// build tween
+		var tweenminutes = TweenMax.to($sclockminutes, 0.5, {rotation: 360*12, ease: Linear.easeNone, transformOrigin: "center bottom"});
+    var tweenhours = TweenMax.to($sclockhours, 0.5, {rotation: 360, ease: Linear.easeNone, transformOrigin: "center bottom"});
+
+    new ScrollMagic.Scene({duration: 2400})
+      .setTween(tweenminutes)
+      .addTo(controller);
+
+    new ScrollMagic.Scene({duration: 2400})
+      .setTween(tweenhours)
+      .addTo(controller);
+
+		// build scene
+		new ScrollMagic.Scene({duration: 2400})
+			//.setTween(tween)
+			.setPin('#s-clock')
+			.addTo(controller);
+
+
 });

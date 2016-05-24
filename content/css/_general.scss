@@ -55,6 +55,45 @@
   }
 }
 
+#s-clock {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: $white;
+  top: -50px;
+  margin: 0 auto !important;
+}
+
+#s-clock-minutes {
+  position: absolute;
+  left: 48px;
+  top: 5px;
+  height: 45px;
+  width: 4px;
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  border-radius: 25%;
+  background: black;
+  margin: 0 auto !important;
+}
+
+#s-clock-hours {
+  position: absolute;
+  left: 48px;
+  top: 15px;
+  height: 35px;
+  width: 4px;
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  border-radius: 25%;
+  background: black;
+  margin: 0 auto !important;
+}
+
+
 .main-bg {
   position: absolute;
   z-index: -1000;
