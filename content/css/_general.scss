@@ -57,7 +57,7 @@
 
 #schedule-list {
   position: relative;
-  height: 2400px;
+  height: 4800px;
   .schedule-item {
     display: flex;
     align-items: center;
@@ -66,24 +66,30 @@
     padding: 10px 0;
     background-color: rgba($brand-secondary, 0.075);
     .item-content {
-      padding: 0 10px 10px 10px;
+      padding: 0px 10px 10px 10px;
       width: 100%;
       color: $brand-secondary;
       font-family: "Roboto";
       font-size: 16px;
       text-align: center;
     }
-    &.min30 {
+    &.min15 {
       height: 100px;
     }
-    &.min60 {
+    &.min30 {
       height: 200px;
     }
-    &.min90 {
+    &.min45 {
       height: 300px;
     }
-    &.min120 {
+    &.min60 {
       height: 400px;
+    }
+    &.min90 {
+      height: 600px;
+    }
+    &.min120 {
+      height: 800px;
     }
     &:last-child {
       border-bottom: 1px solid $brand-primary;
@@ -441,14 +447,23 @@ h5 {
    }
 }
 
- .fa-star {
-   color: $white;
-   margin-right: 8px;
-   font-size: 80%;
-   opacity: 0.6;
- }
+.fa-star {
+  color: $white;
+  margin-right: 8px;
+  font-size: 80%;
+  opacity: 0.6;
+}
 
-
+.fa {
+  &.circle {
+    border: 2px solid rgba($brand-secondary, 0.3);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 15px 15px 0 0;
+  }
+}
 
 .block-text {
   h4 {
