@@ -55,6 +55,37 @@
   }
 }
 
+#schedule-list {
+  position: relative;
+  height: 2400px;
+  .schedule-item {
+    border-top: 1px solid $brand-primary;
+    padding: 0 0 20px 0;
+    color: $brand-secondary;
+    font-family: "Roboto";
+    font-size: 16px;
+    text-align: center;
+    &.min30 {
+      height: 100px;
+    }
+    &.min60 {
+      height: 200px;
+    }
+    &.min90 {
+      height: 300px;
+    }
+    &.min120 {
+      height: 400px;
+    }
+  }
+}
+
+.abs-holder {
+  position: absolute;
+  width: 100%;
+  top: -63px;
+}
+
 #s-clock {
   position: relative;
   height: 100px;
@@ -62,10 +93,24 @@
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background: transparent url(../images/clock-bg.svg);
   top: -50px;
   margin: 0 auto !important;
   background-size: cover;
+  z-index: 2000;
+  #s-clock-background {
+    height: 100px;
+    width: 100px;
+    background: transparent url(../images/clock-bg.svg);
+  }
+  .indicator {
+    position: absolute;
+    top: 49px;
+    width: 1140px;
+    left: -525px;
+    border-top: 3px dotted $brand-secondary;
+    opacity: 0.15;
+    z-index: -1900;
+  }
 }
 
 #s-clock-minutes {
