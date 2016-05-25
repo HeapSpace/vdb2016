@@ -315,26 +315,33 @@ h5 {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 22px;
-  padding: 30px 20px;
+  padding: 30px;
   margin: 3px;
   color: $brand-secondary;
 }
 
 .item-block-holder {
    padding: 0;
-   .block-item {
-     text-align: center;
-     background: rgba(17,14,11,0.4);
-     &:hover {
-       cursor: pointer;
-       background: rgba(17,14,11,0.9);
-     }
-     &.info {
-       background: rgba(17,14,11,0.9);
-       cursor: default;
-       padding-bottom: 48px;
-     }
-   }
+}
+
+.block-item {
+  text-align: center;
+  background: rgba(17,14,11,0.4);
+  &:hover {
+    cursor: pointer;
+    background: rgba(17,14,11,0.9);
+  }
+  &.info {
+    background: rgba(17,14,11,0.9);
+    cursor: default;
+    padding-bottom: 48px;
+  }
+  &.conduct {
+    background: rgba(17,14,11,0.9);
+    cursor: default;
+    padding-bottom: 48px;
+    margin: 75px 0 50px 0;
+  }
 }
 
  .fa-star {
