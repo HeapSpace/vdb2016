@@ -87,6 +87,28 @@
   width: 100%; /* [3] */
 }
 
+/**
+ * Primary nav. Extends `.tabs`.
+ *
+ * 1. Stop tabs’ corners leaking out beyond our 4px round.
+ */
+.primary-nav {
+  text-align: center;
+  border-radius: 0;
+  overflow: hidden; /* [1] */
+  a {
+    opacity: 0.65;
+    background: transparent;
+    text-decoration: none;
+    border-bottom: 5px solid transparent;
+    // &:hover {
+    //   padding: 1em 0em .75em 0em;
+    //   border-bottom: 5px solid $brand-secondary;
+    //   opacity: 1;
+    // }
+  }
+}
+
 .menu_item {
   -webkit-transition: padding 0.5s;
   -moz-transition: padding 0.5s;
@@ -98,8 +120,8 @@
   font-size: 1.25em;
   font-weight: 300;
   font-family: Roboto;
-
   a {
+    position: relative;
     color: $white;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -107,6 +129,32 @@
     -o-user-select: none;
     user-select: none;
     padding: 1em 0em .75em 0em;
+    &:after {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: $brand-secondary;
+      content: '';
+      opacity: 0;
+      -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+      -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+      transition: height 0.3s, opacity 0.3s, transform 0.3s;
+      -webkit-transform: translateY(-10px);
+      -moz-transform: translateY(-10px);
+      transform: translateY(-10px);
+    }
+    &:hover {
+      opacity: 1;
+      &:after {
+        height: 5px;
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        transform: translateY(0px);
+      }
+    }
   }
   &.active {
     -webkit-transition: padding 0.5s;
@@ -138,28 +186,6 @@
 
 .item_link {
     display: block; /* [5] */
-}
-
-/**
- * Primary nav. Extends `.tabs`.
- *
- * 1. Stop tabs’ corners leaking out beyond our 4px round.
- */
-.primary-nav {
-  text-align: center;
-  border-radius: 0;
-  overflow: hidden; /* [1] */
-  a {
-    opacity: 0.65;
-    background: transparent;
-    text-decoration: none;
-    border-bottom: 5px solid transparent;
-    &:hover {
-      padding: 1em 0em .75em 0em;
-      border-bottom: 5px solid $brand-secondary;
-      opacity: 1;
-    }
-  }
 }
 
 /* Responsive-nav.js */
