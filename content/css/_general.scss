@@ -28,14 +28,14 @@
 
 .home-logo {
   background: url(../images/home-logo.png) center center no-repeat;
-  margin: 280px auto 740px auto;
+  margin: 280px auto 75px auto;
   height: 160px;
 }
 
 #home-main-text {
   margin-top: 240px;
   @media (max-width: $screen-md) {
-    margin-bottom: 740px;
+    margin-bottom: 40px;
   }
 }
 
@@ -329,6 +329,10 @@
   padding: 175px 0;
 }
 
+.margin-top-huge {
+  margin-top: 210px
+}
+
 .margin-top-big {
   margin-top: 125px;
 }
@@ -425,26 +429,37 @@ h5 {
   font-family: "Roboto";
   font-weight: 300;
   font-size: 22px;
-  padding: 30px 20px;
+  padding: 30px;
   margin: 3px;
   color: $brand-secondary;
 }
 
 .item-block-holder {
    padding: 0;
-   .block-item {
-     text-align: center;
-     background: rgba(17,14,11,0.4);
-     &:hover {
-       cursor: pointer;
-       background: rgba(17,14,11,0.9);
-     }
-     &.info {
-       background: rgba(17,14,11,0.9);
-       cursor: default;
-       padding-bottom: 48px;
-     }
-   }
+}
+
+.block-item {
+  text-align: center;
+  background: rgba(17,14,11,0.4);
+  &:hover {
+    cursor: pointer;
+    background: rgba(17,14,11,0.9);
+  }
+  &.info {
+    background: rgba(17,14,11,0.9);
+    cursor: default;
+    padding-bottom: 48px;
+  }
+  &.conduct {
+    background: rgba(17,14,11,0.9);
+    cursor: default;
+    padding-bottom: 48px;
+    margin: 75px 0 50px 0;
+  }
+  &.clear {
+    background: transparent;
+    cursor: default;
+  }
 }
 
 .fa-star {
@@ -590,6 +605,17 @@ div.line-subtitle > h5 {
     @media (min-width: $screen-md) {
       margin: 15px 40px;
     }
+  }
+}
+
+button, a[role="button"] {
+  @include round-corners(24px);
+  width: 260;
+  margin: 8px 0px;
+  border: 0 !important;
+  padding: 10px 50px;
+  @media (min-width: $screen-md) {
+    margin: 15px 40px;
   }
 }
 

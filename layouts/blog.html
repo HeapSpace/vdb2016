@@ -19,10 +19,8 @@
 			<% grouped_articles.each do |yearmonth, articles_this_month| %>
 		    <% articles_this_month.each do |article| %>
 					<div class="col-md-4 col-centered">
-						<div class="item-blog-holder">
-							<div class="blog-item">
-								<h3 class="bold text-cener"><%= link_blog(article, article) %></h3>
-							</div>
+						<div class="blog-item">
+							<h3 class="bold text-cener"><%= blog_post(article, article) %></h3>
 						</div>
 					</div>
 		  	<% end %>
