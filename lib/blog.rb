@@ -36,7 +36,7 @@ def blog_post(article, target, attributes = {})
   # Create link
   "<a class=\"blog_link\" href=\"#{h path}\">#{text}
   <br>
-  <img class=\"blog_thumb\" src=\"./#{image}\" alt=\"#{text}\" />
+  <div class=\"blog_thumb\" style=\"background-image: url(./#{image})\" alt=\"#{text}\"></div>
   <div class=\"excerpt\">" + article[:excerpt].to_s + "</div></a>"
 end
 
