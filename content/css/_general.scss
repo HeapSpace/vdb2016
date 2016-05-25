@@ -342,6 +342,10 @@ h5 {
     padding-bottom: 48px;
     margin: 75px 0 50px 0;
   }
+  &.clear {
+    background: transparent;
+    cursor: default;
+  }
 }
 
  .fa-star {
