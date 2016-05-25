@@ -30,7 +30,8 @@ $(document).ready(function() {
       }
     });
 
-<<<<<<< HEAD
+    $('#home-main-text').css('padding-top', $(window).height()/2.8);
+
     // init controller
     var controller = new ScrollMagic.Controller();
 
@@ -56,8 +57,6 @@ $(document).ready(function() {
 			//.setTween(tween)
 			.setPin('#s-clock')
 			.addTo(controller);
-=======
-    $('#home-main-text').css('padding-top', $(window).height()/2.8)
->>>>>>> master
+
 
 });
