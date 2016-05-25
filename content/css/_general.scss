@@ -28,14 +28,14 @@
 
 .home-logo {
   background: url(../images/home-logo.png) center center no-repeat;
-  margin: 280px auto 740px auto;
+  margin: 280px auto 75px auto;
   height: 160px;
 }
 
 #home-main-text {
   margin-top: 240px;
   @media (max-width: $screen-md) {
-    margin-bottom: 740px;
+    margin-bottom: 40px;
   }
 }
 

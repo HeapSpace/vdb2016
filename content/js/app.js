@@ -30,4 +30,6 @@ $(document).ready(function() {
       }
     });
 
+    $('#home-main-text').css('padding-top', $(window).height()/2.8)
+
 });
