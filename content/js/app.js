@@ -30,6 +30,12 @@ $(document).ready(function() {
       }
     });
 
+    var fx = function fx() {
+      return $(".speaker-img img:last", this).fadeToggle();
+    };
+
+    $(".speaker-holder").hover(fx, fx);
+
     $('#home-main-text').css('padding-top', $(window).height()/2.8)
 
 });

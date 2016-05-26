@@ -342,18 +342,51 @@ h5 {
     padding-bottom: 48px;
     margin: 75px 0 50px 0;
   }
+  &.speaker {
+    background: rgba(17,14,11,0.9);
+    cursor: default;
+    padding: 6px 30px 24px 30px;
+    text-align: left;
+    @include round-corners(10px);
+  }
   &.clear {
     background: transparent;
     cursor: default;
   }
 }
 
- .fa-star {
-   color: $white;
-   margin-right: 8px;
-   font-size: 80%;
-   opacity: 0.6;
- }
+.speaker-holder {
+  position: relative;
+  height: 375px;
+  &:hover {
+    img.speaker-img {
+
+    }
+  }
+  .speaker-img {
+    img {
+      position: absolute;
+      top: 95px;
+      left: 75px;
+      height: 175px;
+      width: 175px;
+      @include round-corners(50%);
+    }
+  }
+  img.frame {
+    top: 0;
+    position: absolute;
+    vertical-align: baseline;
+    z-index: 2;
+  }
+}
+
+.fa-star {
+  color: $white;
+  margin-right: 8px;
+  font-size: 80%;
+  opacity: 0.6;
+}
 
 
 
