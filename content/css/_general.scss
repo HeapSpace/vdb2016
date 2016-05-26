@@ -12,6 +12,7 @@
     text-align:left;
     /* inline-block space fix */
     margin-right:-4px;
+    vertical-align: text-top;
 }
 
 .yellow {
@@ -360,8 +361,9 @@ h5 {
 }
 
 .speaker-holder {
+  height: 100%;
   position: relative;
-  height: 375px;
+  width: 100%;
   &:hover {
     img.speaker-img {
 
@@ -370,18 +372,16 @@ h5 {
   .speaker-img {
     img {
       position: absolute;
-      top: 95px;
-      left: 75px;
-      height: 175px;
-      width: 175px;
+      top: 26.8%;
+      left: 23.8%;
+      height: 42.4%;
+      width: 46%;
       @include round-corners(50%);
     }
   }
   img.frame {
-    top: 0;
-    position: absolute;
+    position: relative;
     vertical-align: baseline;
-    z-index: 2;
   }
 }
 
