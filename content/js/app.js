@@ -36,6 +36,6 @@ $(document).ready(function() {
 
     $(".speaker-holder").hover(fx, fx);
 
-    $('#home-main-text').css('padding-top', $(window).height()/2.8)
+    $('#home-main-text').css('padding-top', $(window).height()/2)
 
 });
