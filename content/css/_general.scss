@@ -374,9 +374,11 @@ h5 {
 }
 
 .speaker-holder {
-  height: 100%;
+  margin: 30px 0 0 0;
+  @media (max-width: $screen-sm) {
+    margin: 0 0 30px 0;
+  }
   position: relative;
-  width: 100%;
   &:hover {
     img.speaker-img {
 
