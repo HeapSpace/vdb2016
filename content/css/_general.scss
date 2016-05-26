@@ -307,6 +307,19 @@ h5 {
     img {
       // background: rgba(17,14,11,0.4);
       opacity: 0.55;
+      max-height: 150px;
+      &.platinum {
+
+      }
+      &.diamond {
+
+      }
+      &.gold {
+
+      }
+      &.bronze {
+
+      }
     }
     &:hover {
       img {
