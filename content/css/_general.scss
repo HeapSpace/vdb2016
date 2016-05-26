@@ -320,6 +320,9 @@ h5 {
       &.bronze {
 
       }
+      &.limited100 {
+        max-height: 100px;
+      }
     }
     &:hover {
       img {
