@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     var offset = 300;
-    var shrinkoffset = 1;
+    var shrinkoffset = 0;
   	var duration = 400;
   	$(window).scroll(function() {
     	if ($(this).scrollTop() > offset) {
