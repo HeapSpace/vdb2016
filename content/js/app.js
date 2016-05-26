@@ -9,11 +9,6 @@ $(document).ready(function() {
     	} else {
     	   $('#scroll-to-top').fadeOut(duration);
     	}
-      if ($(this).scrollTop() > shrinkoffset) {
-         $('.menu_item, .item_link').addClass('mm-item-pad');
-    	} else {
-         $('.menu_item, .item_link').removeClass('mm-item-pad');
-    	}
   	});
 
   	$('#scroll-to-top').click(function(event) {

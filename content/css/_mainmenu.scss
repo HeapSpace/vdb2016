@@ -1,114 +1,5 @@
 @import "bootstrap-variables";
 
-.header-holder {
-  border: 0;
-  .main-menu-logo {
-    display: none;
-  }
-  &.affix {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index:10;
-
-    // .main-menu-item {
-    //   padding-top: 10px;
-    // }
-    .main-menu-logo {
-        width: 100%;
-        display: block;
-        z-index: 200;
-        padding: 15px;
-        border-bottom: 1px solid rgba(152,133,120, 0.3);
-        text-align: center;
-      img {
-        width: 126px;
-      }
-    }
-  }
-}
-
-.navbar-collapse {
-  background: rgba(27,23,19,0.4);
-  -webkit-transition: background-color 0.5s;
-  -moz-transition: background-color 0.5s;
-  -o-transition: background-color 0.5s;
-  -ms-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-  border: 0;
-  &.in {
-    background: transparent;
-  }
-}
-
-.affix {
-  .navbar-collapse {
-    background: rgba(27,23,19,0.9);
-  }
-}
-
-.navbar-default .navbar-toggle {
-  opacity: 0.75;
-  margin-bottom: 0;
-  border: 0;
-  .icon-bar {
-    display: block;
-    width: 30px;
-    height: 5px;
-    background: $brand-secondary;
-  }
-  &:focus {
-   background: transparent;
-  }
-  &:hover {
-    background: transparent;
-    .icon-bar {
-      background: $brand-primary;
-    }
-  }
-}
-
-.nav.main-menu {
-  margin-top: 0px;
-}
-
-.nav-pills>li {
-  text-align: center;
-}
-
-///////
-
-.mainmenu {
-  margin:  0;
-  padding: 0;
-  list-style: none;
-  display: table; /* [1] */
-  table-layout: fixed; /* [2] */
-  width: 100%; /* [3] */
-}
-
-/**
- * Primary nav. Extends `.tabs`.
- *
- * 1. Stop tabs’ corners leaking out beyond our 4px round.
- */
-.primary-nav {
-  text-align: center;
-  border-radius: 0;
-  overflow: hidden; /* [1] */
-  a {
-    opacity: 0.65;
-    background: transparent;
-    text-decoration: none;
-    border-bottom: 5px solid transparent;
-    // &:hover {
-    //   padding: 1em 0em .75em 0em;
-    //   border-bottom: 5px solid $brand-secondary;
-    //   opacity: 1;
-    // }
-  }
-}
-
 .menu_item {
   -webkit-transition: padding 0.5s;
   -moz-transition: padding 0.5s;
@@ -128,7 +19,7 @@
     -moz-user-select: -moz-none;
     -o-user-select: none;
     user-select: none;
-    padding: 1em 0em .75em 0em;
+    padding: 3em 0em .75em 0em;
     &:after {
       position: absolute;
       top: 100%;
@@ -170,10 +61,132 @@
     -moz-user-select: -moz-none;
     -o-user-select: none;
     user-select: none;
-    padding: 3em 0em .75em 0em;
+
     border-bottom: 5px solid $brand-primary;
   }
 }
+
+.header-holder {
+  border: 0;
+  .main-menu-logo {
+    display: none;
+  }
+  &.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+    .navbar-collapse {
+      background: rgba(27,23,19,0.9);
+    }
+    .menu_item {
+      a {
+        -webkit-transition: padding 0.5s;
+        -moz-transition: padding 0.5s;
+        -o-transition: padding 0.5s;
+        -ms-transition: padding 0.5s;
+        transition: padding 0.5s;
+        padding-top: 1em !important;
+      }
+    }
+    .main-menu-logo {
+        width: 100%;
+        display: block;
+        z-index: 200;
+        padding: 15px;
+        border-bottom: 1px solid rgba(152,133,120, 0.3);
+        text-align: center;
+      img {
+        width: 126px;
+      }
+    }
+  }
+  &.affix-top {
+    .menu_item {
+      a {
+        -webkit-transition: padding 0.5s;
+        -moz-transition: padding 0.5s;
+        -o-transition: padding 0.5s;
+        -ms-transition: padding 0.5s;
+        transition: padding 0.5s;
+      }
+    }
+  }
+}
+
+.navbar-collapse {
+  background: rgba(27,23,19,0.4);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+  &.in, &.collapsing {
+    background: transparent;
+    .menu_item.active, a {
+      padding: 1em 0 !important;
+    }
+  }
+}
+
+.navbar-default .navbar-toggle {
+  opacity: 0.75;
+
+  .icon-bar {
+    display: block;
+    width: 30px;
+    height: 5px;
+    background: $brand-secondary;
+  }
+  &:focus {
+   background: transparent;
+  }
+  &:hover {
+    background: transparent;
+    .icon-bar {
+      background: $brand-primary;
+    }
+  }
+}
+
+.nav.main-menu {
+  margin-top: 0px;
+}
+
+///////
+
+.mainmenu {
+  margin:  0;
+  padding: 0;
+  list-style: none;
+  display: table; /* [1] */
+  table-layout: fixed; /* [2] */
+  width: 100%; /* [3] */
+}
+
+/**
+ * Primary nav. Extends `.tabs`.
+ *
+ * 1. Stop tabs’ corners leaking out beyond our 4px round.
+ */
+.primary-nav {
+  text-align: center;
+  border-radius: 0;
+  overflow: hidden; /* [1] */
+  a {
+    opacity: 0.65;
+    background: transparent;
+    text-decoration: none;
+    border-bottom: 5px solid transparent;
+    // &:hover {
+    //   padding: 1em 0em .75em 0em;
+    //   border-bottom: 5px solid $brand-secondary;
+    //   opacity: 1;
+    // }
+  }
+}
+
+
 
 @media (min-width: $screen-lg) {
   .menu_item {
@@ -233,25 +246,15 @@
   .in {
     background: rgba(27,23,19,0.9) !important;
   }
-  .menu_item {
-    &.active, a {
-      padding: 0.5em 0;
-    }
-    a {
-      padding: 0.5em 0;
-      &:hover {
-        padding: 0.5em 0;
-        border: 0;
-      }
-    }
-  }
-}
-
-.mm-item-pad {
-  a {
-    padding-top: 0.5em !important;
-  }
-  @media (min-width: $screen-lg) {
-    padding-top: 0.5em !important;
-  }
+  // .menu_item {
+  //   &.active, a {
+  //     padding: 0.5em 0;
+  //   }
+  //   a {
+  //     padding: 0.5em 0;
+  //     &:hover {
+  //       padding: 0.5em 0;
+  //     }
+  //   }
+  // }
 }
