@@ -28,8 +28,12 @@
 
 .home-logo {
   background: url(../images/home-logo.png) center center no-repeat;
-  margin: 280px auto 75px auto;
+  margin: 280px auto 0 auto;
   height: 160px;
+}
+
+.home-date-place {
+  margin: 120px auto 0 auto;
 }
 
 #home-main-text {
