@@ -25,27 +25,11 @@ $(document).ready(function() {
       }
     });
 
-    var spk_hov_cnt = 0
-
-    function fxin() {
-      spk_hov_cnt += 1;
+    function fx() {
       return $(".speaker-img img").last().fadeToggle();
     };
 
-    function fxout() {
-      if (spk_hov_cnt == 5) {
-        spk_hov_cnt = 0;
-        return $(".speaker-img img")
-          .last()
-          .fadeToggle()
-          .css({ transformOrigin: 'center center' })
-          .animate({ rotate: '+=360deg', duration: 500 });
-      } else {
-        return $(".speaker-img img").last().fadeToggle();
-      }
-    };
-
-    $(".speaker-holder").hover(fxin, fxout);
+    $(".speaker-holder").hover(fx, fx);
 
     $('#home-main-text').css('padding-top', $(window).height()/2)
 
