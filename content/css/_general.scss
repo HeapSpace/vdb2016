@@ -32,6 +32,7 @@
 
 .home-logo {
   background: url(../images/home-logo.png) center center no-repeat;
+  background-size: contain;
   //margin: 280px auto 0 auto;
   height: 160px;
 }
