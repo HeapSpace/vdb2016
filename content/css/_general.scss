@@ -4,6 +4,9 @@
 /* centered columns styles */
 .row-centered {
     text-align:center;
+    &.flex {
+      width: 100%;
+    }
 }
 .col-centered {
     display:inline-block;
@@ -29,12 +32,12 @@
 
 .home-logo {
   background: url(../images/home-logo.png) center center no-repeat;
-  margin: 280px auto 0 auto;
+  //margin: 280px auto 0 auto;
   height: 160px;
 }
 
 .home-date-place {
-  margin: 120px auto 0 auto;
+  margin: 5% auto 0 auto;
 }
 
 #home-main-text {
@@ -198,7 +201,7 @@
   width: 32px;
   height: 54px;
   //background: url(../images/scroll-indicator.png) center center no-repeat;
-  margin: 425px auto 15px auto;
+  //margin: 425px auto 15px auto;
   position: absolute;
   bottom: 20px;
   left: 49%;
@@ -577,6 +580,12 @@ button, a[role="button"] {
   .info-content {
     padding: 1em;
   }
+}
+
+#home-mainscreen-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flag-col {

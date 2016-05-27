@@ -31,6 +31,6 @@ $(document).ready(function() {
 
     $(".speaker-holder").hover(fx, fx);
 
-    $('#home-main-text').css('padding-top', $(window).height()/2)
+    $('#home-mainscreen-holder').css('height', $(window).height());
 
 });
