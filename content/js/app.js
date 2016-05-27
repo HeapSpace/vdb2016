@@ -25,11 +25,27 @@ $(document).ready(function() {
       }
     });
 
-    var fx = function fx() {
-      return $(".speaker-img img:last", this).fadeToggle();
+    var cnt = 0
+
+    function fxin() {
+      cnt += 1;
+      return $(".speaker-img img").last().fadeToggle();
     };
 
-    $(".speaker-holder").hover(fx, fx);
+    function fxout() {
+      if (cnt == 5) {
+        cnt = 0;
+        return $(".speaker-img img")
+          .last()
+          .fadeToggle()
+          .css({ transformOrigin: 'center center' })
+          .transition({ rotate: '+=360deg', duration: 500 });
+      } else {
+        return $(".speaker-img img").last().fadeToggle();
+      }
+    };
+
+    $(".speaker-holder").hover(fxin, fxout);
 
     $('#home-main-text').css('padding-top', $(window).height()/2)
 
