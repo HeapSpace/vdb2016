@@ -1,21 +1,25 @@
 <div class="container info-content ">
-<h2 class="text-center">
-  Have any other <span class="yellow"><a href="/faq-and-notes/">questions</a></span> about VDB 2016?<br>
-  Want to make suggestions? Or <span class="yellow"><a href="/sponsors/">support us</a></span>?
-</h2>
-<%
-case @template
-  when "contact" then
-%>
+  <div class="row row-centered">
+    <div class="col-sm-9 col-centered">
+      <h2 class="text-center">
+        Have any other <span class="yellow"><a href="/faq-and-notes/">questions</a></span> about VDB 2016?
+        Want to make suggestions? Or <span class="yellow"><a href="/sponsors/">support us</a></span>?
+      </h2>
+      <%
+      case @template
+        when "contact" then
+      %>
 
-<%
-  when nil then
-%>
-  <div class="block-text text-center">
-    Drop us a line or two at <span class="yellow"><a href="mailto:voxxed@heapspace.rs">voxxed@heapspace.rs</a></span><br>
-    We would love to hear from you.
+      <%
+        when nil then
+      %>
+        <div class="block-text text-center">
+          Drop us a line or two at <span class="yellow"><a href="mailto:voxxed@heapspace.rs">voxxed@heapspace.rs</a></span><br>
+          We would love to hear from you.
+        </div>
+      <%
+      end
+      %>
+    </div>
   </div>
-<%
-end
-%>
 </div>

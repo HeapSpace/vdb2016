@@ -519,7 +519,7 @@ div.line-subtitle > h5 {
   background-color: #0e5d6e;
 }
 
-.info-block {
+.footer-cta-block {
   background-size: cover !important;
   &.home {
     height: 326px;
@@ -528,6 +528,11 @@ div.line-subtitle > h5 {
   &.info {
     height: 326px;
     background: url(../images/cfp-img-bg.png) center center no-repeat;
+    @media (max-width: $screen-sm) {
+      h2 {
+        font-size: 26px;
+      }
+    }
   }
 }
 
@@ -556,7 +561,7 @@ button, a[role="button"] {
   }
 }
 
-.info-block {
+.info-block, .footer-cta-block {
   display: flex;
   align-items: center;
   justify-content: center;
