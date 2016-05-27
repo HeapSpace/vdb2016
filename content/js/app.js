@@ -25,16 +25,16 @@ $(document).ready(function() {
       }
     });
 
-    var cnt = 0
+    var spk_hov_cnt = 0
 
     function fxin() {
-      cnt += 1;
+      spk_hov_cnt += 1;
       return $(".speaker-img img").last().fadeToggle();
     };
 
     function fxout() {
-      if (cnt == 5) {
-        cnt = 0;
+      if (spk_hov_cnt == 5) {
+        spk_hov_cnt = 0;
         return $(".speaker-img img")
           .last()
           .fadeToggle()
