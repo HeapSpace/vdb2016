@@ -39,7 +39,7 @@ $(document).ready(function() {
           .last()
           .fadeToggle()
           .css({ transformOrigin: 'center center' })
-          .transition({ rotate: '+=360deg', duration: 500 });
+          .animate({ rotate: '+=360deg', duration: 500 });
       } else {
         return $(".speaker-img img").last().fadeToggle();
       }
