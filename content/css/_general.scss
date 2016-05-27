@@ -391,6 +391,9 @@ h5 {
     img.speaker-img {
 
     }
+    img.frame {
+      opacity: 1;
+    }
   }
   .speaker-img {
     img {
@@ -403,8 +406,14 @@ h5 {
     }
   }
   img.frame {
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    transition: opacity 0.5s;
     position: relative;
     vertical-align: baseline;
+    opacity: 0.5;
   }
 }
 
