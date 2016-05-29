@@ -303,11 +303,11 @@ h5 {
   }
 }
 
-.test-line {}
+.inline { display: inline-block; }
 
 .sponsor-logo {
   text-align: center;
-  display: inline;
+  display: inline-block;
   a {
     img {
       // background: rgba(17,14,11,0.4);
@@ -330,7 +330,16 @@ h5 {
         max-height: 100px;
       }
       &.limit90 {
-        max-height: 100px;
+        max-height: 90px;
+      }
+      &.limit80 {
+        max-height: 80px;
+      }
+      &.limit70 {
+        max-height: 70px;
+      }
+      &.limit55 {
+        max-height: 55px;
       }
     }
     &:hover {
