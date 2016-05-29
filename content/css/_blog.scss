@@ -45,7 +45,7 @@
     background-size: cover;
     background-position: center center;
     margin: 20px 0;
-    border: 3px solid rgba(255, 255, 255, 0.1);
+    border: 0px solid rgba(255, 255, 255, 0.1);
     @include round-left-corners();
     @include round-right-corners();
     -webkit-filter: sepia(1);
