@@ -59,14 +59,14 @@
 
 .mobile-menu-logo {
   float: left;
-  height: 97px;
+  height: 80px;
   width: 97px;
   background: rgba(27,23,19,0.9);
   text-align: center;
   margin: 0;
   img {
     opacity: 0.4;
-    margin: 32px 0 0 0;
+    margin: 21px 0 0 0;
     &:hover {
       opacity: 0.75;
     }
@@ -77,7 +77,7 @@
   position: absolute;
   z-index: -1000;
   background: url(../images/home-main-bg.png) top center no-repeat;
-  background-size: contain;
+  background-size: cover;
   &.home {
     top: -42px;
     left: 0;
