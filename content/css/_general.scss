@@ -320,6 +320,7 @@ h5 {
 .sponsor-logo {
   text-align: center;
   display: inline-block;
+  width: 100%;
   &.block {
     display: block;
     margin-bottom: 50px;
@@ -355,6 +356,12 @@ h5 {
     }
     &.limit55 {
       max-height: 55px;
+    }
+    &.limit45 {
+      max-height: 45px;
+    }
+    &.limit35 {
+      max-height: 35px;
     }
   }
   &:hover {
