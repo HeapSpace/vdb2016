@@ -669,6 +669,13 @@ button, a[role="button"] {
       opacity: 0.6;
     }
   }
+  &.passed {
+    background-color: rgba(#a13717,0.5);
+    &:after {
+      border-left: 10px solid rgba(#a13717,0.5);
+      opacity: 1;
+    }
+  }
 }
 
 .team-member {
