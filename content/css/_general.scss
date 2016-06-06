@@ -670,3 +670,71 @@ button, a[role="button"] {
     }
   }
 }
+
+.team-member {
+  height: 210px;
+  width: 150px;
+  margin-bottom: 30px;
+  .frame {
+    position: absolute;
+    height: 210px;
+    width: 150px;
+    overflow: hidden;
+    @include round-corners(24px);
+    img {
+      -webkit-filter: sepia(1);
+      -webkit-filter: sepia(100%);
+      -moz-filter: sepia(100%);
+      -ms-filter: sepia(100%);
+      -o-filter: sepia(100%);
+      filter: sepia(100%);
+      position: absolute;
+      width: 150px;
+      height: auto;
+      &.deki {
+        width: 180px;
+        height: auto;
+        top: -30px;
+        left: -15px;
+      }
+      &.igor {
+        width: 160px;
+        height: auto;
+        top: -30px;
+        left: -5px;
+      }
+      &.ana {
+        top: -30px;
+      }
+      &.antun {
+        top: -10px;
+      }
+      &.dusica {
+        width: 180px;
+        height: auto;
+        top: -80px;
+        left: -15px;
+      }
+      &.zile {
+        width: 180px;
+        height: auto;
+        top: -90px;
+        left: -5px;
+      }
+      &.tanja {
+        width: 180px;
+        height: auto;
+        top: -20px;
+        left: -5px;
+      }
+    }
+    img:hover {
+      -webkit-filter: sepia(0);
+      -webkit-filter: sepia(0);
+      -moz-filter: sepia(0);
+      -ms-filter: sepia(0);
+      -o-filter: sepia(0);
+      filter: sepia(0);
+    }
+  }
+}
