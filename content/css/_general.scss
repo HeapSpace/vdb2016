@@ -646,6 +646,11 @@ button, a[role="button"] {
   right: 30px;
 }
 
+.sold {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
 .flag-col {
   padding: 0 8px;
 }
