@@ -33,4 +33,17 @@ $(document).ready(function() {
 
     $('#home-mainscreen-holder').css('height', $(window).height());
 
+    $('.frame > img').each(function(){
+      var $el = $(this),
+        staticSrc = $el.attr('src'),
+        gifSrc = $el.data('animated');
+      $el.hover(
+        function(){
+          $(this).attr("src", gifSrc);
+        },
+        function(){
+          $(this).attr("src", staticSrc);
+        });
+    });
+
 });

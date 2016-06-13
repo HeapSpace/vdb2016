@@ -733,14 +733,18 @@ button, a[role="button"] {
       &.igor {
         width: 160px;
         height: auto;
-        top: -30px;
-        left: -5px;
+        top: -35px;
+        left: 0px;
       }
       &.ana {
-        top: -30px;
+        width: 180px;
+        height: auto;
+        top: -60px;
       }
       &.antun {
-        top: -10px;
+        width: 150px;
+        height: auto;
+        top: -20px;
       }
       &.dusica {
         width: 180px;
@@ -759,6 +763,18 @@ button, a[role="button"] {
         height: auto;
         top: -20px;
         left: -5px;
+      }
+      &.jovana {
+        width: 180px;
+        height: auto;
+        top: -50px;
+        left: -15px;
+      }
+      &.tamara {
+        width: 180px;
+        height: auto;
+        top: -45px;
+        left: -15px;
       }
     }
     img:hover {
