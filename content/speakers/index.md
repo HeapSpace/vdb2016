@@ -256,11 +256,5 @@ speakers:
     url: 'https://mobile.twitter.com/johnvaskis'
     photo: 'John Vaskis.jpg'
     desc: ''
-  43:
-    firstname: 'Yufeng '
-    lastname: 'Guo'
-    url: ''
-    photo: 'user.png'
-    desc: ''
 
 ---
