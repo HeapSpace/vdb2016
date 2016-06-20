@@ -25,11 +25,20 @@ $(document).ready(function() {
       }
     });
 
-    function fx() {
-      return $(".speaker-img img").last().fadeToggle();
-    };
 
-    $(".speaker-holder").hover(fx, fx);
+    $(".speaker-img img").each(function(){
+      var $el = $(this),
+        staticSrc = $el.attr('src'),
+        hoverSrc = $el.data('hover');
+      $el.hover(
+        function(){
+          $el.attr("src", hoverSrc);
+        },
+        function(){
+          $el.attr("src", staticSrc);
+        });
+    });
+
 
     $('#home-mainscreen-holder').css('height', $(window).height());
 
@@ -39,10 +48,10 @@ $(document).ready(function() {
         gifSrc = $el.data('animated');
       $el.hover(
         function(){
-          $(this).attr("src", gifSrc);
+          $el.attr("src", gifSrc);
         },
         function(){
-          $(this).attr("src", staticSrc);
+          $el.attr("src", staticSrc);
         });
     });
 

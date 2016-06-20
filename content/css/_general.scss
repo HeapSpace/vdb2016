@@ -299,6 +299,13 @@ h5 {
   color: $white;
 }
 
+h6 {
+  font-size: 18px;
+  font-family: "Roboto Slab";
+  font-weight: 500;
+  color: $white;
+}
+
 .steam-separator {
   width: 361px;
   height: 70px;
@@ -790,5 +797,20 @@ button, a[role="button"] {
       -o-filter: sepia(0);
       filter: sepia(0);
     }
+  }
+}
+
+.speaker {
+  text-align: center;
+  color: $white;
+  margin: 0 0 30px 0;
+  .photo {
+      background-size: cover;
+      background-position: top;
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 15px auto;
+      @include round-corners(50%);
+
   }
 }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+	<div class="main-bg page"></div>
+	<div class="container">
+	  <h1 class="text-center pad-vertical-big">
+	    Speakers at<br><span class="yellow">VDB 2016</span>
+	  </h1>
+		<!-- <div class="row-centered">
+	    <div class="col-sm-8 col-centered">
+	      <h4 class="text-center plain">Voxxed Days Belgrade is organized by the team of enthusiasts who believe that growth is possible only through sharing of top knowledge and awesome energy!<br><br>We are active members of <span class="yellow"><a href="http://heapspace.rs" target="_blank">HeapSpace</a></span> community,<br>in charge of raising the technological community of Serbia onto the whole new level.</h4>
+	    </div>
+	  </div> -->
+
+	  <div class="steam-separator"></div>
+
+		<div class="row-centered">
+
+			<% @item[:speakers].each { |s| %>
+			<div class="col-sm-2 col-centered">
+	      <div class="speaker">
+					<% if !s[1][:url].to_s.empty? then %><a href="<%= s[1][:url] %>" target="_blank"><% end %>
+						<div class="photo" style="background-image: url('../images/speakers/<%= s[1][:photo] %>')"></div>
+						<h6 class="yellow">
+							<%= s[1][:firstname] %> <%= s[1][:lastname] %>
+						</h6>
+					<% if !s[1][:url].to_s.empty? then %></a><% end %>
+					<div class="accent">
+						<%= s[1][:desc] %>
+					</div>
+	      </div>
+	    </div>
+			<% } %>
+
+	  </div>
+	</div>
+	<div class="footer-cta-block info margin-top-big">
+	  <%= render '/_footer_cta.html' %>
+	</div>
+
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+
+</body>
+</html>
