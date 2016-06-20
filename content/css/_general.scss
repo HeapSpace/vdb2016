@@ -720,6 +720,11 @@ button, a[role="button"] {
   height: 260px;
   width: 150px;
   margin-bottom: 30px;
+  &:hover {
+    h6 {
+      color: $white !important;
+    }
+  }
   .frame {
     position: absolute;
     height: 210px;
@@ -727,12 +732,6 @@ button, a[role="button"] {
     overflow: hidden;
     @include round-corners(24px);
     img {
-      -webkit-filter: sepia(1);
-      -webkit-filter: sepia(100%);
-      -moz-filter: sepia(100%);
-      -ms-filter: sepia(100%);
-      -o-filter: sepia(100%);
-      filter: sepia(100%);
       position: absolute;
       width: 150px;
       height: auto;
@@ -794,26 +793,8 @@ button, a[role="button"] {
     position: absolute;
     top: 210px;
     width: 150px;
-    padding-left:10px;
-    h5 {
-      color: #c69a10;
-    }
-  }
-}
-.team-member:hover {
-  .frame {
-    img {
-      -webkit-filter: sepia(0);
-      -webkit-filter: sepia(0);
-      -moz-filter: sepia(0);
-      -ms-filter: sepia(0);
-      -o-filter: sepia(0);
-      filter: sepia(0);
-    }
-  }
-  .name {
-    h5 {
-      color: white;
+    h6 {
+      color: $brand-primary;
     }
   }
 }
