@@ -717,7 +717,7 @@ button, a[role="button"] {
 }
 
 .team-member {
-  height: 210px;
+  height: 260px;
   width: 150px;
   margin-bottom: 30px;
   .frame {
@@ -789,7 +789,20 @@ button, a[role="button"] {
         left: -15px;
       }
     }
-    img:hover {
+  }
+  .name {
+    position: absolute;
+    top: 210px;
+    width: 150px;
+    padding-left:10px;
+    h5 {
+      color: #c69a10;
+    }
+  }
+}
+.team-member:hover {
+  .frame {
+    img {
       -webkit-filter: sepia(0);
       -webkit-filter: sepia(0);
       -moz-filter: sepia(0);
@@ -798,6 +811,7 @@ button, a[role="button"] {
       filter: sepia(0);
     }
   }
+<<<<<<< HEAD
 }
 
 .speaker {
@@ -814,3 +828,11 @@ button, a[role="button"] {
 
   }
 }
+=======
+  .name {
+    h5 {
+      color: white;
+    }
+  }
+}
+>>>>>>> about-page-names
