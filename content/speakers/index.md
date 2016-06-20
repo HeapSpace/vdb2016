@@ -50,7 +50,7 @@ speakers:
     firstname: 'Deepak'
     lastname: 'Nadig'
     url: 'https://mobile.twitter.com/deepak_nadig'
-    photo: 'user.png'
+    photo: 'Deepak Nadig.jpg'
     desc: ''
   9:
     firstname: 'Daniel'
@@ -140,7 +140,7 @@ speakers:
     firstname: 'Maciek'
     lastname: 'Próchniak'
     url: 'https://twitter.com/mpproch'
-    photo: 'user.png'
+    photo: 'Maciek Próchniak.png'
     desc: ''
   24:
     firstname: 'Marcin'
