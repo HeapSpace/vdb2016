@@ -67,7 +67,7 @@ speakers:
   11:
     firstname: 'Filip'
     lastname: 'Danić'
-    url: 'https://labs.ig.com/blog/2670'
+    url: ''
     photo: 'user.png'
     desc: ''
   12:
