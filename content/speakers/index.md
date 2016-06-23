@@ -183,7 +183,7 @@ speakers:
     firstname: 'Mark'
     lastname: 'Heckler'
     url: ''
-    photo: 'user.png'
+    photo: 'Mark Heckler.jpg'
     company: 'Pivotal Software, Inc.'
     talk: 'This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT? Businessing the S*** out of Transformative Development!'
   27:
