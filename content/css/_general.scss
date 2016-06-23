@@ -390,6 +390,9 @@ iframe {
     &.limit35 {
       max-height: 35px;
     }
+    &.limit25 {
+      max-height: 25px;
+    }
   }
   &:hover {
     img {
