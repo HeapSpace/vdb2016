@@ -77,10 +77,10 @@ speakers:
   11:
     firstname: 'Filip'
     lastname: 'Danić'
-    url: ''
+    url: 'https://twitter.com/@DanicFilip'
     photo: 'Filip Danic.jpg'
     company: 'SpiceFactory'
-    talk: 'Complex state handling in modern Web Applications'
+    talk: 'Complex State Handling in Modern Web Applications'
   12:
     firstname: 'Grace'
     lastname: 'Chang'
