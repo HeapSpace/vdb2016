@@ -283,7 +283,7 @@ speakers:
     url: 'https://www.linkedin.com/in/mattrex'
     photo: 'Matija Cupic.jpg'
     company: 'Regional Center for Talented Youth II'
-    talk: 'Page Gaze'
+    talk: 'PageGaze - Interactive Webpage Eye-Tracking Technology'
   41:
     firstname: 'Jovica'
     lastname: 'Kesić'
