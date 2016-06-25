@@ -4,6 +4,13 @@ title: Speakers
 layout: '/speakers.html'
 
 speakers:
+  0:
+    firstname: 'Scott'
+    lastname: 'Amyx'
+    url: 'https://de.linkedin.com/in/amir-golan-a0766085'
+    photo: 'scott-amyx.jpg'
+    company: 'Amyx+McKinsey'
+    talk: 'Keynote'
   1:
     firstname: 'Amir'
     lastname: 'Golan'
@@ -37,7 +44,7 @@ speakers:
     lastname: 'Ward'
     url: 'http://gregariousmammal.com/'
     photo: 'Chris Ward.jpg'
-    company: 'Crate.IO'
+    company: 'Gregarious Mammal'
     talk: 'Your Favourite New Language - The Future of Swift'
   6:
     firstname: 'Daniel'
@@ -169,7 +176,7 @@ speakers:
     firstname: 'Marcin'
     lastname: 'Szymaniuk'
     url: ''
-    photo: 'user.png'
+    photo: 'Marcin Szymaniuk.jpg'
     company: 'ProData Consult'
     talk: 'Apache Spark? If it only worked.'
   25:
@@ -305,11 +312,25 @@ speakers:
     photo: 'Zeljko Turbic.png'
     company: 'Levi 9'
     talk: 'Smart lighting: part of the ‘Internet of Things’ '
-  44  :
+  44:
     firstname: 'Wouter'
     lastname: 'Postma'
     url: 'https://nl.linkedin.com/in/wouterpostma'
     photo: 'Wouter Postma.jpg'
     company: 'Talpa Global'
     talk: 'Smart lighting: part of the ‘Internet of Things’'
+  45:
+    firstname: 'Yufeng'
+    lastname: 'Guo'
+    url: 'https://twitter.com/yufengg'
+    photo: 'Yufeng Guo.jpg'
+    company: 'Google'
+    talk: ''
+  46:
+    firstname: 'Krzysztof'
+    lastname: 'Otrebski'
+    url: 'https://twitter.com/kotrebski'
+    photo: 'Krzysztof Otrebski.jpg'
+    company: 'Ocado Technology'
+    talk: 'Beat Aliens with Akka Cluster'
 ---
