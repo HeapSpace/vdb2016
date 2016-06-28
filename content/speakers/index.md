@@ -7,7 +7,7 @@ speakers:
   0:
     firstname: 'Scott'
     lastname: 'Amyx'
-    url: 'https://de.linkedin.com/in/amir-golan-a0766085'
+    url: 'https://twitter.com/amyxiot'
     photo: 'scott-amyx.jpg'
     company: 'Amyx+McKinsey'
     talk: 'Keynote'
