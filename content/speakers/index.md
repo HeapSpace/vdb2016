@@ -100,7 +100,7 @@ speakers:
     lastname: 'Sans'
     url: 'https://medium.com/@gerard.sans'
     photo: 'Gerard Sans.jpg'
-    company: 'Keytree'
+    company: 'Angular GDE'
     talk: 'Building Cross-Platform Apps using Redux with Angular 2'
   14:
     firstname: 'Hakan'
