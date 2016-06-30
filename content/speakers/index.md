@@ -429,7 +429,7 @@ speakers:
     lastname: 'Vuckovic'
     url: 'https://uk.linkedin.com/in/jaksavuckovic'
     photo: 'Jaksa Vuckovic.jpg'
-    company: 'Zuehlke'
+    company: 'Zuhlke Engineering'
     talk: 'Why are Actors Terrible?'
   61:
     firstname: 'Lukasz'
@@ -543,4 +543,11 @@ speakers:
     photo: 'Zoran Rončević.jpg'
     company: '"Maker" Association'
     talk: 'NodeJS i Python za IoT platforme'
+  77:
+    firstname: 'Jakub'
+    lastname: 'Marchwicki'
+    url: 'http://jakub.marchwicki.pl/'
+    photo: 'Jakub Marchwicki.jpg'
+    company: ''
+    talk: 'Reverse engineering the clean code'
 ---
