@@ -25,6 +25,38 @@ def meta_tag(key)
   '<meta name="%s" content="%s">' % [h(key), h(value)] if value
 end
 
+# Output a share meta-tags. Method expects title, description and image params.
+# If params are not passed, values are looked up in site configuration
+#
+# Usage:
+#
+#  <%= meta_share %>
+#
+#   or
+#
+#  <%= meta_share <article_value>, <description_value>, <image_value> %>
+#
+def meta_share(title = nil, description = nil, image = nil)
+    title = title || @item[:meta_title] || @config[:site][:meta_title]
+    description = description || @item[:meta_description] || @config[:site][:meta_description]
+    image = image || @item[:meta_image] || @config[:site][:meta_image]
+
+    "<meta property='og:locale' content='en_US' />
+    <meta property='og:type' content='website' />
+    <meta property='og:title' content='#{title}' />
+    <meta property='og:description' content='#{description}' />
+    <meta property='og:url' content='#{@config[:site][:base_url]}' />
+    <meta property='og:site_name' content='#{@config[:site][:name]}' />
+    <meta property='og:image' content='#{image}' />
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta name='twitter:title' content='#{title}' />
+    <meta name='twitter:description' content='#{description}' />
+    <meta name='twitter:site' content='@voxxedbelgrade' />
+    <meta name='twitter:image' content='#{image}' />
+    <meta name='twitter:creator' content='@voxxedbelgrade' />
+"
+end
+
 #
 # Usage:
 #
