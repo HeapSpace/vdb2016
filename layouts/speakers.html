@@ -24,7 +24,7 @@
 		<div class="row-centered">
 
 			<% @item[:speakers].each { |s| %>
-			<div class="col-sm-2 col-centered">
+			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-centered">
 	      <div class="speaker">
 					<% if !s[1][:url].to_s.empty? then %><a href="<%= s[1][:url] %>" target="_blank"><% end %>
 						<div class="photo" style="background-image: url('../images/speakers/<%= s[1][:photo] %>')"></div>
