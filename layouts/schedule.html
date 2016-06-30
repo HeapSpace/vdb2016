@@ -2,6 +2,7 @@
 <html>
 <head>
 	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_share %>
 	<%= meta_tag :keywords %>
 </head>
 <body>
@@ -13,7 +14,16 @@
 	    Want to know more?<br><span class="yellow">FAQ at its finest</span>
 	  </h1>
 	  <h4 class="text-center plain">VoxxedDays Belgrade 2016 returns bigger and brighter!<br>We can’t wait to start a new, 3-days round<br>of learning and sharing!</h4>
-		<div class="steam-separator"></div><br><br><br>
+		<div class="steam-separator"></div>
+
+		<div class="schedule-tabs-holder">
+			<ul class="nav nav-tabs nav-justified" role="tablist">
+				<li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">Day 1</a></li>
+				<li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">Day 2</a></li>
+				<li role="presentation"><a href="#day3" aria-controls="day3" role="tab" data-toggle="tab">Day 3</a></li>
+			</ul>
+		</div>
+
 		<div id="schedule-list">
 			<div id="s-clock" class="visible-lg">
 				<div id="s-clock-minutes"></div>
@@ -22,101 +32,73 @@
 				<div class="indicator"></div>
 			</div>
 			<div class="abs-holder">
-				<div class="row">
+
+				<div class="row schedule-header">
 					<div class="col-lg-3">
-						<h3 class="bold yellow text-center">Track 1</h3>
-						<div class="schedule-item min30">
-							<div class="item-content">
-								<i class="fa fa-key circle"></i> Dejan Dimic
-								<h5 class="bold">The Internet of Things: State of the Art and what's in front of us on that canvas</h5>
-							</div>
-						</div>
-						<div class="schedule-item min30">
-							<div class="item-content">
-								<h5 class="bold">Full Name</h5>
-								description text
-							</div>
-						</div>
-						<div class="schedule-item min60">
-							<div class="item-content">
-								<h5 class="bold">Full Name</h5>
-								description text
-							</div>
-						</div>
+						<h4 class="bold yellow text-center">Speaker</h4>
 					</div>
 					<div class="col-lg-3">
-						<h3 class="bold yellow text-center">Track 2</h3>
-						<div class="schedule-item min60">
-							<div class="item-content">
-								<h5 class="bold">Full Name</h5>
-								description text
-							</div>
-						</div>
-						<div class="schedule-item min30">
-							<div class="item-content">
-								<h5 class="bold">Full Name</h5>
-								description text
-							</div>
-						</div>
-						<div class="schedule-item min30">
-							<div class="item-content">
-								<h5 class="bold">Full Name</h5>
-								description text
-							</div>
-						</div>
+						<h4 class="bold yellow text-center">Topic</h4>
 					</div>
 					<div class="col-lg-3">
-						<h3 class="bold yellow text-center">Track 3</h3>
-						<div class="schedule-item min120">
-							<div class="item-content">
-								<h5 class="bold">Full Name</h5>
-								description text
-							</div>
-						</div>
-						<div class="schedule-item min30">
-							<div class="item-content">
-								<h5 class="bold">Full Name</h5>
-								description text
-							</div>
-						</div>
-						<div class="schedule-item min60">
-							<div class="item-content">
-								<h5 class="bold">Full Name</h5>
-								description text
-							</div>
-						</div>
+						<h4 class="bold yellow text-center">Track</h4>
 					</div>
 					<div class="col-lg-3">
-						<h3 class="bold yellow text-center">Track 4</h3>
-						<div class="schedule-item min15">
-							<div class="item-content">
-								<h5 class="bold">Cofee break</h5>
-								brasiliana nirvana	
-							</div>
-						</div>
-						<div class="schedule-item min60">
-							<div class="item-content">
-								<h5 class="bold">Full Name</h5>
-								description text
-							</div>
-						</div>
-						<div class="schedule-item min45">
-							<div class="item-content">
-								<h5 class="bold">Full Name</h5>
-								description text
-							</div>
-						</div>
-						<div class="schedule-item min60">
-							<div class="item-content">
-								<h5 class="bold">Full Name</h5>
-								description text
-							</div>
-						</div>
+						<h4 class="bold yellow text-center">Slot</h4>
 					</div>
 				</div>
+
+				<div class="tab-content">
+					<div class="tab-pane active" role="tabpanel" id="day1">
+						<div class="row">
+							<div class="col-lg-3">
+								<div class="schedule-item" style="height: 360px">
+									<div class="item-content">
+										<i class="fa fa-key circle"></i> Dejan Dimic
+										<h5 class="bold">The Internet of Things: State of the Art and what's in front of us on that canvas</h5>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3">
+								<div class="schedule-item" style="height: 360px">
+									<div class="item-content">
+										<h5 class="bold">Full Name</h5>
+										description text
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3">
+								<div class="schedule-item" style="height: 360px">
+									<div class="item-content">
+										<h5 class="bold">Full Name</h5>
+										description text
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-3">
+								<div class="schedule-item" style="height: 360px">
+									<div class="item-content">
+										<h5 class="bold">Cofee break</h5>
+										brasiliana nirvana
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="tab-pane" role="tabpanel" id="day2">
+						TEST 2
+					</div>
+					
+					<div class="tab-pane" role="tabpanel" id="day3">
+						TEST 3
+					</div>
+
+				</div>
 			</div>
+
 		</div>
-		<br><br><br><br><br><br><div class="steam-separator"></div><br><br><br>
+		<div class="steam-separator"></div>
 	</div>
 	<div class="info-block info margin-top-big">
 	  <%= render '/_footer_cta.html' %>
