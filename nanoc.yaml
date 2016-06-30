@@ -81,6 +81,9 @@ checks:
 ################################################################################
 
 site:
-  name: Foo
-  base_url: http://foo.rs
+  name: "Voxxed Days Belgrade"
+  base_url: 'https://belgrade.voxxeddays.com'
+  meta_title: 'Voxxed Days Belgrade 2016 - 28-30 September'
+  meta_description: 'Balkan&#039;s Most Inspiring Community Technology and Entrepreneurship Conference 2nd instalment. 2x bigger then last year, 4x more fun!'
+  meta_image: 'https://belgrade.voxxeddays.com/images/vdb-illustration-small.jpg'
   keywords: 'keyword1, keyword2'

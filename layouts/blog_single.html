@@ -2,6 +2,7 @@
 <html>
 <head>
 	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_share @item[:title], @item[:excerpt], "#{@config[:site][:base_url]}/blog/#{@item[:image]}" %>
 	<%= meta_tag :keywords %>
 </head>
 <body>
@@ -25,7 +26,7 @@
 			<a href="/blog/" class="btn btn-primary btn-lg blue" role="button">Back to list</a>
 		</div>
 	</div>
-	<div class="info-block info margin-top-big">
+	<div class="footer-cta-block info margin-top-big">
 	  <%= render '/_footer_cta.html' %>
 	</div>
 

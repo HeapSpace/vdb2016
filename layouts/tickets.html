@@ -2,6 +2,7 @@
 <html>
 <head>
 	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_share %>
 	<%= meta_tag :keywords %>
 </head>
 <body>
@@ -35,16 +36,17 @@
 		<div class="row margin-top-small">
 			<div class="col-md-6 item-block-holder">
 				<div class="block-item info rounded-left">
-					<h4 class="bold">EarlyBird Tickets <span class="yellow">€ 250.00</span></h4>
-					(+VAT = € 300.00)<br>
-					Available until June 1st, or on selling out.
+					<img class="soldout" src="/images/sold-out.png" />
+					<h4 class="bold sold">EarlyBird Tickets <span class="yellow">€ 250.00</span></h4>
+					<span class="sold">(+VAT = € 300.00)</span><br>
+					<br>
 				</div>
 			</div>
 			<div class="col-md-6 item-block-holder">
 				<div class="block-item info rounded-right">
 					<h4 class="bold">Standard Tickets <span class="yellow">€ 400.00</span></h4>
 					(+VAT = € 480.00)<br>
-					Not available yet.
+					available
 				</div>
 			</div>
 		</div>
@@ -59,7 +61,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="info-block info margin-top-big">
+	<div class="footer-cta-block info margin-top-big">
 	  <%= render '/_footer_cta.html' %>
 	</div>
 	<%= render '/_footer.html'%>
