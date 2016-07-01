@@ -31,8 +31,8 @@ $(document).ready(function() {
     // init controller
     var controller = new ScrollMagic.Controller();
 
-    var $sclockminutes = $('#s-clock-minutes');
-    var $sclockhours = $('#s-clock-hours');
+    var $sclockminutes = $('.s-clock-minutes');
+    var $sclockhours = $('.s-clock-hours');
 
 		// build tween
     TweenMax.to($sclockminutes, 0.1, {rotation: 180,  ease:Linear.easeNone, transformOrigin: "center bottom"});
@@ -40,18 +40,18 @@ $(document).ready(function() {
 		var tweenminutes = TweenMax.to($sclockminutes, 0.1, {rotation: 180*25,  ease:Linear.easeNone, transformOrigin: "center bottom"});
     var tweenhours = TweenMax.to($sclockhours, 0.1, {rotation: 360+255, ease:Linear.easeNone, transformOrigin: "center bottom"});
 
-    new ScrollMagic.Scene({triggerElement: "#schedule-list",duration: 4320})
+    new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: 4320})
       .setTween(tweenminutes)
       .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#schedule-list",duration: 4320})
+    new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: 4320})
       .setTween(tweenhours)
       .addTo(controller);
 
 		// build scene
-		new ScrollMagic.Scene({triggerElement: "#schedule-list", duration: 4320})
+		new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 4320})
 			//.setTween(tween)
-			.setPin('#s-clock')
+			.setPin('.s-clock')
 			.addTo(controller);
 
 

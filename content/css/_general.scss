@@ -823,3 +823,124 @@ button, a[role="button"] {
     @include round-corners(50%);
   }
 }
+
+.schedule-tabs-holder {
+  margin: 150px 0 150px 0;
+}
+
+#track-tabs {
+  margin-bottom: 150px;
+}
+
+.schedule-list {
+  position: relative;
+  height: 4320px;
+  .schedule-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid $brand-primary;
+    padding: 10px 0;
+    background-color: rgba($brand-secondary, 0.075);
+    .item-content {
+      padding: 0px 10px 10px 10px;
+      width: 100%;
+      color: $brand-secondary;
+      font-family: "Roboto";
+      font-size: 16px;
+      text-align: center;
+    }
+    &.min15 {
+      height: 100px;
+    }
+    &.min30 {
+      height: 200px;
+    }
+    &.min45 {
+      height: 300px;
+    }
+    &.min60 {
+      height: 400px;
+    }
+    &.min90 {
+      height: 600px;
+    }
+    &.min120 {
+      height: 800px;
+    }
+    &:last-child {
+      border-bottom: 1px solid $brand-primary;
+    }
+  }
+}
+
+.abs-holder {
+  position: absolute;
+  width: 100%;
+  top: -63px;
+}
+
+.s-clock {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  top: -50px;
+  margin: 0 auto !important;
+  background-size: cover;
+  z-index: 2000;
+  .s-clock-background {
+    height: 100px;
+    width: 100px;
+    background: transparent url(../images/clock-bg.svg);
+  }
+  .indicator {
+    position: absolute;
+    top: 49px;
+    width: 1140px;
+    left: -525px;
+    border-top: 3px dotted $brand-secondary;
+    opacity: 0.15;
+    z-index: -1900;
+  }
+}
+
+.s-clock-minutes {
+  position: absolute;
+  left: 48px;
+  top: 15px;
+  height: 35px;
+  width: 4px;
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  border-radius: 25%;
+  background: $brand-secondary;
+  margin: 0 auto !important;
+  // -ms-transform: rotate(180deg); /* IE 9 */
+  // -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  // transform: rotate(180deg);
+  // -ms-transform-origin: center bottom; /* IE 9 */
+  // -webkit-transform-origin: center bottom; /* Chrome, Safari, Opera */
+  // transform-origin: center bottom;
+}
+
+.s-clock-hours {
+  position: absolute;
+  left: 48px;
+  top: 25px;
+  height: 25px;
+  width: 4px;
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  border-radius: 25%;
+  background: $brand-secondary;
+  margin: 0 auto !important;
+  // -ms-transform: rotate(255deg); /* IE 9 */
+  // -webkit-transform: rotate(255deg); /* Chrome, Safari, Opera */
+  // transform: rotate(255deg);
+  // -ms-transform-origin: center bottom; /* IE 9 */
+  // -webkit-transform-origin: center bottom; /* Chrome, Safari, Opera */
+  // transform-origin: center bottom;
+}

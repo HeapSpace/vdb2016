@@ -1,4 +1,4 @@
 ---
 title: Schedule - day 1
-layout: '/day1.html'
+layout: '/day2.html'
 ---

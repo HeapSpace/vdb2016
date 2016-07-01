@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_share %>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+	<%
+
+	%>
+	<div class="main-bg page"></div>
+	<div class="container">
+	  <h1 class="text-center pad-vertical-big">
+	    Want to know more?<br><span class="yellow">FAQ at its finest</span>
+	  </h1>
+	  <h4 class="text-center plain">VoxxedDays Belgrade 2016 returns bigger and brighter!<br>We can’t wait to start a new, 3-days round<br>of learning and sharing!</h4>
+		<div class="steam-separator"></div>
+
+		<div class="schedule-tabs-holder">
+		  <ul class="nav nav-pills nav-justified">
+			  <li><a href="/schedule/day1">Day 1</a></li>
+			  <li class="active"><a href="/schedule/day2">Day 2</a></li>
+			  <li><a href="/schedule/day3">Day 3</a></li>
+			</ul>
+		</div>
+
+		<div class="schedule-tabs-holder">
+		  <%= render '/_track_tabs.html', :day => 'day2' %>
+		</div>
+
+
+				<div class="schedule-list">
+					<%= render '/_schedule_clock.html', :id => 2 %>
+					<div class="abs-holder">
+						<%= render ('/_schedule_header.html') %>
+						<div class="tab-content">
+							<div class="tab-pane active" role="tabpanel" id="day2-track1">
+								<%= render '/_schedule_item.html', :day => 2, :track => 1 %>
+							</div>
+							<div class="tab-pane" role="tabpanel" id="day2-track2">
+								<%= render '/_schedule_item.html', :day => 2, :track => 2 %>
+							</div>
+							<div class="tab-pane" role="tabpanel" id="day2-track3">
+								<%= render '/_schedule_item.html', :day => 2, :track => 3 %>
+							</div>
+							<div class="tab-pane" role="tabpanel" id="day2-track4">
+								<%= render '/_schedule_item.html', :day => 2, :track => 4 %>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+		<div class="steam-separator"></div>
+	</div>
+	<div class="info-block info margin-top-big">
+	  <%= render '/_footer_cta.html' %>
+	</div>
+
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+	<script>
+		$(window).on('unload', function() {
+		   $(window).scrollTop(0);
+		});
+	</script>
+</body>
+</html>
