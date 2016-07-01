@@ -1,4 +1,5 @@
 require 'erb'
+require 'yaml'
 
 include Nanoc::Helpers::LinkTo
 include Nanoc::Helpers::Rendering
@@ -170,4 +171,17 @@ def logo_unless_page(target)
     # Create message
     "<li role=\"presentation\" class=\"main-menu-item\"><img class=\"img-responsive\" src=\"images/home-logo.png\"></li>"
   end
+end
+
+def get_schedule_data(day, track)
+
+  $schedule = YAML.load_file('content/speakers/index.md')
+  schedule_items = $schedule.fetch("speakers")
+
+  schedule_data = schedule_items.select{ |k, v| v["day"] == day && v["track"] == track }
+  schedule_data = schedule_data.values
+  schedule_data = schedule_data.to_a
+
+  return schedule_data
+
 end

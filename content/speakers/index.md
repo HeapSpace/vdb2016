@@ -11,6 +11,10 @@ speakers:
     photo: 'scott-amyx.jpg'
     company: 'Amyx+McKinsey'
     talk: 'Keynote'
+    day: 1
+    track: 1
+    slot: '09:30'
+    duration: 60
   1:
     firstname: 'Amir'
     lastname: 'Golan'
@@ -18,6 +22,10 @@ speakers:
     photo: 'Amir Golan.jpg'
     company: 'Amazon'
     talk: 'DevOps on AWS: Deep Dive on Continuous Delivery and the AWS Developer Tools'
+    day: 2
+    track: 2
+    slot: '09:30'
+    duration: 30
   2:
     firstname: 'Aimone'
     lastname: 'Bodini'
@@ -25,6 +33,10 @@ speakers:
     photo: 'Aimone Bodini.jpg'
     company: 'Bully! Entertainment'
     talk: 'Narrative Language of Virtual Reality'
+    day: 2
+    track: 2
+    slot: '10:00'
+    duration: 45
   3:
     firstname: 'Alexey'
     lastname: 'Buzdin'
@@ -32,6 +44,10 @@ speakers:
     photo: 'Alexey Buzdin.png'
     company: 'C.T.Co'
     talk: 'Automate the Mobile'
+    day: 2
+    track: 2
+    slot: '09:30'
+    duration: 30
   4:
     firstname: 'Chris'
     lastname: 'van Beek'
@@ -39,6 +55,10 @@ speakers:
     photo: 'Chris van Beek.jpg'
     company: 'Luminis'
     talk: 'Angular, Typescript and RequireJS: The great alltogether'
+    day: 1
+    track: 2
+    slot: '09:30'
+    duration: 60
   5:
     firstname: 'Chris'
     lastname: 'Ward'
@@ -46,6 +66,10 @@ speakers:
     photo: 'Chris Ward.jpg'
     company: 'Gregarious Mammal'
     talk: 'Your Favourite New Language - The Future of Swift'
+    day: 2
+    track: 2
+    slot: '09:30'
+    duration: 45
   6:
     firstname: 'Daniel'
     lastname: 'Siegel'
@@ -53,6 +77,10 @@ speakers:
     photo: 'Daniel Siegel.png'
     company: 'Daniel G. Siegel'
     talk: 'The lost medium'
+    day: 3
+    track: 3
+    slot: '09:30'
+    duration: 60
   7:
     firstname: 'David'
     lastname: 'Pichsenmeister'
@@ -60,6 +88,10 @@ speakers:
     photo: 'David Pichsenmeister.jpg'
     company: 'Orat.io'
     talk: 'Chatbots as new apps for mobile messengers'
+    day: 1
+    track: 1
+    slot: '10:30'
+    duration: 30
   8:
     firstname: 'Deepak'
     lastname: 'Nadig'
@@ -67,6 +99,10 @@ speakers:
     photo: 'Deepak Nadig.jpg'
     company: 'Intuit'
     talk: 'Journey to APIs and Microservices: Best practices from successful transformations'
+    day: 3
+    track: 1
+    slot: '09:30'
+    duration: 60
   9:
     firstname: 'Daniel'
     lastname: 'Lebrero'
@@ -74,6 +110,10 @@ speakers:
     photo: 'Daniel Lebrero Berna.jpg'
     company: 'IG Index'
     talk: 'Repl Driven Development'
+    day: 1
+    track: 4
+    slot: '09:30'
+    duration: 60
   10:
     firstname: 'Liviu'
     lastname: 'Costea'
@@ -81,6 +121,10 @@ speakers:
     photo: 'user.png'
     company: 'BizPro Technologies'
     talk: 'Edge Performance with In-memory NoSQL'
+    day: 2
+    track: 3
+    slot: '09:30'
+    duration: 30
   11:
     firstname: 'Filip'
     lastname: 'Danić'
@@ -88,6 +132,10 @@ speakers:
     photo: 'Filip Danic.jpg'
     company: 'SpiceFactory'
     talk: 'Complex State Handling in Modern Web Applications'
+    day: 3
+    track: 2
+    slot: '09:30'
+    duration: 60
   12:
     firstname: 'Grace'
     lastname: 'Chang'
@@ -95,6 +143,10 @@ speakers:
     photo: 'Grace Chang.png'
     company: ''
     talk: 'Herding Cats to a Firefight: The evolution of an engineering on-call team'
+    day: 1
+    track: 2
+    slot: '09:30'
+    duration: 60
   13:
     firstname: 'Gerard'
     lastname: 'Sans'
@@ -102,6 +154,9 @@ speakers:
     photo: 'Gerard Sans.jpg'
     company: 'Angular GDE'
     talk: 'Building Cross-Platform Apps using Redux with Angular 2'
+    slot: ''
+    track:
+    duration:
   14:
     firstname: 'Hakan'
     lastname: 'Saglam'
@@ -109,6 +164,9 @@ speakers:
     photo: 'Hakan Saglam.jpg'
     company: 'PeakGames'
     talk: 'Getting Started Game Development with Unity as an iOS Developer'
+    slot: ''
+    track:
+    duration:
   15:
     firstname: 'Ilija'
     lastname: 'Studen'
@@ -116,6 +174,9 @@ speakers:
     photo: 'Ilija Studen.jpg'
     company: 'ActiveCollab'
     talk: 'Our take on agile'
+    slot: ''
+    track:
+    duration:
   16:
     firstname: 'Jacek'
     lastname: 'Kunicki'
@@ -123,6 +184,9 @@ speakers:
     photo: 'Jacek Kunicki.jpg'
     company: 'SoftwareMill'
     talk: 'Reactive Database Mapping with Scala and Slick'
+    slot: ''
+    track:
+    duration:
   17:
     firstname: 'Jakub'
     lastname: 'Korab'
@@ -130,6 +194,9 @@ speakers:
     photo: 'Jakub Korab.jpg'
     company: 'Ameliant'
     talk: 'The Myth of the Magical Messaging Fabric'
+    slot: ''
+    track:
+    duration:
   18:
     firstname: 'James'
     lastname: 'Thomas'
@@ -137,6 +204,9 @@ speakers:
     photo: 'James Thomas.png'
     company: ''
     talk: 'Microservices Without Servers'
+    slot: ''
+    track:
+    duration:
   19:
     firstname: 'Jezen'
     lastname: 'Thomas'
@@ -144,6 +214,9 @@ speakers:
     photo: 'Jezen Thomas.jpg'
     company: ''
     talk: 'Haskell On Rails'
+    slot: ''
+    track:
+    duration:
   20:
     firstname: 'Jaroslaw'
     lastname: 'Ratajski'
@@ -151,6 +224,9 @@ speakers:
     photo: 'Jaroslaw Ratajski.png'
     company: 'CSS Versicherung'
     talk: 'Lambda Core – HardCore'
+    slot: ''
+    track:
+    duration:
   21:
     firstname: 'Karina'
     lastname: 'Popova'

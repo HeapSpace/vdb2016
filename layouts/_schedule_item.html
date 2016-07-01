@@ -1,0 +1,36 @@
+<%
+   get_schedule_data(@day, @track).each do |speaker|
+%>
+<div class="row">
+  <div class="col-lg-3">
+    <div class="schedule-item" style="height: 360px">
+      <div class="item-content">
+        <h5 class="bold"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="schedule-item" style="height: 360px">
+      <div class="item-content">
+        <h5 class="bold"><%= speaker['talk'] %></h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="schedule-item" style="height: 360px">
+      <div class="item-content">
+        <h5 class="bold"><%= speaker['slot'] %></h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="schedule-item" style="height: 360px">
+      <div class="item-content">
+        <h5 class="bold"><%= speaker['duration'] %> min</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<%
+end
+%>

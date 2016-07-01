@@ -7,7 +7,9 @@
 </head>
 <body>
 	<%= render '/_header.html'%>
+	<%
 
+	%>
 	<div class="main-bg page"></div>
 	<div class="container">
 	  <h1 class="text-center pad-vertical-big">
@@ -16,88 +18,87 @@
 	  <h4 class="text-center plain">VoxxedDays Belgrade 2016 returns bigger and brighter!<br>We can’t wait to start a new, 3-days round<br>of learning and sharing!</h4>
 		<div class="steam-separator"></div>
 
+
 		<div class="schedule-tabs-holder">
-			<ul class="nav nav-tabs nav-justified" role="tablist">
-				<li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">Day 1</a></li>
-				<li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">Day 2</a></li>
-				<li role="presentation"><a href="#day3" aria-controls="day3" role="tab" data-toggle="tab">Day 3</a></li>
-			</ul>
+		  <ul class="nav nav-tabs nav-justified" role="tablist">
+		    <li role="presentation" class="active"><a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">Day 1</a></li>
+		    <li role="presentation"><a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">Day 2</a></li>
+		    <li role="presentation"><a href="#day3" aria-controls="day3" role="tab" data-toggle="tab">Day 3</a></li>
+		  </ul>
 		</div>
 
-		<div id="schedule-list">
-			<div id="s-clock" class="visible-lg">
-				<div id="s-clock-minutes"></div>
-				<div id="s-clock-hours"></div>
-				<div id="s-clock-background"></div>
-				<div class="indicator"></div>
-			</div>
-			<div class="abs-holder">
-
-				<div class="row schedule-header">
-					<div class="col-lg-3">
-						<h4 class="bold yellow text-center">Speaker</h4>
-					</div>
-					<div class="col-lg-3">
-						<h4 class="bold yellow text-center">Topic</h4>
-					</div>
-					<div class="col-lg-3">
-						<h4 class="bold yellow text-center">Track</h4>
-					</div>
-					<div class="col-lg-3">
-						<h4 class="bold yellow text-center">Slot</h4>
-					</div>
-				</div>
-
-				<div class="tab-content">
-					<div class="tab-pane active" role="tabpanel" id="day1">
-						<div class="row">
-							<div class="col-lg-3">
-								<div class="schedule-item" style="height: 360px">
-									<div class="item-content">
-										<i class="fa fa-key circle"></i> Dejan Dimic
-										<h5 class="bold">The Internet of Things: State of the Art and what's in front of us on that canvas</h5>
-									</div>
-								</div>
+	  <div class="tab-content">
+			<div role="tabpanel" class="tab-pane active" id="day1">
+	    	<%= render '/_track_tabs.html', :day => 'day1' %>
+				<div id="schedule-list">
+					<%= render ('/_schedule_clock.html') %>
+					<div class="abs-holder">
+						<%= render ('/_schedule_header.html') %>
+						<div class="tab-content">
+							<div class="tab-pane active" role="tabpanel" id="day1-track1">
+								<%= render '/_schedule_item.html', :day => 1, :track => 1 %>
 							</div>
-							<div class="col-lg-3">
-								<div class="schedule-item" style="height: 360px">
-									<div class="item-content">
-										<h5 class="bold">Full Name</h5>
-										description text
-									</div>
-								</div>
+							<div class="tab-pane" role="tabpanel" id="day1-track2">
+								<%= render '/_schedule_item.html', :day => 1, :track => 2 %>
 							</div>
-							<div class="col-lg-3">
-								<div class="schedule-item" style="height: 360px">
-									<div class="item-content">
-										<h5 class="bold">Full Name</h5>
-										description text
-									</div>
-								</div>
+							<div class="tab-pane" role="tabpanel" id="day1-track3">
+								<%= render '/_schedule_item.html', :day => 1, :track => 3 %>
 							</div>
-							<div class="col-lg-3">
-								<div class="schedule-item" style="height: 360px">
-									<div class="item-content">
-										<h5 class="bold">Cofee break</h5>
-										brasiliana nirvana
-									</div>
-								</div>
+							<div class="tab-pane" role="tabpanel" id="day1-track4">
+								<%= render '/_schedule_item.html', :day => 1, :track => 4 %>
 							</div>
 						</div>
 					</div>
-
-					<div class="tab-pane" role="tabpanel" id="day2">
-						TEST 2
-					</div>
-					
-					<div class="tab-pane" role="tabpanel" id="day3">
-						TEST 3
-					</div>
-
 				</div>
 			</div>
+	    <div role="tabpanel" class="tab-pane" id="day2">
+				<%= render '/_track_tabs.html', :day => 'day2' %>
+				<div id="schedule-list">
+					<%= render ('/_schedule_clock.html') %>
+					<div class="abs-holder">
+						<%= render ('/_schedule_header.html') %>
+						<div class="tab-content">
+							<div class="tab-pane active" role="tabpanel" id="day2-track1">
+								<%= render '/_schedule_item.html', :day => 2, :track => 1 %>
+							</div>
+							<div class="tab-pane" role="tabpanel" id="day2-track2">
+								<%= render '/_schedule_item.html', :day => 2, :track => 2 %>
+							</div>
+							<div class="tab-pane" role="tabpanel" id="day2-track3">
+								<%= render '/_schedule_item.html', :day => 2, :track => 3 %>
+							</div>
+							<div class="tab-pane" role="tabpanel" id="day2-track4">
+								<%= render '/_schedule_item.html', :day => 2, :track => 4 %>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	    <div role="tabpanel" class="tab-pane" id="day3">
+				<%= render '/_track_tabs.html', :day => 'day3' %>
+				<div id="schedule-list">
+					<%= render ('/_schedule_clock.html') %>
+					<div class="abs-holder">
+						<%= render ('/_schedule_header.html') %>
+						<div class="tab-content">
+							<div class="tab-pane active" role="tabpanel" id="day3-track1">
+								<%= render '/_schedule_item.html', :day => 3, :track => 1 %>
+							</div>
+							<div class="tab-pane" role="tabpanel" id="day3-track2">
+								<%= render '/_schedule_item.html', :day => 3, :track => 2 %>
+							</div>
+							<div class="tab-pane" role="tabpanel" id="day3-track3">
+								<%= render '/_schedule_item.html', :day => 3, :track => 3 %>
+							</div>
+							<div class="tab-pane" role="tabpanel" id="day3-track4">
+								<%= render '/_schedule_item.html', :day => 3, :track => 4 %>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	  </div>
 
-		</div>
 		<div class="steam-separator"></div>
 	</div>
 	<div class="info-block info margin-top-big">
