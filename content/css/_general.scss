@@ -414,6 +414,26 @@ iframe {
 
 .item-block-holder {
    padding: 0;
+   img, span {
+     margin: 0 auto;
+   }
+   &.logo {
+     opacity: 0.5;
+     padding: 15px;
+     height: 75px;
+     display: inline-flex;
+     margin-top: 3em;
+   }
+}
+
+.amyxlogo {
+  font-family: "Arimo";
+  font-size: 2em;
+  color: $white;
+  &:after {
+    content: "+";
+    font-size: 0.7em;
+  }
 }
 
 .block-item {
@@ -502,6 +522,9 @@ iframe {
 .home-block-grid {
   position: relative;
   margin-bottom: 150px;
+  &.logos {
+    margin-bottom: 50px;
+  }
 }
 
 .card {
