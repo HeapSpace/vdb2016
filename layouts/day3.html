@@ -8,7 +8,7 @@
 <body>
 	<%= render '/_header.html'%>
 	<%
-
+	 @test = '/new-site'
 	%>
 	<div class="main-bg page"></div>
 	<div class="container">
@@ -20,9 +20,9 @@
 
 		<div class="schedule-tabs-holder">
 		  <ul class="nav nav-pills nav-justified">
-			  <li><a href="/schedule/day1">Day 1</a></li>
-			  <li><a href="/schedule/day2">Day 2</a></li>
-			  <li class="active"><a href="/schedule/day3">Day 3</a></li>
+			  <li><a href="<%= @test %>/schedule/day1">Day 1</a></li>
+			  <li><a href="<%= @test %>/schedule/day2">Day 2</a></li>
+			  <li class="active"><a href="<%= @test %>/schedule/day3">Day 3</a></li>
 			</ul>
 		</div>
 
