@@ -123,7 +123,7 @@ speakers:
     lastname: 'Chang'
     url: 'https://twitter.com/@greyschale'
     photo: 'Grace Chang.png'
-    company: ''
+    company: 'Yammer'
     talk: 'Herding Cats to a Firefight: The evolution of an engineering on-call team'
     tags:
       - web
@@ -179,7 +179,7 @@ speakers:
     lastname: 'Thomas'
     url: 'http://jamesthom.as/'
     photo: 'James Thomas.png'
-    company: ''
+    company: 'IBM Bluemix'
     talk: 'Microservices Without Servers'
     tags:
       - microservices
@@ -273,7 +273,7 @@ speakers:
     lastname: 'Płachta'
     url: 'http://lucamezzalira.com'
     photo: 'Michal Plachta.jpg'
-    company: ''
+    company: 'Ocado Technology  '
     talk: 'Building multiplayer game using streams'
     tags:
       - web
@@ -494,7 +494,7 @@ speakers:
       - culture
   500:
     firstname: 'Yann'
-    lastname: 'Cebron'
+    lastname: 'Cebron / S.Nicoll'
     url: 'https://about.me/yanncebron'
     photo: 'Yann Cebron.jpg'
     company: 'JetBrains'
@@ -529,7 +529,7 @@ speakers:
     lastname: 'Sevindik'
     url: 'https://twitter.com/KenanSevindik'
     photo: 'Kenan Sevindik.png'
-    company: ''
+    company: 'Harezmi IT Solutions'
     talk: 'Employing a View Model API Based on Dynamic Proxies'
     tags:
       - java
@@ -594,9 +594,9 @@ speakers:
     firstname: 'Jakša'
     lastname: 'Vučković'
     url: ''
-    photo: 'user.png'
+    photo: 'Jaksa Vuckovic.jpg'
     company: 'Zuhlke Engineering'
-    talk: 'Why are Actors Great?'
+    talk: 'Why are Actors Terrible?'
     tags:
       - workshop
       - java
@@ -605,7 +605,7 @@ speakers:
     firstname: 'Lukasz'
     lastname: 'Lenart'
     url: 'https://twitter.com/lukaszlenart'
-    photo: 'user.png'
+    photo: 'Lukasz Lenart.jpg'
     company: '7N/Nykredit'
     talk: 'Lift framework in 45 minutes'
     tags:
@@ -637,7 +637,7 @@ speakers:
     firstname: 'Nikola'
     lastname: 'Milutinović'
     url: 'https://rs.linkedin.com/in/nikolamilutinovic'
-    photo: 'user.png'
+    photo: 'Nikola Milutinovic.jpg'
     company: 'Levi 9'
     talk: 'Security in microservice architecture'
     tags:
@@ -657,7 +657,7 @@ speakers:
     firstname: 'Perica'
     lastname: 'Milošević'
     url: 'https://www.linkedin.com/in/pericamilosevic'
-    photo: 'user.png'
+    photo: 'Perica Milosevic.jpg'
     company: 'Sysdig'
     talk: 'The Dark Art of Container Monitoring'
     tags:
@@ -668,7 +668,7 @@ speakers:
     lastname: 'Ostrowski'
     url: 'https://uk.linkedin.com/in/radekostrowski'
     photo: 'Radek Ostrowski.jpg'
-    company: ''
+    company: 'Fast Data Ltd'
     talk: 'Finding Your Perfect Weather with Apache Spark and Docker'
     tags:
       - skala
@@ -703,8 +703,8 @@ speakers:
   710:
     firstname: 'Ivan'
     lastname: 'Nemytchenko'
-    url: ''
-    photo: 'user.png'
+    url: 'https://twitter.com/inem'
+    photo: 'Ivan Nemytchenko.jpg'
     company: 'GitLab'
     talk: 'Breaking bad with GitLab CI'
   720:
@@ -772,5 +772,34 @@ speakers:
     talk: 'Reverse engineering the clean code'
     tags:
       - dev
+  780:
+    firstname: 'Miloš'
+    lastname: 'Kresović'
+    url: ''
+    photo: 'user.png'
+    company: 'New and rising'
+    talk: 'MVVM with Android Databinding in Practice'
+    tags:
+      - android
+  790:
+    firstname: 'Adam'
+    lastname: 'Hynes'
+    url: 'https://au.linkedin.com/in/adamhynes'
+    photo: 'Adam Hynes.jpg'
+    company: 'Atlassian'
+    talk: 'Don`t be left out: How to develop software in a distributed team'
+    tags:
+      - sw
+      - distributed system
+  800:
+    firstname: 'Stanko'
+    lastname: 'Rusendić'
+    url: 'https://twitter.com/monorkin'
+    photo: 'Stanko Rusendic.jpg'
+    company: 'Infinum'
+    talk: 'Stubs, Mocks & Spies'
+    tags:
+      - web
+      - ruby
 
 ---

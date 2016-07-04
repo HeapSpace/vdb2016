@@ -606,15 +606,16 @@ div.line-subtitle > h5 {
   &:before { right: 5%; }
   &:after { left: 5%; }
 }
-
-.green {
-  background-color: #358024;
-}
-.red {
-  background-color: #a13717;
-}
-.blue {
-  background-color: #0e5d6e;
+.false-btn, .btn {
+  &.green {
+    background-color: #358024;
+  }
+  &.red {
+    background-color: #a13717;
+  }
+  &.blue {
+    background-color: #0e5d6e;
+  }
 }
 
 .footer-cta-block {
