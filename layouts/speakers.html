@@ -39,9 +39,9 @@
 					<div class="brown">
 						<%= s[1][:talk] %>
 					</div>
-					<!-- <div class="tags">
+					<div class="tags">
 						<%  s[1][:tags].to_a.each_with_index  do |tag, index| %>
-							<span class=" accent ">
+							<span class="tag">
 								<%
 								if index == s[1][:tags].to_a.size - 1
 								%>
@@ -49,12 +49,12 @@
 								<%
 								else
 								%>
-									<%= tag %> /
+									<%= tag %>
 								<%
 								end
 								%></span>
 						<% end %>
-					</div> -->
+					</div>
 	      </div>
 	    </div>
 			<% } %>

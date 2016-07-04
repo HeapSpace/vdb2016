@@ -866,16 +866,30 @@ button, a[role="button"] {
   	transition: all 0.2s ease-in-out;
 
     &.tagsort-active {
-    	background-color: $brand-primary;
-    	color: #333;
+    	background-color: $green;
+    	color: $white;
       &:hover {
-        background-color: rgba($brand-primary, 0.6);
-      	color: #333;
+        background-color: rgba($green, 0.6);
+      	color: rgba($white, 0.6);
       }
     }
     &:hover {
-    	color: $brand-primary;
-    	background-color: rgba($brand-secondary, 0.6);
+    	color: $brown-dark;
+    	background-color: rgba($brand-secondary, 0.75);
+    }
+  }
+}
+
+.tags {
+  padding-top: 5px;
+  .tag {
+    color: $green;
+    padding-right: 5px;
+    white-space: nowrap;
+    font-size: 12px;
+    &:before {
+      content: '\f02b';
+      font-family: 'FontAwesome';
     }
   }
 }
