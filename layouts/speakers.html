@@ -21,23 +21,40 @@
 
 	  <div class="steam-separator"></div>
 
-		<div class="row-centered">
-
+		<div id="speakers" class="row-centered">
+			<div class="tagsort-tags-container"></div>
+			<div class="margin-top-med"></div>
 			<% @item[:speakers].each { |s| %>
-			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-centered">
+			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-centered speaker-tags" data-item-tags="<%= s[1][:tags].to_a.join(', ') %>">
 	      <div class="speaker">
 					<% if !s[1][:url].to_s.empty? then %><a href="<%= s[1][:url] %>" target="_blank"><% end %>
 						<div class="photo" style="background-image: url('../images/speakers/<%= s[1][:photo] %>')"></div>
-						<h6 class="yellow">
+						<h5 class="yellow">
 							<%= s[1][:firstname] %> <%= s[1][:lastname] %>
-						</h6>
+						</h5>
 					<% if !s[1][:url].to_s.empty? then %></a><% end %>
-					<div class="accent mb10">
+					<h6 class="accent mb10">
 						<%= s[1][:company] %>
-					</div>
+					</h6>
 					<div class="brown">
 						<%= s[1][:talk] %>
 					</div>
+					<!-- <div class="tags">
+						<%  s[1][:tags].to_a.each_with_index  do |tag, index| %>
+							<span class=" accent ">
+								<%
+								if index == s[1][:tags].to_a.size - 1
+								%>
+									<%= tag %>
+								<%
+								else
+								%>
+									<%= tag %> /
+								<%
+								end
+								%></span>
+						<% end %>
+					</div> -->
 	      </div>
 	    </div>
 			<% } %>
@@ -50,6 +67,7 @@
 
 	<%= render '/_footer.html'%>
 	<%= render '/_bottomscripts.html'%>
-
+	<script type="text/javascript">
+	</script>
 </body>
 </html>

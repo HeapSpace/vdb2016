@@ -55,4 +55,14 @@ $(document).ready(function() {
         });
     });
 
+    $('div.tagsort-tags-container').tagSort({
+		  items: '.speaker-tags',
+		  tagElement: 'span',
+		  itemTagsSeperator: ' ',
+		  fadeTime: 0,
+			sortType: 'inclusive'
+		});
+
+    $('.tagsort-tags-container > span:empty').remove();
+
 });
