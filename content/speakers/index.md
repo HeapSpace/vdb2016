@@ -720,7 +720,7 @@ speakers:
     firstname: 'Nicolas'
     lastname: 'Fränkel'
     url: 'https://twitter.com/nicolas_frankel'
-    photo: 'Antonis Kalipetis.jpg'
+    photo: 'Nicolas Frankel.jpg'
     company: 'SAP'
     talk: 'Spring Boot and Kotlin, a match made in Heaven'
     tags:
