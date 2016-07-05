@@ -60,7 +60,8 @@ $(document).ready(function() {
 		  tagElement: 'span',
 		  itemTagsSeperator: ' ',
 		  fadeTime: 0,
-			sortType: 'inclusive'
+			sortType: 'inclusive',
+      reset: '.tags-reset'
 		});
 
     $('.tagsort-tags-container > span:empty').remove();
@@ -108,6 +109,18 @@ $(document).ready(function() {
 
         start += value;
       });
+    });
+
+    $('.tags-reset').hide();
+
+    $('.tagsort-tags-container > span').on('click', function(){
+        $('.tags-reset').show();
+    });
+
+    $('.tags-reset').on('click', function(){
+      if (!$('.tagsort-active').length) {
+        $('.tags-reset').hide();
+      }
     });
 
 });

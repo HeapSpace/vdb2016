@@ -22,8 +22,12 @@
 	  <div class="steam-separator"></div>
 
 		<div id="speakers" class="row-centered">
+
 			<div class="tagsort-tags-container"></div>
-			<div class="margin-top-med"></div>
+			<div class="reset-holder">
+					<div class="tags-reset false-btn red">clear tags</div>
+			</div>
+			<div class="margin-top-small"></div>
 			<% @item[:speakers].each { |s| %>
 			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-centered speaker-tags" data-item-tags="<%= s[1][:tags].to_a.join(', ') %>">
 	      <div class="speaker">

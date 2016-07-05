@@ -103,8 +103,8 @@ speakers:
   100:
     firstname: 'Liviu'
     lastname: 'Costea'
-    url: ''
-    photo: 'user.png'
+    url: 'https://twitter.com/@clm160'
+    photo: 'Liviu Costea.jpg'
     company: 'BizPro Technologies'
     talk: 'Edge Performance with In-memory NoSQL'
     tags:
@@ -447,7 +447,10 @@ speakers:
     url: 'https://twitter.com/yufengg'
     photo: 'Yufeng Guo.jpg'
     company: 'Google'
-    talk: ''
+    talk: 'Machine Learning as an API: strengths, limits, and unusual use cases'
+    tags:
+      - api
+      - machine learning
   460:
     firstname: 'Krzysztof'
     lastname: 'Otrebski'

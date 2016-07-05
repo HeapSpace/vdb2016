@@ -894,3 +894,20 @@ button, a[role="button"] {
     }
   }
 }
+
+.reset-holder {
+  height: 40px;
+  padding: 6px;
+  .tags-reset {
+    color: white;
+    padding-top: 5px;
+    cursor: pointer;
+    display: none;
+    width: 120px;
+    margin: 0 auto;
+    &:hover {
+      background-color: $brand-primary;
+      color: $body-bg;
+    }
+  }
+}
