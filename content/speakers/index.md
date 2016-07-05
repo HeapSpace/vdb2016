@@ -271,7 +271,7 @@ speakers:
   280:
     firstname: 'Michał'
     lastname: 'Płachta'
-    url: 'http://lucamezzalira.com'
+    url: 'https://twitter.com/miciek'
     photo: 'Michal Plachta.jpg'
     company: 'Ocado Technology  '
     talk: 'Building multiplayer game using streams'
@@ -281,7 +281,7 @@ speakers:
   285:
     firstname: 'Luca'
     lastname: 'Mezzalira'
-    url: 'https://twitter.com/miciek'
+    url: 'http://lucamezzalira.com'
     photo: 'Luca Mezzalira.jpg'
     company: 'Massive Interactive, Inc'
     talk: 'Next generation of frontend architectures'
