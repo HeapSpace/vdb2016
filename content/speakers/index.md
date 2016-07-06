@@ -697,8 +697,8 @@ speakers:
   700:
     firstname: 'Vedran'
     lastname: 'Vujinović'
-    url: ''
-    photo: 'user.png'
+    url: 'https://www.linkedin.com/in/vedran-vujinovic-581428124'
+    photo: 'Vedran Vujinovic.jpg'
     company: 'Comtrade'
     talk: 'Augmented reality: behind the scene'
     tags:
