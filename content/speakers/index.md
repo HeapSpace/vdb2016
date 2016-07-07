@@ -23,6 +23,123 @@ speakers:
     tags:
       - devops
   -
+    firstname: 'John'
+    lastname: 'Vaskis'
+    url: 'https://mobile.twitter.com/johnvaskis'
+    photo: 'John Vaskis.jpg'
+    company: 'Indiegogo'
+    talk: 'How to raise a million dollars on Indiegogo'
+    tags:
+      - business
+  -
+    firstname: 'Dejan'
+    lastname: 'Bosanac'
+    url: 'http://sensatic.net/about'
+    photo: 'Dejan Bosanac.jpg'
+    company: 'Red Hat'
+    talk: 'Open stack for building end-to-end IoT solutions'
+    tags:
+      - iot
+  -
+    firstname: 'Nicolas'
+    lastname: 'Fränkel'
+    url: 'https://twitter.com/nicolas_frankel'
+    photo: 'Nicolas Frankel.jpg'
+    company: 'SAP'
+    talk: 'Spring Boot and Kotlin, a match made in Heaven'
+    tags:
+      - kotlin
+  -
+    firstname: 'Yufeng'
+    lastname: 'Guo'
+    url: 'https://twitter.com/yufengg'
+    photo: 'Yufeng Guo.jpg'
+    company: 'Google'
+    talk: 'Machine Learning as an API: strengths, limits, and unusual use cases'
+    tags:
+  -
+    firstname: 'Mike'
+    lastname: 'Elsmore'
+    url: 'https://twitter.com/ukmadlz'
+    photo: 'Mike Elsmore.jpg'
+    company: 'IBM'
+    talk: 'NoSQL is a lie'
+    tags:
+      - db
+  -
+    firstname: 'Victor'
+    lastname: 'Rentea'
+    url: 'https://mobile.twitter.com/victorrentea'
+    photo: 'Victor Rentea.jpg'
+    company: 'IBM Global Business Services'
+    talk: 'The Art of Clean Code'
+    tags:
+      - metodologies
+  -
+    firstname: 'James'
+    lastname: 'Thomas'
+    url: 'http://jamesthom.as/'
+    photo: 'James Thomas.png'
+    company: 'IBM Bluemix'
+    talk: 'Microservices Without Servers'
+    tags:
+      - microservices
+  -
+    firstname: 'Adam'
+    lastname: 'Hynes'
+    url: 'https://au.linkedin.com/in/adamhynes'
+    photo: 'Adam Hynes.jpg'
+    company: 'Atlassian'
+    talk: 'Don`t be left out: How to develop software in a distributed team'
+    tags:
+      - distributed system
+  -
+    firstname: 'Viktor'
+    lastname: 'Farcic'
+    url: 'https://technologyconversations.com/about/'
+    photo: 'Viktor Farcic.jpg'
+    company: 'CloudBees'
+    talk: 'Self-Healing Systems'
+    tags:
+      - microservices
+      - docker
+  -
+    firstname: 'Mark'
+    lastname: 'Heckler'
+    url: ''
+    photo: 'Mark Heckler.jpg'
+    company: 'Pivotal Software, Inc.'
+    talk: 'This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT? Businessing the S*** out of Transformative Development!'
+    tags:
+      - metodologies
+  -
+    firstname: 'Stéphane'
+    lastname: 'Nicoll'
+    url: ''
+    photo: 'Stephane Nicoll.jpg'
+    company: 'Pivotal'
+    talk: 'From Zero to Hero With Spring Boot'
+    tags:
+      - java
+  -
+    firstname: 'Yann'
+    lastname: 'Cebron / S.Nicoll'
+    url: 'https://about.me/yanncebron'
+    photo: 'Yann Cebron.jpg'
+    company: 'JetBrains'
+    talk: '40 Tips & Tricks for Spring in IntelliJ IDEA'
+    tags:
+      - tooling
+  -
+    firstname: 'Luis'
+    lastname: 'Mineiro'
+    url: 'https://drive.google.com/folderview?id=0B-y_g6Jx1VZTLTlkallyWTdDdEE&usp=drive_web'
+    photo: 'Luis Mineiro.jpg'
+    company: 'Zalando'
+    talk: 'The frontend taboo: a story of full stack microservices'
+    tags:
+      - microservices
+  -
     firstname: 'Aimone'
     lastname: 'Bodini'
     url: 'https://www.linkedin.com/in/aimone-bodini-7a05b5a6'
@@ -166,16 +283,6 @@ speakers:
     company: 'Ameliant'
     talk: 'The Myth of the Magical Messaging Fabric'
     tags:
-
-  -
-    firstname: 'James'
-    lastname: 'Thomas'
-    url: 'http://jamesthom.as/'
-    photo: 'James Thomas.png'
-    company: 'IBM Bluemix'
-    talk: 'Microservices Without Servers'
-    tags:
-      - microservices
   -
     firstname: 'Jezen'
     lastname: 'Thomas'
@@ -204,15 +311,6 @@ speakers:
     tags:
       - iot
   -
-    firstname: 'Luis'
-    lastname: 'Mineiro'
-    url: 'https://drive.google.com/folderview?id=0B-y_g6Jx1VZTLTlkallyWTdDdEE&usp=drive_web'
-    photo: 'Luis Mineiro.jpg'
-    company: 'Zalando'
-    talk: 'The frontend taboo: a story of full stack microservices'
-    tags:
-      - microservices
-  -
     firstname: 'Maciek'
     lastname: 'Próchniak'
     url: 'https://twitter.com/mpproch'
@@ -239,15 +337,7 @@ speakers:
     talk: 'DevOps for Enterprises - Respect the Monolith'
     tags:
       - devops
-  -
-    firstname: 'Mark'
-    lastname: 'Heckler'
-    url: ''
-    photo: 'Mark Heckler.jpg'
-    company: 'Pivotal Software, Inc.'
-    talk: 'This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT? Businessing the S*** out of Transformative Development!'
-    tags:
-      - metodologies
+
   -
     firstname: 'Matija'
     lastname: 'Gobec'
@@ -279,15 +369,6 @@ speakers:
       - web
       - javascript
   -
-    firstname: 'Mike'
-    lastname: 'Elsmore'
-    url: 'https://twitter.com/ukmadlz'
-    photo: 'Mike Elsmore.jpg'
-    company: 'IBM'
-    talk: 'NoSQL is a lie'
-    tags:
-      - db
-  -
     firstname: 'Mihailo'
     lastname: 'Milenkovic'
     url: 'https://rs.linkedin.com/in/mihailomilenkovic'
@@ -315,15 +396,6 @@ speakers:
     talk: 'Event Sourcing in Microservices'
     tags:
       - microservices
-  -
-    firstname: 'Stéphane'
-    lastname: 'Nicoll'
-    url: ''
-    photo: 'Stephane Nicoll.jpg'
-    company: 'Pivotal'
-    talk: 'From Zero to Hero With Spring Boot'
-    tags:
-      - java
   -
     firstname: 'Stjepan'
     lastname: 'Hadjić'
@@ -363,25 +435,6 @@ speakers:
       - iot
       - startups
   -
-    firstname: 'Victor'
-    lastname: 'Rentea'
-    url: 'https://mobile.twitter.com/victorrentea'
-    photo: 'Victor Rentea.jpg'
-    company: 'IBM Global Business Services'
-    talk: 'The Art of Clean Code'
-    tags:
-      - metodologies
-  -
-    firstname: 'Viktor'
-    lastname: 'Farcic'
-    url: 'https://technologyconversations.com/about/'
-    photo: 'Viktor Farcic.jpg'
-    company: 'CloudBees'
-    talk: 'Self-Healing Systems'
-    tags:
-      - microservices
-      - docker
-  -
     firstname: 'Matija'
     lastname: 'Čupić'
     url: 'https://www.linkedin.com/in/mattrex'
@@ -402,15 +455,6 @@ speakers:
     tags:
       - javascript
   -
-    firstname: 'John'
-    lastname: 'Vaskis'
-    url: 'https://mobile.twitter.com/johnvaskis'
-    photo: 'John Vaskis.jpg'
-    company: 'Indiegogo'
-    talk: 'How to raise a million dollars on Indiegogo'
-    tags:
-      - business
-  -
     firstname: 'Zeljko'
     lastname: 'Turbic'
     url: 'https://rs.linkedin.com/in/zturbic'
@@ -428,14 +472,6 @@ speakers:
     talk: 'Smart lighting: part of the ‘Internet of Things’'
     tags:
       - iot
-  -
-    firstname: 'Yufeng'
-    lastname: 'Guo'
-    url: 'https://twitter.com/yufengg'
-    photo: 'Yufeng Guo.jpg'
-    company: 'Google'
-    talk: 'Machine Learning as an API: strengths, limits, and unusual use cases'
-    tags:
   -
     firstname: 'Krzysztof'
     lastname: 'Otrebski'
@@ -476,16 +512,6 @@ speakers:
     tags:
       - workshop
       - business
-  -
-    firstname: 'Yann'
-    lastname: 'Cebron / S.Nicoll'
-    url: 'https://about.me/yanncebron'
-    photo: 'Yann Cebron.jpg'
-    company: 'JetBrains'
-    talk: '40 Tips & Tricks for Spring in IntelliJ IDEA'
-    tags:
-      - tooling
-      - tooling
   -
     firstname: 'Catherine'
     lastname: 'Simon'
@@ -534,15 +560,6 @@ speakers:
     tags:
       - java
       - performance
-  -
-    firstname: 'Dejan'
-    lastname: 'Bosanac'
-    url: 'http://sensatic.net/about'
-    photo: 'Dejan Bosanac.jpg'
-    company: 'Red Hat'
-    talk: 'Open stack for building end-to-end IoT solutions'
-    tags:
-      - iot
   -
     firstname: 'Nikola'
     lastname: 'Sijakinjic'
@@ -693,15 +710,6 @@ speakers:
     tags:
       - docker
   -
-    firstname: 'Nicolas'
-    lastname: 'Fränkel'
-    url: 'https://twitter.com/nicolas_frankel'
-    photo: 'Nicolas Frankel.jpg'
-    company: 'SAP'
-    talk: 'Spring Boot and Kotlin, a match made in Heaven'
-    tags:
-      - kotlin
-  -
     firstname: 'Alexander'
     lastname: 'Pacha'
     url: 'http://my-it.at/'
@@ -755,15 +763,6 @@ speakers:
     talk: 'MVVM with Android Databinding in Practice'
     tags:
       - android
-  -
-    firstname: 'Adam'
-    lastname: 'Hynes'
-    url: 'https://au.linkedin.com/in/adamhynes'
-    photo: 'Adam Hynes.jpg'
-    company: 'Atlassian'
-    talk: 'Don`t be left out: How to develop software in a distributed team'
-    tags:
-      - distributed system
   -
     firstname: 'Stanko'
     lastname: 'Rusendić'
