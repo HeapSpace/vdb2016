@@ -30,10 +30,6 @@ speakers:
     company: 'Bully! Entertainment'
     talk: 'Narrative Language of Virtual Reality'
     tags:
-      - contents
-      - creators
-      - language
-      - techniques
   30:
     firstname: 'Alexey'
     lastname: 'Buzdin'
@@ -51,7 +47,7 @@ speakers:
     company: 'Luminis'
     talk: 'Angular, Typescript and RequireJS: The great alltogether'
     tags:
-      - js
+      - javascript
   50:
     firstname: 'Chris'
     lastname: 'Ward'
@@ -71,7 +67,7 @@ speakers:
     talk: 'The lost medium'
     tags:
       - ai
-      - ux
+      - ux/ui
   70:
     firstname: 'David'
     lastname: 'Pichsenmeister'
@@ -80,10 +76,7 @@ speakers:
     company: 'Orat.io'
     talk: 'Chatbots as new apps for mobile messengers'
     tags:
-      - hci
-      - ui
-      - ux
-      - messaging
+      - ux/ui
   80:
     firstname: 'Deepak'
     lastname: 'Nadig'
@@ -135,7 +128,7 @@ speakers:
     company: 'Angular GDE'
     talk: 'Building Cross-Platform Apps using Redux with Angular 2'
     tags:
-      - js
+      - javascript
   140:
     firstname: 'Hakan'
     lastname: 'Saglam'
@@ -173,7 +166,7 @@ speakers:
     company: 'Ameliant'
     talk: 'The Myth of the Magical Messaging Fabric'
     tags:
-      - messaging
+
   180:
     firstname: 'James'
     lastname: 'Thomas'
@@ -201,7 +194,6 @@ speakers:
     talk: 'Lambda Core – HardCore'
     tags:
       - java
-      - functional
   210:
     firstname: 'Karina'
     lastname: 'Popova'
@@ -255,9 +247,7 @@ speakers:
     company: 'Pivotal Software, Inc.'
     talk: 'This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT? Businessing the S*** out of Transformative Development!'
     tags:
-      - sw
-      - roi
-      - leadership
+      - metodologies
   270:
     firstname: 'Matija'
     lastname: 'Gobec'
@@ -287,7 +277,7 @@ speakers:
     talk: 'Next generation of frontend architectures'
     tags:
       - web
-      - js
+      - javascript
   290:
     firstname: 'Mike'
     lastname: 'Elsmore'
@@ -352,7 +342,7 @@ speakers:
     company: 'Ustream, Inc'
     talk: 'Scalable Service Architectures'
     tags:
-      - containers
+      - docker
   360:
     firstname: 'Gustavo'
     lastname: 'Elias'
@@ -380,8 +370,7 @@ speakers:
     company: 'IBM Global Business Services'
     talk: 'The Art of Clean Code'
     tags:
-      - sw
-      - teamwork
+      - metodologies
   390:
     firstname: 'Viktor'
     lastname: 'Farcic'
@@ -391,7 +380,7 @@ speakers:
     talk: 'Self-Healing Systems'
     tags:
       - microservices
-      - containers
+      - docker
   400:
     firstname: 'Matija'
     lastname: 'Čupić'
@@ -401,9 +390,8 @@ speakers:
     talk: 'PageGaze - Interactive Webpage Eye-Tracking Technology'
     tags:
       - web
-      - js
-      - experiment
-      - ux
+      - javascript
+      - ux/ui
   410:
     firstname: 'Jovica'
     lastname: 'Kesić'
@@ -412,8 +400,7 @@ speakers:
     company: 'Telegroup'
     talk: 'Bringing Social Networks to living room using JS APIs'
     tags:
-      - api
-      - js
+      - javascript
   420:
     firstname: 'John'
     lastname: 'Vaskis'
@@ -449,8 +436,6 @@ speakers:
     company: 'Google'
     talk: 'Machine Learning as an API: strengths, limits, and unusual use cases'
     tags:
-      - api
-      - machine learning
   460:
     firstname: 'Krzysztof'
     lastname: 'Otrebski'
@@ -470,7 +455,7 @@ speakers:
     tags:
       - workshop
       - devops
-      - lean startup
+      - metodologies
   480:
     firstname: 'Maja'
     lastname: 'Božić'
@@ -481,8 +466,6 @@ speakers:
     tags:
       - workshop
       - business
-      - company
-      - culture
   490:
     firstname: 'Maja'
     lastname: 'Nedučić'
@@ -493,8 +476,6 @@ speakers:
     tags:
       - workshop
       - business
-      - company
-      - culture
   500:
     firstname: 'Yann'
     lastname: 'Cebron / S.Nicoll'
@@ -503,9 +484,8 @@ speakers:
     company: 'JetBrains'
     talk: '40 Tips & Tricks for Spring in IntelliJ IDEA'
     tags:
-      - spring
       - tooling
-      - ide
+      - tooling
   510:
     firstname: 'Catherine'
     lastname: 'Simon'
@@ -514,9 +494,6 @@ speakers:
     company: 'Namics'
     talk: 'What`s your motivation?'
     tags:
-      - motivation
-      - goal setting
-      - progress
   520:
     firstname: 'Daniel'
     lastname: 'Gartmann'
@@ -536,7 +513,7 @@ speakers:
     talk: 'Employing a View Model API Based on Dynamic Proxies'
     tags:
       - java
-      - ui
+      - ux/ui
   540:
     firstname: 'Aleksandar'
     lastname: 'Vacić'
@@ -555,7 +532,7 @@ speakers:
     company: ''
     talk: 'JVM++: The Graal VM'
     tags:
-      - jit
+      - java
       - performance
   560:
     firstname: 'Dejan'
@@ -591,7 +568,6 @@ speakers:
     company: 'Vibe Network'
     talk: 'Sex Lies and Design patterns'
     tags:
-      - sw
       - design patterns
   600:
     firstname: 'Jakša'
@@ -622,9 +598,7 @@ speakers:
     company: 'Right Fold'
     talk: 'Serverless chat bots with AWS Lambda'
     tags:
-      - chat
-      - bot
-      - js
+      - javascript
   630:
     firstname: 'Mirjana'
     lastname: 'Kolarov'
@@ -635,7 +609,7 @@ speakers:
     tags:
       - testing
       - security
-      - team work
+      - metodologies
   640:
     firstname: 'Nikola'
     lastname: 'Milutinović'
@@ -664,7 +638,7 @@ speakers:
     company: 'Sysdig'
     talk: 'The Dark Art of Container Monitoring'
     tags:
-      - containers
+      - docker
       - monitoring
   670:
     firstname: 'Radek'
@@ -674,7 +648,7 @@ speakers:
     company: 'Fast Data Ltd'
     talk: 'Finding Your Perfect Weather with Apache Spark and Docker'
     tags:
-      - skala
+      - scala
       - docker
   680:
     firstname: 'Goran'
@@ -693,7 +667,6 @@ speakers:
     company: 'Nordeus'
     talk: 'Pushkin - Open source messaging platform'
     tags:
-      - messaging
   700:
     firstname: 'Vedran'
     lastname: 'Vujinović'
@@ -718,7 +691,7 @@ speakers:
     company: 'SourceLiar'
     talk: 'Docker 1.12: Orchestration, containers and beyond i Creating a cloud native development environment'
     tags:
-      - containers
+      - docker
   725:
     firstname: 'Nicolas'
     lastname: 'Fränkel'
@@ -727,7 +700,6 @@ speakers:
     company: 'SAP'
     talk: 'Spring Boot and Kotlin, a match made in Heaven'
     tags:
-      - spring
       - kotlin
   730:
     firstname: 'Alexander'
@@ -765,7 +737,7 @@ speakers:
     talk: 'NodeJS i Python za IoT platforme'
     tags:
       - iot
-      - js
+      - javascript
   770:
     firstname: 'Jakub'
     lastname: 'Marchwicki'
@@ -774,7 +746,6 @@ speakers:
     company: ''
     talk: 'Reverse engineering the clean code'
     tags:
-      - dev
   780:
     firstname: 'Miloš'
     lastname: 'Kresović'
@@ -792,7 +763,6 @@ speakers:
     company: 'Atlassian'
     talk: 'Don`t be left out: How to develop software in a distributed team'
     tags:
-      - sw
       - distributed system
   800:
     firstname: 'Stanko'
