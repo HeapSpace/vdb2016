@@ -28,35 +28,26 @@
 					<div class="tags-reset false-btn red">clear tags</div>
 			</div>
 			<div class="margin-top-small"></div>
-			<% @item[:speakers].each { |s| %>
-			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-centered speaker-tags" data-item-tags="<%= s[1][:tags].to_a.join(', ') %>">
+			<% @item[:speakers].to_a.each { |s| %>
+			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-centered speaker-tags" data-item-tags="<%= s[:tags].to_a.join(', ') %>">
 	      <div class="speaker">
-					<% if !s[1][:url].to_s.empty? then %><a href="<%= s[1][:url] %>" target="_blank"><% end %>
-						<div class="photo" style="background-image: url('../images/speakers/<%= s[1][:photo] %>')"></div>
+					<% if !s[:url].to_s.empty? then %><a href="<%= s[:url] %>" target="_blank"><% end %>
+						<div class="photo" style="background-image: url('../images/speakers/<%= s[:photo] %>')"></div>
 						<h5 class="yellow">
-							<%= s[1][:firstname] %> <%= s[1][:lastname] %>
+							<%= s[:firstname] %> <%= s[:lastname] %>
 						</h5>
-					<% if !s[1][:url].to_s.empty? then %></a><% end %>
+					<% if !s[:url].to_s.empty? then %></a><% end %>
 					<h6 class="accent mb10">
-						<%= s[1][:company] %>
+						<%= s[:company] %>
 					</h6>
 					<div class="brown">
-						<%= s[1][:talk] %>
+						<%= s[:talk] %>
 					</div>
 					<div class="tags">
-						<%  s[1][:tags].to_a.each_with_index  do |tag, index| %>
+						<%  s[:tags].to_a.each do |tag| %>
 							<span class="tag">
-								<%
-								if index == s[1][:tags].to_a.size - 1
-								%>
 									<%= tag %>
-								<%
-								else
-								%>
-									<%= tag %>
-								<%
-								end
-								%></span>
+							</span>
 						<% end %>
 					</div>
 	      </div>

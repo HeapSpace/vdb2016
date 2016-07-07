@@ -4,7 +4,7 @@ title: Speakers
 layout: '/speakers.html'
 
 speakers:
-  1:
+  -
     firstname: 'Scott'
     lastname: 'Amyx'
     url: 'https://twitter.com/amyxiot'
@@ -13,7 +13,7 @@ speakers:
     talk: 'Keynote'
     tags:
       - keynote
-  10:
+  -
     firstname: 'Amir'
     lastname: 'Golan'
     url: 'https://de.linkedin.com/in/amir-golan-a0766085'
@@ -22,7 +22,7 @@ speakers:
     talk: 'DevOps on AWS: Deep Dive on Continuous Delivery and the AWS Developer Tools'
     tags:
       - devops
-  20:
+  -
     firstname: 'Aimone'
     lastname: 'Bodini'
     url: 'https://www.linkedin.com/in/aimone-bodini-7a05b5a6'
@@ -30,7 +30,7 @@ speakers:
     company: 'Bully! Entertainment'
     talk: 'Narrative Language of Virtual Reality'
     tags:
-  30:
+  -
     firstname: 'Alexey'
     lastname: 'Buzdin'
     url: 'https://twitter.com/@AlexeyBuzdin'
@@ -39,7 +39,7 @@ speakers:
     talk: 'Automate the Mobile'
     tags:
       - mobile
-  40:
+  -
     firstname: 'Chris'
     lastname: 'van Beek'
     url: 'https://arnhem.luminis.eu/'
@@ -48,7 +48,7 @@ speakers:
     talk: 'Angular, Typescript and RequireJS: The great alltogether'
     tags:
       - javascript
-  50:
+  -
     firstname: 'Chris'
     lastname: 'Ward'
     url: 'http://gregariousmammal.com/'
@@ -58,7 +58,7 @@ speakers:
     tags:
       - ios
       - mobile
-  60:
+  -
     firstname: 'Daniel'
     lastname: 'Siegel'
     url: ''
@@ -68,7 +68,7 @@ speakers:
     tags:
       - ai
       - ux/ui
-  70:
+  -
     firstname: 'David'
     lastname: 'Pichsenmeister'
     url: ''
@@ -77,7 +77,7 @@ speakers:
     talk: 'Chatbots as new apps for mobile messengers'
     tags:
       - ux/ui
-  80:
+  -
     firstname: 'Deepak'
     lastname: 'Nadig'
     url: 'https://mobile.twitter.com/deepak_nadig'
@@ -86,14 +86,14 @@ speakers:
     talk: 'Journey to APIs and Microservices: Best practices from successful transformations'
     tags:
       - microservices
-  90:
+  -
     firstname: 'Daniel'
     lastname: 'Lebrero'
     url: 'https://labs.ig.com/blog/2670'
     photo: 'Daniel Lebrero Berna.jpg'
     company: 'IG Index'
     talk: 'Repl Driven Development'
-  100:
+  -
     firstname: 'Liviu'
     lastname: 'Costea'
     url: 'https://twitter.com/@clm160'
@@ -102,7 +102,7 @@ speakers:
     talk: 'Edge Performance with In-memory NoSQL'
     tags:
       - db
-  110:
+  -
     firstname: 'Filip'
     lastname: 'Danić'
     url: 'https://twitter.com/@DanicFilip'
@@ -111,7 +111,7 @@ speakers:
     talk: 'Complex State Handling in Modern Web Applications'
     tags:
       - web
-  120:
+  -
     firstname: 'Grace'
     lastname: 'Chang'
     url: 'https://twitter.com/@greyschale'
@@ -120,7 +120,7 @@ speakers:
     talk: 'Herding Cats to a Firefight: The evolution of an engineering on-call team'
     tags:
       - web
-  130:
+  -
     firstname: 'Gerard'
     lastname: 'Sans'
     url: 'https://medium.com/@gerard.sans'
@@ -129,7 +129,7 @@ speakers:
     talk: 'Building Cross-Platform Apps using Redux with Angular 2'
     tags:
       - javascript
-  140:
+  -
     firstname: 'Hakan'
     lastname: 'Saglam'
     url: 'https://twitter.com/hakansaglam'
@@ -139,7 +139,7 @@ speakers:
     tags:
       - ios
       - game
-  150:
+  -
     firstname: 'Ilija'
     lastname: 'Studen'
     url: 'https://twitter.com/istdn'
@@ -148,7 +148,7 @@ speakers:
     talk: 'Our take on agile'
     tags:
       - agile
-  160:
+  -
     firstname: 'Jacek'
     lastname: 'Kunicki'
     url: 'http://blog.kunicki.org/'
@@ -158,7 +158,7 @@ speakers:
     tags:
       - db
       - scala
-  170:
+  -
     firstname: 'Jakub'
     lastname: 'Korab'
     url: 'http://jakubkorab.net/'
@@ -167,7 +167,7 @@ speakers:
     talk: 'The Myth of the Magical Messaging Fabric'
     tags:
 
-  180:
+  -
     firstname: 'James'
     lastname: 'Thomas'
     url: 'http://jamesthom.as/'
@@ -176,7 +176,7 @@ speakers:
     talk: 'Microservices Without Servers'
     tags:
       - microservices
-  190:
+  -
     firstname: 'Jezen'
     lastname: 'Thomas'
     url: ''
@@ -185,7 +185,7 @@ speakers:
     talk: 'Haskell On Rails'
     tags:
       - haskell
-  200:
+  -
     firstname: 'Jaroslaw'
     lastname: 'Ratajski'
     url: 'https://www.facebook.com/jarek.ratajski'
@@ -194,7 +194,7 @@ speakers:
     talk: 'Lambda Core – HardCore'
     tags:
       - java
-  210:
+  -
     firstname: 'Karina'
     lastname: 'Popova'
     url: 'http://karinapopova.com/'
@@ -203,7 +203,7 @@ speakers:
     talk: 'Increasing Sensing Quality of Life with a SIM based connectivity solution for IoT'
     tags:
       - iot
-  220:
+  -
     firstname: 'Luis'
     lastname: 'Mineiro'
     url: 'https://drive.google.com/folderview?id=0B-y_g6Jx1VZTLTlkallyWTdDdEE&usp=drive_web'
@@ -212,7 +212,7 @@ speakers:
     talk: 'The frontend taboo: a story of full stack microservices'
     tags:
       - microservices
-  230:
+  -
     firstname: 'Maciek'
     lastname: 'Próchniak'
     url: 'https://twitter.com/mpproch'
@@ -221,7 +221,7 @@ speakers:
     talk: 'Streams, flows and storms – how not to drown with your data?'
     tags:
       - bigdata
-  240:
+  -
     firstname: 'Marcin'
     lastname: 'Szymaniuk'
     url: ''
@@ -230,7 +230,7 @@ speakers:
     talk: 'Apache Spark? If it only worked.'
     tags:
       - bigdata
-  250:
+  -
     firstname: 'Margo'
     lastname: 'Cronin'
     url: 'http://www.entarchs.com/'
@@ -239,7 +239,7 @@ speakers:
     talk: 'DevOps for Enterprises - Respect the Monolith'
     tags:
       - devops
-  260:
+  -
     firstname: 'Mark'
     lastname: 'Heckler'
     url: ''
@@ -248,7 +248,7 @@ speakers:
     talk: 'This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT? Businessing the S*** out of Transformative Development!'
     tags:
       - metodologies
-  270:
+  -
     firstname: 'Matija'
     lastname: 'Gobec'
     url: 'http://www.linkedin.com/in/matijagobec'
@@ -258,7 +258,7 @@ speakers:
     tags:
       - bigdata
       - data analytics
-  280:
+  -
     firstname: 'Michał'
     lastname: 'Płachta'
     url: 'https://twitter.com/miciek'
@@ -268,7 +268,7 @@ speakers:
     tags:
       - web
       - game
-  285:
+  -
     firstname: 'Luca'
     lastname: 'Mezzalira'
     url: 'http://lucamezzalira.com'
@@ -278,7 +278,7 @@ speakers:
     tags:
       - web
       - javascript
-  290:
+  -
     firstname: 'Mike'
     lastname: 'Elsmore'
     url: 'https://twitter.com/ukmadlz'
@@ -287,7 +287,7 @@ speakers:
     talk: 'NoSQL is a lie'
     tags:
       - db
-  300:
+  -
     firstname: 'Mihailo'
     lastname: 'Milenkovic'
     url: 'https://rs.linkedin.com/in/mihailomilenkovic'
@@ -297,7 +297,7 @@ speakers:
     tags:
       - android
       - mobile
-  310:
+  -
     firstname: 'Pance'
     lastname: 'Cavkovski'
     url: 'http://pance.mk/'
@@ -306,7 +306,7 @@ speakers:
     talk: 'DIY Java & Kubernetes'
     tags:
       - microservices
-  320:
+  -
     firstname: 'Ralph'
     lastname: 'Winzinger'
     url: 'https://twitter.com/@rwinz'
@@ -315,7 +315,7 @@ speakers:
     talk: 'Event Sourcing in Microservices'
     tags:
       - microservices
-  330:
+  -
     firstname: 'Stéphane'
     lastname: 'Nicoll'
     url: ''
@@ -324,7 +324,7 @@ speakers:
     talk: 'From Zero to Hero With Spring Boot'
     tags:
       - java
-  340:
+  -
     firstname: 'Stjepan'
     lastname: 'Hadjić'
     url: 'https://twitter.com/_Beast_'
@@ -334,7 +334,7 @@ speakers:
     tags:
       - web
       - ruby
-  350:
+  -
     firstname: 'Zoltán'
     lastname: 'Németh'
     url: ''
@@ -343,7 +343,7 @@ speakers:
     talk: 'Scalable Service Architectures'
     tags:
       - docker
-  360:
+  -
     firstname: 'Gustavo'
     lastname: 'Elias'
     url: 'https://twitter.com/@archtavo'
@@ -352,7 +352,7 @@ speakers:
     talk: 'How to deal with a hot potato'
     tags:
       - devops
-  370:
+  -
     firstname: 'Akos'
     lastname: 'Tolnai'
     url: 'http://abilitymatrix.com/'
@@ -362,7 +362,7 @@ speakers:
     tags:
       - iot
       - startups
-  380:
+  -
     firstname: 'Victor'
     lastname: 'Rentea'
     url: 'https://mobile.twitter.com/victorrentea'
@@ -371,7 +371,7 @@ speakers:
     talk: 'The Art of Clean Code'
     tags:
       - metodologies
-  390:
+  -
     firstname: 'Viktor'
     lastname: 'Farcic'
     url: 'https://technologyconversations.com/about/'
@@ -381,7 +381,7 @@ speakers:
     tags:
       - microservices
       - docker
-  400:
+  -
     firstname: 'Matija'
     lastname: 'Čupić'
     url: 'https://www.linkedin.com/in/mattrex'
@@ -392,7 +392,7 @@ speakers:
       - web
       - javascript
       - ux/ui
-  410:
+  -
     firstname: 'Jovica'
     lastname: 'Kesić'
     url: 'https://twitter.com/joxwell'
@@ -401,7 +401,7 @@ speakers:
     talk: 'Bringing Social Networks to living room using JS APIs'
     tags:
       - javascript
-  420:
+  -
     firstname: 'John'
     lastname: 'Vaskis'
     url: 'https://mobile.twitter.com/johnvaskis'
@@ -410,7 +410,7 @@ speakers:
     talk: 'How to raise a million dollars on Indiegogo'
     tags:
       - business
-  430:
+  -
     firstname: 'Zeljko'
     lastname: 'Turbic'
     url: 'https://rs.linkedin.com/in/zturbic'
@@ -419,7 +419,7 @@ speakers:
     talk: 'Smart lighting: part of the ‘Internet of Things’'
     tags:
       - iot
-  440:
+  -
     firstname: 'Wouter'
     lastname: 'Postma'
     url: 'https://nl.linkedin.com/in/wouterpostma'
@@ -428,7 +428,7 @@ speakers:
     talk: 'Smart lighting: part of the ‘Internet of Things’'
     tags:
       - iot
-  450:
+  -
     firstname: 'Yufeng'
     lastname: 'Guo'
     url: 'https://twitter.com/yufengg'
@@ -436,7 +436,7 @@ speakers:
     company: 'Google'
     talk: 'Machine Learning as an API: strengths, limits, and unusual use cases'
     tags:
-  460:
+  -
     firstname: 'Krzysztof'
     lastname: 'Otrebski'
     url: 'https://twitter.com/kotrebski'
@@ -445,7 +445,7 @@ speakers:
     talk: 'Beat Aliens with Akka Cluster'
     tags:
       - scala
-  470:
+  -
     firstname: 'Rafael'
     lastname: 'Ordog'
     url: 'https://twitter.com/LeanPoker'
@@ -456,7 +456,7 @@ speakers:
       - workshop
       - devops
       - metodologies
-  480:
+  -
     firstname: 'Maja'
     lastname: 'Božić'
     url: 'https://www.vegaitsourcing.rs/#!/about-us/people/maja-bozic'
@@ -466,7 +466,7 @@ speakers:
     tags:
       - workshop
       - business
-  490:
+  -
     firstname: 'Maja'
     lastname: 'Nedučić'
     url: 'https://www.vegaitsourcing.rs/#!/about-us/people/maja-nedu%C4%8Di%C4%87'
@@ -476,7 +476,7 @@ speakers:
     tags:
       - workshop
       - business
-  500:
+  -
     firstname: 'Yann'
     lastname: 'Cebron / S.Nicoll'
     url: 'https://about.me/yanncebron'
@@ -486,7 +486,7 @@ speakers:
     tags:
       - tooling
       - tooling
-  510:
+  -
     firstname: 'Catherine'
     lastname: 'Simon'
     url: 'https://www.namics.com/person/catherine-ferrary-simon/'
@@ -494,7 +494,7 @@ speakers:
     company: 'Namics'
     talk: 'What`s your motivation?'
     tags:
-  520:
+  -
     firstname: 'Daniel'
     lastname: 'Gartmann'
     url: 'https://uk.linkedin.com/in/danielgartmann'
@@ -504,7 +504,7 @@ speakers:
     tags:
       - web
       - security
-  530:
+  -
     firstname: 'Kenan'
     lastname: 'Sevindik'
     url: 'https://twitter.com/KenanSevindik'
@@ -514,7 +514,7 @@ speakers:
     tags:
       - java
       - ux/ui
-  540:
+  -
     firstname: 'Aleksandar'
     lastname: 'Vacić'
     url: 'https://mobile.twitter.com/radiantav?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'
@@ -524,7 +524,7 @@ speakers:
     tags:
       - mobile
       - ios
-  550:
+  -
     firstname: 'Martin'
     lastname: 'Toshev'
     url: 'https://twitter.com/martin_fmi'
@@ -534,7 +534,7 @@ speakers:
     tags:
       - java
       - performance
-  560:
+  -
     firstname: 'Dejan'
     lastname: 'Bosanac'
     url: 'http://sensatic.net/about'
@@ -543,7 +543,7 @@ speakers:
     talk: 'Open stack for building end-to-end IoT solutions'
     tags:
       - iot
-  570:
+  -
     firstname: 'Nikola'
     lastname: 'Sijakinjic'
     url: 'https://www.linkedin.com/in/nikola-sijakinjic-61346b20?trk=hp-identity-name'
@@ -553,14 +553,14 @@ speakers:
     tags:
       - java
       - microservices
-  580:
+  -
     firstname: 'Damir'
     lastname: 'Svrtan'
     url: 'http://damir.svrtan.me/'
     photo: 'Damir Svrtan.jpg'
     company: ''
     talk: 'Stop wasting time NOT writing tests'
-  590:
+  -
     firstname: 'Dejan'
     lastname: 'Dimić'
     url: 'https://twitter.com/dejan_dimic'
@@ -569,7 +569,7 @@ speakers:
     talk: 'Sex Lies and Design patterns'
     tags:
       - design patterns
-  600:
+  -
     firstname: 'Jakša'
     lastname: 'Vučković'
     url: ''
@@ -580,7 +580,7 @@ speakers:
       - workshop
       - java
       - testing
-  610:
+  -
     firstname: 'Lukasz'
     lastname: 'Lenart'
     url: 'https://twitter.com/lukaszlenart'
@@ -590,7 +590,7 @@ speakers:
     tags:
       - scala
       - web
-  620:
+  -
     firstname: 'Aleksandar'
     lastname: 'Simović'
     url: ''
@@ -599,7 +599,7 @@ speakers:
     talk: 'Serverless chat bots with AWS Lambda'
     tags:
       - javascript
-  630:
+  -
     firstname: 'Mirjana'
     lastname: 'Kolarov'
     url: 'https://rs.linkedin.com/in/mirjana-kolarov-62390a5'
@@ -610,7 +610,7 @@ speakers:
       - testing
       - security
       - metodologies
-  640:
+  -
     firstname: 'Nikola'
     lastname: 'Milutinović'
     url: 'https://rs.linkedin.com/in/nikolamilutinovic'
@@ -620,7 +620,7 @@ speakers:
     tags:
       - microservices
       - security
-  650:
+  -
     firstname: 'Nikola'
     lastname: 'Stojiljković'
     url: 'https://twitter.com/nikstojiljkovic'
@@ -630,7 +630,7 @@ speakers:
     tags:
       - db
       - cloud
-  660:
+  -
     firstname: 'Perica'
     lastname: 'Milošević'
     url: 'https://www.linkedin.com/in/pericamilosevic'
@@ -640,7 +640,7 @@ speakers:
     tags:
       - docker
       - monitoring
-  670:
+  -
     firstname: 'Radek'
     lastname: 'Ostrowski'
     url: 'https://uk.linkedin.com/in/radekostrowski'
@@ -650,7 +650,7 @@ speakers:
     tags:
       - scala
       - docker
-  680:
+  -
     firstname: 'Goran'
     lastname: 'Aranđelović'
     url: 'http://www.endava.com/'
@@ -659,7 +659,7 @@ speakers:
     talk: 'C++ for mobile developers'
     tags:
       - mobile
-  690:
+  -
     firstname: 'Miloš'
     lastname: 'Milošević'
     url: 'https://www.linkedin.com/in/milos-milosevic-33099850/'
@@ -667,7 +667,7 @@ speakers:
     company: 'Nordeus'
     talk: 'Pushkin - Open source messaging platform'
     tags:
-  700:
+  -
     firstname: 'Vedran'
     lastname: 'Vujinović'
     url: 'https://www.linkedin.com/in/vedran-vujinovic-581428124'
@@ -676,14 +676,14 @@ speakers:
     talk: 'Augmented reality: behind the scene'
     tags:
       - hw
-  710:
+  -
     firstname: 'Ivan'
     lastname: 'Nemytchenko'
     url: 'https://twitter.com/inem'
     photo: 'Ivan Nemytchenko.jpg'
     company: 'GitLab'
     talk: 'Breaking bad with GitLab CI'
-  720:
+  -
     firstname: 'Antonis'
     lastname: 'Kalipetis'
     url: 'https://twitter.com/akalipetis'
@@ -692,7 +692,7 @@ speakers:
     talk: 'Docker 1.12: Orchestration, containers and beyond i Creating a cloud native development environment'
     tags:
       - docker
-  725:
+  -
     firstname: 'Nicolas'
     lastname: 'Fränkel'
     url: 'https://twitter.com/nicolas_frankel'
@@ -701,7 +701,7 @@ speakers:
     talk: 'Spring Boot and Kotlin, a match made in Heaven'
     tags:
       - kotlin
-  730:
+  -
     firstname: 'Alexander'
     lastname: 'Pacha'
     url: 'http://my-it.at/'
@@ -710,7 +710,7 @@ speakers:
     talk: '1, 2, 3, build - Continuous Integration for Mobile Apps'
     tags:
       - mobile
-  740:
+  -
     firstname: 'Doan'
     lastname: 'Duy Hai'
     url: 'http://twitter.com/@doanduyhai/'
@@ -719,7 +719,7 @@ speakers:
     talk: 'SASI, Cassandra on the full text search ride!'
     tags:
       - bigdata
-  750:
+  -
     firstname: 'Jens'
     lastname: 'Deters'
     url: 'http://www.jensd.de/'
@@ -728,7 +728,7 @@ speakers:
     talk: 'MQTT: The glue for the Internet of Things'
     tags:
       - iot
-  760:
+  -
     firstname: 'Zoran'
     lastname: 'Rončević'
     url: 'https://rs.linkedin.com/in/zoran-roncevic-a6049970'
@@ -738,7 +738,7 @@ speakers:
     tags:
       - iot
       - javascript
-  770:
+  -
     firstname: 'Jakub'
     lastname: 'Marchwicki'
     url: 'http://jakub.marchwicki.pl/'
@@ -746,7 +746,7 @@ speakers:
     company: ''
     talk: 'Reverse engineering the clean code'
     tags:
-  780:
+  -
     firstname: 'Miloš'
     lastname: 'Kresović'
     url: ''
@@ -755,7 +755,7 @@ speakers:
     talk: 'MVVM with Android Databinding in Practice'
     tags:
       - android
-  790:
+  -
     firstname: 'Adam'
     lastname: 'Hynes'
     url: 'https://au.linkedin.com/in/adamhynes'
@@ -764,7 +764,7 @@ speakers:
     talk: 'Don`t be left out: How to develop software in a distributed team'
     tags:
       - distributed system
-  800:
+  -
     firstname: 'Stanko'
     lastname: 'Rusendić'
     url: 'https://twitter.com/monorkin'
