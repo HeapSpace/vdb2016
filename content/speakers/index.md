@@ -24,7 +24,7 @@ speakers:
     photo: 'Amir Golan.jpg'
     company: 'Amazon'
     talk: 'DevOps on AWS: Deep Dive on Continuous Delivery and the AWS Developer Tools'
-    day: 1
+    day: 2
     track: 1
     slot: '15:30'
     duration: 60
