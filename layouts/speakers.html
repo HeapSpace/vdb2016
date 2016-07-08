@@ -21,22 +21,34 @@
 
 	  <div class="steam-separator"></div>
 
-		<div class="row-centered">
+		<div id="speakers" class="row-centered">
 
-			<% @item[:speakers].each { |s| %>
-			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-centered">
+			<div class="tagsort-tags-container"></div>
+			<div class="reset-holder">
+					<div class="tags-reset false-btn red">clear tags</div>
+			</div>
+			<div class="margin-top-small"></div>
+			<% @item[:speakers].to_a.each { |s| %>
+			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-centered speaker-tags" data-item-tags="<%= s[:tags].to_a.join(', ') %>">
 	      <div class="speaker">
-					<% if !s[1][:url].to_s.empty? then %><a href="<%= s[1][:url] %>" target="_blank"><% end %>
-						<div class="photo" style="background-image: url('../images/speakers/<%= s[1][:photo] %>')"></div>
-						<h6 class="yellow">
-							<%= s[1][:firstname] %> <%= s[1][:lastname] %>
-						</h6>
-					<% if !s[1][:url].to_s.empty? then %></a><% end %>
-					<div class="accent mb10">
-						<%= s[1][:company] %>
-					</div>
+					<% if !s[:url].to_s.empty? then %><a href="<%= s[:url] %>" target="_blank"><% end %>
+						<div class="photo" style="background-image: url('../images/speakers/<%= s[:photo] %>')"></div>
+						<h5 class="yellow">
+							<%= s[:firstname] %> <%= s[:lastname] %>
+						</h5>
+					<% if !s[:url].to_s.empty? then %></a><% end %>
+					<h6 class="accent mb10">
+						<%= s[:company] %>
+					</h6>
 					<div class="brown">
-						<%= s[1][:talk] %>
+						<%= s[:talk] %>
+					</div>
+					<div class="tags">
+						<%  s[:tags].to_a.each do |tag| %>
+							<span class="tag">
+									<%= tag %>
+							</span>
+						<% end %>
 					</div>
 	      </div>
 	    </div>
@@ -50,6 +62,7 @@
 
 	<%= render '/_footer.html'%>
 	<%= render '/_bottomscripts.html'%>
-
+	<script type="text/javascript">
+	</script>
 </body>
 </html>

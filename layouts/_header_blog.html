@@ -12,19 +12,17 @@
         <div class="container">
           <ul class="mainmenu primary-nav main-menu">
               <!-- <%= logo_unless_page('./none') %> -->
-              <%= link_to_unless_current('Home', '/new-site') %>
-              <%= link_to_unless_current('Info', '/new-site/info/') %>
-              <%= link_to_unless_current('Speakers', '/new-site/speakers/') %>
-              <%= link_to_unless_current('Tickets', '/new-site/tickets/') %>
-              <%= link_to_unless_current('Sponsors', '/new-site/sponsors/') %>
+              <%= link_to_unless_current('Home', '') %>
+              <%= link_to_unless_current('Info', '/info/') %>
+              <%= link_to_unless_current('Speakers', '/speakers/') %>
+              <%= link_to_unless_current('Tickets', '/tickets/') %>
+              <%= link_to_unless_current('Sponsors', '/sponsors/') %>
 
-              <%= link_to_unless_current('Schedule', '/new-site/schedule/') %>
+              <%= link_to_unless_current('Blog', '/blog/') %>
+              <%= link_to_unless_current('FAQ', '/faq-and-notes/') %>
+              <%= link_to_unless_current('About us', '/about/') %>
+              <%= link_to_unless_current('Contact', '/contact/') %>
 
-              <li class="menu_item active">Blog</li>
-              <%= link_to_unless_current('FAQ', '/new-site/faq-and-notes/') %>
-              <%= link_to_unless_current('About us', '/new-site/about/') %>
-              <%= link_to_unless_current('Contact', '/new-site/contact/') %>
-              
           </ul>
         </div>
       </div>

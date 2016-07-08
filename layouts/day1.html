@@ -8,7 +8,7 @@
 <body>
 	<%= render '/_header.html'%>
 	<%
-	 @test = '/new-site'
+	 @test = ''
 	%>
 	<div class="main-bg page"></div>
 	<div class="container">
@@ -19,38 +19,39 @@
 		<div class="steam-separator"></div>
 
 		<div class="schedule-tabs-holder">
-		  <ul class="nav nav-pills nav-justified">
-			  <li class="active"><a href="<%= @test %>/schedule/day1">Day 1</a></li>
-			  <li><a href="<%= @test %>/schedule/day2">Day 2</a></li>
-			  <li><a href="<%= @test %>/schedule/day3">Day 3</a></li>
-			</ul>
+		  <div class="container info-content ">
+			  <a class="btn btn-primary btn-lg green" role="button" href="<%= @test %>/schedule/day1">Day 1</a>
+			  <a class="btn btn-primary btn-lg blue" role="button" href="<%= @test %>/schedule/day2">Day 2</a>
+			  <a class="btn btn-primary btn-lg blue" role="button" href="<%= @test %>/schedule/day3">Day 3</a>
+			</div>
 		</div>
 
-		<div class="schedule-tabs-holder">
-		  <%= render '/_track_tabs.html', :day => 'day1' %>
-		</div>
-
-				<div class="schedule-list">
-					<%= render '/_schedule_clock.html', :id => 1 %>
-					<div class="abs-holder">
-						<%= render ('/_schedule_header.html') %>
-						<div class="tab-content">
-							<div class="tab-pane active" role="tabpanel" id="day1-track1">
-								<%= render '/_schedule_item.html', :day => 1, :track => 1 %>
-							</div>
-							<div class="tab-pane" role="tabpanel" id="day1-track2">
-								<%= render '/_schedule_item.html', :day => 1, :track => 2 %>
-							</div>
-							<div class="tab-pane" role="tabpanel" id="day1-track3">
-								<%= render '/_schedule_item.html', :day => 1, :track => 3 %>
-							</div>
-							<div class="tab-pane" role="tabpanel" id="day1-track4">
-								<%= render '/_schedule_item.html', :day => 1, :track => 4 %>
-							</div>
-						</div>
-					</div>
+		<div class="schedule-list">
+			<%= render '/_schedule_clock.html', :id => 1 %>
+			<div class="abs-holder">
+				<%= render ('/_schedule_header.html') %>
+				<div class="row">
+					<div class="col-lg-2 schedule-track">
+				    <%= render '/_schedule_item.html', :day => 1, :track => 1 %>
+				  </div>
+				  <div class="col-lg-2 schedule-track">
+				    <%= render '/_schedule_item.html', :day => 1, :track => 2 %>
+				  </div>
+				  <div class="col-lg-2 schedule-track">
+				    <%= render '/_schedule_item.html', :day => 1, :track => 3 %>
+				  </div>
+				  <div class="col-lg-2 schedule-track">
+				    <%= render '/_schedule_item.html', :day => 1, :track => 4 %>
+				  </div>
+				  <div class="col-lg-2 schedule-track">
+				    <%= render '/_schedule_item.html', :day => 1, :track => 0 %>
+				  </div>
+				  <div class="col-lg-2 schedule-track">
+				    &nbsp;
+				  </div>
 				</div>
-
+			</div>
+		</div>
 
 		<div class="steam-separator"></div>
 	</div>
