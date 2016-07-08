@@ -1,7 +1,25 @@
 #!/usr/bin/env ruby
+
 require 'date'
 require 'compass'
+
 Compass.add_project_configuration 'config.rb'
+
+## preprocessing
+preprocess do
+  @items.each do |item|
+    if item.key?(:speakers)
+      schedule_items = item[:speakers]
+      schedule_items.each do |speaker|
+        if speaker[:pageurl]
+          @items.create('', {:photo => speaker[:photo], :firstname => speaker[:firstname], :lastname => speaker[:lastname], :url => speaker[:url], :company => speaker[:company], :talk => speaker[:talk], :tags => speaker[:tags], :layout => '/speaker_page.html'}, '/speakers/'+speaker[:pageurl]+'/index.md')
+        end
+      end
+    end
+  end
+end
+
+ignore '_*.scss'
 
 ## PHP
 
@@ -62,6 +80,11 @@ compile '/blog/**/*.md' do
     layout '/default.html'
   end
 
+end
+
+compile '/speakers/**/*.md' do
+  layout item[:layout]
+  item.identifier.without_ext + '.html'
 end
 
 ## htaccess

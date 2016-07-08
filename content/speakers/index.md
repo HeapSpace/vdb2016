@@ -5,67 +5,108 @@ layout: '/speakers.html'
 
 speakers:
   -
+    talk: 'Coffee break'
+    day: 1
+    track: 1
+    slot: '10:00'
+    duration: 20
+  -
+    talk: 'Coffee break'
+    day: 1
+    track: 2
+    slot: '10:00'
+    duration: 20
+  -
+    talk: 'Coffee break'
+    day: 1
+    track: 3
+    slot: '10:00'
+    duration: 20
+  -
+    talk: 'Coffee break'
+    day: 1
+    track: 4
+    slot: '10:00'
+    duration: 20
+  -
+    talk: ''
+    day: 1
+    track: 0
+    slot: '09:00'
+    duration: 60
+  -
+    talk: 'Coffee break'
+    day: 1
+    track: 0
+    slot: '10:00'
+    duration: 20
+  -
     firstname: 'Scott'
     lastname: 'Amyx'
+    pageurl: 'scott-amyx'
     url: 'https://twitter.com/amyxiot'
     photo: 'scott-amyx.jpg'
     company: 'Amyx+McKinsey'
     talk: 'Keynote'
     day: 1
     track: 1
-    slot: '14:30'
+    slot: '09:00'
     duration: 60
     tags:
       - keynote
   -
     firstname: 'Amir'
     lastname: 'Golan'
+    pageurl: 'amir-golan'
     url: 'https://de.linkedin.com/in/amir-golan-a0766085'
     photo: 'Amir Golan.jpg'
     company: 'Amazon'
     talk: 'DevOps on AWS: Deep Dive on Continuous Delivery and the AWS Developer Tools'
     day: 2
     track: 1
-    slot: '15:30'
+    slot: '09:00'
     duration: 60
     tags:
       - devops
   -
     firstname: 'John'
     lastname: 'Vaskis'
+    pageurl: 'john-vaskis'
     url: 'https://mobile.twitter.com/johnvaskis'
     photo: 'John Vaskis.jpg'
     company: 'Indiegogo'
     talk: 'How to raise a million dollars on Indiegogo'
     day: 1
     track: 2
-    slot: '14:30'
+    slot: '09:00'
     duration: 60
     tags:
       - business
   -
     firstname: 'Dejan'
     lastname: 'Bosanac'
+    pageurl: 'dejan-bosanac'
     url: 'http://sensatic.net/about'
     photo: 'Dejan Bosanac.jpg'
     company: 'Red Hat'
     talk: 'Open stack for building end-to-end IoT solutions'
     day: 1
     track: 3
-    slot: '14:30'
+    slot: '09:00'
     duration: 60
     tags:
       - iot
   -
     firstname: 'Nicolas'
     lastname: 'Fränkel'
+    pageurl: 'nicolas-frankel'
     url: 'https://twitter.com/nicolas_frankel'
     photo: 'Nicolas Frankel.jpg'
     company: 'SAP'
     talk: 'Spring Boot and Kotlin, a match made in Heaven'
     day: 1
     track: 4
-    slot: '14:30'
+    slot: '09:00'
     duration: 60
     tags:
       - kotlin
@@ -116,6 +157,7 @@ speakers:
   -
     firstname: 'Viktor'
     lastname: 'Farcic'
+    details: viktor-farcic
     url: 'https://technologyconversations.com/about/'
     photo: 'Viktor Farcic.jpg'
     company: 'CloudBees'
@@ -143,7 +185,7 @@ speakers:
       - java
   -
     firstname: 'Yann'
-    lastname: 'Cebron / S.Nicoll'
+    lastname: 'Cebron'
     url: 'https://about.me/yanncebron'
     photo: 'Yann Cebron.jpg'
     company: 'JetBrains'

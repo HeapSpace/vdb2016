@@ -173,16 +173,18 @@ def logo_unless_page(target)
   end
 end
 
-def get_schedule_data(day = false, track = false)
+def get_schedule_data(day = nil, track = nil)
 
-  $schedule = YAML.load_file('content/speakers/index.md')
+  schedule_raw = YAML.load_file('content/speakers/index.md')
   schedule_data = []
-  schedule_items = $schedule["speakers"]
+  schedule_items = schedule_raw["speakers"]
 
   if (day && track) then schedule_data = schedule_items.select { |v| v["day"] == day && v["track"] == track } end
-  if (day && !track) then schedule_data = schedule_items.select { |v| v["day"] == day } end
-  if (!day && track) then schedule_data = schedule_items.select { |v| v["track"] == track } end
+  if (day && track.to_s.empty?) then schedule_data = schedule_items.select { |v| v["day"] == day } end
+  if (day.to_s.empty? && track) then schedule_data = schedule_items.select { |v| v["track"] == track } end
 
-  return schedule_data
+  schedule = schedule_data.sort_by { |k| k["slot"] }
+
+  return schedule
 
 end

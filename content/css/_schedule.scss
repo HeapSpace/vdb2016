@@ -11,8 +11,8 @@
 
 .schedule-list {
   position: relative;
-  height: 4320px;
-  padding: 0 40px;
+  height: 3600px;
+  padding: 0 30px;
   .schedule-track {
     padding-left: 15px;
     padding-right: 0;
@@ -21,10 +21,11 @@
     align-items: center;
     justify-content: center;
     border-top: 1px solid $brand-primary;
-    padding: 10px;
+    padding: 0 10px;
     background-color: rgba($brand-secondary, 0.075);
     h4, h5, h6 {
       line-height: 130%;
+      margin-top: 10px;
     }
     .item-content {
       padding: 0px 10px 10px 10px;
@@ -59,6 +60,13 @@
   }
 }
 
+.schedule-header {
+  h5 {
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+}
+
 .abs-holder {
   position: absolute;
   width: 100%;
@@ -72,7 +80,7 @@
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  top: -47px;
+  top: -61px;
   margin: 0 0 0 auto !important;
   background-size: cover;
   z-index: 2000;

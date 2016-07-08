@@ -2,10 +2,12 @@
    get_schedule_data(@day, @track).each do |speaker|
 %>
       <div class="schedule-item" style="height: <%= speaker['duration']*6 %>px">
-        <h4 class=""><%= speaker['slot'] %></h4>
-        <h5 class="bold yellow"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h5>
+        <% if !speaker['talk'].to_s.empty? %><h4 class=""><%= speaker['slot'] %></h4><% end %>
+        <% if !speaker['pageurl'].to_s.empty? %><a href="/speakers/<%= speaker['pageurl'] %>/"><% end %>
+          <h5 class="bold yellow"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h5>
+        <% if !speaker['pageurl'].to_s.empty? %></a><% end %>
         <h6 class=""><%= speaker['talk'] %></h6>
-        <div class="brown">Duration: <%= speaker['duration'] %> min</div>
+        <% if !speaker['talk'].to_s.empty? %><div class="brown">Duration: <%= speaker['duration'] %> min</div><% end %>
       </div>
 <%
 end

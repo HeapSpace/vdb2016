@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Speaker' %>
+	<%= meta_share %>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+	<div class="main-bg page"></div>
+	<div class="container">
+
+	  <h1 class="text-center pad-vertical-big">
+	    <%= @item[:firstname] %><br><span class="yellow"><%= @item[:lastname] %></span>
+	  </h1>
+
+	  <div class="steam-separator"></div>
+
+	  <div class="row-centered">
+	    <div class="col-sm-8 col-centered">
+	      <div class="speaker">
+					<% if !@item[:url].to_s.empty? then %><a href="<%= @item[:url] %>" target="_blank"><% end %>
+						<div class="photo" style="background-image: url('/images/speakers/<%= @item[:photo] %>')"></div>
+						<h5 class="yellow">
+							<%= @item[:firstname] %> <%= @item[:lastname] %>
+						</h5>
+					<% if !@item[:url].to_s.empty? then %></a><% end %>
+					<h6 class="accent mb10">
+						<%= @item[:company] %>
+					</h6>
+					<div class="brown">
+						<%= @item[:talk] %>
+					</div>
+					<div class="tags">
+						<%  @item[:tags].to_a.each do |tag| %>
+							<span class="tag">
+									<%= tag %>
+							</span>
+						<% end %>
+					</div>
+	      </div>
+	    </div>
+	  </div>
+
+	</div>
+	<div class="footer-cta-block info margin-top-big">
+	  <%= render '/_footer_cta.html' %>
+	</div>
+
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+
+</body>
+</html>

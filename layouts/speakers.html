@@ -28,10 +28,13 @@
 					<div class="tags-reset false-btn red">clear tags</div>
 			</div>
 			<div class="margin-top-small"></div>
-			<% @item[:speakers].to_a.each { |s| %>
+			<%
+			@item[:speakers].to_a.each { |s|
+				if !s[:firstname].to_s.empty? && !s[:lastname].to_s.empty?
+			%>
 			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-centered speaker-tags" data-item-tags="<%= s[:tags].to_a.join(', ') %>">
 	      <div class="speaker">
-					<% if !s[:url].to_s.empty? then %><a href="<%= s[:url] %>" target="_blank"><% end %>
+					<% if !s[:pageurl].to_s.empty? then %><a href="/speakers/<%= s[:pageurl] %>/" target="_blank"><% end %>
 						<div class="photo" style="background-image: url('../images/speakers/<%= s[:photo] %>')"></div>
 						<h5 class="yellow">
 							<%= s[:firstname] %> <%= s[:lastname] %>
@@ -52,7 +55,10 @@
 					</div>
 	      </div>
 	    </div>
-			<% } %>
+			<%
+				end
+			}
+			%>
 
 	  </div>
 	</div>
