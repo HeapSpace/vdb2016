@@ -161,7 +161,7 @@ speakers:
     lastname: 'van Beek'
     url: 'https://arnhem.luminis.eu/'
     photo: 'Chris van Beek.jpg'
-    company: 'Gregarious Mammal'
+    company: 'Luminis'
     talk: 'Angular, Typescript and RequireJS: The great alltogether'
     tags:
       - javascript
@@ -170,7 +170,7 @@ speakers:
     lastname: 'Ward'
     url: 'http://gregariousmammal.com/'
     photo: 'Chris Ward.jpg'
-    company: 'Crate.IO'
+    company: 'Gregarious Mammal'
     talk: 'Your Favourite New Language - The Future of Swift'
     tags:
       - ios
