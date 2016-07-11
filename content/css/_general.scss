@@ -353,6 +353,15 @@ iframe {
     display: block;
     margin-bottom: 50px;
   }
+  .label {
+    margin-top: 8px;
+    font-style: italic;
+    font-size: 90%;
+    text-align: center;
+    font-weight: 300;
+    color: $brand-primary;
+    display: block;
+  }
   img {
     // background: rgba(17,14,11,0.4);
     opacity: 0.55;
