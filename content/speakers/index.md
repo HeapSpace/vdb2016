@@ -195,7 +195,7 @@ speakers:
   -
     firstname: 'Luis'
     lastname: 'Mineiro'
-    url: 'https://drive.google.com/folderview?id=0B-y_g6Jx1VZTLTlkallyWTdDdEE&usp=drive_web'
+    url: ''
     photo: 'Luis Mineiro.jpg'
     company: 'Zalando'
     talk: 'The frontend taboo: a story of full stack microservices'
