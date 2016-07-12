@@ -741,7 +741,7 @@ speakers:
   -
     firstname: 'Miloš'
     lastname: 'Milošević'
-    url: 'https://www.linkedin.com/in/milos-milosevic-33099850/'
+    url: 'https://www.linkedin.com/in/milos-milosevic-33099850'
     photo: 'Miloš Milošević.jpg'
     company: 'Nordeus'
     talk: 'Pushkin - Open source messaging platform'
