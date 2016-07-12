@@ -53,35 +53,12 @@ $(document).ready(function() {
     .setPin('.s-clock')
     .addTo(controller);
 
-
-    $(".speaker-img img").each(function(){
-      var $el = $(this),
-        staticSrc = $el.attr('src'),
-        hoverSrc = $el.data('hover');
-      $el.hover(
-        function(){
-          $el.attr("src", hoverSrc);
-        },
-        function(){
-          $el.attr("src", staticSrc);
-        });
-    });
-
-
     $('#home-mainscreen-holder').css('height', $(window).height());
 
-    $('.frame > img').each(function(){
-      var $el = $(this),
-        staticSrc = $el.attr('src'),
-        gifSrc = $el.data('animated');
-      $el.hover(
-        function(){
-          $el.attr("src", gifSrc);
-        },
-        function(){
-          $el.attr("src", staticSrc);
-        });
-    });
+    var divs = $(".speaker-home").get().sort(function(){
+      return Math.round(Math.random())-0.5; //random so we get the right +/- combo
+    }).slice(0,5);
+    $(divs).appendTo(divs[0].parentNode).css('display', 'inline-block');
 
     $('div.tagsort-tags-container').tagSort({
 		  items: '.speaker-tags',
