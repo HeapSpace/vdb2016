@@ -452,6 +452,18 @@ iframe {
     cursor: pointer;
     background: rgba(17,14,11,0.9);
   }
+  &.latest {
+    background: rgba($green,0.9);
+    color: $white;
+    margin-top: 50px;
+    @include round-corners(24px);
+    h1, h2, h3, h4 {
+      margin-top: 0;
+    }
+    &:hover {
+      background: rgba($green,0.9);
+    }
+  }
   &.info {
     background: rgba(17,14,11,0.9);
     cursor: default;
