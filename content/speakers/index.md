@@ -130,7 +130,7 @@ speakers:
   -
     firstname: 'Victor'
     lastname: 'Rentea'
-    url: 'https://mobile.twitter.com/victorrentea'
+    url: 'https://twitter.com/victorrentea'
     photo: 'Victor Rentea.jpg'
     company: 'IBM Global Business Services'
     talk: 'The Art of Clean Code'
