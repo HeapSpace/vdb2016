@@ -25,6 +25,20 @@ $(document).ready(function() {
       }
     });
 
+    $('.frame > img').each(function(){
+       var $el = $(this),
+         staticSrc = $el.attr('src'),
+         gifSrc = $el.data('animated');
+       $el.hover(
+         function(){
+           $el.attr("src", gifSrc);
+         },
+         function(){
+           $el.attr("src", staticSrc);
+         });
+     });
+
+
     $('#home-main-text').css('padding-top', $(window).height()/2.8);
 
     // init controller
