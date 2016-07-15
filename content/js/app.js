@@ -129,6 +129,9 @@ $(document).ready(function() {
 
     $('.tagsort-tags-container > span').on('click', function(){
         $('.tags-reset').show();
+        if (!$('.tagsort-active').length) {
+          $('.tags-reset').hide();
+        }
     });
 
     $('.tags-reset').on('click', function(){
