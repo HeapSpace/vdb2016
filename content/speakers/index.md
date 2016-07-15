@@ -114,7 +114,7 @@ speakers:
     lastname: 'Faulhaber'
     pageurl: 'sebastian-faulhaber'
     url: 'http://www.faulhaber.it/'
-    photo: 'Sebastijan Faulhaber.jpg'
+    photo: 'Sebastian Faulhaber.jpg'
     company: 'Red Hat'
     talk:
       -
