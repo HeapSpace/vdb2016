@@ -1095,5 +1095,39 @@ speakers:
     tags:
       - web
       - ruby
+  -
+    firstname: 'Nenad'
+    lastname: 'Pavićević'
+    url: ''
+    photo: 'user.png'
+    company: 'Novomatics LS'
+    talk:
+      -
+        title: 'Continuous Security Testing - Automating your AppSec Program'
+        type: 'talk'
+    tags:
+  -
+    firstname: 'Predrag'
+    lastname: 'Kapamadzin'
+    url: 'http://www.linkedin.com/in/predragkapamadzin'
+    photo: 'Predrag Kapamadzin.jpg'
+    company: 'Levi 9'
+    talk:
+      -
+        title: 'A Scrum Team – can it be great or is that a bait'
+        type: 'talk'
+    tags:
+  -
+    firstname: 'Anamarija'
+    lastname: 'Petrović'
+    url: 'https://rs.linkedin.com/in/anamarijapetrovic'
+    photo: 'Anamarija Petrovic.png'
+    company: 'Levi 9'
+    talk:
+      -
+        title: 'A Scrum Team – can it be great or is that a bait'
+        type: 'talk'
+    tags:
+
 
 ---
