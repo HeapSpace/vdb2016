@@ -110,6 +110,22 @@ speakers:
     tags:
       - business
   -
+    firstname: 'Sebastian'
+    lastname: 'Faulhaber'
+    pageurl: 'sebastian-faulhaber'
+    url: 'http://www.faulhaber.it/'
+    photo: 'Sebastijan Faulhaber.jpg'
+    company: 'Red Hat'
+    talk:
+      -
+        title: 'Faster and more efficient processes by combining BPM and Mobile'
+        type: 'talk'
+        day: 1
+        track: 3
+        slot: '09:00'
+        duration: 60
+    tags:
+  -
     firstname: 'Dejan'
     lastname: 'Bosanac'
     pageurl: 'dejan-bosanac'
