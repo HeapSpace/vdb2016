@@ -69,11 +69,6 @@ $(document).ready(function() {
 
     $('#home-mainscreen-holder').css('height', $(window).height());
 
-    var divs = $(".speaker-home").get().sort(function(){
-      return Math.round(Math.random())-0.5; //random so we get the right +/- combo
-    }).slice(0,5);
-    $(divs).appendTo(divs[0].parentNode).css('display', 'inline-block');
-
     $('div.tagsort-tags-container').tagSort({
 		  items: '.speaker-tags',
 		  tagElement: 'span',

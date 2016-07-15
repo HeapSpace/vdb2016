@@ -176,14 +176,38 @@ end
 def get_schedule_data(day = nil, track = nil)
 
   schedule_raw = YAML.load_file('content/speakers/index.md')
-  schedule_data = []
   schedule_items = schedule_raw["speakers"]
+  schedule_data = []
 
-  if (day && track) then schedule_data = schedule_items.select { |v| v["day"] == day && v["track"] == track } end
-  if (day && track.to_s.empty?) then schedule_data = schedule_items.select { |v| v["day"] == day } end
-  if (day.to_s.empty? && track) then schedule_data = schedule_items.select { |v| v["track"] == track } end
+  schedule_items.each do |speaker|
+    if (day && track)
+      speaker['talk'].to_a.each { |t|
+        if (!t["day"].to_s.empty? && t["day"] == day && !t["track"].to_s.empty? && t["track"] == track)
+          speaker['talk'] = t
+          schedule_data << speaker
+        end
+      }
+    end
+    if (day.to_s.empty? && track)
+      speaker['talk'].to_a.each { |t|
+        if (!t["track"].to_s.empty? && t["track"] == track)
+          speaker['talk'] = t
+          schedule_data << speaker
+        end
+      }
+    end
+    if (day && track.to_s.empty?)
+      speaker['talk'].to_a.each { |t|
+        if (!t["day"].to_s.empty? && t["day"] == day)
+          speaker['talk'] = t
+          schedule_data << speaker
+        end
+      }
+    end
+  end
 
-  schedule = schedule_data.sort_by { |k| k["slot"] }
+  # puts schedule_data
+  schedule = schedule_data.sort_by { |k| k["talk"]["slot"] }
 
   return schedule
 

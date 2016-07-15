@@ -204,5 +204,13 @@
 	</div>
 	<%= render '/_footer.html'%>
 	<%= render '/_bottomscripts.html'%>
+	<script>
+	$(function() {
+		var divs = $(".speaker-home").get().sort(function(){
+      return Math.round(Math.random())-0.5; //random so we get the right +/- combo
+    }).slice(0,5);
+    $(divs).appendTo(divs[0].parentNode).css('display', 'inline-block');
+	});
+	</script>
 </body>
 </html>

@@ -5,53 +5,74 @@ layout: '/speakers.html'
 
 speakers:
   -
-    talk: 'Coffee break'
-    day: 1
-    track: 1
-    slot: '10:00'
-    duration: 20
+    talk:
+      -
+        title: 'Coffee break'
+        type: 'break'
+        day: 1
+        track: 1
+        slot: '10:00'
+        duration: 20
   -
-    talk: 'Coffee break'
-    day: 1
-    track: 2
-    slot: '10:00'
-    duration: 20
+    talk:
+      -
+        title: 'Coffee break'
+        type: 'break'
+        day: 1
+        track: 2
+        slot: '10:00'
+        duration: 20
   -
-    talk: 'Coffee break'
-    day: 1
-    track: 3
-    slot: '10:00'
-    duration: 20
+    talk:
+      -
+        title: 'Coffee break'
+        type: 'break'
+        day: 1
+        track: 3
+        slot: '10:00'
+        duration: 20
   -
-    talk: 'Coffee break'
-    day: 1
-    track: 4
-    slot: '10:00'
-    duration: 20
+    talk:
+      -
+        title: 'Coffee break'
+        type: 'break'
+        day: 1
+        track: 4
+        slot: '10:00'
+        duration: 20
   -
-    talk: ''
-    day: 1
-    track: 0
-    slot: '09:00'
-    duration: 60
+    talk:
+      -
+        title: ''
+        type: 'empty'
+        day: 1
+        track: 0
+        slot: '09:00'
+        duration: 60
   -
-    talk: 'Coffee break'
-    day: 1
-    track: 0
-    slot: '10:00'
-    duration: 20
+    talk:
+      -
+        title: 'Coffee break'
+        type: 'break'
+        day: 1
+        track: 0
+        slot: '10:00'
+        duration: 20
   -
     firstname: 'Scott'
     lastname: 'Amyx'
     pageurl: 'scott-amyx'
     url: 'https://twitter.com/amyxiot'
-    photo: 'scott-amyx.jpg'
+    photo: 'scott amyx.jpg'
     company: 'Amyx+McKinsey'
-    talk: 'Keynote'
-    day: 1
-    track: 1
-    slot: '09:00'
-    duration: 60
+    talk:
+      -
+        title: 'Keynote'
+        type: 'talk'
+        day: 1
+        track: 1
+        slot: '09:00'
+        duration: 60
     tags:
       - keynote
   -
@@ -61,11 +82,14 @@ speakers:
     url: 'https://de.linkedin.com/in/amir-golan-a0766085'
     photo: 'Amir Golan.jpg'
     company: 'Amazon'
-    talk: 'DevOps on AWS: Deep Dive on Continuous Delivery and the AWS Developer Tools'
-    day: 2
-    track: 1
-    slot: '09:00'
-    duration: 60
+    talk:
+      -
+        title: 'DevOps on AWS: Deep Dive on Continuous Delivery and the AWS Developer Tools'
+        type: 'talk'
+        day: 2
+        track: 1
+        slot: '09:00'
+        duration: 60
     tags:
       - devops
   -
@@ -75,11 +99,14 @@ speakers:
     url: 'https://mobile.twitter.com/johnvaskis'
     photo: 'John Vaskis.jpg'
     company: 'Indiegogo'
-    talk: 'How to raise a million dollars on Indiegogo'
-    day: 1
-    track: 2
-    slot: '09:00'
-    duration: 60
+    talk:
+      -
+        title: 'How to raise a million dollars on Indiegogo'
+        type: 'talk'
+        day: 1
+        track: 2
+        slot: '09:00'
+        duration: 60
     tags:
       - business
   -
@@ -89,11 +116,14 @@ speakers:
     url: 'http://sensatic.net/about'
     photo: 'Dejan Bosanac.jpg'
     company: 'Red Hat'
-    talk: 'Open stack for building end-to-end IoT solutions'
-    day: 1
-    track: 3
-    slot: '09:00'
-    duration: 60
+    talk:
+      -
+        title: 'Open stack for building end-to-end IoT solutions'
+        type: 'talk'
+        day: 1
+        track: 3
+        slot: '09:00'
+        duration: 60
     tags:
       - iot
   -
@@ -103,11 +133,14 @@ speakers:
     url: 'https://twitter.com/nicolas_frankel'
     photo: 'Nicolas Frankel.jpg'
     company: 'SAP'
-    talk: 'Spring Boot and Kotlin, a match made in Heaven'
-    day: 1
-    track: 4
-    slot: '09:00'
-    duration: 60
+    talk:
+      -
+        title: 'Spring Boot and Kotlin, a match made in Heaven'
+        type: 'talk'
+        day: 1
+        track: 4
+        slot: '09:00'
+        duration: 60
     tags:
       - kotlin
   -
@@ -116,7 +149,10 @@ speakers:
     url: 'https://twitter.com/yufengg'
     photo: 'Yufeng Guo.jpg'
     company: 'Google'
-    talk: 'Machine Learning as an API: strengths, limits, and unusual use cases'
+    talk:
+      -
+        title: 'Machine Learning as an API: strengths, limits, and unusual use cases'
+        type: 'talk'
     tags:
   -
     firstname: 'Mike'
@@ -124,7 +160,10 @@ speakers:
     url: 'https://twitter.com/ukmadlz'
     photo: 'Mike Elsmore.jpg'
     company: 'IBM'
-    talk: 'NoSQL is a lie'
+    talk:
+      -
+        title: 'NoSQL is a lie'
+        type: 'talk'
     tags:
       - db
   -
@@ -133,7 +172,10 @@ speakers:
     url: 'https://twitter.com/victorrentea'
     photo: 'Victor Rentea.jpg'
     company: 'IBM Global Business Services'
-    talk: 'The Art of Clean Code'
+    talk:
+      -
+        title: 'The Art of Clean Code'
+        type: 'talk'
     tags:
       - metodologies
   -
@@ -142,7 +184,10 @@ speakers:
     url: 'http://jamesthom.as/'
     photo: 'James Thomas.png'
     company: 'IBM Bluemix'
-    talk: 'Microservices Without Servers'
+    talk:
+      -
+        title: 'Microservices Without Servers'
+        type: 'talk'
     tags:
       - microservices
   -
@@ -151,7 +196,10 @@ speakers:
     url: 'https://au.linkedin.com/in/adamhynes'
     photo: 'Adam Hynes.jpg'
     company: 'Atlassian'
-    talk: 'Don`t be left out: How to develop software in a distributed team'
+    talk:
+      -
+        title: 'Don`t be left out: How to develop software in a distributed team'
+        type: 'talk'
     tags:
       - distributed system
   -
@@ -161,7 +209,13 @@ speakers:
     url: 'https://technologyconversations.com/about/'
     photo: 'Viktor Farcic.jpg'
     company: 'CloudBees'
-    talk: 'Self-Healing Systems'
+    talk:
+      -
+        title: 'Self-Healing Systems'
+        type: 'talk'
+      -
+        title: 'Microservices Lifecycle Workshop'
+        type: 'workshop'
     tags:
       - microservices
       - docker
@@ -171,7 +225,10 @@ speakers:
     url: ''
     photo: 'Mark Heckler.jpg'
     company: 'Pivotal Software, Inc.'
-    talk: 'This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT? Businessing the S*** out of Transformative Development!'
+    talk:
+      -
+        title: 'This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT? Businessing the S*** out of Transformative Development!'
+        type: 'talk'
     tags:
       - metodologies
   -
@@ -180,7 +237,10 @@ speakers:
     url: ''
     photo: 'Stephane Nicoll.jpg'
     company: 'Pivotal'
-    talk: 'From Zero to Hero With Spring Boot'
+    talk:
+      -
+        title: 'From Zero to Hero With Spring Boot'
+        type: 'talk'
     tags:
       - java
   -
@@ -189,7 +249,10 @@ speakers:
     url: 'https://about.me/yanncebron'
     photo: 'Yann Cebron.jpg'
     company: 'JetBrains'
-    talk: '40 Tips & Tricks for Spring in IntelliJ IDEA'
+    talk:
+      -
+        title: '40 Tips & Tricks for Spring in IntelliJ IDEA'
+        type: 'talk'
     tags:
       - tooling
   -
@@ -198,7 +261,10 @@ speakers:
     url: ''
     photo: 'Luis Mineiro.jpg'
     company: 'Zalando'
-    talk: 'The frontend taboo: a story of full stack microservices'
+    talk:
+      -
+        title: 'The frontend taboo: a story of full stack microservices'
+        type: 'talk'
     tags:
       - microservices
   -
@@ -207,7 +273,10 @@ speakers:
     url: 'https://www.linkedin.com/in/aimone-bodini-7a05b5a6'
     photo: 'Aimone Bodini.jpg'
     company: 'Bully! Entertainment'
-    talk: 'Narrative Language of Virtual Reality'
+    talk:
+      -
+        title: 'Narrative Language of Virtual Reality'
+        type: 'talk'
     tags:
   -
     firstname: 'Alexey'
@@ -215,7 +284,10 @@ speakers:
     url: 'https://twitter.com/@AlexeyBuzdin'
     photo: 'Alexey Buzdin.png'
     company: 'C.T.Co'
-    talk: 'Automate the Mobile'
+    talk:
+      -
+        title: 'Automate the Mobile'
+        type: 'talk'
     tags:
       - mobile
   -
@@ -224,7 +296,10 @@ speakers:
     url: 'https://arnhem.luminis.eu/'
     photo: 'Chris van Beek.jpg'
     company: 'Luminis'
-    talk: 'Angular, Typescript and RequireJS: The great alltogether'
+    talk:
+      -
+        title: 'Angular, Typescript and RequireJS: The great alltogether'
+        type: 'talk'
     tags:
       - javascript
   -
@@ -233,7 +308,10 @@ speakers:
     url: 'http://gregariousmammal.com/'
     photo: 'Chris Ward.jpg'
     company: 'Gregarious Mammal'
-    talk: 'Your Favourite New Language - The Future of Swift'
+    talk:
+      -
+        title: 'Your Favourite New Language - The Future of Swift'
+        type: 'talk'
     tags:
       - ios
       - mobile
@@ -243,7 +321,10 @@ speakers:
     url: ''
     photo: 'Daniel Siegel.png'
     company: 'Daniel G. Siegel'
-    talk: 'The lost medium'
+    talk:
+      -
+        title: 'The lost medium'
+        type: 'talk'
     tags:
       - ai
       - ux/ui
@@ -253,7 +334,10 @@ speakers:
     url: ''
     photo: 'David Pichsenmeister.jpg'
     company: 'Orat.io'
-    talk: 'Chatbots as new apps for mobile messengers'
+    talk:
+      -
+        title: 'Chatbots as new apps for mobile messengers'
+        type: 'talk'
     tags:
       - ux/ui
   -
@@ -262,7 +346,10 @@ speakers:
     url: 'https://mobile.twitter.com/deepak_nadig'
     photo: 'Deepak Nadig.jpg'
     company: 'Intuit'
-    talk: 'Journey to APIs and Microservices: Best practices from successful transformations'
+    talk:
+      -
+        title: 'Journey to APIs and Microservices: Best practices from successful transformations'
+        type: 'talk'
     tags:
       - microservices
   -
@@ -271,14 +358,20 @@ speakers:
     url: 'https://labs.ig.com/blog/2670'
     photo: 'Daniel Lebrero Berna.jpg'
     company: 'IG Index'
-    talk: 'Repl Driven Development'
+    talk:
+      -
+        title: 'Repl Driven Development'
+        type: 'talk'
   -
     firstname: 'Liviu'
     lastname: 'Costea'
     url: 'https://twitter.com/@clm160'
     photo: 'Liviu Costea.jpg'
     company: 'BizPro Technologies'
-    talk: 'Edge Performance with In-memory NoSQL'
+    talk:
+      -
+        title: 'Edge Performance with In-memory NoSQL'
+        type: 'talk'
     tags:
       - db
   -
@@ -287,7 +380,10 @@ speakers:
     url: 'https://twitter.com/@DanicFilip'
     photo: 'Filip Danic.jpg'
     company: 'SpiceFactory'
-    talk: 'Complex State Handling in Modern Web Applications'
+    talk:
+      -
+        title: 'Complex State Handling in Modern Web Applications'
+        type: 'talk'
     tags:
       - web
   -
@@ -296,7 +392,10 @@ speakers:
     url: 'https://twitter.com/@greyschale'
     photo: 'Grace Chang.png'
     company: 'Yammer'
-    talk: 'Herding Cats to a Firefight: The evolution of an engineering on-call team'
+    talk:
+      -
+        title: 'Herding Cats to a Firefight: The evolution of an engineering on-call team'
+        type: 'talk'
     tags:
       - web
   -
@@ -305,7 +404,13 @@ speakers:
     url: 'https://medium.com/@gerard.sans'
     photo: 'Gerard Sans.jpg'
     company: 'Angular GDE'
-    talk: 'Building Cross-Platform Apps using Redux with Angular 2'
+    talk:
+      -
+        title: 'Building Cross-Platform Apps using Redux with Angular 2'
+        type: 'talk'
+      -
+        title: 'Angular 2 Workshop'
+        type: 'workshop'
     tags:
       - javascript
   -
@@ -314,7 +419,10 @@ speakers:
     url: 'https://twitter.com/hakansaglam'
     photo: 'Hakan Saglam.jpg'
     company: 'PeakGames'
-    talk: 'Getting Started Game Development with Unity as an iOS Developer'
+    talk:
+      -
+        title: 'Getting Started Game Development with Unity as an iOS Developer'
+        type: 'talk'
     tags:
       - ios
       - game
@@ -324,7 +432,10 @@ speakers:
     url: 'https://twitter.com/istdn'
     photo: 'Ilija Studen.jpg'
     company: 'ActiveCollab'
-    talk: 'Our take on agile'
+    talk:
+      -
+        title: 'Our take on agile'
+        type: 'talk'
     tags:
       - agile
   -
@@ -333,7 +444,10 @@ speakers:
     url: 'http://blog.kunicki.org/'
     photo: 'Jacek Kunicki.jpg'
     company: 'SoftwareMill'
-    talk: 'Reactive Database Mapping with Scala and Slick'
+    talk:
+      -
+        title: 'Reactive Database Mapping with Scala and Slick'
+        type: 'talk'
     tags:
       - db
       - scala
@@ -343,7 +457,10 @@ speakers:
     url: 'http://jakubkorab.net/'
     photo: 'Jakub Korab.jpg'
     company: 'Ameliant'
-    talk: 'The Myth of the Magical Messaging Fabric'
+    talk:
+      -
+        title: 'The Myth of the Magical Messaging Fabric'
+        type: 'talk'
     tags:
   -
     firstname: 'Jezen'
@@ -351,7 +468,10 @@ speakers:
     url: ''
     photo: 'Jezen Thomas.jpg'
     company: ''
-    talk: 'Haskell On Rails'
+    talk:
+      -
+        title: 'Haskell On Rails'
+        type: 'talk'
     tags:
       - haskell
   -
@@ -360,7 +480,10 @@ speakers:
     url: 'https://www.facebook.com/jarek.ratajski'
     photo: 'Jaroslaw Ratajski.png'
     company: 'CSS Versicherung'
-    talk: 'Lambda Core – HardCore'
+    talk:
+      -
+        title: 'Lambda Core – HardCore'
+        type: 'talk'
     tags:
       - java
   -
@@ -369,16 +492,22 @@ speakers:
     url: 'http://karinapopova.com/'
     photo: 'Karina Popova.jpg'
     company: 'whatever mobile GmbH'
-    talk: 'Increasing Sensing Quality of Life with a SIM based connectivity solution for IoT'
+    talk:
+      -
+        title: 'Increasing Sensing Quality of Life with a SIM based connectivity solution for IoT'
+        type: 'talk'
     tags:
       - iot
   -
     firstname: 'Maciek'
     lastname: 'Próchniak'
     url: 'https://twitter.com/mpproch'
-    photo: 'Maciek Próchniak.png'
+    photo: 'Maciek Prochniak.png'
     company: 'TouK'
-    talk: 'Streams, flows and storms – how not to drown with your data?'
+    talk:
+      -
+        title: 'Streams, flows and storms – how not to drown with your data?'
+        type: 'talk'
     tags:
       - bigdata
   -
@@ -387,7 +516,10 @@ speakers:
     url: ''
     photo: 'Marcin Szymaniuk.jpg'
     company: 'ProData Consult'
-    talk: 'Apache Spark? If it only worked.'
+    talk:
+      -
+        title: 'Apache Spark? If it only worked.'
+        type: 'talk'
     tags:
       - bigdata
   -
@@ -396,7 +528,10 @@ speakers:
     url: 'http://www.linkedin.com/in/matijagobec'
     photo: 'Matija Gobec.png'
     company: 'SmartCat.io'
-    talk: 'Real-time analytics with fast data stack'
+    talk:
+      -
+        title: 'Real-time analytics with fast data stack'
+        type: 'talk'
     tags:
       - bigdata
       - data analytics
@@ -406,7 +541,10 @@ speakers:
     url: 'https://twitter.com/miciek'
     photo: 'Michal Plachta.jpg'
     company: 'Ocado Technology  '
-    talk: 'Building multiplayer game using streams'
+    talk:
+      -
+        title: 'Building multiplayer game using streams'
+        type: 'talk'
     tags:
       - web
       - game
@@ -416,7 +554,10 @@ speakers:
     url: 'http://lucamezzalira.com'
     photo: 'Luca Mezzalira.jpg'
     company: 'Massive Interactive, Inc'
-    talk: 'Next generation of frontend architectures'
+    talk:
+      -
+        title: 'Next generation of frontend architectures'
+        type: 'talk'
     tags:
       - web
       - javascript
@@ -426,7 +567,10 @@ speakers:
     url: 'https://rs.linkedin.com/in/mihailomilenkovic'
     photo: 'Mihailo Milenkovic.jpg'
     company: 'Deploy Inc.'
-    talk: 'Developing custom Android device'
+    talk:
+      -
+        title: 'Developing custom Android device'
+        type: 'talk'
     tags:
       - android
       - mobile
@@ -436,7 +580,10 @@ speakers:
     url: 'http://pance.mk/'
     photo: 'Pance Cavkovski.jpg'
     company: 'Netcetera'
-    talk: 'DIY Java & Kubernetes'
+    talk:
+      -
+        title: 'DIY Java & Kubernetes'
+        type: 'talk'
     tags:
       - microservices
   -
@@ -445,16 +592,22 @@ speakers:
     url: 'https://twitter.com/@rwinz'
     photo: 'Ralph Winzinger.jpg'
     company: 'Senacor Technologies'
-    talk: 'Event Sourcing in Microservices'
+    talk:
+      -
+        title: 'Event Sourcing in Microservices'
+        type: 'talk'
     tags:
       - microservices
   -
     firstname: 'Stjepan'
     lastname: 'Hadjić'
     url: 'https://twitter.com/_Beast_'
-    photo: 'Stjepan Hadjić.jpg'
+    photo: 'Stjepan Hadjic.jpg'
     company: 'Infinum'
-    talk: 'Blazingfast™ deployment with mina'
+    talk:
+      -
+        title: 'Blazingfast™ deployment with mina'
+        type: 'talk'
     tags:
       - web
       - ruby
@@ -464,7 +617,10 @@ speakers:
     url: ''
     photo: 'Zoltan Nemeth.jpg'
     company: 'Ustream, Inc'
-    talk: 'Scalable Service Architectures'
+    talk:
+      -
+        title: 'Scalable Service Architectures'
+        type: 'talk'
     tags:
       - docker
   -
@@ -473,7 +629,10 @@ speakers:
     url: 'https://twitter.com/@archtavo'
     photo: 'Gustavo Elias.jpg'
     company: 'IG'
-    talk: 'How to deal with a hot potato'
+    talk:
+      -
+        title: 'How to deal with a hot potato'
+        type: 'talk'
     tags:
       - devops
   -
@@ -482,7 +641,10 @@ speakers:
     url: 'http://abilitymatrix.com/'
     photo: 'Akos Tolnai.png'
     company: 'AbilityMatrix, Inc.'
-    talk: '5 HW Startups - Lessons learned while mentoring'
+    talk:
+      -
+        title: '5 HW Startups - Lessons learned while mentoring'
+        type: 'talk'
     tags:
       - iot
       - startups
@@ -492,7 +654,10 @@ speakers:
     url: 'https://www.linkedin.com/in/mattrex'
     photo: 'Matija Cupic.jpg'
     company: 'Regional Center for Talented Youth II'
-    talk: 'PageGaze - Interactive Webpage Eye-Tracking Technology'
+    talk:
+      -
+        title: 'PageGaze - Interactive Webpage Eye-Tracking Technology'
+        type: 'talk'
     tags:
       - web
       - javascript
@@ -503,7 +668,10 @@ speakers:
     url: 'https://twitter.com/joxwell'
     photo: 'Jovica Kesic.jpg'
     company: 'Telegroup'
-    talk: 'Bringing Social Networks to living room using JS APIs'
+    talk:
+      -
+        title: 'Bringing Social Networks to living room using JS APIs'
+        type: 'talk'
     tags:
       - javascript
   -
@@ -512,7 +680,10 @@ speakers:
     url: 'https://rs.linkedin.com/in/zturbic'
     photo: 'Zeljko Turbic.png'
     company: 'Levi 9'
-    talk: 'Smart lighting: part of the ‘Internet of Things’'
+    talk:
+      -
+        title: 'Smart lighting: part of the ‘Internet of Things’'
+        type: 'talk'
     tags:
       - iot
   -
@@ -521,7 +692,10 @@ speakers:
     url: 'https://nl.linkedin.com/in/wouterpostma'
     photo: 'Wouter Postma.jpg'
     company: 'Talpa Global'
-    talk: 'Smart lighting: part of the ‘Internet of Things’'
+    talk:
+      -
+        title: 'Smart lighting: part of the ‘Internet of Things’'
+        type: 'talk'
     tags:
       - iot
   -
@@ -530,7 +704,10 @@ speakers:
     url: 'https://twitter.com/kotrebski'
     photo: 'Krzysztof Otrebski.jpg'
     company: 'Ocado Technology'
-    talk: 'Beat Aliens with Akka Cluster'
+    talk:
+      -
+        title: 'Beat Aliens with Akka Cluster'
+        type: 'talk'
     tags:
       - scala
   -
@@ -539,9 +716,11 @@ speakers:
     url: 'https://twitter.com/LeanPoker'
     photo: 'Rafael Ordog.jpg'
     company: 'Emarsys'
-    talk: 'Lean Poker'
+    talk:
+      -
+        title: 'Lean Poker'
+        type: 'workshop'
     tags:
-      - workshop
       - devops
       - metodologies
   -
@@ -550,9 +729,11 @@ speakers:
     url: 'https://www.vegaitsourcing.rs/#!/about-us/people/maja-bozic'
     photo: 'Maja Bozic.jpg'
     company: 'Vega IT Sourcing'
-    talk: 'Happiness at Work in IT World'
+    talk:
+      -
+        title: 'Happiness at Work in IT World'
+        type: 'workshop'
     tags:
-      - workshop
       - business
   -
     firstname: 'Maja'
@@ -560,9 +741,11 @@ speakers:
     url: 'https://www.vegaitsourcing.rs/#!/about-us/people/maja-nedu%C4%8Di%C4%87'
     photo: 'Maja Neducic.jpg'
     company: 'Vega IT Sourcing'
-    talk: 'Happiness at Work in IT World'
+    talk:
+      -
+        title: 'Happiness at Work in IT World'
+        type: 'workshop'
     tags:
-      - workshop
       - business
   -
     firstname: 'Catherine'
@@ -570,7 +753,10 @@ speakers:
     url: 'https://www.namics.com/person/catherine-ferrary-simon/'
     photo: 'Catherine Simon.jpg'
     company: 'Namics'
-    talk: 'What`s your motivation?'
+    talk:
+      -
+        title: 'What`s your motivation?'
+        type: 'talk'
     tags:
   -
     firstname: 'Daniel'
@@ -578,7 +764,10 @@ speakers:
     url: 'https://uk.linkedin.com/in/danielgartmann'
     photo: 'Daniel Gartmann.jpg'
     company: 'Zuhlke Engineering'
-    talk: 'Harness the power of HTTP headers to secure your web apps'
+    talk:
+      -
+        title: 'Harness the power of HTTP headers to secure your web apps'
+        type: 'talk'
     tags:
       - web
       - security
@@ -588,7 +777,10 @@ speakers:
     url: 'https://twitter.com/KenanSevindik'
     photo: 'Kenan Sevindik.png'
     company: 'Harezmi IT Solutions'
-    talk: 'Employing a View Model API Based on Dynamic Proxies'
+    talk:
+      -
+        title: 'Employing a View Model API Based on Dynamic Proxies'
+        type: 'talk'
     tags:
       - java
       - ux/ui
@@ -598,7 +790,10 @@ speakers:
     url: 'https://mobile.twitter.com/radiantav?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'
     photo: 'Aleksandar Vacic.jpg'
     company: 'Radiant Tap'
-    talk: 'Fresh Cup of iOS 10'
+    talk:
+      -
+        title: 'Fresh Cup of iOS 10'
+        type: 'talk'
     tags:
       - mobile
       - ios
@@ -608,7 +803,10 @@ speakers:
     url: 'https://twitter.com/martin_fmi'
     photo: 'Martin Toshev.jpg'
     company: ''
-    talk: 'JVM++: The Graal VM'
+    talk:
+      -
+        title: 'JVM++: The Graal VM'
+        type: 'talk'
     tags:
       - java
       - performance
@@ -618,7 +816,10 @@ speakers:
     url: 'https://www.linkedin.com/in/nikola-sijakinjic-61346b20?trk=hp-identity-name'
     photo: 'Nikola Sijakinjic.png'
     company: 'Fincore Group'
-    talk: 'Easy scaling with Hazlecast'
+    talk:
+      -
+        title: 'Easy scaling with Hazlecast'
+        type: 'talk'
     tags:
       - java
       - microservices
@@ -627,15 +828,21 @@ speakers:
     lastname: 'Svrtan'
     url: 'http://damir.svrtan.me/'
     photo: 'Damir Svrtan.jpg'
-    company: ''
-    talk: 'Stop wasting time NOT writing tests'
+    company: 'Infinum'
+    talk:
+      -
+        title: 'Stop wasting time NOT writing tests'
+        type: 'talk'
   -
     firstname: 'Dejan'
     lastname: 'Dimić'
     url: 'https://twitter.com/dejan_dimic'
     photo: 'Dejan Dimic.jpg'
     company: 'Vibe Network'
-    talk: 'Sex Lies and Design patterns'
+    talk:
+      -
+        title: 'Sex Lies and Design patterns'
+        type: 'talk'
     tags:
       - design patterns
   -
@@ -644,9 +851,15 @@ speakers:
     url: ''
     photo: 'Jaksa Vuckovic.jpg'
     company: 'Zuhlke Engineering'
-    talk: 'Why are Actors Terrible?'
+    talk:
+      -
+        title: 'Why are Actors Terrible?'
+        type: 'talk'
+      -
+        title: 'Why are Actors Great?'
+        type: 'workshop'
     tags:
-      - workshop
+      - distributed systems
       - java
       - testing
   -
@@ -655,17 +868,23 @@ speakers:
     url: 'https://twitter.com/lukaszlenart'
     photo: 'Lukasz Lenart.jpg'
     company: '7N/Nykredit'
-    talk: 'Lift framework in 45 minutes'
+    talk:
+      -
+        title: 'Lift framework in 45 minutes'
+        type: 'talk'
     tags:
       - scala
       - web
   -
     firstname: 'Aleksandar'
     lastname: 'Simović'
-    url: ''
-    photo: 'user.png'
+    url: 'https://twitter.com/simalexan'
+    photo: 'Aleksandar Simovic.jpg'
     company: 'Right Fold'
-    talk: 'Serverless chat bots with AWS Lambda'
+    talk:
+      -
+        title: 'Serverless chat bots with AWS Lambda'
+        type: 'talk'
     tags:
       - javascript
   -
@@ -674,7 +893,10 @@ speakers:
     url: 'https://rs.linkedin.com/in/mirjana-kolarov-62390a5'
     photo: 'Mirjana Kolarov.png'
     company: 'Levi 9'
-    talk: 'What do testers actually do?'
+    talk:
+      -
+        title: 'What do testers actually do?'
+        type: 'talk'
     tags:
       - testing
       - security
@@ -685,7 +907,10 @@ speakers:
     url: 'https://rs.linkedin.com/in/nikolamilutinovic'
     photo: 'Nikola Milutinovic.jpg'
     company: 'Levi 9'
-    talk: 'Security in microservice architecture'
+    talk:
+      -
+        title: 'Security in microservice architecture'
+        type: 'talk'
     tags:
       - microservices
       - security
@@ -695,7 +920,10 @@ speakers:
     url: 'https://twitter.com/nikstojiljkovic'
     photo: 'Nikola Stojiljkovic.jpg'
     company: 'Essential Dots d.o.o'
-    talk: 'Data in the continuous delivery process'
+    talk:
+      -
+        title: 'Data in the continuous delivery process'
+        type: 'talk'
     tags:
       - db
       - cloud
@@ -705,7 +933,10 @@ speakers:
     url: 'https://www.linkedin.com/in/pericamilosevic'
     photo: 'Perica Milosevic.jpg'
     company: 'Sysdig'
-    talk: 'The Dark Art of Container Monitoring'
+    talk:
+      -
+        title: 'The Dark Art of Container Monitoring'
+        type: 'talk'
     tags:
       - docker
       - monitoring
@@ -715,7 +946,10 @@ speakers:
     url: 'https://uk.linkedin.com/in/radekostrowski'
     photo: 'Radek Ostrowski.jpg'
     company: 'Fast Data Ltd'
-    talk: 'Finding Your Perfect Weather with Apache Spark and Docker'
+    talk:
+      -
+        title: 'Finding Your Perfect Weather with Apache Spark and Docker'
+        type: 'talk'
     tags:
       - scala
       - docker
@@ -725,16 +959,22 @@ speakers:
     url: 'http://www.endava.com/'
     photo: 'user.png'
     company: 'Endava'
-    talk: 'C++ for mobile developers'
+    talk:
+      -
+        title: 'C++ for mobile developers'
+        type: 'talk'
     tags:
       - mobile
   -
     firstname: 'Miloš'
     lastname: 'Milošević'
     url: 'https://www.linkedin.com/in/milos-milosevic-33099850'
-    photo: 'Miloš Milošević.jpg'
+    photo: 'Milos Milosevic.jpg'
     company: 'Nordeus'
-    talk: 'Pushkin - Open source messaging platform'
+    talk:
+      -
+        title: 'Pushkin - Open source messaging platform'
+        type: 'talk'
     tags:
   -
     firstname: 'Vedran'
@@ -742,7 +982,10 @@ speakers:
     url: 'https://www.linkedin.com/in/vedran-vujinovic-581428124'
     photo: 'Vedran Vujinovic.jpg'
     company: 'Comtrade'
-    talk: 'Augmented reality: behind the scene'
+    talk:
+      -
+        title: 'Augmented reality: behind the scene'
+        type: 'talk'
     tags:
       - hw
   -
@@ -751,14 +994,20 @@ speakers:
     url: 'https://twitter.com/inem'
     photo: 'Ivan Nemytchenko.jpg'
     company: 'GitLab'
-    talk: 'Breaking bad with GitLab CI'
+    talk:
+      -
+        title: 'Breaking bad with GitLab CI'
+        type: 'talk'
   -
     firstname: 'Antonis'
     lastname: 'Kalipetis'
     url: 'https://twitter.com/akalipetis'
     photo: 'Antonis Kalipetis.jpg'
     company: 'SourceLiar'
-    talk: 'Docker 1.12: Orchestration, containers and beyond i Creating a cloud native development environment'
+    talk:
+      -
+        title: 'Docker 1.12: Orchestration, containers and beyond i Creating a cloud native development environment'
+        type: 'talk'
     tags:
       - docker
   -
@@ -767,7 +1016,10 @@ speakers:
     url: 'http://my-it.at/'
     photo: 'Alexander Pacha.jpg'
     company: 'Zuhlke Engineering'
-    talk: '1, 2, 3, build - Continuous Integration for Mobile Apps'
+    talk:
+      -
+        title: '1, 2, 3, build - Continuous Integration for Mobile Apps'
+        type: 'talk'
     tags:
       - mobile
   -
@@ -776,7 +1028,10 @@ speakers:
     url: 'http://twitter.com/@doanduyhai/'
     photo: 'DuyHai Doan.jpg'
     company: 'Datastax'
-    talk: 'SASI, Cassandra on the full text search ride!'
+    talk:
+      -
+        title: 'SASI, Cassandra on the full text search ride!'
+        type: 'talk'
     tags:
       - bigdata
   -
@@ -785,16 +1040,22 @@ speakers:
     url: 'http://www.jensd.de/'
     photo: 'Jens Deters.jpg'
     company: 'Codecentric'
-    talk: 'MQTT: The glue for the Internet of Things'
+    talk:
+      -
+        title: 'MQTT: The glue for the Internet of Things'
+        type: 'talk'
     tags:
       - iot
   -
     firstname: 'Zoran'
     lastname: 'Rončević'
     url: 'https://rs.linkedin.com/in/zoran-roncevic-a6049970'
-    photo: 'Zoran Rončević.jpg'
+    photo: 'Zoran Roncevic.jpg'
     company: '"Maker" Association'
-    talk: 'NodeJS i Python za IoT platforme'
+    talk:
+      -
+        title: 'NodeJS i Python za IoT platforme'
+        type: 'talk'
     tags:
       - iot
       - javascript
@@ -804,7 +1065,10 @@ speakers:
     url: 'http://jakub.marchwicki.pl/'
     photo: 'Jakub Marchwicki.jpg'
     company: ''
-    talk: 'Reverse engineering the clean code'
+    talk:
+      -
+        title: 'Reverse engineering the clean code'
+        type: 'talk'
     tags:
   -
     firstname: 'Miloš'
@@ -812,7 +1076,10 @@ speakers:
     url: ''
     photo: 'user.png'
     company: 'New and rising'
-    talk: 'MVVM with Android Databinding in Practice'
+    talk:
+      -
+        title: 'MVVM with Android Databinding in Practice'
+        type: 'talk'
     tags:
       - android
   -
@@ -821,7 +1088,10 @@ speakers:
     url: 'https://twitter.com/monorkin'
     photo: 'Stanko Rusendic.jpg'
     company: 'Infinum'
-    talk: 'Stubs, Mocks & Spies'
+    talk:
+      -
+        title: 'Stubs, Mocks & Spies'
+        type: 'talk'
     tags:
       - web
       - ruby

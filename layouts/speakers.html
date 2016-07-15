@@ -40,11 +40,30 @@
 							<%= s[:firstname] %> <%= s[:lastname] %>
 						</h5>
 					<% if !s[:url].to_s.empty? then %></a><% end %>
-					<h6 class="accent mb10">
+					<h6 class="company">
 						<%= s[:company] %>
 					</h6>
 					<div class="brown">
-						<%= s[:talk] %>
+						<%
+						s[:talk].to_a.each { |t|
+						if !t[:title].to_s.empty? && !t[:type].to_s.empty?
+						%>
+							<div class="single-talk">
+								<% if t[:type] == 'talk' %>
+								<i class="fa fa-microphone yellow"></i>
+								<% end %>
+								<% if t[:type] == 'workshop' %>
+								<i class="fa fa-wrench yellow"></i>
+								<% end %>
+								<% if t[:type] == 'lightning' %>
+								<i class="fa fa-bolt yellow"></i>
+								<% end %>
+								<span class="talk-title"><%= t[:title] %></span>
+							</div>
+						<%
+							end
+						}
+						%>
 					</div>
 					<div class="tags">
 						<%  s[:tags].to_a.each do |tag| %>
