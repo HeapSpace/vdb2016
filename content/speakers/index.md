@@ -201,7 +201,7 @@ speakers:
         title: 'Don`t be left out: How to develop software in a distributed team'
         type: 'talk'
     tags:
-      - distributed system
+      - distributed systems
   -
     firstname: 'Viktor'
     lastname: 'Farcic'
