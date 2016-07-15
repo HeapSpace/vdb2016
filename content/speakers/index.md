@@ -162,6 +162,7 @@ speakers:
   -
     firstname: 'Yufeng'
     lastname: 'Guo'
+    pageurl: 'yufeng-guo'
     url: 'https://twitter.com/yufengg'
     photo: 'Yufeng Guo.jpg'
     company: 'Google'
