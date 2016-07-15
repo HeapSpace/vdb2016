@@ -1100,7 +1100,7 @@ speakers:
     lastname: 'Pavićević'
     url: ''
     photo: 'user.png'
-    company: 'Novomatics LS'
+    company: 'Novomatics Lottery Solutions'
     talk:
       -
         title: 'Continuous Security Testing - Automating your AppSec Program'
