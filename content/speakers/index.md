@@ -391,16 +391,6 @@ speakers:
     tags:
       - bigdata
   -
-    firstname: 'Margo'
-    lastname: 'Cronin'
-    url: 'http://www.entarchs.com/'
-    photo: 'Margo Cronin.jpg'
-    company: 'Zurich Insurance Company Ltd'
-    talk: 'DevOps for Enterprises - Respect the Monolith'
-    tags:
-      - devops
-
-  -
     firstname: 'Matija'
     lastname: 'Gobec'
     url: 'http://www.linkedin.com/in/matijagobec'
