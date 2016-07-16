@@ -43,15 +43,6 @@ speakers:
   -
     talk:
       -
-        title: ''
-        type: 'empty'
-        day: 1
-        track: 0
-        slot: '09:00'
-        duration: 60
-  -
-    talk:
-      -
         title: 'Coffee break'
         type: 'break'
         day: 1
@@ -121,7 +112,7 @@ speakers:
         title: 'Faster and more efficient processes by combining BPM and Mobile'
         type: 'talk'
         day: 1
-        track: 3
+        track: 4
         slot: '09:00'
         duration: 60
     tags:
@@ -155,7 +146,7 @@ speakers:
         type: 'talk'
         day: 1
         track: 4
-        slot: '09:00'
+        slot: '10:20'
         duration: 60
     tags:
       - kotlin
@@ -749,7 +740,12 @@ speakers:
     talk:
       -
         title: 'Happiness at Work in IT World'
+        secondspeaker: 'Maja Nedučić'
         type: 'workshop'
+        day: 1
+        track: 0
+        slot: '09:00'
+        duration: 60
     tags:
       - business
   -
@@ -761,7 +757,12 @@ speakers:
     talk:
       -
         title: 'Happiness at Work in IT World'
+        secondspeaker: ''
         type: 'workshop'
+        day: 1
+        track: 0
+        slot: '09:00'
+        duration: 60
     tags:
       - business
   -

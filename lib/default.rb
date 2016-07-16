@@ -184,29 +184,15 @@ def get_schedule_data(day = nil, track = nil)
       speaker['talk'].to_a.each { |t|
         if (!t["day"].to_s.empty? && t["day"] == day && !t["track"].to_s.empty? && t["track"] == track)
           speaker['talk'] = t
-          schedule_data << speaker
+          if (!t['secondspeaker'] || t['secondspeaker'] != '')
+            schedule_data << speaker
+          end
         end
       }
     end
-    if (day.to_s.empty? && track)
-      speaker['talk'].to_a.each { |t|
-        if (!t["track"].to_s.empty? && t["track"] == track)
-          speaker['talk'] = t
-          schedule_data << speaker
-        end
-      }
-    end
-    if (day && track.to_s.empty?)
-      speaker['talk'].to_a.each { |t|
-        if (!t["day"].to_s.empty? && t["day"] == day)
-          speaker['talk'] = t
-          schedule_data << speaker
-        end
-      }
-    end
+
   end
 
-  # puts schedule_data
   schedule = schedule_data.sort_by { |k| k["talk"]["slot"] }
 
   return schedule

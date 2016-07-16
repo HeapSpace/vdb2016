@@ -4,7 +4,8 @@
       <div class="schedule-item" style="height: <%= speaker['talk']['duration']*6 %>px">
         <% if !speaker['talk']['title'].to_s.empty? %><h4 class=""><%= speaker['talk']['slot'] %></h4><% end %>
         <% if !speaker['pageurl'].to_s.empty? %><a href="/speakers/<%= speaker['pageurl'] %>/"><% end %>
-          <h5 class="bold yellow"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h5>
+          <h6 class="bold yellow"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h6>
+          <h6 class="bold yellow"><%= speaker['talk']['secondspeaker'] %></h6>
         <% if !speaker['pageurl'].to_s.empty? %></a><% end %>
         <h6 class=""><%= speaker['talk']['title'] %></h6>
         <% if !speaker['talk']['title'].to_s.empty? %><div class="brown">Duration: <%= speaker['talk']['duration'] %> min</div><% end %>
