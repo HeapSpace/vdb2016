@@ -165,6 +165,7 @@ speakers:
   -
     firstname: 'Mike'
     lastname: 'Elsmore'
+    pageurl: 'mike-elsmore'
     url: 'https://twitter.com/ukmadlz'
     photo: 'Mike Elsmore.jpg'
     company: 'IBM'
@@ -177,6 +178,7 @@ speakers:
   -
     firstname: 'Victor'
     lastname: 'Rentea'
+    pageurl: 'victor-rentea'
     url: 'https://twitter.com/victorrentea'
     photo: 'Victor Rentea.jpg'
     company: 'IBM Global Business Services'
@@ -189,6 +191,7 @@ speakers:
   -
     firstname: 'James'
     lastname: 'Thomas'
+    pageurl: 'james-thomas'
     url: 'http://jamesthom.as/'
     photo: 'James Thomas.png'
     company: 'IBM Bluemix'
@@ -201,6 +204,7 @@ speakers:
   -
     firstname: 'Adam'
     lastname: 'Hynes'
+    pageurl: 'adam-hynes'
     url: 'https://au.linkedin.com/in/adamhynes'
     photo: 'Adam Hynes.jpg'
     company: 'Atlassian'
@@ -213,7 +217,7 @@ speakers:
   -
     firstname: 'Viktor'
     lastname: 'Farcic'
-    details: viktor-farcic
+    pageurl: viktor-farcic
     url: 'https://technologyconversations.com/about/'
     photo: 'Viktor Farcic.jpg'
     company: 'CloudBees'
@@ -230,6 +234,7 @@ speakers:
   -
     firstname: 'Mark'
     lastname: 'Heckler'
+    pageurl: 'mark-heckler'
     url: ''
     photo: 'Mark Heckler.jpg'
     company: 'Pivotal Software, Inc.'
@@ -242,6 +247,7 @@ speakers:
   -
     firstname: 'Stéphane'
     lastname: 'Nicoll'
+    pageurl: 'stephane-nicoll'
     url: ''
     photo: 'Stephane Nicoll.jpg'
     company: 'Pivotal'
@@ -254,6 +260,7 @@ speakers:
   -
     firstname: 'Yann'
     lastname: 'Cebron'
+    pageurl: 'yann-cebron'
     url: 'https://about.me/yanncebron'
     photo: 'Yann Cebron.jpg'
     company: 'JetBrains'
@@ -266,6 +273,7 @@ speakers:
   -
     firstname: 'Luis'
     lastname: 'Mineiro'
+    pageurl: 'luis-mineiro'
     url: ''
     photo: 'Luis Mineiro.jpg'
     company: 'Zalando'
@@ -278,6 +286,7 @@ speakers:
   -
     firstname: 'Aimone'
     lastname: 'Bodini'
+    pageurl: 'aimone-bodini'
     url: 'https://www.linkedin.com/in/aimone-bodini-7a05b5a6'
     photo: 'Aimone Bodini.jpg'
     company: 'Bully! Entertainment'
@@ -289,6 +298,7 @@ speakers:
   -
     firstname: 'Alexey'
     lastname: 'Buzdin'
+    pageurl: 'alexey-buzdin'
     url: 'https://twitter.com/@AlexeyBuzdin'
     photo: 'Alexey Buzdin.png'
     company: 'C.T.Co'
@@ -301,6 +311,7 @@ speakers:
   -
     firstname: 'Chris'
     lastname: 'van Beek'
+    pageurl: 'chris-van-beek'
     url: 'https://arnhem.luminis.eu/'
     photo: 'Chris van Beek.jpg'
     company: 'Luminis'
@@ -313,6 +324,7 @@ speakers:
   -
     firstname: 'Chris'
     lastname: 'Ward'
+    pageurl: 'chris-ward'
     url: 'http://gregariousmammal.com/'
     photo: 'Chris Ward.jpg'
     company: 'Gregarious Mammal'
@@ -326,6 +338,7 @@ speakers:
   -
     firstname: 'Daniel'
     lastname: 'Siegel'
+    pageurl: 'daniel-siegel'
     url: ''
     photo: 'Daniel Siegel.png'
     company: 'Daniel G. Siegel'
@@ -339,6 +352,7 @@ speakers:
   -
     firstname: 'David'
     lastname: 'Pichsenmeister'
+    pageurl: 'david-pichsenmeister'
     url: ''
     photo: 'David Pichsenmeister.jpg'
     company: 'Orat.io'
@@ -351,6 +365,7 @@ speakers:
   -
     firstname: 'Deepak'
     lastname: 'Nadig'
+    pageurl: 'deepak-nadig'
     url: 'https://mobile.twitter.com/deepak_nadig'
     photo: 'Deepak Nadig.jpg'
     company: 'Intuit'
@@ -363,6 +378,7 @@ speakers:
   -
     firstname: 'Daniel'
     lastname: 'Lebrero'
+    pageurl: 'daniel-lebrero'
     url: 'https://labs.ig.com/blog/2670'
     photo: 'Daniel Lebrero Berna.jpg'
     company: 'IG Index'
@@ -373,6 +389,7 @@ speakers:
   -
     firstname: 'Liviu'
     lastname: 'Costea'
+    pageurl: 'liviu-costea'
     url: 'https://twitter.com/@clm160'
     photo: 'Liviu Costea.jpg'
     company: 'BizPro Technologies'
@@ -385,6 +402,7 @@ speakers:
   -
     firstname: 'Filip'
     lastname: 'Danić'
+    pageurl: 'filip-danic'
     url: 'https://twitter.com/@DanicFilip'
     photo: 'Filip Danic.jpg'
     company: 'SpiceFactory'
@@ -397,6 +415,7 @@ speakers:
   -
     firstname: 'Grace'
     lastname: 'Chang'
+    pageurl: 'grace-chang'
     url: 'https://twitter.com/@greyschale'
     photo: 'Grace Chang.png'
     company: 'Yammer'
@@ -409,6 +428,7 @@ speakers:
   -
     firstname: 'Gerard'
     lastname: 'Sans'
+    pageurl: 'gerard-sans'
     url: 'https://medium.com/@gerard.sans'
     photo: 'Gerard Sans.jpg'
     company: 'Angular GDE'
@@ -424,6 +444,7 @@ speakers:
   -
     firstname: 'Hakan'
     lastname: 'Saglam'
+    pageurl: 'hakan-saglam'
     url: 'https://twitter.com/hakansaglam'
     photo: 'Hakan Saglam.jpg'
     company: 'PeakGames'
@@ -437,6 +458,7 @@ speakers:
   -
     firstname: 'Ilija'
     lastname: 'Studen'
+    pageurl: 'ilija-studen'
     url: 'https://twitter.com/istdn'
     photo: 'Ilija Studen.jpg'
     company: 'ActiveCollab'
@@ -449,6 +471,7 @@ speakers:
   -
     firstname: 'Jacek'
     lastname: 'Kunicki'
+    pageurl: 'jacek-kunicki'
     url: 'http://blog.kunicki.org/'
     photo: 'Jacek Kunicki.jpg'
     company: 'SoftwareMill'
@@ -462,6 +485,7 @@ speakers:
   -
     firstname: 'Jakub'
     lastname: 'Korab'
+    pageurl: 'jakub-korab'
     url: 'http://jakubkorab.net/'
     photo: 'Jakub Korab.jpg'
     company: 'Ameliant'
@@ -473,6 +497,7 @@ speakers:
   -
     firstname: 'Jezen'
     lastname: 'Thomas'
+    pageurl: 'jezen-thomas'
     url: ''
     photo: 'Jezen Thomas.jpg'
     company: ''
@@ -485,6 +510,7 @@ speakers:
   -
     firstname: 'Jaroslaw'
     lastname: 'Ratajski'
+    pageurl: 'jaroslaw-ratajski'
     url: 'https://www.facebook.com/jarek.ratajski'
     photo: 'Jaroslaw Ratajski.png'
     company: 'CSS Versicherung'
@@ -497,6 +523,7 @@ speakers:
   -
     firstname: 'Karina'
     lastname: 'Popova'
+    pageurl: 'karina-popova'
     url: 'http://karinapopova.com/'
     photo: 'Karina Popova.jpg'
     company: 'whatever mobile GmbH'
@@ -509,6 +536,7 @@ speakers:
   -
     firstname: 'Maciek'
     lastname: 'Próchniak'
+    pageurl: 'maciek-prochniak'
     url: 'https://twitter.com/mpproch'
     photo: 'Maciek Prochniak.png'
     company: 'TouK'
@@ -521,6 +549,7 @@ speakers:
   -
     firstname: 'Marcin'
     lastname: 'Szymaniuk'
+    pageurl: 'marcin-szymaniuk'
     url: ''
     photo: 'Marcin Szymaniuk.jpg'
     company: 'ProData Consult'
@@ -533,6 +562,7 @@ speakers:
   -
     firstname: 'Matija'
     lastname: 'Gobec'
+    pageurl: 'matija-gobec'
     url: 'http://www.linkedin.com/in/matijagobec'
     photo: 'Matija Gobec.png'
     company: 'SmartCat.io'
@@ -546,6 +576,7 @@ speakers:
   -
     firstname: 'Michał'
     lastname: 'Płachta'
+    pageurl: 'michal-plachta'
     url: 'https://twitter.com/miciek'
     photo: 'Michal Plachta.jpg'
     company: 'Ocado Technology  '
@@ -559,6 +590,7 @@ speakers:
   -
     firstname: 'Luca'
     lastname: 'Mezzalira'
+    pageurl: 'luca-mezzalira'
     url: 'http://lucamezzalira.com'
     photo: 'Luca Mezzalira.jpg'
     company: 'Massive Interactive, Inc'
@@ -572,6 +604,7 @@ speakers:
   -
     firstname: 'Mihailo'
     lastname: 'Milenkovic'
+    pageurl: 'mihailo-milenkovic'
     url: 'https://rs.linkedin.com/in/mihailomilenkovic'
     photo: 'Mihailo Milenkovic.jpg'
     company: 'Deploy Inc.'
@@ -585,6 +618,7 @@ speakers:
   -
     firstname: 'Pance'
     lastname: 'Cavkovski'
+    pageurl: 'pance-cavkovski'
     url: 'http://pance.mk/'
     photo: 'Pance Cavkovski.jpg'
     company: 'Netcetera'
@@ -597,6 +631,7 @@ speakers:
   -
     firstname: 'Ralph'
     lastname: 'Winzinger'
+    pageurl: 'ralph-winziger'
     url: 'https://twitter.com/@rwinz'
     photo: 'Ralph Winzinger.jpg'
     company: 'Senacor Technologies'
@@ -609,6 +644,7 @@ speakers:
   -
     firstname: 'Stjepan'
     lastname: 'Hadjić'
+    pageurl: 'stjepan-hadjic'
     url: 'https://twitter.com/_Beast_'
     photo: 'Stjepan Hadjic.jpg'
     company: 'Infinum'
@@ -622,6 +658,7 @@ speakers:
   -
     firstname: 'Zoltán'
     lastname: 'Németh'
+    pageurl: 'zoltan-nemeth'
     url: ''
     photo: 'Zoltan Nemeth.jpg'
     company: 'Ustream, Inc'
@@ -634,6 +671,7 @@ speakers:
   -
     firstname: 'Gustavo'
     lastname: 'Elias'
+    pageurl: 'gustavo-elias'
     url: 'https://twitter.com/@archtavo'
     photo: 'Gustavo Elias.jpg'
     company: 'IG'
@@ -646,6 +684,7 @@ speakers:
   -
     firstname: 'Akos'
     lastname: 'Tolnai'
+    pageurl: 'akos-tolnai'
     url: 'http://abilitymatrix.com/'
     photo: 'Akos Tolnai.png'
     company: 'AbilityMatrix, Inc.'
@@ -659,6 +698,7 @@ speakers:
   -
     firstname: 'Matija'
     lastname: 'Čupić'
+    pageurl: 'matija-cupic'
     url: 'https://www.linkedin.com/in/mattrex'
     photo: 'Matija Cupic.jpg'
     company: 'Regional Center for Talented Youth II'
@@ -673,6 +713,7 @@ speakers:
   -
     firstname: 'Jovica'
     lastname: 'Kesić'
+    pageurl: 'jovica-kesic'
     url: 'https://twitter.com/joxwell'
     photo: 'Jovica Kesic.jpg'
     company: 'Telegroup'
@@ -685,6 +726,7 @@ speakers:
   -
     firstname: 'Zeljko'
     lastname: 'Turbic'
+    pageurl: 'zeljko-turbic'
     url: 'https://rs.linkedin.com/in/zturbic'
     photo: 'Zeljko Turbic.png'
     company: 'Levi 9'
@@ -697,6 +739,7 @@ speakers:
   -
     firstname: 'Wouter'
     lastname: 'Postma'
+    pageurl: 'wouter-postma'
     url: 'https://nl.linkedin.com/in/wouterpostma'
     photo: 'Wouter Postma.jpg'
     company: 'Talpa Global'
@@ -709,6 +752,7 @@ speakers:
   -
     firstname: 'Krzysztof'
     lastname: 'Otrebski'
+    pageurl: 'krzysztof-otrebski'
     url: 'https://twitter.com/kotrebski'
     photo: 'Krzysztof Otrebski.jpg'
     company: 'Ocado Technology'
@@ -721,6 +765,7 @@ speakers:
   -
     firstname: 'Rafael'
     lastname: 'Ordog'
+    pageurl: 'rafael-ordog'
     url: 'https://twitter.com/LeanPoker'
     photo: 'Rafael Ordog.jpg'
     company: 'Emarsys'
@@ -734,6 +779,7 @@ speakers:
   -
     firstname: 'Maja'
     lastname: 'Božić'
+    pageurl: 'maja-bozic'
     url: 'https://www.vegaitsourcing.rs/#!/about-us/people/maja-bozic'
     photo: 'Maja Bozic.jpg'
     company: 'Vega IT Sourcing'
@@ -751,6 +797,7 @@ speakers:
   -
     firstname: 'Maja'
     lastname: 'Nedučić'
+    pageurl: 'maja-neducic'
     url: 'https://www.vegaitsourcing.rs/#!/about-us/people/maja-nedu%C4%8Di%C4%87'
     photo: 'Maja Neducic.jpg'
     company: 'Vega IT Sourcing'
@@ -768,6 +815,7 @@ speakers:
   -
     firstname: 'Catherine'
     lastname: 'Simon'
+    pageurl: 'catherine-simon'
     url: 'https://www.namics.com/person/catherine-ferrary-simon/'
     photo: 'Catherine Simon.jpg'
     company: 'Namics'
@@ -779,6 +827,7 @@ speakers:
   -
     firstname: 'Daniel'
     lastname: 'Gartmann'
+    pageurl: 'daniel-gartman'
     url: 'https://uk.linkedin.com/in/danielgartmann'
     photo: 'Daniel Gartmann.jpg'
     company: 'Zuhlke Engineering'
@@ -792,6 +841,7 @@ speakers:
   -
     firstname: 'Kenan'
     lastname: 'Sevindik'
+    pageurl: 'kenan-sevindik'
     url: 'https://twitter.com/KenanSevindik'
     photo: 'Kenan Sevindik.png'
     company: 'Harezmi IT Solutions'
@@ -805,6 +855,7 @@ speakers:
   -
     firstname: 'Aleksandar'
     lastname: 'Vacić'
+    pageurl: 'aleksandar-vacic'
     url: 'https://mobile.twitter.com/radiantav?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor'
     photo: 'Aleksandar Vacic.jpg'
     company: 'Radiant Tap'
@@ -818,6 +869,7 @@ speakers:
   -
     firstname: 'Martin'
     lastname: 'Toshev'
+    pageurl: 'martin-toshev'
     url: 'https://twitter.com/martin_fmi'
     photo: 'Martin Toshev.jpg'
     company: ''
@@ -831,6 +883,7 @@ speakers:
   -
     firstname: 'Nikola'
     lastname: 'Sijakinjic'
+    pageurl: 'nikola-sijakinjic'
     url: 'https://www.linkedin.com/in/nikola-sijakinjic-61346b20?trk=hp-identity-name'
     photo: 'Nikola Sijakinjic.png'
     company: 'Fincore Group'
@@ -844,6 +897,7 @@ speakers:
   -
     firstname: 'Damir'
     lastname: 'Svrtan'
+    pageurl: 'damir-svrtan'
     url: 'http://damir.svrtan.me/'
     photo: 'Damir Svrtan.jpg'
     company: 'Infinum'
@@ -854,6 +908,7 @@ speakers:
   -
     firstname: 'Dejan'
     lastname: 'Dimić'
+    pageurl: 'dejan-dimic'
     url: 'https://twitter.com/dejan_dimic'
     photo: 'Dejan Dimic.jpg'
     company: 'Vibe Network'
@@ -866,6 +921,7 @@ speakers:
   -
     firstname: 'Jakša'
     lastname: 'Vučković'
+    pageurl: 'jaksa-vuckovic'
     url: ''
     photo: 'Jaksa Vuckovic.jpg'
     company: 'Zuhlke Engineering'
@@ -883,6 +939,7 @@ speakers:
   -
     firstname: 'Lukasz'
     lastname: 'Lenart'
+    pageurl: 'lukasz-lenart'
     url: 'https://twitter.com/lukaszlenart'
     photo: 'Lukasz Lenart.jpg'
     company: '7N/Nykredit'
@@ -896,6 +953,7 @@ speakers:
   -
     firstname: 'Aleksandar'
     lastname: 'Simović'
+    pageurl: 'aleksandar-simovic'
     url: 'https://twitter.com/simalexan'
     photo: 'Aleksandar Simovic.jpg'
     company: 'Right Fold'
@@ -908,6 +966,7 @@ speakers:
   -
     firstname: 'Mirjana'
     lastname: 'Kolarov'
+    pageurl: 'mirjana-kolarov'
     url: 'https://rs.linkedin.com/in/mirjana-kolarov-62390a5'
     photo: 'Mirjana Kolarov.png'
     company: 'Levi 9'
@@ -922,6 +981,7 @@ speakers:
   -
     firstname: 'Nikola'
     lastname: 'Milutinović'
+    pageurl: 'nikola-milutinovic'
     url: 'https://rs.linkedin.com/in/nikolamilutinovic'
     photo: 'Nikola Milutinovic.jpg'
     company: 'Levi 9'
@@ -935,6 +995,7 @@ speakers:
   -
     firstname: 'Nikola'
     lastname: 'Stojiljković'
+    pageurl: 'nikola-stojiljkovic'
     url: 'https://twitter.com/nikstojiljkovic'
     photo: 'Nikola Stojiljkovic.jpg'
     company: 'Essential Dots d.o.o'
@@ -948,6 +1009,7 @@ speakers:
   -
     firstname: 'Perica'
     lastname: 'Milošević'
+    pageurl: 'perica-milosevic'
     url: 'https://www.linkedin.com/in/pericamilosevic'
     photo: 'Perica Milosevic.jpg'
     company: 'Sysdig'
@@ -961,6 +1023,7 @@ speakers:
   -
     firstname: 'Radek'
     lastname: 'Ostrowski'
+    pageurl: 'radek-ostrowski'
     url: 'https://uk.linkedin.com/in/radekostrowski'
     photo: 'Radek Ostrowski.jpg'
     company: 'Fast Data Ltd'
@@ -974,6 +1037,7 @@ speakers:
   -
     firstname: 'Goran'
     lastname: 'Aranđelović'
+    pageurl: 'goran-arandjelovic'
     url: 'http://www.endava.com/'
     photo: 'user.png'
     company: 'Endava'
@@ -986,6 +1050,7 @@ speakers:
   -
     firstname: 'Miloš'
     lastname: 'Milošević'
+    pageurl: 'milos-milosevic'
     url: 'https://www.linkedin.com/in/milos-milosevic-33099850'
     photo: 'Milos Milosevic.jpg'
     company: 'Nordeus'
@@ -997,6 +1062,7 @@ speakers:
   -
     firstname: 'Vedran'
     lastname: 'Vujinović'
+    pageurl: 'vedran-vujinovic'
     url: 'https://www.linkedin.com/in/vedran-vujinovic-581428124'
     photo: 'Vedran Vujinovic.jpg'
     company: 'Comtrade'
@@ -1009,6 +1075,7 @@ speakers:
   -
     firstname: 'Ivan'
     lastname: 'Nemytchenko'
+    pageurl: 'ivan-nemytchenko'
     url: 'https://twitter.com/inem'
     photo: 'Ivan Nemytchenko.jpg'
     company: 'GitLab'
@@ -1019,6 +1086,7 @@ speakers:
   -
     firstname: 'Antonis'
     lastname: 'Kalipetis'
+    pageurl: 'antonis-kalipetis'
     url: 'https://twitter.com/akalipetis'
     photo: 'Antonis Kalipetis.jpg'
     company: 'SourceLiar'
@@ -1031,6 +1099,7 @@ speakers:
   -
     firstname: 'Alexander'
     lastname: 'Pacha'
+    pageurl: 'alexander-pacha'
     url: 'http://my-it.at/'
     photo: 'Alexander Pacha.jpg'
     company: 'Zuhlke Engineering'
@@ -1043,6 +1112,7 @@ speakers:
   -
     firstname: 'Doan'
     lastname: 'Duy Hai'
+    pageurl: 'doan-duy-hai'
     url: 'http://twitter.com/@doanduyhai/'
     photo: 'DuyHai Doan.jpg'
     company: 'Datastax'
@@ -1055,6 +1125,7 @@ speakers:
   -
     firstname: 'Jens'
     lastname: 'Deters'
+    pageurl: 'jens-deters'
     url: 'http://www.jensd.de/'
     photo: 'Jens Deters.jpg'
     company: 'Codecentric'
@@ -1067,6 +1138,7 @@ speakers:
   -
     firstname: 'Zoran'
     lastname: 'Rončević'
+    pageurl: 'zoran-roncevic'
     url: 'https://rs.linkedin.com/in/zoran-roncevic-a6049970'
     photo: 'Zoran Roncevic.jpg'
     company: '"Maker" Association'
@@ -1080,6 +1152,7 @@ speakers:
   -
     firstname: 'Jakub'
     lastname: 'Marchwicki'
+    pageurl: 'jakub-marchwicki'
     url: 'http://jakub.marchwicki.pl/'
     photo: 'Jakub Marchwicki.jpg'
     company: ''
@@ -1091,6 +1164,7 @@ speakers:
   -
     firstname: 'Miloš'
     lastname: 'Kresović'
+    pageurl: 'milos-kresovic'
     url: ''
     photo: 'user.png'
     company: 'New and rising'
@@ -1103,6 +1177,7 @@ speakers:
   -
     firstname: 'Stanko'
     lastname: 'Rusendić'
+    pageurl: 'stanko-rusendic'
     url: 'https://twitter.com/monorkin'
     photo: 'Stanko Rusendic.jpg'
     company: 'Infinum'
@@ -1116,6 +1191,7 @@ speakers:
   -
     firstname: 'Nenad'
     lastname: 'Pavićević'
+    pageurl: 'nenad-pavicevic'
     url: ''
     photo: 'user.png'
     company: 'Novomatic Lottery Solutions'
@@ -1127,6 +1203,7 @@ speakers:
   -
     firstname: 'Predrag'
     lastname: 'Kapamadzin'
+    pageurl: 'predrag-kapamadzin'
     url: 'http://www.linkedin.com/in/predragkapamadzin'
     photo: 'Predrag Kapamadzin.jpg'
     company: 'Levi 9'
@@ -1134,10 +1211,12 @@ speakers:
       -
         title: 'A Scrum Team – can it be great or is that a bait'
         type: 'talk'
+        secondspeaker: 'Anamarija Petrović'
     tags:
   -
     firstname: 'Anamarija'
     lastname: 'Petrović'
+    pageurl: 'anamarija-petrovic'
     url: 'https://rs.linkedin.com/in/anamarijapetrovic'
     photo: 'Anamarija Petrovic.png'
     company: 'Levi 9'
@@ -1145,6 +1224,7 @@ speakers:
       -
         title: 'A Scrum Team – can it be great or is that a bait'
         type: 'talk'
+        secondspeaker: ''
     tags:
 
 
