@@ -1,21 +1,27 @@
 $(document).ready(function() {
 
-    var offset = 300;
-    var shrinkoffset = 0;
-  	var duration = 400;
-  	$(window).scroll(function() {
-    	if ($(this).scrollTop() > offset) {
-    	   $('#scroll-to-top').fadeIn(duration);
-    	} else {
-    	   $('#scroll-to-top').fadeOut(duration);
-    	}
-  	});
+    $(window).on('resize',function(){location.reload();});
 
-  	$('#scroll-to-top').click(function(event) {
-    		event.preventDefault();
-    	$('html, body').animate({scrollTop: 0}, 800);
-    		return false;
-  	});
+    var winwidth = $(window).width();
+
+    if (winwidth > 1200) {
+      var offset = 300;
+      var shrinkoffset = 0;
+    	var duration = 400;
+    	$(window).scroll(function() {
+      	if ($(this).scrollTop() > offset) {
+      	   $('#scroll-to-top').fadeIn(duration);
+      	} else {
+      	   $('#scroll-to-top').fadeOut(duration);
+      	}
+    	});
+
+    	$('#scroll-to-top').click(function(event) {
+      		event.preventDefault();
+      	$('html, body').animate({scrollTop: 0}, 800);
+      		return false;
+    	});
+    }
 
     $(".float-label").jvFloat();
 
@@ -53,19 +59,27 @@ $(document).ready(function() {
     var tweenminutes = TweenMax.to($sclockminutes, 0.1, {rotation: 360*10,  ease:Linear.easeNone, transformOrigin: "center bottom"});
     var tweenhours = TweenMax.to($sclockhours, 0.1, {rotation: 300+270, ease:Linear.easeNone, transformOrigin: "center bottom"});
 
-    new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: 3600})
-    .setTween(tweenminutes)
-    .addTo(controller);
+    if (winwidth > 1200) {
 
-    new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: 3600})
-    .setTween(tweenhours)
-    .addTo(controller);
+      new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: 3600})
+      .setTween(tweenminutes)
+      .addTo(controller);
 
-    // build scene
-    new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600})
-    //.setTween(tween)
-    .setPin('.s-clock')
-    .addTo(controller);
+      new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: 3600})
+      .setTween(tweenhours)
+      .addTo(controller);
+
+      // build scene
+      new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600})
+      //.setTween(tween)
+      .setPin('.s-clock')
+      .addTo(controller);
+
+    } else {
+      $(".schedule-item").each(function() {
+        $(this).attr('style', 'padding-bottom: 15px;');
+      })
+    }
 
     $('#home-mainscreen-holder').css('height', $(window).height());
 

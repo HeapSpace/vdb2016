@@ -29,24 +29,28 @@
 		<div class="schedule-list">
 			<%= render '/_schedule_clock.html', :id => 1 %>
 			<div class="abs-holder">
-				<%= render ('/_schedule_header.html') %>
 				<div class="row">
-					<div class="col-lg-2 schedule-track">
+					<div class="col-sm-12 col-md-4 col-lg-2 schedule-track">
+						<h5 class="track-name">Track 1</h5>
 				    <%= render '/_schedule_item.html', :day => 3, :track => 1 %>
 				  </div>
-				  <div class="col-lg-2 schedule-track">
+				  <div class="col-sm-12 col-md-4 col-lg-2 schedule-track">
+						<h5 class="track-name">Track 2</h5>
 				    <%= render '/_schedule_item.html', :day => 3, :track => 2 %>
 				  </div>
-				  <div class="col-lg-2 schedule-track">
+				  <div class="col-sm-12 col-md-4 col-lg-2 schedule-track">
+						<h5 class="track-name">Track 3</h5>
 				    <%= render '/_schedule_item.html', :day => 3, :track => 3 %>
 				  </div>
-				  <div class="col-lg-2 schedule-track">
+				  <div class="col-sm-12 col-md-6 col-lg-2 schedule-track">
+						<h5 class="track-name">Business track</h5>
 				    <%= render '/_schedule_item.html', :day => 3, :track => 4 %>
 				  </div>
-				  <div class="col-lg-2 schedule-track">
+				  <div class="col-sm-12 col-md-6 col-lg-2 schedule-track">
+						<h5 class="track-name">Workshop</h5>
 				    <%= render '/_schedule_item.html', :day => 3, :track => 0 %>
 				  </div>
-				  <div class="col-lg-2 schedule-track">
+				  <div class="col-lg-2 visible-lg schedule-track">
 				    &nbsp;
 				  </div>
 				</div>

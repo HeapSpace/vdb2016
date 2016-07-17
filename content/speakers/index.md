@@ -50,6 +50,15 @@ speakers:
         slot: '10:00'
         duration: 20
   -
+    talk:
+      -
+        title: ''
+        type: 'empty'
+        day: 1
+        track: 0
+        slot: '10:20'
+        duration: 60
+  -
     firstname: 'Scott'
     lastname: 'Amyx'
     pageurl: 'scott-amyx'

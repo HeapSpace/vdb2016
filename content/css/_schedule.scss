@@ -14,15 +14,26 @@
   height: 3600px;
   padding: 0 30px;
   .schedule-track {
-    padding-left: 15px;
-    padding-right: 0;
+    @media (min-width: $screen-lg) {
+      padding-left: 15px;
+      padding-right: 0;
+    }
+    .track-name {
+      padding: 5px 0;
+      text-align: center;
+      font-weight: 700;
+      color: $brand-primary;
+    }
   }
   .schedule-item {
     align-items: center;
     justify-content: center;
-    border-top: 1px solid $brand-primary;
     padding: 0 10px;
     background-color: rgba($brand-secondary, 0.075);
+    border-top: 1px solid $brand-primary;
+    @media (max-width: $screen-lg) {
+      border-top: 1px solid rgba($brand-secondary, 0.5);
+    }
     h4, h5, h6 {
       line-height: 130%;
       margin-top: 10px;
@@ -56,6 +67,17 @@
        }
     &:last-child {
       border-bottom: 1px solid $brand-primary;
+      @media (max-width: $screen-lg) {
+        border-bottom: 1px solid rgba($brand-secondary, 0.5);
+      }
+      margin-bottom: 50px;
+    }
+    &.empty {
+      background-image: url('../images/empty-schedule.png');
+      background-repeat: repeat;
+      @media (max-width: $screen-lg) {
+        display: none;
+      }
     }
   }
 }
@@ -68,9 +90,11 @@
 }
 
 .abs-holder {
-  position: absolute;
-  width: 100%;
-  top: -63px;
+  @media (min-width: $screen-lg) {
+    position: absolute;
+    width: 100%;
+    top: -63px;
+  }
 }
 
 .s-clock {
