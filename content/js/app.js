@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-    $(window).on('resize',function(){location.reload();});
-
     var winwidth = $(window).width();
 
     if (winwidth > 1200) {
