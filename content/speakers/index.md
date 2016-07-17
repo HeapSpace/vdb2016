@@ -60,6 +60,8 @@ speakers:
       -
         title: 'Keynote'
         type: 'talk'
+        short:
+        long:
         day: 1
         track: 1
         slot: '09:00'
@@ -77,6 +79,10 @@ speakers:
       -
         title: 'DevOps on AWS: Deep Dive on Continuous Delivery and the AWS Developer Tools'
         type: 'talk'
+        short:
+          - "Continues delivery in the cloud, learn how you can automate build and test processes, that allow you to continuously deploy all code changes."
+        long:
+          - "Today’s cutting-edge companies have software release cycles measured in days instead of months. This agility is enabled by the DevOps practice of continuous delivery, which automates building, testing, and deploying all code changes. This automation helps you catch bugs sooner and accelerates developer productivity. In this session, we’ll share the processes that Amazon’s engineers use to practice DevOps and discuss how you can bring these processes to your company by using a set of AWS tools (AWS CodePipeline and AWS CodeDeploy, AWS OpsWorks)."
         day: 2
         track: 1
         slot: '09:00'
@@ -173,6 +179,11 @@ speakers:
       -
         title: 'NoSQL is a lie'
         type: 'talk'
+        short:
+          - "NoSQL is a term on the rise, and it's a lie. NoSQL is a catch-all term and I will point out why a catch all means missing tools that may help solve your problems. Going through a few popular DB's we will walk through the use cases and why they're good at what they do."
+        long:
+          - "During the course of the talk the attendee's will be taken on a whistle stop tour of the different kinds of database that are available and why to use them."
+          - "The basic idea is to entertain people, whilst in the process make people aware that NoSQL is more than just a term. It encompasses many different technologies that all have a distinct reason to exist and provide many different solutions."
     tags:
       - db
   -
@@ -436,9 +447,30 @@ speakers:
       -
         title: 'Building Cross-Platform Apps using Redux with Angular 2'
         type: 'talk'
+        short:
+          - "In this talk we are going to use a basic application to showcase Redux while using Angular 2 across different platforms (web, mobile and desktop)."
+        long:
+          - "Redux has proved very successful. Inspired by Flux and Elm, is used to handle Application state and bind it to the User Interface."
+          - "Angular 2 has shifted from being just a framework to being a cross platform. This talk shows how everything fits together in this new paradigm."
       -
         title: 'Angular 2 Workshop'
         type: 'workshop'
+        short:
+          - "Angular 2 is a revolutionary development platform for creating applications using modern web standards and powered by the Open Source Community following the success of AngularJS."
+        long:
+          - "Angular 2 introduces some major improvements over its predecessor. We are going to cover the main areas so you can start creating your own projects and enjoy its benefits Today."
+          - "Outline:"
+          - "• Introduction to Angular 2"
+          - "• ES5, ES6 and TypeScript"
+          - "• Dependency Injection"
+          - "• Templating"
+          - "• Components"
+          - "• Reactive Extensions"
+          - "• HTTP module"
+          - "• Component Router"
+          - "• Forms"
+          - "• Unit Testing"
+          - "• Migration to Angular 2"
     tags:
       - javascript
   -

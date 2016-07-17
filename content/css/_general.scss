@@ -537,10 +537,26 @@ iframe {
   border-bottom: 1px dotted rgba($brown, 0.75);
   margin-bottom: 10px;
   padding-bottom: 10px;
-}
-
-.talk-title {
-  padding-left: 5px;
+  .fa {
+    margin-top: 18px;
+  }
+  .title {
+    color: $brand-primary;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  .text {
+    font-size: 120%;
+    color: rgba($white, 0.8);
+    text-align: left;
+  }
+  .tags {
+    text-align: left;
+    margin-bottom: 15px;
+    .tag {
+      font-size: 90%;
+    }
+  }
 }
 
 .block-text {
@@ -885,6 +901,9 @@ button, a[role="button"] {
       width: 100px;
       height: 100px;
     }
+  }
+  h1 {
+    padding: 210px 0 0 0;
   }
 }
 

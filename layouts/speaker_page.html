@@ -11,53 +11,58 @@
 	<div class="main-bg page"></div>
 	<div class="container">
 
-	  <h1 class="text-center pad-vertical-big">
-	    <%= @item[:firstname] %><br><span class="yellow"><%= @item[:lastname] %></span>
-	  </h1>
-
-	  <div class="steam-separator"></div>
+	  <div class="speaker">
+			<h1 class="text-center">
+		    <%= @item[:firstname] %><br><span class="yellow"><%= @item[:lastname] %></span>
+		  </h1>
+			<div class="photo" style="background-image: url('/images/speakers/<%= @item[:photo] %>')"></div>
+			<% if !@item[:url].to_s.empty? then %><a href="<%= @item[:url] %>" target="_blank"><%= @item[:url] %></a><% end %>
+			<h6 class="company">
+				<%= @item[:company] %>
+			</h6>
+  	</div>
 
 	  <div class="row-centered">
 	    <div class="col-sm-8 col-centered">
-	      <div class="speaker">
-					<% if !@item[:url].to_s.empty? then %><a href="<%= @item[:url] %>" target="_blank"><% end %>
-						<div class="photo" style="background-image: url('/images/speakers/<%= @item[:photo] %>')"></div>
-						<h5 class="yellow">
-							<%= @item[:firstname] %> <%= @item[:lastname] %>
-						</h5>
-					<% if !@item[:url].to_s.empty? then %></a><% end %>
-					<h6 class="company">
-						<%= @item[:company] %>
-					</h6>
+	      <div class="speaker header">
+
 					<div class="brown">
 						<%
-						@item[:talk].to_a.each { |t|
+						@item[:talk].to_a.each_with_index { |t|
 						if !t[:title].to_s.empty? && !t[:type].to_s.empty?
 						%>
 							<div class="single-talk">
 								<% if t[:type] == 'talk' %>
-								<i class="fa fa-microphone yellow"></i>
+								<i class="fa fa-microphone fa-2x yellow"></i>
 								<% end %>
 								<% if t[:type] == 'workshop' %>
-								<i class="fa fa-wrench yellow"></i>
+								<i class="fa fa-wrench fa-2x yellow"></i>
 								<% end %>
 								<% if t[:type] == 'lightning' %>
-								<i class="fa fa-bolt yellow"></i>
+								<i class="fa fa-bolt fa-2x yellow"></i>
 								<% end %>
-								<span class="talk-title"><%= t[:title] %></span>
+								<h3 class="title"><%= t[:title] %></h3>
+								<div class="text">
+									<% t[:long].to_a.each do |p| %>
+										<p>
+											<%= p %>
+										</p>
+									<% end %>
+								</div>
+								<div class="tags">
+									<%  @item[:tags].to_a.each do |tag| %>
+										<span class="tag">
+												<%= tag %>
+										</span>
+									<% end %>
+								</div>
 							</div>
 						<%
 							end
 						}
 						%>
 					</div>
-					<div class="tags">
-						<%  @item[:tags].to_a.each do |tag| %>
-							<span class="tag">
-									<%= tag %>
-							</span>
-						<% end %>
-					</div>
+
 	      </div>
 	    </div>
 	  </div>

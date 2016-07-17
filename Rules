@@ -13,6 +13,9 @@ preprocess do
       schedule_items.each do |speaker|
         if speaker[:pageurl]
           @items.create('', {:photo => speaker[:photo], :firstname => speaker[:firstname], :lastname => speaker[:lastname], :url => speaker[:url], :company => speaker[:company], :talk => speaker[:talk], :tags => speaker[:tags], :layout => '/speaker_page.html'}, '/speakers/'+speaker[:pageurl]+'/index.md')
+          # speaker[:talk].each_with_index do |t, i|
+          #   @items.create('', {:title => t[:title], :type => t[:type], :short => t[:short], :long => t[:long], :day => t[:day], :track => t[:track], :slot => t[:slot], :duration => t[:duration], :layout => '/speaker_page.html'}, '/speakers/'+speaker[:pageurl]+'/talk-'+i+'/index.md')
+          # end
         end
       end
     end
