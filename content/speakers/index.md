@@ -70,7 +70,9 @@ speakers:
         title: 'Keynote'
         type: 'talk'
         short:
+          - "TBA"
         long:
+          - "TBA"
         day: 1
         track: 1
         slot: '09:00'
@@ -109,6 +111,10 @@ speakers:
       -
         title: 'How to raise a million dollars on Indiegogo'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
         day: 1
         track: 2
         slot: '09:00'
@@ -126,6 +132,10 @@ speakers:
       -
         title: 'Faster and more efficient processes by combining BPM and Mobile'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
         day: 1
         track: 4
         slot: '09:00'
@@ -142,6 +152,10 @@ speakers:
       -
         title: 'Open stack for building end-to-end IoT solutions'
         type: 'talk'
+        short:
+          - "There's a lot of pieces needed to build a scalable IoT solution. Today most of these components exists as open source projects, which makes it easier than ever to connect large number devices to the cloud. This session will describe architecture and components of the scalable IoT solutions and open source projects that can be used to build them."
+        long:
+          - "The session will start by covering the general architecture of end-to-end IoT systems and describe in more details the role of every component. Next, it will dig deeper into all the components and explain open source projects that implement them. For example, we will see what are field gateways and how Eclipse Kura project implements those functionalities. IoT server connector's role will be described next and we'll see how Eclipse Hono helps connecting devices to the cloud. Finally, we'll examine an architecture of the IoT Cloud and see what it takes to handle and manage large number of devices. We'll also see how IoT cloud will be implemented in the upcoming open source project (which should be public by the time of the session). After this session, you'll have the big picture of how to connect devices to the cloud in scalable way and what open source projects to use to achieve that."
         day: 1
         track: 3
         slot: '09:00'
@@ -159,6 +173,10 @@ speakers:
       -
         title: 'Spring Boot and Kotlin, a match made in Heaven'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
         day: 1
         track: 4
         slot: '10:20'
@@ -176,6 +194,10 @@ speakers:
       -
         title: 'Machine Learning as an API: strengths, limits, and unusual use cases'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
   -
     firstname: 'Mike'
@@ -206,6 +228,40 @@ speakers:
       -
         title: 'The Art of Clean Code'
         type: 'talk'
+        short:
+          - "After 10 years of hard work experience in Java Enterprise applications, I started several years ago teaching various topics that I mastered (www.victorrentea.ro). Among all these topics, by far the most important topic, that I always include in all my training sessions is 'Clean Code'. It's essential to be able to keep 'alive' 100k-2M lines of code. And I was told that this module has the biggest impact in day-to-day life of the dev."
+          - "Also, this talk will also show how a professional developer should behave in code, the 'ethics code' that ough to be followed by everyone. We will go from the most basic concerns like how should we choose our names, how should we write our functions, format and (not) comment them, to more advanced topics of true Objects. The entire presentation is spiced with numerous esay to understand examples and code snippets."
+          - "The contents of the material mainly revolves around the Clean Code boogvof Uncle Bob plus many other sourcesm"
+        long:
+          - "The primary value of software is to be flexible. The secondary value of software is to do what business wants it to do."
+          - "Sounds insane? Just think a bit: what's the difference between IT and regular engineering? What propulsated IT that much? The ability to evolve, to adapt to new business needs. And we all know how difficult it is to adapt and strech old, dirty, rigid code."
+          - "Financially, the fact that 80% of the costs of a software project are in maintenance may not concern you, the developer, directly. But the fact that you read 10x times more time than you write code should make it clear to you: do your very best to write clean, beautiful code that is easy to maintain. This module explains how do such art."
+          - "Besides the bare act of writing code, the module also tackles the problematic of team work, code responsibility and cooperation necessary to any professional software engineer."
+          - "The module covers the most important practical aspects from the reference book 'Clean Code' by Robert C. Martin, along with many other sources. The training material was reviewed and discussed with numerous seniors to reach a wider consensus regarding the ideas and their nuances."
+          - "This is the module which is most likely to have the deepest impact on your day-to-day work, changing the way you exercise your profession. That's why I allways recommend to add this module to any training."
+          - " "
+          - "Agenda:"
+          - " "
+          - "• What is Clean Code"
+          - "• Names"
+          - "• Express intent"
+          - "• Parts of speech"
+          - "• Functions"
+          - "• Function Size"
+          - "• Extracting Method Objects"
+          - "• Function Signature"
+          - "• Side Effects & Temporal Coupling"
+          - "• Command/Query separation"
+          - "• Classes"
+          - "• Basic Shape"
+          - "• True Encapsulation"
+          - "• Data Structures vs. True Objects"
+          - "• Switch+Data Structures vs. Polymorphic Objects (opt)"
+          - "• 'Tell, Don`t Ask' Principle"
+          - "• Feature Envy"
+          - "• The Plugin Model: Dependency Inversion (opt)"
+          - "• Code Formatting"
+          - "• Comments are failures"
     tags:
       - metodologies
   -
@@ -219,6 +275,20 @@ speakers:
       -
         title: 'Microservices Without Servers'
         type: 'talk'
+        short:
+          - "Developers spend too much time maintaining servers, rather than writing software. Recently, new cloud solutions, known as 'serverless' platforms, allow developers to write microservices without servers. What does a 'serverless' application look like, how do you create one and what are the challenges?"
+          - "In this session, we'll introduce the 'serverless' stack, showing developers how to write microservices using these platforms. We'll look at migrating existing applications over to this new stack, common issues and challenges that you need to consider and tools to support serverless development."
+        long:
+          - "Servers are killing your productivity."
+          - "Rather than building better software for your users, you end up constantly distracted by maintaining computers."
+          - "Wasn't the 'cloud' supposed to fix this? It sounded so promising until we realised it was just renting VMs in someone else's datacenter. We couldn't escape 'servers'."
+          - "Until now..."
+          - "With the launch of services like AWS Lambda, Google Cloud Functions and OpenWhisk, you can now run code on the cloud without servers!"
+          - "These platforms let you build stateless microservices, combining APIs with business logic, without servers. Microservices are executed on-demand, in milliseconds, rather than having to sit idle waiting for incoming requests. Users pay only for the raw computation time used."
+          - "...but how?"
+          - "In this session, developers will learn how to write “microservices” for a popular serverless platform, understanding the capabilities and constraints for the platform. We’ll look at common challenges, such as handling static file hosting, exposing services as public APIs and managing application dependencies, before explaining the solutions. Exploring emerging “serverless” design patterns will give developers the knowledge to build application architectures using these new platforms."
+          - "This session is aimed at software developers experienced in building traditional backend web applications, who want to learn how to build microservices without servers."
+          - "If you’re spending too much time managing computers, rather than writing software, come to this session to learn how to banish your servers from application development forever!"
     tags:
       - microservices
   -
@@ -232,6 +302,10 @@ speakers:
       -
         title: 'Don`t be left out: How to develop software in a distributed team'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - distributed systems
   -
@@ -245,9 +319,21 @@ speakers:
       -
         title: 'Self-Healing Systems'
         type: 'talk'
+        short:
+          - "We'll explore practices and tools required to set up fully autonomous self-healing systems capable of both reactive recuperation from failures and proactive predictions of steps that should be taken to prevent failures before they happen."
+        long:
+          - "We can think of the whole computer systems like a human body that consist of cells of various types. They can be hardware or software. When they are software units, the smaller they are, the easier it is for them to self-heal, recuperate from failures, multiply or even get destroyed when that is needed. We call those small units microservices, and they can indeed have behaviours similar to those observed in a human body.  Microservices-based systems can be made in a way that they have the ability to self-heal. That is not to say that self-healing we are about to explore is applicable only to microservices. It is not. However, self-healing can be applied to almost any type of the architecture but provides best results when combined with microservices."
+          - "We'll explore practices and tools required to set up fully autonomous self-healing systems capable of both reactive recuperation from failures and proactive predictions of steps that should be taken to prevent failures before they happen."
       -
         title: 'Microservices Lifecycle Workshop'
         type: 'workshop'
+        short:
+          - "This workshop will go through the whole microservices development lifecycle. We'll start from the very beginning. We'll define and design architecture. From there on we'll move from requirements, technological choices and development environment setup, through coding and testing all the way until the final deployment to production. We won't stop there. Once our new services are up and running we'll see how to maintain them, scale them depending on resource utilization and response time, recuperate them in case of failures and create central monitoring and notifications system. We'll try to balance the need for creative manual work and the need to automate as much of the process as possible."
+        long:
+          - "Microservices are becoming more and more popular and, as with every other new trend, often implemented without enough experience. Idea behind them is easy to explain. Brake monolithic application into smaller independent services. That's it. That is what many think microservices are about. However, implementation is much harder to master. There are many things to consider when embarking down this path. How do we organize microservices? Which technologies to use and how? Should they be mutable or not? How to test them? How to deploy them? How to create scalable and fault tolerant systems? Self-healing, zero-downtime and logging? How should the teams be organized? Today's successful implementations of microservices require all those and many other questions to be answered. It's not only about splitting things into smaller pieces. The whole development ecosystem needs to be changed and we need to take a hard look at the microservices development lifecycle."
+          - "This workshop will go through the whole microservices development lifecycle. We'll start from the very beginning. We'll define and design architecture. From there on we'll move from requirements, technological choices and development environment setup, through coding and testing all the way until the final deployment to production. We won't stop there. Once our new services are up and running we'll see how to maintain them, scale them depending on resource utilization and response time, recuperate them in case of failures and create central monitoring and notifications system. We'll try to balance the need for creative manual work and the need to automate as much of the process as possible."
+          - "This will be a journey through all the aspects of the lives of microservices and everything that surrounds them. We'll see how microservices fit into continuous deployment and immutable containers concepts and why the best results are obtained when those three are combined into one unique framework."
+          - "During the workshop we'll explore tools like Docker, Docker Swarm, Docker Compose, Ansible, Consul, etcd, confd, Registrator, nginx, HAProxy, ElasticSearch, LogStash, Kibana, and so on."
     tags:
       - microservices
       - docker
@@ -262,6 +348,20 @@ speakers:
       -
         title: 'This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT? Businessing the S*** out of Transformative Development!'
         type: 'talk'
+        short:
+          - "Cloud Native, containers, DevOps, microservices, etc.: we go to conferences & get excited about things that could revolutionize our development & change our organizational & professional lives! And then, we go home...and hit the wall. If you've ever asked yourself, 'This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT??!', this is the session for you."
+          - "Learn from an experienced software developer (who also happens to have an MBA) how to make your case to leadership, presenting management-ready justifications for changes in 'your world' that will positively impact the business as a whole."
+        long:
+          - "Cloud Native, containers, DevOps, microservices, and more: we go to conferences and get excited about the potential of so many things that could revolutionize our development and change our organizational and professional lives! And then, we go home...and hit the wall. If you've ever asked yourself, 'This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT??!', this is the session for you."
+          - "Learn from an experienced software developer (who also happens to have an MBA) how to make your case to leadership, presenting management-ready justifications for changes in 'your world' that will positively impact the business as a whole. Topics include:"
+          - " "
+          - "• How would this change affect your organization's/group's/team's work?"
+          - "• How would this change impact (positively and negatively) your tech stack (internal considerations)?"
+          - "• How would this change contribute to recruitment/retention (external considerations)?"
+          - "• Seeing beyond your borders: how could this change positively - and negatively - affect the business?"
+          - "• Putting numbers with it: pros, cons, and caveats"
+          - " "
+          - "Come to this session to dramatically boost your chances of making an actual, positive change to your organization!"
     tags:
       - metodologies
   -
@@ -275,10 +375,26 @@ speakers:
       -
         title: 'From Zero to Hero With Spring Boot'
         type: 'talk'
+        short:
+          - "Spring Boot, the new convention-over-configuration centric framework from the Spring team at Pivotal, marries Spring's flexibility with conventional, common sense defaults to make application development move swiftly and enjoyable."
+          - "It's ideally suited for building microservices and distributed systems and makes streamlining devops practices simple."
+          - "Join Spring Boot committer Stéphane Nicoll for a look at what Spring Boot is, why it's turning heads, why you should consider it for your next application (REST, web, batch, big-data, integration, whatever!) and how to get started."
+        long:
+          - "Spring Boot, the new convention-over-configuration centric framework from the Spring team at Pivotal, marries Spring's flexibility with conventional, common sense defaults to make application development move swiftly and enjoyable."
+          - "It's ideally suited for building microservices and distributed systems and makes streamlining devops practices simple."
+          - "Join Spring Boot committer Stéphane Nicoll for a look at what Spring Boot is, why it's turning heads, why you should consider it for your next application (REST, web, batch, big-data, integration, whatever!) and how to get started."
+          - "This is a live coding session only."
+          - "A passive knowledge of Spring Framework is preferable though not mandatory. The purpose of this talk is to implement a simple demo app and demonstrates how Spring Boot helps you to be productive and the devops-related features it brings."
       -
         title: '40 Tips & Tricks for Spring in IntelliJ IDEA'
         type: 'talk'
-        secondspeaker: ''
+        secondspeaker: 'Yann Cebron'
+        short:
+          - "Learn the best tricks directly from the developers of Spring Boot/IntelliJ IDEA. Live coding ahead!"
+        long:
+          - "IDEs can be powerful, but hard to learn. Some features are hidden or simply not well known."
+          - "Let’s end this dilemma and make you more productive and efficient when working on Spring applications."
+          - "Learn how to navigate, edit and perform refactorings across a variety of common Spring technologies. You’ll leave this session with a whole stack of power tricks - right from the developers working on it."
     tags:
       - java
   -
@@ -293,6 +409,12 @@ speakers:
         title: '40 Tips & Tricks for Spring in IntelliJ IDEA'
         type: 'talk'
         secondspeaker: 'Stéphane Nicoll'
+        short:
+          - "Learn the best tricks directly from the developers of Spring Boot/IntelliJ IDEA. Live coding ahead!"
+        long:
+          - "IDEs can be powerful, but hard to learn. Some features are hidden or simply not well known."
+          - "Let’s end this dilemma and make you more productive and efficient when working on Spring applications."
+          - "Learn how to navigate, edit and perform refactorings across a variety of common Spring technologies. You’ll leave this session with a whole stack of power tricks - right from the developers working on it."
     tags:
       - tooling
   -
@@ -306,6 +428,17 @@ speakers:
       -
         title: 'The frontend taboo: a story of full stack microservices'
         type: 'talk'
+        short:
+          - "Microservices are not news anymore. They allow multiple teams to work autonomously by choosing their own technology stacks and having their own release cycles. There is something not being addressed though, like if it is some kind of dirty little secret, and that is frontend development. The common practice for building websites remains 'the monolith': a single frontend codebase that consumes multiple APIs. We believe we found a better solution."
+        long:
+          - "Microservices are not news anymore. They allow multiple teams to work autonomously by choosing their own technology stacks and having their own release cycles. There is something not being addressed though, like if it is some kind of dirty little secret, and that is frontend development. The common practice for building websites remains 'the monolith': a single frontend codebase that consumes multiple APIs. We believe we found a better solution."
+          - "Last year, a handful of Zalando engineers came up with an innovative solution for this exact problem - project Mosaic. Mosaic is a new architecture for websites where microservices are used in the entire stack, all the way to the frontend."
+          - "We’ve published Mosaic as open source. Its main components are:"
+          - "- Skipper - an HTTP router with runtime update of routes"
+          - "- Tailor - a streaming layout service with runtime update of templates"
+          - "The network is the glue putting it all together."
+          - "In this talk we want to share our motivation to build Mosaic, how to perform such migration without downtime, and the advantages it has to offer to other organizations, regardless of their size."
+          - "We'll go through the operational details about Skipper and how it can be customized to answer many other different requirements. I'll also describe in detail how Tailor can dramatically improve the perceived performance of your website by streaming frontend content, from multiple fragments, in parallel."
     tags:
       - microservices
   -
@@ -319,6 +452,10 @@ speakers:
       -
         title: 'Narrative Language of Virtual Reality'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
   -
     firstname: 'Alexey'
@@ -331,6 +468,10 @@ speakers:
       -
         title: 'Automate the Mobile'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - mobile
   -
@@ -344,6 +485,10 @@ speakers:
       -
         title: 'Angular, Typescript and RequireJS: The great alltogether'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - javascript
   -
@@ -357,6 +502,10 @@ speakers:
       -
         title: 'Your Favourite New Language - The Future of Swift'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - ios
       - mobile
@@ -371,6 +520,10 @@ speakers:
       -
         title: 'The lost medium'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - ai
       - ux/ui
@@ -385,6 +538,10 @@ speakers:
       -
         title: 'Chatbots as new apps for mobile messengers'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - ux/ui
   -
@@ -398,6 +555,10 @@ speakers:
       -
         title: 'Journey to APIs and Microservices: Best practices from successful transformations'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - microservices
   -
@@ -411,6 +572,10 @@ speakers:
       -
         title: 'Repl Driven Development'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
   -
     firstname: 'Liviu'
     lastname: 'Costea'
@@ -422,6 +587,10 @@ speakers:
       -
         title: 'Edge Performance with In-memory NoSQL'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - db
   -
@@ -435,6 +604,10 @@ speakers:
       -
         title: 'Complex State Handling in Modern Web Applications'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - web
   -
@@ -448,6 +621,10 @@ speakers:
       -
         title: 'Herding Cats to a Firefight: The evolution of an engineering on-call team'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - web
   -
@@ -498,6 +675,10 @@ speakers:
       -
         title: 'Getting Started Game Development with Unity as an iOS Developer'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - ios
       - game
@@ -512,6 +693,10 @@ speakers:
       -
         title: 'Our take on agile'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - agile
   -
@@ -525,6 +710,10 @@ speakers:
       -
         title: 'Reactive Database Mapping with Scala and Slick'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - db
       - scala
@@ -539,6 +728,10 @@ speakers:
       -
         title: 'The Myth of the Magical Messaging Fabric'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
   -
     firstname: 'Jezen'
@@ -551,6 +744,10 @@ speakers:
       -
         title: 'Haskell On Rails'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - haskell
   -
@@ -564,6 +761,10 @@ speakers:
       -
         title: 'Lambda Core – HardCore'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - java
   -
@@ -577,6 +778,10 @@ speakers:
       -
         title: 'Increasing Sensing Quality of Life with a SIM based connectivity solution for IoT'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - iot
   -
@@ -590,6 +795,10 @@ speakers:
       -
         title: 'Streams, flows and storms – how not to drown with your data?'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - bigdata
   -
@@ -603,6 +812,10 @@ speakers:
       -
         title: 'Apache Spark? If it only worked.'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - bigdata
   -
@@ -616,6 +829,10 @@ speakers:
       -
         title: 'Real-time analytics with fast data stack'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - bigdata
       - data analytics
@@ -630,6 +847,10 @@ speakers:
       -
         title: 'Building multiplayer game using streams'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - web
       - game
@@ -644,6 +865,10 @@ speakers:
       -
         title: 'Next generation of frontend architectures'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - web
       - javascript
@@ -658,6 +883,10 @@ speakers:
       -
         title: 'Developing custom Android device'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - android
       - mobile
@@ -672,6 +901,10 @@ speakers:
       -
         title: 'DIY Java & Kubernetes'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - microservices
   -
@@ -685,6 +918,10 @@ speakers:
       -
         title: 'Event Sourcing in Microservices'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - microservices
   -
@@ -698,6 +935,10 @@ speakers:
       -
         title: 'Blazingfast™ deployment with mina'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - web
       - ruby
@@ -712,6 +953,10 @@ speakers:
       -
         title: 'Scalable Service Architectures'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - docker
   -
@@ -725,6 +970,10 @@ speakers:
       -
         title: 'How to deal with a hot potato'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - devops
   -
@@ -738,6 +987,10 @@ speakers:
       -
         title: '5 HW Startups - Lessons learned while mentoring'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - iot
       - startups
@@ -752,6 +1005,10 @@ speakers:
       -
         title: 'PageGaze - Interactive Webpage Eye-Tracking Technology'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - web
       - javascript
@@ -767,6 +1024,10 @@ speakers:
       -
         title: 'Bringing Social Networks to living room using JS APIs'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - javascript
   -
@@ -780,6 +1041,10 @@ speakers:
       -
         title: 'Smart lighting: part of the ‘Internet of Things’'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - iot
   -
@@ -793,6 +1058,10 @@ speakers:
       -
         title: 'Smart lighting: part of the ‘Internet of Things’'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - iot
   -
@@ -806,6 +1075,10 @@ speakers:
       -
         title: 'Beat Aliens with Akka Cluster'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - scala
   -
@@ -819,6 +1092,10 @@ speakers:
       -
         title: 'Lean Poker'
         type: 'workshop'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - devops
       - metodologies
@@ -834,6 +1111,10 @@ speakers:
         title: 'Happiness at Work in IT World'
         secondspeaker: 'Maja Nedučić'
         type: 'workshop'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
         day: 1
         track: 0
         slot: '09:00'
@@ -850,12 +1131,12 @@ speakers:
     talk:
       -
         title: 'Happiness at Work in IT World'
-        secondspeaker: ''
+        secondspeaker: 'Maja Božić'
         type: 'workshop'
-        day: 1
-        track: 0
-        slot: '09:00'
-        duration: 60
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - business
   -
@@ -869,6 +1150,10 @@ speakers:
       -
         title: 'What`s your motivation?'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
   -
     firstname: 'Daniel'
@@ -881,6 +1166,10 @@ speakers:
       -
         title: 'Harness the power of HTTP headers to secure your web apps'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - web
       - security
@@ -895,6 +1184,10 @@ speakers:
       -
         title: 'Employing a View Model API Based on Dynamic Proxies'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - java
       - ux/ui
@@ -909,6 +1202,10 @@ speakers:
       -
         title: 'Fresh Cup of iOS 10'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - mobile
       - ios
@@ -923,6 +1220,10 @@ speakers:
       -
         title: 'JVM++: The Graal VM'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - java
       - performance
@@ -937,6 +1238,10 @@ speakers:
       -
         title: 'Easy scaling with Hazlecast'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - java
       - microservices
@@ -951,6 +1256,10 @@ speakers:
       -
         title: 'Stop wasting time NOT writing tests'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
   -
     firstname: 'Dejan'
     lastname: 'Dimić'
@@ -962,6 +1271,10 @@ speakers:
       -
         title: 'Sex Lies and Design patterns'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - design patterns
   -
@@ -975,9 +1288,17 @@ speakers:
       -
         title: 'Why are Actors Terrible?'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
       -
         title: 'Why are Actors Great?'
         type: 'workshop'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - distributed systems
       - java
@@ -993,6 +1314,10 @@ speakers:
       -
         title: 'Lift framework in 45 minutes'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - scala
       - web
@@ -1007,6 +1332,10 @@ speakers:
       -
         title: 'Serverless chat bots with AWS Lambda'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - javascript
   -
@@ -1020,6 +1349,10 @@ speakers:
       -
         title: 'What do testers actually do?'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - testing
       - security
@@ -1035,6 +1368,10 @@ speakers:
       -
         title: 'Security in microservice architecture'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - microservices
       - security
@@ -1049,6 +1386,10 @@ speakers:
       -
         title: 'Data in the continuous delivery process'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - db
       - cloud
@@ -1063,6 +1404,10 @@ speakers:
       -
         title: 'The Dark Art of Container Monitoring'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - docker
       - monitoring
@@ -1077,6 +1422,10 @@ speakers:
       -
         title: 'Finding Your Perfect Weather with Apache Spark and Docker'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - scala
       - docker
@@ -1091,6 +1440,10 @@ speakers:
       -
         title: 'C++ for mobile developers'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - mobile
   -
@@ -1104,6 +1457,10 @@ speakers:
       -
         title: 'Pushkin - Open source messaging platform'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
   -
     firstname: 'Vedran'
@@ -1116,6 +1473,10 @@ speakers:
       -
         title: 'Augmented reality: behind the scene'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - hw
   -
@@ -1129,6 +1490,10 @@ speakers:
       -
         title: 'Breaking bad with GitLab CI'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
   -
     firstname: 'Antonis'
     lastname: 'Kalipetis'
@@ -1140,6 +1505,10 @@ speakers:
       -
         title: 'Docker 1.12: Orchestration, containers and beyond'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
       -
         title: 'Creating a cloud native development environment'
         type: 'talk'
@@ -1156,6 +1525,10 @@ speakers:
       -
         title: '1, 2, 3, build - Continuous Integration for Mobile Apps'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - mobile
   -
@@ -1169,6 +1542,10 @@ speakers:
       -
         title: 'SASI, Cassandra on the full text search ride!'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - bigdata
   -
@@ -1182,6 +1559,10 @@ speakers:
       -
         title: 'MQTT: The glue for the Internet of Things'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - iot
   -
@@ -1195,6 +1576,10 @@ speakers:
       -
         title: 'NodeJS i Python za IoT platforme'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - iot
       - javascript
@@ -1209,6 +1594,10 @@ speakers:
       -
         title: 'Reverse engineering the clean code'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
   -
     firstname: 'Miloš'
@@ -1221,6 +1610,10 @@ speakers:
       -
         title: 'MVVM with Android Databinding in Practice'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - android
   -
@@ -1234,6 +1627,10 @@ speakers:
       -
         title: 'Stubs, Mocks & Spies'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
       - web
       - ruby
@@ -1248,6 +1645,10 @@ speakers:
       -
         title: 'Continuous Security Testing - Automating your AppSec Program'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
     tags:
   -
     firstname: 'Predrag'
@@ -1260,6 +1661,10 @@ speakers:
       -
         title: 'A Scrum Team – can it be great or is that a bait'
         type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
         secondspeaker: 'Anamarija Petrović'
     tags:
   -
@@ -1273,7 +1678,11 @@ speakers:
       -
         title: 'A Scrum Team – can it be great or is that a bait'
         type: 'talk'
-        secondspeaker: ''
+        short:
+          - "TBA"
+        long:
+          - "TBA"
+        secondspeaker: 'Predrag Kapamadzin'
     tags:
 
 

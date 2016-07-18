@@ -184,9 +184,7 @@ def get_schedule_data(day = nil, track = nil)
       speaker['talk'].to_a.each { |t|
         if (!t["day"].to_s.empty? && t["day"] == day && !t["track"].to_s.empty? && t["track"] == track)
           speaker['talk'] = t
-          if (!t['secondspeaker'] || t['secondspeaker'] != '')
-            schedule_data << speaker
-          end
+          schedule_data << speaker
         end
       }
     end

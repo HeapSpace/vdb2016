@@ -555,6 +555,11 @@ iframe {
     margin-bottom: 15px;
     text-align: left;
   }
+  .second-speaker {
+    color: $brand-secondary;
+    text-align: left;
+    margin-bottom: 20px;
+  }
   .text {
     font-size: 120%;
     color: rgba($white, 0.8);
@@ -563,6 +568,7 @@ iframe {
   .tags {
     text-align: left;
     margin-bottom: 15px;
+    padding-top: 5px;
     .tag {
       font-size: 90%;
     }
@@ -951,9 +957,8 @@ button, a[role="button"] {
 }
 
 .tags {
-  padding-top: 5px;
   .tag {
-    color: $green;
+    color: $brand-secondary;
     padding-right: 5px;
     white-space: nowrap;
     font-size: 12px;

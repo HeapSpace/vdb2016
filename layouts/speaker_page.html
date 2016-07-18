@@ -42,6 +42,9 @@
 								<i class="fa fa-bolt big-icon"></i>
 								<% end %>
 								<h3 class="title"><%= t[:title] %></h3>
+								<% if !t[:secondspeaker].to_s.empty? && t[:secondspeaker] != '' %>
+									<h5 class="second-speaker bold">co-speaker: <span class=""><%= t[:secondspeaker] %></span></h5>
+								<% end %>
 								<div class="text">
 									<% t[:long].to_a.each do |p| %>
 										<p>
