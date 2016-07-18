@@ -22,7 +22,7 @@
 			</h6>
   	</div>
 
-	  <div class="row-centered">
+	  <div class="row-centered margin-top-big">
 	    <div class="col-sm-8 col-centered">
 	      <div class="speaker header">
 
@@ -33,13 +33,13 @@
 						%>
 							<div class="single-talk">
 								<% if t[:type] == 'talk' %>
-								<i class="fa fa-microphone fa-2x yellow"></i>
+								<i class="fa fa-microphone big-icon"></i>
 								<% end %>
 								<% if t[:type] == 'workshop' %>
-								<i class="fa fa-wrench fa-2x yellow"></i>
+								<i class="fa fa-wrench big-icon wrench"></i>
 								<% end %>
 								<% if t[:type] == 'lightning' %>
-								<i class="fa fa-bolt fa-2x yellow"></i>
+								<i class="fa fa-bolt big-icon"></i>
 								<% end %>
 								<h3 class="title"><%= t[:title] %></h3>
 								<div class="text">

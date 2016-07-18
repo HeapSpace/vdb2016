@@ -537,8 +537,18 @@ iframe {
   border-bottom: 1px dotted rgba($brown, 0.75);
   margin-bottom: 10px;
   padding-bottom: 10px;
-  .fa {
-    margin-top: 18px;
+  .big-icon {
+    font-size: 220%;
+    color: $brand-primary;
+    margin-top: 20px;
+    padding: 12px 10px;
+    width: 55px;
+    height: 55px;
+    border: 1px solid $brand-primary;
+    @include round-corners(50%);
+    &.wrench {
+      padding-top: 10px;
+    }
   }
   .title {
     color: $brand-primary;

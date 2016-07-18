@@ -275,6 +275,10 @@ speakers:
       -
         title: 'From Zero to Hero With Spring Boot'
         type: 'talk'
+      -
+        title: '40 Tips & Tricks for Spring in IntelliJ IDEA'
+        type: 'talk'
+        secondspeaker: ''
     tags:
       - java
   -
@@ -288,6 +292,7 @@ speakers:
       -
         title: '40 Tips & Tricks for Spring in IntelliJ IDEA'
         type: 'talk'
+        secondspeaker: 'Stéphane Nicoll'
     tags:
       - tooling
   -
@@ -1133,7 +1138,10 @@ speakers:
     company: 'SourceLiar'
     talk:
       -
-        title: 'Docker 1.12: Orchestration, containers and beyond i Creating a cloud native development environment'
+        title: 'Docker 1.12: Orchestration, containers and beyond'
+        type: 'talk'
+      -
+        title: 'Creating a cloud native development environment'
         type: 'talk'
     tags:
       - docker
