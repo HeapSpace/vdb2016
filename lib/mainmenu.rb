@@ -39,16 +39,7 @@ include Nanoc::Helpers::LinkTo
 #   # => '<a title="My super cool blog" href="/blog/">Blog</a>'
 def link_menu(text, target, attributes = {})
   # Find path
-  path =
-    case target
-    when String
-      target
-    when Nanoc::ItemWithRepsView, Nanoc::ItemWithoutRepsView, Nanoc::ItemRepView
-      raise "Cannot create a link to #{target.inspect} because this target is not outputted (its routing rule returns nil)" if target.path.nil?
-      target.path
-    else
-      raise ArgumentError, "Cannot link to #{target.inspect} (expected a string or an item, not a #{target.class.name})"
-    end
+  path = target.is_a?(String) ? target : target.path
 
   # Join attributes
   attributes = attributes.reduce('') do |memo, (key, value)|
@@ -56,7 +47,17 @@ def link_menu(text, target, attributes = {})
   end
 
   # Create link
-  "<li class=\"menu_item\"><a #{attributes} href=\"#{h path}\" class=\"item_link\" data-toggle=\"collapse\" data-target=\"#mainmenu\">#{text}</a></li>"
+  "<li class=\"menu_item\"><a #{attributes} href=\"#{h path}\" class=\"item_link \" data-toggle=\"collapse\" data-target=\"#mainmenu\">#{text}</a></li>"
+end
+
+def links_for_submenu(submenu_array)
+  allitems = ''
+  submenu_array.each do |subitem|
+    itemlink = '/'+subitem+'/'
+
+    allitems += "<li class=\"menu_item\"><a href=\"#{itemlink}\" class=\"item_link\" data-toggle=\"collapse\" data-target=\"#mainmenu\">#{subitem.capitalize}</a></li>"
+  end
+  return allitems
 end
 
 # Creates a HTML link using {#link_to}, except when the linked item is
@@ -83,15 +84,35 @@ end
 #
 #   link_to_unless_current('This Item', @item)
 #   # => '<span class="active">This Item</span>'
-def link_to_unless_current(text, target, attributes = {})
+def link_to_unless_current(text, target, submenu = [], attributes = {})
   # Find path
-  path = target.is_a?(String) ? target : target.path
 
-  if @item_rep && @item_rep.path == path
-    # Create message
-    "<li class=\"menu_item active\">#{text}</li>"
+  path = target.is_a?(String) ? target : target.path
+  itempath = @item_rep.path.to_s.delete('/')
+
+  if submenu.include?(itempath)
+    itemtitle = itempath.capitalize
+    itemclass = "active"
   else
-    link_menu(text, target, attributes)
+    itemtitle = text
+    itemclass = ""
+  end
+
+  if submenu.kind_of?(Array) && submenu.any?
+    "<li class=\"menu_item\">
+      <a href=\"#{target}\" class=\"item_link #{itemclass} dropdown-toggle\" data-toggle=\"dropdown\">#{itemtitle} <b class=\"caret\"></b></a>
+      <ul class=\"dropdown-menu multi-level\">
+          #{links_for_submenu(submenu)}
+      </ul>
+    </li>"
+  else
+    if @item_rep && @item_rep.path == path
+      # Create message
+      "<li class=\"menu_item active\">#{text}</li>"
+    else
+
+      link_menu(text, target, attributes)
+    end
   end
 end
 

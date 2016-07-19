@@ -133,9 +133,11 @@ speakers:
         title: 'Faster and more efficient processes by combining BPM and Mobile'
         type: 'talk'
         short:
-          - "TBA"
+          - "A lot has happened in the area of mobile since Apple kicked off the revolution by announcing the first iPhone. However, the overall mobile market still has to be considered as young and especially unstandardized. This really puts a lot of organizations in front of huge challenges concerning the efficient development of mobile applications and the secure integration into backend IT systems. - But there is no way around mobile in the next years! The smart combination of mobile techniques (mBaaS, microservices, etc.) and business process management approaches will definitely drive process efficiency and speed to a whole new level."
+          - "In this presentation I will outline the floating icebergs you should look at when implementing mobile and BPM in your enterprise. In addition to that you will learn how other companies have successfully implemented mobile to optimize their processes."
         long:
-          - "TBA"
+          - "A lot has happened in the area of mobile since Apple kicked off the revolution by announcing the first iPhone. However, the overall mobile market still has to be considered as young and especially unstandardized. This really puts a lot of organizations in front of huge challenges concerning the efficient development of mobile applications and the secure integration into backend IT systems. - But there is no way around mobile in the next years! The smart combination of mobile techniques (mBaaS, microservices, etc.) and business process management approaches will definitely drive process efficiency and speed to a whole new level."
+          - "In this presentation I will outline the floating icebergs you should look at when implementing mobile and BPM in your enterprise. In addition to that you will learn how other companies have successfully implemented mobile to optimize their processes."
         day: 1
         track: 4
         slot: '09:00'
@@ -711,9 +713,11 @@ speakers:
         title: 'Reactive Database Mapping with Scala and Slick'
         type: 'talk'
         short:
-          - "TBA"
+          - "Are you familiar with Object-Relational Mapping? Let's get out of the comfort zone and meet a completely different approach to mapping database tables to domain objects using Scala's Slick library during this no-fluff-just-code live-coding session."
         long:
-          - "TBA"
+          - "Are you familiar with Object-Relational Mapping? Let's get out of the  comfort zone and meet a completely different approach to mapping database tables to domain objects using Scala's Slick library during this no-fluff-just-code live-coding session."
+          - "Slick does what some call FRM, i.e. Functional-Relational Mapping (as opposed to ORM), which basically lets you access your relational database as if it was a Scala collection."
+          - "And since reactive is THE way to go nowadays, we' re going to be no different."
     tags:
       - db
       - scala
@@ -1112,9 +1116,25 @@ speakers:
         secondspeaker: 'Maja Nedučić'
         type: 'workshop'
         short:
-          - "TBA"
+          - "Happiness at work is one of the 3 most important sources of happiness in life."
+          - "You will spend 1/3 of your life at work. If you are unhappy at work, life becomes hell."
+          - "By participating in a workshop on happiness at work any group of people can become aware of its possibilities."
         long:
-          - "TBA"
+          - "Happiness at work is one of the 3 most important sources of happiness in life."
+          - "You will spend 1/3 of your life at work. If you are unhappy at work, life becomes hell."
+          - "By participating in a workshop on happiness at work any group of people can become aware of its possibilities within one hour."
+          - "----"
+          - "The focus of the workshop is to create more awareness on the subject:"
+          - "• What makes me happy at work? - and no, it's not raises, bonuses and perks."
+          - "• What can I do to implement this directly in my work?"
+          - "----"
+          - "Results of the workshop"
+          - "• You become more aware of your own thoughts and emotions and the possibility to influence them. "
+          - "• You experience the power of happiness at work."
+          - "• Through this experience you become more creative, productive and self-secure. You feel more resilient and better able to cope with change and stress."
+          - "----"
+          - "Happiness at work makes you more effective: it has a positive influence on you, your team and your organization."
+          - "The workshop is interactive and asks for active participation of everyone involved."
         day: 1
         track: 0
         slot: '09:00'
@@ -1134,9 +1154,25 @@ speakers:
         secondspeaker: 'Maja Božić'
         type: 'workshop'
         short:
-          - "TBA"
+          - "Happiness at work is one of the 3 most important sources of happiness in life."
+          - "You will spend 1/3 of your life at work. If you are unhappy at work, life becomes hell."
+          - "By participating in a workshop on happiness at work any group of people can become aware of its possibilities."
         long:
-          - "TBA"
+          - "Happiness at work is one of the 3 most important sources of happiness in life."
+          - "You will spend 1/3 of your life at work. If you are unhappy at work, life becomes hell."
+          - "By participating in a workshop on happiness at work any group of people can become aware of its possibilities within one hour."
+          - "----"
+          - "The focus of the workshop is to create more awareness on the subject:"
+          - "• What makes me happy at work? - and no, it's not raises, bonuses and perks."
+          - "• What can I do to implement this directly in my work?"
+          - "----"
+          - "Results of the workshop"
+          - "• You become more aware of your own thoughts and emotions and the possibility to influence them. "
+          - "• You experience the power of happiness at work."
+          - "• Through this experience you become more creative, productive and self-secure. You feel more resilient and better able to cope with change and stress."
+          - "----"
+          - "Happiness at work makes you more effective: it has a positive influence on you, your team and your organization."
+          - "The workshop is interactive and asks for active participation of everyone involved."
     tags:
       - business
   -
@@ -1272,9 +1308,9 @@ speakers:
         title: 'Sex Lies and Design patterns'
         type: 'talk'
         short:
-          - "TBA"
+          - "A."
         long:
-          - "TBA"
+          - ""
     tags:
       - design patterns
   -
@@ -1315,9 +1351,9 @@ speakers:
         title: 'Lift framework in 45 minutes'
         type: 'talk'
         short:
-          - "TBA"
+          - "In 45 minutes I want to build a full blown web app based on Lift framework to show of its key features."
         long:
-          - "TBA"
+          - "In 45 minutes I want to build a full blown web app based on Lift framework to show of its key features. It will be a live coding session for beginners."
     tags:
       - scala
       - web
@@ -1423,9 +1459,12 @@ speakers:
         title: 'Finding Your Perfect Weather with Apache Spark and Docker'
         type: 'talk'
         short:
-          - "TBA"
+          - "This presentation tells a story of a hackathon project where mixing a cool idea with the latest technologies resulted in the grand prize and the fan favourite award of the IBM Sparkathon with nearly 600 participants. It will describe the key technologies used and how they were effectively combined in a short period of time. Psst... it will also share a secret recipe for a success in a hackathon... but don't tell anyone!"
         long:
-          - "TBA"
+          - "This presentation tells a story of a hackathon project where mixing a cool idea with the latest technologies resulted in the grand prize and the fan favourite award of the IBM Sparkathon with nearly 600 participants. It will describe the key technologies used and how they were effectively combined in a short period of time. Psst... it will also share a secret recipe for a success in a hackathon... but don't tell anyone!"
+          - "I would like to share my passion for Spark, Docker and Scala."
+          - "Here's the original project page: http://devpost.com/software/my-perfect-weather"
+          - "And the actual service runs here (still in Beta): http://myperfectweather.eu"
     tags:
       - scala
       - docker
@@ -1543,9 +1582,9 @@ speakers:
         title: 'SASI, Cassandra on the full text search ride!'
         type: 'talk'
         short:
-          - "TBA"
+          - "Apache Cassandra is a scalable database with high availability features. But they come with severe limitations in term of querying capabilities. Since the introduction of SASI in Cassandra 3.5, the limitations belong to the pass. Now you can create performant indices on your columns as well as benefit from full text search capabilities with the introduction of the new `LIKE %term%` syntax. To illustrate how SASI works, we'll use a database of 100 000 albums and artists. We'll also show how SASI can help to accelerate analytics scenarios with Spark using SparkSQL predicate-pushdown"
         long:
-          - "TBA"
+          - "Apache Cassandra is a scalable database with high availability features. But they come with severe limitations in term of querying capabilities. Since the introduction of SASI in Cassandra 3.5, the limitations belong to the pass. Now you can create performant indices on your columns as well as benefit from full text search capabilities with the introduction of the new `LIKE %term%` syntax. To illustrate how SASI works, we'll use a database of 100 000 albums and artists. We'll also show how SASI can help to accelerate analytics scenarios with Spark using SparkSQL predicate-pushdown"
     tags:
       - bigdata
   -
