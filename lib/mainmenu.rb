@@ -53,9 +53,10 @@ end
 def links_for_submenu(submenu_array)
   allitems = ''
   submenu_array.each do |subitem|
+    subtitle = subitem.gsub('-', ' ')
     itemlink = '/'+subitem+'/'
 
-    allitems += "<li class=\"menu_item\"><a href=\"#{itemlink}\" class=\"item_link\" data-toggle=\"collapse\" data-target=\"#mainmenu\">#{subitem.capitalize}</a></li>"
+    allitems += "<li class=\"menu_item\"><a href=\"#{itemlink}\" class=\"item_link\" data-toggle=\"collapse\" data-target=\"#mainmenu\">#{subtitle.slice(0,1).capitalize + subtitle.slice(1..-1)}</a></li>"
   end
   return allitems
 end
@@ -91,7 +92,8 @@ def link_to_unless_current(text, target, submenu = [], attributes = {})
   itempath = @item_rep.path.to_s.delete('/')
 
   if submenu.include?(itempath)
-    itemtitle = itempath.capitalize
+    itemtitle = itempath.slice(0,1).capitalize + itempath.slice(1..-1)
+    itemtitle = itemtitle.gsub('-', ' ')
     itemclass = "active"
   else
     itemtitle = text
