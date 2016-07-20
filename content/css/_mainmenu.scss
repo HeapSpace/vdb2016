@@ -101,7 +101,7 @@
     margin: 0;
     padding: 0;
   }
-  @media (max-width: $screen-md) {
+  @media (max-width: $screen-lg) {
     position: relative !important;
     width: 100%;
   }
@@ -112,7 +112,7 @@
       padding-top: 1em !important;
       color: $white;
       font-weight: 300;
-      @media (max-width: $screen-md) {
+      @media (max-width: $screen-lg) {
         text-align: center !important;
       }
       &:hover {
