@@ -57,7 +57,7 @@
 			<h5>Website</h5>
 				<a href="http://belexpocentar.rs" target="_blank">belexpocentar.rs</a>
 		</div>
-		<div id="map"></div>
+		<div id="faqmap" class="map"></div>
 	</div>
 
 	<!-- end map -->
@@ -128,6 +128,6 @@
 
 	<%= render '/_footer.html'%>
 	<%= render '/_bottomscripts.html'%>
-
+	<%= map_on_page('/faq-and-notes/', 'faqmap', '44.809871', '20.413875', 'map-pin-vdb.png') %>
 </body>
 </html>

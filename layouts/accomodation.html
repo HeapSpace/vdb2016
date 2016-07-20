@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_share %>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+	<div class="main-bg page"></div>
+
+	  <h1 class="text-center pad-vertical-big">
+	    Some nice offers<br><span class="yellow"> from various hotels</span>
+	  </h1>
+	  <!-- <div class="row-centered">
+			<div class="col-sm-8 col-centered">
+				<h4 class="text-center plain">Voxxed Days Belgrade is organized by the team of enthusiasts who believe that growth is possible only through sharing of top knowledge and awesome energy!<br><br>We are active members of <span class="yellow"><a href="http://heapspace.rs" target="_blank">HeapSpace</a></span> community,<br>in charge of raising the technological community of Serbia onto the whole new level.</h4>
+			</div>
+		</div> -->
+
+		<div class="steam-separator"></div>
+
+
+	<!-- map -->
+	<h3 class="yellow bold text-center">Excelsior <span class="accent">Hotel</span></h3>
+	<div class="map-holder">
+		<div class="map-info hotel visible-lg">
+			<h3 class="yellow">Hotel Excelsior</h3>
+			<div>
+				<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><br /><br />
+			</div>
+			<h5>Address</h5>
+				<span class="brown">Kneza Miloša 5<br>Belgrade, Serbia</span><br><br>
+			<h5>Website</h5>
+				<a href="http://www.hotelexcelsior.co.rs/" target="_blank">hotelexcelsior.co.rs</a>
+		</div>
+		<div id="excelsior" class="map"></div>
+	</div>
+	<!-- end map -->
+
+		<!-- map -->
+		<h3 class="yellow bold text-center margin-top-big">In <span class="accent">Hotel</span></h3>
+		<div class="map-holder">
+			<div class="map-info hotel visible-lg">
+				<h3 class="yellow">IN Hotel</h3>
+				<div>
+					<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><br /><br />
+				</div>
+				<h5>Address</h5>
+					<span class="brown">Blvd Arsenija Carnojevica 56<br>Belgrade, Serbia</span><br><br>
+				<h5>Website</h5>
+					<a href="http://www.inhotel-belgrade.rs/" target="_blank">inhotel-belgrade.rs</a>
+			</div>
+			<div id="inhotel" class="map"></div>
+		</div>
+		<!-- end map -->
+
+			<!-- map -->
+			<h3 class="yellow bold text-center margin-top-big">Tulip Inn <span class="accent">Hotel</span></h3>
+			<div class="map-holder">
+				<div class="map-info hotel visible-lg">
+					<h3 class="yellow">Tulip Inn</h3>
+					<div>
+						<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><br /><br />
+					</div>
+					<h5>Address</h5>
+						<span class="brown">Palmira Toljatija 9<br>Belgrade, Serbia</span><br><br>
+					<h5>Website</h5>
+						<a href="http://www.tulipinnputnikbelgrade.com/en" target="_blank">tulipinnputnikbelgrade.com</a>
+				</div>
+				<div id="tulipinn" class="map"></div>
+			</div>
+			<!-- end map -->
+
+		<div class="steam-separator"></div>
+
+	<div class="footer-cta-block info margin-top-big">
+	  <%= render '/_footer_cta.html' %>
+	</div>
+
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+	<%= map_on_page('/accomodation/', 'excelsior', '44.809818', '20.4633006', 'hotel-pin-vdb.png') %>
+	<%= map_on_page('/accomodation/', 'inhotel', '44.8115918', '20.4217173', 'hotel-pin-vdb.png') %>
+	<%= map_on_page('/accomodation/', 'tulipinn', '44.8300522', '20.4102375', 'hotel-pin-vdb.png') %>
+</body>
+</html>

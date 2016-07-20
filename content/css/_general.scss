@@ -101,13 +101,16 @@
     height: 300px;
     width: 300px;
     background: rgba(17,14,11,0.8);
-    z-index: 100;
+    z-index: 9;
     right: 0;
     padding: 15px 30px;
+    &.hotel {
+      height: 320px;
+    }
   }
 }
 
-#map {
+#map, .map {
   height: 500px;
   margin: 55px 0 25px 0;
 }
@@ -394,11 +397,20 @@ iframe {
     &.limit55 {
       max-height: 55px;
     }
+    &.limit50 {
+      max-height: 50px;
+    }
     &.limit45 {
       max-height: 45px;
     }
+    &.limit40 {
+      max-height: 40px;
+    }
     &.limit35 {
       max-height: 35px;
+    }
+    &.limit30 {
+      max-height: 30px;
     }
     &.limit25 {
       max-height: 25px;
