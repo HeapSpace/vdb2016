@@ -42,8 +42,8 @@ $(document).ready(function() {
          });
      });
 
-
-    $('#home-main-text').css('padding-top', $(window).height()/2.8);
+    // $('#home-main-text').css('padding-top', $(window).height()/2.8);
+    $('[data-toggle="popover"]').popover();
 
     // init controller
     var controller = new ScrollMagic.Controller();

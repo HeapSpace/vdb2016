@@ -2,6 +2,27 @@
 @import "mixins";
 
 /* centered columns styles */
+p {
+  margin: 25px 0;
+}
+
+.latest-tweet {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+[role="tooltip"] {
+  position: fixed;
+  right: 50px;
+  top: 10px;
+  div.arrow {
+    display: none;
+  }
+}
+
 .row-centered {
     text-align:center;
     &.flex {
@@ -237,7 +258,7 @@
 }
 
 .pad-vertical-big {
-  padding: 210px 0;
+  padding: 210px 0 105px 0;
 }
 
 .pad-vertical-med {
@@ -581,7 +602,9 @@ iframe {
     margin-bottom: 20px;
   }
   .text {
-    font-size: 120%;
+    font-size: 130%;
+    font-weight: 300;
+    font-family: "Roboto";
     color: rgba($white, 0.8);
     text-align: left;
   }
@@ -591,6 +614,17 @@ iframe {
     padding-top: 5px;
     .tag {
       font-size: 90%;
+      display: inline-block;
+    	background-color: rgba($brand-secondary, 0.2);
+    	color: $brand-secondary;
+  	  font-size: 14px;
+      font-family: "Roboto Slab";
+      font-weight: 400;
+    	line-height: 10px;
+    	padding: 10px 9px 9px 9px;
+    	margin: 0 10px 0 0;
+    	cursor: pointer;
+    	@include round-corners(16px);
     }
   }
 }
@@ -917,14 +951,35 @@ button, a[role="button"] {
   text-align: center;
   color: $white;
   margin: 0 0 30px 0;
-  h6 {
-    margin-bottom: 0px;
+  h6, h5, h4 {
+    margin: 10px 0 0 0;
   }
   .company {
     border-bottom: 1px dotted rgba($brown, 0.75);
     padding-bottom: 15px;
     margin-bottom: 10px;
     color: $white;
+  }
+  .photo-frame {
+    padding: 16px;
+    width: 180px;
+    height: 180px;
+    background-size: cover;
+    background-position: top;
+    background-image: url(../images/speaker-frame-small.svg);
+    margin: 0 auto 10px auto;
+    img {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 15px auto;
+      border: 2px solid $body-bg;
+      @include round-corners(50%);
+      &.home {
+        width: 100px;
+        height: 100px;
+      }
+
+    }
   }
   .photo {
     background-size: cover;

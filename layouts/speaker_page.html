@@ -15,11 +15,13 @@
 			<h1 class="text-center">
 		    <%= @item[:firstname] %><br><span class="yellow"><%= @item[:lastname] %></span>
 		  </h1>
-			<div class="photo" style="background-image: url('/images/speakers/<%= @item[:photo] %>')"></div>
+			<div class="photo-frame">
+				<img src="/images/speakers/<%= @item[:photo] %>" />
+			</div>
 			<% if !@item[:url].to_s.empty? then %><a href="<%= @item[:url] %>" target="_blank"><%= @item[:url] %></a><% end %>
-			<h6 class="">
+			<h4 class="bold">
 				<%= @item[:company] %>
-			</h6>
+			</h4>
   	</div>
 
 	  <div class="row-centered margin-top-big">
