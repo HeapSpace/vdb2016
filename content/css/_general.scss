@@ -624,6 +624,20 @@ iframe {
     &.fa-microphone, &.fa-bolt, &.fa-link {
       padding-top: 12px;
     }
+    &.card {
+      padding: 8px;
+      width: 45px;
+      height: 45px;
+      font-size: 180%;
+      color: $brand-secondary;
+      border: 1px solid $brand-secondary;
+      &.fa-link {
+        padding-top: 10px;
+      }
+      &:hover {
+        color: $brand-primary;
+      }
+    }
   }
   .title {
     color: $brand-primary;
@@ -646,7 +660,10 @@ iframe {
     text-align: left;
     margin-bottom: 15px;
     padding-top: 5px;
-    min-height: 37px;
+    &.card {
+      margin-bottom: 10px;
+      padding-top: 3px;
+    }
     .tag {
       font-size: 90%;
       display: inline-block;
@@ -999,18 +1016,20 @@ button, a[role="button"] {
     color: $white;
   }
   .photo-frame {
-    padding: 16px;
+    padding: 15px;
     width: 180px;
     height: 180px;
     background-size: cover;
     background-position: top;
     background-image: url(../images/speaker-frame-small.svg);
     margin: 0 auto 10px auto;
-    img {
+    div {
       width: 150px;
       height: 150px;
       margin: 0 auto 15px auto;
       border: 2px solid $body-bg;
+      background-size: cover;
+      background-position: top;
       @include round-corners(50%);
       &.home {
         width: 100px;

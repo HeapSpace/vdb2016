@@ -16,7 +16,7 @@
 	      <div class="speaker">
 
 					<div class="photo-frame">
-						<img src="/images/speakers/<%= @item[:photo] %>" />
+							<div style="background-image: url('/images/speakers/<%= @item[:photo] %>');"></div>
 					</div>
 					<h4 class="text-center">
 				    <a href="/speakers/<%= @item[:speakerpage] %>/"><span class="yellow bold"><%= @item[:speaker] %></span></a>
@@ -29,7 +29,7 @@
 			<div class="col-sm-7 col-centered">
 				<div class="single-talk">
 					<h2 class="card-title">
-				    <span class="yellow bold"><%= @item[:title] %></span></a>
+				    <span class="accent bold"><%= @item[:title] %></span></a>
 				  </h2>
 					<div id="talk-desc" class="text">
 						<% @item[:short].to_a.each do |p| %>
@@ -42,11 +42,11 @@
 						<img class="card-logo" src="/images/home-logo-small.png" /> 29. Sep <span class="yellow">/</span> 10:00 <span class="yellow">/</span> Track 2 <span class="yellow">/</span> Venue 3
 					</h4> -->
 					<div class="talk-circle-links pull-right">
-						<a href="/speakers/<%= @item[:speakerpage] %>/"><i class="fa fa-user big-icon"></i></a> <% if !@item[:personalurl].to_s.empty? then %><a href="<%= @item[:personalurl] %>" target="_blank"><i class="fa fa-link big-icon"></i></a><% end %>
+						<a href="/speakers/<%= @item[:speakerpage] %>/"><i class="fa fa-user big-icon card"></i></a> <% if !@item[:personalurl].to_s.empty? then %><a href="<%= @item[:personalurl] %>" target="_blank"><i class="fa fa-link big-icon card"></i></a><% end %>
 					</div>
 				</div>
 				<div class="single-talk">
-					<div class="tags">
+					<div class="tags card">
 						<%  @item[:tags].to_a.each do |tag| %>
 							<span class="tag card">
 									<%= tag %>
