@@ -14,7 +14,7 @@ preprocess do
       jsonnew_schedule_items = schedule_items
       File.open("content/vdb16all.json","w") do |f|
         # f.write(schedule_items.to_json)
-        f.puts jsonnew_schedule_items.to_json.force_encoding("ISO-8859-1")
+        f.puts jsonnew_schedule_items.to_json.force_encoding("UTF-8")
       end
       schedule_items.each do |speaker|
         speakername = speaker[:firstname].to_s+' '+speaker[:lastname].to_s
