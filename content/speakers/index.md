@@ -316,9 +316,11 @@ speakers:
         title: 'Don`t be left out: How to develop software in a distributed team'
         type: 'talk'
         short:
-          - "TBA"
+          - "Working with a team on the other side of the world can be a lonely, frustrating experience. But with the right attitude, practices, and tools, it could just be the most effective way to build software with others. Learn how I moved to the other side of the world and stayed productive without changing teams."
         long:
-          - "TBA"
+          - "Working with a team on the other side of the world can be a lonely, frustrating experience. But with the right attitude, practices, and tools, it could just be the most effective way to build software with others. Learn how I moved to the other side of the world and stayed productive without changing teams."
+          - "In this talk, you’ll learn about the joy of having all your code reviewed while you sleep. You’ll learn of the pain of waiting for a whole day for an answer to an important question. But above all, you’ll learn what you need to do to be able to work productively when your team is ten long hours away."
+          - "See how I use tools such as Floobits for real-time remote pairing, and HipChat for asynchronous stand-ups to keep the team on the same page across timezones."
     tags:
       - distributed systems
   -
@@ -474,9 +476,13 @@ speakers:
         title: 'Narrative Language of Virtual Reality'
         type: 'talk'
         short:
-          - "TBA"
+          - "VR is not just a 'cutting edge technology' but also a medium capable to immerse the viewer/player in another dimension and convey strong emotions. How to do so in the right way? Which techniques and tools content creators can use to convey such feelings? If the cinematic medium has a 'language', what's about VR? How to create contents with awareness?"
         long:
-          - "TBA"
+          - "Since Virtual Reality is still a developing concept, we are at that stage I would call the 'democratization of the discovery.' Everyone could have access to this technology and all could potentially contribute to its accomplishment. I, therefore, felt an urge to be involved with this project, trying to explore some of the aspects of this new and exciting technological breakthrough. However, the entertainment aspect of Virtual Reality, especially the way it allows storytelling is what attracts me the most to this product. That said if you tell a story as though you would in the film, you would soon meet problems, which would raise doubts and queries. It seems that applying the general audio-visual ‘rules’ achieved whilst watching a film or any other audio-visual content is not possible. One must take into consideration new factors which require ample research focused on studying and synthesizing a new language, a language that is specific and adequate to VR technology."
+          - "This paper, therefore, aims to explore as deeply as possible, with the entail means and limitations, what are the ‘semantic factors’, the ‘vocabulary’, the ‘techniques’ that can elevate VR from just an advanced technological product to a real communication means. To do this, it was necessary to keep in mind the language closest to that of VR, the cinematic one. Thanks to the use of specific texts, alongside the knowledge in the appearance of audio-visual content acquired both through my academic career and through literature, it was possible to decipher the language used in VR, often comparing it to the one used in film. It was necessary to determine which 'words' you could translate into Virtual Reality directly, the ones which needed adjustments and finally the words which ultimately could not be translated at all. "
+          - "In parallel to this translation, it was also crucial to pay close attention to all the features that made Virtual Reality a means of communication in its own right, those factors that characterized VR and gave it an identity of its own. It was further important to ‘test’ a large number of experiences currently available to understand what these various creators of VR experiences did to convey certain emotions and meanings to their audience. In the same way, it’s been extremely useful to listen and see what these c reators expressed during the main events focused on VR like the ‘Oculus Connect’ and ‘SVVR Expo’, thanks to video sharing platforms like YouTube. Support from the study Bully! Entertainment was essential. It allowed me to use all their equipment at the forefront of Virtual Reality and at the same time gave me the opportunity to ￼5 “Narrative Language of Virtual Reality” Aimone Bodini analyze qualitatively VR experiences through the exchange of opinions and thoughts with professionals within the studio. "
+          - "This research is divided into two main parts. Initially, the reader is given an introduction to the historical context of VR, briefly explaining the advancements in this technology to date as well as introducing the key figures within this field. The first part analyzes the literature available, explaining the methodology of this research and the tools that will be used to define VR language. The second part starts with a brief explanation of the human eye, how stereoscopy works, defining what is the field of view and how these features are fundamental for VR. Subsequently, the focus will shift towards the main feature of VR, or the so-called sense of 'presence' explaining the meaning and requirements necessary to create it. "
+          - "The relationship with characters in Virtual Reality must also be understood and is discussed throughout as it changes the relationship that they establish with the audience is different to that through mediums such as literature or cinema. Exploring how editing works in this field is also detrimental to understanding what can be translated from the cinematic field and where new ways must be devised in terms of “Cutting” that VR allows. The technology specific to VR is also described, in terms of both the 3 and 6 degrees of freedom, as well as explaining how it can be used creatively for narrative purposes from editing to interacting with the environment and characters. The exploration of this newly discovered language that the world hides behind single details and this topic of research requires much broader and deeper research that what was initially thought. What has been explored here is a first step in decoding the narrative language in Virtual Reality, which just scraped the tip of the iceberg. This is an important step in encouraging other researchers and scholars to demystify this area. Overall, this research is proof that VR has a language of its own and demonstrates that the knowledge of this language is fundamental to convey the correct emotions and to fully immerse the user in Virtual Reality. "
     tags:
   -
     firstname: 'Alexey'
@@ -491,7 +497,7 @@ speakers:
         title: 'Automate the Mobile'
         type: 'talk'
         short:
-          - "TBA"
+          - "If you are starting serious with Mobile development for multiple platforms you need to have a plan! Let's discuss what could you use to setup a Mobile Infrastructure Landscape."
         long:
           - "TBA"
     tags:
@@ -509,9 +515,17 @@ speakers:
         title: 'Angular, Typescript and RequireJS: The great alltogether'
         type: 'talk'
         short:
-          - "TBA"
+          - "When you are doing front-end web development, three technologies are currently very hot! On top of that they seem to be made for each other."
+          - "You will come across AngularJS to structure your application logically, do databinding and create a responsive single page application."
+          - "RequireJS is used to do lazy loading of JavaScript files and to get some much needed dependency management within JavaScript. But RequireJS and JavaScript can be very complex. JavaScript is not a very simple language to write your logic in! It is not object oriented, it is weakly typed and it has lot of strange language constructs!"
+          - "Typescript is a new scripting language based on ECMA 6. It will give you true object orientation, strong typing and built in support for modules with RequireJS. And it compiles to just JavaScript so it runs in any browser!"
+          - "In this session I will explain how we used Angluar, TypeScript and RequireJs to create interactive web applications. You will learn how these three technologies work together and I will explain our best practices when building these front-ends. Iwill be showing some of our real life applications to explain the different concepts."
         long:
-          - "TBA"
+          - "When you are doing front-end web development, three technologies are currently very hot! On top of that they seem to be made for each other."
+          - "You will come across AngularJS to structure your application logically, do databinding and create a responsive single page application."
+          - "RequireJS is used to do lazy loading of JavaScript files and to get some much needed dependency management within JavaScript. But RequireJS and JavaScript can be very complex. JavaScript is not a very simple language to write your logic in! It is not object oriented, it is weakly typed and it has lot of strange language constructs!"
+          - "Typescript is a new scripting language based on ECMA 6. It will give you true object orientation, strong typing and built in support for modules with RequireJS. And it compiles to just JavaScript so it runs in any browser!"
+          - "In this session I will explain how we used Angluar, TypeScript and RequireJs to create interactive web applications. You will learn how these three technologies work together and I will explain our best practices when building these front-ends. Iwill be showing some of our real life applications to explain the different concepts."
     tags:
       - javascript
   -
@@ -527,9 +541,19 @@ speakers:
         title: 'Your Favourite New Language - The Future of Swift'
         type: 'talk'
         short:
-          - "TBA"
+          - "Whilst open sourcing a language is nothing new, Apple's unprecedented step has caused massive excitement and activity for this new language, with a flurry of development and contributions."
+          - "In this presentation I would like to explore the current potential of Swift and what's going to be possible in the future."
         long:
-          - "TBA"
+          - "Whilst open sourcing a language is nothing new, Apple's unprecedented step has caused massive excitement and activity for this new language, with a flurry of development and contributions."
+          - "In this presentation I would like to explore the current potential of Swift and what's going to be possible in the future."
+          - "I will cover:"
+          - "• What can be accomplished with 'open' Swift"
+          - "• What's missing from 'open' Swift"
+          - "• Back end Swift and MVC"
+          - "• Swift on non-Mac desktops"
+          - "• Swift on non-iOS mobile devices"
+          - "• Extending Swift"
+          - "• What's next?"
     tags:
       - ios
       - mobile
@@ -546,9 +570,11 @@ speakers:
         title: 'The lost medium'
         type: 'talk'
         short:
-          - "TBA"
+          - "From the handaxe to the light bulb, the wheel to the car, the printing press to the television: all these tools and media have changed our world thoroughly. And not only that, but also how we interact with the world. The computer brings us into a unique position to have an impact that lasts longer than only the next iteration of a new technology. What happens when we see ourselves not only as developers and designers, but reconsider the interaction between people and computers in general?"
         long:
-          - "TBA"
+          - "We are 50 years into the computer revolution, at what feels like our moment of greatest progress. There is technology easily worth one million dollars in a smartphone. The phone, calculators, cameras, games, music and video players. All of which at the date of release have cost more than a phone itself, when it first entered the market. Today's ubiquitous graphical user interface has its roots in concepts dating back to the mid-'60s. These concepts were then further developed at XEROX Parc in the '70s, and successfully commercialized in the Apple Macintosh in the early '80s, whereupon they essentially froze. "
+          - "Now, despite thousand-fold improvements along every technological dimension, the concepts behind today's interfaces are almost identical to those in the initial Mac. This talk will focus on these ideas and try to convey the computer as a new medium, similar as the printing press, the radio, the TV and the car are and were. "
+          - "To make progress as humanity we have to focus on media and tools will have an impact that lasts longer than the next iteration of a new technology. Marshall McLuhan once famously said 'we shape our tools and thereafter our tools shape us'. We have to start shaping our tools - the computer - and tackle problems such as collaboration, invent better principles than pencil and paper thinking and have to come up with better paradigms. Otherwise, we will not shape our tools - they will shape us. "
     tags:
       - ai
       - ux/ui
@@ -565,9 +591,11 @@ speakers:
         title: 'Chatbots as new apps for mobile messengers'
         type: 'talk'
         short:
-          - "TBA"
+          - "Chatbots will be one of the next big evolutions of mobile messengers and they are changing the way how users interact with a service. I will give an overview on existing messenger and chatbot platforms and how they differentiate from each other, not only in terms of technical specifications but also in terms of which different UI elements they are providing to enrich the communication within a messenger."
         long:
-          - "TBA"
+          - "Messengers now have an incredible reach and in 2015 messaging apps have overtaken social networks to become the dominant platforms on mobile phones. Chatbots will be one of the next big evolutions of mobile messengers and they are changing the way how users interact with a service. People are downloading fewer apps, and bots within messengers are quickly becoming a new way to enrich these platforms with context from outside. Messengers like WeChat already showed how to build a truly mobile platform with a pioneering model of 'apps within an app'. Adding a chatbot has a way lower barrier for users, since there’s no need to go to an appstore and download an app, it can just be added as a contact. This is super effective for lower-frequency but important services like managing credit card statements, utility bills or recurring shop orders. For these use cases, chatbots are a perfect fit since adding the bot is extremely lightweight instead of downloading a separate native full-featured apps."
+          - "Chatbots unify the UI and the interaction with a service even more than mobile apps do. They have the potential to be easier to use and learnings to be transferred from one to the other. Users do not have to learn the UI from scratch because they are already familiar with the core UI and interaction concepts from chatting with other people."
+          - "This talk is an overview on existing messenger and messenger bot platforms, how they differentiate from each other, not only in terms of technical specifications but also in terms of which different UI elements they are providing to enrich the communication within a messenger. Furthermore I will provide best practices and personal experiences for developing and building chatbots from a technical point of view as well as for designing a great user experience within a messaging app."
     tags:
       - ux/ui
   -
@@ -583,9 +611,15 @@ speakers:
         title: 'Journey to APIs and Microservices: Best practices from successful transformations'
         type: 'talk'
         short:
-          - "TBA"
+          - "To survive today, companies are asking themselves ‘How can we be more agile in meeting customer needs?’ Wikipedia defines Agility as “The capability of rapidly and cost efficiently adapting to changes”. Gartner defines Agility as “The ability of an organization to sense environment change and to respond efficiently and effectively to it”."
         long:
-          - "TBA"
+          - "To survive today, companies are asking themselves ‘How can we be more agile in meeting customer needs?’ Wikipedia defines Agility as “The capability of rapidly and cost efficiently adapting to changes”. Gartner defines Agility as “The ability of an organization to sense environment change and to respond efficiently and effectively to it”."
+          - "Agility is enabled by systems that are flexible and extensible. "
+          - "IEEE Standard Glossary of Software Engineering Technology defines Flexibility as the ease with which a system or component can be modified for use in applications or environments other than those for which it was specifically designed. and Extensibility as the ease with which a system or component can be modified to increase its functional capacity."
+          - "As customer needs evolve, flexibility helps with composing features and applications rapidly from using API, and extensibility helps in introducing the required changes quickly by making changes in services."
+          - "The challenge many companies have today is that they have built systems primarily as monoliths during a stage of their evolution, or have several services but they are tightly coupled. Satisfying a customer need even though the functionality already exists can take significant effort and cost."
+          - "Companies are therefore moving to APIs and microservices to address this business imperative. While many initiate this journey, most of them don’t end up with the intended outcomes - they falter or fail and go through many iterations."
+          - "This talk will share principles, best practices and approaches - across architecture, organizational and cultural - that have been applied in transforming companies such as eBay and PayPal to APIs and Microservices."
     tags:
       - microservices
   -
@@ -601,9 +635,9 @@ speakers:
         title: 'Repl Driven Development'
         type: 'talk'
         short:
-          - "TBA"
+          - "Drinking too much coffee while maven builds and deploys your service? Jealous of how your FrontEnd mate just press F5 to 'deploy' his/her changes? Mastered the red-green-refactor workflow and want to know what is the next step? Our Lisp grandfathers knew how invaluable was the immediate feedback that a Read-Eval-Print Loop (REPL) allowed during development and now Java 9 will have one. Perhaps you have read that a REPL is useful for 'playing around' or for 'small code snippets', but this is far from true. In this presentation, you will learn how with a REPL you can have a better and more productive developer workflow by building a Tomcat service, one bit at a time, without having to build, compile, package or deploy it. Demo will be done with a Clojure REPL but no previous experience with Clojure is needed."
         long:
-          - "TBA"
+          - "The motivation of the presentation is to show that in the JVM we do not need to suffer from the long code/build/deploy cycle when developing. Using TDD somehow ease the pain as the number of times that you need to recompile/repackage/redeploy as often, but there are still lots of code/configuration that cannot be tested unless you start the whole application. Also to be able to do TDD, you first need to understand how APIs (libraries/restful services) will behave and what kind of data they will return. The presentation will demo how with a REPL you can help with: * Build a full application a bit at a time, without having to recompile, repackage or redeploy it. * Understand libraries. * Explore existing databases and http services. * Improve the TDD workflow. * Inspect the state of a running application. * Debug in staging or even production environments. The presentation will be mostly a live coding demo with few slides. Coding will be done in Clojure, but the presentation will focus on the workflow that a REPL allows. "
   -
     firstname: 'Liviu'
     lastname: 'Costea'
@@ -617,9 +651,9 @@ speakers:
         title: 'Edge Performance with In-memory NoSQL'
         type: 'talk'
         short:
-          - "TBA"
+          - "First we started with memcache, the veteran of in-memory NoSQL. Our goal was always auto scaling on AWS and that's when we started using Redis, around 2 years ago, and it has our session, cached items and static data. But then we had bigger needs and for those we recently discovered Aerospike."
         long:
-          - "TBA"
+          - "We are going to talk about in-memory NoSQL databases and how they can integrate in your current architecture in order to deliver high performance applications to your users. These can be used as session storage, a cache or a real database. We will talk at least about Memcache (the veteran), Redis (the mature) and Aerospike (the new guy), see where they excel and how you can add them to your existing stack."
     tags:
       - db
   -
@@ -635,9 +669,9 @@ speakers:
         title: 'Complex State Handling in Modern Web Applications'
         type: 'talk'
         short:
-          - "TBA"
+          - "Flux architectures and why you should care. How to tame the application state and not go bananas. Examples from production applications with React.js and Redux."
         long:
-          - "TBA"
+          - " Flux architectures and why you should care. How to tame the application state and not go bananas. Examples from production applications with React.js and Redux. This talk will go into details of the problems that modern application face. How to handle dozen components running on multiple screens at the same time and handling it's own state. "
     tags:
       - web
   -

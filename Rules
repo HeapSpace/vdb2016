@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+require 'json'
 require 'date'
 require 'compass'
 
@@ -10,6 +11,10 @@ preprocess do
   @items.each do |item|
     if item.key?(:speakers)
       schedule_items = item[:speakers]
+      File.open("content/vdb16talks.json","w") do |f|
+        # f.write(schedule_items.to_json)
+        f.puts schedule_items.to_json
+      end
       schedule_items.each do |speaker|
         speakername = speaker[:firstname].to_s+' '+speaker[:lastname].to_s
         if speaker[:pageurl]
