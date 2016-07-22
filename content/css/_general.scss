@@ -581,7 +581,7 @@ iframe {
     text-transform: uppercase;
     text-align: center;
     padding: 5px 15px;
-    margin: 10px 0 5px 0;
+    margin: 15px 0 5px 0;
     display: inline-block;
     font-weight: 700;
     @include round-corners(18px);
@@ -595,6 +595,11 @@ iframe {
   .talk-circle-links {
     a {
       margin-left: 10px;
+    }
+  }
+  #talk-desc{
+    p {
+      margin: 5px 0;
     }
   }
   .card-title {

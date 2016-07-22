@@ -32,7 +32,11 @@
 				    <span class="yellow bold"><%= @item[:title] %></span></a>
 				  </h2>
 					<div id="talk-desc" class="text">
-						<%= @item[:short].to_s.delete('[').delete(']').delete('"') %>
+						<% @item[:short].to_a.each do |p| %>
+							<p>
+								<%= p %>
+							</p>
+						<% end %>
 					</div>
 					<!-- <h4 class="accent">
 						<img class="card-logo" src="/images/home-logo-small.png" /> 29. Sep <span class="yellow">/</span> 10:00 <span class="yellow">/</span> Track 2 <span class="yellow">/</span> Venue 3
@@ -63,7 +67,11 @@
 						<span class="yellow bold">Full abstract</span></a>
 					</h4>
 					<div class="text">
-						<%= @item[:long].to_s.delete('[').delete(']').delete('"') %>
+						<% @item[:long].to_a.each do |p| %>
+							<p>
+								<%= p %>
+							</p>
+						<% end %>
 					</div>
 				</div>
 			</div>

@@ -46,7 +46,7 @@ $(document).ready(function() {
     $('[data-toggle="popover"]').popover();
 
     $("#talk-desc").showMore({
-      minheight: 75, // measured in px
+      minheight: 78, // measured in px
       buttontxtmore: 'show more',
       buttontxtless: 'show less',
       animationspeed: 250
