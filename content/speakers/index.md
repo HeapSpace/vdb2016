@@ -745,9 +745,9 @@ speakers:
         title: 'Getting Started Game Development with Unity as an iOS Developer'
         type: 'talk'
         short:
-          - "TBA"
+          - "At Peak Games, after developing 10+ iOS games natively, we have started to use Unity3D for the new games and develop 5 cross platform games so far. Unity3D has some very fundamental changes according to iOS platforms. And we have learnt a lot in this process. I want to share these experience from an iOS Developer point of view."
         long:
-          - "TBA"
+          - "At Peak Games, after developing 10+ iOS games natively, we have started to use Unity3D for the new games and develop 5 cross platform games so far. Unity3D has some very fundamental changes according to iOS platforms. And we have learnt a lot in this process. I want to share these experience from an iOS Developer point of view. So as an iOS game developer I want to point out how to start working with Unity, best practices, tips and tricks to develop apps for iOS/tvOS (and also Android) devices. I am planning to cover these topics including demos/hands-on coding: * Development Process (Coding, Debugging, Testing, Profiling…) * Unit and Integration Testing * Network Management * Memory Management * Multi-Threaded Development * Integration with Native Libraries (StoreKit, CoreLocation…) * Integration with Platforms "
     tags:
       - ios
       - game
@@ -764,9 +764,9 @@ speakers:
         title: 'Our take on agile'
         type: 'talk'
         short:
-          - "TBA"
+          - "Agile is about being agile, and willing to change, not about following any methodology in particular. This talk is about our process, how it evolves, what its current state is and which results did we get so far."
         long:
-          - "TBA"
+          - "Lowercase 'a' in agile? Blasphemy! Not really. Agile is about being agile, and willing to change, not about following any methodology in particular. During this presentation we'll talk about our process, how we adopted lean thinking over Scrum or any other 'instant' process, and managed to shorten time to market 2x for big features in two latest iterations. Best part is that it keeps getting shorter with each iteration. A big feature used to take us 45 days to develop. Releasing a feature of equivalent complexity now takes about three weeks on average. This is from the start until the moment a finished product is available to the customer (only DoD that matters to us). It includes kick-off, development, testing, code review, documentation, staging, release and announcement. From our perspective, that’s a 100% increase in productivity. We accomplished it with the same resources and people - the only difference being constant retrospectives and improvement of the way we work."
     tags:
       - agile
   -
@@ -803,7 +803,7 @@ speakers:
         title: 'The Myth of the Magical Messaging Fabric'
         type: 'talk'
         short:
-          - "TBA"
+          - "To most developers messaging systems are disregarded as 'just a pipe'. Without understanding the reasoning behind them and the underlying design decision, we are frustrated by how we think they should work in production. In this session we will compare and contrast Apache ActiveMQ and Apache Kafka, and how their designs address message distribution, reliability, scalability, and performance."
         long:
           - "TBA"
     tags:
@@ -820,9 +820,9 @@ speakers:
         title: 'Haskell On Rails'
         type: 'talk'
         short:
-          - "TBA"
+          - "My talk will be about my motivations for wanting smarter tools and how the current TDD & Software Craftsmanship best practices place the onus on the developer to be disciplined, whereas humans will never be as disciplined and rigorous as machines. I'll talk about the Nix ecosystem and Haskell's ‘Yesod’ web framework, which is somewhat similar to Ruby on Rails. Audience will be inspired to try out Haskell and Nix"
         long:
-          - "TBA"
+          - "For years, Ruby on Rails has been the web application framework of choice for software developers who need to *Get Things Done*. We can rapidly prototype, and then effortlessly ship. But what happens when the complexity of the system inevitably grows? We write tests, and more tests, and even more tests, and still we're on our knees, fighting fires and debugging. We need better tools. We need our machines to automatically verify the fundamental correctness of our systems. These tools have been around for a while, but until recently the 'Getting Started' material has been thin on the ground. In this talk I will show you how to get up and running and ready to build stuff with a Rails-like framework underpinned by one of the fastest and most stable languages in the industry: Haskell. The talk will cover everything from setting up a development environment, to integrating with a database and deploying to a VPS. Although this is a Haskell talk, it's from an angle of pragmatism and not academia. You do not need to know Haskell to enjoy this talk. "
     tags:
       - haskell
   -
@@ -838,9 +838,10 @@ speakers:
         title: 'Lambda Core – HardCore'
         type: 'talk'
         short:
-          - "TBA"
+          - "For about two years now – so called lambda expressions can be used by Java developers. But what does it mean... Lambda? The talk will be about story behind, from a little bit more scientific point of view. Church Lambda calculus, Entscheidungsproblem and incompleteness theorem."
         long:
-          - "TBA"
+          - "For about two years now – so called lambda expressions can be used by Java developers. But what does it mean... Lambda? The talk will be about story behind, from a little bit more scientific point of view. Church Lambda calculus, Entscheidungsproblem and incompleteness theorem. "
+          - "However, almost all of that will be presented in Java. There are going to be shown some very crazy code pieces such as magic Y combinator and perfectly unusable implementation of Boolean (based on Lambda expressions)."
     tags:
       - java
   -
@@ -856,9 +857,13 @@ speakers:
         title: 'Increasing Sensing Quality of Life with a SIM based connectivity solution for IoT'
         type: 'talk'
         short:
-          - "TBA"
+          - "The proposal idea is the 'wherever SIM' that provides the network coverage wherever devices may roam – integrating 400+ radio networks in 160+ countries all around the world. SIM cards and endpoints can be easily managed in real-time via the intuitive user-interface or directly from the customer’s software application via an easy-to-integrate API."
         long:
-          - "TBA"
+          - "The insights to be gained from data are endless. In light of this a, new paradigm of the real-time communication between things has emerged, in which the quality of life of citizens in dense urban environments is increased through the use big data and cloud technology."
+          - "Future cities are likely to feature thousands of strategically placed sensors that would record everything from air pressure and temperature to microbial content, and the data would be relayed instantly to the laptops of actively participating smart citizens, who will make critical contributions to urban planning, reducing pollution, and making the best use of finite resources."
+          - "The rapidly changing social and environmental order is becoming more complex as resources grow scarcer and populations increase, it requires just one technical integration point in IoT, which will provide technological fluency in the use big data for public benefit."
+          - "The IoT market is growing rapidly. Mobile connectivity is becoming more and more a key success factor for many IoT projects, as most use cases are designed for mobility. But even for scenarios with immobile endpoints it often makes sense to include mobile connectivity as a fallback option, especially for time critical services."
+          - "The key features, implementation and development process of whereverSIM will be discussed."
     tags:
       - iot
   -
@@ -874,9 +879,12 @@ speakers:
         title: 'Streams, flows and storms – how not to drown with your data?'
         type: 'talk'
         short:
-          - "TBA"
+          - "The landscape of stream processing frameworks gets more and more complicated. Some time ago Apache Storm was the only boy/girl in town. After that Spark Streaming emerged, then Apache Flink – European answer to Storm & Spark. What’s more – lately Apache Beam entered incubation stage – aiming at API unification and backed by Google."
+          - "There's also Kafka Streams that appeared just few days ago. In the talk I’d like to clear things a bit to help listeners (and myself) decide – which of above fit particular needs and which ones are stable enough to be used without fear. We'll focus not on particular frameworks, but what problems arise in stream applications and how to deal with them."
         long:
-          - "TBA"
+          - "The landscape of stream processing frameworks gets more and more complicated. Some time ago Apache Storm was the only boy/girl in town. After that Spark Streaming emerged, then Apache Flink – European answer to Storm & Spark. What’s more – lately Apache Beam entered incubation stage – aiming at API unification and backed by Google."
+          - "There's also Kafka Streams that appeared just few days ago. In the talk I’d like to clear things a bit to help listeners (and myself) decide – which of above fit particular needs and which ones are stable enough to be used without fear. We'll focus not on particular frameworks, but what problems arise in stream applications and how to deal with them. This includes subjects such as raw throughput, latency, window semantics, handling out of order events, storing state, processing guarantees and so on."
+          - "As for solutions, the talk focuses on Apache Flink & Kafka Streams. Each will be discussed briefly together with short demo. The talk ends with few general tips on how to choose technology for different types of projects."
     tags:
       - bigdata
   -
@@ -892,9 +900,9 @@ speakers:
         title: 'Apache Spark? If it only worked.'
         type: 'talk'
         short:
-          - "TBA"
+          - "Spark has very nice API and it promises high performance of crunching large datasets. It’s really easy to write an app in Spark, unfortunately it’s also easy to write one which doesn’t perform the way you would expect or just fails for no obvious reason. The talk will introduce a practical framework for fixing most common problems with Spark applications."
         long:
-          - "TBA"
+          - "Do you have plans to start working with Apache Spark? Are you already working with Spark but you are not happy, you don’t get expected performance and stability and you not sure where to look for a fix? Spark has very nice API and it promises high performance of crunching large datasets. It’s really easy to write an app in Spark, unfortunately it’s also easy to write one which doesn’t perform the way you would expect or just fails for no obvious reason. This talk will consist of multiple common problems one might face when running spark at scale and solutions for them of course. Each of described problems will come with well described background and examples so it will be understood by people with no Spark experience, although people who are working with spark are the main audience. At the end the audience should get a practical framework for optimizing Spark and fixing most common problems with Spark applications. Class of problems in the presentation: Dealing with skewed data Spark on yarn and it’s memory model Caching Sizing executors Locality "
     tags:
       - bigdata
   -
@@ -910,9 +918,9 @@ speakers:
         title: 'Real-time analytics with fast data stack'
         type: 'talk'
         short:
-          - "TBA"
+          - "Data analytics was considered to be a time and resource consuming job and it was executed offline and usually on previously acquired data. Then came the lambda architecture that brought a lot of new concepts on how data is stored and analyzed in near-real-time. Todays standards require us to analyze data in real-time so that we can react accordingly and gain insights as the data is streamed into our system."
         long:
-          - "TBA"
+          - "Traditional data warehousing and data analytics was an offline job and it usually required a lot of time to complete and give some results. These operations gave us some insight into our business but we had a limited possibility to improve or react in a timely manner. One of the efforts to move this approach closer to real-time was described with Lambda architecture where raw data was stored in real-time while also being analyzed in parallel and producing results with a certain delay. This approach eliminated those long running jobs by preparing analytic results on the incoming data but in todays business right information at the right time can mean improving our business and directly leading to more profit. Our latest technologies give us possibility to execute analytics on data streams and react almost instantly. Faster data requires faster reactions especially if its a fraud detection or a mission critical system. NoETL philosophy explains why the traditional approach is no longer valid and why we need these new technologies that we have today. In this presentation we are going to talk about the evolution from monolithic to distributed systems, pros and cons of both approaches and what we are able to do with todays technologies. Our main focus is going to be fast data stack (Spark, Mesos, Akka, Cassandra, Kafka) and how using these technologies we can create scalable and fast data pipeline while running real-time data analytics."
     tags:
       - bigdata
       - data analytics
@@ -929,9 +937,9 @@ speakers:
         title: 'Building multiplayer game using streams'
         type: 'talk'
         short:
-          - "TBA"
+          - "In this talk you will learn how stream-based programming can be used to implement web frontend and multiplayer backend of the classic game. I will show you how to implement both frontend and multiplayer backend components in different languages and libraries but using very similar concepts and API."
         long:
-          - "TBA"
+          - "In this talk you will learn how stream-based programming can be used to implement web frontend and multiplayer backend of the classic game: Snake. Building dynamic applications using imperative approach tends to create lots of unmaintainable code. Stream-based programming tries to solve this problem by introducing fully declarative way of defining application logic. While using streams, you will focus on WHAT needs to be done, not HOW and WHEN. The talk is divided into 3 parts. In the first part you will learn how to create a frontend of the Snake web game using streams as building blocks. Then, we will move to the server side and use Scala and Akka Stream library to create backend service that will allow the game to be played by multiple players. In the third part, we will discuss reactive streams and how they make asynchronous communication safe. "
     tags:
       - web
       - game
@@ -948,15 +956,15 @@ speakers:
         title: 'Next generation of frontend architectures'
         type: 'talk'
         short:
-          - "TBA"
+          - "Will Reactive programming be the default choice for modern apps? When would you want to use event emitters as opposed to event streams with operators? In this session you'll find the answers to those questions and much more! If you want to learn more about Reactive Programming that's exactly the session for you! "
         long:
-          - "TBA"
+          - "If you're puzzled by the newest generation of frontend architectures, you're not alone. Will Reactive programming be the default choice for modern apps? When would you want to use event emitters as opposed to event streams with operators? Luca Mezzalira answers these questions and more as he provides a detailed tour of frontend architectures, including where they've been and where we're headed. Luca will begin with an overview of architectures from MVC, MVP, and MVVM to the modern component systems like Flux and React. You'll take a look at the evolution of architectures, beginning with a central event emitter or publish/subscribe system that's currently used in JavaScript libraries and frameworks. You'll contrast these with Reactive programming and channels communication that's offered by CSP (Communicating Sequential Processes). By the end of this session, you'll understand if and when to use each particular paradigm. Specific topics include: A review of current event-driven architectures CSP and Transducers An introduction to Reactive programming How to use streams MVI and other reactive architectures"
     tags:
       - web
       - javascript
   -
     firstname: 'Mihailo'
-    lastname: 'Milenkovic'
+    lastname: 'Milenković'
     pageurl: 'mihailo-milenkovic'
     url: 'https://rs.linkedin.com/in/mihailomilenkovic'
     photo: 'Mihailo Milenkovic.jpg'
@@ -967,9 +975,9 @@ speakers:
         title: 'Developing custom Android device'
         type: 'talk'
         short:
-          - "TBA"
+          - "In the era of IoT, the need to create a custom device for specific purpose is growing day by day. While working on Ray universal remote we faced a lot of challenges to adapt the firmware to specific needs. This presentation will be an overview of what it takes to create your own custom Android based device and what are the greatest challenges."
         long:
-          - "TBA"
+          - "During the presentation we`ll go through all aspects of what needs to be done to run Android on a custom hardware. The example used in the presentation will be Ray universal remote (www.ray.co) and NXP/Freescale iMX6 platform (http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/i.mx-applications-processors/i.mx-6-processors/i.mx6qp/sabre-platform-for-smart-devices-reference-design-based-on-the-i.mx-6-series:RDIMX6SABREPLAT). We`ll go through adaptation of bootloader (U-Boot), writing drivers in kernel and defining the device tree for custom hardware, and in the end modification of Android framework and expanding SDK for custom peripherials. "
     tags:
       - android
       - mobile
@@ -986,9 +994,9 @@ speakers:
         title: 'DIY Java & Kubernetes'
         type: 'talk'
         short:
-          - "TBA"
+          - "Introduction and a live demo covering the basics of containerizing Java applications or microservices with Spring Boot, deploying and running them on a gcloud kubernetes container engine and a home made Kubernetes cluster made out of RaspberryPis. "
         long:
-          - "TBA"
+          - "Kubernetes is an open-source project, primarily developed by Google, which provides a solution for orchestrating, or scheduling, containers in a cluster. It defines several paradigms on top of just the container distribution, like pods, services, labels and controllers which makes the deployment and the operation of your applications much more simpler. This talk will cover the basic concepts behind Kubernetes, and a live demo will show how to operate your cluster and deploy your apps on it."
     tags:
       - microservices
   -
@@ -1004,9 +1012,9 @@ speakers:
         title: 'Event Sourcing in Microservices'
         type: 'talk'
         short:
-          - "TBA"
+          - "Why do we build applications based on microservices? To gain flexibility and resilience - that’s what everybody tells us. But building and application with a lot of microservices leads to a highly distributed system - and distribution hurts! As soon as you start interacting with a remote process you will have to bear in mind that messages might get lost, the network might go down and you will experience that communication will surely increase the latency your users are about to experience while using your system."
         long:
-          - "TBA"
+          - "Why do we build applications based on microservices? To gain flexibility and resilience - that’s what everybody tells us. But building and application with a lot of microservices leads to a highly distributed system - and distribution hurts! As soon as you start interacting with a remote process you will have to bear in mind that messages might get lost, the network might go down and you will experience that communication will surely increase the latency your users are about to experience while using your system. So how can we break a large application into small microservices while keeping dependencies between those services at the lowest possible level and how can we reduce communication in the overall system? We will have a look at „Event-Sourcing“ as a possible and very cool answer for these questions. The basic idea is that every component emits relevant (from a business point of view) state changes as events. Those events are used a technique for asynchronous communication and data exchange/replication between microservices. The talk will also include some code samples to demonstrate how to introduce event sourcing in Java-based microservices."
     tags:
       - microservices
   -
@@ -1022,7 +1030,7 @@ speakers:
         title: 'Blazingfast™ deployment with mina'
         type: 'talk'
         short:
-          - "TBA"
+          - "Developers deploy their applications several times a day. Therefore deployment needs to be fast, secure and, most important, easy. Many ruby developers use capistrano, and many more (PHP) are writing their own FTP scripts. With easy to write DSL, error resistant scripts and blazingfast execution time (even for rails application) Mina is making deployment fun again!"
         long:
           - "TBA"
     tags:
@@ -1041,7 +1049,8 @@ speakers:
         title: 'Scalable Service Architectures'
         type: 'talk'
         short:
-          - "TBA"
+          - "Service oriented architectures are getting more and more widespread popularity, because of the benefits they offer. They have some design requirements though, a very important one of them is designing services (and their combinations) for scalability and resilience. We did a couple of these in the past years and learned a lot about how to do it and what open source tools are available to achieve the goal."
+          - "In this talk I will describe the most important requirements of scalability, then our experience with them."
         long:
           - "TBA"
     tags:
@@ -1059,9 +1068,10 @@ speakers:
         title: 'How to deal with a hot potato'
         type: 'talk'
         short:
-          - "TBA"
+          - "In large organisations, sometimes projects and parts of the code base get shuffled around between teams. Projects that have tons of responsibilities, that are business critical and that are hard to look after. What happens when a self-organised team that has a continuous delivery system in place receives one of these legacy product that is the antithesis of best practices? The talk approaches this issue with a real life example, highlighting the problems encountered and the solutions suggested and applied to each of them."
         long:
-          - "TBA"
+          - "The talk starts describing what a hot potato is: a project that breaks all the good practices a team has in place but it’s business critical and needs to be handled. After a general introduction, it gets down into more specific details of the project that need to be addressed: two months deployment cycle, extremely long start-up time, huge amount of responsibilities... And then breaks them down into smaller, more approachable problems. Once the problems have been reduced to something that can be handled, the talk approaches possible solutions."
+          - "It explains pros and cons of each of them an why one is chosen over the other: the two-months deployment cycle gets dramatically reduced by creating a bamboo plan owned by the team; the start-up time decrements in several steps that include blue-green deployment plus code refactoring; and many other issues get resolved piece by piece. Why are these solutions chosen over others? Sometimes for its quality, sometimes it's chosen due to certain constrains like time, resources, adaptability... Reasons for each of them are the centre of the talk. Finalising the talk, there is a comparison between how the project looked at the beginning and how it behaves after all the improvements."
     tags:
       - devops
   -
@@ -1077,9 +1087,9 @@ speakers:
         title: '5 HW Startups - Lessons learned while mentoring'
         type: 'talk'
         short:
-          - "TBA"
+          - "1 successful crowdfunding campaign, a successful Web Summit presence resulting in second round of funding and putting other HW startups back on track highlighted a lot of different traps that founders can avoid. The talk is about dos and donts and different strategies for the challenges each HW startup is going to face."
         long:
-          - "TBA"
+          - "Tech founders tend to focus on the technical challenge and rarely test their ideas in the early prototype phase. Often business benefits and social presence become secondary to innovation. But in the end you need customers, and happy customers. What are the steps you can make while developing to generate customers, evangelists and how to gather feedback without the final product? How to keep the sales going without any product? Why not wait until the final prototype? What have learned with early testing? Why and how should you define the business value? Why lean startup methods won’t work if you are running a HW startup? How business decisions like patenting or open sourcing can make or break your build up and content marketing? When should you put your prototype in the hands of your first users? How can you learn? What do founders miss while testing? A lots of dos and donts for HW and IoT startup founders."
     tags:
       - iot
       - startups
@@ -1116,14 +1126,14 @@ speakers:
         title: 'Bringing Social Networks to living room using JS APIs'
         type: 'talk'
         short:
-          - "TBA"
+          - "In the era of social networks and multimedia, TV that is sitting in our living room is becoming more and more like entertainment center, not just a device that we use to watch news, some sports event or our favorite series. Nowadays, people want to sit back in their couch, relax, and be able to do things that can be done on computers and smartphones, just on a large screen. From watching YouTube videos, sharing and posting on Facebook, or following latest trends on twitter, creators of Smart TV applications are struggling to make this possible and accessible by using only few remote controller buttons. Different solutions that enable user to interact with most popular internet services today, from Android and Apple TV, to standard Smart TVs are not available to everyone. Our wish was to bring this technology to every home that has domestic IPTV service. So, we rolled up our sleeves, took a leap into JavaScript world of different API’s, optimizations for TV box embedded operating systems, limitations of hardware, and interface specifics, and delivered a product that can match today’s most modern solutions in TV applications. This is our success story, one that tells how we took 80$ TV box, and put Facebook, twitter and YouTube inside it."
         long:
-          - "TBA"
+          - "This talk will cover all aspects of delivering social networks experiences to lightweight TV box sets, but it will be concentrated around usage of JavaScript API that Facebook, twitter and Google provide for developing third party applications. In introduction we will be talking about apps development for TV boxes in general: specifics of TV interface, limitations of hardware, summary of TV box operating systems and web browsers and technologies that can be used. In implementation we will do short summary of all APIs needed for development, concentrating on explanation of key parts of code like login and authorization, data fetching, presentation of content, and posting users actions and feedback. We will also give parallel comparison of Google, Facebook and twitter API’s, and a small live coding demo of most interesting functionalities like sharing information about currently watched TV channel on Facebook and twitter, or playback of YouTube videos. In challenges and limitations, we will talk of things that are hard to be done, or cannot be done, such as long process of Facebook authorization, workarounds that enable simple and user friendly login to twitter, or videos that are allowed to be played only on YouTube web site. Also, we will say something more about functionalities that these companies do not enable to third party apps such as viewing your friends profile on Facebook, or adding previously watched video to YouTube history. At the end, in experience, we will give you a live demo of how it works, using real Set Top Box device. We will turn it on, and see some of its great features like: + Device login – enables us to avoid entering username and password using remote controller + YouTube auto play – user can search for its favorite video once, and enjoy similar videos playing one by one, for hours + Twitter and Facebook one-button share – when you watch your favorite TV show, and want your friends to know about it, you just need to enter Facebook or twitter app, and press a button to share it + Adaptive video quality – depending of quality of your internet connection, YouTube automatically chooses best possible video quality up to HD, without you ever needing to set it manually "
     tags:
       - javascript
   -
     firstname: 'Zeljko'
-    lastname: 'Turbic'
+    lastname: 'Turbić'
     pageurl: 'zeljko-turbic'
     url: 'https://rs.linkedin.com/in/zturbic'
     photo: 'Zeljko Turbic.png'
@@ -1170,9 +1180,9 @@ speakers:
         title: 'Beat Aliens with Akka Cluster'
         type: 'talk'
         short:
-          - "TBA"
+          - "Computer game run with 3 x Raspberry Pi, 1 x Router, 1x Laptop, => trying to kill game by disconnecting network cables or power source, testing if application is self healing"
         long:
-          - "TBA"
+          - "Does anyone remember the game 'Missile Command' on Atari? I bet you know it or played some kind of clone. I have also crated clone but with small difference, computer system is defending cities. During this session I would like to run missile defence system on a few Raspberry Pi's. Under the hood there will be Scala and Akka Cluster. You want to have defence system which is responsive and resilient, so do I. I will perform network and power failures to provide some idea how quickly it can recover, heal itself and prove that Akka application can be responsive and resilient."
     tags:
       - scala
   -
@@ -1188,9 +1198,12 @@ speakers:
         title: 'Lean Poker'
         type: 'workshop'
         short:
-          - "TBA"
+          - "Lean Poker is a day long coding challenge that's not only fun, but also provides a safe environment in which you can practice continuous deployment and fast delivery of valuable software."
         long:
-          - "TBA"
+          - "Lean Poker is a day long coding challenge that's not only fun, but also provides a safe environment in which you can practice continuous deployment and fast delivery of valuable software."
+          - "You and a small group of strangers are going to develop a bot in a language of your choice, that plays poker against other bots. All you need to do is write a function that takes a data structure containing cards and bets your bot sees during the game, and return a single number: the amount you are willing to bet at that point."
+          - "Now here is the catch: even before you start coding the bots play a round in a matter of seconds, and if your bot wins you get points. If it comes second, you get less points. Otherwise you get nothing. The next minute another game plays, and another one, and another one… that goes on all day long, while you and your friends are desperately hacking away on the code, and keep deploying version after version. "
+          - "During this pretty intense day you will sometimes be cheering for your bot to take over, you will be deploying desperately to change the course of events when your bot keeps losing, but even more importantly you will learn how to create as much value as you can in a short period of time, while you are mostly just having fun."
     tags:
       - devops
       - metodologies
@@ -1281,9 +1294,13 @@ speakers:
         title: 'What`s your motivation?'
         type: 'talk'
         short:
-          - "TBA"
+          - "We go through the motions, we do our jobs, another day - another dollar. But are we progressing, what is your motivation? Research suggests that when we are intrinsically motivated by our work we are more likely to get promoted, are you on the path for personal growth, or just spinning your wheels?"
         long:
-          - "TBA"
+          - "In this interactive workshop style talk, we'll delve into your personal strengths and passions and how they apply to your work. Your motivation and dedication in your work can dictate your future success, whether that be as a integral part of a larger company or as an entrepreneur. By applying some basic principles of project management, we'll make you the focus and create a blueprint of how your career and life can be."
+          - "Exercises include:"
+          - "1) Your zones of genius"
+          - "2) Your personal blueprint"
+          - "3) The importance of being a mentor & mentee"
     tags:
   -
     firstname: 'Daniel'
@@ -1298,9 +1315,9 @@ speakers:
         title: 'Harness the power of HTTP headers to secure your web apps'
         type: 'talk'
         short:
-          - "TBA"
+          - "Nowadays almost everyone uses web browsers on a daily basis for various tasks such as reading emails, surfing on social networks or purchasing goods on ecommerce shops. Despite this, web developers often tend to forget that a browser is a piece of software that has deliberately been designed as a remote code execution engine, which is the dream spec for any attacker. The focus of this talk is to explain how some of the newly introduced headers (HSTS, HPKP, CSP) can help to easily add an extra layer of security in order to defend your web apps against common web security vulnerabilities."
         long:
-          - "TBA"
+          - "Security flaws on websites are very widespread and depending on the nature of the website can lead to severe consequences. One of the reason why securing web apps can be challenging is that many security aspects such as client side security, transport security and server side security have to be considered during design, implementation and operation. Another fundamental problem of the web is the web browser that has deliberately been designed as remote code execution engine which is the dream platform for any attacker wanting, for instance, to inject malicious code either by exploiting an Cross-Site Scripting (XSS) vulnerability or by mounting a man-in-the-middle attack. Since a browser executes JavaScript and HTML on the fly with 'almost' no security checks it is important to be able to identify the origin of the content and to take advantage of the available means to restrict how the browser executes the web app. This is exactly what this talk is about! I will start with brief overview about what is wrong with the web and especially with web browsers. Then I will explain why secure transport is so important and point out the different guarantees that HTTPS provides, such as confidentiality, authenticity and integrity and why there is no valid reason for not using it over HTTP. I will show you how to get a free certificate for your website and how to test the HTTPS configuration. The main focus of this talk are the newly introduced headers, such as HTTP Strict Transport Security (HSTS), HTTP Public Key Pinning (HPKP) and Content Security Policy (CSP). I will explain how HSTS and HPKP help to harden HTTPS against various attacks but also present the best practices for avoiding the common pitfalls. I will continue by explaining CSP and its capabilities, such as preventing Cross-Site Scripting (XSS) or Clickjacking attacks. I will also give best practices about deriving the CSP policies without having negative side effects on your website and present tools that will make your CSP journey as easy as pie. All the aforementioned headers offer security “for free” in the defence of your web apps so start using them today!"
     tags:
       - web
       - security
@@ -1317,9 +1334,13 @@ speakers:
         title: 'Employing a View Model API Based on Dynamic Proxies'
         type: 'talk'
         short:
-          - "TBA"
+          - "Enterprise apps are mainly built upon layered architecture. Each layer only speaks to its below layer, and data among layers are shared via persistent domain objects. However, employing same domain objects in each layer causes some problems. Data might be modified unintentionally in which an ORM tool or a UI framework like JSF is used. Binding domain objects with UI fields directly creates a mess inside domain classes because of UI only fields added. To prevent such problems, it's better to employ a separate model, specific to the UI layer. Such a separate model is employed to convert data obtained from back, and deliver it to the UI layer for presentation. UI components are bound to view model objects so that user input is first accumulated into those objects and delivered to back when appropriate. However, creating such a view model mainly overlaps with persistent domain model, and job of handling data transformations between two model is a tedious task. We propose a solution based on dynamic proxies to create view model classes automatically and an API to handle various tasks occur during those data transformations. We will present our solution and discuss about the API evolved over time."
         long:
-          - "TBA"
+          - "In todays world, layered architecture is a very common approach among enterprise applications. Each layer has a specific task of its own, and each one is only allowed to speak just one below. For example, data access layer deals with querying and persistence of data, service layer coordinates business operations and interacts with data access layer, presentation layer handles rendering of suitable user interface as well as processing user requests while talking with service layer. In this picture, data transfer throughout the layers is achieved using domain objects. For example, data is fetched from target datastore, then transformed into domain objects in data access layer, and delivered to the presentation layer for rendering purposes. In a similar way, domain objects bound to UI are filled with user input, then passed into backend layers for processing."
+          - "However, employing same domain classes in every layer can cause some data related problems in those applications. One might see that data might get inserted, updated or deleted unintentionally, especially when an ORM tool, like Hibernate is used for persisting data, UI frameworks like JSF or Vaadin, in which state management is handled on server side, while domain objects are directly bound to user interface components, used to collect user input and deliver it to the backend. Moreover, employing domain objects UI interaction might cause several fields and methods which are only needed by presentation layer get added into them. For example, adding a selected field and its corresponding getter/setter is a very common issue in order to identify which rows are selected in a UI table. That 'selected' property has nothing to the with the domain model at all."
+          - "In order to prevent such data integrity problems, and keep domain classes clean from UI specific attributes and methods, one needs to create and use a separate model targeted to the presentation layer. It may appear with different names, like 'data transfer object', 'data value object' or 'view model' in different projects, and whatever you call it for, its main duty is to prevent direct interaction and manipulation of domain objects via user interface components."
+          - "Although, we take it as a separate model, view model classes mostly overlap with domain model classes. Indeed, domain model classes can easily be transformed into view model classes with some additions of fields and methods. Actually, it becomes a burden for developers to just create and use a second set of model classes which are almost identical to domain model.
+          We propose a solution to automatically derive those view model classes from domain model classes using proxy pattern, and define an API to handle various data related tasks which occur while transforming domain objects into view model objects, apply those user changes occurred in those view model objects during UI interaction back again to domain instances etc. With the help of such an automatic view model creation mechanism, task of creating view model classes manually becomes unnecessary. In addition, view model – domain model back and forth transformations and data related operations can be performed easily through a standard API. In this session, I am going to talk about how to employ dynamic proxy class generation to obtain view model out of domain model classes, and discuss view model API in detail."
     tags:
       - java
       - ux/ui
@@ -1336,9 +1357,9 @@ speakers:
         title: 'Fresh Cup of iOS 10'
         type: 'talk'
         short:
-          - "TBA"
+          - "iOS 10 lands right around the conference time. Learn what to focus on."
         long:
-          - "TBA"
+          - "Each year, Apple puts emphasis on just a handful of - as they call them - tentpole features in annual iOS major release. Those feature are the one they look for, when deciding which apps to feature and promote on the App Store. Learn what are your best bets in the iOS 10 cycle, especially when approaching Christmass quarter."
     tags:
       - mobile
       - ios
@@ -1355,15 +1376,15 @@ speakers:
         title: 'JVM++: The Graal VM'
         type: 'talk'
         short:
-          - "TBA"
+          - "In this session we will provide an overview on how is the Graal VM evolving from an Oracle research project to a potential candidate for subsequent JVM releases. During the talk we will provide details on how does the Graal VM aim to improve the runtime compilation of the JVM in order to bring the performance of Java to interpreted languages."
         long:
-          - "TBA"
+          - "In this session we will provide an overview on how is the Graal VM evolving from an Oracle research project to a potential candidate for subsequent JVM releases. During the talk we will provide details on how does the Graal VM aim to improve the runtime compilation of the JVM in order to bring the performance of Java to interpreted languages. The first part of the talk discussed in general what is the Graal VM in general. The second part of the talk discusses details around the Graal VM along with some benchmark on how does it improve the performance of the JVM in some particular cases and how does the Graal compiler cooperate with the Java compiler API targeted for Java 9  (proposed as JEP243)."
     tags:
       - java
       - performance
   -
     firstname: 'Nikola'
-    lastname: 'Sijakinjic'
+    lastname: 'Sijakinjić'
     pageurl: 'nikola-sijakinjic'
     url: 'https://www.linkedin.com/in/nikola-sijakinjic-61346b20?trk=hp-identity-name'
     photo: 'Nikola Sijakinjic.png'
@@ -1374,9 +1395,9 @@ speakers:
         title: 'Easy scaling with Hazlecast'
         type: 'talk'
         short:
-          - "TBA"
+          - "Hazelcast is popular data-grid implemented in Java. Presentation will cover road from monolith application to distributed system of microservices using Hazelcast as memory store, similar to https://www.youtube.com/watch?v=3bBtMrjD0zo"
         long:
-          - "TBA"
+          - "In-Memory data grids have historically been the exclusive domain of large investment banks and proprietary solutions such as Oracle Coherence, Pivotal Gemfire and Software AG Terracotta. Hazelcast provides a opensource solution that is easy to develop, elastic in scaling and fault tolerant. Implemented in Java it offers some key advantages compared to other opensource players in arena. You can't send logic execution to Memcached node and Redis LUA interpreter is no match for state of art JVM. Also, it fits easily in Java micro-services architectures."
     tags:
       - java
       - microservices
@@ -1393,7 +1414,7 @@ speakers:
         title: 'Stop wasting time NOT writing tests'
         type: 'talk'
         short:
-          - "TBA"
+          - "I go mad when I hear: 'We have no time for tests'. Learn why that statement is so wrong and how to make tests a 'must have' in your workflow"
         long:
           - "TBA"
   -
@@ -1409,9 +1430,21 @@ speakers:
         title: 'Sex Lies and Design patterns'
         type: 'talk'
         short:
-          - "A."
+          - "Almost all in software industry agrees that design patterns are important and beneficial for success of any project. Some regard them as an essential part of ‘good practices”. In a perspective there is something sexy and awesome in reading some code and recognize applied design patterns."
+          - "In real situations, one of the things that fall in oblivion and somehow get lost from developers perspective, right after documentation and most probably side by side with tests, are design patterns. Both in design and architecture phase and implementation phase."
+          - "Nowadays, the software solutions are more and more complex. The need to mimic the real life is greater and greater. Ergo the need to use and apply the proven solution from real life and software industry described as 'design patterns' should be more in our focus and part of our solutions."
+          - "Knowledge to recognize the problem, the context and to pick appropriate design patterns will become essential for creating any worth mention solution."
+          - "In this presentation I would like to share some of the real life design patterns that can improve your software solution and drive your product to a golden state"
         long:
-          - ""
+          - Almost all in software industry agrees that design patterns are important and beneficial for success of any project. Some regard them as an essential part of ‘good practices”. In a perspective there is something sexy and awesome in reading some code and recognize applied design patterns.
+          - "On the other hand, more in the land of reality, most development efforts are done under various pressures, from vague specifications, short schedules, ridiculous time to market constraints and similar. As a result what is called good practices usually suffer and get substitute with just practices, or less."
+          - "One of the things that fall in oblivion and somehow get lost from developers perspective, right after documentation and most probably side by side with tests, are design patterns. Both in design and architecture phase and implementation phase."
+          - "There are numerous excuses reported by various developers why the design patterns are only consequence of implementation instead of  deliberate action of software architecture design in their projects."
+          - "This is totally bizarre to not use the tool whose main purpose is to show success path in order to solve the encountered problem. It’s even more strange as we know that all of design patterns come out of experience and long process of real life validation."
+          - "Regardless are we talking about design patterns or anti-patterns, they represent essence of the knowledge needed in order to overcome some obstacles in software we develop or in plain real life situations, usually both."
+          - "Nowadays, the software solutions are more and more complex. The need to mimic the real life is greater and greater. Ergo the need to use and apply the proven solution from real life and software industry described as 'design patterns' should be more in our focus and part of our solutions."
+          - "Knowledge to recognize the problem, the context and to pick appropriate design patterns will become essential for creating any worth mention solution."
+          - "In this presentation I would like to share some of the real life design patterns that can improve your software solution and drive your product to a golden state."
     tags:
       - design patterns
   -
@@ -1427,17 +1460,25 @@ speakers:
         title: 'Why are Actors Terrible?'
         type: 'talk'
         short:
-          - "TBA"
+          - "This is the first part of the introduction to actors. Here we will cover only the negative side of actors. This presentation is complemented by a workshop which teaches 'proper' actor development. We will be debunking some common myths about the actor model. This talk is intentionally polemical and presents only one side of the story."
         long:
-          - "TBA"
+          - "As distributed systems are becoming the norm, more demand rises for tools and methods for reliably building such systems. However, there is no silver bullet and just adopting a tool, technology or model does not make it easy to build reliable distributed systems. The actor based model existed since the 70s, but its popularity rose just in the last decade thanks to Erlang and Akka. As the actor model is adopted by more developers so are the misconceptions related to it. These misconceptions arise from marketing material and a general lack of understanding of distributed systems theory."
+          - "In this presentation we will analyse and debunk some myths that are typically attributed to the actor model such as:"
+          - "1. ease of development"
+          - "2. lack of deadlocks"
+          - "3. the readability of the code"
+          - "4. the implicit fault tolerance"
+          - "5. high parallelisation"
+          - "This presentation does not present a fair view on the actor model and relies on a complementary workshop 'Why are actors great' to mitigate that. Attendees will better understand when and why to use the actor model and the associated costs and benefits. The 'how' part of using the actor model will be presented in the 'Why are Actors Great' workshop."
       -
         tid: 435
         title: 'Why are Actors Great?'
         type: 'workshop'
         short:
-          - "TBA"
+          - "This is the second part of the introduction to actors. Here we do a hands on session to learn to take advantage of using actors to develop concurrent and distributed fault tolerant systems. We will teach how to use actors properly avoiding the major pitfalls that a lot of novices make on their first approach to the actor based model."
         long:
-          - "TBA"
+          - "Concurrent and distributed development has always been notoriously difficult to test. Methods like ad-hoc correctness proofs, temporal logic and model checking have been used for decades, but have always had downsides which prevented them from going mainstream. In this workshop we build on the theory presented in 'why are actors terrible' and teach a more efficient and effective method for building testable actor based systems. The approach presented uses some properties of the actor model and builds on TDD, property based testing and model checking in order to allow effective testing of distributed systems."
+          - "The workshop will include some hands on development using java+akka (or scala+akka if preferred). Attendees will have to use their laptops or work in pairs. We will try to build and test a correct implementation of a simple distributed algorithm such as the two phase commit. Ideally it should be 4 hours but we can adapt. Attendees will learn how to take advantage of the benefits of the actor model."
     tags:
       - distributed systems
       - java
@@ -1474,9 +1515,12 @@ speakers:
         title: 'Serverless chat bots with AWS Lambda'
         type: 'talk'
         short:
-          - "TBA"
+          - "How to build cheap (in most cases free) chat bots for Messenger, Slack, Telegram and more platforms in just a few minutes."
         long:
-          - "TBA"
+          - "After a long time chat bots have been reborn with both Slack and Facebook Messenger. Why should you care and what can you do with a chat bot? Chat bots are capable of a lot of things, i.e. manage your daily standup meetings, do an onboarding for the new team members, get travel recommendations or even order a pizza!"
+          - "Using AWS Lambda, the processes of chat bot deployment, maintenance, scaling and administration are almost non-existent and virtually free."
+          - "The goal of this talk is to explore how easy and cheap (actually free in most cases) it is to build a serverless chat bot for Messenger and Slack using Node.js and AWS Lambda - a quick immerse in the world of automatic chat bots."
+          - "And when already at it, why stop there? Besides these two, there are even more platforms you can build bots for, i.e. Telegram, Skype or even for some voice assistants, like Amazon Alexa."
     tags:
       - javascript
   -
@@ -1492,9 +1536,9 @@ speakers:
         title: 'What do testers actually do?'
         type: 'talk'
         short:
-          - "TBA"
+          - "Testers don't just click around. Real testers don't do Ad hoc testing at all. They carefully plan their activities and help the whole team to build better and usable products, by being a part of the project team from the beginning, before the first line of code is even written. Testers write code, read code, dig into databases and logs and communicate to customers. They are the link between the code and customers."
         long:
-          - "TBA"
+          - "If you are wondering what do testers in my teams do, I'll try to explain it in the short presentation. We code - automated functional test, help developers define and decide which test should be included in the integration test. We also read code - doing white box testing, seeing did our colleagues missed something or added something extra. We also try to manage risk, point out risky parts of applications and ways to mitigate those. Testers care about performance by helping developers build the software in the way that it is optimized and fast, we don't just measure the response times. The same goes for security. Also, we are helping developers to get wider picture of the impact of their code on the whole system. In couple of word - we help a lot. Either by investigating the quality of the code delivered, or by clarifying the requirements, and sometimes creating specification, if the team is missing it. What you will learn from this presentation: 1. Why do you need testing? 2. What can a good tester do fro you and your team? 3. How proper testing can be organized 4. What to expect from your testers ( when you hire them) 5. What to look in a tester during hiring process."
     tags:
       - testing
       - security
@@ -1531,9 +1575,9 @@ speakers:
         title: 'Data in the continuous delivery process'
         type: 'talk'
         short:
-          - "TBA"
+          - "Continuous delivery process is getting more and more attention, especially since the whole DevOps movement started. Package/build/dependency managers like npm, maven and composer make it easy for developers to package their code. Configuration management tools like Chef and Puppet make it easy to deploy the packages and configure the whole infrastructure. Vagrant allows developers to run on their machines (more or less) the exact copy of the production systems."
         long:
-          - "TBA"
+          - "Continuous delivery process is getting more and more attention, especially since the whole DevOps movement started. Package/build/dependency managers like npm, maven and composer make it easy for developers to package their code. Configuration management tools like Chef and Puppet make it easy to deploy the packages and configure the whole infrastructure. Vagrant allows developers to run on their machines (more or less) the exact copy of the production systems. But why is there no popular tool for managing data in a continuous delivery process? Is it too complex or too specific? In this presentation, various flows of data in a continuous delivery process are presented, ranging from simple cases of small web sites run by content management systems, all the way to complex large-scale cloud-deployed operational databases used in e-commerce containing millions of private and encrypted records, while enforcing the PCI-DSS standard."
     tags:
       - db
       - cloud
@@ -1550,9 +1594,16 @@ speakers:
         title: 'The Dark Art of Container Monitoring'
         type: 'talk'
         short:
-          - "TBA"
+          - "This presentation covers the current state of the art for container monitoring (including real use-cases and pros/cons of each) and features live interaction with container environments and live demos of all the tools and techniques discussed. "
         long:
-          - "TBA"
+          - "Containers are revolutionizing the way we deploy and maintain our infrastructures: reducing development overhead, streamlining dev / test / ops, and enabling highly scalable, dynamic infrastructures. But containers still have a key problem: monitoring and troubleshooting them is impractical, painful, and sometimes plain impossible. Even basic things like understanding what is using CPU, memory, or disk bandwidth inside a container are difficult - let alone finding out who a container is talking to on the network or tracking malicious activity. This presentation covers the current state of the art for container monitoring and visibility, including real use-cases and pros / cons of each."
+          - "The focus is on advanced container visibility techniques, such as:"
+          - "* visualizing a container’s network activity"
+          - "* understanding detailed resource usage (CPU, memory and disk I/O) of containers and individual processes running inside containers"
+          - "* following process and user activity inside containers"
+          - "* collecting logs from multiple containers"
+          - "The presentation features live interaction with container environments and live demos of all the tools and techniques discussed. Special emphasis is put on sysdig, an open source container and system troubleshooting tool."
+          - "https://github.com/draios/sysdig"
     tags:
       - docker
       - monitoring
@@ -1626,9 +1677,10 @@ speakers:
         title: 'Augmented reality: behind the scene'
         type: 'talk'
         short:
-          - "TBA"
+          - "Have you ever wondered what is the sorcery behind augmented reality? What it takes to transform 'ordinary' reality into something magical? Let’s take a peek behind the curtains and find out all the nuts and bolts it's made of and what makes it tick... well, on a fundamental level at least."
         long:
-          - "TBA"
+          - "In the recent years we've seen a rising interest of the industry for virtual reality (VR) and lately for augmented reality (AR) as well. No wonder since it's the closest thing to holograms we've been dreaming of and drooling over in works of fiction for the past five decades or so. While VR brings 'total' immersion and a set of problems caused by it, AR promises future full of holograms all around us, our physical and virtual worlds finally collided and merged. It’s hard to even imagine, let alone predict all the ways it will affect content creation, user experience and overall interaction with the world around us. Advancements in processing power of mobile platforms and image sensors fueled this recent surge of interest towards AR, but there is still a long road ahead of us from having contact lens-like, inconspicuous AR devices capable of rendering augmentation indistinguishable from the reality."
+          - "This talk will focus more on some of the techniques used behind AR: computer vision algorithms, its usage in combination with computer graphics to achieve digital augmentation and evolution from simple marker-based and natural feature tracking to utilizing simultaneous localization and mapping (SLAM) algorithms. Basically, what it takes to come from matrix of bytes received from image sensor to superimposing another matrix of computer generated bytes that our eyes perceive as augmented reality."
     tags:
       - hw
   -
@@ -1644,9 +1696,20 @@ speakers:
         title: 'Breaking bad with GitLab CI'
         type: 'talk'
         short:
-          - "TBA"
+          - "It is common to use CI as a tool to run your tests and build you builds. But GitLab has more to offer."
+          - "I will show how GitLab uses its CI and how our clients use it. To give you a whole picture, I will demonstrate some crazy experiments. You would never think that something like this is possible to build with CI system"
         long:
-          - "TBA"
+          - "It is common to use CI as a tool to run your tests and build you builds. But GitLab has more to offer."
+          - "I will show how GitLab uses its CI and how our clients use it. To give you a whole picture, I will demonstrate some crazy experiments. You would never think that something like this is possible to build with CI system"
+          - "How do you like an idea to build a Docker container with a set of Ansible playbooks from another repo and run test inside generated container on the next step?"
+          - "Other usages:"
+          - "- Build a build farm"
+          - "- Check spelling"
+          - "- Generate documentation"
+          - "- Run benchmarks"
+          - "- Set up your deployment pipeline"
+          - "- Use any static site generator"
+          - "- and so on"
   -
     firstname: 'Antonis'
     lastname: 'Kalipetis'
@@ -1660,13 +1723,23 @@ speakers:
         title: 'Docker 1.12: Orchestration, containers and beyond'
         type: 'talk'
         short:
-          - "TBA"
+          - "Docker has evolved from a container engine, to a complete end-to-end solution for orchestrating cloud-native applications. With the 1.12 release, you can use Docker to manage and orchestrate your infrastructure."
+          - "In this session, we'll explore Docker's evolution, we'll see the different components that make up Docker today and we'll have a nice demo of Docker's orchestration using Swarm mode."
         long:
-          - "TBA"
+          - "Docker has gone a long way, from a container engine over LXC, to a complete solution including runC - a container runtime, containerd - a daemon to control containers, the Docker engine and the newly added Swarm mode - an orchestrator which can schedule everything from containers to VMs. Being a heavy user of Docker from version 0.6, I've gained a lot of experience using all the different tools around Docker and the Docker ecosystem, which I plan to share following Docker's journey."
+          - "Through this journey, we'll see the different tools that make up Docker and their responsibilities and how they contribute to the whole container ecosystem."
+          - "At the end of the session, I'll have a live demo of installing Docker, initializing a cluster and deploying services using Docker's swarm mode throughout the cluster."
       -
         tid: 500
         title: 'Creating a cloud native development environment'
         type: 'talk'
+        short:
+          - "Continuous integration and delivery has evolved a lot during the last couple of years through containers and the different container schedulers and orchestrators. Our software delivery pipeline includes a lot of tools for securing and speeding up the process, while our development environments are still living in the past - packing everything in a single local VM."
+          - "During the session, we'll see the different pros and cons of having a cloud native developer environment, that lives in the cloud, is managed and replicates as close as possible the production infrastructure."
+        long:
+          - "Having great experience in creating and managing thousands of developer environments in the cloud for our users at SourceLair - a cloud-based online IDE, which focuses primarily in automating user tasks and provisioning their infrastructure according to their needs - during the session I'll pinpoint the different challenges we have faced and all the interesting findings we have discovered through the process of creating an online IDE. Also, I'll describe the benefits of having a managed developer environment in the cloud and how this can benefit a company in terms of maintenance and time."
+          - "At the end of the session, I'll describe our vision for the future of developer environments, which sports a managed infrastructure that's easily accessed, defined and replicated across teams inside a company."
+          - "The session will contain a lot of examples that we've faced at SourceLair, but will not be centered around our product."
     tags:
       - docker
   -
@@ -1682,9 +1755,10 @@ speakers:
         title: '1, 2, 3, build - Continuous Integration for Mobile Apps'
         type: 'talk'
         short:
-          - "TBA"
+          - "Continuous Integration and Continuous Delivery are powerful processes to ensure quality and improve the release process. But when developing mobile Apps, you face many unique challenges, that I want to discuss in my talk. I am going to show tools that support you and give practical tips on how to continuously integrate your mobile App."
         long:
-          - "TBA"
+          - "Continuous Integration and Continuous Delivery are powerful processes to ensure quality and improve the release process. But when developing mobile Apps, you face many unique challenges, that I want to discuss in my talk. I am going to show tools that support you and give practical tips on how to continuously integrate your mobile App."
+          - "I am going to show three platforms, ranging from one-click solutions to fully customizable build-platforms for building Android, iOS and Xamarin Apps and also how to perform advanced tasks like signing, automated testing and semi-automated deployment into App Stores."
     tags:
       - mobile
   -
@@ -1718,9 +1792,21 @@ speakers:
         title: 'MQTT: The glue for the Internet of Things'
         type: 'talk'
         short:
-          - "TBA"
+          - "This session is about a real MQTT-driven IoT stack with several sensors, remote-controlled switches. Via a secured connection to a remote MQTT broker I will show how data measured by microcontroller driven sensors transmitted and then displayed by JavaFX based MQTT applications on different platforms (desktop, embedded and mobile devices) and custom NeoPixel driven gauges."
         long:
-          - "TBA"
+          - "A full IoT stack with sensors, actors and (mobile) clients glued together by MQTT"
+          - "The Internet of Things becomes more and more part of our life. A fast growing number of different kind of devices provide programming interfaces. The more heterogeneous these environments are, the more increases the need for consistant transmission and control protocols."
+          - "By end of the 1990s IBM invented the Message Queue Telemetry Transport called MQTT."
+          - "MQTT is a very lightweight, easy to use 'publish/subscribe' M2M / IoT communication protocol that rapidly gains importance in the IoT ecosystem."
+          - "This session is about a real MQTT-driven IoT stack with several sensors, remote-controlled switches. Via a secured connection to a remote MQTT broker I will show how data measured by microcontroller driven sensors transmitted and then displayed by JavaFX based MQTT applications on different platforms (desktop, embedded and mobile devices) and custom NeoPixel driven gauges."
+          - "Additionally I will introduce how to use MQTT.fx for testing, simulating, and debugging MQTT communications. MQTT.fx is a free desktop application available for Windwos, OS X and Linux."
+          - "Session schedule:"
+          - "- Introduction of the IoT network architecture and the involved components"
+          - "- Introduction of the MQTT protocol"
+          - "- Overview of securing MQTT traffic"
+          - "- Overview of the very active MQTT ecosystem"
+          - "- Introducing MQTT.fx"
+          - "- Live demo"
     tags:
       - iot
   -
@@ -1755,9 +1841,9 @@ speakers:
         title: 'Reverse engineering the clean code'
         type: 'talk'
         short:
-          - "TBA"
+          - "This might be the psychology basic for developers… starting with the design 101; take some design principles and show how they are reflected in code. "
         long:
-          - "TBA"
+          - "This talk takes one of design principles (from UX world- Norman's design of everyday things, memory model, psychology of short term memory - etc) and extrapolate it onto programming world, trying to distill some patterns and antipatterns in developers' approach to code."
     tags:
   -
     firstname: 'Miloš'
@@ -1772,15 +1858,15 @@ speakers:
         title: 'MVVM with Android Databinding in Practice'
         type: 'talk'
         short:
-          - "TBA"
+          - "general concept of MVVM and Android Databinding - why they should be used together - how using these technologies reflects to the app architecture - code snippets from practice - disadvantages, cases when it shouldn't be used and alternatives "
         long:
-          - "TBA"
+          - "general concept of MVVM and Android Databinding - why they should be used together - how using these technologies reflects to the app architecture - code snippets from practice - disadvantages, cases when it shouldn't be used and alternatives "
     tags:
       - android
   -
     firstname: 'Stanko'
-    lastname: 'Rusendić'
-    pageurl: 'stanko-rusendic'
+    lastname: 'Krtalić Rusendić'
+    pageurl: 'stanko-krtalic-rusendic'
     url: 'https://twitter.com/monorkin'
     photo: 'Stanko Rusendic.jpg'
     company: 'Infinum'
@@ -1790,9 +1876,9 @@ speakers:
         title: 'Stubs, Mocks & Spies'
         type: 'talk'
         short:
-          - "TBA"
+          - "1000 tests running for hours on continuous integration services should be a thing of the past. Don't lose time waiting for your tests. "
         long:
-          - "TBA"
+          - "1000 tests running for hours on continuous integration services should be a thing of the past. Don't lose time waiting for your tests. "
     tags:
       - web
       - ruby
