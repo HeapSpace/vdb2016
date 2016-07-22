@@ -687,9 +687,10 @@ speakers:
         title: 'Herding Cats to a Firefight: The evolution of an engineering on-call team'
         type: 'talk'
         short:
-          - "TBA"
+          - "Production issues aren't an easy thing to learn to deal with. Yammer went from having one person on-call, to having the whole engineering team taking ownership of their code and services in production. This talk goes over what things worked, and what didn't, to get us there."
         long:
-          - "TBA"
+          - "Your organisation has grown from a small and scrappy app to a full-fledged SaaS behemoth. It's 3AM on a Friday night (or is it Saturday?) and things are looking bad. Servers are on fire, exceptions are flooding the logs, and your customers are taking their frustration to Twitter. What do you do?"
+          - "Every company that succeeds (and that's what we're all aiming for, right?) will have to solve this problem eventually. We'll talk about how Yammer evolved from having just a single person as 'the' on-call engineer, to a cross-geo follow-the-sun on-call team that satisfies customer needs, meets Microsoft standards, and doesn't kill engineers. You'll leave this talk with tips on what worked and what didn’t, to help you build this process for your team."
     tags:
       - web
   -
