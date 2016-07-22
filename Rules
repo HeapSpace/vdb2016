@@ -11,17 +11,17 @@ preprocess do
   @items.each do |item|
     if item.key?(:speakers)
       schedule_items = item[:speakers]
-      json_schedule_items = schedule_items
-      File.open("content/vdb16talks.json","w") do |f|
+      jsonnew_schedule_items = schedule_items
+      File.open("content/vdb16all.json","w") do |f|
         # f.write(schedule_items.to_json)
-        f.puts json_schedule_items.to_json.force_encoding("ISO-8859-1")
+        f.puts jsonnew_schedule_items.to_json.force_encoding("ISO-8859-1")
       end
       schedule_items.each do |speaker|
         speakername = speaker[:firstname].to_s+' '+speaker[:lastname].to_s
         if speaker[:pageurl]
           @items.create('', {:photo => speaker[:photo], :firstname => speaker[:firstname], :lastname => speaker[:lastname], :url => speaker[:url], :company => speaker[:company], :talk => speaker[:talk], :tags => speaker[:tags], :layout => '/speaker_page.html'}, '/speakers/'+speaker[:pageurl]+'/index.md')
            speaker[:talk].each do |t|
-             @items.create('', {:title => t[:title], :speaker => speakername, :speakerpage => speaker[:pageurl], :personalurl => speaker[:url], :company => speaker[:company], :photo => speaker[:photo], :tags => speaker[:tags], :type => t[:type], :short => t[:short], :long => t[:long], :day => t[:day], :track => t[:track], :slot => t[:slot], :duration => t[:duration], :venue => t[:venue], :test => t[:test], :layout => '/talk_page.html'}, '/talk/'+t[:tid].to_s+'/index.md')
+             @items.create('', {:title => t[:title], :speaker => speakername, :speakerpage => speaker[:pageurl], :personalurl => speaker[:url], :company => speaker[:company], :photo => speaker[:photo], :tags => speaker[:tags], :type => t[:type], :short => t[:short], :long => t[:long], :day => t[:day], :track => t[:track], :slot => t[:slot], :duration => t[:duration], :venue => t[:venue], :layout => '/talk_page.html'}, '/talk/'+t[:tid].to_s+'/index.md')
            end
         end
       end
