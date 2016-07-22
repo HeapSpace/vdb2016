@@ -67,6 +67,7 @@ speakers:
     company: 'Amyx+McKinsey'
     talk:
       -
+        tid: 100
         title: 'Keynote'
         type: 'talk'
         short:
@@ -88,6 +89,7 @@ speakers:
     company: 'Amazon'
     talk:
       -
+        tid: 105
         title: 'DevOps on AWS: Deep Dive on Continuous Delivery and the AWS Developer Tools'
         type: 'talk'
         short:
@@ -109,6 +111,7 @@ speakers:
     company: 'Indiegogo'
     talk:
       -
+        tid: 110
         title: 'How to raise a million dollars on Indiegogo'
         type: 'talk'
         short:
@@ -130,6 +133,7 @@ speakers:
     company: 'Red Hat'
     talk:
       -
+        tid: 115
         title: 'Faster and more efficient processes by combining BPM and Mobile'
         type: 'talk'
         short:
@@ -152,6 +156,7 @@ speakers:
     company: 'Red Hat'
     talk:
       -
+        tid: 120
         title: 'Open stack for building end-to-end IoT solutions'
         type: 'talk'
         short:
@@ -173,6 +178,7 @@ speakers:
     company: 'SAP'
     talk:
       -
+        tid: 125
         title: 'Spring Boot and Kotlin, a match made in Heaven'
         type: 'talk'
         short:
@@ -194,6 +200,7 @@ speakers:
     company: 'Google'
     talk:
       -
+        tid: 130
         title: 'Machine Learning as an API: strengths, limits, and unusual use cases'
         type: 'talk'
         short:
@@ -210,6 +217,7 @@ speakers:
     company: 'IBM'
     talk:
       -
+        tid: 135
         title: 'NoSQL is a lie'
         type: 'talk'
         short:
@@ -228,6 +236,7 @@ speakers:
     company: 'IBM Global Business Services'
     talk:
       -
+        tid: 140
         title: 'The Art of Clean Code'
         type: 'talk'
         short:
@@ -275,6 +284,7 @@ speakers:
     company: 'IBM Bluemix'
     talk:
       -
+        tid: 145
         title: 'Microservices Without Servers'
         type: 'talk'
         short:
@@ -302,6 +312,7 @@ speakers:
     company: 'Atlassian'
     talk:
       -
+        tid: 150
         title: 'Don`t be left out: How to develop software in a distributed team'
         type: 'talk'
         short:
@@ -319,6 +330,7 @@ speakers:
     company: 'CloudBees'
     talk:
       -
+        tid: 155
         title: 'Self-Healing Systems'
         type: 'talk'
         short:
@@ -327,6 +339,7 @@ speakers:
           - "We can think of the whole computer systems like a human body that consist of cells of various types. They can be hardware or software. When they are software units, the smaller they are, the easier it is for them to self-heal, recuperate from failures, multiply or even get destroyed when that is needed. We call those small units microservices, and they can indeed have behaviours similar to those observed in a human body.  Microservices-based systems can be made in a way that they have the ability to self-heal. That is not to say that self-healing we are about to explore is applicable only to microservices. It is not. However, self-healing can be applied to almost any type of the architecture but provides best results when combined with microservices."
           - "We'll explore practices and tools required to set up fully autonomous self-healing systems capable of both reactive recuperation from failures and proactive predictions of steps that should be taken to prevent failures before they happen."
       -
+        tid: 160
         title: 'Microservices Lifecycle Workshop'
         type: 'workshop'
         short:
@@ -348,6 +361,7 @@ speakers:
     company: 'Pivotal Software, Inc.'
     talk:
       -
+        tid: 165
         title: 'This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT? Businessing the S*** out of Transformative Development!'
         type: 'talk'
         short:
@@ -375,6 +389,7 @@ speakers:
     company: 'Pivotal'
     talk:
       -
+        tid: 170
         title: 'From Zero to Hero With Spring Boot'
         type: 'talk'
         short:
@@ -388,6 +403,7 @@ speakers:
           - "This is a live coding session only."
           - "A passive knowledge of Spring Framework is preferable though not mandatory. The purpose of this talk is to implement a simple demo app and demonstrates how Spring Boot helps you to be productive and the devops-related features it brings."
       -
+        tid: 175
         title: '40 Tips & Tricks for Spring in IntelliJ IDEA'
         type: 'talk'
         secondspeaker: 'Yann Cebron'
@@ -408,6 +424,7 @@ speakers:
     company: 'JetBrains'
     talk:
       -
+        tid: 180
         title: '40 Tips & Tricks for Spring in IntelliJ IDEA'
         type: 'talk'
         secondspeaker: 'Stéphane Nicoll'
@@ -428,6 +445,7 @@ speakers:
     company: 'Zalando'
     talk:
       -
+        tid: 185
         title: 'The frontend taboo: a story of full stack microservices'
         type: 'talk'
         short:
@@ -452,6 +470,7 @@ speakers:
     company: 'Bully! Entertainment'
     talk:
       -
+        tid: 190
         title: 'Narrative Language of Virtual Reality'
         type: 'talk'
         short:
@@ -468,6 +487,7 @@ speakers:
     company: 'C.T.Co'
     talk:
       -
+        tid: 195
         title: 'Automate the Mobile'
         type: 'talk'
         short:
@@ -485,6 +505,7 @@ speakers:
     company: 'Luminis'
     talk:
       -
+        tid: 200
         title: 'Angular, Typescript and RequireJS: The great alltogether'
         type: 'talk'
         short:
@@ -502,6 +523,7 @@ speakers:
     company: 'Gregarious Mammal'
     talk:
       -
+        tid: 205
         title: 'Your Favourite New Language - The Future of Swift'
         type: 'talk'
         short:
@@ -520,6 +542,7 @@ speakers:
     company: 'Daniel G. Siegel'
     talk:
       -
+        tid: 210
         title: 'The lost medium'
         type: 'talk'
         short:
@@ -538,6 +561,7 @@ speakers:
     company: 'Orat.io'
     talk:
       -
+        tid: 215
         title: 'Chatbots as new apps for mobile messengers'
         type: 'talk'
         short:
@@ -555,6 +579,7 @@ speakers:
     company: 'Intuit'
     talk:
       -
+        tid: 220
         title: 'Journey to APIs and Microservices: Best practices from successful transformations'
         type: 'talk'
         short:
@@ -572,6 +597,7 @@ speakers:
     company: 'IG Index'
     talk:
       -
+        tid: 225
         title: 'Repl Driven Development'
         type: 'talk'
         short:
@@ -587,6 +613,7 @@ speakers:
     company: 'BizPro Technologies'
     talk:
       -
+        tid: 230
         title: 'Edge Performance with In-memory NoSQL'
         type: 'talk'
         short:
@@ -604,6 +631,7 @@ speakers:
     company: 'SpiceFactory'
     talk:
       -
+        tid: 235
         title: 'Complex State Handling in Modern Web Applications'
         type: 'talk'
         short:
@@ -621,6 +649,7 @@ speakers:
     company: 'Yammer'
     talk:
       -
+        tid: 240
         title: 'Herding Cats to a Firefight: The evolution of an engineering on-call team'
         type: 'talk'
         short:
@@ -638,6 +667,7 @@ speakers:
     company: 'Angular GDE'
     talk:
       -
+        tid: 245
         title: 'Building Cross-Platform Apps using Redux with Angular 2'
         type: 'talk'
         short:
@@ -646,6 +676,7 @@ speakers:
           - "Redux has proved very successful. Inspired by Flux and Elm, is used to handle Application state and bind it to the User Interface."
           - "Angular 2 has shifted from being just a framework to being a cross platform. This talk shows how everything fits together in this new paradigm."
       -
+        tid: 250
         title: 'Angular 2 Workshop'
         type: 'workshop'
         short:
@@ -675,6 +706,7 @@ speakers:
     company: 'PeakGames'
     talk:
       -
+        tid: 255
         title: 'Getting Started Game Development with Unity as an iOS Developer'
         type: 'talk'
         short:
@@ -693,6 +725,7 @@ speakers:
     company: 'ActiveCollab'
     talk:
       -
+        tid: 260
         title: 'Our take on agile'
         type: 'talk'
         short:
@@ -710,6 +743,7 @@ speakers:
     company: 'SoftwareMill'
     talk:
       -
+        tid: 265
         title: 'Reactive Database Mapping with Scala and Slick'
         type: 'talk'
         short:
@@ -730,6 +764,7 @@ speakers:
     company: 'Ameliant'
     talk:
       -
+        tid: 270
         title: 'The Myth of the Magical Messaging Fabric'
         type: 'talk'
         short:
@@ -746,6 +781,7 @@ speakers:
     company: ''
     talk:
       -
+        tid: 275
         title: 'Haskell On Rails'
         type: 'talk'
         short:
@@ -763,6 +799,7 @@ speakers:
     company: 'CSS Versicherung'
     talk:
       -
+        tid: 280
         title: 'Lambda Core – HardCore'
         type: 'talk'
         short:
@@ -780,6 +817,7 @@ speakers:
     company: 'whatever mobile GmbH'
     talk:
       -
+        tid: 285
         title: 'Increasing Sensing Quality of Life with a SIM based connectivity solution for IoT'
         type: 'talk'
         short:
@@ -797,6 +835,7 @@ speakers:
     company: 'TouK'
     talk:
       -
+        tid: 290
         title: 'Streams, flows and storms – how not to drown with your data?'
         type: 'talk'
         short:
@@ -814,6 +853,7 @@ speakers:
     company: 'ProData Consult'
     talk:
       -
+        tid: 295
         title: 'Apache Spark? If it only worked.'
         type: 'talk'
         short:
@@ -831,6 +871,7 @@ speakers:
     company: 'SmartCat.io'
     talk:
       -
+        tid: 300
         title: 'Real-time analytics with fast data stack'
         type: 'talk'
         short:
@@ -849,6 +890,7 @@ speakers:
     company: 'Ocado Technology  '
     talk:
       -
+        tid: 305
         title: 'Building multiplayer game using streams'
         type: 'talk'
         short:
@@ -867,6 +909,7 @@ speakers:
     company: 'Massive Interactive, Inc'
     talk:
       -
+        tid: 310
         title: 'Next generation of frontend architectures'
         type: 'talk'
         short:
@@ -885,6 +928,7 @@ speakers:
     company: 'Deploy Inc.'
     talk:
       -
+        tid: 315
         title: 'Developing custom Android device'
         type: 'talk'
         short:
@@ -903,6 +947,7 @@ speakers:
     company: 'Netcetera'
     talk:
       -
+        tid: 320
         title: 'DIY Java & Kubernetes'
         type: 'talk'
         short:
@@ -920,6 +965,7 @@ speakers:
     company: 'Senacor Technologies'
     talk:
       -
+        tid: 325
         title: 'Event Sourcing in Microservices'
         type: 'talk'
         short:
@@ -937,6 +983,7 @@ speakers:
     company: 'Infinum'
     talk:
       -
+        tid: 330
         title: 'Blazingfast™ deployment with mina'
         type: 'talk'
         short:
@@ -955,6 +1002,7 @@ speakers:
     company: 'Ustream, Inc'
     talk:
       -
+        tid: 335
         title: 'Scalable Service Architectures'
         type: 'talk'
         short:
@@ -972,6 +1020,7 @@ speakers:
     company: 'IG'
     talk:
       -
+        tid: 340
         title: 'How to deal with a hot potato'
         type: 'talk'
         short:
@@ -989,6 +1038,7 @@ speakers:
     company: 'AbilityMatrix, Inc.'
     talk:
       -
+        tid: 345
         title: '5 HW Startups - Lessons learned while mentoring'
         type: 'talk'
         short:
@@ -1007,6 +1057,7 @@ speakers:
     company: 'Regional Center for Talented Youth II'
     talk:
       -
+        tid: 350
         title: 'PageGaze - Interactive Webpage Eye-Tracking Technology'
         type: 'talk'
         short:
@@ -1026,6 +1077,7 @@ speakers:
     company: 'Telegroup'
     talk:
       -
+        tid: 355
         title: 'Bringing Social Networks to living room using JS APIs'
         type: 'talk'
         short:
@@ -1043,6 +1095,7 @@ speakers:
     company: 'Levi 9'
     talk:
       -
+        tid: 360
         title: 'Smart lighting: part of the ‘Internet of Things’'
         type: 'talk'
         short:
@@ -1060,6 +1113,7 @@ speakers:
     company: 'Talpa Global'
     talk:
       -
+        tid: 365
         title: 'Smart lighting: part of the ‘Internet of Things’'
         type: 'talk'
         short:
@@ -1077,6 +1131,7 @@ speakers:
     company: 'Ocado Technology'
     talk:
       -
+        tid: 370
         title: 'Beat Aliens with Akka Cluster'
         type: 'talk'
         short:
@@ -1094,6 +1149,7 @@ speakers:
     company: 'Emarsys'
     talk:
       -
+        tid: 375
         title: 'Lean Poker'
         type: 'workshop'
         short:
@@ -1112,6 +1168,7 @@ speakers:
     company: 'Vega IT Sourcing'
     talk:
       -
+        tid: 380
         title: 'Happiness at Work in IT World'
         secondspeaker: 'Maja Nedučić'
         type: 'workshop'
@@ -1150,6 +1207,7 @@ speakers:
     company: 'Vega IT Sourcing'
     talk:
       -
+        tid: 385
         title: 'Happiness at Work in IT World'
         secondspeaker: 'Maja Božić'
         type: 'workshop'
@@ -1184,6 +1242,7 @@ speakers:
     company: 'Namics'
     talk:
       -
+        tid: 390
         title: 'What`s your motivation?'
         type: 'talk'
         short:
@@ -1200,6 +1259,7 @@ speakers:
     company: 'Zuhlke Engineering'
     talk:
       -
+        tid: 395
         title: 'Harness the power of HTTP headers to secure your web apps'
         type: 'talk'
         short:
@@ -1218,6 +1278,7 @@ speakers:
     company: 'Harezmi IT Solutions'
     talk:
       -
+        tid: 400
         title: 'Employing a View Model API Based on Dynamic Proxies'
         type: 'talk'
         short:
@@ -1236,6 +1297,7 @@ speakers:
     company: 'Radiant Tap'
     talk:
       -
+        tid: 405
         title: 'Fresh Cup of iOS 10'
         type: 'talk'
         short:
@@ -1254,6 +1316,7 @@ speakers:
     company: ''
     talk:
       -
+        tid: 410
         title: 'JVM++: The Graal VM'
         type: 'talk'
         short:
@@ -1272,6 +1335,7 @@ speakers:
     company: 'Fincore Group'
     talk:
       -
+        tid: 415
         title: 'Easy scaling with Hazlecast'
         type: 'talk'
         short:
@@ -1290,6 +1354,7 @@ speakers:
     company: 'Infinum'
     talk:
       -
+        tid: 420
         title: 'Stop wasting time NOT writing tests'
         type: 'talk'
         short:
@@ -1305,6 +1370,7 @@ speakers:
     company: 'Vibe Network'
     talk:
       -
+        tid: 425
         title: 'Sex Lies and Design patterns'
         type: 'talk'
         short:
@@ -1322,6 +1388,7 @@ speakers:
     company: 'Zuhlke Engineering'
     talk:
       -
+        tid: 430
         title: 'Why are Actors Terrible?'
         type: 'talk'
         short:
@@ -1329,6 +1396,7 @@ speakers:
         long:
           - "TBA"
       -
+        tid: 435
         title: 'Why are Actors Great?'
         type: 'workshop'
         short:
@@ -1348,6 +1416,7 @@ speakers:
     company: '7N/Nykredit'
     talk:
       -
+        tid: 440
         title: 'Lift framework in 45 minutes'
         type: 'talk'
         short:
@@ -1366,6 +1435,7 @@ speakers:
     company: 'Right Fold'
     talk:
       -
+        tid: 445
         title: 'Serverless chat bots with AWS Lambda'
         type: 'talk'
         short:
@@ -1383,6 +1453,7 @@ speakers:
     company: 'Levi 9'
     talk:
       -
+        tid: 450
         title: 'What do testers actually do?'
         type: 'talk'
         short:
@@ -1402,6 +1473,7 @@ speakers:
     company: 'Levi 9'
     talk:
       -
+        tid: 455
         title: 'Security in microservice architecture'
         type: 'talk'
         short:
@@ -1420,6 +1492,7 @@ speakers:
     company: 'Essential Dots d.o.o'
     talk:
       -
+        tid: 460
         title: 'Data in the continuous delivery process'
         type: 'talk'
         short:
@@ -1438,6 +1511,7 @@ speakers:
     company: 'Sysdig'
     talk:
       -
+        tid: 465
         title: 'The Dark Art of Container Monitoring'
         type: 'talk'
         short:
@@ -1456,6 +1530,7 @@ speakers:
     company: 'Fast Data Ltd'
     talk:
       -
+        tid: 470
         title: 'Finding Your Perfect Weather with Apache Spark and Docker'
         type: 'talk'
         short:
@@ -1477,6 +1552,7 @@ speakers:
     company: 'Endava'
     talk:
       -
+        tid: 475
         title: 'C++ for mobile developers'
         type: 'talk'
         short:
@@ -1494,6 +1570,7 @@ speakers:
     company: 'Nordeus'
     talk:
       -
+        tid: 480
         title: 'Pushkin - Open source messaging platform'
         type: 'talk'
         short:
@@ -1510,6 +1587,7 @@ speakers:
     company: 'Comtrade'
     talk:
       -
+        tid: 485
         title: 'Augmented reality: behind the scene'
         type: 'talk'
         short:
@@ -1527,6 +1605,7 @@ speakers:
     company: 'GitLab'
     talk:
       -
+        tid: 490
         title: 'Breaking bad with GitLab CI'
         type: 'talk'
         short:
@@ -1542,6 +1621,7 @@ speakers:
     company: 'SourceLiar'
     talk:
       -
+        tid: 495
         title: 'Docker 1.12: Orchestration, containers and beyond'
         type: 'talk'
         short:
@@ -1549,6 +1629,7 @@ speakers:
         long:
           - "TBA"
       -
+        tid: 500
         title: 'Creating a cloud native development environment'
         type: 'talk'
     tags:
@@ -1562,6 +1643,7 @@ speakers:
     company: 'Zuhlke Engineering'
     talk:
       -
+        tid: 505
         title: '1, 2, 3, build - Continuous Integration for Mobile Apps'
         type: 'talk'
         short:
@@ -1579,6 +1661,7 @@ speakers:
     company: 'Datastax'
     talk:
       -
+        tid: 510
         title: 'SASI, Cassandra on the full text search ride!'
         type: 'talk'
         short:
@@ -1596,6 +1679,7 @@ speakers:
     company: 'Codecentric'
     talk:
       -
+        tid: 515
         title: 'MQTT: The glue for the Internet of Things'
         type: 'talk'
         short:
@@ -1613,6 +1697,7 @@ speakers:
     company: '"Maker" Association'
     talk:
       -
+        tid: 520
         title: 'NodeJS i Python za IoT platforme'
         type: 'talk'
         short:
@@ -1631,6 +1716,7 @@ speakers:
     company: ''
     talk:
       -
+        tid: 525
         title: 'Reverse engineering the clean code'
         type: 'talk'
         short:
@@ -1647,6 +1733,7 @@ speakers:
     company: 'New and rising'
     talk:
       -
+        tid: 530
         title: 'MVVM with Android Databinding in Practice'
         type: 'talk'
         short:
@@ -1664,6 +1751,7 @@ speakers:
     company: 'Infinum'
     talk:
       -
+        tid: 535
         title: 'Stubs, Mocks & Spies'
         type: 'talk'
         short:
@@ -1682,6 +1770,7 @@ speakers:
     company: 'Novomatic Lottery Solutions'
     talk:
       -
+        tid: 540
         title: 'Continuous Security Testing - Automating your AppSec Program'
         type: 'talk'
         short:
@@ -1698,6 +1787,7 @@ speakers:
     company: 'Levi 9'
     talk:
       -
+        tid: 545
         title: 'A Scrum Team – can it be great or is that a bait'
         type: 'talk'
         short:
@@ -1715,6 +1805,7 @@ speakers:
     company: 'Levi 9'
     talk:
       -
+        tid: 550
         title: 'A Scrum Team – can it be great or is that a bait'
         type: 'talk'
         short:

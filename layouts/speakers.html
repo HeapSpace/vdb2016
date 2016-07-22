@@ -38,6 +38,10 @@
 						<div class="photo" style="background-image: url('../images/speakers/<%= s[:photo] %>')"></div>
 						<h5 class="yellow">
 							<%= s[:firstname] %> <%= s[:lastname] %>
+							<%
+
+							%>
+
 						</h5>
 					<% if !s[:pageurl].to_s.empty? then %></a><% end %>
 					<h6 class="company">
@@ -47,6 +51,7 @@
 						<%
 						s[:talk].to_a.each { |t|
 						if !t[:title].to_s.empty? && !t[:type].to_s.empty?
+						tid = t[:title].to_i(36)
 						%>
 							<div class="single-talk">
 								<% if t[:type] == 'talk' %>
@@ -58,7 +63,7 @@
 								<% if t[:type] == 'lightning' %>
 								<i class="fa fa-bolt yellow"></i>
 								<% end %>
-								<span class="talk-title"><%= t[:title] %></span>
+								<a href="/talk/<%= t[:tid] %>/"><span class="brown"><%= t[:title] %> - <%= tid %></span></a>
 							</div>
 						<%
 							end

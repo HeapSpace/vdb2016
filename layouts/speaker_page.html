@@ -38,12 +38,12 @@
 								<i class="fa fa-microphone big-icon"></i>
 								<% end %>
 								<% if t[:type] == 'workshop' %>
-								<i class="fa fa-wrench big-icon wrench"></i>
+								<i class="fa fa-wrench big-icon"></i>
 								<% end %>
 								<% if t[:type] == 'lightning' %>
 								<i class="fa fa-bolt big-icon"></i>
 								<% end %>
-								<h3 class="title"><%= t[:title] %></h3>
+								<a href="/talk/<%= t[:tid] %>/"><h3 class="title"><%= t[:title] %></h3></a>
 								<% if !t[:secondspeaker].to_s.empty? && t[:secondspeaker] != '' %>
 									<h5 class="second-speaker bold">co-speaker: <span class=""><%= t[:secondspeaker] %></span></h5>
 								<% end %>

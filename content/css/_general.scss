@@ -574,21 +574,49 @@ iframe {
   opacity: 0.6;
 }
 
+.showmore-button {
+    cursor: pointer;
+    background-color: rgba($brand-secondary, 0.75);
+    color: $body-bg;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px 15px;
+    margin: 10px 0 5px 0;
+    display: inline-block;
+    font-weight: 700;
+    @include round-corners(18px);
+}
+
 .single-talk {
   border-bottom: 1px dotted rgba($brown, 0.75);
   margin-bottom: 10px;
   padding-bottom: 10px;
+  padding-top: 5px;
+  .talk-circle-links {
+    a {
+      margin-left: 10px;
+    }
+  }
+  .card-title {
+    margin-top: 0;
+  }
+  .card-logo {
+    vertical-align: bottom;
+    height: 23px;
+    margin-right: 15px;
+  }
   .big-icon {
     font-size: 220%;
     color: $brand-primary;
     margin-top: 20px;
-    padding: 12px 10px;
+    padding: 10px;
     width: 55px;
     height: 55px;
     border: 1px solid $brand-primary;
+    text-align: center;
     @include round-corners(50%);
-    &.wrench {
-      padding-top: 10px;
+    &.fa-microphone, &.fa-bolt, &.fa-link {
+      padding-top: 12px;
     }
   }
   .title {
@@ -612,6 +640,7 @@ iframe {
     text-align: left;
     margin-bottom: 15px;
     padding-top: 5px;
+    min-height: 37px;
     .tag {
       font-size: 90%;
       display: inline-block;
@@ -625,6 +654,9 @@ iframe {
     	margin: 0 10px 0 0;
     	cursor: pointer;
     	@include round-corners(16px);
+      &.card {
+        cursor: default;
+      }
     }
   }
 }

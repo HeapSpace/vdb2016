@@ -45,6 +45,13 @@ $(document).ready(function() {
     // $('#home-main-text').css('padding-top', $(window).height()/2.8);
     $('[data-toggle="popover"]').popover();
 
+    $("#talk-desc").showMore({
+      minheight: 75, // measured in px
+      buttontxtmore: 'show more',
+      buttontxtless: 'show less',
+      animationspeed: 250
+    });
+
     // init controller
     var controller = new ScrollMagic.Controller();
 

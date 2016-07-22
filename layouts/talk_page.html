@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Speaker' %>
+	<%= meta_share %>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+
+	<div class="container">
+
+	  <div class="row-centered margin-top-huge">
+	    <div class="col-sm-3 col-centered">
+	      <div class="speaker">
+
+					<div class="photo-frame">
+						<img src="/images/speakers/<%= @item[:photo] %>" />
+					</div>
+					<h4 class="text-center">
+				    <a href="/speakers/<%= @item[:speakerpage] %>/"><span class="yellow bold"><%= @item[:speaker] %></span></a>
+				  </h4>
+					<h6 class="">
+						<%= @item[:company] %>
+					</h6>
+		  	</div>
+	    </div>
+			<div class="col-sm-7 col-centered">
+				<div class="single-talk">
+					<h2 class="card-title">
+				    <span class="yellow bold"><%= @item[:title] %></span></a>
+				  </h2>
+					<div id="talk-desc" class="text">
+						<%= @item[:short].to_s.delete('[').delete(']').delete('"') %>
+					</div>
+					<!-- <h4 class="accent">
+						<img class="card-logo" src="/images/home-logo-small.png" /> 29. Sep <span class="yellow">/</span> 10:00 <span class="yellow">/</span> Track 2 <span class="yellow">/</span> Venue 3
+					</h4> -->
+					<div class="talk-circle-links pull-right">
+						<a href="/speakers/<%= @item[:speakerpage] %>/"><i class="fa fa-user big-icon"></i></a> <% if !@item[:personalurl].to_s.empty? then %><a href="<%= @item[:personalurl] %>" target="_blank"><i class="fa fa-link big-icon"></i></a><% end %>
+					</div>
+				</div>
+				<div class="single-talk">
+					<div class="tags">
+						<%  @item[:tags].to_a.each do |tag| %>
+							<span class="tag card">
+									<%= tag %>
+							</span>
+						<% end %>
+					</div>
+				</div>
+	    </div>
+	  </div>
+
+		<div class="row-centered margin-top-big">
+			<div class="col-sm-3 col-centered">
+				&nbsp;
+			</div>
+	    <div class="col-sm-7 col-centered">
+				<div class="single-talk">
+					<h4 class="card-title">
+						<span class="yellow bold">Full abstract</span></a>
+					</h4>
+					<div class="text">
+						<%= @item[:long].to_s.delete('[').delete(']').delete('"') %>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="info margin-top-huge">
+
+	</div>
+
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+
+</body>
+</html>
