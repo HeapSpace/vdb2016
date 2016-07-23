@@ -21,7 +21,7 @@ preprocess do
         if speaker[:pageurl]
           @items.create('', {:photo => speaker[:photo], :firstname => speaker[:firstname], :lastname => speaker[:lastname], :url => speaker[:url], :company => speaker[:company], :test => speaker[:test], :talk => speaker[:talk], :tags => speaker[:tags], :layout => '/speaker_page.html'}, '/speakers/'+speaker[:pageurl]+'/index.md')
            speaker[:talk].each do |t|
-             @items.create('', {:title => t[:title], :speaker => speakername, :speakerpage => speaker[:pageurl], :personalurl => speaker[:url], :company => speaker[:company], :photo => speaker[:photo], :tags => speaker[:tags], :type => t[:type], :short => t[:short], :long => t[:long], :day => t[:day], :track => t[:track], :slot => t[:slot], :duration => t[:duration], :venue => t[:venue], :test => t[:test], :layout => '/talk_page.html'}, '/talk/'+t[:tid].to_s+'/index.md')
+             @items.create('', {:title => t[:title], :speaker => speakername, :speakerpage => speaker[:pageurl], :personalurl => speaker[:url], :company => speaker[:company], :photo => speaker[:photo], :tags => speaker[:tags], :type => t[:type], :short => t[:short], :long => t[:long], :day => t[:day], :track => t[:track], :slot => t[:slot], :duration => t[:duration], :venue => t[:venue], :layout => '/talk_page.html'}, '/talk/'+t[:tid].to_s+'/index.md')
            end
         end
       end

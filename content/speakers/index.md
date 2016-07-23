@@ -637,7 +637,15 @@ speakers:
         short:
           - "Drinking too much coffee while maven builds and deploys your service? Jealous of how your FrontEnd mate just press F5 to 'deploy' his/her changes? Mastered the red-green-refactor workflow and want to know what is the next step? Our Lisp grandfathers knew how invaluable was the immediate feedback that a Read-Eval-Print Loop (REPL) allowed during development and now Java 9 will have one. Perhaps you have read that a REPL is useful for 'playing around' or for 'small code snippets', but this is far from true. In this presentation, you will learn how with a REPL you can have a better and more productive developer workflow by building a Tomcat service, one bit at a time, without having to build, compile, package or deploy it. Demo will be done with a Clojure REPL but no previous experience with Clojure is needed."
         long:
-          - "The motivation of the presentation is to show that in the JVM we do not need to suffer from the long code/build/deploy cycle when developing. Using TDD somehow ease the pain as the number of times that you need to recompile/repackage/redeploy as often, but there are still lots of code/configuration that cannot be tested unless you start the whole application. Also to be able to do TDD, you first need to understand how APIs (libraries/restful services) will behave and what kind of data they will return. The presentation will demo how with a REPL you can help with: * Build a full application a bit at a time, without having to recompile, repackage or redeploy it. * Understand libraries. * Explore existing databases and http services. * Improve the TDD workflow. * Inspect the state of a running application. * Debug in staging or even production environments. The presentation will be mostly a live coding demo with few slides. Coding will be done in Clojure, but the presentation will focus on the workflow that a REPL allows. "
+          - "The motivation of the presentation is to show that in the JVM we do not need to suffer from the long code/build/deploy cycle when developing. Using TDD somehow ease the pain as the number of times that you need to recompile/repackage/redeploy as often, but there are still lots of code/configuration that cannot be tested unless you start the whole application. Also to be able to do TDD, you first need to understand how APIs (libraries/restful services) will behave and what kind of data they will return."
+          - "The presentation will demo how with a REPL you can help with: "
+          - "* Build a full application a bit at a time, without having to recompile, repackage or redeploy it. "
+          - "* Understand libraries. "
+          - "* Explore existing databases and http services. "
+          - "* Improve the TDD workflow. "
+          - "* Inspect the state of a running application. "
+          - "* Debug in staging or even production environments. "
+          - "The presentation will be mostly a live coding demo with few slides. Coding will be done in Clojure, but the presentation will focus on the workflow that a REPL allows. "
   -
     firstname: 'Liviu'
     lastname: 'Costea'
