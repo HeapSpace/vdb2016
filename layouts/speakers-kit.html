@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title' %>
+	<%= meta_share %>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html' %>
+
+	<div class="main-bg page"></div>
+	<div class="container">
+	  <h1 class="text-center pad-vertical-big">
+	    Speakers<br><span class="yellow">kit</span>
+	  </h1>
+
+	  	<div class="row-centered">
+	    <div class="col-md-6 col-centered">
+			<h4 class="text-center plain">Hello speaker!
+			We are <b class="yellow">genuinely thankful</b> for your presence at the VDB16!</h4>
+		</div>
+		</div>
+		<div class="row-centered">
+			<div class="col-centered">
+				<div class="block-text text-center">
+					Please bookmark this page, it will be frequently updated.
+					<br><br>
+					Just in case we didn't mentioned, we trully
+					appreciate your effort to come here and talk at the conference.
+					Kudos! +10 Karma points for you!
+				</div>
+			</div>
+		</div>
+
+		<div class="steam-separator"></div>
+
+		<div class="row-centered margin-top-small">
+			<div class="col-centered">
+				<div class="block-text text-center">
+					<b>Contact</b>: we have a special e-mail just for you:
+					<a href="mailto:vdb-speakers@heapspace.rs">vdb-speakers@heapspace.rs</a>.
+					Feel free to ask us anything. Who knows, we might have an answer :)
+				</div>
+			</div>
+		</div>
+
+		<div class="steam-separator"></div>
+
+		<div class="row-centered margin-top-small">
+			<div class="col-centered">
+				<div class="block-text text-center">
+				<b>Share, share, share!</b> If you are super-excited as we are,
+				please share info about <b class="yellow">#VDB16</b> on your
+				social media. We crafted some buttons you can use, to look cool
+				(you know the drill, right-click and then save):
+				</div>
+
+				<div class="block-text text-center">
+				<img src="vdb16-badge2-350x75.png" alt="VoxxedDays Belgrad badge 2">
+				<img src="vdb16-badge3-350x75.png" alt="VoxxedDays Belgrad badge 3">
+				<img src="vdb16-badge4-350x75.png" alt="VoxxedDays Belgrad badge 4">
+				<br><br>
+				<img src="vdb16-badge1-320x250.png" alt="VoxxedDays Belgrad badge 1">
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<div class="footer-cta-block info margin-top-big">
+	  <%= render '/_footer_cta.html' %>
+	</div>
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+</body>
+</html>
