@@ -1728,26 +1728,20 @@ speakers:
     talk:
       -
         tid: 495
-        title: 'Docker 1.12: Orchestration, containers and beyond'
+        title: 'TBA'
         type: 'talk'
         short:
-          - "Docker has evolved from a container engine, to a complete end-to-end solution for orchestrating cloud-native applications. With the 1.12 release, you can use Docker to manage and orchestrate your infrastructure."
-          - "In this session, we'll explore Docker's evolution, we'll see the different components that make up Docker today and we'll have a nice demo of Docker's orchestration using Swarm mode."
+          - "TBA"
         long:
-          - "Docker has gone a long way, from a container engine over LXC, to a complete solution including runC - a container runtime, containerd - a daemon to control containers, the Docker engine and the newly added Swarm mode - an orchestrator which can schedule everything from containers to VMs. Being a heavy user of Docker from version 0.6, I've gained a lot of experience using all the different tools around Docker and the Docker ecosystem, which I plan to share following Docker's journey."
-          - "Through this journey, we'll see the different tools that make up Docker and their responsibilities and how they contribute to the whole container ecosystem."
-          - "At the end of the session, I'll have a live demo of installing Docker, initializing a cluster and deploying services using Docker's swarm mode throughout the cluster."
+          - "TBA"
       -
         tid: 500
-        title: 'Creating a cloud native development environment'
+        title: 'TBA'
         type: 'talk'
         short:
-          - "Continuous integration and delivery has evolved a lot during the last couple of years through containers and the different container schedulers and orchestrators. Our software delivery pipeline includes a lot of tools for securing and speeding up the process, while our development environments are still living in the past - packing everything in a single local VM."
-          - "During the session, we'll see the different pros and cons of having a cloud native developer environment, that lives in the cloud, is managed and replicates as close as possible the production infrastructure."
+          - "TBA"
         long:
-          - "Having great experience in creating and managing thousands of developer environments in the cloud for our users at SourceLair - a cloud-based online IDE, which focuses primarily in automating user tasks and provisioning their infrastructure according to their needs - during the session I'll pinpoint the different challenges we have faced and all the interesting findings we have discovered through the process of creating an online IDE. Also, I'll describe the benefits of having a managed developer environment in the cloud and how this can benefit a company in terms of maintenance and time."
-          - "At the end of the session, I'll describe our vision for the future of developer environments, which sports a managed infrastructure that's easily accessed, defined and replicated across teams inside a company."
-          - "The session will contain a lot of examples that we've faced at SourceLair, but will not be centered around our product."
+          - "TBA"
     tags:
       - docker
   -
