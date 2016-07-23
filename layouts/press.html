@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title' %>
+	<%= meta_share %>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html' %>
+
+	<div class="main-bg page"></div>
+	<div class="container">
+	  <h1 class="text-center pad-vertical-big">
+	    Press<br><span class="yellow">and media</span>
+	  </h1>
+
+	  	<div class="row-centered">
+	    <div class="col-md-6 col-centered">
+				<h4 class="text-center plain">Stay tuned, we will press more information soon.</h4>
+			</div>
+		</div>
+
+
+	  	<div class="row-centered" style="margin-top: 100px;">
+	    <div class="col-md-6 col-centered">
+				<h3 class="text-center plain">Releases</h3>
+			</div>
+		</div>
+
+		<div class="row-centered margin-top-small">
+			<div class="col-centered">
+				<div class="block-text text-center">
+					<a href="/press/Executive_Newsletter_July_19_2016.pdf" class="accent" target="_blank">Executive Newsletter (July 19th 2016)</a> (page #3)<br>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+	<div class="footer-cta-block info margin-top-big">
+	  <%= render '/_footer_cta.html' %>
+	</div>
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+</body>
+</html>
