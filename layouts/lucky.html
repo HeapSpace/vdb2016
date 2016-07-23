@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Speaker' %>
+	<%= meta_share %>
+	<%= meta_tag :keywords %>
+<style>
+.lucky {
+  position: relative;
+  width: 350px;
+  height: 440px;
+}
+
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #FFFFFF;
+  width: 350px;
+  height: 440px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: 0.4s cubic-bezier(0.28, 0.55, 0.385, 1.65);
+  transition: 0.4s cubic-bezier(0.28, 0.55, 0.385, 1.65);
+  cursor: pointer;
+  padding: 10px;
+}
+.card:nth-child(1) {
+  z-index: 10;
+  top: 0px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+.card:nth-child(2) {
+  z-index: 9;
+  top: -15px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  opacity: 0.9;
+}
+.card:nth-child(3) {
+  z-index: 8;
+  top: -30px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0.8;
+}
+.card:nth-child(4) {
+  z-index: 7;
+  top: -45px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  opacity: 0.7;
+}
+.card:nth-child(5) {
+  z-index: 6;
+  top: -60px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  opacity: 0.6;
+}
+.card:nth-child(6) {
+  z-index: 5;
+  top: -75px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  opacity: 0.5;
+}
+.card:nth-child(7) {
+  z-index: 4;
+  top: -90px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+  opacity: 0.4;
+}
+.card:nth-child(8) {
+  z-index: 3;
+  top: -105px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  opacity: 0.3;
+}
+.card:nth-child(9) {
+  z-index: 2;
+  top: -120px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  opacity: 0.2;
+}
+.card:nth-child(10) {
+  z-index: 1;
+  top: -135px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(0.1);
+          transform: scale(0.1);
+  opacity: 0.1;
+}
+.card:nth-child(11) {
+  z-index: 0;
+  top: -150px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  opacity: 0;
+}
+.card:first-child:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.card:last-child {
+  opacity: 0;
+}
+
+.lucky {
+  margin: 140px auto;
+}
+
+.lucky h2 {
+	color: #333 !important;
+	size: 0.9em;
+}
+
+
+.card {
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  text-align: center;
+}
+
+span {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  margin: 60px 0 0;
+  padding: 8px 10px;
+}
+
+</style>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+<div class="main-bg page"></div>
+<div class="container">
+
+	  <h1 class="text-center pad-vertical-big">
+	    Feelin' <span class="yellow">lucky</span>?
+	  </h1>
+		<div class="row-centered">
+	    <div class="col-md-6 col-centered">
+			<h4 class="text-center plain">
+				We know, with this many awesome talks at <b class="yellow">#VDB16</b>
+				it may be hard to choose which to attend.
+				So here are <b class="yellow">five</b> talks, randomly choosen
+				just for <a href="/tickets/">YOU</a>!
+			</h4>
+		</div>
+		</div>
+
+
+
+
+
+<div class="lucky">
+  <div data-card="4" class="card" id="lc4">1</div>
+  <div data-card="3" class="card" id="lc3">2</div>
+  <div data-card="2" class="card" id="lc2">3</div>
+  <div data-card="1" class="card" id="lc1">4</div>
+  <div data-card="0" class="card" id="lc0">5</div>
+</div>
+
+	</div>
+
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+
+<script type="text/javascript">
+
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
+
+
+$(function() {
+
+	$.getJSON("/vdb16all.json", function(json) {
+		var talks = new Array();
+		for (var i = 0, length = json.length; i < length; i++) {
+		    var talk = json[i]['talk'][0];
+
+		    if (talk['type'] == 'talk') {
+		    	talks.push(talk);
+		    }
+		}
+		shuffle(talks);
+
+		talks = talks.slice(0,5);
+
+		for (var i = 0; i < 5; i++) {
+			console.log(talks[i]);
+			$("#lc" + i).html(
+				"<h2>" + talks[i].title + "</h2>"+
+				"<a href='/talk/" + talks[i].tid + "/'>[more]</a>"
+			);
+		}
+	});
+
+  var rotate;
+
+  rotate = function() {
+    return $('.card:first-child').fadeOut(400, 'swing', function() {
+      return $('.card:first-child').appendTo('.lucky').hide();
+    }).fadeIn(400, 'swing');
+  };
+
+  $(".card").click(function() {
+  	console.log("xxxxxxxx")
+    return rotate();
+  });
+
+});
+</script>
+
+
+</body>
+</html>
