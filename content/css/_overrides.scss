@@ -8,3 +8,9 @@ textarea, input, select, a {
   outline: none !important;
   box-shadow: none !important;
 }
+
+img {
+  display:block;
+  max-width:100%;
+  height:auto
+}
