@@ -496,15 +496,29 @@ iframe {
     background: rgba(17,14,11,0.9);
   }
   &.latest {
-    background: rgba($red,0.8);
     color: $white;
     margin-top: 50px;
+    &.green {
+      background: rgba($green,0.8);
+      &:hover {
+        background: rgba($green,0.95);
+      }
+    }
+    &.red {
+      background: rgba($red,0.8);
+      &:hover {
+        background: rgba($red,0.95);
+      }
+    }
+    &.blue {
+      background: rgba($blue,0.8);
+      &:hover {
+        background: rgba($blue,0.95);
+      }
+    }
     @include round-corners(24px);
     h1, h2, h3, h4 {
       margin-top: 0;
-    }
-    &:hover {
-      background: rgba($red,0.8);
     }
   }
   &.info {
