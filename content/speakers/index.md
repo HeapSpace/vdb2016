@@ -137,8 +137,7 @@ speakers:
         title: 'Faster and more efficient processes by combining BPM and Mobile'
         type: 'talk'
         short:
-          - "A lot has happened in the area of mobile since Apple kicked off the revolution by announcing the first iPhone. However, the overall mobile market still has to be considered as young and especially unstandardized. This really puts a lot of organizations in front of huge challenges concerning the efficient development of mobile applications and the secure integration into backend IT systems. - But there is no way around mobile in the next years! The smart combination of mobile techniques (mBaaS, microservices, etc.) and business process management approaches will definitely drive process efficiency and speed to a whole new level."
-          - "In this presentation I will outline the floating icebergs you should look at when implementing mobile and BPM in your enterprise. In addition to that you will learn how other companies have successfully implemented mobile to optimize their processes."
+          - "A lot has happened in the area of mobile since Apple kicked off the revolution by announcing the first iPhone. However, the overall mobile market still has to be considered as young and especially unstandardized."
         long:
           - "A lot has happened in the area of mobile since Apple kicked off the revolution by announcing the first iPhone. However, the overall mobile market still has to be considered as young and especially unstandardized. This really puts a lot of organizations in front of huge challenges concerning the efficient development of mobile applications and the secure integration into backend IT systems. - But there is no way around mobile in the next years! The smart combination of mobile techniques (mBaaS, microservices, etc.) and business process management approaches will definitely drive process efficiency and speed to a whole new level."
           - "In this presentation I will outline the floating icebergs you should look at when implementing mobile and BPM in your enterprise. In addition to that you will learn how other companies have successfully implemented mobile to optimize their processes."
@@ -147,6 +146,8 @@ speakers:
         slot: '09:00'
         duration: 60
     tags:
+      - mobile
+      - business
   -
     firstname: 'Dejan'
     lastname: 'Bosanac'
@@ -184,7 +185,9 @@ speakers:
         short:
           - "TBA"
         long:
-          - "TBA"
+          - "Despite being very new, spring boot has seen a spectacular start as an amazing kickstarter for spring-based application. You can now start your project in a matter of minutes, not days!"
+          - "On the other hand, you're still using Java, with all its ceremony regarding code... Wouldn't it be great if we could pair Spring Boot with a powerful yet simple language?"
+          - "In this talk, I'll live code a Spring Boot application using Kotlin, the friendly language provided by JetBrains. Come discover how you can now cut through all the red tape and finally focus only the important stuff."
         day: 1
         track: 4
         slot: '10:20'
@@ -208,6 +211,7 @@ speakers:
         long:
           - "TBA"
     tags:
+      - api
   -
     firstname: 'Mike'
     lastname: 'Elsmore'
@@ -246,33 +250,23 @@ speakers:
         long:
           - "The primary value of software is to be flexible. The secondary value of software is to do what business wants it to do."
           - "Sounds insane? Just think a bit: what's the difference between IT and regular engineering? What propulsated IT that much? The ability to evolve, to adapt to new business needs. And we all know how difficult it is to adapt and strech old, dirty, rigid code."
-          - "Financially, the fact that 80% of the costs of a software project are in maintenance may not concern you, the developer, directly. But the fact that you read 10x times more time than you write code should make it clear to you: do your very best to write clean, beautiful code that is easy to maintain. This module explains how do such art."
-          - "Besides the bare act of writing code, the module also tackles the problematic of team work, code responsibility and cooperation necessary to any professional software engineer."
-          - "The module covers the most important practical aspects from the reference book 'Clean Code' by Robert C. Martin, along with many other sources. The training material was reviewed and discussed with numerous seniors to reach a wider consensus regarding the ideas and their nuances."
-          - "This is the module which is most likely to have the deepest impact on your day-to-day work, changing the way you exercise your profession. That's why I allways recommend to add this module to any training."
+          - "Financially, the fact that 80% of the costs of a software project are in maintenance may not concern you, the developer, directly. But the fact that you read 10x times more time than you write code should make it clear to you: do your very best to write clean, beautiful code that is easy to understand and maintain. This talk explains how write such art."
+          - "Besides the bare writing of code, the talk will touch on the problematic of team work, code responsibility and cooperation, necessary to any professional software engineer."
+          - "This talk reviews the most important practical guidelines from the reference book 'Clean Code' by Robert C. Martin, as they proved essential in so many situations of my experience."
+          - "This is the central topic of any corporate trainings I hold, and the best module of my training portfolio. The ideas that we'll discuss together are most likely to have a deep impact on your day-to-day work, changing the way you think and write software."
           - " "
           - "Agenda:"
           - " "
           - "• What is Clean Code"
-          - "• Names"
-          - "• Express intent"
-          - "• Parts of speech"
-          - "• Functions"
-          - "• Function Size"
-          - "• Extracting Method Objects"
-          - "• Function Signature"
-          - "• Side Effects & Temporal Coupling"
-          - "• Command/Query separation"
-          - "• Classes"
-          - "• Basic Shape"
-          - "• True Encapsulation"
-          - "• Data Structures vs. True Objects"
-          - "• Switch+Data Structures vs. Polymorphic Objects (opt)"
-          - "• 'Tell, Don`t Ask' Principle"
-          - "• Feature Envy"
-          - "• The Plugin Model: Dependency Inversion (opt)"
+          - "• Expressive Names"
+          - "• Functions: Size, Signature, Extract Method Object refactor"
+          - "• Functions: Side Effects & Temporal Coupling"
+          - "• Classes: True Encapsulation? In enterprise Java apps?!"
+          - "• OOP: 'Tell, Don`t Ask' Principle, Feature Envy"
+          - "• Dependency Inversion Principle"
           - "• Code Formatting"
           - "• Comments are failures"
+          - "• A Word on Clean Lamdas"
     tags:
       - metodologies
   -
@@ -318,14 +312,13 @@ speakers:
         short:
           - "Working with a team on the other side of the world can be a lonely, frustrating experience. But with the right attitude, practices, and tools, it could just be the most effective way to build software with others. Learn how I moved to the other side of the world and stayed productive without changing teams."
         long:
-          - "Working with a team on the other side of the world can be a lonely, frustrating experience. But with the right attitude, practices, and tools, it could just be the most effective way to build software with others. Learn how I moved to the other side of the world and stayed productive without changing teams."
           - "In this talk, you’ll learn about the joy of having all your code reviewed while you sleep. You’ll learn of the pain of waiting for a whole day for an answer to an important question. But above all, you’ll learn what you need to do to be able to work productively when your team is ten long hours away."
           - "See how I use tools such as Floobits for real-time remote pairing, and HipChat for asynchronous stand-ups to keep the team on the same page across timezones."
     tags:
       - distributed systems
   -
     firstname: 'Viktor'
-    lastname: 'Farcic'
+    lastname: 'Farčić'
     pageurl: viktor-farcic
     url: 'https://technologyconversations.com/about/'
     photo: 'Viktor Farcic.jpg'
@@ -370,8 +363,7 @@ speakers:
           - "Cloud Native, containers, DevOps, microservices, etc.: we go to conferences & get excited about things that could revolutionize our development & change our organizational & professional lives! And then, we go home...and hit the wall. If you've ever asked yourself, 'This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT??!', this is the session for you."
           - "Learn from an experienced software developer (who also happens to have an MBA) how to make your case to leadership, presenting management-ready justifications for changes in 'your world' that will positively impact the business as a whole."
         long:
-          - "Cloud Native, containers, DevOps, microservices, and more: we go to conferences and get excited about the potential of so many things that could revolutionize our development and change our organizational and professional lives! And then, we go home...and hit the wall. If you've ever asked yourself, 'This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT??!', this is the session for you."
-          - "Learn from an experienced software developer (who also happens to have an MBA) how to make your case to leadership, presenting management-ready justifications for changes in 'your world' that will positively impact the business as a whole. Topics include:"
+          - "Topics include:"
           - " "
           - "• How would this change affect your organization's/group's/team's work?"
           - "• How would this change impact (positively and negatively) your tech stack (internal considerations)?"
@@ -397,13 +389,10 @@ speakers:
         short:
           - "Spring Boot, the new convention-over-configuration centric framework from the Spring team at Pivotal, marries Spring's flexibility with conventional, common sense defaults to make application development move swiftly and enjoyable."
           - "It's ideally suited for building microservices and distributed systems and makes streamlining devops practices simple."
-          - "Join Spring Boot committer Stéphane Nicoll for a look at what Spring Boot is, why it's turning heads, why you should consider it for your next application (REST, web, batch, big-data, integration, whatever!) and how to get started."
+
         long:
-          - "Spring Boot, the new convention-over-configuration centric framework from the Spring team at Pivotal, marries Spring's flexibility with conventional, common sense defaults to make application development move swiftly and enjoyable."
-          - "It's ideally suited for building microservices and distributed systems and makes streamlining devops practices simple."
           - "Join Spring Boot committer Stéphane Nicoll for a look at what Spring Boot is, why it's turning heads, why you should consider it for your next application (REST, web, batch, big-data, integration, whatever!) and how to get started."
-          - "This is a live coding session only."
-          - "A passive knowledge of Spring Framework is preferable though not mandatory. The purpose of this talk is to implement a simple demo app and demonstrates how Spring Boot helps you to be productive and the devops-related features it brings."
+          - "This is a live coding session."
       -
         tid: 175
         title: '40 Tips & Tricks for Spring in IntelliJ IDEA'
@@ -434,10 +423,11 @@ speakers:
           - "Learn the best tricks directly from the developers of Spring Boot/IntelliJ IDEA. Live coding ahead!"
         long:
           - "IDEs can be powerful, but hard to learn. Some features are hidden or simply not well known."
-          - "Let’s end this dilemma and make you more productive and efficient when working on Spring applications."
-          - "Learn how to navigate, edit and perform refactorings across a variety of common Spring technologies. You’ll leave this session with a whole stack of power tricks - right from the developers working on it."
+          - "Let's end this dilemma and make you more productive and efficient when working on Spring applications."
+          - "Learn how to navigate, edit and perform refactorings across a variety of common Spring technologies. You'll leave this session with a whole stack of power tricks - right from the developers working on it."
     tags:
       - tooling
+      - java
   -
     firstname: 'Luis'
     lastname: 'Mineiro'
@@ -453,7 +443,6 @@ speakers:
         short:
           - "Microservices are not news anymore. They allow multiple teams to work autonomously by choosing their own technology stacks and having their own release cycles. There is something not being addressed though, like if it is some kind of dirty little secret, and that is frontend development. The common practice for building websites remains 'the monolith': a single frontend codebase that consumes multiple APIs. We believe we found a better solution."
         long:
-          - "Microservices are not news anymore. They allow multiple teams to work autonomously by choosing their own technology stacks and having their own release cycles. There is something not being addressed though, like if it is some kind of dirty little secret, and that is frontend development. The common practice for building websites remains 'the monolith': a single frontend codebase that consumes multiple APIs. We believe we found a better solution."
           - "Last year, a handful of Zalando engineers came up with an innovative solution for this exact problem - project Mosaic. Mosaic is a new architecture for websites where microservices are used in the entire stack, all the way to the frontend."
           - "We’ve published Mosaic as open source. Its main components are:"
           - "- Skipper - an HTTP router with runtime update of routes"
@@ -480,10 +469,12 @@ speakers:
         long:
           - "Since Virtual Reality is still a developing concept, we are at that stage I would call the 'democratization of the discovery.' Everyone could have access to this technology and all could potentially contribute to its accomplishment. I, therefore, felt an urge to be involved with this project, trying to explore some of the aspects of this new and exciting technological breakthrough. However, the entertainment aspect of Virtual Reality, especially the way it allows storytelling is what attracts me the most to this product. That said if you tell a story as though you would in the film, you would soon meet problems, which would raise doubts and queries. It seems that applying the general audio-visual ‘rules’ achieved whilst watching a film or any other audio-visual content is not possible. One must take into consideration new factors which require ample research focused on studying and synthesizing a new language, a language that is specific and adequate to VR technology."
           - "This paper, therefore, aims to explore as deeply as possible, with the entail means and limitations, what are the ‘semantic factors’, the ‘vocabulary’, the ‘techniques’ that can elevate VR from just an advanced technological product to a real communication means. To do this, it was necessary to keep in mind the language closest to that of VR, the cinematic one. Thanks to the use of specific texts, alongside the knowledge in the appearance of audio-visual content acquired both through my academic career and through literature, it was possible to decipher the language used in VR, often comparing it to the one used in film. It was necessary to determine which 'words' you could translate into Virtual Reality directly, the ones which needed adjustments and finally the words which ultimately could not be translated at all. "
-          - "In parallel to this translation, it was also crucial to pay close attention to all the features that made Virtual Reality a means of communication in its own right, those factors that characterized VR and gave it an identity of its own. It was further important to ‘test’ a large number of experiences currently available to understand what these various creators of VR experiences did to convey certain emotions and meanings to their audience. In the same way, it’s been extremely useful to listen and see what these c reators expressed during the main events focused on VR like the ‘Oculus Connect’ and ‘SVVR Expo’, thanks to video sharing platforms like YouTube. Support from the study Bully! Entertainment was essential. It allowed me to use all their equipment at the forefront of Virtual Reality and at the same time gave me the opportunity to ￼5 “Narrative Language of Virtual Reality” Aimone Bodini analyze qualitatively VR experiences through the exchange of opinions and thoughts with professionals within the studio. "
+          - "In parallel to this translation, it was also crucial to pay close attention to all the features that made Virtual Reality a means of communication in its own right, those factors that characterized VR and gave it an identity of its own. It was further important to ‘test’ a large number of experiences currently available to understand what these various creators of VR experiences did to convey certain emotions and meanings to their audience. In the same way, it’s been extremely useful to listen and see what these c reators expressed during the main events focused on VR like the ‘Oculus Connect’ and ‘SVVR Expo’, thanks to video sharing platforms like YouTube. Support from the study Bully! Entertainment was essential. It allowed me to use all their equipment at the forefront of Virtual Reality and at the same time gave me the opportunity to “Narrative Language of Virtual Reality” Aimone Bodini analyze qualitatively VR experiences through the exchange of opinions and thoughts with professionals within the studio. "
           - "This research is divided into two main parts. Initially, the reader is given an introduction to the historical context of VR, briefly explaining the advancements in this technology to date as well as introducing the key figures within this field. The first part analyzes the literature available, explaining the methodology of this research and the tools that will be used to define VR language. The second part starts with a brief explanation of the human eye, how stereoscopy works, defining what is the field of view and how these features are fundamental for VR. Subsequently, the focus will shift towards the main feature of VR, or the so-called sense of 'presence' explaining the meaning and requirements necessary to create it. "
           - "The relationship with characters in Virtual Reality must also be understood and is discussed throughout as it changes the relationship that they establish with the audience is different to that through mediums such as literature or cinema. Exploring how editing works in this field is also detrimental to understanding what can be translated from the cinematic field and where new ways must be devised in terms of “Cutting” that VR allows. The technology specific to VR is also described, in terms of both the 3 and 6 degrees of freedom, as well as explaining how it can be used creatively for narrative purposes from editing to interacting with the environment and characters. The exploration of this newly discovered language that the world hides behind single details and this topic of research requires much broader and deeper research that what was initially thought. What has been explored here is a first step in decoding the narrative language in Virtual Reality, which just scraped the tip of the iceberg. This is an important step in encouraging other researchers and scholars to demystify this area. Overall, this research is proof that VR has a language of its own and demonstrates that the knowledge of this language is fundamental to convey the correct emotions and to fully immerse the user in Virtual Reality. "
     tags:
+      - vr
+      - hw
   -
     firstname: 'Alexey'
     lastname: 'Buzdin'
@@ -516,12 +507,7 @@ speakers:
         type: 'talk'
         short:
           - "When you are doing front-end web development, three technologies are currently very hot! On top of that they seem to be made for each other."
-          - "You will come across AngularJS to structure your application logically, do databinding and create a responsive single page application."
-          - "RequireJS is used to do lazy loading of JavaScript files and to get some much needed dependency management within JavaScript. But RequireJS and JavaScript can be very complex. JavaScript is not a very simple language to write your logic in! It is not object oriented, it is weakly typed and it has lot of strange language constructs!"
-          - "Typescript is a new scripting language based on ECMA 6. It will give you true object orientation, strong typing and built in support for modules with RequireJS. And it compiles to just JavaScript so it runs in any browser!"
-          - "In this session I will explain how we used Angluar, TypeScript and RequireJs to create interactive web applications. You will learn how these three technologies work together and I will explain our best practices when building these front-ends. Iwill be showing some of our real life applications to explain the different concepts."
         long:
-          - "When you are doing front-end web development, three technologies are currently very hot! On top of that they seem to be made for each other."
           - "You will come across AngularJS to structure your application logically, do databinding and create a responsive single page application."
           - "RequireJS is used to do lazy loading of JavaScript files and to get some much needed dependency management within JavaScript. But RequireJS and JavaScript can be very complex. JavaScript is not a very simple language to write your logic in! It is not object oriented, it is weakly typed and it has lot of strange language constructs!"
           - "Typescript is a new scripting language based on ECMA 6. It will give you true object orientation, strong typing and built in support for modules with RequireJS. And it compiles to just JavaScript so it runs in any browser!"
@@ -544,8 +530,6 @@ speakers:
           - "Whilst open sourcing a language is nothing new, Apple's unprecedented step has caused massive excitement and activity for this new language, with a flurry of development and contributions."
           - "In this presentation I would like to explore the current potential of Swift and what's going to be possible in the future."
         long:
-          - "Whilst open sourcing a language is nothing new, Apple's unprecedented step has caused massive excitement and activity for this new language, with a flurry of development and contributions."
-          - "In this presentation I would like to explore the current potential of Swift and what's going to be possible in the future."
           - "I will cover:"
           - "• What can be accomplished with 'open' Swift"
           - "• What's missing from 'open' Swift"
@@ -613,7 +597,6 @@ speakers:
         short:
           - "To survive today, companies are asking themselves ‘How can we be more agile in meeting customer needs?’ Wikipedia defines Agility as “The capability of rapidly and cost efficiently adapting to changes”. Gartner defines Agility as “The ability of an organization to sense environment change and to respond efficiently and effectively to it”."
         long:
-          - "To survive today, companies are asking themselves ‘How can we be more agile in meeting customer needs?’ Wikipedia defines Agility as “The capability of rapidly and cost efficiently adapting to changes”. Gartner defines Agility as “The ability of an organization to sense environment change and to respond efficiently and effectively to it”."
           - "Agility is enabled by systems that are flexible and extensible. "
           - "IEEE Standard Glossary of Software Engineering Technology defines Flexibility as the ease with which a system or component can be modified for use in applications or environments other than those for which it was specifically designed. and Extensibility as the ease with which a system or component can be modified to increase its functional capacity."
           - "As customer needs evolve, flexibility helps with composing features and applications rapidly from using API, and extensibility helps in introducing the required changes quickly by making changes in services."
@@ -646,6 +629,8 @@ speakers:
           - "* Inspect the state of a running application. "
           - "* Debug in staging or even production environments. "
           - "The presentation will be mostly a live coding demo with few slides. Coding will be done in Clojure, but the presentation will focus on the workflow that a REPL allows. "
+    tags:
+      - clojure
   -
     firstname: 'Liviu'
     lastname: 'Costea'
@@ -679,7 +664,7 @@ speakers:
         short:
           - "Flux architectures and why you should care. How to tame the application state and not go bananas. Examples from production applications with React.js and Redux."
         long:
-          - " Flux architectures and why you should care. How to tame the application state and not go bananas. Examples from production applications with React.js and Redux. This talk will go into details of the problems that modern application face. How to handle dozen components running on multiple screens at the same time and handling it's own state. "
+          - "This talk will go into details of the problems that modern application face. How to handle dozen components running on multiple screens at the same time and handling it's own state. "
     tags:
       - web
   -
@@ -755,7 +740,7 @@ speakers:
         short:
           - "At Peak Games, after developing 10+ iOS games natively, we have started to use Unity3D for the new games and develop 5 cross platform games so far. Unity3D has some very fundamental changes according to iOS platforms. And we have learnt a lot in this process. I want to share these experience from an iOS Developer point of view."
         long:
-          - "At Peak Games, after developing 10+ iOS games natively, we have started to use Unity3D for the new games and develop 5 cross platform games so far. Unity3D has some very fundamental changes according to iOS platforms. And we have learnt a lot in this process. I want to share these experience from an iOS Developer point of view. So as an iOS game developer I want to point out how to start working with Unity, best practices, tips and tricks to develop apps for iOS/tvOS (and also Android) devices. I am planning to cover these topics including demos/hands-on coding: * Development Process (Coding, Debugging, Testing, Profiling…) * Unit and Integration Testing * Network Management * Memory Management * Multi-Threaded Development * Integration with Native Libraries (StoreKit, CoreLocation…) * Integration with Platforms "
+          - "So as an iOS game developer I want to point out how to start working with Unity, best practices, tips and tricks to develop apps for iOS/tvOS (and also Android) devices. I am planning to cover these topics including demos/hands-on coding: * Development Process (Coding, Debugging, Testing, Profiling…) * Unit and Integration Testing * Network Management * Memory Management * Multi-Threaded Development * Integration with Native Libraries (StoreKit, CoreLocation…) * Integration with Platforms "
     tags:
       - ios
       - game
@@ -792,7 +777,6 @@ speakers:
         short:
           - "Are you familiar with Object-Relational Mapping? Let's get out of the comfort zone and meet a completely different approach to mapping database tables to domain objects using Scala's Slick library during this no-fluff-just-code live-coding session."
         long:
-          - "Are you familiar with Object-Relational Mapping? Let's get out of the  comfort zone and meet a completely different approach to mapping database tables to domain objects using Scala's Slick library during this no-fluff-just-code live-coding session."
           - "Slick does what some call FRM, i.e. Functional-Relational Mapping (as opposed to ORM), which basically lets you access your relational database as if it was a Scala collection."
           - "And since reactive is THE way to go nowadays, we' re going to be no different."
     tags:
@@ -815,6 +799,8 @@ speakers:
         long:
           - "TBA"
     tags:
+      - messaging
+      - distributed systems
   -
     firstname: 'Jezen'
     lastname: 'Thomas'
@@ -846,9 +832,9 @@ speakers:
         title: 'Lambda Core – HardCore'
         type: 'talk'
         short:
-          - "For about two years now – so called lambda expressions can be used by Java developers. But what does it mean... Lambda? The talk will be about story behind, from a little bit more scientific point of view. Church Lambda calculus, Entscheidungsproblem and incompleteness theorem."
+          - "For about two years now – so called lambda expressions can be used by Java developers. But what does it mean... Lambda?"
         long:
-          - "For about two years now – so called lambda expressions can be used by Java developers. But what does it mean... Lambda? The talk will be about story behind, from a little bit more scientific point of view. Church Lambda calculus, Entscheidungsproblem and incompleteness theorem. "
+          - "The talk will be about story behind, from a little bit more scientific point of view. Church Lambda calculus, Entscheidungsproblem and incompleteness theorem. "
           - "However, almost all of that will be presented in Java. There are going to be shown some very crazy code pieces such as magic Y combinator and perfectly unusable implementation of Boolean (based on Lambda expressions)."
     tags:
       - java
@@ -888,10 +874,9 @@ speakers:
         type: 'talk'
         short:
           - "The landscape of stream processing frameworks gets more and more complicated. Some time ago Apache Storm was the only boy/girl in town. After that Spark Streaming emerged, then Apache Flink – European answer to Storm & Spark. What’s more – lately Apache Beam entered incubation stage – aiming at API unification and backed by Google."
-          - "There's also Kafka Streams that appeared just few days ago. In the talk I’d like to clear things a bit to help listeners (and myself) decide – which of above fit particular needs and which ones are stable enough to be used without fear. We'll focus not on particular frameworks, but what problems arise in stream applications and how to deal with them."
+          - "There's also Kafka Streams that appeared just few days ago."
         long:
-          - "The landscape of stream processing frameworks gets more and more complicated. Some time ago Apache Storm was the only boy/girl in town. After that Spark Streaming emerged, then Apache Flink – European answer to Storm & Spark. What’s more – lately Apache Beam entered incubation stage – aiming at API unification and backed by Google."
-          - "There's also Kafka Streams that appeared just few days ago. In the talk I’d like to clear things a bit to help listeners (and myself) decide – which of above fit particular needs and which ones are stable enough to be used without fear. We'll focus not on particular frameworks, but what problems arise in stream applications and how to deal with them. This includes subjects such as raw throughput, latency, window semantics, handling out of order events, storing state, processing guarantees and so on."
+          - "In the talk I’d like to clear things a bit to help listeners (and myself) decide – which of above fit particular needs and which ones are stable enough to be used without fear. We'll focus not on particular frameworks, but what problems arise in stream applications and how to deal with them. This includes subjects such as raw throughput, latency, window semantics, handling out of order events, storing state, processing guarantees and so on."
           - "As for solutions, the talk focuses on Apache Flink & Kafka Streams. Each will be discussed briefly together with short demo. The talk ends with few general tips on how to choose technology for different types of projects."
     tags:
       - bigdata
@@ -985,7 +970,7 @@ speakers:
         short:
           - "In the era of IoT, the need to create a custom device for specific purpose is growing day by day. While working on Ray universal remote we faced a lot of challenges to adapt the firmware to specific needs. This presentation will be an overview of what it takes to create your own custom Android based device and what are the greatest challenges."
         long:
-          - "During the presentation we`ll go through all aspects of what needs to be done to run Android on a custom hardware. The example used in the presentation will be Ray universal remote (www.ray.co) and NXP/Freescale iMX6 platform (http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/i.mx-applications-processors/i.mx-6-processors/i.mx6qp/sabre-platform-for-smart-devices-reference-design-based-on-the-i.mx-6-series:RDIMX6SABREPLAT). We`ll go through adaptation of bootloader (U-Boot), writing drivers in kernel and defining the device tree for custom hardware, and in the end modification of Android framework and expanding SDK for custom peripherials. "
+          - "During the presentation we'll go through all aspects of what needs to be done to run Android on a custom hardware. The example used in the presentation will be Ray universal remote (www.ray.co) and NXP/Freescale iMX6 platform (http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/i.mx-applications-processors/i.mx-6-processors/i.mx6qp/sabre-platform-for-smart-devices-reference-design-based-on-the-i.mx-6-series:RDIMX6SABREPLAT). We'll go through adaptation of bootloader (U-Boot), writing drivers in kernel and defining the device tree for custom hardware, and in the end modification of Android framework and expanding SDK for custom peripherials. "
     tags:
       - android
       - mobile
@@ -1020,9 +1005,9 @@ speakers:
         title: 'Event Sourcing in Microservices'
         type: 'talk'
         short:
-          - "Why do we build applications based on microservices? To gain flexibility and resilience - that’s what everybody tells us. But building and application with a lot of microservices leads to a highly distributed system - and distribution hurts! As soon as you start interacting with a remote process you will have to bear in mind that messages might get lost, the network might go down and you will experience that communication will surely increase the latency your users are about to experience while using your system."
+          - "Why do we build applications based on microservices? To gain flexibility and resilience - that’s what everybody tells us. But building and application with a lot of microservices leads to a highly distributed system - and distribution hurts!"
         long:
-          - "Why do we build applications based on microservices? To gain flexibility and resilience - that’s what everybody tells us. But building and application with a lot of microservices leads to a highly distributed system - and distribution hurts! As soon as you start interacting with a remote process you will have to bear in mind that messages might get lost, the network might go down and you will experience that communication will surely increase the latency your users are about to experience while using your system. So how can we break a large application into small microservices while keeping dependencies between those services at the lowest possible level and how can we reduce communication in the overall system? We will have a look at „Event-Sourcing“ as a possible and very cool answer for these questions. The basic idea is that every component emits relevant (from a business point of view) state changes as events. Those events are used a technique for asynchronous communication and data exchange/replication between microservices. The talk will also include some code samples to demonstrate how to introduce event sourcing in Java-based microservices."
+          - "As soon as you start interacting with a remote process you will have to bear in mind that messages might get lost, the network might go down and you will experience that communication will surely increase the latency your users are about to experience while using your system. So how can we break a large application into small microservices while keeping dependencies between those services at the lowest possible level and how can we reduce communication in the overall system? We will have a look at „Event-Sourcing“ as a possible and very cool answer for these questions. The basic idea is that every component emits relevant (from a business point of view) state changes as events. Those events are used a technique for asynchronous communication and data exchange/replication between microservices. The talk will also include some code samples to demonstrate how to introduce event sourcing in Java-based microservices."
     tags:
       - microservices
   -
@@ -1057,10 +1042,17 @@ speakers:
         title: 'Scalable Service Architectures'
         type: 'talk'
         short:
-          - "Service oriented architectures are getting more and more widespread popularity, because of the benefits they offer. They have some design requirements though, a very important one of them is designing services (and their combinations) for scalability and resilience. We did a couple of these in the past years and learned a lot about how to do it and what open source tools are available to achieve the goal."
-          - "In this talk I will describe the most important requirements of scalability, then our experience with them."
+          - "Service oriented architectures are getting more and more widespread popularity, because of the benefits they offer. They have some design requirements though, a very important one of them is designing services (and their combinations) for scalability and resilience. We at Ustream built a couple of these in the past years and learned a lot about how to do it and what open source tools are available to achieve the goal."
         long:
-          - "TBA"
+          - "In this talk I will describe the most important requirements of scalability, then our experience in the following areas and some others:"
+          - " "
+          - "* stateless applications"
+          - "* monitoring"
+          - "* load balancing"
+          - "* dynamic resource usage"
+          - "* deployment"
+          - "* service isolation, circuit breakers"
+          - "I will show you how we achieved the above, for example where do we store our data and state if not in the application, what tools are available for monitoring, how can one build a load balance solution based on metrics coming from the application layer. I would also like to describe our automated deployment flow, and the toolset we use to utilize cloud providers dynamically."
     tags:
       - docker
   -
@@ -1140,7 +1132,7 @@ speakers:
     tags:
       - javascript
   -
-    firstname: 'Zeljko'
+    firstname: 'Željko'
     lastname: 'Turbić'
     pageurl: 'zeljko-turbic'
     url: 'https://rs.linkedin.com/in/zturbic'
@@ -1149,12 +1141,16 @@ speakers:
     talk:
       -
         tid: 360
-        title: 'Smart lighting: part of the ‘Internet of Things’'
+        title: 'Smart lighting: part of the "Internet of Things"'
         type: 'talk'
+        secondspeaker: 'Wouter Postma'
         short:
-          - "TBA"
+          - "In this talk, we'll show how ordinary Internet of Things becomes extraordinary if they play well with other devices and/or services. Also, we'll show how smart lighting can play along with other device (TV or other audio device) using audio watermarking technology to sync those devices."
         long:
-          - "TBA"
+          - "Internet of Things (IoT) can be used in almost unlimited number of scenarios, from large industry machines to small devices and appliances in your home. There are a few ways to personalize the Internet of Things and put consumer/customer in the driving seat."
+          - "In this talk, we'll show how ordinary Internet of Things becomes extraordinary if they play well with other devices and/or services. We'll demonstrate how mobile application can be used to steer smart lights at your home."
+          - "Instead of just talking and showing source code(well, source code is an inevitable), we have prepared live demo with Phillips Hue(personal wireless lighting). We will use light scripts that go far beyond ambient light to control individual and groups of lights where we can change colors, transitions and brightness, all from the mobile application. This is already cool but we'll go even further and show how Phillips Hue lighting can play along with other device (TV or other audio device) using audio watermarking technology to sync those devices (your mobile device and TV)."
+          - "This talk and demo will show to the audience how they can control wireless IoT device(s) from mobile applications. Also, they'll see how you can have immersive experiences using 2nd screen applications that will interact in real time with their content when played on the TV set."
     tags:
       - iot
   -
@@ -1167,12 +1163,16 @@ speakers:
     talk:
       -
         tid: 365
-        title: 'Smart lighting: part of the ‘Internet of Things’'
+        title: 'Smart lighting: part of the "Internet of Things"'
         type: 'talk'
+        secondspeaker: 'Željko Turbić'
         short:
-          - "TBA"
+          - "In this talk, we’ll show how ordinary Internet of Things becomes extraordinary if they play well with other devices and/or services. Also, we'll show how smart lighting can play along with other device (TV or other audio device) using audio watermarking technology to sync those devices."
         long:
-          - "TBA"
+          - "Internet of Things (IoT) can be used in almost unlimited number of scenarios, from large industry machines to small devices and appliances in your home. There are a few ways to personalize the Internet of Things and put consumer/customer in the driving seat."
+          - "In this talk, we'll show how ordinary Internet of Things becomes extraordinary if they play well with other devices and/or services. We'll demonstrate how mobile application can be used to steer smart lights at your home."
+          - "Instead of just talking and showing source code(well, source code is an inevitable), we have prepared live demo with Phillips Hue(personal wireless lighting). We will use light scripts that go far beyond ambient light to control individual and groups of lights where we can change colors, transitions and brightness, all from the mobile application. This is already cool but we'll go even further and show how Phillips Hue lighting can play along with other device (TV or other audio device) using audio watermarking technology to sync those devices (your mobile device and TV)."
+          - "This talk and demo will show to the audience how they can control wireless IoT device(s) from mobile applications. Also, they'll see how you can have immersive experiences using 2nd screen applications that will interact in real time with their content when played on the TV set."
     tags:
       - iot
   -
@@ -1208,7 +1208,6 @@ speakers:
         short:
           - "Lean Poker is a day long coding challenge that's not only fun, but also provides a safe environment in which you can practice continuous deployment and fast delivery of valuable software."
         long:
-          - "Lean Poker is a day long coding challenge that's not only fun, but also provides a safe environment in which you can practice continuous deployment and fast delivery of valuable software."
           - "You and a small group of strangers are going to develop a bot in a language of your choice, that plays poker against other bots. All you need to do is write a function that takes a data structure containing cards and bets your bot sees during the game, and return a single number: the amount you are willing to bet at that point."
           - "Now here is the catch: even before you start coding the bots play a round in a matter of seconds, and if your bot wins you get points. If it comes second, you get less points. Otherwise you get nothing. The next minute another game plays, and another one, and another one… that goes on all day long, while you and your friends are desperately hacking away on the code, and keep deploying version after version. "
           - "During this pretty intense day you will sometimes be cheering for your bot to take over, you will be deploying desperately to change the course of events when your bot keeps losing, but even more importantly you will learn how to create as much value as you can in a short period of time, while you are mostly just having fun."
@@ -1233,10 +1232,6 @@ speakers:
           - "You will spend 1/3 of your life at work. If you are unhappy at work, life becomes hell."
           - "By participating in a workshop on happiness at work any group of people can become aware of its possibilities."
         long:
-          - "Happiness at work is one of the 3 most important sources of happiness in life."
-          - "You will spend 1/3 of your life at work. If you are unhappy at work, life becomes hell."
-          - "By participating in a workshop on happiness at work any group of people can become aware of its possibilities within one hour."
-          - "----"
           - "The focus of the workshop is to create more awareness on the subject:"
           - "• What makes me happy at work? - and no, it's not raises, bonuses and perks."
           - "• What can I do to implement this directly in my work?"
@@ -1272,10 +1267,6 @@ speakers:
           - "You will spend 1/3 of your life at work. If you are unhappy at work, life becomes hell."
           - "By participating in a workshop on happiness at work any group of people can become aware of its possibilities."
         long:
-          - "Happiness at work is one of the 3 most important sources of happiness in life."
-          - "You will spend 1/3 of your life at work. If you are unhappy at work, life becomes hell."
-          - "By participating in a workshop on happiness at work any group of people can become aware of its possibilities within one hour."
-          - "----"
           - "The focus of the workshop is to create more awareness on the subject:"
           - "• What makes me happy at work? - and no, it's not raises, bonuses and perks."
           - "• What can I do to implement this directly in my work?"
@@ -1310,6 +1301,7 @@ speakers:
           - "2) Your personal blueprint"
           - "3) The importance of being a mentor & mentee"
     tags:
+      - metodologies
   -
     firstname: 'Daniel'
     lastname: 'Gartmann'
@@ -1384,15 +1376,15 @@ speakers:
         title: 'JVM++: The Graal VM'
         type: 'talk'
         short:
-          - "In this session we will provide an overview on how is the Graal VM evolving from an Oracle research project to a potential candidate for subsequent JVM releases. During the talk we will provide details on how does the Graal VM aim to improve the runtime compilation of the JVM in order to bring the performance of Java to interpreted languages."
+          - "In this session we will provide an overview on how is the Graal VM evolving from an Oracle research project to a potential candidate for subsequent JVM releases."
         long:
-          - "In this session we will provide an overview on how is the Graal VM evolving from an Oracle research project to a potential candidate for subsequent JVM releases. During the talk we will provide details on how does the Graal VM aim to improve the runtime compilation of the JVM in order to bring the performance of Java to interpreted languages. The first part of the talk discussed in general what is the Graal VM in general. The second part of the talk discusses details around the Graal VM along with some benchmark on how does it improve the performance of the JVM in some particular cases and how does the Graal compiler cooperate with the Java compiler API targeted for Java 9  (proposed as JEP243)."
+          - "During the talk we will provide details on how does the Graal VM aim to improve the runtime compilation of the JVM in order to bring the performance of Java to interpreted languages. The first part of the talk discussed in general what is the Graal VM in general. The second part of the talk discusses details around the Graal VM along with some benchmark on how does it improve the performance of the JVM in some particular cases and how does the Graal compiler cooperate with the Java compiler API targeted for Java 9  (proposed as JEP243)."
     tags:
       - java
       - performance
   -
     firstname: 'Nikola'
-    lastname: 'Sijakinjić'
+    lastname: 'Šijakinjić'
     pageurl: 'nikola-sijakinjic'
     url: 'https://www.linkedin.com/in/nikola-sijakinjic-61346b20?trk=hp-identity-name'
     photo: 'Nikola Sijakinjic.png'
@@ -1425,6 +1417,8 @@ speakers:
           - "I go mad when I hear: 'We have no time for tests'. Learn why that statement is so wrong and how to make tests a 'must have' in your workflow"
         long:
           - "TBA"
+    tags:
+      - testing
   -
     firstname: 'Dejan'
     lastname: 'Dimić'
@@ -1442,9 +1436,7 @@ speakers:
           - "In real situations, one of the things that fall in oblivion and somehow get lost from developers perspective, right after documentation and most probably side by side with tests, are design patterns. Both in design and architecture phase and implementation phase."
           - "Nowadays, the software solutions are more and more complex. The need to mimic the real life is greater and greater. Ergo the need to use and apply the proven solution from real life and software industry described as 'design patterns' should be more in our focus and part of our solutions."
           - "Knowledge to recognize the problem, the context and to pick appropriate design patterns will become essential for creating any worth mention solution."
-          - "In this presentation I would like to share some of the real life design patterns that can improve your software solution and drive your product to a golden state"
         long:
-          - Almost all in software industry agrees that design patterns are important and beneficial for success of any project. Some regard them as an essential part of ‘good practices”. In a perspective there is something sexy and awesome in reading some code and recognize applied design patterns.
           - "On the other hand, more in the land of reality, most development efforts are done under various pressures, from vague specifications, short schedules, ridiculous time to market constraints and similar. As a result what is called good practices usually suffer and get substitute with just practices, or less."
           - "One of the things that fall in oblivion and somehow get lost from developers perspective, right after documentation and most probably side by side with tests, are design patterns. Both in design and architecture phase and implementation phase."
           - "There are numerous excuses reported by various developers why the design patterns are only consequence of implementation instead of  deliberate action of software architecture design in their projects."
@@ -1497,7 +1489,7 @@ speakers:
     pageurl: 'lukasz-lenart'
     url: 'https://twitter.com/lukaszlenart'
     photo: 'Lukasz Lenart.jpg'
-    company: '7N/Nykredit'
+    company: 'SoftwareMill'
     talk:
       -
         tid: 440
@@ -1546,7 +1538,7 @@ speakers:
         short:
           - "Testers don't just click around. Real testers don't do Ad hoc testing at all. They carefully plan their activities and help the whole team to build better and usable products, by being a part of the project team from the beginning, before the first line of code is even written. Testers write code, read code, dig into databases and logs and communicate to customers. They are the link between the code and customers."
         long:
-          - "If you are wondering what do testers in my teams do, I'll try to explain it in the short presentation. We code - automated functional test, help developers define and decide which test should be included in the integration test. We also read code - doing white box testing, seeing did our colleagues missed something or added something extra. We also try to manage risk, point out risky parts of applications and ways to mitigate those. Testers care about performance by helping developers build the software in the way that it is optimized and fast, we don't just measure the response times. The same goes for security. Also, we are helping developers to get wider picture of the impact of their code on the whole system. In couple of word - we help a lot. Either by investigating the quality of the code delivered, or by clarifying the requirements, and sometimes creating specification, if the team is missing it. What you will learn from this presentation: 1. Why do you need testing? 2. What can a good tester do fro you and your team? 3. How proper testing can be organized 4. What to expect from your testers ( when you hire them) 5. What to look in a tester during hiring process."
+          - "If you are wondering what do testers in my teams do, I'll try to explain it in the short presentation. We code - automated functional test, help developers define and decide which test should be included in the integration test. We also read code - doing white box testing, seeing did our colleagues missed something or added something extra. We also try to manage risk, point out risky parts of applications and ways to mitigate those. Testers care about performance by helping developers build the software in the way that it is optimized and fast, we don't just measure the response times. The same goes for security. Also, we are helping developers to get wider picture of the impact of their code on the whole system. In couple of word - we help a lot. Either by investigating the quality of the code delivered, or by clarifying the requirements, and sometimes creating specification, if the team is missing it. What you will learn from this presentation: 1. Why do you need testing? 2. What can a good tester do for you and your team? 3. How proper testing can be organized 4. What to expect from your testers ( when you hire them) 5. What to look in a tester during hiring process."
     tags:
       - testing
       - security
@@ -1564,9 +1556,20 @@ speakers:
         title: 'Security in microservice architecture'
         type: 'talk'
         short:
-          - "TBA"
+          - "Microservices are the preferred architectural choice for scalable systems, in the recent years. With distributed nature of microservices and REST API being the most prevalent inter-service interface, we are faced with some challenges in choosing the right approach to authentication and authorization mechanisms. We will look into most popular SSO mechanisms, like SAML2, OAuth2 and JWT. We will look into pros and cons of these choices."
         long:
-          - "TBA"
+          - "Microservices are one possible architectural choice when building scalable systems. With microservices we build many small components, focused on business use-cases, with clear interfaces between services. Components are designed to work in orchestration, each one being a part of the team, with most commonly used interface being REST API. With this in mind, we are faced with a challenge of implementing a security system that can follow this chosen architecture, without becoming a bottleneck. Also, the choice of REST API, as a specialization of HTTP protocol narrows down possible solutions to the problem."
+          - "In this talk we will first cover some theoretical aspects of security architectures. With security systems mostly focused on Identification, Authentication and Authorization, we will look into different implementations of security systems regarding these aspects."
+          - "Authentication systems will be roughly divided into three categories:"
+          - " "
+          - "*Local (local user store)"
+          - "*Distributed (NAS, LDAP, SQL-based)"
+          - "*Delegated (Kerberos, OAuth2, SAML2)"
+          - "Authorization is a process of deciding whether some action upon some target, by some entity, should be allowed. Authorization systems can roughly be divided into two groups:"
+          - " "
+          - "*Target based (UNIX DAC, ACL,...)"
+          - "*Subject based (RBAC, entitlements)"
+          - "With this in mind and having microservices as platform to apply security to, we are faced with a challenge of choosing the right architecture, so that we harnes and not hinder the power of our chosen platform. We will argue that the best choice for the microservices architecture is delegated or token-based authentication. Given the most prevalent inter-service interface is REST API, we will look into OAuth2, SAML2 and OAuth2/JWT as authentication-authorization mechanism. With that in mind, we will show differences in authorization when using these three mechanisms. We will show some examples of using OAuth2 + JWT as token-based mechanism and see pros and cons of each approach. SAML2 being similar in some aspects to JWT will be briefly mentioned."
     tags:
       - microservices
       - security
@@ -1585,7 +1588,7 @@ speakers:
         short:
           - "Continuous delivery process is getting more and more attention, especially since the whole DevOps movement started. Package/build/dependency managers like npm, maven and composer make it easy for developers to package their code. Configuration management tools like Chef and Puppet make it easy to deploy the packages and configure the whole infrastructure. Vagrant allows developers to run on their machines (more or less) the exact copy of the production systems."
         long:
-          - "Continuous delivery process is getting more and more attention, especially since the whole DevOps movement started. Package/build/dependency managers like npm, maven and composer make it easy for developers to package their code. Configuration management tools like Chef and Puppet make it easy to deploy the packages and configure the whole infrastructure. Vagrant allows developers to run on their machines (more or less) the exact copy of the production systems. But why is there no popular tool for managing data in a continuous delivery process? Is it too complex or too specific? In this presentation, various flows of data in a continuous delivery process are presented, ranging from simple cases of small web sites run by content management systems, all the way to complex large-scale cloud-deployed operational databases used in e-commerce containing millions of private and encrypted records, while enforcing the PCI-DSS standard."
+          - "But why is there no popular tool for managing data in a continuous delivery process? Is it too complex or too specific? In this presentation, various flows of data in a continuous delivery process are presented, ranging from simple cases of small web sites run by content management systems, all the way to complex large-scale cloud-deployed operational databases used in e-commerce containing millions of private and encrypted records, while enforcing the PCI-DSS standard."
     tags:
       - db
       - cloud
@@ -1672,6 +1675,7 @@ speakers:
         long:
           - "TBA"
     tags:
+      - messaging
   -
     firstname: 'Vedran'
     lastname: 'Vujinović'
@@ -1707,8 +1711,6 @@ speakers:
           - "It is common to use CI as a tool to run your tests and build you builds. But GitLab has more to offer."
           - "I will show how GitLab uses its CI and how our clients use it. To give you a whole picture, I will demonstrate some crazy experiments. You would never think that something like this is possible to build with CI system"
         long:
-          - "It is common to use CI as a tool to run your tests and build you builds. But GitLab has more to offer."
-          - "I will show how GitLab uses its CI and how our clients use it. To give you a whole picture, I will demonstrate some crazy experiments. You would never think that something like this is possible to build with CI system"
           - "How do you like an idea to build a Docker container with a set of Ansible playbooks from another repo and run test inside generated container on the next step?"
           - "Other usages:"
           - "- Build a build farm"
@@ -1718,32 +1720,41 @@ speakers:
           - "- Set up your deployment pipeline"
           - "- Use any static site generator"
           - "- and so on"
+    tags:
+      - ci
+      - tooling
   -
     firstname: 'Antonis'
     lastname: 'Kalipetis'
     pageurl: 'antonis-kalipetis'
     url: 'https://twitter.com/akalipetis'
     photo: 'Antonis Kalipetis.jpg'
-    company: 'SourceLiar'
+    company: 'SourceLair'
     talk:
       -
         tid: 495
-        title: 'TBA'
+        title: 'Creating a cloud native development environment'
         type: 'talk'
         short:
-          - "TBA"
+          - "Continuous integration and delivery has evolved a lot during the last couple of years through containers and the different container schedulers and orchestrators."
         long:
-          - "TBA"
+          - "Our software delivery pipeline includes a lot of tools for securing and speeding up the process, while our development environments are still living in the past - packing everything in a single local VM."
+          - "During the session, we'll see the different pros and cons of having a cloud native developer environment, that lives in the cloud, is managed and replicates as close as possible the production infrastructure."
+
       -
         tid: 500
-        title: 'TBA'
+        title: 'Docker 1.12: Orchestration, containers and beyond'
         type: 'talk'
         short:
-          - "TBA"
+          - "Docker has evolved from a container engine, to a complete end-to-end solution for orchestrating cloud-native applications."
         long:
-          - "TBA"
+          - "With the 1.12 release, you can use Docker to manage and orchestrate your infrastructure."
+          - "In this session, we'll explore Docker's evolution, we'll see the different components that make up Docker today and we'll have a nice demo of Docker's orchestration using Swarm mode."
     tags:
       - docker
+      - cloud
+      - devops
+      - tooling
   -
     firstname: 'Alexander'
     lastname: 'Pacha'
@@ -1763,6 +1774,7 @@ speakers:
           - "I am going to show three platforms, ranging from one-click solutions to fully customizable build-platforms for building Android, iOS and Xamarin Apps and also how to perform advanced tasks like signing, automated testing and semi-automated deployment into App Stores."
     tags:
       - mobile
+      - ci
   -
     firstname: 'Doan'
     lastname: 'Duy Hai'
@@ -1776,9 +1788,9 @@ speakers:
         title: 'SASI, Cassandra on the full text search ride!'
         type: 'talk'
         short:
-          - "Apache Cassandra is a scalable database with high availability features. But they come with severe limitations in term of querying capabilities. Since the introduction of SASI in Cassandra 3.5, the limitations belong to the pass. Now you can create performant indices on your columns as well as benefit from full text search capabilities with the introduction of the new `LIKE %term%` syntax. To illustrate how SASI works, we'll use a database of 100 000 albums and artists. We'll also show how SASI can help to accelerate analytics scenarios with Spark using SparkSQL predicate-pushdown"
+          - "Apache Cassandra is a scalable database with high availability features. But they come with severe limitations in term of querying capabilities. Since the introduction of SASI in Cassandra 3.5, the limitations belong to the pass. Now you can create performant indices on your columns as well as benefit from full text search capabilities with the introduction of the new `LIKE %term%` syntax."
         long:
-          - "Apache Cassandra is a scalable database with high availability features. But they come with severe limitations in term of querying capabilities. Since the introduction of SASI in Cassandra 3.5, the limitations belong to the pass. Now you can create performant indices on your columns as well as benefit from full text search capabilities with the introduction of the new `LIKE %term%` syntax. To illustrate how SASI works, we'll use a database of 100 000 albums and artists. We'll also show how SASI can help to accelerate analytics scenarios with Spark using SparkSQL predicate-pushdown"
+          - "To illustrate how SASI works, we'll use a database of 100 000 albums and artists. We'll also show how SASI can help to accelerate analytics scenarios with Spark using SparkSQL predicate-pushdown"
     tags:
       - bigdata
   -
@@ -1821,7 +1833,7 @@ speakers:
     talk:
       -
         tid: 520
-        title: 'NodeJS i Python za IoT platforme'
+        title: 'NodeJS and Python for IoT platforms'
         type: 'talk'
         short:
           - "TBA"
@@ -1843,10 +1855,11 @@ speakers:
         title: 'Reverse engineering the clean code'
         type: 'talk'
         short:
-          - "This might be the psychology basic for developers… starting with the design 101; take some design principles and show how they are reflected in code. "
+          - "This might be the psychology basic for developers... starting with the design 101; take some design principles and show how they are reflected in code. "
         long:
-          - "This talk takes one of design principles (from UX world- Norman's design of everyday things, memory model, psychology of short term memory - etc) and extrapolate it onto programming world, trying to distill some patterns and antipatterns in developers' approach to code."
+          - "This talk takes one of design principles (from UX world - Norman's design of everyday things, memory model, psychology of short term memory - etc) and extrapolate it onto programming world, trying to distill some patterns and antipatterns in developers' approach to code."
     tags:
+      - design patterns
   -
     firstname: 'Miloš'
     lastname: 'Kresović'
@@ -1860,9 +1873,9 @@ speakers:
         title: 'MVVM with Android Databinding in Practice'
         type: 'talk'
         short:
-          - "general concept of MVVM and Android Databinding - why they should be used together - how using these technologies reflects to the app architecture - code snippets from practice - disadvantages, cases when it shouldn't be used and alternatives "
+          - "General concept of MVVM and Android Databinding - why they should be used together - how using these technologies reflects to the app architecture - code snippets from practice - disadvantages, cases when it shouldn't be used and alternatives. "
         long:
-          - "general concept of MVVM and Android Databinding - why they should be used together - how using these technologies reflects to the app architecture - code snippets from practice - disadvantages, cases when it shouldn't be used and alternatives "
+          - "TBA"
     tags:
       - android
   -
@@ -1880,7 +1893,7 @@ speakers:
         short:
           - "1000 tests running for hours on continuous integration services should be a thing of the past. Don't lose time waiting for your tests. "
         long:
-          - "1000 tests running for hours on continuous integration services should be a thing of the past. Don't lose time waiting for your tests. "
+          - "TBA"
     tags:
       - web
       - ruby
@@ -1888,8 +1901,8 @@ speakers:
     firstname: 'Nenad'
     lastname: 'Pavićević'
     pageurl: 'nenad-pavicevic'
-    url: ''
-    photo: 'user.png'
+    url: 'https://rs.linkedin.com/in/npavicevic'
+    photo: 'Nenad Pavićević.png'
     company: 'Novomatic Lottery Solutions'
     talk:
       -
@@ -1901,9 +1914,11 @@ speakers:
         long:
           - "TBA"
     tags:
+      - ci
+      - testing
   -
     firstname: 'Predrag'
-    lastname: 'Kapamadzin'
+    lastname: 'Kapamadžin'
     pageurl: 'predrag-kapamadzin'
     url: 'http://www.linkedin.com/in/predragkapamadzin'
     photo: 'Predrag Kapamadzin.jpg'
@@ -1919,6 +1934,7 @@ speakers:
           - "TBA"
         secondspeaker: 'Anamarija Petrović'
     tags:
+      - agile
   -
     firstname: 'Anamarija'
     lastname: 'Petrović'
@@ -1937,6 +1953,25 @@ speakers:
           - "TBA"
         secondspeaker: 'Predrag Kapamadzin'
     tags:
-
+      - agile
+  -
+    firstname: 'Robert'
+    lastname: 'Boxall'
+    pageurl: 'robert-boxall'
+    url: 'https://www.linkedin.com/in/robertboxall'
+    photo: 'user.png'
+    company: 'Interventure'
+    talk:
+      -
+        tid: 555
+        title: 'Java/Spring Microservice Cloud development'
+        type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
+    tags:
+      - java
+      - cloud
 
 ---
