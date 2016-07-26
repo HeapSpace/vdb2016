@@ -1902,7 +1902,7 @@ speakers:
     lastname: 'Pavićević'
     pageurl: 'nenad-pavicevic'
     url: 'https://rs.linkedin.com/in/npavicevic'
-    photo: 'Nenad Pavićević.png'
+    photo: 'Nenad Pavićević.jpg'
     company: 'Novomatic Lottery Solutions'
     talk:
       -
