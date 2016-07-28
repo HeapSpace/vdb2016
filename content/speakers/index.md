@@ -103,28 +103,6 @@ speakers:
     tags:
       - devops
   -
-    firstname: 'John'
-    lastname: 'Vaskis'
-    pageurl: 'john-vaskis'
-    url: 'https://mobile.twitter.com/johnvaskis'
-    photo: 'John Vaskis.jpg'
-    company: 'Indiegogo'
-    talk:
-      -
-        tid: 110
-        title: 'How to raise a million dollars on Indiegogo'
-        type: 'talk'
-        short:
-          - "TBA"
-        long:
-          - "TBA"
-        day: 1
-        track: 2
-        slot: '09:00'
-        duration: 60
-    tags:
-      - business
-  -
     firstname: 'Sebastian'
     lastname: 'Faulhaber'
     pageurl: 'sebastian-faulhaber'
