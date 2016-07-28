@@ -797,7 +797,9 @@ speakers:
         short:
           - "To most developers messaging systems are disregarded as 'just a pipe'. Without understanding the reasoning behind them and the underlying design decision, we are frustrated by how we think they should work in production. In this session we will compare and contrast Apache ActiveMQ and Apache Kafka, and how their designs address message distribution, reliability, scalability, and performance."
         long:
-          - "TBA"
+          - "Messaging systems underpin architectures ranging from stream processing, through to event sourcing and communication between loosely-coupled microservices. To most developers the technology is tangential to the business they work in, and is often disregarded with much hand waving as “just a pipe” for message distribution. Without a clear understanding of their capabilities and underlying design decisions, we imagine myths about how these systems “should” work and are frustrated in production by behaviours emerging from their design trade-offs."
+          - "In this session you will learn how to think about messaging as we compare and contrast the approaches taken by two similar but fundamentally different messaging platforms – Apache ActiveMQ and Apache Kafka. We will discuss how their underlying philosophies impact message distribution, reliability, scalability, and performance."
+          - "Along the way we will dip into how IOPS, latency and bandwidth affect throughput, why messaging systems do not play nicely with containers, and the unicorn of once-and-only-once delivery in distributed systems."
     tags:
       - messaging
       - distributed systems
@@ -942,7 +944,7 @@ speakers:
     pageurl: 'luca-mezzalira'
     url: 'http://lucamezzalira.com'
     photo: 'Luca Mezzalira.jpg'
-    company: 'Massive Interactive, Inc'
+    company: 'Perform Group'
     talk:
       -
         tid: 310
@@ -1106,9 +1108,10 @@ speakers:
         title: 'PageGaze - Interactive Webpage Eye-Tracking Technology'
         type: 'talk'
         short:
-          - "TBA"
+          - "How do we interact with webpages? Has it changed during the course of time? Is it affected by the advancement of technology?"
         long:
-          - "TBA"
+          - "How could it possibly change? If these questions awaken even the slightest interest in you, I'll make sure that the talk is interesting /* enough to keep you from leaving */ (by bribing you with sweet talk and candy! ...among other things...)"
+          - "I'll share a vision with technology, or the other way around - a technology with a vision. Either way: it's a vision of introducing an alternative webpage UX and a technology that builds upon several relatively new technologies into something new and cool!"
     tags:
       - web
       - javascript
@@ -1644,8 +1647,8 @@ speakers:
     firstname: 'Goran'
     lastname: 'Aranđelović'
     pageurl: 'goran-arandjelovic'
-    url: 'http://www.endava.com/'
-    photo: 'user.png'
+    url: 'https://www.facebook.com/goran.arandjelovic'
+    photo: 'Goran Arandjelovic.jpg'
     company: 'Endava'
     talk:
       -
@@ -1653,7 +1656,7 @@ speakers:
         title: 'C++ for mobile developers'
         type: 'talk'
         short:
-          - "TBA"
+          - "Nowdays, when someone mentions mobile and native development in the same sentence, there is an unpleasant thought that these two are not meant to be together. If you want to have portable code on every mobile platform, C++ can be a good choice. Large codebase, well tested libraries and small memory footprint are couple of reasons why we will discuss about C++ on mobile platforms. At the end, we will see small example using Android NDK."
         long:
           - "TBA"
     tags:
@@ -1910,9 +1913,10 @@ speakers:
         title: 'Continuous Security Testing - Automating your AppSec Program'
         type: 'talk'
         short:
-          - "TBA"
+          - "Security testing is imperative in web based software solutions, and seeing as the industry is striving towards the practice of continuous delivery, the need arises to include security testing in that process as much as possible."
         long:
-          - "TBA"
+          - "There is a large variety of very powerful penetration testing tools out there. Those tools should be used as much as possible as they are proven in the field and widely used and recommended. Some frameworks utilize many of those tools by adapting them to be used in the security test automation. Also tools such as dependency checkers and static analysis tools can be customized and included in the continuous security testing process."
+          - "The aim here is to integrate the finding of security issues according to a standard (for example OWASP ASVS), into the continuous delivery process and report them accordingly within the software vulnerability management system and/or issue tracking system. By implementing continuous security testing within your continuous delivery process you ensure that at least some of most common security flaws could be avoided."
     tags:
       - ci
       - testing
