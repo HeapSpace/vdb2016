@@ -154,7 +154,7 @@ end
 
 def get_schedule_data(day = nil, track = nil)
 
-  schedule_raw = YAML.load_file('content/speakers/index.md')
+  schedule_raw = YAML.load_file('content/index.md')
   schedule_items = schedule_raw["speakers"]
   schedule_data = []
 
@@ -178,7 +178,7 @@ end
 
 def get_featured_speakers(companies)
 
-  featured_raw = YAML.load_file('content/speakers/index.md')
+  featured_raw = YAML.load_file('content/index.md')
   featured_items = featured_raw["speakers"]
 
   featured_data = featured_items.select { |v| companies.include? v["company"]  }

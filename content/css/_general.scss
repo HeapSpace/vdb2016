@@ -65,8 +65,12 @@ p {
 .home-logo {
   background: url(../images/home-logo.png) center center no-repeat;
   background-size: contain;
-  //margin: 280px auto 0 auto;
-  height: 160px;
+  height: 95px;
+  margin-top: 50px;
+
+  @media (max-device-width : 480px) {
+    margin-top: 210px;
+  }
 }
 
 .home-date-place {
@@ -74,10 +78,7 @@ p {
 }
 
 #home-main-text {
-  margin-top: 240px;
-  @media (max-width: $screen-md) {
-    margin-bottom: 40px;
-  }
+  margin-top: 20px;
 }
 
 .mobile-menu-logo {
@@ -248,7 +249,7 @@ p {
   //background: url(../images/scroll-indicator.png) center center no-repeat;
   //margin: 425px auto 15px auto;
   position: absolute;
-  bottom: 20px;
+  bottom: -65px;
   left: 49%;
 }
 
@@ -278,6 +279,7 @@ p {
 
 .margin-top-med {
   margin-top: 90px;
+  margin-bottom: 5em;
 }
 
 .margin-top-small {
@@ -349,6 +351,11 @@ h6 {
   margin: 75px auto 125px auto;
   max-width: 100%;
   display:block;
+  &.first_sep {
+    @media (max-device-width : 480px){
+      margin-top:150px;
+    }
+  }
   &.half-space {
     margin: 25px auto 55px auto;
   }
@@ -401,6 +408,7 @@ iframe {
     // background: rgba(17,14,11,0.4);
     opacity: 0.55;
     max-height: 150px;
+    margin: 0 auto;
 
     &.platinum {
 
@@ -1134,4 +1142,38 @@ button, a[role="button"] {
       color: $body-bg;
     }
   }
+}
+
+// $position-map: (
+//   (pos1, 65px, 105px),
+//   (pos2, 15px, 95px)
+// );
+
+.item-block-holder.logo[style] {
+  position: relative;
+
+  @for $i from 1 through 12 {
+    &:nth-child(#{$i}){
+      // animation: cloud 2s (.1s + $i) ease-in-out infinite;
+      @media (max-device-width : 768px) {
+        top: 0px !important;
+        bottom: 0px !important;
+        left: 0px !important;
+        right: 0px !important;
+      }
+    }
+  }
+
+
+
+};
+
+
+@keyframes cloud {
+    from {
+      bottom: 3px;
+    }
+    to {
+      top: 3px;
+    }
 }
