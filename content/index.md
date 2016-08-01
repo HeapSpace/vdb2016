@@ -3,7 +3,6 @@
 # title: Index
 layout: '/index.html'
 
-
 speakers:
   -
     talk:
@@ -469,7 +468,7 @@ speakers:
         short:
           - "If you are starting serious with Mobile development for multiple platforms you need to have a plan! Let's discuss what could you use to setup a Mobile Infrastructure Landscape."
         long:
-          - "TBA"
+          - "If you are starting serious with Mobile development for multiple platforms you need to have a plan! Let’s discuss what components you can set up in your Mobile DevOps landscape, how an application would travel from each state to another, and what do you need to do to setup it. In the talk we will talk about CI, automation testing, provisioning, automatic AppStore deployments, device labs and more."
     tags:
       - mobile
   -
@@ -1321,8 +1320,8 @@ speakers:
           - "In todays world, layered architecture is a very common approach among enterprise applications. Each layer has a specific task of its own, and each one is only allowed to speak just one below. For example, data access layer deals with querying and persistence of data, service layer coordinates business operations and interacts with data access layer, presentation layer handles rendering of suitable user interface as well as processing user requests while talking with service layer. In this picture, data transfer throughout the layers is achieved using domain objects. For example, data is fetched from target datastore, then transformed into domain objects in data access layer, and delivered to the presentation layer for rendering purposes. In a similar way, domain objects bound to UI are filled with user input, then passed into backend layers for processing."
           - "However, employing same domain classes in every layer can cause some data related problems in those applications. One might see that data might get inserted, updated or deleted unintentionally, especially when an ORM tool, like Hibernate is used for persisting data, UI frameworks like JSF or Vaadin, in which state management is handled on server side, while domain objects are directly bound to user interface components, used to collect user input and deliver it to the backend. Moreover, employing domain objects UI interaction might cause several fields and methods which are only needed by presentation layer get added into them. For example, adding a selected field and its corresponding getter/setter is a very common issue in order to identify which rows are selected in a UI table. That 'selected' property has nothing to the with the domain model at all."
           - "In order to prevent such data integrity problems, and keep domain classes clean from UI specific attributes and methods, one needs to create and use a separate model targeted to the presentation layer. It may appear with different names, like 'data transfer object', 'data value object' or 'view model' in different projects, and whatever you call it for, its main duty is to prevent direct interaction and manipulation of domain objects via user interface components."
-          - "Although, we take it as a separate model, view model classes mostly overlap with domain model classes. Indeed, domain model classes can easily be transformed into view model classes with some additions of fields and methods. Actually, it becomes a burden for developers to just create and use a second set of model classes which are almost identical to domain model."
-          - "We propose a solution to automatically derive those view model classes from domain model classes using proxy pattern, and define an API to handle various data related tasks which occur while transforming domain objects into view model objects, apply those user changes occurred in those view model objects during UI interaction back again to domain instances etc. With the help of such an automatic view model creation mechanism, task of creating view model classes manually becomes unnecessary. In addition, view model – domain model back and forth transformations and data related operations can be performed easily through a standard API. In this session, I am going to talk about how to employ dynamic proxy class generation to obtain view model out of domain model classes, and discuss view model API in detail."
+          - "Although, we take it as a separate model, view model classes mostly overlap with domain model classes. Indeed, domain model classes can easily be transformed into view model classes with some additions of fields and methods. Actually, it becomes a burden for developers to just create and use a second set of model classes which are almost identical to domain model.
+          We propose a solution to automatically derive those view model classes from domain model classes using proxy pattern, and define an API to handle various data related tasks which occur while transforming domain objects into view model objects, apply those user changes occurred in those view model objects during UI interaction back again to domain instances etc. With the help of such an automatic view model creation mechanism, task of creating view model classes manually becomes unnecessary. In addition, view model – domain model back and forth transformations and data related operations can be performed easily through a standard API. In this session, I am going to talk about how to employ dynamic proxy class generation to obtain view model out of domain model classes, and discuss view model API in detail."
     tags:
       - java
       - ux/ui
@@ -1398,7 +1397,9 @@ speakers:
         short:
           - "I go mad when I hear: 'We have no time for tests'. Learn why that statement is so wrong and how to make tests a 'must have' in your workflow"
         long:
-          - "TBA"
+          - "It's a common mistake that tests take lots of time, while actually the truth is that initial manual testing is the overhead."
+          - "The presentation will be focused on how to incorporate tests into your regular workflow, and why you shouldn't write tests after your application code."
+          - "The presentation will be also filled with personal experiences and excuses I've heard over the years for not writing tests."
     tags:
       - testing
   -
@@ -1653,9 +1654,9 @@ speakers:
         title: 'Pushkin - Open source messaging platform'
         type: 'talk'
         short:
-          - "TBA"
+          - "In this session we will present Pushkin - a messaging system that opened up a new channel of communication with our users, giving us the opportunity to provide them with an enhanced user experience using powerful push notifications, resulting in improvement of all key performance indicators, especially early retention."
         long:
-          - "TBA"
+          - "In this session we will present Pushkin - a messaging system that opened up a new channel of communication with our users, giving us the opportunity to provide them with an enhanced user experience using powerful push notifications, resulting in improvement of all key performance indicators, especially early retention. We will present how we've managed to make the system from scratch for our game Top Eleven using Apache Spark and how the system evolved through time, shifting away from a centralized distributed solution. The current architecture of Pushkin will be presented as well as the planned roadmap for future releases."
     tags:
       - messaging
   -
@@ -1847,7 +1848,7 @@ speakers:
     lastname: 'Kresović'
     pageurl: 'milos-kresovic'
     url: ''
-    photo: 'user.png'
+    photo: 'Milos Kresovic.jpg'
     company: 'New and rising'
     talk:
       -
@@ -1855,9 +1856,9 @@ speakers:
         title: 'MVVM with Android Databinding in Practice'
         type: 'talk'
         short:
-          - "General concept of MVVM and Android Databinding - why they should be used together - how using these technologies reflects to the app architecture - code snippets from practice - disadvantages, cases when it shouldn't be used and alternatives. "
+          - "General concept of MVVM and Android Databinding - why they should be used together - how using these technologies reflects to the app architecture - code snippets from practice - disadvantages, cases when it shouldn't be used and alternatives."
         long:
-          - "TBA"
+          - "General concept of MVVM and Android Databinding - why they should be used together - how using these technologies reflects to the app architecture - code snippets from practice - disadvantages, cases when it shouldn't be used and alternatives."
     tags:
       - android
   -
@@ -1956,6 +1957,40 @@ speakers:
     tags:
       - java
       - cloud
-
-
+  -
+    firstname: 'Đurađ'
+    lastname: 'Caranović'
+    pageurl: 'djuradj-caranovic'
+    url: ''
+    photo: 'user.png'
+    company: 'Fundus Holding'
+    talk:
+      -
+        tid: 560
+        title: 'IT in Agriculture'
+        type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
+    tags:
+      - business
+  -
+    firstname: 'Igor'
+    lastname: 'Bogićević'
+    pageurl: 'igor-bogicevic'
+    url: ''
+    photo: 'user.png'
+    company: 'Seven Bridges Genomics, Inc.'
+    talk:
+      -
+        tid: 565
+        title: 'TBA'
+        type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
+    tags:
+      - business
 ---
