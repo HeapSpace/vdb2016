@@ -1,47 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<%= render '/_head.html', :title => 'Get Voxxed' %>
-	<%= meta_share %>
-	<%= meta_tag :keywords %>
-</head>
-<body>
-	<%= render '/_header.html' %>
+	<html>
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+			<title>get voxxed</title>
+			<link rel="shortcut icon" href="favicon.ico">
+			<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+			<link rel="stylesheet" href="style.css"/>
+		</head>
+		<body>
+			<h1>Get Voxxed</h1>
 
-	<div class="main-bg page"></div>
-	<div class="container">
-	  <h1 class="text-center pad-vertical-big">
-	    Strip and get<br><span class="yellow">voxxed!!!</span>
-	  </h1>
+			<!--img id="title" src="i/elfie.png" alt="elfie"/-->
 
-	  	<div class="row-centered">
-	    <div class="col-md-6 col-centered">
+			<div class="wrapper">
+				<canvas id="compare" width="800" height="600" style="display:none"></canvas>
+				<video id="vid" autoplay loop width="800" height="600"></video>
+				<canvas id="overlay" width="800" height="600"></canvas>
+				<canvas id="debug" width="800" height="600"></canvas>
+				<canvas id="flatten" width="800" height="600"></canvas>
+			</div>
+			<svg id="svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"></svg>
+			<p id='gUMMessage'></p>
+			<div id="tweet-wrapper">
+				<p>Share your Voxxed on Twitter...</p>
+				<textarea id="tweetText" maxlength="94">I just got Voxxed! You can too!</textarea>
+				<button id="tweet">Tweet your Voxxed experience</button>
+				<textarea readonly>@VoxxedBelgrade #vdb16</textarea>
+			</div>
+			<button class="btn" id="snap">Snap Your PHOTO</button>
+			<p class="status">Status: <span id='headtrackerMessage'>Loading...</span></p>
 
-			<div id="overlay" style="color:red;position:absolute;overflow:visible; top: 250px; left: 180px;"><img src="moustache.png"></div>
-	    	<div id="my_camera" style="width:640; height:480px;"></div>
-
-    		<a class="btn btn-primary btn-lg green" role="button" href="javascript:void(take_snapshot())">Take Snapshot</a>
-    		<div id="my_result"></div>
-
-		</div>
-		</div>
-
-
-	</div>
-	<div class="footer-cta-block info margin-top-big">
-	  <%= render '/_footer_cta.html' %>
-	</div>
-	<%= render '/_footer.html'%>
-	<%= render '/_bottomscripts.html'%>
-	<script src="webcam.min.js"></script>
-	<script language="JavaScript">
-        Webcam.attach( '#my_camera' );
-
-        function take_snapshot() {
-            Webcam.snap( function(data_uri) {
-                document.getElementById('my_result').innerHTML = '<img src="'+data_uri+'"/>';
-            } );
-        }
-    </script>
-</body>
+			<script src="scripts/headtrackr.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+			<script src="scripts/oauth.js"></script>
+			<script src="scripts/vdb.js"></script>
+	</body>
+</html>
 </html>
