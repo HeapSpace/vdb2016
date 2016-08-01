@@ -468,7 +468,7 @@ speakers:
         short:
           - "If you are starting serious with Mobile development for multiple platforms you need to have a plan! Let's discuss what could you use to setup a Mobile Infrastructure Landscape."
         long:
-          - "TBA"
+          - "If you are starting serious with Mobile development for multiple platforms you need to have a plan! Let’s discuss what components you can set up in your Mobile DevOps landscape, how an application would travel from each state to another, and what do you need to do to setup it. In the talk we will talk about CI, automation testing, provisioning, automatic AppStore deployments, device labs and more."
     tags:
       - mobile
   -
@@ -1397,7 +1397,9 @@ speakers:
         short:
           - "I go mad when I hear: 'We have no time for tests'. Learn why that statement is so wrong and how to make tests a 'must have' in your workflow"
         long:
-          - "TBA"
+          - "It's a common mistake that tests take lots of time, while actually the truth is that initial manual testing is the overhead."
+          - "The presentation will be focused on how to incorporate tests into your regular workflow, and why you shouldn't write tests after your application code."
+          - "The presentation will be also filled with personal experiences and excuses I've heard over the years for not writing tests."
     tags:
       - testing
   -
@@ -1652,9 +1654,9 @@ speakers:
         title: 'Pushkin - Open source messaging platform'
         type: 'talk'
         short:
-          - "TBA"
+          - "In this session we will present Pushkin - a messaging system that opened up a new channel of communication with our users, giving us the opportunity to provide them with an enhanced user experience using powerful push notifications, resulting in improvement of all key performance indicators, especially early retention."
         long:
-          - "TBA"
+          - "In this session we will present Pushkin - a messaging system that opened up a new channel of communication with our users, giving us the opportunity to provide them with an enhanced user experience using powerful push notifications, resulting in improvement of all key performance indicators, especially early retention. We will present how we've managed to make the system from scratch for our game Top Eleven using Apache Spark and how the system evolved through time, shifting away from a centralized distributed solution. The current architecture of Pushkin will be presented as well as the planned roadmap for future releases."
     tags:
       - messaging
   -
@@ -1846,7 +1848,7 @@ speakers:
     lastname: 'Kresović'
     pageurl: 'milos-kresovic'
     url: ''
-    photo: 'user.png'
+    photo: 'Milos Kresovic.jpg'
     company: 'New and rising'
     talk:
       -
@@ -1854,9 +1856,9 @@ speakers:
         title: 'MVVM with Android Databinding in Practice'
         type: 'talk'
         short:
-          - "General concept of MVVM and Android Databinding - why they should be used together - how using these technologies reflects to the app architecture - code snippets from practice - disadvantages, cases when it shouldn't be used and alternatives. "
+          - "General concept of MVVM and Android Databinding - why they should be used together - how using these technologies reflects to the app architecture - code snippets from practice - disadvantages, cases when it shouldn't be used and alternatives."
         long:
-          - "TBA"
+          - "General concept of MVVM and Android Databinding - why they should be used together - how using these technologies reflects to the app architecture - code snippets from practice - disadvantages, cases when it shouldn't be used and alternatives."
     tags:
       - android
   -
@@ -1955,5 +1957,40 @@ speakers:
     tags:
       - java
       - cloud
-
+  -
+    firstname: 'Đurađ'
+    lastname: 'Caranović'
+    pageurl: 'djuradj-caranovic'
+    url: ''
+    photo: 'user.png'
+    company: 'Fundus Holding'
+    talk:
+      -
+        tid: 560
+        title: 'IT in Agriculture'
+        type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
+    tags:
+      - business
+  -
+    firstname: 'Igor'
+    lastname: 'Bogićević'
+    pageurl: 'igor-bogicevic'
+    url: ''
+    photo: 'user.png'
+    company: 'Seven Bridges Genomics, Inc.'
+    talk:
+      -
+        tid: 565
+        title: 'TBA'
+        type: 'talk'
+        short:
+          - "TBA"
+        long:
+          - "TBA"
+    tags:
+      - business
 ---
