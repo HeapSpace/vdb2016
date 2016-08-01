@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Get Voxxed' %>
+	<%= meta_share %>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html' %>
+
+	<div class="main-bg page"></div>
+	<div class="container">
+	  <h1 class="text-center pad-vertical-big">
+	    Strip and get<br><span class="yellow">voxxed!!!</span>
+	  </h1>
+
+	  	<div class="row-centered">
+	    <div class="col-md-6 col-centered">
+
+			<div id="overlay" style="color:red;position:absolute;overflow:visible; top: 250px; left: 180px;"><img src="moustache.png"></div>
+	    	<div id="my_camera" style="width:640; height:480px;"></div>
+
+    		<a class="btn btn-primary btn-lg green" role="button" href="javascript:void(take_snapshot())">Take Snapshot</a>
+    		<div id="my_result"></div>
+
+		</div>
+		</div>
+
+
+	</div>
+	<div class="footer-cta-block info margin-top-big">
+	  <%= render '/_footer_cta.html' %>
+	</div>
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+	<script src="webcam.min.js"></script>
+	<script language="JavaScript">
+        Webcam.attach( '#my_camera' );
+
+        function take_snapshot() {
+            Webcam.snap( function(data_uri) {
+                document.getElementById('my_result').innerHTML = '<img src="'+data_uri+'"/>';
+            } );
+        }
+    </script>
+</body>
+</html>
