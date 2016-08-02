@@ -1,72 +1,72 @@
-// set up video and canvas elements needed
-var videoInput = document.getElementById('vid');
-var canvasInput = document.getElementById('compare');
-var canvasOverlay = document.getElementById('overlay')
-var debugOverlay = document.getElementById('debug');
-var overlayContext = canvasOverlay.getContext('2d');
-canvasOverlay.style.position = "absolute";
-canvasOverlay.style.top = '0px';
-canvasOverlay.style.zIndex = '100001';
-canvasOverlay.style.display = 'block';
-debugOverlay.style.position = "absolute";
-debugOverlay.style.top = '0px';
-debugOverlay.style.zIndex = '100002';
-debugOverlay.style.display = 'none';
-var	santa = new Image();
-santa.setAttribute('crossOrigin', 'anonymous');
-santa.src = "i/face2.png";
-// add some custom messaging
-statusMessages = {
-	"whitebalance" : "Finding your face",
-	"detecting" : "Finding your face...",
-	"hints" : "Hmmm...detecting your face is taking a while, you may need to refresh",
-	"redetecting" : "Lost your of face, redetecting...",
-	"lost" : "Lost your face :(",
-	"found" : "GetVoxxed!!!"
-};
-supportMessages = {
-	"no getUserMedia" : "Unfortunately, <a href='http://dev.w3.org/2011/webrtc/editor/getusermedia.html'>getUserMedia</a> is not supported in your browser. Try <a href='http://www.opera.com/browser/'>downloading Opera 12</a> or <a href='http://caniuse.com/stream'>another browser that supports getUserMedia</a>. Now using fallback video for facedetection.",
-	"no camera" : "No camera found. Using fallback video for facedetection."
-};
-document.addEventListener("headtrackrStatus", function(event) {
-	if (event.status in supportMessages) {
-		var messagep = document.getElementById('gUMMessage');
-		//messagep.innerHTML = supportMessages[event.status];
-	} else if (event.status in statusMessages) {
-		var messagep = document.getElementById('headtrackerMessage');
-		//messagep.innerHTML = statusMessages[event.status];
+var canvasOverlay;
+var overlayContext;
+
+
+// images
+var images = [new Image(), new Image()];
+var imageNdx = 0;
+var imageDim = [[907, 909, 50], [500, 776, 50]];
+
+images[0].setAttribute('crossOrigin', 'anonymous');
+images[0].src = "i/face1.png";
+images[1].setAttribute('crossOrigin', 'anonymous');
+images[1].src = "i/face2.png";
+
+var props = images[0];
+var xoff = 400;
+var yoff = 200;
+
+var videoHeight;
+var videoWidth;
+
+function selectNextImage() {
+	imageNdx = imageNdx + 1;
+	if (imageNdx >= images.length) {
+		imageNdx = 0;
 	}
-}, true);
-// the face tracking setup
-var htracker = new headtrackr.Tracker({altVideo : {ogv : "./media/capture5.ogv", mp4 : "./media/capture5.mp4"}, calcAngles : true, ui : false, headPosition : false, debug : debugOverlay});
-htracker.init(videoInput, canvasInput);
-htracker.start();
-// for each facetracking event received draw rectangle around tracked face on canvas
-document.addEventListener("facetrackingEvent", function( event ) {
-	// clear canvas
-	overlayContext.clearRect(0,0,800,600);
-	// once we have stable tracking, draw rectangle
-	if (event.detection == "CS") {
-		overlayContext.translate(event.x, event.y)
-		overlayContext.rotate(event.angle-(Math.PI/2));
-		overlayContext.drawImage(santa, (-(event.width/2 + 55)) >> 0, (-(event.height/2 + 130)) >> 0, event.width + 75, event.height + 30);
-		overlayContext.rotate((Math.PI/2)-event.angle);
-		overlayContext.translate(-event.x, -event.y);
-	}
-});
-// turn off or on the canvas showing probability
-function showProbabilityCanvas() {
-	var debugCanvas = document.getElementById('debug');
-	if (debugCanvas.style.display == 'none') {
-		debugCanvas.style.display = 'block';
-	} else {
-		debugCanvas.style.display = 'none';
-	}
+
+	props = images[imageNdx];
+
+	var w = imageWidth();
+	var h = imageHeight();
+
+	xoff = 400 - (w / 2);
+	yoff = 200 - (h / 2);
+	drawProps();
 }
+
+function imageWidth() {
+	var p = imageDim[imageNdx][2];
+	return imageDim[imageNdx][0] * p / 100;
+}
+function imageHeight() {
+	var p = imageDim[imageNdx][2];
+	return imageDim[imageNdx][1] * p / 100;
+}
+
+function drawProps() {
+	if (overlayContext == undefined) {
+		return;
+	}
+
+	overlayContext.clearRect(0,0,800,600);
+
+	var w = imageWidth();
+	var h = imageHeight();
+
+	overlayContext.drawImage(props, xoff, yoff, w, h);
+
+	overlayContext.font = "20px Arial";
+	overlayContext.fillStyle = "white";
+	overlayContext.textAlign = "left";
+	overlayContext.fillText("VoxxedDays Belgrade 2016", 6, 26);
+};
 
 OAuth.initialize("PMvLi-bPCgrZFYNsp_FVmEPGP9c");
 
 function postCanvasToURL() {
+	  var snap = document.getElementById('flatten');
+
 	  var img = snap.toDataURL();
 	  var file = dataURItoBlob(img);
 	  var tweetText = $('#tweetText').text();
@@ -110,42 +110,131 @@ function dataURItoBlob(dataURI) {
     return new Blob([ia], {type:mimeString});
 }
 
-var snap = document.getElementById('flatten');
-var ctx3 = snap.getContext('2d');
-
 $('#snap').click(function(){
+	var snap = document.getElementById('flatten');
+	var ctx3 = snap.getContext('2d');
 
-	if($('.clicked').length >= 0){
-		$('.wrapper').removeClass('clicked');
-		$('#tweet-wrapper').hide();
-		$('#flatten').hide();
-		$('.wrapper').addClass('clicked');
-		setTimeout(function(){
-			ctx3.drawImage(canvasInput, 0, 0);
-			ctx3.drawImage(canvasOverlay, 0, 0);
-			$('#flatten').show();
-			$('#tweet-wrapper').show();
-		},3000);
-	} else {
-		$('.wrapper').addClass('clicked');
-		setTimeout(function(){
-			ctx3.drawImage(canvasInput, 0, 0);
-			ctx3.drawImage(canvasOverlay, 0, 0);
-			$('#flatten').show();
-			$('#tweet-wrapper').show();
-		},3000);
-	}
+	$('.wrapper').removeClass('clicked');
+	$('#tweet-wrapper').hide();
+	$('#flatten').hide();
+	$('.wrapper').addClass('clicked');
+
+	setTimeout(function() {
+		//Webcam.snap(function() {}, snap);
+		Webcam.snap(function(data_uri, canvas, context) {
+        	ctx3.drawImage(canvas, 0, 0, ww, hh);
+    	});
+
+		ctx3.drawImage(canvasOverlay, 0, 0);
+
+		$('#flatten').show();
+		$('#tweet-wrapper').show();
+	}, 3000);
 })
 
 $('#tweet').click(function(){
 	postCanvasToURL();
 })
 
-$('#refresh').click(function(){
-	$('#tweet-wrapper').hide();
-	$('#flatten').hide();
-	$('.wrapper').removeClass('clicked');
-})
+var delta = 10;
+$('#up').click(function(){
+	yoff = yoff - delta;
+	drawProps();
+});
+$('#down').click(function(){
+	yoff = yoff + delta;
+	drawProps();
+});
+$('#left').click(function(){
+	xoff = xoff - delta;
+	drawProps();
+});
+$('#right').click(function(){
+	xoff = xoff + delta;
+	drawProps();
+});
+$('#next').click(function(){
+	selectNextImage();
+});
+$('#plus').click(function(){
+	var w = imageWidth();
+	var h = imageHeight();
 
-if (window.location.protocol != "https:")
-    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+	imageDim[imageNdx][2] += 5;
+
+	var w2 = imageWidth();
+	var h2 = imageHeight();
+
+	xoff = xoff + (w-w2)/2;
+	yoff = yoff + (h-h2)/2;
+
+	drawProps();
+});
+$('#minus').click(function(){
+	var w = imageWidth();
+	var h = imageHeight();
+
+	imageDim[imageNdx][2] -= 5;
+
+	var w2 = imageWidth();
+	var h2 = imageHeight();
+
+	xoff = xoff + (w-w2)/2;
+	yoff = yoff + (h-h2)/2;
+
+	drawProps();
+});
+
+Webcam.set({
+	width: 800,
+	height: 600,
+	dest_width: 800,
+    dest_height: 600,
+});
+
+Webcam.attach('#mycam');
+
+var ww = 800;
+var hh = 600;
+
+Webcam.on( 'live', function() {
+	var vid = $("#mycam video").get()[0];
+	videoHeight = vid.videoHeight;
+	videoWidth = vid.videoWidth;
+
+	ww = 800;
+	hh = 600;
+
+	if (videoWidth > ww) {
+		hh = videoHeight * ww / videoWidth;
+	}
+
+	var canvas = document.createElement("canvas");
+    canvas.id = 'overlay';
+    canvas.width = ww;
+    canvas.height = hh;
+//    canvas.style.border = '2px solid red';
+
+    var parentDiv = document.getElementById("mycam");
+    parentDiv.appendChild(canvas);
+
+    var canvas2 = document.createElement("canvas");
+    canvas2.id = 'flatten';
+    canvas2.width = ww;
+    canvas2.height = hh;
+    canvas2.style.display = `none`;
+
+    parentDiv.appendChild(canvas2);
+
+    canvasOverlay = canvas;
+    overlayContext = canvasOverlay.getContext('2d');
+
+    selectNextImage();
+
+});
+
+if (window.location.hostname != "localhost") {
+	if (window.location.protocol != "https:") {
+	    window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+	}
+}

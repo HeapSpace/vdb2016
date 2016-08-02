@@ -13,25 +13,28 @@
 
 			<!--img id="title" src="i/elfie.png" alt="elfie"/-->
 
-			<div class="wrapper">
-				<canvas id="compare" width="800" height="600" style="display:none"></canvas>
-				<video id="vid" autoplay loop width="800" height="600"></video>
-				<canvas id="overlay" width="800" height="600"></canvas>
-				<canvas id="debug" width="800" height="600"></canvas>
-				<canvas id="flatten" width="800" height="600"></canvas>
+			<div class="wrapper" id="mycam">
 			</div>
-			<svg id="svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"></svg>
-			<p id='gUMMessage'></p>
+
 			<div id="tweet-wrapper">
 				<p>Share your Voxxed on Twitter...</p>
 				<textarea id="tweetText" maxlength="94">I just got Voxxed! You can too!</textarea>
 				<button id="tweet">Tweet your Voxxed experience</button>
 				<textarea readonly>@VoxxedBelgrade #vdb16</textarea>
 			</div>
-			<button class="btn" id="snap">Snap Your PHOTO</button>
-			<p class="status">Status: <span id='headtrackerMessage'>Loading...</span></p>
 
-			<script src="scripts/headtrackr.min.js"></script>
+			<button id="up" href="#">UP</button>
+			<button id="down" href="#">DOWN</button>
+			<button id="left" href="#">LEFT</button>
+			<button id="right" href="#">RIGHT</button>
+			<button id="next" href="#">NEXT</button>
+			<button id="plus" href="#">+</button>
+			<button id="minus" href="#">-</button>
+
+			<br><br><br><br>
+			<button class="btn" id="snap">Snap Your PHOTO</button>
+
+			<script src="scripts/webcam.min.js"></script>
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 			<script src="scripts/oauth.js"></script>
 			<script src="scripts/vdb.js"></script>

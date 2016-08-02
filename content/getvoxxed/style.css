@@ -15,7 +15,7 @@ h1 {
 	margin: 0;
 }
 
-p{
+p {
 	color: #fff;
 }
 
@@ -47,34 +47,16 @@ p{
 	}
 }
 
-#s{
-	width: 69px;
-	position: absolute;
-	z-index: 1000000;
-	-webkit-transform: translate(110px,21px);
-	-moz-transform: translate(110px,21px);
-	transform: translate(110px,21px);
-	animation: drop 3s forwards cubic-bezier(0.59, 0.03, 0.11, 1.01);
-	animation-delay: 2s;
-	transform-origin: center center;
-}
-
-#title{
+#title {
 	width: 480px;
 	transition: 1000ms ease-in-out;
 	margin: 10px auto -20px;
 }
 
-video{
+video {
 	width: 100%;
 	max-width: 800px;
 	height: auto;
-}
-
-#overlay{
-	width: 100%;
-	max-width: 800px;
-	margin-top: 60px;
 }
 
 .wrapper {
@@ -185,36 +167,22 @@ a {
 	text-decoration:none;
 }
 
-
-.video-wrapper {
-  width: 800px;
-  height: 600px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden; }
-
-#output{
+#overlay {
 	position: absolute;
-	left: 0;
-	top: 0;
+	max-width: 800px;
+	margin-top: 60px;
+	top: 75px;
+	z-index: 100001;
+	display: block;
 }
 
-#flatten{
+#flatten {
 	position: absolute;
-	width: 100%;
     max-width: 800px;
     margin-top: 60px;
-    top: 0px;
+    top: 60px;
     z-index: 100002;
     display: block;
-}
-
-.home{
-	text-indent: -9999px;
-	background: url('i/logo.png') center no-repeat;
-	height: 200px;
-	margin: 20px auto;
-	display: block;
 }
 
 #tweet-wrapper{
@@ -236,7 +204,7 @@ a {
 	font-weight: 700;
 }
 
-#tweet-wrapper textarea{
+#tweet-wrapper textarea {
 	margin: -30px 10px 10px;
 	resize: none;
 	border-radius: 10px;
@@ -286,21 +254,6 @@ a {
 	border: none;
 }
 
-svg {
-    background: transparent;
-    position: absolute;
-    top: 0;
-    margin: 0 auto;
-    height: 100vh;
-    z-index: 100004;
-    pointer-events: none;
-    display: none;
-}
-
-svg.block{
-	 display: block;
-}
-
 .btn{
 	display: inline-block;
 	margin: 0 5px;
@@ -332,27 +285,6 @@ svg.block{
     padding-right: 48px;
 }
 
-#refresh{
-	background-image: url('i/refresh.png');
-	background-size: 18px;
-	background-position: 85% 10px;
-}
-
-#snow{
-	background-image: url('i/snow.png');
-	background-size: 18px;
-	background-position: 84% 8px;
-}
-
-.status{
-	background: rgba(142,9,16,0.5);
-	width: 800px;
-	padding: 7px;
-	border-radius: 15px;
-	color: #fff;
-	margin: 20px auto;
-}
-
 @media (max-width: 960px){
 	.wrapper{
 		max-width: 960px;
@@ -361,10 +293,10 @@ svg.block{
 	    background: url('i/frame.png') no-repeat -70px 0;
 		background-size: cover;
 	}
-	#s, svg{
+	svg{
 		display: none;
 	}
-	video, #overlay, #flatten{
+	video, #overlay, #flatten {
 		max-width: 960px;
 	}
 	.wrapper.clicked:before {
@@ -378,14 +310,10 @@ svg.block{
 		width: 100%;
 		box-sizing: border-box;
 	}
-	#elfie{
-		max-width: 480px;
-		width: 90%;
-	}
 	#tweet-wrapper{
 		width: 95%;
 	}
-	.status, #tweet-wrapper textarea{
+	#tweet-wrapper textarea{
 		width: 88%;
 		height: auto;
 	}
