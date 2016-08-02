@@ -182,12 +182,12 @@ speakers:
     talk:
       -
         tid: 130
-        title: 'Machine Learning as an API: strengths, limits, and unusual use cases'
+        title: 'Harry Potter dorm doors -- a wizarding approach to security'
         type: 'talk'
         short:
-          - "TBA"
+          - "The entranceways to the dorms at Hogwarts were guarded by paintings that talked and asked for passwords. What if that were real?! The recent availability of machine learning as an API opens up the door to an exponential growth in the possibilities for 'smart' devices. In this talk, we explore a Harry Potter style 'security' system that can both see and hear."
         long:
-          - "TBA"
+          - "The entranceways to the dorms at Hogwarts were guarded by paintings that talked and asked for passwords. What if that were real?! The recent availability of machine learning as an API opens up the door to an exponential growth in the possibilities for 'smart' devices. In this talk, we explore a Harry Potter style 'security' system that can both see and hear. We will string together the Cloud Vision API and the Speech API to make a fun and interactive 'security' system, and discuss what kinds of systems and opportunities these new machine learning APIs enable. Finally, we will also talk about how to make such a system reasonably secure, since saying a passphrase alone should not grant a stranger access to your home."
     tags:
       - api
   -
@@ -520,12 +520,12 @@ speakers:
       - ios
       - mobile
   -
-    firstname: 'Daniel'
+    firstname: 'Daniel G.'
     lastname: 'Siegel'
     pageurl: 'daniel-siegel'
-    url: ''
+    url: 'www.dgsiegel.net'
     photo: 'Daniel Siegel.png'
-    company: 'Daniel G. Siegel'
+    company: 'Digital Product Architect'
     talk:
       -
         tid: 210
@@ -1088,6 +1088,10 @@ speakers:
         short:
           - "How do we interact with webpages? Has it changed during the course of time? Is it affected by the advancement of technology?"
         long:
+          - "* How do we interact with webpages?"
+          - "* Has it changed during the course of time?"
+          - "* Is it affected by the advancement of technology?"
+          - " "
           - "How could it possibly change? If these questions awaken even the slightest interest in you, I'll make sure that the talk is interesting /* enough to keep you from leaving */ (by bribing you with sweet talk and candy! ...among other things...)"
           - "I'll share a vision with technology, or the other way around - a technology with a vision. Either way: it's a vision of introducing an alternative webpage UX and a technology that builds upon several relatively new technologies into something new and cool!"
     tags:
