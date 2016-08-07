@@ -55,6 +55,8 @@ def meta_share(title = nil, description = nil, image = nil)
     <meta name='twitter:site' content='@voxxedbelgrade' />
     <meta name='twitter:image' content='#{image}' />
     <meta name='twitter:creator' content='@voxxedbelgrade' />
+    <meta name='viewport' content='width=device-width; initial-scale = 1.0; maximum-scale=1.0; user-scalable=no' />
+
 "
 end
 
