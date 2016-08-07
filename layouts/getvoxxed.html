@@ -4,34 +4,34 @@
 			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<title>get voxxed</title>
+			<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
 			<link rel="shortcut icon" href="favicon.ico">
 			<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 			<link rel="stylesheet" href="style.css"/>
 		</head>
 		<body>
-			<h1>Get Voxxed</h1>
+			<h1>
+				Join <b>#BalkanCodeInAction</b>,<br>
+				drag, snap and share yourself on social media!
+			</h1>
 
-			<!--img id="title" src="i/elfie.png" alt="elfie"/-->
-
+			<div class="w">
+				<div id="controls">
+					<button id="next" href="#"><i class="fa fa-arrow-right"></i></button>
+					<button id="plus" href="#"><i class="fa fa-search-plus"></i></button>
+					<button id="minus" href="#"><i class="fa fa-search-minus"></i></button>
+				</div>
+			</div>
 			<div class="wrapper" id="mycam">
 			</div>
 
 			<div id="tweet-wrapper">
-				<p>Share your Voxxed on Twitter...</p>
-				<textarea id="tweetText" maxlength="94">I just got Voxxed! You can too!</textarea>
-				<button id="tweet">Tweet your Voxxed experience</button>
-				<textarea readonly>@VoxxedBelgrade #vdb16</textarea>
+				<p>Share your Voxxed photo on Twitter...</p>
+				<textarea id="tweetText" readonly>#BalkanCodeInAction! Join the crew! @VoxxedBelgrade #vdb16</textarea>
+				<button id="tweet">Tweet!</button>
 			</div>
 
-			<button id="up" href="#">UP</button>
-			<button id="down" href="#">DOWN</button>
-			<button id="left" href="#">LEFT</button>
-			<button id="right" href="#">RIGHT</button>
-			<button id="next" href="#">NEXT</button>
-			<button id="plus" href="#">+</button>
-			<button id="minus" href="#">-</button>
-
-			<br><br><br><br>
+			<br><br>
 			<button class="btn" id="snap">Snap Your PHOTO</button>
 
 			<script src="scripts/webcam.min.js"></script>

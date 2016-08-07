@@ -3,6 +3,10 @@ var overlayContext;
 
 
 // images
+var logo = new Image();
+logo.setAttribute('crossOrigin', 'anonymous');
+logo.src = "i/logo.png";
+
 var images = [new Image(), new Image()];
 var imageNdx = 0;
 var imageDim = [[907, 909, 50], [500, 776, 50]];
@@ -54,12 +58,8 @@ function drawProps() {
 	var w = imageWidth();
 	var h = imageHeight();
 
+	overlayContext.drawImage(logo, 0, 0);
 	overlayContext.drawImage(props, xoff, yoff, w, h);
-
-	overlayContext.font = "20px Arial";
-	overlayContext.fillStyle = "white";
-	overlayContext.textAlign = "left";
-	overlayContext.fillText("VoxxedDays Belgrade 2016", 6, 26);
 };
 
 OAuth.initialize("PMvLi-bPCgrZFYNsp_FVmEPGP9c");
@@ -73,7 +73,7 @@ function postCanvasToURL() {
 
 	  OAuth.popup("twitter").then(function(result) {
 	      var data = new FormData();
-	      data.append('status', tweetText + "  @VoxxedBelgrade #vdb16");
+	      data.append('status', tweetText);
 	      // data.append('text', '#elfie http://devteaminc.co/');
 	      data.append('media[]', file, 'vdb.png');
 
@@ -197,7 +197,59 @@ Webcam.attach('#mycam');
 var ww = 800;
 var hh = 600;
 
-Webcam.on( 'live', function() {
+var canMouseX;
+var canMouseY;
+var isDragging=false;
+
+var offsetX;
+var offsetY;
+var canvasWidth;
+var canvasHeight;
+
+var xxx,xofMD;
+var yyy,yofMD;
+
+function handleMouseDown(e){
+	canMouseX=parseInt(e.clientX-offsetX);
+	canMouseY=parseInt(e.clientY-offsetY);
+	isDragging=true;
+	xxx=canMouseX;
+	yyy=canMouseY;
+	xofMD=xoff;
+	yofMD=yoff;
+}
+
+function handleMouseUp(e){
+	canMouseX=parseInt(e.clientX-offsetX);
+	canMouseY=parseInt(e.clientY-offsetY);
+	isDragging=false;
+}
+
+function handleMouseOut(e){
+	canMouseX=parseInt(e.clientX-offsetX);
+	canMouseY=parseInt(e.clientY-offsetY);
+	isDragging=false;
+}
+
+function handleMouseMove(e){
+	canMouseX=parseInt(e.clientX-offsetX);
+	canMouseY=parseInt(e.clientY-offsetY);
+
+	if (isDragging) {
+		//xoff = canMouseX;
+		//yoff = canMouseY;
+
+		var deltaX = canMouseX - xxx;
+		var deltaY = canMouseY - yyy;
+
+		xoff = xofMD + deltaX;
+		yoff = yofMD + deltaY;
+		drawProps();
+	}
+}
+
+
+Webcam.on('live', function() {
 	var vid = $("#mycam video").get()[0];
 	videoHeight = vid.videoHeight;
 	videoWidth = vid.videoWidth;
@@ -231,6 +283,17 @@ Webcam.on( 'live', function() {
 
     selectNextImage();
 
+    var $c = $(canvas);
+    var canvasOffset = $c.offset();
+	offsetX=canvasOffset.left;
+    offsetY=canvasOffset.top;
+    canvasWidth=canvas.width;
+    canvasHeight=canvas.height;
+
+    $c.mousedown(function(e){handleMouseDown(e);});
+    $c.mousemove(function(e){handleMouseMove(e);});
+    $c.mouseup(function(e){handleMouseUp(e);});
+    $c.mouseout(function(e){handleMouseOut(e);});
 });
 
 if (window.location.hostname != "localhost") {
