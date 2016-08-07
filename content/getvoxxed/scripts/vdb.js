@@ -326,6 +326,7 @@ function postImageToFacebook(token, filename, mimeType, imageData, message) {
     fd.append("access_token", token);
     fd.append("source", imageData);
     fd.append("no_story", true);
+    var tweetText = $('#tweetText').text();
 
     // Upload image to facebook without story(post to feed)
     $.ajax({
@@ -353,7 +354,7 @@ function postImageToFacebook(token, filename, mimeType, imageData, message) {
                                 "message": "",
                                 "picture": response.images[0].source,
                                 "link": window.location.href,
-                                "name": 'Look at the cute panda!',
+                                "name": tweetText,
                                 "description": message,
                                 "privacy": {
                                     value: 'SELF'
