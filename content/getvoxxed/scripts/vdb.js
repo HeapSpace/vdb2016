@@ -110,6 +110,104 @@ function dataURItoBlob(dataURI) {
     return new Blob([ia], {type:mimeString});
 }
 
+function filter2(pixels) {
+    var d = pixels.data;
+    for (var i = 0; i < d.length; i += 4) {
+      var r = d[i];
+      var g = d[i + 1];
+      var b = d[i + 2];
+      d[i]     = (r * 0.393)+(g * 0.769)+(b * 0.189); // red
+      d[i + 1] = (r * 0.349)+(g * 0.686)+(b * 0.168); // green
+      d[i + 2] = (r * 0.272)+(g * 0.534)+(b * 0.131); // blue
+    }
+    return pixels;
+  };
+function filter(imageData) {
+var
+    idx,
+    j, // for check value loop
+    r,g,b, // for sepia
+    average,
+    sepiatone,
+    noise,
+    _imageData = imageData.data,
+    viewFinderImageData,
+    contrastFactor;
+
+    var _effect = {
+        contrast: 28,
+        brightness: 20,
+        noise: 10,
+        desaturate: 0.1
+    }
+
+    var width = ww;
+    var height = hh;
+
+    // contrast
+      contrastFactor = (259 * (_effect.contrast + 255)) / (255 * (259 - _effect.contrast));
+
+
+    // loop backwards so the length has to be evaluated only once; --i is faster than ++i, i-- or i++
+    for (var i = (width * height); i >= 0; --i) {
+      // idx = i * 4;
+      // bitshift operartions are faster
+      idx = i << 2;
+
+      // curves
+        //_imageData[idx  ] = _effect.curves.r[ _imageData[idx  ] ];
+        //_imageData[idx+1] = _effect.curves.g[ _imageData[idx+1] ];
+        //_imageData[idx+2] = _effect.curves.b[ _imageData[idx+2] ];
+
+      // contrast
+        _imageData[idx  ] = contrastFactor * (_imageData[idx  ] - 128) + 128;
+        _imageData[idx+1] = contrastFactor * (_imageData[idx+1] - 128) + 128;
+        _imageData[idx+2] = contrastFactor * (_imageData[idx+2] - 128) + 128;
+
+      // brightness
+        _imageData[idx  ] += _effect.brightness;
+        _imageData[idx+1] += _effect.brightness;
+        _imageData[idx+2] += _effect.brightness;
+
+      // screen
+        //_imageData[idx  ] = 255 - ((255 - _imageData[idx  ]) * (255 - _effect.screen.r * _effect.screen.a) / 255);
+        //_imageData[idx+1] = 255 - ((255 - _imageData[idx+1]) * (255 - _effect.screen.g * _effect.screen.a) / 255);
+        //_imageData[idx+2] = 255 - ((255 - _imageData[idx+2]) * (255 - _effect.screen.b * _effect.screen.a) / 255);
+
+      // noise
+        noise = _effect.noise - Math.random() * _effect.noise / 2;
+        _imageData[idx  ] += noise;
+        _imageData[idx+1] += noise;
+        _imageData[idx+2] += noise;
+
+      // view finder
+        //_imageData[idx  ] = _imageData[idx  ] * viewFinderImageData[idx  ] / 255;
+        //_imageData[idx+1] = _imageData[idx+1] * viewFinderImageData[idx+1] / 255;
+        //_imageData[idx+2] = _imageData[idx+2] * viewFinderImageData[idx+2] / 255;
+
+      // sepia
+        r = _imageData[idx  ];
+        g = _imageData[idx+1];
+        b = _imageData[idx+2];
+        _imageData[idx  ] = r * 0.393 + g * 0.769 + b * 0.189;
+        _imageData[idx+1] = r * 0.349 + g * 0.686 + b * 0.168;
+        _imageData[idx+2] = r * 0.272 + g * 0.534 + b * 0.131;
+
+      // desaturate
+        average = ( _imageData[idx  ] + _imageData[idx+1] + _imageData[idx+2] ) / 3;
+        _imageData[idx  ] += ((average - _imageData[idx  ]) * _effect.desaturate);
+        _imageData[idx+1] += ((average - _imageData[idx+1]) * _effect.desaturate);
+        _imageData[idx+2] += ((average - _imageData[idx+2]) * _effect.desaturate);
+
+      // check value range 0-255 and parse to int
+      // http://jsperf.com/min-max-vs-if-else
+      // http://jsperf.com/parseint-vs-double-bitwise-not2
+      for (j=2; j>=0; --j) {
+        _imageData[idx+j] = ~~(_imageData[idx+j] > 255 ? 255 : _imageData[idx+j] < 0 ? 0 : _imageData[idx+j]);
+      }
+    }
+};
+
 $('#snap').click(function(){
 	var snap = document.getElementById('flatten');
 	var ctx3 = snap.getContext('2d');
@@ -123,9 +221,14 @@ $('#snap').click(function(){
 		//Webcam.snap(function() {}, snap);
 		Webcam.snap(function(data_uri, canvas, context) {
         	ctx3.drawImage(canvas, 0, 0, ww, hh);
+
     	});
 
 		ctx3.drawImage(canvasOverlay, 0, 0);
+
+        var imageData = ctx3.getImageData(0, 0, ww, hh);
+        filter(imageData);
+        ctx3.putImageData(imageData, 0, 0);
 
 		$('#flatten').show();
 		$('#tweet-wrapper').show();
