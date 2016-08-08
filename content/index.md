@@ -1944,7 +1944,7 @@ speakers:
     tags:
       - java
       - cloud
-      -microservices
+      - microservices
   -
     firstname: 'Đurađ'
     lastname: 'Caranović'
