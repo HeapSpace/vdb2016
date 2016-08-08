@@ -103,11 +103,11 @@ speakers:
     tags:
       - devops
   -
-    firstname: 'Sebastian'
-    lastname: 'Faulhaber'
-    pageurl: 'sebastian-faulhaber'
-    url: 'http://www.faulhaber.it/'
-    photo: 'Sebastian Faulhaber.jpg'
+    firstname: 'Jaroslaw'
+    lastname: 'Stakun'
+    pageurl: 'jaroslaw-stakun'
+    url: 'https://www.linkedin.com/in/jstakun'
+    photo: 'Jaroslaw Stakun.jpg'
     company: 'Red Hat'
     talk:
       -
@@ -523,7 +523,7 @@ speakers:
     firstname: 'Daniel G.'
     lastname: 'Siegel'
     pageurl: 'daniel-siegel'
-    url: 'www.dgsiegel.net'
+    url: 'http://www.dgsiegel.net/'
     photo: 'Daniel Siegel.png'
     company: 'Digital Product Architect'
     talk:
@@ -1811,25 +1811,6 @@ speakers:
     tags:
       - iot
   -
-    firstname: 'Zoran'
-    lastname: 'Rončević'
-    pageurl: 'zoran-roncevic'
-    url: 'https://rs.linkedin.com/in/zoran-roncevic-a6049970'
-    photo: 'Zoran Roncevic.jpg'
-    company: '"Maker" Association'
-    talk:
-      -
-        tid: 520
-        title: 'NodeJS and Python for IoT platforms'
-        type: 'talk'
-        short:
-          - "TBA"
-        long:
-          - "TBA"
-    tags:
-      - iot
-      - javascript
-  -
     firstname: 'Jakub'
     lastname: 'Marchwicki'
     pageurl: 'jakub-marchwicki'
@@ -1947,20 +1928,23 @@ speakers:
     lastname: 'Boxall'
     pageurl: 'robert-boxall'
     url: 'https://www.linkedin.com/in/robertboxall'
-    photo: 'user.png'
+    photo: 'Robert Boxall.png'
     company: 'Interventure'
     talk:
       -
         tid: 555
-        title: 'Java/Spring Microservice Cloud development'
+        title: 'Micro-services – one year later – tooling and libraries to bring micro-service designs into your organization'
         type: 'talk'
         short:
-          - "TBA"
+          - "Robert joined Gogo as SVP of Platform and Services, after almost 4 years at Netflix working on Cloud Services. Using the skills and knowledge he gained at Netflix he’s moving gogo to embrace DevOps and Micro-services on Java based architecture."
         long:
-          - "TBA"
+          - "This presentation will share the knowledge gained in the migration from a monolithic and highly coupled system operating in a traditional datacenter to a best practice micro-service solution being deployed on AWS. It will highlight many of the great open source libraries such as Netflix Eureka, Zuul, Hystrix, Yammer Metrics and tooling such as Netflix Spinnaker and Monitoring tools such as Grafana that you can leverage to get a head start on building a cloud based solution."
+          - "18 months into this transition, leveraging these tools and methodologies, gogo is trending towards a 10x increase of deployments to production. It’s not just code that has changed but the environment with developers now empowered to deploy code whenever they want via a click of a button, Quality Assurance has become Quality Engineering, issues and outages are trending down yet the rate of change is up."
+          - "While progress has been good major challenges remain with untangling the legacy systems and services running in the data center and some insight into how to handle those problems and then wrap up with our next challenges, with deployments going global, the complexities of handing PCI and SOX in the Cloud and some big questions and bets on container and leveraging multiple Cloud solutions as we move forward."
     tags:
       - java
       - cloud
+      -microservices
   -
     firstname: 'Đurađ'
     lastname: 'Caranović'
