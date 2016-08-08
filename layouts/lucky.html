@@ -15,7 +15,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: #FFFFFF;
+	background-color: #dad8d8;
+	background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
   width: 350px;
   height: 440px;
   border-radius: 4px;
@@ -160,6 +161,12 @@
   font-size: 20px;
 }
 
+.innerCard {
+	position: relative;
+  top: 50%;
+  transform: translateY(-60%);
+}
+
 </style>
 </head>
 <body>
@@ -236,8 +243,10 @@ $(function() {
 		for (var i = 0; i < 5; i++) {
 			console.log(talks[i]);
 			$("#lc" + i).html(
+				"<div class='innerCard'>" +
 				"<h2>" + talks[i].title + "</h2>"+
-				"<a href='/talk/" + talks[i].tid + "/'><i class='fa fa-arrow-circle-right'></i> read more</a>"
+				"<a href='/talk/" + talks[i].tid + "/'><i class='fa fa-arrow-circle-right'></i> read more</a>" +
+				"</div>"
 			);
 		}
 	});
