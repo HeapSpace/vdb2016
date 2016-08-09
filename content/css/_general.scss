@@ -68,7 +68,7 @@ p {
   height: 95px;
   margin-top: 90px;
 
-  @media (max-device-width : 480px) {
+  @media (max-device-width: $screen-xs) {
     margin-top: 180px;
   }
 }
@@ -79,6 +79,16 @@ p {
 
 #home-main-text {
   margin-top: 20px;
+}
+
+.home-main-buttons {
+  text-align: center !important;
+  a {
+    font-size: 155%;
+    margin: 20px !important;
+    font-family: "Roboto Slab";
+    font-weight: 300;
+  }
 }
 
 .mobile-menu-logo {
@@ -352,7 +362,7 @@ h6 {
   max-width: 100%;
   display:block;
   &.first_sep {
-    @media (max-device-width : 480px){
+    @media (max-device-width: $screen-xs){
       margin-top:150px;
     }
   }
@@ -1167,7 +1177,7 @@ button, a[role="button"] {
   @for $i from 1 through 12 {
     &:nth-child(#{$i}){
       // animation: cloud 2s (.1s + $i) ease-in-out infinite;
-      @media (max-device-width : 768px) {
+      @media (max-device-width: $screen-md) {
         top: 0px !important;
         bottom: 0px !important;
         left: 0px !important;
@@ -1181,19 +1191,30 @@ button, a[role="button"] {
   position: relative;
   width: 200px;
   height: 150px;
-
   background: center center no-repeat;
   background-size: 100%;
+}
+
+.press-clippings {
+  .item-block-holder {
+    img {
+      display: inline-block;
+      max-width: 95%;
+    }
+    h6 {
+      margin-bottom: 25px;
+    }
+  }
 }
 
 .button-text {
   margin-top: 50px;
 
 
-  @media (max-device-width : 770px) {
+  @media (max-device-width: $screen-md) {
     margin-top: 4em;
   }
-  @media (max-device-width: 480px) {
+  @media (max-device-width: $screen-xs) {
     margin-top: 6em;
   }
 }

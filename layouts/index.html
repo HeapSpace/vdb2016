@@ -7,45 +7,23 @@
 <body>
 	<div class="main-bg home"></div>
 	<%= render '/_header.html'%>
-	<div class="container">
-		<div id="home-mainscreen-holder" class="container">
-			<div class="row row-centered flex">
-		    <div class="col-sm-8 col-centered">
-					<div class="home-logo"></div>
-					<h2 id="home-main-text" class="text-center">
-						Balkan's Most Inspiring<br><span class="yellow">Technology &amp; Entrepreneurship</span><br>Conference
-					</h2>
-					<h3 class="home-date-place bold text-center">
-				    Bel Expo Centar<br/><span class="yellow">28-30th September 2016</span>
-				  </h3>
-					<div class="icon">
-					  <div class="rivet"></div>
-					  <div class="rivet bottom"></div>
-					  <div class="rivet right"></div>
-					  <div class="rivet right bottom"></div>
-					  <div class="innerDiv">
-					    	<a href='/tickets' class="top-link">Get your ticket today!</a>
-					  </div>
+		<div class="container">
+			<div id="home-mainscreen-holder" class="container">
+				<div class="row row-centered flex">
+			    <div class="col-sm-8 col-centered">
+						<div class="home-logo"></div>
+						<h2 id="home-main-text" class="text-center">
+							Balkan's Most Inspiring<br><span class="yellow">Technology &amp; Entrepreneurship</span><br>Conference
+						</h2>
+						<h3 class="home-date-place bold text-center">
+					    Bel Expo Centar, 28-30th September 2016
+					  </h3>
 					</div>
-					<div class="icon">
-					  <div class="rivet"></div>
-					  <div class="rivet bottom"></div>
-					  <div class="rivet right"></div>
-					  <div class="rivet right bottom"></div>
-					  <div class="innerDiv">
-					    	<a href='/lucky' class="top-link">Get lucky!</a>
-					  </div>
+			    <div class="col-sm-12 col-centered margin-top-med home-main-buttons">
+						<a href="/tickets/" class="btn btn-primary btn-lg green" role="button"><i class="fa fa-ticket"></i> Get your ticket today!</a>
+						<a href="/lucky/" class="btn btn-primary btn-lg blue" role="button"><i class="fa fa-thumbs-up"></i> Get lucky!</a>
+						<a href="/volunteers/" class="btn btn-primary btn-lg red" role="button"><i class="fa fa-child"></i> Become a volunteer!</a>
 					</div>
-					<div class="icon">
-					  <div class="rivet"></div>
-					  <div class="rivet bottom"></div>
-					  <div class="rivet right"></div>
-					  <div class="rivet right bottom"></div>
-					  <div class="innerDiv">
-					    	<a href='/volunteers' class="top-link">Become a volunteer!</a>
-					  </div>
-					</div>
-				</div>
 				</div>
 			</div>
 		</div>
@@ -55,8 +33,8 @@
 			Exciting <span class="accent">speakers</span>, groundbreaking<br> talks, and <span class="accent">workshops</span>!
 			VoxxedDays Belgrade 2016 <span class="yellow">proudly presents...</span>
 		</h4>
-		<div class="home-block-grid logos container margin-top-big" style="overflow:auto;width:90%;">
-			<div style="width:1170px; justify-content: space-between; display: flex;">
+		<div class="home-block-grid logos container margin-top-big">
+			<div class="block-grid-xs-1 block-grid-sm-2 block-grid-md-4 block-grid-lg-10">
 				<div class="item-block-holder text-center">
 					<span class="devicons devicons-java big"></span>
 					<h5 class="yellow text-center">Java</h5>
@@ -95,7 +73,7 @@
 				</div>
 				<div class="item-block-holder text-center">
 					<span class="devicons devicons-clojure big"></span>
-					<h5 class="yellow text-center">Haskell</h5>
+					<h5 class="yellow text-center">Clojure</h5>
 				</div>
 			</div>
 		</div>
@@ -142,15 +120,14 @@
 		</div>
 		<div class="steam-separator first_sep"></div>
 		<div class="row-centered margin-top-med">
-	    <div class="col-xs-10 col-sm-3 col-md-2 col-centered">
+	    <div class="col-xs-10 col-sm-3 col-md-2 col-lg-2 col-centered">
 	      <div class="speaker-holder">
 					<img class="frame" src="images/speaker-frame-small.svg" />
 					<div class="speaker-img">
 							<img src="images/speakers/scott-amyx.jpg" data-hover="images/speakers/scott-amyx-h.jpg" />
 					</div>
 	      </div>
-	    </div>
-			<div class="col-xs-10 col-sm-9 col-md-4 col-centered">
+				<br /><br />
 				<div class="block-item speaker">
 					<h3 class="bold plain">Scott Amyx</h3>
 					CEO &nbsp;&nbsp; <span class="yellow">Amyx+McKinsey</span><br />
@@ -167,7 +144,7 @@
 				</div>
 				<div class="margin-top-small"></div>
 				<%
-				
+
 				@item[:speakers].to_a.each { |s|
 					if !s[:firstname].to_s.empty? && !s[:lastname].to_s.empty?
 				%>
