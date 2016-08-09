@@ -1107,74 +1107,17 @@ speakers:
 talks:
 
   -
-    title: 'Coffee break'
-    type: 'break'
-    day: 1
-    track: 1
-    slot: '10:00'
-    duration: 20
-
-  -
-    title: 'Coffee break'
-    type: 'break'
-    day: 1
-    track: 2
-    slot: '10:00'
-    duration: 20
-
-  -
-    title: 'Coffee break'
-    type: 'break'
-    day: 1
-    track: 3
-    slot: '10:00'
-    duration: 20
-
-  -
-    title: 'Coffee break'
-    type: 'break'
-    day: 1
-    track: 4
-    slot: '10:00'
-    duration: 20
-
-  -
-    title: 'Coffee break'
-    type: 'break'
-    day: 1
-    track: 0
-    slot: '10:00'
-    duration: 20
-
-  -
-    title: ''
-    type: 'empty'
-    day: 1
-    track: 0
-    slot: '10:20'
-    duration: 60
-
-  -
     tid: 100
     sid: 79
     title: 'Keynote'
     type: 'talk'
     day: 1
     track: 1
-    slot: '09:00'
-    duration: 60
+    slot:
     short:
       - "TBA"
     long:
       - "TBA"
-
-  -
-    title: ''
-    type: 'empty'
-    day: 1
-    track: 0
-    slot: '10:20'
-    duration: 60
 
   -
     tid: 105
@@ -1183,8 +1126,7 @@ talks:
     type: 'talk'
     day: 2
     track: 1
-    slot: '09:00'
-    duration: 60
+    slot:
     short:
       - "Continues delivery in the cloud, learn how you can automate build and test processes, that allow you to continuously deploy all code changes."
     long:
@@ -1197,8 +1139,7 @@ talks:
     type: 'talk'
     day: 1
     track: 4
-    slot: '09:00'
-    duration: 60
+    slot:
     short:
       - "A lot has happened in the area of mobile since Apple kicked off the revolution by announcing the first iPhone. However, the overall mobile market still has to be considered as young and especially unstandardized."
     long:
@@ -1212,8 +1153,7 @@ talks:
     type: 'talk'
     day: 1
     track: 3
-    slot: '09:00'
-    duration: 60
+    slot:
     short:
       - "There's a lot of pieces needed to build a scalable IoT solution. Today most of these components exists as open source projects, which makes it easier than ever to connect large number devices to the cloud. This session will describe architecture and components of the scalable IoT solutions and open source projects that can be used to build them."
     long:
@@ -1226,8 +1166,7 @@ talks:
     type: 'talk'
     day: 1
     track: 4
-    slot: '10:20'
-    duration: 60
+    slot:
     short:
       - "TBA"
     long:
@@ -1242,8 +1181,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "The entranceways to the dorms at Hogwarts were guarded by paintings that talked and asked for passwords. What if that were real?! The recent availability of machine learning as an API opens up the door to an exponential growth in the possibilities for 'smart' devices. In this talk, we explore a Harry Potter style 'security' system that can both see and hear."
     long:
@@ -1256,8 +1194,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "NoSQL is a term on the rise, and it's a lie. NoSQL is a catch-all term and I will point out why a catch all means missing tools that may help solve your problems. Going through a few popular DB's we will walk through the use cases and why they're good at what they do."
     long:
@@ -1271,8 +1208,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "After 10 years of hard work experience in Java Enterprise applications, I started several years ago teaching various topics that I mastered (www.victorrentea.ro). Among all these topics, by far the most important topic, that I always include in all my training sessions is 'Clean Code'. It's essential to be able to keep 'alive' 100k-2M lines of code. And I was told that this module has the biggest impact in day-to-day life of the dev."
       - "Also, this talk will also show how a professional developer should behave in code, the 'ethics code' that ough to be followed by everyone. We will go from the most basic concerns like how should we choose our names, how should we write our functions, format and (not) comment them, to more advanced topics of true Objects. The entire presentation is spiced with numerous esay to understand examples and code snippets."
@@ -1304,8 +1240,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Working with a team on the other side of the world can be a lonely, frustrating experience. But with the right attitude, practices, and tools, it could just be the most effective way to build software with others. Learn how I moved to the other side of the world and stayed productive without changing teams."
     long:
@@ -1319,8 +1254,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "We'll explore practices and tools required to set up fully autonomous self-healing systems capable of both reactive recuperation from failures and proactive predictions of steps that should be taken to prevent failures before they happen."
     long:
@@ -1333,8 +1267,7 @@ talks:
     type: 'workshop'
     day:
     track:
-    slot: ''
-    duration:
+    slot: 
     short:
       - "This workshop will go through the whole microservices development lifecycle. We'll start from the very beginning. We'll define and design architecture. From there on we'll move from requirements, technological choices and development environment setup, through coding and testing all the way until the final deployment to production. We won't stop there. Once our new services are up and running we'll see how to maintain them, scale them depending on resource utilization and response time, recuperate them in case of failures and create central monitoring and notifications system. We'll try to balance the need for creative manual work and the need to automate as much of the process as possible."
     long:
@@ -1350,8 +1283,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Cloud Native, containers, DevOps, microservices, etc.: we go to conferences & get excited about things that could revolutionize our development & change our organizational & professional lives! And then, we go home...and hit the wall. If you've ever asked yourself, 'This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT??!', this is the session for you."
       - "Learn from an experienced software developer (who also happens to have an MBA) how to make your case to leadership, presenting management-ready justifications for changes in 'your world' that will positively impact the business as a whole."
@@ -1373,8 +1305,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Spring Boot, the new convention-over-configuration centric framework from the Spring team at Pivotal, marries Spring's flexibility with conventional, common sense defaults to make application development move swiftly and enjoyable."
       - "It's ideally suited for building microservices and distributed systems and makes streamlining devops practices simple."
@@ -1391,8 +1322,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Learn the best tricks directly from the developers of Spring Boot/IntelliJ IDEA. Live coding ahead!"
     long:
@@ -1407,8 +1337,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Microservices are not news anymore. They allow multiple teams to work autonomously by choosing their own technology stacks and having their own release cycles. There is something not being addressed though, like if it is some kind of dirty little secret, and that is frontend development. The common practice for building websites remains 'the monolith': a single frontend codebase that consumes multiple APIs. We believe we found a better solution."
     long:
@@ -1427,8 +1356,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "VR is not just a 'cutting edge technology' but also a medium capable to immerse the viewer/player in another dimension and convey strong emotions. How to do so in the right way? Which techniques and tools content creators can use to convey such feelings? If the cinematic medium has a 'language', what's about VR? How to create contents with awareness?"
     long:
@@ -1445,8 +1373,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "If you are starting serious with Mobile development for multiple platforms you need to have a plan! Let's discuss what could you use to setup a Mobile Infrastructure Landscape."
     long:
@@ -1459,8 +1386,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "When you are doing front-end web development, three technologies are currently very hot! On top of that they seem to be made for each other."
     long:
@@ -1476,8 +1402,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Whilst open sourcing a language is nothing new, Apple's unprecedented step has caused massive excitement and activity for this new language, with a flurry of development and contributions."
       - "In this presentation I would like to explore the current potential of Swift and what's going to be possible in the future."
@@ -1498,8 +1423,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Developers spend too much time maintaining servers, rather than writing software. Recently, new cloud solutions, known as 'serverless' platforms, allow developers to write microservices without servers. What does a 'serverless' application look like, how do you create one and what are the challenges?"
       - "In this session, we'll introduce the 'serverless' stack, showing developers how to write microservices using these platforms. We'll look at migrating existing applications over to this new stack, common issues and challenges that you need to consider and tools to support serverless development."
@@ -1522,8 +1446,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "From the handaxe to the light bulb, the wheel to the car, the printing press to the television: all these tools and media have changed our world thoroughly. And not only that, but also how we interact with the world. The computer brings us into a unique position to have an impact that lasts longer than only the next iteration of a new technology. What happens when we see ourselves not only as developers and designers, but reconsider the interaction between people and computers in general?"
     long:
@@ -1538,8 +1461,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Chatbots will be one of the next big evolutions of mobile messengers and they are changing the way how users interact with a service. I will give an overview on existing messenger and chatbot platforms and how they differentiate from each other, not only in terms of technical specifications but also in terms of which different UI elements they are providing to enrich the communication within a messenger."
     long:
@@ -1554,8 +1476,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "To survive today, companies are asking themselves ‘How can we be more agile in meeting customer needs?’ Wikipedia defines Agility as “The capability of rapidly and cost efficiently adapting to changes”. Gartner defines Agility as “The ability of an organization to sense environment change and to respond efficiently and effectively to it”."
     long:
@@ -1573,8 +1494,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Drinking too much coffee while maven builds and deploys your service? Jealous of how your FrontEnd mate just press F5 to 'deploy' his/her changes? Mastered the red-green-refactor workflow and want to know what is the next step? Our Lisp grandfathers knew how invaluable was the immediate feedback that a Read-Eval-Print Loop (REPL) allowed during development and now Java 9 will have one. Perhaps you have read that a REPL is useful for 'playing around' or for 'small code snippets', but this is far from true. In this presentation, you will learn how with a REPL you can have a better and more productive developer workflow by building a Tomcat service, one bit at a time, without having to build, compile, package or deploy it. Demo will be done with a Clojure REPL but no previous experience with Clojure is needed."
     long:
@@ -1595,8 +1515,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "First we started with memcache, the veteran of in-memory NoSQL. Our goal was always auto scaling on AWS and that's when we started using Redis, around 2 years ago, and it has our session, cached items and static data. But then we had bigger needs and for those we recently discovered Aerospike."
     long:
@@ -1609,8 +1528,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Flux architectures and why you should care. How to tame the application state and not go bananas. Examples from production applications with React.js and Redux."
     long:
@@ -1623,8 +1541,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Production issues aren't an easy thing to learn to deal with. Yammer went from having one person on-call, to having the whole engineering team taking ownership of their code and services in production. This talk goes over what things worked, and what didn't, to get us there."
     long:
@@ -1638,8 +1555,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "In this talk we are going to use a basic application to showcase Redux while using Angular 2 across different platforms (web, mobile and desktop)."
     long:
@@ -1653,8 +1569,7 @@ talks:
     type: 'workshop'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Angular 2 is a revolutionary development platform for creating applications using modern web standards and powered by the Open Source Community following the success of AngularJS."
     long:
@@ -1679,8 +1594,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "At Peak Games, after developing 10+ iOS games natively, we have started to use Unity3D for the new games and develop 5 cross platform games so far. Unity3D has some very fundamental changes according to iOS platforms. And we have learnt a lot in this process. I want to share these experience from an iOS Developer point of view."
     long:
@@ -1693,8 +1607,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Agile is about being agile, and willing to change, not about following any methodology in particular. This talk is about our process, how it evolves, what its current state is and which results did we get so far."
     long:
@@ -1707,8 +1620,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Are you familiar with Object-Relational Mapping? Let's get out of the comfort zone and meet a completely different approach to mapping database tables to domain objects using Scala's Slick library during this no-fluff-just-code live-coding session."
     long:
@@ -1722,8 +1634,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "To most developers messaging systems are disregarded as 'just a pipe'. Without understanding the reasoning behind them and the underlying design decision, we are frustrated by how we think they should work in production. In this session we will compare and contrast Apache ActiveMQ and Apache Kafka, and how their designs address message distribution, reliability, scalability, and performance."
     long:
@@ -1738,8 +1649,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "My talk will be about my motivations for wanting smarter tools and how the current TDD & Software Craftsmanship best practices place the onus on the developer to be disciplined, whereas humans will never be as disciplined and rigorous as machines. I'll talk about the Nix ecosystem and Haskell's ‘Yesod’ web framework, which is somewhat similar to Ruby on Rails. Audience will be inspired to try out Haskell and Nix"
     long:
@@ -1752,8 +1662,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "For about two years now – so called lambda expressions can be used by Java developers. But what does it mean... Lambda?"
     long:
@@ -1767,8 +1676,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "The proposal idea is the 'wherever SIM' that provides the network coverage wherever devices may roam – integrating 400+ radio networks in 160+ countries all around the world. SIM cards and endpoints can be easily managed in real-time via the intuitive user-interface or directly from the customer’s software application via an easy-to-integrate API."
     long:
@@ -1785,8 +1693,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "The landscape of stream processing frameworks gets more and more complicated. Some time ago Apache Storm was the only boy/girl in town. After that Spark Streaming emerged, then Apache Flink – European answer to Storm & Spark. What’s more – lately Apache Beam entered incubation stage – aiming at API unification and backed by Google."
       - "There's also Kafka Streams that appeared just few days ago."
@@ -1801,8 +1708,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Spark has very nice API and it promises high performance of crunching large datasets. It’s really easy to write an app in Spark, unfortunately it’s also easy to write one which doesn’t perform the way you would expect or just fails for no obvious reason. The talk will introduce a practical framework for fixing most common problems with Spark applications."
     long:
@@ -1815,8 +1721,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Data analytics was considered to be a time and resource consuming job and it was executed offline and usually on previously acquired data. Then came the lambda architecture that brought a lot of new concepts on how data is stored and analyzed in near-real-time. Todays standards require us to analyze data in real-time so that we can react accordingly and gain insights as the data is streamed into our system."
     long:
@@ -1829,8 +1734,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "In this talk you will learn how stream-based programming can be used to implement web frontend and multiplayer backend of the classic game. I will show you how to implement both frontend and multiplayer backend components in different languages and libraries but using very similar concepts and API."
     long:
@@ -1843,8 +1747,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Will Reactive programming be the default choice for modern apps? When would you want to use event emitters as opposed to event streams with operators? In this session you'll find the answers to those questions and much more! If you want to learn more about Reactive Programming that's exactly the session for you! "
     long:
@@ -1857,8 +1760,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "In the era of IoT, the need to create a custom device for specific purpose is growing day by day. While working on Ray universal remote we faced a lot of challenges to adapt the firmware to specific needs. This presentation will be an overview of what it takes to create your own custom Android based device and what are the greatest challenges."
     long:
@@ -1871,8 +1773,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Introduction and a live demo covering the basics of containerizing Java applications or microservices with Spring Boot, deploying and running them on a gcloud kubernetes container engine and a home made Kubernetes cluster made out of RaspberryPis. "
     long:
@@ -1885,8 +1786,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Why do we build applications based on microservices? To gain flexibility and resilience - that’s what everybody tells us. But building and application with a lot of microservices leads to a highly distributed system - and distribution hurts!"
     long:
@@ -1899,8 +1799,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Developers deploy their applications several times a day. Therefore deployment needs to be fast, secure and, most important, easy. Many ruby developers use capistrano, and many more (PHP) are writing their own FTP scripts. With easy to write DSL, error resistant scripts and blazingfast execution time (even for rails application) Mina is making deployment fun again!"
     long:
@@ -1913,8 +1812,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Service oriented architectures are getting more and more widespread popularity, because of the benefits they offer. They have some design requirements though, a very important one of them is designing services (and their combinations) for scalability and resilience. We at Ustream built a couple of these in the past years and learned a lot about how to do it and what open source tools are available to achieve the goal."
     long:
@@ -1935,8 +1833,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "In large organisations, sometimes projects and parts of the code base get shuffled around between teams. Projects that have tons of responsibilities, that are business critical and that are hard to look after. What happens when a self-organised team that has a continuous delivery system in place receives one of these legacy product that is the antithesis of best practices? The talk approaches this issue with a real life example, highlighting the problems encountered and the solutions suggested and applied to each of them."
     long:
@@ -1950,8 +1847,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "1 successful crowdfunding campaign, a successful Web Summit presence resulting in second round of funding and putting other HW startups back on track highlighted a lot of different traps that founders can avoid. The talk is about dos and donts and different strategies for the challenges each HW startup is going to face."
     long:
@@ -1964,8 +1860,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "How do we interact with webpages? Has it changed during the course of time? Is it affected by the advancement of technology?"
     long:
@@ -1983,8 +1878,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "In the era of social networks and multimedia, TV that is sitting in our living room is becoming more and more like entertainment center, not just a device that we use to watch news, some sports event or our favorite series. Nowadays, people want to sit back in their couch, relax, and be able to do things that can be done on computers and smartphones, just on a large screen. From watching YouTube videos, sharing and posting on Facebook, or following latest trends on twitter, creators of Smart TV applications are struggling to make this possible and accessible by using only few remote controller buttons. Different solutions that enable user to interact with most popular internet services today, from Android and Apple TV, to standard Smart TVs are not available to everyone. Our wish was to bring this technology to every home that has domestic IPTV service. So, we rolled up our sleeves, took a leap into JavaScript world of different API’s, optimizations for TV box embedded operating systems, limitations of hardware, and interface specifics, and delivered a product that can match today’s most modern solutions in TV applications. This is our success story, one that tells how we took 80$ TV box, and put Facebook, twitter and YouTube inside it."
     long:
@@ -1999,8 +1893,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "In this talk, we'll show how ordinary Internet of Things becomes extraordinary if they play well with other devices and/or services. Also, we'll show how smart lighting can play along with other device (TV or other audio device) using audio watermarking technology to sync those devices."
     long:
@@ -2016,8 +1909,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Computer game run with 3 x Raspberry Pi, 1 x Router, 1x Laptop, => trying to kill game by disconnecting network cables or power source, testing if application is self healing"
     long:
@@ -2030,8 +1922,7 @@ talks:
     type: 'workshop'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Lean Poker is a day long coding challenge that's not only fun, but also provides a safe environment in which you can practice continuous deployment and fast delivery of valuable software."
     long:
@@ -2049,8 +1940,7 @@ talks:
     type: 'workshop'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Happiness at work is one of the 3 most important sources of happiness in life."
       - "You will spend 1/3 of your life at work. If you are unhappy at work, life becomes hell."
@@ -2075,8 +1965,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "We go through the motions, we do our jobs, another day - another dollar. But are we progressing, what is your motivation? Research suggests that when we are intrinsically motivated by our work we are more likely to get promoted, are you on the path for personal growth, or just spinning your wheels?"
     long:
@@ -2093,8 +1982,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Nowadays almost everyone uses web browsers on a daily basis for various tasks such as reading emails, surfing on social networks or purchasing goods on ecommerce shops. Despite this, web developers often tend to forget that a browser is a piece of software that has deliberately been designed as a remote code execution engine, which is the dream spec for any attacker. The focus of this talk is to explain how some of the newly introduced headers (HSTS, HPKP, CSP) can help to easily add an extra layer of security in order to defend your web apps against common web security vulnerabilities."
     long:
@@ -2107,8 +1995,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Enterprise apps are mainly built upon layered architecture. Each layer only speaks to its below layer, and data among layers are shared via persistent domain objects. However, employing same domain objects in each layer causes some problems. Data might be modified unintentionally in which an ORM tool or a UI framework like JSF is used. Binding domain objects with UI fields directly creates a mess inside domain classes because of UI only fields added. To prevent such problems, it's better to employ a separate model, specific to the UI layer. Such a separate model is employed to convert data obtained from back, and deliver it to the UI layer for presentation. UI components are bound to view model objects so that user input is first accumulated into those objects and delivered to back when appropriate. However, creating such a view model mainly overlaps with persistent domain model, and job of handling data transformations between two model is a tedious task. We propose a solution based on dynamic proxies to create view model classes automatically and an API to handle various tasks occur during those data transformations. We will present our solution and discuss about the API evolved over time."
     long:
@@ -2125,8 +2012,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "iOS 10 lands right around the conference time. Learn what to focus on."
     long:
@@ -2139,8 +2025,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "In this session we will provide an overview on how is the Graal VM evolving from an Oracle research project to a potential candidate for subsequent JVM releases."
     long:
@@ -2153,8 +2038,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Hazelcast is popular data-grid implemented in Java. Presentation will cover road from monolith application to distributed system of microservices using Hazelcast as memory store, similar to https://www.youtube.com/watch?v=3bBtMrjD0zo"
     long:
@@ -2167,8 +2051,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "I go mad when I hear: 'We have no time for tests'. Learn why that statement is so wrong and how to make tests a 'must have' in your workflow"
     long:
@@ -2183,8 +2066,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Almost all in software industry agrees that design patterns are important and beneficial for success of any project. Some regard them as an essential part of ‘good practices”. In a perspective there is something sexy and awesome in reading some code and recognize applied design patterns."
       - "In real situations, one of the things that fall in oblivion and somehow get lost from developers perspective, right after documentation and most probably side by side with tests, are design patterns. Both in design and architecture phase and implementation phase."
@@ -2207,8 +2089,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "This is the first part of the introduction to actors. Here we will cover only the negative side of actors. This presentation is complemented by a workshop which teaches 'proper' actor development. We will be debunking some common myths about the actor model. This talk is intentionally polemical and presents only one side of the story."
     long:
@@ -2228,8 +2109,7 @@ talks:
     type: 'workshop'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "This is the second part of the introduction to actors. Here we do a hands on session to learn to take advantage of using actors to develop concurrent and distributed fault tolerant systems. We will teach how to use actors properly avoiding the major pitfalls that a lot of novices make on their first approach to the actor based model."
     long:
@@ -2243,8 +2123,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "In 45 minutes I want to build a full blown web app based on Lift framework to show of its key features."
     long:
@@ -2257,8 +2136,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "How to build cheap (in most cases free) chat bots for Messenger, Slack, Telegram and more platforms in just a few minutes."
     long:
@@ -2274,8 +2152,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Testers don't just click around. Real testers don't do Ad hoc testing at all. They carefully plan their activities and help the whole team to build better and usable products, by being a part of the project team from the beginning, before the first line of code is even written. Testers write code, read code, dig into databases and logs and communicate to customers. They are the link between the code and customers."
     long:
@@ -2288,8 +2165,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Microservices are the preferred architectural choice for scalable systems, in the recent years. With distributed nature of microservices and REST API being the most prevalent inter-service interface, we are faced with some challenges in choosing the right approach to authentication and authorization mechanisms. We will look into most popular SSO mechanisms, like SAML2, OAuth2 and JWT. We will look into pros and cons of these choices."
     long:
@@ -2313,8 +2189,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Continuous delivery process is getting more and more attention, especially since the whole DevOps movement started. Package/build/dependency managers like npm, maven and composer make it easy for developers to package their code. Configuration management tools like Chef and Puppet make it easy to deploy the packages and configure the whole infrastructure. Vagrant allows developers to run on their machines (more or less) the exact copy of the production systems."
     long:
@@ -2327,8 +2202,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "This presentation covers the current state of the art for container monitoring (including real use-cases and pros/cons of each) and features live interaction with container environments and live demos of all the tools and techniques discussed. "
     long:
@@ -2348,8 +2222,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "This presentation tells a story of a hackathon project where mixing a cool idea with the latest technologies resulted in the grand prize and the fan favourite award of the IBM Sparkathon with nearly 600 participants. It will describe the key technologies used and how they were effectively combined in a short period of time. Psst... it will also share a secret recipe for a success in a hackathon... but don't tell anyone!"
     long:
@@ -2365,8 +2238,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Nowdays, when someone mentions mobile and native development in the same sentence, there is an unpleasant thought that these two are not meant to be together. If you want to have portable code on every mobile platform, C++ can be a good choice. Large codebase, well tested libraries and small memory footprint are couple of reasons why we will discuss about C++ on mobile platforms. At the end, we will see small example using Android NDK."
     long:
@@ -2379,8 +2251,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "In this session we will present Pushkin - a messaging system that opened up a new channel of communication with our users, giving us the opportunity to provide them with an enhanced user experience using powerful push notifications, resulting in improvement of all key performance indicators, especially early retention."
     long:
@@ -2393,8 +2264,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Have you ever wondered what is the sorcery behind augmented reality? What it takes to transform 'ordinary' reality into something magical? Let’s take a peek behind the curtains and find out all the nuts and bolts it's made of and what makes it tick... well, on a fundamental level at least."
     long:
@@ -2408,8 +2278,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "It is common to use CI as a tool to run your tests and build you builds. But GitLab has more to offer."
       - "I will show how GitLab uses its CI and how our clients use it. To give you a whole picture, I will demonstrate some crazy experiments. You would never think that something like this is possible to build with CI system"
@@ -2431,8 +2300,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Continuous integration and delivery has evolved a lot during the last couple of years through containers and the different container schedulers and orchestrators."
     long:
@@ -2446,8 +2314,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Docker has evolved from a container engine, to a complete end-to-end solution for orchestrating cloud-native applications."
     long:
@@ -2461,8 +2328,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Continuous Integration and Continuous Delivery are powerful processes to ensure quality and improve the release process. But when developing mobile Apps, you face many unique challenges, that I want to discuss in my talk. I am going to show tools that support you and give practical tips on how to continuously integrate your mobile App."
     long:
@@ -2476,8 +2342,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Apache Cassandra is a scalable database with high availability features. But they come with severe limitations in term of querying capabilities. Since the introduction of SASI in Cassandra 3.5, the limitations belong to the pass. Now you can create performant indices on your columns as well as benefit from full text search capabilities with the introduction of the new `LIKE %term%` syntax."
     long:
@@ -2490,8 +2355,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "This session is about a real MQTT-driven IoT stack with several sensors, remote-controlled switches. Via a secured connection to a remote MQTT broker I will show how data measured by microcontroller driven sensors transmitted and then displayed by JavaFX based MQTT applications on different platforms (desktop, embedded and mobile devices) and custom NeoPixel driven gauges."
     long:
@@ -2516,8 +2380,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "This might be the psychology basic for developers... starting with the design 101; take some design principles and show how they are reflected in code. "
     long:
@@ -2530,8 +2393,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "General concept of MVVM and Android Databinding - why they should be used together - how using these technologies reflects to the app architecture - code snippets from practice - disadvantages, cases when it shouldn't be used and alternatives."
     long:
@@ -2544,8 +2406,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "1000 tests running for hours on continuous integration services should be a thing of the past. Don't lose time waiting for your tests. "
     long:
@@ -2558,8 +2419,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Security testing is imperative in web based software solutions, and seeing as the industry is striving towards the practice of continuous delivery, the need arises to include security testing in that process as much as possible."
     long:
@@ -2575,8 +2435,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "TBA"
     long:
@@ -2589,8 +2448,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "Robert joined Gogo as SVP of Platform and Services, after almost 4 years at Netflix working on Cloud Services. Using the skills and knowledge he gained at Netflix he’s moving gogo to embrace DevOps and Micro-services on Java based architecture."
     long:
@@ -2605,8 +2463,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "TBA"
     long:
@@ -2619,8 +2476,7 @@ talks:
     type: 'talk'
     day:
     track:
-    slot: ''
-    duration:
+    slot:
     short:
       - "TBA"
     long:
