@@ -157,21 +157,21 @@ end
 def get_schedule_data(day = nil, track = nil)
 
   schedule_raw = YAML.load_file('content/index.md')
-  schedule_items = schedule_raw["talks"]
+  schedule_talks = schedule_raw["talks"]
   schedule_speakers = schedule_raw["speakers"]
   schedule_data = []
 
-  schedule_items.each do |talk|
-    if !talk[:sid].to_s.empty?
-      talk[:speakers] = []
-      if talk[:sid].kind_of?(Array)
-        talk[:sid].each do |t|
-          speakers = schedule_speakers.select{ |item| item[:sid] == t }
-          talk[:speakers] << speakers
+  schedule_talks.each do |talk|
+    if !talk['tid'].to_s.empty?
+      talk['talkspeakers'] = []
+      if talk['sid'].kind_of?(Array)
+        talk['sid'].each do |t|
+          speaker = schedule_speakers.select{ |item| item['sid'] == t.to_i }
+          talk['talkspeakers'] << speaker
         end
       else
-        speaker = schedule_speakers.select{ |item| item[:sid] == talk[:sid] }
-        talk[:speakers] << speaker
+        speaker = schedule_speakers.select{ |item| item['sid'] == talk['sid'] }
+        talk['talkspeakers'] << speaker
       end
     end
     if (day && track)

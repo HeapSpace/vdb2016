@@ -1113,7 +1113,7 @@ talks:
     type: 'talk'
     day: 1
     track: 1
-    slot:
+    slot: 1
     short:
       - "TBA"
     long:
@@ -1126,7 +1126,7 @@ talks:
     type: 'talk'
     day: 2
     track: 1
-    slot:
+    slot: 2
     short:
       - "Continues delivery in the cloud, learn how you can automate build and test processes, that allow you to continuously deploy all code changes."
     long:
@@ -1139,7 +1139,7 @@ talks:
     type: 'talk'
     day: 1
     track: 4
-    slot:
+    slot: 2
     short:
       - "A lot has happened in the area of mobile since Apple kicked off the revolution by announcing the first iPhone. However, the overall mobile market still has to be considered as young and especially unstandardized."
     long:
@@ -1153,7 +1153,7 @@ talks:
     type: 'talk'
     day: 1
     track: 3
-    slot:
+    slot: 1
     short:
       - "There's a lot of pieces needed to build a scalable IoT solution. Today most of these components exists as open source projects, which makes it easier than ever to connect large number devices to the cloud. This session will describe architecture and components of the scalable IoT solutions and open source projects that can be used to build them."
     long:
@@ -1166,7 +1166,7 @@ talks:
     type: 'talk'
     day: 1
     track: 4
-    slot:
+    slot: 3
     short:
       - "TBA"
     long:
@@ -1265,9 +1265,10 @@ talks:
     sid: 86
     title: 'Microservices Lifecycle Workshop'
     type: 'workshop'
-    day:
-    track:
-    slot: 
+    day: 1
+    track: 0
+    slot: 1
+    duration: 180
     short:
       - "This workshop will go through the whole microservices development lifecycle. We'll start from the very beginning. We'll define and design architecture. From there on we'll move from requirements, technological choices and development environment setup, through coding and testing all the way until the final deployment to production. We won't stop there. Once our new services are up and running we'll see how to maintain them, scale them depending on resource utilization and response time, recuperate them in case of failures and create central monitoring and notifications system. We'll try to balance the need for creative manual work and the need to automate as much of the process as possible."
     long:
@@ -1570,6 +1571,7 @@ talks:
     day:
     track:
     slot:
+    duration: 180
     short:
       - "Angular 2 is a revolutionary development platform for creating applications using modern web standards and powered by the Open Source Community following the success of AngularJS."
     long:
@@ -1923,6 +1925,7 @@ talks:
     day:
     track:
     slot:
+    duration: 180
     short:
       - "Lean Poker is a day long coding challenge that's not only fun, but also provides a safe environment in which you can practice continuous deployment and fast delivery of valuable software."
     long:
@@ -1941,6 +1944,7 @@ talks:
     day:
     track:
     slot:
+    duration: 180
     short:
       - "Happiness at work is one of the 3 most important sources of happiness in life."
       - "You will spend 1/3 of your life at work. If you are unhappy at work, life becomes hell."
@@ -2110,6 +2114,7 @@ talks:
     day:
     track:
     slot:
+    duration: 180
     short:
       - "This is the second part of the introduction to actors. Here we do a hands on session to learn to take advantage of using actors to develop concurrent and distributed fault tolerant systems. We will teach how to use actors properly avoiding the major pitfalls that a lot of novices make on their first approach to the actor based model."
     long:
