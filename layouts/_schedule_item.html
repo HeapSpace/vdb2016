@@ -1,14 +1,17 @@
 <%
-   get_schedule_data(@day, @track).each do |speaker|
+   get_schedule_data(@day, @track).each do |talk|
 %>
-      <div class="schedule-item <% if speaker['talk']['type'] == 'empty' %>empty<% end %>" style="height: <%= speaker['talk']['duration']*6 %>px">
-        <% if !speaker['talk']['title'].to_s.empty? %><h4 class=""><%= speaker['talk']['slot'] %></h4><% end %>
-        <% if !speaker['pageurl'].to_s.empty? %><a href="/speakers/<%= speaker['pageurl'] %>/"><% end %>
-          <h6 class="bold yellow"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h6>
-          <h6 class="bold yellow"><%= speaker['talk']['secondspeaker'] %></h6>
-          <h6 class=""><%= speaker['talk']['title'] %></h6>
-        <% if !speaker['pageurl'].to_s.empty? %></a><% end %>
-        <% if !speaker['talk']['title'].to_s.empty? %><div class="brown">Duration: <%= speaker['talk']['duration'] %> min</div><% end %>
+      <div class="schedule-item <% if talk['type'] == 'empty' %>empty<% end %>" style="height: <%= talk['duration']*6 %>px">
+        <% if !talk['title'].to_s.empty? %><h4 class=""><%= talk['slot'] %></h4><% end %>
+        <% if !talk['speakers'].to_s.empty? %>
+          <% talk['speakers'].each do |speaker| %>
+            <% if !speaker['pageurl'].to_s.empty? %><a href="/speakers/<%= speaker['pageurl'] %>/"><% end %>
+              <h6 class="bold yellow"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h6>
+            <% if !speaker['pageurl'].to_s.empty? %></a><% end %>
+          <% end %>
+        <% end %>
+        <h6 class=""><%= talk['title'] %></h6>
+        <% if !talk['title'].to_s.empty? %><div class="brown">Duration: <%= talk['duration'] %> min</div><% end %>
       </div>
 <%
   end

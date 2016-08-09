@@ -167,6 +167,7 @@
 				</div>
 				<div class="margin-top-small"></div>
 				<%
+				
 				@item[:speakers].to_a.each { |s|
 					if !s[:firstname].to_s.empty? && !s[:lastname].to_s.empty?
 				%>
@@ -183,24 +184,27 @@
 						</h6>
 						<div class="brown">
 							<%
-							s[:talk].to_a.each { |t|
-							if !t[:title].to_s.empty? && !t[:type].to_s.empty?
-							%>
-								<div class="single-talk">
-									<% if t[:type] == 'talk' %>
-									<i class="fa fa-microphone yellow"></i>
-									<% end %>
-									<% if t[:type] == 'workshop' %>
-									<i class="fa fa-wrench yellow"></i>
-									<% end %>
-									<% if t[:type] == 'lightning' %>
-									<i class="fa fa-bolt yellow"></i>
-									<% end %>
-									<a href="/talk/<%= t[:tid] %>/"><span class="brown"><%= t[:title] %></span></a>
-								</div>
-							<%
-								end
-							}
+							if !s[:talk].to_s.empty?
+								s[:talk].each { |talk|
+									speaker_talks = @item[:talks].select{ |item| item[:tid] == talk.to_i }
+									speaker_talks.each do |t|
+									%>
+			              <div class="single-talk">
+			                <% if t[:type] == 'talk' %>
+			                <i class="fa fa-microphone yellow"></i>
+			                <% end %>
+			                <% if t[:type] == 'workshop' %>
+			                <i class="fa fa-wrench yellow"></i>
+			                <% end %>
+			                <% if t[:type] == 'lightning' %>
+			                <i class="fa fa-bolt yellow"></i>
+			                <% end %>
+			                <a href="/talk/<%= t[:tid] %>/"><span class="brown"><%= t[:title] %></span></a>
+			              </div>
+			            <%
+									end
+								}
+							end
 							%>
 						</div>
 						<div class="tags">

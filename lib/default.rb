@@ -157,25 +157,39 @@ end
 def get_schedule_data(day = nil, track = nil)
 
   schedule_raw = YAML.load_file('content/index.md')
-  schedule_items = schedule_raw["speakers"]
+  schedule_items = schedule_raw["talks"]
+  schedule_speakers = schedule_raw["speakers"]
   schedule_data = []
 
-  schedule_items.each do |speaker|
-    if (day && track)
-      speaker['talk'].to_a.each { |t|
-        if (!t["day"].to_s.empty? && t["day"] == day && !t["track"].to_s.empty? && t["track"] == track)
-          speaker['talk'] = t
-          schedule_data << speaker
+  schedule_items.each do |talk|
+    if !talk[:sid].to_s.empty?
+      talk[:speakers] = []
+      if talk[:sid].kind_of?(Array)
+        talk[:sid].each do |t|
+          speakers = schedule_speakers.select{ |item| item[:sid] == t }
+          talk[:speakers] << speakers
         end
-      }
+      else
+        speaker = schedule_speakers.select{ |item| item[:sid] == talk[:sid] }
+        talk[:speakers] << speaker
+      end
     end
-
+    if (day && track)
+        if (!talk["day"].to_s.empty? && talk["day"] == day && !talk["track"].to_s.empty? && talk["track"] == track)
+          schedule_data << talk
+        end
+    end
   end
 
-  schedule = schedule_data.sort_by { |k| k["talk"]["slot"] }
+  schedule = schedule_data.sort_by { |k| k["slot"] }
 
   return schedule
 
+end
+
+def loadspeakersandtalks()
+  speakersandtalks = YAML.load_file('content/index.md')
+  return speakersandtalks
 end
 
 def get_featured_speakers(companies)

@@ -29,8 +29,8 @@
 	      <div class="speaker header">
 
 					<div class="brown">
-						<%
-						@item[:talk].to_a.each_with_index { |t|
+						<% @item[:speakertalks].flatten(1).each do |t|
+
 						if !t[:title].to_s.empty? && !t[:type].to_s.empty?
 						%>
 							<div class="single-talk">
@@ -44,9 +44,6 @@
 								<i class="fa fa-bolt big-icon"></i>
 								<% end %>
 								<a href="/talk/<%= t[:tid] %>/"><h3 class="title"><%= t[:title] %></h3></a>
-								<% if !t[:secondspeaker].to_s.empty? && t[:secondspeaker] != '' %>
-									<h5 class="second-speaker bold">co-speaker: <span class=""><%= t[:secondspeaker] %></span></h5>
-								<% end %>
 								<div class="text">
 									<% t[:long].to_a.each do |p| %>
 										<p>
@@ -64,7 +61,8 @@
 							</div>
 						<%
 							end
-						}
+						
+						end
 						%>
 					</div>
 

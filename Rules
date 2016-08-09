@@ -9,22 +9,43 @@ Compass.add_project_configuration 'config.rb'
 ## preprocessing
 preprocess do
   @items.each do |item|
-    if item.key?(:speakers)
-      schedule_items = item[:speakers]
-      jsonnew_schedule_items = schedule_items
-      File.open("content/vdb16all.json","w") do |f|
-        # f.write(schedule_items.to_json)
-        f.puts jsonnew_schedule_items.to_json.force_encoding("UTF-8")
-      end
-      schedule_items.each do |speaker|
-        speakername = speaker[:firstname].to_s+' '+speaker[:lastname].to_s
-        if speaker[:pageurl]
-          @items.create('', {:photo => speaker[:photo], :firstname => speaker[:firstname], :lastname => speaker[:lastname], :url => speaker[:url], :company => speaker[:company], :talk => speaker[:talk], :tags => speaker[:tags], :layout => '/speaker_page.html'}, '/speakers/'+speaker[:pageurl]+'/index.md')
-           speaker[:talk].each do |t|
-             @items.create('', {:title => t[:title], :speaker => speakername, :speakerpage => speaker[:pageurl], :personalurl => speaker[:url], :company => speaker[:company], :photo => speaker[:photo], :tags => speaker[:tags], :type => t[:type], :short => t[:short], :long => t[:long], :day => t[:day], :track => t[:track], :slot => t[:slot], :duration => t[:duration], :venue => t[:venue], :layout => '/talk_page.html'}, '/talk/'+t[:tid].to_s+'/index.md')
-           end
+    if item.key?(:scheduledata)
+
+      schedule_speakers = item[:speakers]
+      schedule_talks = item[:talks]
+
+      schedule_talks.each do |talk|
+        if !talk[:tid].to_s.empty?
+          speakers = []
+          if talk[:sid].kind_of?(Array)
+            talk[:sid].each do |t|
+              speaker = schedule_speakers.select{ |item| item[:sid] == t.to_i }
+              speakers << speaker
+            end
+          else
+            speaker = schedule_speakers.select{ |item| item[:sid] == talk[:sid] }
+            speakers << speaker
+          end
+          @items.create('', {:title => talk[:title], :talkspeakers => speakers, :type => talk[:type], :short => talk[:short], :long => talk[:long], :day => talk[:day], :track => talk[:track], :slot => talk[:slot], :duration => talk[:duration], :venue => talk[:venue], :layout => '/talk_page.html'}, '/talk/'+talk[:tid].to_s+'/index.md')
         end
       end
+
+      schedule_speakers.each do |speaker|
+        if !speaker[:sid].to_s.empty?
+          talks = []
+          if speaker[:talk].kind_of?(Array)
+            speaker[:talk].each do |s|
+              talk = schedule_talks.select{ |item| item[:tid] == s.to_i }
+              talks << talk
+            end
+          else
+            talk = schedule_talks.select{ |item| item[:tid] == speaker[:talk].to_i }
+            talks << talk
+          end
+          @items.create('', {:photo => speaker[:photo], :firstname => speaker[:firstname], :lastname => speaker[:lastname], :url => speaker[:url], :company => speaker[:company], :speakertalks => talks, :tags => speaker[:tags], :layout => '/speaker_page.html'}, '/speakers/'+speaker[:pageurl]+'/index.md')
+        end
+      end
+
     end
   end
 end

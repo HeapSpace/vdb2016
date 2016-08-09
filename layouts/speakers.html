@@ -34,51 +34,55 @@
 			</div>
 			<div class="margin-top-small"></div>
 			<%
-			@item[:speakers].to_a.each { |s|
-				if !s[:firstname].to_s.empty? && !s[:lastname].to_s.empty?
+			speakers_raw = loadspeakersandtalks()
+			speakers_raw['speakers'].to_a.each { |s|
+				if !s['firstname'].to_s.empty? && !s['lastname'].to_s.empty?
 			%>
 			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-centered speaker-tags" data-item-tags="<%= s[:tags].to_a.join(', ') %>">
-	      <div class="speaker">
-					<% if !s[:pageurl].to_s.empty? then %><a href="/speakers/<%= s[:pageurl] %>/"><% end %>
-						<div class="photo" style="background-image: url('../images/speakers/<%= s[:photo] %>')"></div>
+				<div class="speaker">
+					<% if !s['pageurl'].to_s.empty? then %><a href="/speakers/<%= s['pageurl'] %>/"><% end %>
+						<div class="photo" style="background-image: url('../images/speakers/<%= s['photo'] %>')"></div>
 						<h5 class="yellow">
-							<%= s[:firstname] %> <%= s[:lastname] %>
+							<%= s['firstname'] %> <%= s['lastname'] %>
 						</h5>
-					<% if !s[:pageurl].to_s.empty? then %></a><% end %>
+					<% if !s['pageurl'].to_s.empty? then %></a><% end %>
 					<h6 class="company">
-						<%= s[:company] %>
+						<%= s['company'] %>
 					</h6>
 					<div class="brown">
 						<%
-						s[:talk].to_a.each { |t|
-						if !t[:title].to_s.empty? && !t[:type].to_s.empty?
-						%>
-							<div class="single-talk">
-								<% if t[:type] == 'talk' %>
-								<i class="fa fa-microphone yellow"></i>
-								<% end %>
-								<% if t[:type] == 'workshop' %>
-								<i class="fa fa-wrench yellow"></i>
-								<% end %>
-								<% if t[:type] == 'lightning' %>
-								<i class="fa fa-bolt yellow"></i>
-								<% end %>
-								<a href="/talk/<%= t[:tid] %>/"><span class="brown"><%= t[:title] %></span></a>
-							</div>
-						<%
-							end
-						}
+						if !s['talk'].to_s.empty?
+							s['talk'].each { |talk|
+								speaker_talks = speakers_raw['talks'].select{ |item| item['tid'] == talk.to_i }
+								speaker_talks.each do |t|
+								%>
+									<div class="single-talk">
+										<% if t['type'] == 'talk' %>
+										<i class="fa fa-microphone yellow"></i>
+										<% end %>
+										<% if t['type'] == 'workshop' %>
+										<i class="fa fa-wrench yellow"></i>
+										<% end %>
+										<% if t['type'] == 'lightning' %>
+										<i class="fa fa-bolt yellow"></i>
+										<% end %>
+										<a href="/talk/<%= t['tid'] %>/"><span class="brown"><%= t['title'] %></span></a>
+									</div>
+								<%
+								end
+							}
+						end
 						%>
 					</div>
 					<div class="tags">
-						<%  s[:tags].to_a.each do |tag| %>
+						<%  s['tags'].to_a.each do |tag| %>
 							<span class="tag">
 									<%= tag %>
 							</span>
 						<% end %>
 					</div>
-	      </div>
-	    </div>
+				</div>
+			</div>
 			<%
 				end
 			}

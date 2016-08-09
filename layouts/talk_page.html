@@ -13,18 +13,19 @@
 
 	  <div class="row-centered margin-top-huge">
 	    <div class="col-sm-3 col-centered">
+				<% @item[:talkspeakers].flatten(1).each do |speaker| %>
 	      <div class="speaker">
-
 					<div class="photo-frame">
-							<div style="background-image: url('/images/speakers/<%= @item[:photo] %>');"></div>
+							<div style="background-image: url('/images/speakers/<%= speaker[:photo] %>');"></div>
 					</div>
 					<h4 class="text-center">
-				    <a href="/speakers/<%= @item[:speakerpage] %>/"><span class="yellow bold"><%= @item[:speaker] %></span></a>
+				    <a href="/speakers/<%= speaker[:pageurl] %>/"><span class="yellow bold"><%= speaker[:firstname] %> <%= speaker[:lastname] %></span></a>
 				  </h4>
 					<h6 class="">
-						<%= @item[:company] %>
+						<%= speaker[:company] %>
 					</h6>
 		  	</div>
+				<% end %>
 	    </div>
 			<div class="col-sm-7 col-centered">
 				<div class="single-talk">
@@ -41,28 +42,26 @@
 					<!-- <h4 class="accent">
 						<img class="card-logo" src="/images/home-logo-small.png" /> 29. Sep <span class="yellow">/</span> 10:00 <span class="yellow">/</span> Track 2 <span class="yellow">/</span> Venue 3
 					</h4> -->
+					<% @item[:talkspeakers].flatten(1).each do |speaker| %>
 					<div class="talk-circle-links pull-right">
-						<a href="/speakers/<%= @item[:speakerpage] %>/"><i class="fa fa-user big-icon card"></i></a> <% if !@item[:personalurl].to_s.empty? then %><a href="<%= @item[:personalurl] %>" target="_blank"><i class="fa fa-link big-icon card"></i></a><% end %>
+						<a href="/speakers/<%= speaker[:pageurl] %>/"><i class="fa fa-user big-icon card"></i></a> <% if !speaker[:url].to_s.empty? then %><a href="<%= speaker[:url] %>" target="_blank"><i class="fa fa-link big-icon card"></i></a><% end %>
 					</div>
+					<% end %>
 				</div>
 				<div class="single-talk">
 					<div class="tags card">
-						<%  @item[:tags].to_a.each do |tag| %>
-							<span class="tag card">
-									<%= tag %>
-							</span>
-						<% end %>
+					<%	tags_arr = []
+							@item[:talkspeakers].flatten(1).each do |speaker|
+								tags_arr << speaker[:tags]
+							end %>
+					<% tags_arr.flatten.uniq.each do |tag| %>
+					<span class="tag card">
+						<%= tag %>
+					</span>
+					<% end %>
 					</div>
 				</div>
-	    </div>
-	  </div>
-
-		<div class="row-centered margin-top-big">
-			<div class="col-sm-3 col-centered">
-				&nbsp;
-			</div>
-	    <div class="col-sm-7 col-centered">
-				<div class="single-talk">
+				<div class="single-talk margin-top-big">
 					<h4 class="card-title">
 						<span class="yellow bold">Full abstract</span></a>
 					</h4>
@@ -74,8 +73,8 @@
 						<% end %>
 					</div>
 				</div>
-			</div>
-		</div>
+	    </div>
+	  </div>
 
 	</div>
 	<div class="info margin-top-huge">
