@@ -230,7 +230,7 @@ $(function() {
 	$.getJSON("/vdb16all.json", function(json) {
 		var talks = new Array();
 		for (var i = 0, length = json.length; i < length; i++) {
-		    var talk = json[i]['talk'][0];
+		    var talk = json[i];
 
 		    if (talk['type'] == 'talk') {
 		    	talks.push(talk);
@@ -241,7 +241,7 @@ $(function() {
 		talks = talks.slice(0,5);
 
 		for (var i = 0; i < 5; i++) {
-			console.log(talks[i]);
+			// console.log(talks[i]);
 			$("#lc" + i).html(
 				"<div class='innerCard'>" +
 				"<h2>" + talks[i].title + "</h2>"+
@@ -260,7 +260,7 @@ $(function() {
   };
 
   $(".card").click(function() {
-  	console.log("xxxxxxxx")
+  	// console.log("xxxxxxxx")
     return rotate();
   });
 
