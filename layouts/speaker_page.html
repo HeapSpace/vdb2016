@@ -30,19 +30,19 @@
 					<% if !@item[:answers][0].to_s.empty? || !@item[:answers][1].to_s.empty? || !@item[:answers][2].to_s.empty? %>
 						<div>
 							<% if !@item[:answers][0].to_s.empty? %>
-								<h5>What’s the craziest thing that happened to you that involves technology?</h5>
+								<h5 class="yellow">What’s the craziest thing that happened to you that involves technology?</h5>
 								<div class="speaker-answer">
 									<%= @item[:answers][0] %>
 								</div>
 							<% end %>
 							<% if !@item[:answers][1].to_s.empty? %>
-								<h5 class="margin-top-med">How do you see next 5 years in tech?</h5>
+								<h5 class="yellow margin-top-med">How do you see next 5 years in tech?</h5>
 								<div class="speaker-answer">
 									<%= @item[:answers][1] %>
 								</div>
 							<% end %>
 							<% if !@item[:answers][2].to_s.empty? %>
-								<h5 class="margin-top-med">What would you tell to your younger self?</h5>
+								<h5 class="yellow margin-top-med">What would you tell to your younger self?</h5>
 								<div class="speaker-answer last">
 									<%= @item[:answers][2] %>
 								</div>
