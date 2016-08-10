@@ -30,6 +30,15 @@
 			<div class="col-sm-7 col-centered">
 				<div class="single-talk">
 					<h2 class="card-title">
+						<% if @item[:type] == 'talk' %>
+						<i class="fa fa-microphone yellow"></i>
+						<% end %>
+						<% if @item[:type] == 'workshop' %>
+						<i class="fa fa-wrench yellow"></i>
+						<% end %>
+						<% if @item[:type] == 'lightning' %>
+						<i class="fa fa-bolt yellow"></i>
+						<% end %>
 				    <span class="accent bold"><%= @item[:title] %></span></a>
 				  </h2>
 					<div id="talk-desc" class="text">

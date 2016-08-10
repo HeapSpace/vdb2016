@@ -614,6 +614,17 @@ iframe {
   }
 }
 
+.speaker-answer {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 18px;
+  color: $brand-secondary;
+  margin: 10px 0 30px 0;
+  &.last {
+    margin-bottom: 90px
+  }
+}
+
 .fa-star {
   color: $white;
   margin-right: 8px;
@@ -652,6 +663,9 @@ iframe {
   }
   .card-title {
     margin-top: 0;
+    .fa {
+      margin-right: 10px;
+    }
   }
   .card-logo {
     vertical-align: bottom;
@@ -661,12 +675,12 @@ iframe {
   .big-icon {
     font-size: 220%;
     color: $brand-primary;
-    margin-top: 20px;
     padding: 10px;
     width: 55px;
     height: 55px;
     border: 1px solid $brand-primary;
     text-align: center;
+    margin-top: 20px;
     @include round-corners(50%);
     &.fa-microphone, &.fa-bolt, &.fa-link {
       padding-top: 12px;
@@ -689,7 +703,7 @@ iframe {
   .title {
     color: $brand-primary;
     margin-bottom: 15px;
-    text-align: left;
+    text-align: center;
   }
   .second-speaker {
     color: $brand-secondary;

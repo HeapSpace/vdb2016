@@ -2,6 +2,8 @@
 
 # title: Index
 layout: '/index.html'
+scheduledata: 1
+
 
 speakers:
 
@@ -18,9 +20,9 @@ speakers:
     tags:
       - keynote
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 9
     firstname: 'Amir'
@@ -34,9 +36,9 @@ speakers:
     tags:
       - devops
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 43
     firstname: 'Jaroslaw'
@@ -51,9 +53,9 @@ speakers:
       - mobile
       - business
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 23
     firstname: 'Dejan'
@@ -67,9 +69,9 @@ speakers:
     tags:
       - iot
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 69
     firstname: 'Nicolas'
@@ -83,9 +85,9 @@ speakers:
     tags:
       - kotlin
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "I'm a down-to-earth kind of guy and​ ​my daily job involves staying away from crazy as far as possible. So, the craziest thing I have done was to deploy the app in a staging environment despite a broken build on the Continuous Integration server."
+      - "Since I started my 'career' , I've always said we were living in interesting times. Given the acceleration in the tech sector, I'd be foolish to give any forecast."
+      - "Go on, it's going to be a lot of fun!!!​"
   -
     sid: 91
     firstname: 'Yufeng'
@@ -99,9 +101,9 @@ speakers:
     tags:
       - api
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      -
+      -
+      -
   -
     sid: 64
     firstname: 'Mike'
@@ -115,9 +117,9 @@ speakers:
     tags:
       - db
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "I got insulted my an AI experiment in a Zoltar machine, beware of the sassy robots!"
+      - "A lot lower barriers to entry, everyone will become a developer at some level. But also more immersive, where the experts will be behind the code bringing technology into a new interactive age."
+      - "Don't learn to programme! Pick a different hobby, like checkers."
   -
     sid: 85
     firstname: 'Victor'
@@ -131,9 +133,9 @@ speakers:
     tags:
       - metodologies
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "When I joined a very large client in the Banking sector with a lot of history in IT, just to discover that they actually had no corporate guidelines to follow so that we had to establish the entire technical stack from scratch. We actually had to spend countless nights to explore the best approach to so many concerns. What we weren't realizing at that time bowever was that we were actually establishing the new 'de facto 'standards for then onwards. Once the project became a sound success, tens of projects starting 'inspiring' from our approach. Bottom line: do your best, whatever the challenge your are faced with. If you do it right, you can't ever suspect its potential impact up-front."
+      - "A lot of mobile. A bit of IOT. No microservices. More focus of design excellence, clean code, TDD on the backend side."
+      - "Learn more! Talk more to fellow devs! Exit the cave! Learn Scala. Learn Ruby. Learn Groovy. Never stop."
   -
     sid: 41
     firstname: 'James'
@@ -147,9 +149,9 @@ speakers:
     tags:
       - microservices
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "We built a voice-controlled drone for a conference keynote last year and flew it during the presentation."
+      - "Still learning new technologies!"
+      - "Relax :)"
   -
     sid: 2
     firstname: 'Adam'
@@ -163,9 +165,9 @@ speakers:
     tags:
       - distributed systems
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "Back in the 90s, with my first family PC, and discovering for the first time that I could call my cousin's computer with Command & Conquer. It had a multiplayer option where you literally entered a phone number to dial another computer. It was my first PC, and before my house had proper internet. I remember being amazed at seeing what he typed appear on my screen. We played it all night, and every night for a week or so, until the phone bill arrived. I still remember the look on my father's face."
+      - "With more and more congestion in cities, and property prices spiralling seemingly endlessly upwards in tech hotspots (San Francisco just being one example), I see remote work becoming a mainstream thing. Internet speeds are now fast enough to make video chat a more than viable option, and the tools available for working remotely are far more mature these days. It makes sense for the employee, with less commutes and less distractions when working, but it also makes sense for employers - they can look outside their immediate area in the search for the best talent."
+      - "Don't be afraid to ask questions for fear of appearing dumb. Asking questions is the smartest thing you can do, especially in your early years as a developer. Keep asking until you understand what you want to know. In the software industry, this is the fastest way to learn - more so than in other industries."
   -
     sid: 86
     firstname: 'Viktor'
@@ -181,9 +183,9 @@ speakers:
       - microservices
       - docker
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 58
     firstname: 'Mark'
@@ -197,9 +199,9 @@ speakers:
     tags:
       - metodologies
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 82
     firstname: 'Stéphane'
@@ -214,9 +216,9 @@ speakers:
     tags:
       - java
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 90
     firstname: 'Yann'
@@ -231,9 +233,9 @@ speakers:
       - tooling
       - java
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 52
     firstname: 'Luis'
@@ -247,9 +249,9 @@ speakers:
     tags:
       - microservices
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 3
     firstname: 'Aimone'
@@ -264,9 +266,9 @@ speakers:
       - vr
       - hw
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 8
     firstname: 'Alexey'
@@ -280,9 +282,9 @@ speakers:
     tags:
       - mobile
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "Spending 2 hours of pair programming with a fellow senior developer trying to understand xCode UI Editor"
+      - "Someone will think of a new and actually usable way of using wearable gadgets"
+      - "Don't waste time playing computer games, design them!"
   -
     sid: 15
     firstname: 'Chris'
@@ -296,9 +298,9 @@ speakers:
     tags:
       - javascript
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "I have attended a product demonstration. During that demo an error dialog appeared with a very obscene/xxx message for the user. Some dev forgot to remove something that was intended as a joke. The product owner was not ammused."
+      - "Years with great challenges and even cooler solutions! Tech is evolving so fast, I cant wait to deliver vr or ar solutions for example."
+      - "Relax! Everything always needs to be done yesterday, don't let that stress you. And if the most simple solution is enough, don't go looking for more complex ones."
   -
     sid: 16
     firstname: 'Chris'
@@ -313,9 +315,9 @@ speakers:
       - ios
       - mobile
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "Many years ago I was a musician and the producer of our debut album used ancient valves from the 1950s that were in stacks as tall as me to record everything and then plugged it all into his laptop."
+      - "Exciting times that we will be trying to stop from going crazy."
+      - "Enjoy yourself more."
   -
     sid: 18
     firstname: 'Daniel G.'
@@ -330,9 +332,9 @@ speakers:
       - ai
       - ux/ui
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 21
     firstname: 'David'
@@ -346,9 +348,9 @@ speakers:
     tags:
       - ux/ui
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 22
     firstname: 'Deepak'
@@ -362,9 +364,9 @@ speakers:
     tags:
       - microservices
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 19
     firstname: 'Daniel'
@@ -378,9 +380,9 @@ speakers:
     tags:
       - clojure
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "My daughter. Also falling in love with a 60 years old language."
+      - "Very functional and containerized! It will also be immutable, unless somebody invents a time-machine."
+      - "Work for yourself, be more bold."
   -
     sid: 50
     firstname: 'Liviu'
@@ -394,9 +396,9 @@ speakers:
     tags:
       - db
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 26
     firstname: 'Filip'
@@ -410,9 +412,9 @@ speakers:
     tags:
       - web
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "It’s hard to say. Things somehow become too ordinary when you know how they work and are able to overthink everything about them. I’d say one of the craziest things that happened to me was creating a small Adobe Flash game in 2008 and showing to everyone at school. It was my first app that actually had a GUI and, in some ways, the first real “product” that I created. I remember being a bit embarrassed to share it with the world, as well as being very happy to be treated like a genius at school. I had kids, whom I've never met, texting me that they loved playing the game and adding their ideas on how to make it more fun."
+      - "There’re quite a few things that I am excited about in the coming 5–10 years: AI research, the rise of autonomous vehicles, biotech, space travel research etc. While I don’t think that 5 years will be enough for any of these techs to disrupt our life or change the world completely, I believe that that this will be the time when important foundations will be set. I find that exciting, as it is a great time to be a pioneer in these fields."
+      - "I’d probably tell my younger self: “Keep doing what you’re doing now.” Outside of that, I’d probably share a few winning lottery numbers – that would certainly be a life changer!"
   -
     sid: 30
     firstname: 'Grace'
@@ -426,9 +428,9 @@ speakers:
     tags:
       - web
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 28
     firstname: 'Gerard'
@@ -443,9 +445,9 @@ speakers:
     tags:
       - javascript
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 32
     firstname: 'Hakan'
@@ -460,9 +462,9 @@ speakers:
       - ios
       - game
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 34
     firstname: 'Ilija'
@@ -476,9 +478,9 @@ speakers:
     tags:
       - agile
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 36
     firstname: 'Jacek'
@@ -493,9 +495,9 @@ speakers:
       - db
       - scala
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 39
     firstname: 'Jakub'
@@ -510,9 +512,9 @@ speakers:
       - messaging
       - distributed systems
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 45
     firstname: 'Jezen'
@@ -526,9 +528,9 @@ speakers:
     tags:
       - haskell
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 42
     firstname: 'Jaroslaw'
@@ -542,9 +544,9 @@ speakers:
     tags:
       - java
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "Few years ago during kick off meeting of a project for a really big, strategic customer (media) I wanted to check technologies, firewalls they are using and run nmap tool (https://nmap.org/) scan on their webpage (milions of visitors). Seconds after scan page went down and was so for about 4 days. I felt guilty (yes wtf -can nmap really kill something) for couple of months till I've learned that they had terrible storm and thunderbolt hit their server center at thet moment killing also power units etc. (What a coincidence)"
+      - "Rise of AI everywhere."
+      - "Attend big IT conferences at least twice a year and Speak!"
   -
     sid: 47
     firstname: 'Karina'
@@ -558,9 +560,9 @@ speakers:
     tags:
       - iot
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 54
     firstname: 'Maciek'
@@ -574,9 +576,9 @@ speakers:
     tags:
       - bigdata
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 57
     firstname: 'Marcin'
@@ -590,9 +592,9 @@ speakers:
     tags:
       - bigdata
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "Technology and Crazy? It's never crazy, it's deterministic! Might just seem to be crazy when you in debug mode."
+      - "Tough one, especially after seeing people trying to catch pokemons. But for sure a lot of data will be involved."
+      - "To experiment even more. And that everything is gonna be all right :)"
   -
     sid: 60
     firstname: 'Matija'
@@ -607,9 +609,9 @@ speakers:
       - bigdata
       - data analytics
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 62
     firstname: 'Michał'
@@ -624,9 +626,9 @@ speakers:
       - web
       - game
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 51
     firstname: 'Luca'
@@ -641,9 +643,9 @@ speakers:
       - web
       - javascript
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "Have you ever create a digital dashboard for a motorbike with Flex and AIR that was communicating with the engine via UDP socket in less than 10ms?!"
+      - "I believe business will run even more on web and occasionally connected devices; smartTV and set-top-boxes will become a regular platform to targets on any projects like smartphones; developers will understand that is not the language that matters but how we are using it!!!"
+      - "Enjoy more your journey and celebrate your successes otherwise you will loose a life trying to achieve something bigger every time."
   -
     sid: 63
     firstname: 'Mihailo'
@@ -658,9 +660,9 @@ speakers:
       - android
       - mobile
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 73
     firstname: 'Pance'
@@ -674,9 +676,9 @@ speakers:
     tags:
       - microservices
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 77
     firstname: 'Ralph'
@@ -690,9 +692,9 @@ speakers:
     tags:
       - microservices
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 83
     firstname: 'Stjepan'
@@ -707,9 +709,9 @@ speakers:
       - web
       - ruby
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 92
     firstname: 'Zoltán'
@@ -723,9 +725,9 @@ speakers:
     tags:
       - docker
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 31
     firstname: 'Gustavo'
@@ -739,9 +741,9 @@ speakers:
     tags:
       - devops
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "(This is a hard one. But I'm going to go with) something that happened to me and some friends when we were kids. The parents of a friend left for the weekend, and we organised a lan party at his place. A few of us showed up with our computers (no laptops back in the day) and when we had everything installed and ready to go, we turned on the computers and blew off the fuses. We had to call an emergency electrician to fix the problem before his parents came back. For years we lived in fear that somehow they would find out, but fortunately they never did!"
+      - "If I had to say just one word, I would say exciting. I foresee a lot of advances in virtual/augmented reality and the internet of things. And I also think that we are going to see a big change in the start up ecosystem. I think the current system of people searching for the next unicorn will be depleted soon."
+      - "First of all, I would tell him to buy bitcoins :). But being more serious, I would tell him he made the right choice choosing IT. It's been a very bumpy road, but despite the bad times, I can say that even if I could go back, I would walk the same path again. No regrets!"
   -
     sid: 4
     firstname: 'Akos'
@@ -756,9 +758,9 @@ speakers:
       - iot
       - startups
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "I try to learn from everybody and every opportunity. I love how tech is enabling me to enroll to US universities, to learn from the best and make friends all over the world."
+      - "Automation, automation, automation. Bots, AI, autonomous experience. But the big deal is blockchain and IoT working together, although I am not sure it will get mainstream traction from media and devs."
+      - "Opportunity is nothing without the right people. Intelligence, talent is nothing without diligence and humility. Humility is needed to understand where you need to improve, diligence is necessary to execute this change."
   -
     sid: 61
     firstname: 'Matija'
@@ -774,9 +776,9 @@ speakers:
       - javascript
       - ux/ui
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "Owning a nintendo. :O"
+      - "Cloudy (Okay bad pun). A switch from decentralized computing power to a more centralized form. Why can't I just rent computing power and use my device only as a terminal? (I expect this to be followed with internet infrastructure improvements)"
+      - "Too young to answer this (: But if I had to say something It'd be to dissent Apple technologies (and their ecosystem) less :)"
   -
     sid: 46
     firstname: 'Jovica'
@@ -790,9 +792,9 @@ speakers:
     tags:
       - javascript
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 89
     firstname: 'Željko'
@@ -806,9 +808,9 @@ speakers:
     tags:
       - iot
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 88
     firstname: 'Wouter'
@@ -822,9 +824,9 @@ speakers:
     tags:
       - iot
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 49
     firstname: 'Krzysztof'
@@ -838,13 +840,13 @@ speakers:
     tags:
       - scala
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 76
     firstname: 'Rafael'
-    lastname: 'Ordog'
+    lastname: 'Ördög'
     pageurl: 'rafael-ordog'
     url: 'https://twitter.com/LeanPoker'
     photo: 'Rafael Ordog.jpg'
@@ -855,9 +857,9 @@ speakers:
       - devops
       - metodologies
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "The time when a simple failed innocent looking database query started a chain reaction of race conditions exploding in our face. The whole thing was catalyzed by a number of missing error handlers, since 'those particular boundary conditions can never happen, so why worry about it'. Unfortunately the damage was irreversible. That was the day when I learned, that you always have to prepare for the perfectly impossible and expect the unexpected."
+      - "Through a crystal ball app on my phone. Jokes aside: I don't like to predict things like that. If you asked me 5 years ago I would have said self driving cars but we got a bunch of Instagram filters and Pokemon Go. :) I would still say self driving cars, but we already have an AI painting pretty pictures based on less then pleasing photos and an AI playing Pokemon Go is not that difficult, so I'm gonna go with that as a prediction. It's a safe bet."
+      - "Don't waste your time on building boring stuff for boring people with money. Find out what people care about the most, what makes their life difficult, and make it just a tiny bit easier for them. If they like it, make it better, so that their life becomes even easier, and do this until you have made the world a better place in tiny increments. But even if you don't believe me, that you can do this slowly - I know it's hard, we all want to change the world overnight - at least listen to this one advice: DO NOT BUILD THAT SOCIAL NETWORK SITE. I know MySpace sucks, but by the time you'll be done Facebook will be all the rage... (I really do wish I didn't build that social network... what was I thinking?)"
   -
     sid: 56
     firstname: 'Maja'
@@ -871,9 +873,9 @@ speakers:
     tags:
       - business
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "I became a speaker at the Voxxed Days conference :-)"
+      - "Everything will be personalized, more clever and everything will provide you with answers. You will be online everywhere!"
+      - "Everyone you will ever meet knows something you don’t! Pay attention and you can learn something new every day :)"
   -
     sid: 55
     firstname: 'Maja'
@@ -887,9 +889,9 @@ speakers:
     tags:
       - business
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "Working in IT company :)"
+      - "Let me google it :)"
+      - "Make sure to pay attention during Computer Science lessons!"
   -
     sid: 14
     firstname: 'Catherine'
@@ -903,9 +905,9 @@ speakers:
     tags:
       - metodologies
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 20
     firstname: 'Daniel'
@@ -920,9 +922,9 @@ speakers:
       - web
       - security
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 48
     firstname: 'Kenan'
@@ -937,9 +939,9 @@ speakers:
       - java
       - ux/ui
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "The craziest thing that happened to me is the 'CrazyBoot' virus which caused me to almost blow up a hard disk containing a fully written PhD thesis of someone else without a backup! This is many years ago, but I always remember it as the craziest thing that ever happened to me during my early days of computing career."
+      - "I am very excited about developments in cloud computing. Development experience is moving into the cloud as well, and IT people will experience execution of full application delivery lifecycle on cloud platforms via visual and declarative means. Such a direction might cause important effects to evolution of enterprise application development and enterprise Java ecosystem as well."
+      - "Always keep pace in your computing career by experiencing new ways of doing things. That way you will improve yourself, and develop a deeper understanding about the concepts you think you already learned about. It is also very important to learn core/fundamental principles in your focus area, which will help you in learning and adapting new things more easily. Technology is evolving very very fast, new frameworks/libraries/applications come and go constantly. In order to keep up the pace with such a rapidly changing IT ecosystem, you first need to comprehend the core/fundamental principles, which don't change as much as those frameworks/libraries/applications over time."
   -
     sid: 5
     firstname: 'Aleksandar'
@@ -954,9 +956,9 @@ speakers:
       - mobile
       - ios
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "Šta sam beše rekao prošle godine... :)"
+      - "Smart homes will become the norm. VR will still be 'almost' there."
+      - "Don't waste time at the University. Spend that time learning few foreign languages and travel to countries where it's spoken."
   -
     sid: 59
     firstname: 'Martin'
@@ -971,9 +973,9 @@ speakers:
       - java
       - performance
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "The answer could be the same from last year's (the same question): https://voxxeddays.com/belgrade15/2015/08/10/devhero-martin-toshev-superpower-stealth-mode-shuriken/ Maybe not the craziest things but still to name a few – coding for 26 hours and making a client happy or finding a cousin of mine I haven’t seen for 20 years in Facebook … And to name one recent - I had to complete in the same month three small projects with three different technology stacks - first one: Java EE-based, second one: Spring-based and third one: OSGi-based."
+      - "Developing and architecting a variety of (mostly) Java-based applications, collaborating with other professionals willing to advance their skills and helping out different businesses implement their ideas into working solutions."
+      - "Practice, practice, practice."
   -
     sid: 70
     firstname: 'Nikola'
@@ -988,9 +990,9 @@ speakers:
       - java
       - microservices
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 17
     firstname: 'Damir'
@@ -1004,9 +1006,9 @@ speakers:
     tags:
       - testing
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 24
     firstname: 'Dejan'
@@ -1020,9 +1022,9 @@ speakers:
     tags:
       - design patterns
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "I was lucky that lot of things has happen during my 20+ years of experience but the two that I would like to emphasize are:  - One man on one island create a dynamic, open source programming language with a focus on simplicity and productivity with an elegant syntax that is natural to read and easy to write. Ruby is ranked among the top 10 on most of the indices that measure the growth and popularity of programming languages worldwide (such as the TIOBE index). Much of the growth is attributed to the popularity of software written in Ruby, particularly the Ruby on Rails web framework.  - 'The Ugly Duckling' is a fairy tale by Hans Christian Andersen (1805 – 1875). The story tells of a homely little bird born in a barnyard who suffers abuse from the others around him until, much to his delight (and to the surprise of others), he matures into a beautiful swan, the most beautiful bird of all. The story of JavaScript / NodeJS is the same as this fairy tale."
+      - "In the years to come the main thing will be avalanche of sensor data, new ways to connect them in information and new business based on new information flow.  In the same time, the switch of work force will also happen. There will be lot of developers transition from other industries performing a work that nowadays is consider complex, where it will be mostly boilerplate in a couple of years. Internet of Things will finally become a everyday thing based on only one thing - the data."
+      - "Hype is usually a big boys payed marketing. The only sure thing is the change."
   -
     sid: 37
     firstname: 'Jakša'
@@ -1039,9 +1041,9 @@ speakers:
       - java
       - testing
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 53
     firstname: 'Lukasz'
@@ -1056,9 +1058,9 @@ speakers:
       - scala
       - web
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 6
     firstname: 'Aleksandar'
@@ -1072,9 +1074,9 @@ speakers:
     tags:
       - javascript
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 67
     firstname: 'Mirjana'
@@ -1090,9 +1092,9 @@ speakers:
       - security
       - metodologies
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 71
     firstname: 'Nikola'
@@ -1107,9 +1109,9 @@ speakers:
       - microservices
       - security
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 72
     firstname: 'Nikola'
@@ -1124,9 +1126,9 @@ speakers:
       - db
       - cloud
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 74
     firstname: 'Perica'
@@ -1141,9 +1143,9 @@ speakers:
       - docker
       - monitoring
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 75
     firstname: 'Radek'
@@ -1158,9 +1160,9 @@ speakers:
       - scala
       - docker
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "I took a simple idea and implemented it for fun with two top notch technologies: Apache Spark and Docker and to my surprise I won a main prize in the IBM competition."
+      - "More cloud, more containers, more distributed computing and more machine learning."
+      - "Don't be afraid to change jobs when you feel you are learning little."
   -
     sid: 29
     firstname: 'Goran'
@@ -1174,9 +1176,9 @@ speakers:
     tags:
       - mobile
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 65
     firstname: 'Miloš'
@@ -1190,9 +1192,9 @@ speakers:
     tags:
       - messaging
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 84
     firstname: 'Vedran'
@@ -1206,9 +1208,9 @@ speakers:
     tags:
       - hw
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 35
     firstname: 'Ivan'
@@ -1223,9 +1225,9 @@ speakers:
       - ci
       - tooling
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "Organizing IT conference in the middle of nowhere without proper internet connection, infrastructure, etc."
+      - "More companies applying open source based business models."
+      - "Don’t believe authorities & commonly accepted principles - verify everything by yourself."
   -
     sid: 12
     firstname: 'Antonis'
@@ -1243,9 +1245,9 @@ speakers:
       - devops
       - tooling
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "Trying to recover our service from a serious attack from my mobile phone, while being at a wedding. It was the summer of 2015, when a video came out in YouTube on how to use our server's bandwidth to do DoS attacks to third parties using our service. The rest is history..."
+      - "I believe a lot in wearable tech and I think that during the next 5 years, we'll be seeing more and more technologies emerge on how we interact with other people and things around us. That's the first step before we start doing 'things' really smart using kickass AI in the next 20-30 years. But you asked for the next 5 years, so that's all you get!"
+      - "Be yourself and always pursue for your dreams. Don't be afraid to get into deep waters, it pays out! The other day I was reading through a Pascal Finette blogpost about how we as humans, we tend to be scared of things and we always have the sense of doubt in us. While this was a lifesaver back in the hunting days, nowadays it could be more of a downside. Simply read it young me, great post."
   -
     sid: 7
     firstname: 'Alexander'
@@ -1260,9 +1262,9 @@ speakers:
       - mobile
       - ci
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 25
     firstname: 'Doan'
@@ -1276,9 +1278,9 @@ speakers:
     tags:
       - bigdata
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "What is crazy is that my family and friends don't know anything about Apache Cassandra and my job, but when I told them 'do you know Netflix, Apple, Uber or Waze? They are all using the technology I'm working on', they are pretty amazed!"
+      - "In less than 5 years, there will probably be some market consolidation around the NoSQL database landscape, a few big players will emerge (if not already done) and small players will die. There will be also a shift and new interest into cloud and container orchestration technologies. On the front-end side, the question is still open because the Javascript landscape is evolving too fast, frameworks and stacks are changing every 6 months, still we can foresee the 2 majors technologies which are Angular and React."
+      - "If I had my knowledge of today in my early days, I would invest sooner into the technology and forget about all the project management crap. A pure tech career with a lot of expertise is much more rewarding than fighting against the crowd to become yet-another-middle-management manager"
   -
     sid: 44
     firstname: 'Jens'
@@ -1292,9 +1294,9 @@ speakers:
     tags:
       - iot
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "When me and my friend established a mailbox connection the first time with my new arrived acoustic coupler (must have been 25 years ago...)."
+      - "Technology will be more and more integrated in our everyday live. Not only in terms of SmartPhones or SmartWatches but by the massively growing amount of small connected devices and big devices, thinking of e.g. connected cars and robots."
+      - "Start learning Scala by its first release."
   -
     sid: 40
     firstname: 'Jakub'
@@ -1308,9 +1310,9 @@ speakers:
     tags:
       - design patterns
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "Thing is, as a professional programmer I know a bit how tech works, how things are programmed, what is the quality of those... That's why I try to avoid technology as much as possible. The simpler - the better. Notes - on paper. Reading - books. Todo list - moleskine. Probably that's why I don't have many of such horror stories."
+      - "Everything is becoming autonomous and automated. Having said that (and knowing, how bad programmers can be) I see the next 5 years in tech as years of constant firefighting. I see it also as a tremendous opportunity for people willing to do this firefighting.  I also see it as years of professionalizing the industry. In a sense of taking responsibility - as the construction engineers takes responsibility of the quality of the bridge."
+      - "Don't follow fashions. Find yourself a mentor and learn from the experience of previous generations. At least I'd have avoided reinventing the wheel - multiple times."
   -
     sid: 66
     firstname: 'Miloš'
@@ -1324,9 +1326,9 @@ speakers:
     tags:
       - android
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 81
     firstname: 'Stanko'
@@ -1341,9 +1343,9 @@ speakers:
       - web
       - ruby
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "Uh, there was a lot of things. I DoS-ed our server just to confirm a vulnerability in our servers. I managed to pick-up a girl by showing her an IoT string of lights I made - It was quite a fancy instalation, with an iOS app and everything :) There are quite a few I can’t disclose."
+      - "I have a feeling that we are currently in a bubble, which needs to burst. In the next 5 years a lot of ‘cowboy’ developers will simply disappear, and the market will saturate. Technology wise i don’t think much will change. Most of the technology that will be relevant in 5 years is already being sold today. My hunch is that software for cars will have a bigger role as we are moving towards an all electric future."
+      - "Don’t eat the yellow snow! Just kidding :) I wouldn’t change a thing. I think that everything that happened lead me to meeting all the people I call friends today, and ultimately lead me to become the person I am today. My choices weren’t always right, but I learned quite a lot from those mistakes."
   -
     sid: 68
     firstname: 'Nenad'
@@ -1358,9 +1360,9 @@ speakers:
       - ci
       - testing
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - "Working on the gynecology software was especially crazy."
+      - "I see tech going towards Internet of Things, getting everything and everyone online and available at all times."
+      - "Go into security testing as soon as possible, do not ignore it."
   -
     sid: 11
     firstname: 'Predrag'
@@ -1374,9 +1376,9 @@ speakers:
     tags:
       - agile
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 10
     firstname: 'Anamarija'
@@ -1390,9 +1392,9 @@ speakers:
     tags:
       - agile
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 78
     firstname: 'Robert'
@@ -1408,9 +1410,9 @@ speakers:
       - cloud
       - microservices
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 94
     firstname: 'Đurađ'
@@ -1424,9 +1426,9 @@ speakers:
     tags:
       - business
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 33
     firstname: 'Igor'
@@ -1440,9 +1442,9 @@ speakers:
     tags:
       - business
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
   -
     sid: 95
     firstname: 'Alex'
@@ -1458,9 +1460,9 @@ speakers:
       - Cloud
       - Microservices
     answers:
-      - 'Odgovor 1'
-      - 'Odgovor 2'
-      - 'Odgovor 3'
+      - ""
+      - ""
+      - ""
 
 
 
@@ -2330,7 +2332,7 @@ talks:
     tid: 390
     sid: 14
     title: 'What`s your motivation?'
-    type: 'talk'
+    type: 'lightning'
     day:
     track:
     slot:
@@ -2377,7 +2379,7 @@ talks:
     tid: 405
     sid: 5
     title: 'Fresh Cup of iOS 10'
-    type: 'talk'
+    type: 'lightning'
     day:
     track:
     slot:
@@ -2416,7 +2418,7 @@ talks:
     tid: 420
     sid: 17
     title: 'Stop wasting time NOT writing tests'
-    type: 'talk'
+    type: 'lightning'
     day:
     track:
     slot:
@@ -2431,7 +2433,7 @@ talks:
     tid: 425
     sid: 24
     title: 'Sex Lies and Design patterns'
-    type: 'talk'
+    type: 'lightning'
     day:
     track:
     slot:
@@ -2454,7 +2456,7 @@ talks:
     tid: 430
     sid: 37
     title: 'Why are Actors Terrible?'
-    type: 'talk'
+    type: 'lightning'
     day:
     track:
     slot:
@@ -2502,7 +2504,7 @@ talks:
     tid: 445
     sid: 6
     title: 'Serverless chat bots with AWS Lambda'
-    type: 'talk'
+    type: 'lightning'
     day:
     track:
     slot:
@@ -2518,7 +2520,7 @@ talks:
     tid: 450
     sid: 67
     title: 'What do testers actually do?'
-    type: 'talk'
+    type: 'lightning'
     day:
     track:
     slot:
@@ -2531,7 +2533,7 @@ talks:
     tid: 455
     sid: 71
     title: 'Security in microservice architecture'
-    type: 'talk'
+    type: 'lightning'
     day:
     track:
     slot:
@@ -2555,7 +2557,7 @@ talks:
     tid: 460
     sid: 72
     title: 'Data in the continuous delivery process'
-    type: 'talk'
+    type: 'lightning'
     day:
     track:
     slot:
@@ -2759,7 +2761,7 @@ talks:
     tid: 530
     sid: 66
     title: 'MVVM with Android Databinding in Practice'
-    type: 'talk'
+    type: 'lightning'
     day:
     track:
     slot:
@@ -2772,7 +2774,7 @@ talks:
     tid: 535
     sid: 81
     title: 'Stubs, Mocks & Spies'
-    type: 'talk'
+    type: 'lightning'
     day:
     track:
     slot:
@@ -2867,6 +2869,5 @@ talks:
       - "At Gogo, we found that DevOps was a culture shift, and we embraced the paradigm where responsibility for successful change is placed directly in the hands of developers."
       - "During this session, Alex King will talk about Gogo's journey to this new world and will how our tooling, organization, and outlook have evolved over time. Join us to hear about the lessons we learned along the way."
 
-scheduledata: 1
 
 ---
