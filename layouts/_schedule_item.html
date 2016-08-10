@@ -1,29 +1,18 @@
 <%
 
-  slots = {
-    1 => [:time => '9:00', :dur => 50, :break => 10],
-    2 => [:time => '10:00', :dur => 50, :break => 10],
-    3 => [:time => '11:00', :dur => 50, :break => 10],
-    4 => [:time => '12:00', :dur => 50, :break => 10],
-    5 => [:time => '13:00', :dur => 50, :break => 10],
-    6 => [:time => '14:00', :dur => 30, :break => 0],
-    7 => [:time => '14:30', :dur => 50, :break => 10],
-    8 => [:time => '15:30', :dur => 50, :break => 10],
-    9 => [:time => '16:30', :dur => 50, :break => 10]
-  }
-
   get_schedule_data(@day, @track).each do |talk|
 
-  item_config = slots[talk['slot'].to_i]
-  item_config = item_config.reduce(:merge)
+  item_slot = @slots[talk['slot'].to_i].reduce(:merge)
+  item_break = @breaks[talk['slot'].to_i].reduce(:merge)
+
   if !talk['duration'].to_s.empty?
     talkduration = talk['duration']
   else
-    talkduration = item_config[:dur]
+    talkduration = item_slot[:dur]
   end
 %>
   <div class="schedule-item <% if talk['type'] == 'empty' %>empty<% end %>" style="height: <%= talkduration*6 %>px">
-    <% if !talk['title'].to_s.empty? %><h4 class=""><%= item_config[:time] %></h4><% end %>
+    <% if !talk['title'].to_s.empty? %><h4 class=""><%= item_slot[:time] %></h4><% end %>
     <% if !talk['talkspeakers'].to_s.empty? %>
       <% talk['talkspeakers'].flatten(1).each do |speaker| %>
         <% if !speaker['pageurl'].to_s.empty? %><a href="/speakers/<%= speaker['pageurl'] %>/"><% end %>
@@ -32,11 +21,12 @@
       <% end %>
     <% end %>
     <a href="/talk/<%= talk['tid'] %>/"><h6 class=""><%= talk['title'] %></h6></a>
-    <% if !talk['title'].to_s.empty? %><div class="brown">Duration: <%= talkduration.to_s %> min</div><% end %>
+    <% if !talk['title'].to_s.empty? %><div class="brown"><%= talkduration.to_s %> min</div><% end %>
   </div>
-  <% if item_config[:break] > 0 %>
-  <div class="schedule-item" style="height: <%= item_config[:break]*6 %>px">
-    <h6 class="">Break</h6>
+  <% if item_break[:dur] > 0 %>
+  <div class="schedule-item" style="height: <%= item_break[:dur]*6 %>px">
+    <h6 class="break"><%= item_break[:name] %></h6>
+    <div class="brown"><%= item_break[:dur].to_s %> min</div>
   </div>
   <% end %>
 <%
