@@ -11,6 +11,16 @@ preprocess do
   @items.each do |item|
     if item.key?(:scheduledata)
 
+      json_speakers = item[:speakers]
+      File.open("content/vdb16speakers.json","w") do |f|
+        f.puts json_speakers.to_json.force_encoding("UTF-8")
+      end
+
+      json_talks = item[:talks]
+      File.open("content/vdb16talks.json","w") do |f|
+        f.puts json_speakers.to_json.force_encoding("UTF-8")
+      end
+
       schedule_speakers = item[:speakers]
       schedule_talks = item[:talks]
 

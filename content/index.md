@@ -17,6 +17,10 @@ speakers:
       - '100'
     tags:
       - keynote
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 9
     firstname: 'Amir'
@@ -29,6 +33,10 @@ speakers:
       - '105'
     tags:
       - devops
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 43
     firstname: 'Jaroslaw'
@@ -42,6 +50,10 @@ speakers:
     tags:
       - mobile
       - business
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 23
     firstname: 'Dejan'
@@ -54,6 +66,10 @@ speakers:
       - '120'
     tags:
       - iot
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 69
     firstname: 'Nicolas'
@@ -66,6 +82,10 @@ speakers:
       - '125'
     tags:
       - kotlin
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 91
     firstname: 'Yufeng'
@@ -78,6 +98,10 @@ speakers:
       - '130'
     tags:
       - api
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 64
     firstname: 'Mike'
@@ -90,6 +114,10 @@ speakers:
       - '135'
     tags:
       - db
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 85
     firstname: 'Victor'
@@ -102,6 +130,10 @@ speakers:
       - '140'
     tags:
       - metodologies
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 41
     firstname: 'James'
@@ -114,6 +146,10 @@ speakers:
       - '145'
     tags:
       - microservices
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 2
     firstname: 'Adam'
@@ -126,6 +162,10 @@ speakers:
       - '150'
     tags:
       - distributed systems
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 86
     firstname: 'Viktor'
@@ -140,6 +180,10 @@ speakers:
     tags:
       - microservices
       - docker
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 58
     firstname: 'Mark'
@@ -152,6 +196,10 @@ speakers:
       - '165'
     tags:
       - metodologies
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 82
     firstname: 'Stéphane'
@@ -165,6 +213,10 @@ speakers:
       - '175'
     tags:
       - java
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 90
     firstname: 'Yann'
@@ -178,6 +230,10 @@ speakers:
     tags:
       - tooling
       - java
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 52
     firstname: 'Luis'
@@ -190,6 +246,10 @@ speakers:
       - '185'
     tags:
       - microservices
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 3
     firstname: 'Aimone'
@@ -203,6 +263,10 @@ speakers:
     tags:
       - vr
       - hw
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 8
     firstname: 'Alexey'
@@ -215,6 +279,10 @@ speakers:
       - '195'
     tags:
       - mobile
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 15
     firstname: 'Chris'
@@ -227,6 +295,10 @@ speakers:
       - '200'
     tags:
       - javascript
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 16
     firstname: 'Chris'
@@ -240,6 +312,10 @@ speakers:
     tags:
       - ios
       - mobile
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 18
     firstname: 'Daniel G.'
@@ -253,6 +329,10 @@ speakers:
     tags:
       - ai
       - ux/ui
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 21
     firstname: 'David'
@@ -265,6 +345,10 @@ speakers:
       - '215'
     tags:
       - ux/ui
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 22
     firstname: 'Deepak'
@@ -277,6 +361,10 @@ speakers:
       - '220'
     tags:
       - microservices
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 19
     firstname: 'Daniel'
@@ -289,6 +377,10 @@ speakers:
       - '225'
     tags:
       - clojure
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 50
     firstname: 'Liviu'
@@ -301,6 +393,10 @@ speakers:
       - '230'
     tags:
       - db
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 26
     firstname: 'Filip'
@@ -313,6 +409,10 @@ speakers:
       - '235'
     tags:
       - web
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 30
     firstname: 'Grace'
@@ -325,6 +425,10 @@ speakers:
       - '240'
     tags:
       - web
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 28
     firstname: 'Gerard'
@@ -338,6 +442,10 @@ speakers:
       - '250'
     tags:
       - javascript
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 32
     firstname: 'Hakan'
@@ -351,6 +459,10 @@ speakers:
     tags:
       - ios
       - game
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 34
     firstname: 'Ilija'
@@ -363,6 +475,10 @@ speakers:
       - '260'
     tags:
       - agile
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 36
     firstname: 'Jacek'
@@ -376,6 +492,10 @@ speakers:
     tags:
       - db
       - scala
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 39
     firstname: 'Jakub'
@@ -389,6 +509,10 @@ speakers:
     tags:
       - messaging
       - distributed systems
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 45
     firstname: 'Jezen'
@@ -401,6 +525,10 @@ speakers:
       - '275'
     tags:
       - haskell
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 42
     firstname: 'Jaroslaw'
@@ -413,6 +541,10 @@ speakers:
       - '280'
     tags:
       - java
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 47
     firstname: 'Karina'
@@ -425,6 +557,10 @@ speakers:
       - '285'
     tags:
       - iot
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 54
     firstname: 'Maciek'
@@ -437,6 +573,10 @@ speakers:
       - '290'
     tags:
       - bigdata
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 57
     firstname: 'Marcin'
@@ -449,6 +589,10 @@ speakers:
       - '295'
     tags:
       - bigdata
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 60
     firstname: 'Matija'
@@ -462,6 +606,10 @@ speakers:
     tags:
       - bigdata
       - data analytics
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 62
     firstname: 'Michał'
@@ -475,6 +623,10 @@ speakers:
     tags:
       - web
       - game
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 51
     firstname: 'Luca'
@@ -488,6 +640,10 @@ speakers:
     tags:
       - web
       - javascript
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 63
     firstname: 'Mihailo'
@@ -501,6 +657,10 @@ speakers:
     tags:
       - android
       - mobile
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 73
     firstname: 'Pance'
@@ -513,6 +673,10 @@ speakers:
       - '320'
     tags:
       - microservices
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 77
     firstname: 'Ralph'
@@ -525,6 +689,10 @@ speakers:
       - '325'
     tags:
       - microservices
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 83
     firstname: 'Stjepan'
@@ -538,6 +706,10 @@ speakers:
     tags:
       - web
       - ruby
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 92
     firstname: 'Zoltán'
@@ -550,6 +722,10 @@ speakers:
       - '335'
     tags:
       - docker
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 31
     firstname: 'Gustavo'
@@ -562,6 +738,10 @@ speakers:
       - '340'
     tags:
       - devops
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 4
     firstname: 'Akos'
@@ -575,6 +755,10 @@ speakers:
     tags:
       - iot
       - startups
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 61
     firstname: 'Matija'
@@ -589,6 +773,10 @@ speakers:
       - web
       - javascript
       - ux/ui
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 46
     firstname: 'Jovica'
@@ -601,6 +789,10 @@ speakers:
       - '355'
     tags:
       - javascript
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 89
     firstname: 'Željko'
@@ -613,6 +805,10 @@ speakers:
       - '360'
     tags:
       - iot
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 88
     firstname: 'Wouter'
@@ -625,6 +821,10 @@ speakers:
       - '360'
     tags:
       - iot
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 49
     firstname: 'Krzysztof'
@@ -637,6 +837,10 @@ speakers:
       - '370'
     tags:
       - scala
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 76
     firstname: 'Rafael'
@@ -650,6 +854,10 @@ speakers:
     tags:
       - devops
       - metodologies
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 56
     firstname: 'Maja'
@@ -662,6 +870,10 @@ speakers:
       - '380'
     tags:
       - business
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 55
     firstname: 'Maja'
@@ -674,6 +886,10 @@ speakers:
       - '380'
     tags:
       - business
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 14
     firstname: 'Catherine'
@@ -686,6 +902,10 @@ speakers:
       - '390'
     tags:
       - metodologies
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 20
     firstname: 'Daniel'
@@ -699,6 +919,10 @@ speakers:
     tags:
       - web
       - security
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 48
     firstname: 'Kenan'
@@ -712,6 +936,10 @@ speakers:
     tags:
       - java
       - ux/ui
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 5
     firstname: 'Aleksandar'
@@ -725,6 +953,10 @@ speakers:
     tags:
       - mobile
       - ios
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 59
     firstname: 'Martin'
@@ -738,6 +970,10 @@ speakers:
     tags:
       - java
       - performance
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 70
     firstname: 'Nikola'
@@ -751,6 +987,10 @@ speakers:
     tags:
       - java
       - microservices
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 17
     firstname: 'Damir'
@@ -763,6 +1003,10 @@ speakers:
       - '420'
     tags:
       - testing
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 24
     firstname: 'Dejan'
@@ -775,6 +1019,10 @@ speakers:
       - '425'
     tags:
       - design patterns
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 37
     firstname: 'Jakša'
@@ -790,6 +1038,10 @@ speakers:
       - distributed systems
       - java
       - testing
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 53
     firstname: 'Lukasz'
@@ -803,6 +1055,10 @@ speakers:
     tags:
       - scala
       - web
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 6
     firstname: 'Aleksandar'
@@ -815,6 +1071,10 @@ speakers:
       - '445'
     tags:
       - javascript
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 67
     firstname: 'Mirjana'
@@ -829,6 +1089,10 @@ speakers:
       - testing
       - security
       - metodologies
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 71
     firstname: 'Nikola'
@@ -842,6 +1106,10 @@ speakers:
     tags:
       - microservices
       - security
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 72
     firstname: 'Nikola'
@@ -855,6 +1123,10 @@ speakers:
     tags:
       - db
       - cloud
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 74
     firstname: 'Perica'
@@ -868,6 +1140,10 @@ speakers:
     tags:
       - docker
       - monitoring
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 75
     firstname: 'Radek'
@@ -881,6 +1157,10 @@ speakers:
     tags:
       - scala
       - docker
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 29
     firstname: 'Goran'
@@ -893,6 +1173,10 @@ speakers:
       - '475'
     tags:
       - mobile
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 65
     firstname: 'Miloš'
@@ -905,6 +1189,10 @@ speakers:
       - '480'
     tags:
       - messaging
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 84
     firstname: 'Vedran'
@@ -917,6 +1205,10 @@ speakers:
       - '485'
     tags:
       - hw
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 35
     firstname: 'Ivan'
@@ -930,6 +1222,10 @@ speakers:
     tags:
       - ci
       - tooling
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 12
     firstname: 'Antonis'
@@ -946,6 +1242,10 @@ speakers:
       - cloud
       - devops
       - tooling
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 7
     firstname: 'Alexander'
@@ -959,6 +1259,10 @@ speakers:
     tags:
       - mobile
       - ci
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 25
     firstname: 'Doan'
@@ -971,6 +1275,10 @@ speakers:
       - '510'
     tags:
       - bigdata
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 44
     firstname: 'Jens'
@@ -983,6 +1291,10 @@ speakers:
       - '515'
     tags:
       - iot
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 40
     firstname: 'Jakub'
@@ -995,6 +1307,10 @@ speakers:
       - '525'
     tags:
       - design patterns
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 66
     firstname: 'Miloš'
@@ -1007,6 +1323,10 @@ speakers:
       - '530'
     tags:
       - android
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 81
     firstname: 'Stanko'
@@ -1020,6 +1340,10 @@ speakers:
     tags:
       - web
       - ruby
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 68
     firstname: 'Nenad'
@@ -1033,6 +1357,10 @@ speakers:
     tags:
       - ci
       - testing
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 11
     firstname: 'Predrag'
@@ -1045,6 +1373,10 @@ speakers:
       - '545'
     tags:
       - agile
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 10
     firstname: 'Anamarija'
@@ -1057,6 +1389,10 @@ speakers:
       - '545'
     tags:
       - agile
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 78
     firstname: 'Robert'
@@ -1071,6 +1407,10 @@ speakers:
       - java
       - cloud
       - microservices
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 94
     firstname: 'Đurađ'
@@ -1083,6 +1423,10 @@ speakers:
       - '560'
     tags:
       - business
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
   -
     sid: 33
     firstname: 'Igor'
@@ -1095,8 +1439,28 @@ speakers:
       - '565'
     tags:
       - business
-
-
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
+  -
+    sid: 95
+    firstname: 'Alex'
+    lastname: 'King'
+    pageurl: 'alex-king'
+    url: ''
+    photo: 'Alex King.jpg'
+    company: 'Interventure'
+    talk:
+      - '570'
+    tags:
+      - Infrastructure
+      - Cloud
+      - Microservices
+    answers:
+      - 'Odgovor 1'
+      - 'Odgovor 2'
+      - 'Odgovor 3'
 
 
 
@@ -2486,6 +2850,22 @@ talks:
       - "TBA"
     long:
       - "TBA"
+
+  -
+    tid: 570
+    sid: 95
+    title: 'Discovering DevOps: A 10k Foot View of Gogo DevOps'
+    type: 'talk'
+    day:
+    track:
+    slot:
+    short:
+      - "A year ago, a single application change would take days or weeks to deploy and involve many hand-offs and inevitable mistakes. Now, we’re doing about ten application deployments to production a day, and far more to the non-production environments. Come along and learn about our journey to becoming an effective DevOps organization, and the pitfalls we learned along the way."
+    long:
+      - "Every organization has their own definition of DevOps, and it is important that it is discovered naturally."
+      - "Wherever you are, though, there's a wide range of tasks and activities that need to be addressed on a day to day basis that drive things like site reliability, release engineering, organizational efficiency, and much more. By instituting a DevOps culture, it's possible to simplify or entirely eliminate many of the Yak Shaving tasks that make safe change hard. There are many approaches to solving these problems but sadly, it's not as simple as saying 'DevOps' three times, or installing a particular piece of software, or sending all of your developers away to a class."
+      - "At Gogo, we found that DevOps was a culture shift, and we embraced the paradigm where responsibility for successful change is placed directly in the hands of developers."
+      - "During this session, Alex King will talk about Gogo's journey to this new world and will how our tooling, organization, and outlook have evolved over time. Join us to hear about the lessons we learned along the way."
 
 scheduledata: 1
 
