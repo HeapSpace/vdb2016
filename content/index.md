@@ -168,6 +168,22 @@ speakers:
       - "Back in the 90s, with my first family PC, and discovering for the first time that I could call my cousin's computer with Command & Conquer. It had a multiplayer option where you literally entered a phone number to dial another computer. It was my first PC, and before my house had proper internet. I remember being amazed at seeing what he typed appear on my screen. We played it all night, and every night for a week or so, until the phone bill arrived. I still remember the look on my father's face."
       - "With more and more congestion in cities, and property prices spiralling seemingly endlessly upwards in tech hotspots (San Francisco just being one example), I see remote work becoming a mainstream thing. Internet speeds are now fast enough to make video chat a more than viable option, and the tools available for working remotely are far more mature these days. It makes sense for the employee, with less commutes and less distractions when working, but it also makes sense for employers - they can look outside their immediate area in the search for the best talent."
       - "Don't be afraid to ask questions for fear of appearing dumb. Asking questions is the smartest thing you can do, especially in your early years as a developer. Keep asking until you understand what you want to know. In the software industry, this is the fastest way to learn - more so than in other industries."
+#  -
+#    sid: 13
+#    firstname: 'Erlich'
+#    lastname: 'Bachman'
+#    pageurl: 'erlich-bachman'
+#    url: 'https://twitter.com/erlichbachman'
+#    photo: 'Erlich Bachman.jpg'
+#    company: 'Pied Piper'
+#    talk:
+#      - ''
+#    tags:
+#      - business
+#    answers:
+#      - ""
+#      - ""
+#      - ""
   -
     sid: 86
     firstname: 'Viktor'
