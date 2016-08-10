@@ -7,3 +7,5 @@ tmp
 crash.log
 .idea
 vdb.bat
+content/vdb16speakers.json
+content/vdb16talks.json
