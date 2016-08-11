@@ -28,6 +28,14 @@
 		color: $brand-primary;
 		opacity: 0.75;
 	}
+	&.coffee {
+		position: absolute;
+		top: 0;
+		right: 0;
+		opacity: 0.2;
+		font-size: 3.65em;
+		color: $brand-primary;
+	}
 }
 
 $devicons:	(git "\e602"),

@@ -26,11 +26,27 @@
     }
   }
   .schedule-item {
+    position: relative;
     align-items: center;
     justify-content: center;
     padding: 0 10px;
     background-color: rgba($brand-secondary, 0.075);
     border-top: 1px solid $brand-primary;
+    .duration {
+      color: $brand-secondary;
+    }
+    &.lunch {
+      background-color: $green;
+      .duration {
+        color: $white;
+      }
+    }
+    &.chillout {
+      background-color: $blue;
+      .duration {
+        color: $white;
+      }
+    }
     @media (max-width: $screen-lg) {
       border-top: 1px solid rgba($brand-secondary, 0.5);
     }

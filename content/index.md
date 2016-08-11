@@ -168,22 +168,22 @@ speakers:
       - "Back in the 90s, with my first family PC, and discovering for the first time that I could call my cousin's computer with Command & Conquer. It had a multiplayer option where you literally entered a phone number to dial another computer. It was my first PC, and before my house had proper internet. I remember being amazed at seeing what he typed appear on my screen. We played it all night, and every night for a week or so, until the phone bill arrived. I still remember the look on my father's face."
       - "With more and more congestion in cities, and property prices spiralling seemingly endlessly upwards in tech hotspots (San Francisco just being one example), I see remote work becoming a mainstream thing. Internet speeds are now fast enough to make video chat a more than viable option, and the tools available for working remotely are far more mature these days. It makes sense for the employee, with less commutes and less distractions when working, but it also makes sense for employers - they can look outside their immediate area in the search for the best talent."
       - "Don't be afraid to ask questions for fear of appearing dumb. Asking questions is the smartest thing you can do, especially in your early years as a developer. Keep asking until you understand what you want to know. In the software industry, this is the fastest way to learn - more so than in other industries."
-#  -
-#    sid: 13
-#    firstname: 'Erlich'
-#    lastname: 'Bachman'
-#    pageurl: 'erlich-bachman'
-#    url: 'https://twitter.com/erlichbachman'
-#    photo: 'Erlich Bachman.jpg'
-#    company: 'Pied Piper'
-#    talk:
-#      - ''
-#    tags:
-#      - business
-#    answers:
-#      - ""
-#      - ""
-#      - ""
+  -
+    sid: 13
+    firstname: 'Erlich'
+    lastname: 'Bachman'
+    pageurl: 'erlich-bachman'
+    url: 'https://twitter.com/erlichbachman'
+    photo: 'Erlich Bachman.jpg'
+    company: 'Pied Piper'
+    talk:
+      - '323'
+    tags:
+      - business
+    answers:
+      - ""
+      - ""
+      - ""
   -
     sid: 86
     firstname: 'Viktor'
@@ -1489,6 +1489,42 @@ speakers:
 talks:
 
   -
+    tid: 101
+    sid:
+    title: 'Keynote'
+    type: 'talk'
+    day: 1
+    track: 2
+    slot: 1
+    short:
+      - "TBA"
+    long:
+      - "TBA"
+  -
+    tid: 102
+    sid:
+    title: 'Keynote'
+    type: 'talk'
+    day: 1
+    track: 3
+    slot: 1
+    short:
+      - "TBA"
+    long:
+      - "TBA"
+  -
+    tid: 103
+    sid:
+    title: 'Keynote'
+    type: 'talk'
+    day: 1
+    track: 4
+    slot: 1
+    short:
+      - "TBA"
+    long:
+      - "TBA"
+  -
     tid: 100
     sid: 79
     title: 'Keynote'
@@ -1506,9 +1542,9 @@ talks:
     sid: 9
     title: 'DevOps on AWS: Deep Dive on Continuous Delivery and the AWS Developer Tools'
     type: 'talk'
-    day: 2
-    track: 1
-    slot: 2
+    day: 1
+    track: 2
+    slot: 3
     short:
       - "Continues delivery in the cloud, learn how you can automate build and test processes, that allow you to continuously deploy all code changes."
     long:
@@ -1519,9 +1555,9 @@ talks:
     sid: 43
     title: 'Faster and more efficient processes by combining BPM and Mobile'
     type: 'talk'
-    day: 1
-    track: 4
-    slot: 2
+    day:
+    track:
+    slot:
     short:
       - "A lot has happened in the area of mobile since Apple kicked off the revolution by announcing the first iPhone. However, the overall mobile market still has to be considered as young and especially unstandardized."
     long:
@@ -1534,8 +1570,8 @@ talks:
     title: 'Open stack for building end-to-end IoT solutions'
     type: 'talk'
     day: 1
-    track: 3
-    slot: 1
+    track: 1
+    slot: 5
     short:
       - "There's a lot of pieces needed to build a scalable IoT solution. Today most of these components exists as open source projects, which makes it easier than ever to connect large number devices to the cloud. This session will describe architecture and components of the scalable IoT solutions and open source projects that can be used to build them."
     long:
@@ -1546,9 +1582,9 @@ talks:
     sid: 69
     title: 'Spring Boot and Kotlin, a match made in Heaven'
     type: 'talk'
-    day: 1
-    track: 4
-    slot: 3
+    day:
+    track:
+    slot:
     short:
       - "TBA"
     long:
@@ -1634,9 +1670,9 @@ talks:
     sid: 86
     title: 'Self-Healing Systems'
     type: 'talk'
-    day:
-    track:
-    slot:
+    day: 1
+    track: 2
+    slot: 2
     short:
       - "We'll explore practices and tools required to set up fully autonomous self-healing systems capable of both reactive recuperation from failures and proactive predictions of steps that should be taken to prevent failures before they happen."
     long:
@@ -1767,9 +1803,9 @@ talks:
     sid: 15
     title: 'Angular, Typescript and RequireJS: The great alltogether'
     type: 'talk'
-    day:
-    track:
-    slot:
+    day: 1
+    track: 1
+    slot: 3
     short:
       - "When you are doing front-end web development, three technologies are currently very hot! On top of that they seem to be made for each other."
     long:
@@ -2164,13 +2200,26 @@ talks:
       - "Kubernetes is an open-source project, primarily developed by Google, which provides a solution for orchestrating, or scheduling, containers in a cluster. It defines several paradigms on top of just the container distribution, like pods, services, labels and controllers which makes the deployment and the operation of your applications much more simpler. This talk will cover the basic concepts behind Kubernetes, and a live demo will show how to operate your cluster and deploy your apps on it."
 
   -
-    tid: 325
-    sid: 77
-    title: 'Event Sourcing in Microservices'
+    tid: 323
+    sid: 13
+    title: 'Dont be the guy that always asks - what if?'
     type: 'talk'
     day:
     track:
     slot:
+    short:
+      - "From Hacker Hostel to the TechCrunch Disrupt; from incubation to middle-out compression; learn the secrets of investment and major capitals."
+    long:
+      - "Having conquered the worlds of app incubation (Palo Alto's Hacker Hostel), casual same-sex dating (Grindr), tech journalism (Code/Rag), and first but not least social media aggregation and management software for commercial airlines (Aviato), Erlich has purchased a controlling stake in the ground-breaking compression company Pied Piper, which he himself incubated like the tiny, featherless, hydrocephalic preemie of a chick that it was up through its current pivot, to what will no doubt be a powerhouse in the video-chat field. To the Skypes of the world say I, 'Look on my works, ye Mighty, and despair!'"
+
+  -
+    tid: 325
+    sid: 77
+    title: 'Event Sourcing in Microservices'
+    type: 'talk'
+    day: 1
+    track: 2
+    slot: 4
     short:
       - "Why do we build applications based on microservices? To gain flexibility and resilience - that’s what everybody tells us. But building and application with a lot of microservices leads to a highly distributed system - and distribution hurts!"
     long:
@@ -2291,9 +2340,9 @@ talks:
     sid: 49
     title: 'Beat Aliens with Akka Cluster'
     type: 'talk'
-    day:
-    track:
-    slot:
+    day: 1
+    track: 1
+    slot: 6
     short:
       - "Computer game run with 3 x Raspberry Pi, 1 x Router, 1x Laptop, => trying to kill game by disconnecting network cables or power source, testing if application is self healing"
     long:
@@ -2649,9 +2698,9 @@ talks:
     sid: 84
     title: 'Augmented reality: behind the scene'
     type: 'talk'
-    day:
-    track:
-    slot:
+    day: 1
+    track: 1
+    slot: 4
     short:
       - "Have you ever wondered what is the sorcery behind augmented reality? What it takes to transform 'ordinary' reality into something magical? Let’s take a peek behind the curtains and find out all the nuts and bolts it's made of and what makes it tick... well, on a fundamental level at least."
     long:
@@ -2685,9 +2734,9 @@ talks:
     sid: 12
     title: 'Creating a cloud native development environment'
     type: 'talk'
-    day:
-    track:
-    slot:
+    day: 1
+    track: 1
+    slot: 2
     short:
       - "Continuous integration and delivery has evolved a lot during the last couple of years through containers and the different container schedulers and orchestrators."
     long:
@@ -2833,9 +2882,9 @@ talks:
     sid: 78
     title: 'Micro-services – one year later – tooling and libraries to bring micro-service designs into your organization'
     type: 'talk'
-    day:
-    track:
-    slot:
+    day: 1
+    track: 1
+    slot: 7
     short:
       - "Robert joined Gogo as SVP of Platform and Services, after almost 4 years at Netflix working on Cloud Services. Using the skills and knowledge he gained at Netflix he’s moving gogo to embrace DevOps and Micro-services on Java based architecture."
     long:
