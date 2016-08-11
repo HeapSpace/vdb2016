@@ -39,9 +39,9 @@
     <h6 class="break"><%= item_break[:name] %></h6>
     <div class="duration"><%= breakduration.to_s %> min</div>
     <% if item_break[:name] == 'lunch' %>
-      <i class="fa fa-plus-circle fa-2x plus-icon"></i>
       <% if !talk['talkspeakers'].to_s.empty? %>
         <% talk['talkspeakers'].flatten(1).each do |speaker| %>
+          <i class="fa fa-plus-circle fa-2x plus-icon"></i>
           <h6 class="bold yellow"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h6>
         <% end %>
       <% end %>
@@ -49,7 +49,7 @@
     <% end %>
     <% if item_break[:name] == 'coffee break' %><span class="devicons devicons-java coffee"></span><% end %>
     <% if item_break[:name] == 'lunch' %><i class="fa fa-cutlery lunch-icon"></i><% end %>
-    <% if item_break[:name] == 'chill out' %><i class="fa fa-music chill-icon"></i><% end %>
+    <% if item_break[:name] == 'chill out' %><i class="fa fa-music chill-icon eee"></i><% end %>
   </div>
   <% end %>
 <%
