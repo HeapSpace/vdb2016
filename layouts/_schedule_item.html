@@ -28,6 +28,11 @@
   <% end %>
   <% if item_break[:dur] > 0 %>
   <div class="schedule-item <% if item_break[:name] == 'lunch' %> lunch<% end %><% if item_break[:name] == 'chill out' %> chillout<% end %>" style="height: <%= item_break[:dur]*6 %>px">
+    <% if item_break[:name] == 'lunch'
+      if !talk['title'].to_s.empty? %>
+        <h4 class=""><%= item_slot[:time] %></h4>
+      <% end
+    end %>
     <h6 class="break"><%= item_break[:name] %></h6>
     <div class="duration"><%= item_break[:dur].to_s %> min</div>
     <% if item_break[:name] == 'lunch' %>
@@ -43,6 +48,7 @@
     <% end %>
     <% if item_break[:name] == 'coffee break' %><span class="devicons devicons-java coffee"></span><% end %>
     <% if item_break[:name] == 'lunch' %><i class="fa fa-cutlery lunch-icon"></i><% end %>
+    <% if item_break[:name] == 'chill out' %><i class="fa fa-music chill-icon"></i><% end %>
   </div>
   <% end %>
 <%
