@@ -47,6 +47,9 @@
         color: $white;
       }
     }
+    &.coffee {
+      background-color: rgba($brown, 0.75);
+    }
     &.chillout {
       background-color: $green;
       .duration {
@@ -122,7 +125,7 @@
   .indicator {
     position: absolute;
     top: 49px;
-    width: 1060px;
+    width: 1080px;
     right: 0px;
     border-top: 3px dotted $brand-secondary;
     opacity: 0.15;

@@ -10,6 +10,11 @@
   else
     talkduration = item_slot[:dur]
   end
+  if !talk['break'].to_s.empty?
+    breakduration = talk['break']
+  else
+    breakduration = item_break[:dur]
+  end
 
 %>
   <% if talk['type'] != 'lightning' %>
@@ -17,31 +22,27 @@
     <% if !talk['title'].to_s.empty? %><h4 class=""><%= item_slot[:time] %></h4><% end %>
     <% if !talk['talkspeakers'].to_s.empty? %>
       <% talk['talkspeakers'].flatten(1).each do |speaker| %>
-        <% if !speaker['pageurl'].to_s.empty? %><a href="/speakers/<%= speaker['pageurl'] %>/"><% end %>
-          <h6 class="bold yellow"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h6>
-        <% if !speaker['pageurl'].to_s.empty? %></a><% end %>
+        <h6 class="bold yellow"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h6>
       <% end %>
     <% end %>
     <a href="/talk/<%= talk['tid'] %>/"><h6 class=""><%= talk['title'] %></h6></a>
     <% if !talk['title'].to_s.empty? %><div class="brown"><%= talkduration.to_s %> min</div><% end %>
   </div>
   <% end %>
-  <% if item_break[:dur] > 0 %>
-  <div class="schedule-item <% if item_break[:name] == 'lunch' %> lunch<% end %><% if item_break[:name] == 'chill out' %> chillout<% end %>" style="height: <%= item_break[:dur]*6 %>px">
+  <% if breakduration > 0 && talk['type'] != 'empty' %>
+  <div class="schedule-item<% if item_break[:name] == 'lunch' %> lunch<% end %><% if item_break[:name] == 'chill out' %> chillout<% end %><% if item_break[:name] == 'coffee break' || item_break[:name] == 'break' %> coffee<% end %>" style="height: <%= breakduration*6 %>px">
     <% if item_break[:name] == 'lunch'
       if !talk['title'].to_s.empty? %>
         <h4 class=""><%= item_slot[:time] %></h4>
       <% end
     end %>
     <h6 class="break"><%= item_break[:name] %></h6>
-    <div class="duration"><%= item_break[:dur].to_s %> min</div>
+    <div class="duration"><%= breakduration.to_s %> min</div>
     <% if item_break[:name] == 'lunch' %>
       <i class="fa fa-plus-circle fa-2x plus-icon"></i>
       <% if !talk['talkspeakers'].to_s.empty? %>
         <% talk['talkspeakers'].flatten(1).each do |speaker| %>
-          <% if !speaker['pageurl'].to_s.empty? %><a href="/speakers/<%= speaker['pageurl'] %>/"><% end %>
-            <h6 class="bold yellow"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h6>
-          <% if !speaker['pageurl'].to_s.empty? %></a><% end %>
+          <h6 class="bold yellow"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h6>
         <% end %>
       <% end %>
       <a href="/talk/<%= talk['tid'] %>/"><h6 class=""><%= talk['title'] %></h6></a>
