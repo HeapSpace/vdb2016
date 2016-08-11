@@ -1490,6 +1490,7 @@ talks:
   -
     tid: 41
     type: 'talk'
+    empty: 1
     day: 2
     track: 3
     slot: 2
@@ -1497,6 +1498,7 @@ talks:
   -
     tid: 42
     type: 'talk'
+    empty: 1
     day: 2
     track: 4
     slot: 8
@@ -1504,37 +1506,49 @@ talks:
   -
     tid: 43
     type: 'talk'
+    empty: 1
     day: 3
     track: 4
     slot: 1
 
   -
     tid: 51
-    type: 'empty'
+    empty: 1
     day: 1
     track: 0
     slot: 1
     duration: 75
+    break: 0
 
   -
     tid: 53
-    type: 'empty'
+    empty: 1
     day: 1
     track: 0
-    slot: 7
-    duration: 180
+    slot: 8
+    duration: 120
 
   -
     tid: 55
-    type: 'empty'
+    empty: 1
     day: 3
     track: 0
     slot: 1
     duration: 60
+    break: 0
+
+  -
+    tid: 56
+    empty: 1
+    day: 2
+    track: 0
+    slot: 8
+    duration: 40
 
   -
     tid: 57
     type: 'talk'
+    empty: 1
     day: 3
     track: 4
     slot: 4
@@ -1542,6 +1556,7 @@ talks:
   -
     tid: 60
     type: 'talk'
+    empty: 1
     day: 3
     track: 4
     slot: 2
@@ -1549,6 +1564,7 @@ talks:
   -
     tid: 62
     type: 'talk'
+    empty: 1
     day: 3
     track: 4
     slot: 5
@@ -1556,6 +1572,7 @@ talks:
   -
     tid: 65
     type: 'talk'
+    empty: 1
     day: 3
     track: 4
     slot: 8
@@ -2470,6 +2487,7 @@ talks:
     track: 0
     slot: 8
     duration: 480
+    time: '10:00'
     short:
       - "Lean Poker is a day long coding challenge that's not only fun, but also provides a safe environment in which you can practice continuous deployment and fast delivery of valuable software."
     long:
@@ -2657,8 +2675,9 @@ talks:
     type: 'workshop'
     day: 2
     track: 0
-    slot: 8
-    duration: 280
+    slot: 5
+    duration: 240
+    break: 0
     short:
       - "This is the second part of the introduction to actors. Here we do a hands on session to learn to take advantage of using actors to develop concurrent and distributed fault tolerant systems. We will teach how to use actors properly avoiding the major pitfalls that a lot of novices make on their first approach to the actor based model."
     long:
