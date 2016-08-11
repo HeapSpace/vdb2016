@@ -1418,7 +1418,7 @@ speakers:
     pageurl: 'robert-boxall'
     url: 'https://www.linkedin.com/in/robertboxall'
     photo: 'Robert Boxall.png'
-    company: 'Gogo'
+    company: 'Interventure/Gogo'
     talk:
       - '555'
     tags:
@@ -1468,7 +1468,7 @@ speakers:
     pageurl: 'alex-king'
     url: ''
     photo: 'Alex King.jpg'
-    company: 'Gogo'
+    company: 'Interventure/Gogo'
     talk:
       - '570'
     tags:
@@ -1571,7 +1571,7 @@ talks:
     type: 'talk'
     day: 1
     track: 1
-    slot: 5
+    slot: 6
     short:
       - "There's a lot of pieces needed to build a scalable IoT solution. Today most of these components exists as open source projects, which makes it easier than ever to connect large number devices to the cloud. This session will describe architecture and components of the scalable IoT solutions and open source projects that can be used to build them."
     long:
@@ -1840,9 +1840,9 @@ talks:
     sid: 41
     title: 'Microservices Without Servers'
     type: 'talk'
-    day:
-    track:
-    slot:
+    day: 1
+    track: 2
+    slot: 7
     short:
       - "Developers spend too much time maintaining servers, rather than writing software. Recently, new cloud solutions, known as 'serverless' platforms, allow developers to write microservices without servers. What does a 'serverless' application look like, how do you create one and what are the challenges?"
       - "In this session, we'll introduce the 'serverless' stack, showing developers how to write microservices using these platforms. We'll look at migrating existing applications over to this new stack, common issues and challenges that you need to consider and tools to support serverless development."
@@ -2220,7 +2220,7 @@ talks:
     type: 'talk'
     day: 1
     track: 2
-    slot: 4
+    slot: 5
     short:
       - "Why do we build applications based on microservices? To gain flexibility and resilience - that’s what everybody tells us. But building and application with a lot of microservices leads to a highly distributed system - and distribution hurts!"
     long:
@@ -2244,9 +2244,9 @@ talks:
     sid: 92
     title: 'Scalable Service Architectures'
     type: 'talk'
-    day:
-    track:
-    slot:
+    day: 1
+    track: 2
+    slot: 6
     short:
       - "Service oriented architectures are getting more and more widespread popularity, because of the benefits they offer. They have some design requirements though, a very important one of them is designing services (and their combinations) for scalability and resilience. We at Ustream built a couple of these in the past years and learned a lot about how to do it and what open source tools are available to achieve the goal."
     long:
@@ -2343,7 +2343,7 @@ talks:
     type: 'talk'
     day: 1
     track: 1
-    slot: 6
+    slot: 7
     short:
       - "Computer game run with 3 x Raspberry Pi, 1 x Router, 1x Laptop, => trying to kill game by disconnecting network cables or power source, testing if application is self healing"
     long:
@@ -2500,9 +2500,9 @@ talks:
     sid: 24
     title: 'Sex Lies and Design patterns'
     type: 'lightning'
-    day:
-    track:
-    slot:
+    day: 1
+    track: 1
+    slot: 4
     short:
       - "Almost all in software industry agrees that design patterns are important and beneficial for success of any project. Some regard them as an essential part of ‘good practices”. In a perspective there is something sexy and awesome in reading some code and recognize applied design patterns."
       - "In real situations, one of the things that fall in oblivion and somehow get lost from developers perspective, right after documentation and most probably side by side with tests, are design patterns. Both in design and architecture phase and implementation phase."
@@ -2523,9 +2523,9 @@ talks:
     sid: 37
     title: 'Why are Actors Terrible?'
     type: 'lightning'
-    day:
-    track:
-    slot:
+    day: 1
+    track: 2
+    slot: 4
     short:
       - "This is the first part of the introduction to actors. Here we will cover only the negative side of actors. This presentation is complemented by a workshop which teaches 'proper' actor development. We will be debunking some common myths about the actor model. This talk is intentionally polemical and presents only one side of the story."
     long:
@@ -2701,7 +2701,7 @@ talks:
     type: 'talk'
     day: 1
     track: 1
-    slot: 4
+    slot: 5
     short:
       - "Have you ever wondered what is the sorcery behind augmented reality? What it takes to transform 'ordinary' reality into something magical? Let’s take a peek behind the curtains and find out all the nuts and bolts it's made of and what makes it tick... well, on a fundamental level at least."
     long:
@@ -2777,9 +2777,9 @@ talks:
     sid: 25
     title: 'SASI, Cassandra on the full text search ride!'
     type: 'talk'
-    day:
-    track:
-    slot:
+    day: 1
+    track: 2
+    slot: 8
     short:
       - "Apache Cassandra is a scalable database with high availability features. But they come with severe limitations in term of querying capabilities. Since the introduction of SASI in Cassandra 3.5, the limitations belong to the pass. Now you can create performant indices on your columns as well as benefit from full text search capabilities with the introduction of the new `LIKE %term%` syntax."
     long:
@@ -2885,7 +2885,7 @@ talks:
     type: 'talk'
     day: 1
     track: 1
-    slot: 7
+    slot: 8
     short:
       - "Robert joined Gogo as SVP of Platform and Services, after almost 4 years at Netflix working on Cloud Services. Using the skills and knowledge he gained at Netflix he’s moving gogo to embrace DevOps and Micro-services on Java based architecture."
     long:

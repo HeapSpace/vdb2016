@@ -35,14 +35,20 @@
     .duration {
       color: $brand-secondary;
     }
+    .plus-icon {
+      display: block;
+      margin-top: 15px;
+      color: $white;
+      opacity: 0.25;
+    }
     &.lunch {
-      background-color: $green;
+      background-color: $blue;
       .duration {
         color: $white;
       }
     }
     &.chillout {
-      background-color: $blue;
+      background-color: $green;
       .duration {
         color: $white;
       }
