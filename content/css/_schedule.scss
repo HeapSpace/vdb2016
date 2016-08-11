@@ -26,17 +26,45 @@
     }
   }
   .schedule-item {
+    position: relative;
     align-items: center;
     justify-content: center;
     padding: 0 10px;
     background-color: rgba($brand-secondary, 0.075);
     border-top: 1px solid $brand-primary;
+    .duration {
+      color: $brand-secondary;
+    }
+    .plus-icon {
+      display: block;
+      margin-top: 15px;
+      color: $white;
+      opacity: 0.25;
+    }
+    &.lunch {
+      background-color: $blue;
+      .duration {
+        color: $white;
+      }
+    }
+    &.coffee {
+      background-color: rgba($brown, 0.75);
+    }
+    &.chillout {
+      background-color: $green;
+      .duration {
+        color: $white;
+      }
+    }
     @media (max-width: $screen-lg) {
       border-top: 1px solid rgba($brand-secondary, 0.5);
     }
     h4, h5, h6 {
       line-height: 130%;
       margin-top: 10px;
+    }
+    .break {
+      margin-bottom: 0px;
     }
     .item-content {
       padding: 0px 10px 10px 10px;
@@ -46,25 +74,6 @@
       font-size: 16px;
       text-align: center;
     }
-    &.min15 {
-      height: 100px;
-    }
-    &.min30 {
-      height: 200px;
-    }
-    &.min45 {
-      height: 300px;
-    }
-    &.min60 {
-      height: 400px;
-    }
-    &.min90 {
-      height: 600px;
-    }
-    &.min120 {
-      height: 800px;
-
-       }
     &:last-child {
       border-bottom: 1px solid $brand-primary;
       @media (max-width: $screen-lg) {
@@ -116,7 +125,7 @@
   .indicator {
     position: absolute;
     top: 49px;
-    width: 1060px;
+    width: 1080px;
     right: 0px;
     border-top: 3px dotted $brand-secondary;
     opacity: 0.15;

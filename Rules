@@ -11,6 +11,16 @@ preprocess do
   @items.each do |item|
     if item.key?(:scheduledata)
 
+      json_speakers = item[:speakers]
+      File.open("content/vdb16speakers.json","w") do |f|
+        f.puts json_speakers.to_json.force_encoding("UTF-8")
+      end
+
+      json_talks = item[:talks]
+      File.open("content/vdb16talks.json","w") do |f|
+        f.puts json_speakers.to_json.force_encoding("UTF-8")
+      end
+
       schedule_speakers = item[:speakers]
       schedule_talks = item[:talks]
 
@@ -42,7 +52,7 @@ preprocess do
             talk = schedule_talks.select{ |item| item[:tid] == speaker[:talk].to_i }
             talks << talk
           end
-          @items.create('', {:photo => speaker[:photo], :firstname => speaker[:firstname], :lastname => speaker[:lastname], :url => speaker[:url], :company => speaker[:company], :speakertalks => talks, :tags => speaker[:tags], :layout => '/speaker_page.html'}, '/speakers/'+speaker[:pageurl]+'/index.md')
+          @items.create('', {:photo => speaker[:photo], :firstname => speaker[:firstname], :lastname => speaker[:lastname], :url => speaker[:url], :company => speaker[:company], :speakertalks => talks, :tags => speaker[:tags], :answers => speaker[:answers], :layout => '/speaker_page.html'}, '/speakers/'+speaker[:pageurl]+'/index.md')
         end
       end
 

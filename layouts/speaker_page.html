@@ -27,7 +27,28 @@
 	  <div class="row-centered margin-top-big">
 	    <div class="col-sm-8 col-centered">
 	      <div class="speaker header">
-
+					<% if !@item[:answers][0].to_s.empty? || !@item[:answers][1].to_s.empty? || !@item[:answers][2].to_s.empty? %>
+						<div>
+							<% if !@item[:answers][0].to_s.empty? %>
+								<h5 class="yellow">What’s the craziest thing that happened to you that involves technology?</h5>
+								<div class="speaker-answer">
+									<%= @item[:answers][0] %>
+								</div>
+							<% end %>
+							<% if !@item[:answers][1].to_s.empty? %>
+								<h5 class="yellow margin-top-med">How do you see next 5 years in tech?</h5>
+								<div class="speaker-answer">
+									<%= @item[:answers][1] %>
+								</div>
+							<% end %>
+							<% if !@item[:answers][2].to_s.empty? %>
+								<h5 class="yellow margin-top-med">What would you tell to your younger self?</h5>
+								<div class="speaker-answer last">
+									<%= @item[:answers][2] %>
+								</div>
+							<% end %>
+						</div>
+					<% end %>
 					<div class="brown">
 						<% @item[:speakertalks].flatten(1).each do |t|
 
@@ -44,24 +65,24 @@
 								<i class="fa fa-bolt big-icon"></i>
 								<% end %>
 								<a href="/talk/<%= t[:tid] %>/"><h3 class="title"><%= t[:title] %></h3></a>
-								<div class="text">
+								<!-- <div class="text">
 									<% t[:long].to_a.each do |p| %>
 										<p>
 											<%= p %>
 										</p>
 									<% end %>
-								</div>
-								<div class="tags">
+								</div> -->
+								<!-- <div class="tags">
 									<%  @item[:tags].to_a.each do |tag| %>
 										<span class="tag">
 												<%= tag %>
 										</span>
 									<% end %>
-								</div>
+								</div> -->
 							</div>
 						<%
 							end
-						
+
 						end
 						%>
 					</div>

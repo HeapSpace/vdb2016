@@ -8,15 +8,36 @@
 <body>
 	<%= render '/_header.html'%>
 	<%
-	 @test = ''
+
+		slots = {
+		 1 => [:time => '9:00', :dur => 60],
+		 2 => [:time => '10:15', :dur => 60],
+		 3 => [:time => '11:30', :dur => 60],
+		 4 => [:time => '12:30', :dur => 0],
+		 5 => [:time => '13:20', :dur => 60],
+		 6 => [:time => '14:30', :dur => 60],
+		 7 => [:time => '15:50', :dur => 60],
+		 8 => [:time => '17:00', :dur => 60]
+		}
+
+		breaks = {
+		 1 => [:name => 'coffee break', :dur => 15],
+		 2 => [:name => 'coffee break', :dur => 15],
+		 3 => [:name => '', :dur => 0],
+		 4 => [:name => 'lunch', :dur => 50],
+		 5 => [:name => 'coffee break', :dur => 10],
+		 6 => [:name => 'break', :dur => 20],
+		 7 => [:name => 'coffee break', :dur => 10],
+		 8 => [:name => 'chill out', :dur => 60]
+		}
+
 	%>
 	<div class="main-bg page"></div>
 	<div class="container">
 	  <h1 class="text-center pad-vertical-big">
-	    Want to know more?<br><span class="yellow">FAQ at its finest</span>
+	    Day 2<br><span class="yellow">29. September, 2016</span>
 	  </h1>
-	  <h4 class="text-center plain">VoxxedDays Belgrade 2016 returns bigger and brighter!<br>We can’t wait to start a new, 3-days round<br>of learning and sharing!</h4>
-		<div class="steam-separator"></div>
+	  <h4 class="text-center plain">Registration start at <span class="yellow">7:45</span></h4>
 
 		<div class="schedule-tabs-holder">
 		  <div class="container info-content ">
@@ -32,23 +53,23 @@
 				<div class="row">
 					<div class="col-sm-12 col-md-4 col-lg-2 schedule-track">
 						<h5 class="track-name">Track 1</h5>
-				    <%= render '/_schedule_item.html', :day => 2, :track => 1 %>
+				    <%= render '/_schedule_item.html', :day => 2, :track => 1, :slots => slots, :breaks => breaks %>
 				  </div>
 				  <div class="col-sm-12 col-md-4 col-lg-2 schedule-track">
 						<h5 class="track-name">Track 2</h5>
-				    <%= render '/_schedule_item.html', :day => 2, :track => 2 %>
+				    <%= render '/_schedule_item.html', :day => 2, :track => 2, :slots => slots, :breaks => breaks %>
 				  </div>
 				  <div class="col-sm-12 col-md-4 col-lg-2 schedule-track">
 						<h5 class="track-name">Track 3</h5>
-				    <%= render '/_schedule_item.html', :day => 2, :track => 3 %>
+				    <%= render '/_schedule_item.html', :day => 2, :track => 3, :slots => slots, :breaks => breaks %>
 				  </div>
 				  <div class="col-sm-12 col-md-6 col-lg-2 schedule-track">
 						<h5 class="track-name">Business track</h5>
-				    <%= render '/_schedule_item.html', :day => 2, :track => 4 %>
+				    <%= render '/_schedule_item.html', :day => 2, :track => 4, :slots => slots, :breaks => breaks %>
 				  </div>
 				  <div class="col-sm-12 col-md-6 col-lg-2 schedule-track">
 						<h5 class="track-name">Workshop</h5>
-				    <%= render '/_schedule_item.html', :day => 2, :track => 0 %>
+				    <%= render '/_schedule_item.html', :day => 2, :track => 0, :slots => slots, :breaks => breaks %>
 				  </div>
 				  <div class="col-lg-2 visible-lg schedule-track">
 				    &nbsp;
