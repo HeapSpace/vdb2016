@@ -2211,6 +2211,7 @@ talks:
       - "From Hacker Hostel to the TechCrunch Disrupt; from incubation to middle-out compression; learn the secrets of investment and major capitals."
     long:
       - "Having conquered the worlds of app incubation (Palo Alto's Hacker Hostel), casual same-sex dating (Grindr), tech journalism (Code/Rag), and first but not least social media aggregation and management software for commercial airlines (Aviato), Erlich has purchased a controlling stake in the ground-breaking compression company Pied Piper, which he himself incubated like the tiny, featherless, hydrocephalic preemie of a chick that it was up through its current pivot, to what will no doubt be a powerhouse in the video-chat field. To the Skypes of the world say I, 'Look on my works, ye Mighty, and despair!'"
+      - "In this talk Erlich will share the takeaways from his rich experience; as well some awesome H.T.M.L. practices"
 
   -
     tid: 325
