@@ -1547,8 +1547,7 @@ talks:
 
   -
     tid: 57
-    type: 'talk'
-    empty: 1
+    type: 'lightning'
     day: 3
     track: 4
     slot: 4
@@ -1777,6 +1776,7 @@ talks:
     slot: 1
     duration: 240
     break: 20
+    form: "https://drive.google.com/open?id=1nYAyq1gf3lke9pq32Ht1F8dVVYXUoU7YA2DoLDg0Fus"
     short:
       - "This workshop will go through the whole microservices development lifecycle. We'll start from the very beginning. We'll define and design architecture. From there on we'll move from requirements, technological choices and development environment setup, through coding and testing all the way until the final deployment to production. We won't stop there. Once our new services are up and running we'll see how to maintain them, scale them depending on resource utilization and response time, recuperate them in case of failures and create central monitoring and notifications system. We'll try to balance the need for creative manual work and the need to automate as much of the process as possible."
     long:
@@ -2119,6 +2119,7 @@ talks:
     track: 0
     slot: 2
     duration: 240
+    form: "https://drive.google.com/open?id=1aAfBf2VWcJq0CwgO9tVlbOk2IcEqxZpMqStIcg4qGvk"
     short:
       - "Angular 2 is a revolutionary development platform for creating applications using modern web standards and powered by the Open Source Community following the success of AngularJS."
     long:
@@ -2488,6 +2489,7 @@ talks:
     slot: 8
     duration: 480
     time: '10:00'
+    form: "https://drive.google.com/open?id=1hdCebZsMAo5kr97GAal-BHLzJCwv6CTBdXqjWY868LE"
     short:
       - "Lean Poker is a day long coding challenge that's not only fun, but also provides a safe environment in which you can practice continuous deployment and fast delivery of valuable software."
     long:
@@ -2507,6 +2509,7 @@ talks:
     slot: 6
     duration: 90
     break: 0
+    form: "https://drive.google.com/open?id=16htt906rom7Op5L3V1h3Mq-Wd_e7SV7Zl6rrjm4THFk"
     short:
       - "Happiness at work is one of the 3 most important sources of happiness in life."
       - "You will spend 1/3 of your life at work. If you are unhappy at work, life becomes hell."
@@ -2678,6 +2681,7 @@ talks:
     slot: 5
     duration: 240
     break: 0
+    form: "https://drive.google.com/open?id=17jXfH8Utk12mgIhuYMwboAlfQ1y1QLQdVSkyi6YSOMQ"
     short:
       - "This is the second part of the introduction to actors. Here we do a hands on session to learn to take advantage of using actors to develop concurrent and distributed fault tolerant systems. We will teach how to use actors properly avoiding the major pitfalls that a lot of novices make on their first approach to the actor based model."
     long:

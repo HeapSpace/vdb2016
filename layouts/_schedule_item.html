@@ -19,7 +19,6 @@
     breakduration = talk['break']
   else
     breakduration = item_break[:dur]
-
   end
 
 %>
@@ -32,22 +31,21 @@
       <% end %>
     <% end %>
     <a href="/talk/<%= talk['tid'] %>/"><h6 class=""><%= talk['title'] %></h6></a>
+    <% if !talk['form'].to_s.empty? %><a href="<%= talk['form'] %>" class="btn btn-primary form-link" role="button" target="_blank"><i class="fa fa-check-circle"></i> apply now</a><% end %>
     <% if !talk['title'].to_s.empty? %><div class="brown"><%= talkduration.to_s %> min</div><% end %>
   </div>
   <% end %>
   <% if breakduration > 0 %>
   <div class="schedule-item<% if item_break[:name] == 'lunch' %> lunch<% end %><% if item_break[:name] == 'chill out' %> chillout<% end %><% if item_break[:name] == 'coffee break' || item_break[:name] == 'break' %> coffee<% end %>" style="height: <%= breakduration*6 %>px">
-    <% if item_break[:name] == 'lunch'
-      if !talk['title'].to_s.empty? %>
-        <h4 class=""><%= item_slot[:time] %></h4>
-      <% end
-    end %>
+    <% if item_break[:name] == 'lunch' %>
+      <h4 class=""><%= item_slot[:time] %></h4>
+    <% end %>
     <h6 class="break"><%= item_break[:name] %></h6>
     <div class="duration"><%= breakduration.to_s %> min</div>
     <% if item_break[:name] == 'lunch' %>
       <% if !talk['talkspeakers'].to_s.empty? %>
         <% talk['talkspeakers'].flatten(1).each do |speaker| %>
-          <i class="fa fa-plus-circle fa-2x plus-icon"></i>
+          <% if !talk['title'].to_s.empty? %><i class="fa fa-plus-circle fa-2x plus-icon"></i><% end %>
           <h6 class="bold yellow"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h6>
         <% end %>
       <% end %>
