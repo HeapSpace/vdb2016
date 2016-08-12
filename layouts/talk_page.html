@@ -70,7 +70,10 @@
 					<% end %>
 					</div>
 				</div>
-				<div class="single-talk margin-top-big">
+				<% if !@item[:day].to_s.empty? %>
+					<a class="btn btn-primary blue btn-lg form-link btn-talk-schedule" role="button" href="/schedule/day<%= @item[:day] %>"><i class="fa fa-calendar talk-schedule"></i> go to schedule</a>
+				<% end %>
+				<div class="single-talk margin-top-small">
 					<h4 class="card-title">
 						<span class="yellow bold">Full abstract</span></a>
 					</h4>
