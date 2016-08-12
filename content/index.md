@@ -1526,7 +1526,7 @@ talks:
     day: 1
     track: 0
     slot: 8
-    duration: 120
+    duration: 40
 
   -
     tid: 55
@@ -1610,6 +1610,14 @@ talks:
     day: 3
     track: 4
     slot: 8
+
+  -
+    tid: 75
+    empty: 1
+    day: 1
+    track: 0
+    slot: 3
+    duration: 95
 
   -
     tid: 101
@@ -2136,9 +2144,9 @@ talks:
     sid: 28
     title: 'Building Cross-Platform Apps using Redux with Angular 2'
     type: 'talk'
-    day: 3
-    track: 2
-    slot: 5
+    day: 1
+    track: 3
+    slot: 3
     short:
       - "In this talk we are going to use a basic application to showcase Redux while using Angular 2 across different platforms (web, mobile and desktop)."
     long:
@@ -2152,8 +2160,9 @@ talks:
     type: 'workshop'
     day: 1
     track: 0
-    slot: 2
+    slot: 5
     duration: 240
+    break: 0
     form: "https://drive.google.com/open?id=1aAfBf2VWcJq0CwgO9tVlbOk2IcEqxZpMqStIcg4qGvk"
     short:
       - "Angular 2 is a revolutionary development platform for creating applications using modern web standards and powered by the Open Source Community following the success of AngularJS."
@@ -2541,7 +2550,7 @@ talks:
     type: 'workshop'
     day: 1
     track: 0
-    slot: 6
+    slot: 2
     duration: 90
     break: 0
     form: "https://drive.google.com/open?id=16htt906rom7Op5L3V1h3Mq-Wd_e7SV7Zl6rrjm4THFk"
@@ -3024,9 +3033,9 @@ talks:
     sid: 68
     title: 'Continuous Security Testing - Automating your AppSec Program'
     type: 'talk'
-    day: 1
-    track: 3
-    slot: 3
+    day: 3
+    track: 2
+    slot: 5
     short:
       - "Security testing is imperative in web based software solutions, and seeing as the industry is striving towards the practice of continuous delivery, the need arises to include security testing in that process as much as possible."
     long:
