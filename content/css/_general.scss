@@ -709,8 +709,13 @@ iframe {
       font-size: 180%;
       color: $brand-secondary;
       border: 1px solid $brand-secondary;
-      &.fa-link {
-        padding-top: 10px;
+      &.fa-link:before {
+        top: 3px;
+        position: relative;
+      }
+      &.fa-share-alt:before {
+        top: 1px;
+        position: relative;
       }
       &:hover {
         color: $brand-primary;
@@ -746,8 +751,7 @@ iframe {
     .tag {
       font-size: 90%;
       display: inline-block;
-    	background-color: rgba($brand-secondary, 0.82);
-    	color: #d8cdc5;
+    	background-color: $brand-secondary-dark;
   	  font-size: 14px;
       font-family: "Roboto Slab";
       font-weight: 400;
