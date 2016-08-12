@@ -125,6 +125,10 @@ p {
     right: 0;
     height: 1280px;
   }
+  &.talk {
+    position: static;
+    width: 100%;
+  }
 }
 
 .hotel-offer {
@@ -738,8 +742,8 @@ iframe {
     .tag {
       font-size: 90%;
       display: inline-block;
-    	background-color: rgba($brand-secondary, 0.2);
-    	color: $brand-secondary;
+    	background-color: rgba($brand-secondary, 0.82);
+    	color: #d8cdc5;
   	  font-size: 14px;
       font-family: "Roboto Slab";
       font-weight: 400;
@@ -1121,8 +1125,8 @@ button, a[role="button"] {
       height: 100px;
     }
   }
-  h1 {
-    padding: 210px 0 0 0;
+  h2 {
+    padding: 100px 0 0 0;
   }
 }
 

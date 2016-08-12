@@ -9,7 +9,7 @@
 	<%= render '/_header.html'%>
 
 
-	<div class="container">
+	<div class="container main-bg talk">
 
 	  <div class="row-centered margin-top-huge">
 	    <div class="col-sm-3 col-centered">
@@ -53,6 +53,11 @@
 					</h4> -->
 					<% @item[:talkspeakers].flatten(1).each do |speaker| %>
 					<div class="talk-circle-links pull-right">
+						<a href="https://twitter.com/intent/tweet?
+							text=Woot, Woot!! I'm watching <%= speaker[:firstname] %> <%= speaker[:lastname] %> at VoxxedDays Belgrade 2016
+							&hashtags=vdb16,awesome,tech,conference">
+							<i class="fa fa-share-alt big-icon card"></i>
+						</a>
 						<a href="/speakers/<%= speaker[:pageurl] %>/"><i class="fa fa-user big-icon card"></i></a> <% if !speaker[:url].to_s.empty? then %><a href="<%= speaker[:url] %>" target="_blank"><i class="fa fa-link big-icon card"></i></a><% end %>
 					</div>
 					<% end %>
@@ -92,6 +97,8 @@
 	<div class="info margin-top-huge">
 
 	</div>
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 	<%= render '/_footer.html'%>
 	<%= render '/_bottomscripts.html'%>
