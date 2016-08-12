@@ -7,23 +7,22 @@
 <body>
 	<div class="main-bg home"></div>
 	<%= render '/_header.html'%>
-		<div class="container">
-			<div id="home-mainscreen-holder" class="container">
-				<div class="row row-centered flex">
-			    <div class="col-sm-8 col-centered">
-						<div class="home-logo"></div>
-						<h2 id="home-main-text" class="text-center">
-							Balkan's Most Inspiring<br><span class="yellow">Technology &amp; Entrepreneurship</span><br>Conference
-						</h2>
-						<h3 class="home-date-place bold text-center">
-					    Bel Expo Centar, 28-30th September 2016
-					  </h3>
-					</div>
-			    <div class="col-sm-12 col-centered margin-top-small home-main-buttons">
-						<a href="/tickets/" class="btn btn-primary btn-lg green" role="button"><i class="fa fa-ticket"></i> Get your ticket today!</a>
-						<a href="/lucky/" class="btn btn-primary btn-lg blue" role="button"><i class="fa fa-thumbs-up"></i> Get lucky!</a>
-						<a href="/volunteers/" class="btn btn-primary btn-lg red" role="button"><i class="fa fa-child"></i> Become a volunteer!</a>
-					</div>
+	<div class="container">
+		<div id="home-mainscreen-holder" class="container">
+			<div class="row row-centered flex">
+		    <div class="col-sm-8 col-centered">
+					<div class="home-logo"></div>
+					<h2 id="home-main-text" class="text-center">
+						Balkan's Most Inspiring<br><span class="yellow">Technology &amp; Entrepreneurship</span><br>Conference
+					</h2>
+					<h3 class="home-date-place bold text-center">
+				    Bel Expo Centar, 28-30th September 2016
+				  </h3>
+				</div>
+		    <div class="col-sm-12 col-centered margin-top-small home-main-buttons">
+					<a href="/tickets/" class="btn btn-primary btn-lg green" role="button"><i class="fa fa-ticket"></i> Get your ticket today!</a>
+					<a href="/lucky/" class="btn btn-primary btn-lg blue" role="button"><i class="fa fa-thumbs-up"></i> Get lucky!</a>
+					<a href="/volunteers/" class="btn btn-primary btn-lg red" role="button"><i class="fa fa-child"></i> Become a volunteer!</a>
 				</div>
 			</div>
 		</div>
@@ -117,17 +116,34 @@
 				</div>
 			</div>
 		</div>
-		</div>
 		<div class="steam-separator first_sep"></div>
+
+		<div class="row-centered">
+	    <div class="col-sm-8 col-centered">
+				<h2 class="text-center">
+			    Speakers' <span class="yellow">Spotlight</span>
+			  </h2>
+	      <div class="block-text text-center">
+	        Here's <span class="accent">a sneak peak of what you can expect</span> this year!
+	      </div>
+	    </div>
+	  </div>
+
 		<div class="row-centered margin-top-med">
 	    <div class="col-xs-10 col-sm-3 col-md-2 col-lg-2 col-centered">
-	      <div class="speaker-holder">
+				<div class="speaker">
+					<div class="photo-frame">
+						<div style="background-image: url('/images/speakers/scott-amyx.jpg');"></div>
+					</div>
+				</div>
+	      <!-- <div class="speaker-holder">
 					<img class="frame" src="images/speaker-frame-small.svg" />
 					<div class="speaker-img">
 							<img src="images/speakers/scott-amyx.jpg" data-hover="images/speakers/scott-amyx-h.jpg" />
 					</div>
-	      </div>
-				<br /><br />
+	      </div> -->
+			</div>
+			<div class="col-xs-10 col-sm-9 col-md-6 col-lg-4 col-centered">
 				<div class="block-item speaker">
 					<h3 class="bold plain">Scott Amyx</h3>
 					CEO &nbsp;&nbsp; <span class="yellow">Amyx+McKinsey</span><br />
@@ -135,7 +151,48 @@
 				</div>
 	    </div>
 	  </div>
-		<div class="home-block-grid container">
+
+		<div id="feat-speak" class="row-centered margin-top-small">
+		  <%
+		  get_featured_speakers(['Amazon', 'IBM', 'Google', 'Atlassian', 'Pivotal', 'JetBrains', 'Red Hat', 'SAP', 'Zalando', 'CloudBees']).each do |s|
+		  %>
+		  <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-centered speaker-home">
+		      <div class="speaker">
+		              <div class="photo home" style="background-image: url('../images/speakers/<%= s['photo'] %>')"></div>
+		              <h5 class="yellow">
+		                  <%= s['firstname'] %> <%= s['lastname'] %>
+		              </h5>
+		          <h6 class="accent mb10">
+		              <%= s['company'] %>
+		          </h6>
+		      </div>
+		  </div>
+		  <%
+		  end
+		  %>
+		</div>
+		<div class="info-content margin-top-small">
+			<a href="/speakers/" class="btn btn-primary btn-lg green" role="button">All Speakers</a>
+		</div>
+
+		<div class="steam-separator"></div>
+
+		<h2 class="text-center margin-top-small">
+	    This Year <span class="yellow">Schedule</span>
+	  </h2>
+		<h4 class="text-center "><span class="yellow">Note: </span>Current schedule is subject to change</h4>
+
+		<div class="margin-top-small">
+		  <div class="container info-content">
+			  <a class="btn btn-primary btn-lg blue" role="button" href="/schedule/day1">Day 1 / 28. Sep</a>
+			  <a class="btn btn-primary btn-lg blue" role="button" href="/schedule/day2">Day 2 / 29. Sep</a>
+			  <a class="btn btn-primary btn-lg blue" role="button" href="/schedule/day3">Day 3 / 30. Sep</a>
+			</div>
+			<div>
+				&nbsp;
+			</div>
+		</div>
+		<!-- <div class="home-block-grid container">
 			<div id="speakers" class="row-centered">
 
 				<div class="tagsort-tags-container"></div>
@@ -199,7 +256,7 @@
 				%>
 
 		  </div>
-		</div>
+		</div> -->
 		<%= render '/sponsors-logos.html' %>
 		<div class="steam-separator"></div>
 	</div>
@@ -211,6 +268,14 @@
 	</div>
 	<%= render '/_footer.html'%>
 	<%= render '/_bottomscripts.html'%>
+	<script>
+	$(function() {
+		var divs = $(".speaker-home").get().sort(function(){
+      return Math.round(Math.random())-0.5; //random so we get the right +/- combo
+    }).slice(0,5);
+    $(divs).appendTo(divs[0].parentNode).css('display', 'inline-block');
+	});
+	</script>
 	<div class="cepelin visible-lg">
 	  <img src="/images/cepelin.svg" />
 	</div>

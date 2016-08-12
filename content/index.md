@@ -1492,16 +1492,16 @@ talks:
     type: 'talk'
     empty: 1
     day: 2
-    track: 3
-    slot: 2
+    track: 4
+    slot: 5
 
   -
     tid: 42
     type: 'talk'
     empty: 1
-    day: 2
+    day: 3
     track: 4
-    slot: 8
+    slot: 3
 
   -
     tid: 43
@@ -2105,8 +2105,8 @@ talks:
     title: 'Panel'
     type: 'talk'
     day: 2
-    track: 4
-    slot: 5
+    track: 3
+    slot: 2
     short:
       - ""
     long:
@@ -2117,9 +2117,9 @@ talks:
     sid: 79
     title: 'Panel'
     type: 'talk'
-    day: 3
+    day: 2
     track: 4
-    slot: 3
+    slot: 8
     short:
       - ""
     long:
@@ -2623,7 +2623,7 @@ talks:
     sid: 5
     title: 'Fresh Cup of iOS 10'
     type: 'lightning'
-    day: 1
+    day: 2
     track: 1
     slot: 4
     short:
@@ -2700,7 +2700,7 @@ talks:
     sid: 37
     title: 'Why are Actors Terrible?'
     type: 'lightning'
-    day: 2
+    day: 1
     track: 1
     slot: 4
     short:
