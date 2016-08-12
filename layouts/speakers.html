@@ -38,7 +38,7 @@
 			speakers_raw['speakers'].to_a.each { |s|
 				if !s['firstname'].to_s.empty? && !s['lastname'].to_s.empty?
 			%>
-			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-centered speaker-tags" data-item-tags="<%= s[:tags].to_a.join(', ') %>">
+			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-centered speaker-tags" data-item-tags="<%= s['tags'].to_a.join(', ') %>">
 				<div class="speaker">
 					<% if !s['pageurl'].to_s.empty? then %><a href="/speakers/<%= s['pageurl'] %>/"><% end %>
 						<div class="photo" style="background-image: url('../images/speakers/<%= s['photo'] %>')"></div>
