@@ -69,9 +69,9 @@ speakers:
     tags:
       - iot
     answers:
-      - ""
-      - ""
-      - ""
+      - "A couple of times I wrote a code and it worked right away. I swear it happened :)"
+      - "I see the current trend of connecting and integrating everything, from legacy applications to new devices, continuing and accelerating. It will bring us a lot of opportunity to build great stuff, but will also force us to take IT security more seriously."
+      - "Keep calm and carry on :)"
   -
     sid: 69
     firstname: 'Nicolas'
@@ -215,9 +215,9 @@ speakers:
     tags:
       - metodologies
     answers:
-      - ""
-      - ""
-      - ""
+      - "This is an especially tough one! Probably at the top of the list is the grueling flight testing required when programming my airborne drone to fly autonomously. Since the drone was to operate *fully* autonomously, there was no way to take back control (early on) until the drone completed its flight plan. Since flight testing was done indoors - in our living room - this led to many unfortunate flights that endangered drapes, furniture, & house plants...and even targeted my ever-patient wife and me at times (hazards of being the flight testers!). It was NOT a pretty sight. Fortunately, the drone, living room, & even my marriage survived. :D"
+      - "Exciting! The pace of change and innovation is only increasing, and the future holds so much promise. I can't wait!"
+      - "Avoid vendor-specific, non-open technologies at all cost. Vendor-led is fine if OSS, but lock-in is as real for developers as it is for organizations...and it benefits neither. If a company isn't open to change, openness, and using the "right tool for the job", waste no time, move on *immediately*. And... Relish change! Some complain about the constant and accelerating change in our industry. Don't! It can be exhausting at times to be sure, but the opportunity to continually learn is one that some people never get. Embrace it, enjoy it, be grateful for it. And do it with your whole self! To learn is to grow. :)"
   -
     sid: 82
     firstname: 'Stéphane'
@@ -282,9 +282,9 @@ speakers:
       - vr
       - hw
     answers:
-      - ""
-      - ""
-      - ""
+      - "It can seems trivial, but I'm always astonished by how technologies made possible to interact and socialize with people of different countries and cultures. If I think for a moment about how many people I've met virtually (and then, sometimes, even personally)...I'm blown away. It's impressive how much I've shared, learned and build thanks to tech with people geographically thousands miles away from me."
+      - "In my field (VR) you can't predict which hardware/software/applications will be invented in the next 6 months, for this reason I don't have any answer to this question. But one thing is sure: 5 years for tech are not 5 years for anything else."
+      - "Feed your passion and don't be scared to take unconventional paths."
   -
     sid: 8
     firstname: 'Alexey'
@@ -676,9 +676,9 @@ speakers:
       - android
       - mobile
     answers:
-      - ""
-      - ""
-      - ""
+      - "The craziest thing that happened would be when I worked on a new project and did a lot of planing and development and everything works flawlessly from the first try so after few hours of admiring it I said: "Ok, next ...""
+      - "IoT has come into our everyday lives and I would like to be involved in creating and developing some kind of device which will bring us something good to our everyday life."
+      - "Invest your time to develop your own projects and do not waste time on pursuing career."
   -
     sid: 73
     firstname: 'Pance'
@@ -1472,13 +1472,13 @@ speakers:
     talk:
       - '570'
     tags:
-      - Infrastructure
-      - Cloud
-      - Microservices
+      - infrastructure
+      - cloud
+      - microservices
     answers:
-      - ""
-      - ""
-      - ""
+      - "It’s tech, so there’s no shortage of crazy, right. Probably the most memorable, though, was the day in 1993 when my boss walked over with a tarball containing a copy of the Mosaic browser. The change from newsgroups, telnet, and email was just insanely revolutionary."
+      - "Take a look at how the world has changed over the past five years, and compare it with how technology changed the five years previously. The rate of change is accelerating at an incredible pace, and not all of the pivotal technologies that will get us there have been invented yet. The predictable stuff like cloud and IoT isn’t really worthy of note at this point.  For me, it’s more about our ability to react to changes and our outlook on the world than any specific new technologies per se, and I strongly believe that organizations that think this way will win over those that don’t."
+      - "Younger Alex, you should trust yourself more: don’t wait for acceptance from others."
 
 
 
@@ -1706,7 +1706,7 @@ talks:
     short:
       - "There's a lot of pieces needed to build a scalable IoT solution. Today most of these components exists as open source projects, which makes it easier than ever to connect large number devices to the cloud. This session will describe architecture and components of the scalable IoT solutions and open source projects that can be used to build them."
     long:
-      - "The session will start by covering the general architecture of end-to-end IoT systems and describe in more details the role of every component. Next, it will dig deeper into all the components and explain open source projects that implement them. For example, we will see what are field gateways and how Eclipse Kura project implements those functionalities. IoT server connector's role will be described next and we'll see how Eclipse Hono helps connecting devices to the cloud. Finally, we'll examine an architecture of the IoT Cloud and see what it takes to handle and manage large number of devices. We'll also see how IoT cloud will be implemented in the upcoming open source project (which should be public by the time of the session). After this session, you'll have the big picture of how to connect devices to the cloud in scalable way and what open source projects to use to achieve that."
+      - "The session will start by covering the general architecture of end-to-end IoT systems and describe in more details the role of every component. Next, it will dig deeper into all the components and explain open source projects that implement them. For example, we will see what are field gateways and how Eclipse Kura project implements those functionalities. IoT server connector's role will be described next and we'll see how Eclipse Hono helps connecting devices to the cloud. Finally, we'll examine an architecture of the IoT Cloud and see what it takes to handle and manage large number of devices. We’ll see how all IoT cloud concepts are defined and implemented in Eclipse Kapua project.After this session, you'll have the big picture of how to connect devices to the cloud in scalable way and what open source projects to use to achieve that."
 
   -
     tid: 125
