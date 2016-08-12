@@ -30,6 +30,10 @@ p {
         width: 100%;
       }
     }
+    &.about-fix {
+      position: relative;
+      top: 25px;
+    }
 }
 .col-centered {
     display:inline-block;
