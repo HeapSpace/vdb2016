@@ -63,6 +63,13 @@ $(document).ready(function() {
     TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom"});
     var tweenminutes = TweenMax.to($sclockminutes, 0.1, {rotation: 360*10,  ease:Linear.easeNone, transformOrigin: "center bottom"});
     var tweenhours = TweenMax.to($sclockhours, 0.1, {rotation: 300+270, ease:Linear.easeNone, transformOrigin: "center bottom"});
+    var addflip = function(){
+      $('.cepelin').addClass('flip');
+    }
+    var removeflip = function(){
+      $('.cepelin').removeClass('flip');
+    }
+    var cepelinmove = TweenMax.to(".cepelin", 10, {left: winwidth, ease:Linear.easeNone, onStart: removeflip, onComplete: addflip});
 
     if (winwidth > 1200) {
 
@@ -79,6 +86,13 @@ $(document).ready(function() {
       //.setTween(tween)
       .setPin('.s-clock')
       .addTo(controller);
+
+
+      new ScrollMagic.Scene({triggerElement: "#cepelin-trigger"})
+      //.setTween(tween)
+      .setTween(cepelinmove)
+      .addTo(controller);
+
 
     } else {
       $(".schedule-item").each(function() {
