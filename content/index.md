@@ -217,7 +217,7 @@ speakers:
     answers:
       - "This is an especially tough one! Probably at the top of the list is the grueling flight testing required when programming my airborne drone to fly autonomously. Since the drone was to operate *fully* autonomously, there was no way to take back control (early on) until the drone completed its flight plan. Since flight testing was done indoors - in our living room - this led to many unfortunate flights that endangered drapes, furniture, & house plants...and even targeted my ever-patient wife and me at times (hazards of being the flight testers!). It was NOT a pretty sight. Fortunately, the drone, living room, & even my marriage survived. :D"
       - "Exciting! The pace of change and innovation is only increasing, and the future holds so much promise. I can't wait!"
-      - "Avoid vendor-specific, non-open technologies at all cost. Vendor-led is fine if OSS, but lock-in is as real for developers as it is for organizations...and it benefits neither. If a company isn't open to change, openness, and using the "right tool for the job", waste no time, move on *immediately*. And... Relish change! Some complain about the constant and accelerating change in our industry. Don't! It can be exhausting at times to be sure, but the opportunity to continually learn is one that some people never get. Embrace it, enjoy it, be grateful for it. And do it with your whole self! To learn is to grow. :)"
+      - "Avoid vendor-specific, non-open technologies at all cost. Vendor-led is fine if OSS, but lock-in is as real for developers as it is for organizations...and it benefits neither. If a company isn't open to change, openness, and using the 'right tool for the job', waste no time, move on *immediately*. And... Relish change! Some complain about the constant and accelerating change in our industry. Don't! It can be exhausting at times to be sure, but the opportunity to continually learn is one that some people never get. Embrace it, enjoy it, be grateful for it. And do it with your whole self! To learn is to grow. :)"
   -
     sid: 82
     firstname: 'Stéphane'
@@ -676,7 +676,7 @@ speakers:
       - android
       - mobile
     answers:
-      - "The craziest thing that happened would be when I worked on a new project and did a lot of planing and development and everything works flawlessly from the first try so after few hours of admiring it I said: "Ok, next ...""
+      - "The craziest thing that happened would be when I worked on a new project and did a lot of planing and development and everything works flawlessly from the first try so after few hours of admiring it I said: 'Ok, next ...'"
       - "IoT has come into our everyday lives and I would like to be involved in creating and developing some kind of device which will bring us something good to our everyday life."
       - "Invest your time to develop your own projects and do not waste time on pursuing career."
   -
