@@ -1,6 +1,14 @@
 <%
 
-  get_schedule_data(@day, @track).each do |talk|
+  alltalks = get_schedule_data(@day, @track)
+
+  lightnings = alltalks.select{ |item| item['type'] == 'lightning' }
+
+  alltalks = alltalks.group_by{|r| r['slot']}.map do |k, v|
+    v.inject({}) { |r, h| r.merge(h){ |key, o, n| o || n } }
+  end
+
+  alltalks.each do |talk|
 
   item_slot = @slots[talk['slot'].to_i].reduce(:merge)
   item_break = @breaks[talk['slot'].to_i].reduce(:merge)
@@ -42,18 +50,20 @@
     <% end %>
     <h6 class="break"><%= item_break[:name] %></h6>
     <div class="duration"><%= breakduration.to_s %> min</div>
-    <% if item_break[:name] == 'lunch' %>
-      <% if !talk['talkspeakers'].to_s.empty? %>
-        <% talk['talkspeakers'].flatten(1).each do |speaker| %>
-          <% if !talk['title'].to_s.empty? %><i class="fa fa-plus-circle fa-2x plus-icon"></i><% end %>
-          <h6 class="bold yellow"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h6>
+    <% if item_break[:name] == 'lunch'
+
+        lightnings.each do |lightning|
+          if !lightning['talkspeakers'].to_s.empty? %>
+        <% lightning['talkspeakers'].flatten(1).each do |speaker| %>
+          <h6 class="lightning yellow"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h6>
         <% end %>
       <% end %>
-      <a href="/talk/<%= talk['tid'] %>/"><h6 class=""><%= talk['title'] %></h6></a>
-    <% end %>
+      <a href="/talk/<%= talk['tid'] %>/"><h6 class="lightning  "><%= lightning['title'] %></h6></a>
+    <% end
+    end %>
     <% if item_break[:name] == 'coffee break' %><span class="devicons devicons-java coffee"></span><% end %>
     <% if item_break[:name] == 'lunch' %><i class="fa fa-cutlery lunch-icon"></i><% end %>
-    <% if item_break[:name] == 'chill out' %><i class="fa fa-music chill-icon"></i><% end %>
+    <% if item_break[:name] == 'chill out' %><i class="fa fa-music chill-icon aaa"></i><% end %>
   </div>
   <% end %>
 <%

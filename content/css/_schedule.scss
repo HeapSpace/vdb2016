@@ -41,6 +41,13 @@
       color: $white;
       opacity: 0.25;
     }
+    .lightning {
+      font-size: 14px;
+      margin: 5px 0;
+      &.yellow {
+        padding-top: 15px;
+      }
+    }
     &.lunch {
       background-color: $blue;
       .duration {

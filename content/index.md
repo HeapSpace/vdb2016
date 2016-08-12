@@ -1553,6 +1553,41 @@ talks:
     slot: 4
 
   -
+    tid: 70
+    type: 'lightning'
+    day: 3
+    track: 3
+    slot: 4
+
+  -
+    tid: 67
+    type: 'lightning'
+    day: 1
+    track: 3
+    slot: 4
+
+  -
+    tid: 66
+    type: 'lightning'
+    day: 1
+    track: 4
+    slot: 4
+
+  -
+    tid: 68
+    type: 'lightning'
+    day: 2
+    track: 3
+    slot: 4
+
+  -
+    tid: 69
+    type: 'lightning'
+    day: 2
+    track: 4
+    slot: 4
+
+  -
     tid: 60
     type: 'talk'
     empty: 1
@@ -1578,7 +1613,7 @@ talks:
 
   -
     tid: 101
-    sid:
+    sid: 79
     title: 'Keynote'
     type: 'talk'
     day: 1
@@ -1590,7 +1625,7 @@ talks:
       - "TBA"
   -
     tid: 102
-    sid:
+    sid: 79
     title: 'Keynote'
     type: 'talk'
     day: 1
@@ -1602,7 +1637,7 @@ talks:
       - "TBA"
   -
     tid: 103
-    sid:
+    sid: 79
     title: 'Keynote'
     type: 'talk'
     day: 1
@@ -2619,7 +2654,7 @@ talks:
     title: 'Stop wasting time NOT writing tests'
     type: 'lightning'
     day: 1
-    track: 2
+    track: 1
     slot: 4
     short:
       - "I go mad when I hear: 'We have no time for tests'. Learn why that statement is so wrong and how to make tests a 'must have' in your workflow"
@@ -2631,10 +2666,10 @@ talks:
   -
     tid: 425
     sid: 24
-    title: 'Sex Lies and Design patterns'
+    title: 'Sex, Lies and Design patterns'
     type: 'lightning'
     day: 3
-    track: 2
+    track: 1
     slot: 4
     short:
       - "Almost all in software industry agrees that design patterns are important and beneficial for success of any project. Some regard them as an essential part of ‘good practices”. In a perspective there is something sexy and awesome in reading some code and recognize applied design patterns."
@@ -2657,7 +2692,7 @@ talks:
     title: 'Why are Actors Terrible?'
     type: 'lightning'
     day: 2
-    track: 2
+    track: 1
     slot: 4
     short:
       - "This is the first part of the introduction to actors. Here we will cover only the negative side of actors. This presentation is complemented by a workshop which teaches 'proper' actor development. We will be debunking some common myths about the actor model. This talk is intentionally polemical and presents only one side of the story."
@@ -2723,7 +2758,7 @@ talks:
     title: 'What do testers actually do?'
     type: 'lightning'
     day: 2
-    track: 3
+    track: 2
     slot: 4
     short:
       - "Testers don't just click around. Real testers don't do Ad hoc testing at all. They carefully plan their activities and help the whole team to build better and usable products, by being a part of the project team from the beginning, before the first line of code is even written. Testers write code, read code, dig into databases and logs and communicate to customers. They are the link between the code and customers."
@@ -2736,7 +2771,7 @@ talks:
     title: 'Security in microservice architecture'
     type: 'lightning'
     day: 1
-    track: 3
+    track: 2
     slot: 4
     short:
       - "Microservices are the preferred architectural choice for scalable systems, in the recent years. With distributed nature of microservices and REST API being the most prevalent inter-service interface, we are faced with some challenges in choosing the right approach to authentication and authorization mechanisms. We will look into most popular SSO mechanisms, like SAML2, OAuth2 and JWT. We will look into pros and cons of these choices."
@@ -2760,7 +2795,7 @@ talks:
     title: 'Data in the continuous delivery process'
     type: 'lightning'
     day: 1
-    track: 4
+    track: 2
     slot: 4
     short:
       - "Continuous delivery process is getting more and more attention, especially since the whole DevOps movement started. Package/build/dependency managers like npm, maven and composer make it easy for developers to package their code. Configuration management tools like Chef and Puppet make it easy to deploy the packages and configure the whole infrastructure. Vagrant allows developers to run on their machines (more or less) the exact copy of the production systems."
@@ -2964,7 +2999,7 @@ talks:
     title: 'MVVM with Android Databinding in Practice'
     type: 'lightning'
     day: 3
-    track: 3
+    track: 2
     slot: 4
     short:
       - "General concept of MVVM and Android Databinding - why they should be used together - how using these technologies reflects to the app architecture - code snippets from practice - disadvantages, cases when it shouldn't be used and alternatives."
@@ -2977,7 +3012,7 @@ talks:
     title: 'Stubs, Mocks & Spies'
     type: 'lightning'
     day: 2
-    track: 4
+    track: 2
     slot: 4
     short:
       - "1000 tests running for hours on continuous integration services should be a thing of the past. Don't lose time waiting for your tests. "
