@@ -34,6 +34,19 @@
   background: #ffffff;
   width: auto;
   z-index: 200;
+  -webkit-transition: all 1.25s ease-out;
+  -moz-transition: all 1.25s ease-out;
+  -ms-transition: all 1.25s ease-out;
+  -o-transition: all 1.25s ease-out;
+  transition: all 1.25s ease-out;
+}
+.flatmenu-dark {
+  -webkit-transition: all 1.25s ease-out;
+  -moz-transition: all 1.25s ease-out;
+  -ms-transition: all 1.25s ease-out;
+  -o-transition: all 1.25s ease-out;
+  transition: all 1.25s ease-out;
+  background-color: $body-bg;
 }
 #menu-line {
   position: absolute;
@@ -315,7 +328,7 @@
   padding: 5px;
 }
 #flatmenu {
-  background-color: rgba(17, 14, 11, 0.4);
+  background-color: rgba($bodybg, 0.5);
 }
 
 .navbar-default .navbar-toggle {

@@ -21,15 +21,23 @@
   height: 3600px;
   padding: 0 30px;
   .schedule-track {
+    position: relative;
+    padding-top: 52px;
     @media (min-width: $screen-lg) {
       padding-left: 15px;
       padding-right: 0;
     }
     .track-name {
-      padding: 5px 0;
+      position: absolute;
+      top: 0;
+      left: 15px;
+      right: 0;
+      padding: 5px !important;
       text-align: center;
       font-weight: 700;
       color: $brand-primary;
+      background-color: $body-bg;
+      z-index: 10;
     }
   }
   .schedule-item {

@@ -5,12 +5,15 @@ $(document).ready(function() {
     if (winwidth > 1200) {
       var offset = 300;
       var shrinkoffset = 0;
-    	var duration = 400;
+    	var duration = 500;
+      var duration2 = 1500;
     	$(window).scroll(function() {
       	if ($(this).scrollTop() > offset) {
       	   $('#scroll-to-top').fadeIn(duration);
+           $('#flatmenu').addClass('flatmenu-dark');
       	} else {
       	   $('#scroll-to-top').fadeOut(duration);
+           $('#flatmenu').removeClass('flatmenu-dark');
       	}
     	});
 
@@ -20,6 +23,8 @@ $(document).ready(function() {
       		return false;
     	});
     }
+
+
 
     $(".float-label").jvFloat();
 
@@ -82,6 +87,26 @@ $(document).ready(function() {
 
       var clockPin = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600})
       .setPin('.s-clock')
+      .addTo(controller);
+
+      var trackPin1 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
+      .setPin('.track1')
+      .addTo(controller);
+
+      var trackPin2 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
+      .setPin('.track2')
+      .addTo(controller);
+
+      var trackPin3 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
+      .setPin('.track3')
+      .addTo(controller);
+
+      var trackPin4 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
+      .setPin('.track4')
+      .addTo(controller);
+
+      var trackPin5 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
+      .setPin('.track5')
       .addTo(controller);
 
       var cepelinTween = new ScrollMagic.Scene({triggerElement: "#cepelin-trigger"})
