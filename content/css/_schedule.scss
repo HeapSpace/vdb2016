@@ -16,6 +16,10 @@
   margin: 0 10px 0 0;
 }
 
+.highlighted {
+  background-color: rgba($brand-secondary, 0.25) !important;
+}
+
 .schedule-list {
   position: relative;
   height: 3600px;

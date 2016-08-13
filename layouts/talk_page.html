@@ -76,7 +76,7 @@
 					</div>
 				</div>
 				<% if !@item[:day].to_s.empty? %>
-					<a class="btn btn-primary blue btn-lg form-link btn-talk-schedule" role="button" href="/schedule/day<%= @item[:day] %>"><i class="fa fa-calendar talk-schedule"></i> go to schedule</a>
+					<a class="btn btn-primary blue btn-lg form-link btn-talk-schedule" role="button" href="/schedule/day<%= @item[:day] %>#<%= @item[:day] %>-<%= @item[:track] %>-<%= @item[:slot] %>"><i class="fa fa-calendar talk-schedule"></i> go to schedule (day <%= @item[:day] %>, track <%= @item[:track] %>, slot <%= @item[:slot] %>)</a>
 				<% end %>
 				<div class="single-talk margin-top-small">
 					<h4 class="card-title">

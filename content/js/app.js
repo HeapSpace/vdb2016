@@ -100,6 +100,16 @@ $(document).ready(function() {
       })
     }
 
+    var highlightTalk = $(location).attr('hash');
+    if (highlightTalk) {
+	    $(""+highlightTalk+"").addClass('highlighted');
+        $('html, body').animate({
+         scrollTop: $(""+highlightTalk+"").offset().top - ($(window).height()/2-10)
+       }, $(window).height()/2, function(){
+       });
+    }
+
+
     $('#home-mainscreen-holder').css('height', $(window).height());
 
     $('div.tagsort-tags-container').tagSort({
