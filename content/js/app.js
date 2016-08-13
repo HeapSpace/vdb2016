@@ -58,7 +58,6 @@ $(document).ready(function() {
     var $sclockminutes = $('.s-clock-minutes');
     var $sclockhours = $('.s-clock-hours');
 
-    // build tween
     TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
     TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom"});
     var tweenminutes = TweenMax.to($sclockminutes, 0.1, {rotation: 360*10,  ease:Linear.easeNone, transformOrigin: "center bottom"});
@@ -73,26 +72,21 @@ $(document).ready(function() {
 
     if (winwidth > 1200) {
 
-      new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: 3600})
+      var clockMinutes = new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: 3600})
       .setTween(tweenminutes)
       .addTo(controller);
 
-      new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: 3600})
+      var clockHours = new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: 3600})
       .setTween(tweenhours)
       .addTo(controller);
 
-      // build scene
-      new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600})
-      //.setTween(tween)
+      var clockPin = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600})
       .setPin('.s-clock')
       .addTo(controller);
 
-
-      new ScrollMagic.Scene({triggerElement: "#cepelin-trigger"})
-      //.setTween(tween)
+      var cepelinTween = new ScrollMagic.Scene({triggerElement: "#cepelin-trigger"})
       .setTween(cepelinmove)
       .addTo(controller);
-
 
     } else {
       $(".schedule-item").each(function() {
@@ -100,15 +94,15 @@ $(document).ready(function() {
       })
     }
 
-    var highlightTalk = $(location).attr('hash');
-    if (highlightTalk) {
-	    $(""+highlightTalk+"").addClass('highlighted');
-        $('html, body').animate({
-         scrollTop: $(""+highlightTalk+"").offset().top - ($(window).height()/2-10)
-       }, $(window).height()/2, function(){
-       });
-    }
-
+    $(window).bind('load', function () {
+      var highlightTalk = $(location).attr('hash').slice(1);
+      if (highlightTalk) {
+        $("."+highlightTalk+"").addClass('highlighted');
+          $('html, body').animate({
+           scrollTop: $("."+highlightTalk+"").offset().top - ($(window).height()/2-10)
+         }, $(window).height()/2, function () {});
+      }
+    });
 
     $('#home-mainscreen-holder').css('height', $(window).height());
 
@@ -226,4 +220,5 @@ $(document).ready(function() {
     $('.navbar-toggle').on('click', function(){
         $('#navmenu').css('display', 'block');
     });
+
 });
