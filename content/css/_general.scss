@@ -23,6 +23,10 @@ p {
   }
 }
 
+.bodybg {
+  background-color: $body-bg;
+}
+
 .row-centered {
     text-align:center;
     &.flex {

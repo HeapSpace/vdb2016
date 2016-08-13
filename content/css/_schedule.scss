@@ -149,7 +149,7 @@
   top: -61px;
   margin: 0 0 0 auto !important;
   background-size: cover;
-  z-index: 2000;
+  z-index: 2;
   .s-clock-background {
     height: 100px;
     width: 100px;
@@ -202,4 +202,8 @@
   // -ms-transform-origin: center bottom; /* IE 9 */
   // -webkit-transform-origin: center bottom; /* Chrome, Safari, Opera */
   // transform-origin: center bottom;
+}
+
+.more-z {
+  z-index: 16 !important;
 }

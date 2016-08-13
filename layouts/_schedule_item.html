@@ -44,7 +44,7 @@
   </div>
   <% end %>
   <% if breakduration > 0 %>
-  <div class="<%= talk['day'] %>-<%= talk['track'] %>-<%= talk['slot'] %> schedule-item<% if item_break[:name] == 'lunch' %> lunch<% end %><% if item_break[:name] == 'chill out' %> chillout<% end %><% if item_break[:name] == 'coffee break' || item_break[:name] == 'break' %> coffee<% end %>" style="height: <%= breakduration*6 %>px">
+  <div class="<% if item_break[:name] == 'lunch' %><%= talk['day'] %>-<%= talk['track'] %>-<%= talk['slot'] %><% end %> schedule-item<% if item_break[:name] == 'lunch' %> lunch<% end %><% if item_break[:name] == 'chill out' %> chillout<% end %><% if item_break[:name] == 'coffee break' || item_break[:name] == 'break' %> coffee<% end %>" style="height: <%= breakduration*6 %>px">
     <% if item_break[:name] == 'lunch' %>
       <h4 class=""><%= item_slot[:time] %></h4>
     <% end %>

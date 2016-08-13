@@ -14,3 +14,7 @@ img {
   max-width:100%;
   height:auto
 }
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+  z-index: 8 !important;
+}

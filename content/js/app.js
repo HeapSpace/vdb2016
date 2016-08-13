@@ -91,10 +91,12 @@ $(document).ready(function() {
 
       var trackPin1 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
       .setPin('.track1')
+      .setClassToggle(".navbar-default", "bodybg")
       .addTo(controller);
 
       var trackPin2 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
       .setPin('.track2')
+      .setClassToggle(".track-name", "more-z")
       .addTo(controller);
 
       var trackPin3 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
