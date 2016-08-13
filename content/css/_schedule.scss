@@ -16,10 +16,6 @@
   margin: 0 10px 0 0;
 }
 
-.highlighted {
-  background-color: rgba($brand-secondary, 0.25) !important;
-}
-
 .schedule-list {
   position: relative;
   height: 3600px;
@@ -43,6 +39,12 @@
     padding: 0 10px;
     background-color: rgba($brand-secondary, 0.075);
     border-top: 1px solid $brand-primary;
+    &.highlighted {
+      background-color: rgba($brand-primary, 0.85) !important;
+      h4, h6, .brown {
+        color: $body-bg;
+      }
+    }
     .duration {
       color: $brand-secondary;
     }
