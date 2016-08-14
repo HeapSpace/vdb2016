@@ -64,8 +64,10 @@ $(document).ready(function() {
       var $sclockminutes = $('.s-clock-minutes');
       var $sclockhours = $('.s-clock-hours');
 
-      TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
-      TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom"});
+      function backToTop() {
+        $('html, body').animate({scrollTop: 0}, 1);
+      }
+
       var tweenminutes = TweenMax.to($sclockminutes, 0.1, {rotation: 360*10,  ease:Linear.easeNone, transformOrigin: "center bottom"});
       var tweenhours = TweenMax.to($sclockhours, 0.1, {rotation: 300+270, ease:Linear.easeNone, transformOrigin: "center bottom"});
 
@@ -119,21 +121,35 @@ $(document).ready(function() {
       }
 
       $(window).bind('load', function () {
+
         var highlightTalk = $(location).attr('hash').slice(1);
         var slotheight = $(window).height()*Number(highlightTalk.slice(-1))
-        if (highlightTalk ) {
+        if (highlightTalk) {
           if ($(window).scrollTop() < $(window).height()/2-10) {
+            TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
+            TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom"});
             $("."+highlightTalk+"").addClass('highlighted');
             $('html, body').animate({
              scrollTop: $("."+highlightTalk+"").offset().top - ($(window).height()/2-10)
             }, slotheight/2);
           } else {
-            $('html, body').animate({scrollTop: $(window).height()/2-10}, slotheight/2, function(){
+            $('html, body').animate({scrollTop: 0}, 1, function(){
+              TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
+              TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom"});
               $("."+highlightTalk+"").addClass('highlighted');
                 $('html, body').animate({
                  scrollTop: $("."+highlightTalk+"").offset().top - ($(window).height()/2-10)
                }, slotheight/2);
             });
+          }
+        } else {
+          if ($(window).scrollTop() < $(window).height()/2-10) {
+            TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
+            TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom"});
+          } else {
+            $('html, body').animate({scrollTop: 0}, 1);
+            TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
+            TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom"});
           }
         }
       });
