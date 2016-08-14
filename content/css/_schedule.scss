@@ -24,6 +24,55 @@
   margin: 0 10px 0 0;
 }
 
+.devicons {
+	&.coffee {
+		position: absolute;
+		top: 0;
+		right: 0;
+		opacity: 0.2;
+		font-size: 3.65em;
+		color: $brand-primary;
+	}
+}
+
+.lunch {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+  background-color: #005d6c;
+  bottom: 0;
+  left: 65%;
+  padding: 10px;
+  .lunch-icon {
+  	opacity: 0.5;
+  	font-size: 3.95em;
+  }
+  .duration {
+    color: $white !important;
+  }
+  .text-90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    font-family: "Roboto Slab";
+    font-weight: 900;
+    opacity: 0.5;
+    font-size: 1.7em;
+    text-align: left;
+    line-height: 100%;
+    margin-top: 5px;
+  }
+}
+
+.chill-icon {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	opacity: 0.5;
+	font-size: 2.65em;
+}
+
 .schedule-list {
   position: relative;
   height: 3600px;
@@ -73,8 +122,9 @@
     .lightning {
       font-size: 14px;
       margin: 5px 0;
-      &.yellow {
-        padding-top: 15px;
+      width: 60%;
+      &.title{
+        margin-bottom: 10px;
       }
     }
     &.lunch {

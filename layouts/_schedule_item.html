@@ -44,25 +44,34 @@
   </div>
   <% end %>
   <% if breakduration > 0 %>
-  <div class="<% if item_break[:name] == 'lunch' %><%= talk['day'] %>-<%= talk['track'] %>-<%= talk['slot'] %><% end %> schedule-item<% if item_break[:name] == 'lunch' %> lunch<% end %><% if item_break[:name] == 'chill out' %> chillout<% end %><% if item_break[:name] == 'coffee break' || item_break[:name] == 'break' %> coffee<% end %>" style="height: <%= breakduration*6 %>px">
+  <div class="<% if item_break[:name] == 'lunch' %><%= talk['day'] %>-<%= talk['track'] %>-<%= talk['slot'] %><% end %> schedule-item <% if item_break[:name] == 'chill out' %> chillout<% end %><% if item_break[:name] == 'coffee break' || item_break[:name] == 'break' %> coffee<% end %>" style="height: <%= breakduration*6 %>px">
     <% if item_break[:name] == 'lunch' %>
       <h4 class=""><%= item_slot[:time] %></h4>
-    <% end %>
+    <% else %>
     <h6 class="break"><%= item_break[:name] %></h6>
     <div class="duration"><%= breakduration.to_s %> min</div>
+    <% end %>
     <% if item_break[:name] == 'lunch'
-
         lightnings.each do |lightning|
           if !lightning['talkspeakers'].to_s.empty? %>
         <% lightning['talkspeakers'].flatten(1).each do |speaker| %>
           <h6 class="lightning yellow bold"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h6>
         <% end %>
       <% end %>
-      <a href="/talk/<%= talk['tid'] %>/"><h6 class="lightning  "><%= lightning['title'] %></h6></a>
+      <a href="/talk/<%= talk['tid'] %>/"><h6 class="lightning title"><%= lightning['title'] %></h6></a>
     <% end
     end %>
     <% if item_break[:name] == 'coffee break' %><span class="devicons devicons-java coffee"></span><% end %>
-    <% if item_break[:name] == 'lunch' %><i class="fa fa-cutlery lunch-icon"></i><% end %>
+    <% if item_break[:name] == 'lunch' %>
+      <div class="lunch">
+        <i class="fa fa-cutlery lunch-icon"></i>
+        <h6 class="break"><%= item_break[:name] %></h6>
+        <div class="duration"><%= breakduration.to_s %> min</div>
+        <div class="text-90">
+          IN LOBBY
+        </div>
+      </div>
+    <% end %>
     <% if item_break[:name] == 'chill out' %><i class="fa fa-music chill-icon aaa"></i><% end %>
   </div>
   <% end %>
