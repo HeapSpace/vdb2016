@@ -121,13 +121,20 @@ $(document).ready(function() {
       $(window).bind('load', function () {
         var highlightTalk = $(location).attr('hash').slice(1);
         var slotheight = $(window).height()*Number(highlightTalk.slice(-1))
-        if (highlightTalk) {
-          $('html, body').animate({scrollTop: $(window).height()/2-10}, slotheight/2, function(){
+        if (highlightTalk ) {
+          if ($(window).scrollTop() < $(window).height()/2-10) {
             $("."+highlightTalk+"").addClass('highlighted');
-              $('html, body').animate({
-               scrollTop: $("."+highlightTalk+"").offset().top - ($(window).height()/2-10)
-             }, slotheight/2);
-          });
+            $('html, body').animate({
+             scrollTop: $("."+highlightTalk+"").offset().top - ($(window).height()/2-10)
+            }, slotheight/2);
+          } else {
+            $('html, body').animate({scrollTop: $(window).height()/2-10}, slotheight/2, function(){
+              $("."+highlightTalk+"").addClass('highlighted');
+                $('html, body').animate({
+                 scrollTop: $("."+highlightTalk+"").offset().top - ($(window).height()/2-10)
+               }, slotheight/2);
+            });
+          }
         }
       });
     }
