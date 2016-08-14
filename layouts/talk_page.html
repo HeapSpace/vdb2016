@@ -63,7 +63,7 @@
 					<% end %>
 				</div>
 				<div class="single-talk">
-					<div class="tags card">
+					<!-- <div class="tags card">
 					<%	tags_arr = []
 							@item[:talkspeakers].flatten(1).each do |speaker|
 								tags_arr << speaker[:tags]
@@ -73,11 +73,16 @@
 						<%= tag %>
 					</span>
 					<% end %>
-					</div>
+					</div> -->
+
+					<% if !@item[:day].to_s.empty? %>
+						<a class="btn btn-primary btn-lg form-link btn-talk-schedule" role="button" href="/schedule/day<%= @item[:day] %>#<%= @item[:day] %>-<%= @item[:track] %>-<%= @item[:slot] %>"><i class="fa fa-calendar talk-schedule"></i> Day <%= @item[:day] %> &nbsp;&bull;&nbsp; Track <%= @item[:track] %> &nbsp;&bull;&nbsp; Slot <%= @item[:slot] %></a>
+					<% end %>
+
 				</div>
-				<% if !@item[:day].to_s.empty? %>
-					<a class="btn btn-primary blue btn-lg form-link btn-talk-schedule" role="button" href="/schedule/day<%= @item[:day] %>#<%= @item[:day] %>-<%= @item[:track] %>-<%= @item[:slot] %>"><i class="fa fa-calendar talk-schedule"></i> go to schedule (day <%= @item[:day] %>, track <%= @item[:track] %>, slot <%= @item[:slot] %>)</a>
-				<% end %>
+
+
+
 				<div class="single-talk margin-top-small">
 					<h4 class="card-title">
 						<span class="yellow bold">Full abstract</span></a>
