@@ -668,6 +668,15 @@ iframe {
     @include round-corners(18px);
 }
 
+.single-talk-link:hover {
+  .single-talk {
+    opacity: 0.75;
+    .title {
+      color: $brand-primary;
+    }
+  }
+}
+
 .single-talk {
   border-bottom: 1px dotted rgba($brown, 0.75);
   margin-bottom: 10px;
@@ -729,7 +738,7 @@ iframe {
     }
   }
   .title {
-    color: $brand-primary;
+    color: $white;
     margin-bottom: 15px;
     text-align: center;
   }
