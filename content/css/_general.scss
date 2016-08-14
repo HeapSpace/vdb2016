@@ -128,7 +128,7 @@ p {
     height: 1280px;
   }
   &.page {
-    top: -600px;
+    top: -560px;
     left: 0;
     right: 0;
     height: 1280px;
@@ -1112,6 +1112,8 @@ button, a[role="button"] {
     background-position: top;
     background-image: url(../images/speaker-frame-small.svg);
     margin: 0 auto 10px auto;
+    -webkit-filter: drop-shadow(0px 0px 5px $bodybg);
+    filter: drop-shadow(0px 0px 5px $bodybg);
     div {
       width: 150px;
       height: 150px;
