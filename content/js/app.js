@@ -120,11 +120,14 @@ $(document).ready(function() {
 
       $(window).bind('load', function () {
         var highlightTalk = $(location).attr('hash').slice(1);
+        var slotheight = $(window).height()*Number(highlightTalk.slice(-1))
         if (highlightTalk) {
-          $("."+highlightTalk+"").addClass('highlighted');
-            $('html, body').animate({
-             scrollTop: $("."+highlightTalk+"").offset().top - ($(window).height()/2-10)
-           }, $(window).height()/2, function () {});
+          $('html, body').animate({scrollTop: $(window).height()/2-10}, slotheight/2, function(){
+            $("."+highlightTalk+"").addClass('highlighted');
+              $('html, body').animate({
+               scrollTop: $("."+highlightTalk+"").offset().top - ($(window).height()/2-10)
+             }, slotheight/2);
+          });
         }
       });
     }
