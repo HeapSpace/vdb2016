@@ -91,7 +91,7 @@ $(document).ready(function() {
 
       var trackPin1 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
       .setPin('.track1')
-      .setClassToggle(".navbar-default", "bodybg")
+      .setClassToggle(".schedule-navbar", "bodybg")
       .addTo(controller);
 
       var trackPin2 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
@@ -101,6 +101,9 @@ $(document).ready(function() {
 
       var trackPin3 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
       .setPin('.track3')
+      .on("start end enter leave", function(){
+        trackPin4.setClassToggle("#flatmenu", "flatmenu-tall")
+      })
       .addTo(controller);
 
       var trackPin4 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
