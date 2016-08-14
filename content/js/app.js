@@ -57,82 +57,92 @@ $(document).ready(function() {
       animationspeed: 250
     });
 
-    // init controller
-    var controller = new ScrollMagic.Controller();
+    if ($("body").data('schedule')) {
+      // init controller
+      var controller = new ScrollMagic.Controller();
 
-    var $sclockminutes = $('.s-clock-minutes');
-    var $sclockhours = $('.s-clock-hours');
+      var $sclockminutes = $('.s-clock-minutes');
+      var $sclockhours = $('.s-clock-hours');
 
-    TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
-    TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom"});
-    var tweenminutes = TweenMax.to($sclockminutes, 0.1, {rotation: 360*10,  ease:Linear.easeNone, transformOrigin: "center bottom"});
-    var tweenhours = TweenMax.to($sclockhours, 0.1, {rotation: 300+270, ease:Linear.easeNone, transformOrigin: "center bottom"});
-    var addflip = function(){
-      $('.cepelin').addClass('flip');
-    }
-    var removeflip = function(){
-      $('.cepelin').removeClass('flip');
-    }
-    var cepelinmove = TweenMax.to(".cepelin", 10, {left: winwidth, ease:Linear.easeNone, onStart: removeflip, onComplete: addflip});
+      TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
+      TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom"});
+      var tweenminutes = TweenMax.to($sclockminutes, 0.1, {rotation: 360*10,  ease:Linear.easeNone, transformOrigin: "center bottom"});
+      var tweenhours = TweenMax.to($sclockhours, 0.1, {rotation: 300+270, ease:Linear.easeNone, transformOrigin: "center bottom"});
 
-    if (winwidth > 1200) {
 
-      var clockMinutes = new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: 3600})
-      .setTween(tweenminutes)
-      .addTo(controller);
+      if (winwidth > 1200) {
 
-      var clockHours = new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: 3600})
-      .setTween(tweenhours)
-      .addTo(controller);
+        var clockMinutes = new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: 3600})
+        .setTween(tweenminutes)
+        .addTo(controller);
 
-      var clockPin = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600})
-      .setPin('.s-clock')
-      .addTo(controller);
+        var clockHours = new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: 3600})
+        .setTween(tweenhours)
+        .addTo(controller);
 
-      var trackPin1 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
-      .setPin('.track1')
-      .setClassToggle(".schedule-navbar", "bodybg")
-      .addTo(controller);
+        var clockPin = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600})
+        .setPin('.s-clock')
+        .addTo(controller);
 
-      var trackPin2 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
-      .setPin('.track2')
-      .setClassToggle(".track-name", "more-z")
-      .addTo(controller);
+        var trackPin1 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
+        .setPin('.track1')
+        .setClassToggle(".schedule-navbar", "bodybg")
+        .addTo(controller);
 
-      var trackPin3 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
-      .setPin('.track3')
-      .on("start end enter leave", function(){
-        trackPin4.setClassToggle("#flatmenu", "flatmenu-tall")
-      })
-      .addTo(controller);
+        var trackPin2 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
+        .setPin('.track2')
+        .setClassToggle(".track-name", "more-z")
+        .addTo(controller);
 
-      var trackPin4 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
-      .setPin('.track4')
-      .addTo(controller);
+        var trackPin3 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
+        .setPin('.track3')
+        .setClassToggle("#flatmenu", "flatmenu-tall")
+        .addTo(controller);
 
-      var trackPin5 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
-      .setPin('.track5')
-      .addTo(controller);
+        var trackPin4 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
+        .setPin('.track4')
+        .addTo(controller);
 
-      var cepelinTween = new ScrollMagic.Scene({triggerElement: "#cepelin-trigger"})
-      .setTween(cepelinmove)
-      .addTo(controller);
+        var trackPin5 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
+        .setPin('.track5')
+        .addTo(controller);
 
-    } else {
-      $(".schedule-item").each(function() {
-        $(this).attr('style', 'padding-bottom: 15px;');
-      })
-    }
+        var cepelinTween = new ScrollMagic.Scene({triggerElement: "#cepelin-trigger"})
+        .setTween(cepelinmove)
+        .addTo(controller);
 
-    $(window).bind('load', function () {
-      var highlightTalk = $(location).attr('hash').slice(1);
-      if (highlightTalk) {
-        $("."+highlightTalk+"").addClass('highlighted');
-          $('html, body').animate({
-           scrollTop: $("."+highlightTalk+"").offset().top - ($(window).height()/2-10)
-         }, $(window).height()/2, function () {});
+      } else {
+        $(".schedule-item").each(function() {
+          $(this).attr('style', 'padding-bottom: 15px;');
+        })
       }
-    });
+
+      $(window).bind('load', function () {
+        var highlightTalk = $(location).attr('hash').slice(1);
+        if (highlightTalk) {
+          $("."+highlightTalk+"").addClass('highlighted');
+            $('html, body').animate({
+             scrollTop: $("."+highlightTalk+"").offset().top - ($(window).height()/2-10)
+           }, $(window).height()/2, function () {});
+        }
+      });
+    }
+
+    if ($("body").data('cepelin')) {
+      var controller2 = new ScrollMagic.Controller();
+      var addflip = function(){
+        $('.cepelin').addClass('flip');
+      }
+      var removeflip = function(){
+        $('.cepelin').removeClass('flip');
+      }
+      var cepelinmove = TweenMax.to(".cepelin", 10, {left: winwidth, ease:Linear.easeNone, onStart: removeflip, onComplete: addflip});
+      if (winwidth > 1200) {
+        var cepelinTween = new ScrollMagic.Scene({triggerElement: "#cepelin-trigger"})
+        .setTween(cepelinmove)
+        .addTo(controller2);
+      }
+    }
 
     $('#home-mainscreen-holder').css('height', $(window).height());
 
