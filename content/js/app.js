@@ -101,6 +101,7 @@ $(document).ready(function() {
 
         var trackPin4 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
         .setPin('.track4')
+        .setClassToggle(".day", "inline")
         .addTo(controller);
 
         var trackPin5 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})

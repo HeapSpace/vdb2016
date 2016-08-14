@@ -386,7 +386,9 @@ h6 {
   }
 }
 
-.inline { display: inline-block; }
+.inline {
+  display: inline-block !important;
+}
 
 iframe {
   &.video {

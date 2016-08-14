@@ -138,7 +138,10 @@
     top: -63px;
   }
 }
-
+.day {
+  display: none;
+  margin-right: 5px;
+}
 .s-clock {
   position: relative;
   height: 100px;
