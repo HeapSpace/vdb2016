@@ -30,8 +30,8 @@ p {
 .row-centered {
     text-align:center;
     &.flex {
-      @media (min-width: $screen-sm) {
-        width: 100%;
+      @media (min-width: $screen-md) {
+        
       }
     }
     &.about-fix {
@@ -902,7 +902,7 @@ div.line-subtitle > h5 {
     padding: 10px;
     @media (max-width: $screen-sm) {
       width: 80%;
-      font-size: 32px;
+      font-size: 18px;
     }
   }
 }
