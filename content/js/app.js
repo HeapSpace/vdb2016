@@ -68,9 +68,10 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: 0}, 1);
       }
 
+      TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
+      TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom"});
       var tweenminutes = TweenMax.to($sclockminutes, 0.1, {rotation: 360*10,  ease:Linear.easeNone, transformOrigin: "center bottom"});
       var tweenhours = TweenMax.to($sclockhours, 0.1, {rotation: 300+270, ease:Linear.easeNone, transformOrigin: "center bottom"});
-
 
       if (winwidth > 1200) {
 
@@ -121,13 +122,10 @@ $(document).ready(function() {
       }
 
       $(window).bind('load', function () {
-
         var highlightTalk = $(location).attr('hash').slice(1);
         var slotheight = $(window).height()*Number(highlightTalk.slice(-1))
         if (highlightTalk) {
           if ($(window).scrollTop() < $(window).height()/2-10) {
-            TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
-            TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom"});
             $("."+highlightTalk+"").addClass('highlighted');
             $('html, body').animate({
              scrollTop: $("."+highlightTalk+"").offset().top - ($(window).height()/2-10)
@@ -135,18 +133,17 @@ $(document).ready(function() {
           } else {
             $('html, body').animate({scrollTop: 0}, 1, function(){
               TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
-              TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom"});
-              $("."+highlightTalk+"").addClass('highlighted');
-                $('html, body').animate({
-                 scrollTop: $("."+highlightTalk+"").offset().top - ($(window).height()/2-10)
-               }, slotheight/2);
+              TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom", onComplete: scrollToTalk});
+              function scrollToTalk() {
+                $("."+highlightTalk+"").addClass('highlighted');
+                  $('html, body').animate({
+                   scrollTop: $("."+highlightTalk+"").offset().top - ($(window).height()/2-10)
+                 }, slotheight/2);
+               }
             });
           }
         } else {
-          if ($(window).scrollTop() < $(window).height()/2-10) {
-            TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
-            TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom"});
-          } else {
+          if ($(window).scrollTop() > $(window).height()/2-10) {
             $('html, body').animate({scrollTop: 0}, 1);
             TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
             TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom"});

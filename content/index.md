@@ -1713,7 +1713,7 @@ talks:
     sid: 69
     title: 'Spring Boot and Kotlin, a match made in Heaven'
     type: 'talk'
-    day: 2
+    day: 3
     track: 1
     slot: 6
     short:
@@ -1728,9 +1728,9 @@ talks:
     sid: 91
     title: 'Harry Potter dorm doors -- a wizarding approach to security'
     type: 'talk'
-    day: 3
-    track: 1
-    slot: 2
+    day: 1
+    track: 3
+    slot: 5
     short:
       - "The entranceways to the dorms at Hogwarts were guarded by paintings that talked and asked for passwords. What if that were real?! The recent availability of machine learning as an API opens up the door to an exponential growth in the possibilities for 'smart' devices. In this talk, we explore a Harry Potter style 'security' system that can both see and hear."
     long:
@@ -1872,7 +1872,7 @@ talks:
       - '90'
     title: '40 Tips & Tricks for Spring in IntelliJ IDEA'
     type: 'talk'
-    day: 3
+    day: 2
     track: 1
     slot: 6
     short:
@@ -2593,9 +2593,9 @@ talks:
     sid: 20
     title: 'Harness the power of HTTP headers to secure your web apps'
     type: 'talk'
-    day: 1
-    track: 3
-    slot: 5
+    day: 3
+    track: 1
+    slot: 2
     short:
       - "Nowadays almost everyone uses web browsers on a daily basis for various tasks such as reading emails, surfing on social networks or purchasing goods on ecommerce shops. Despite this, web developers often tend to forget that a browser is a piece of software that has deliberately been designed as a remote code execution engine, which is the dream spec for any attacker. The focus of this talk is to explain how some of the newly introduced headers (HSTS, HPKP, CSP) can help to easily add an extra layer of security in order to defend your web apps against common web security vulnerabilities."
     long:
