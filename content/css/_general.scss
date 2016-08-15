@@ -891,6 +891,10 @@ div.line-subtitle > h5 {
     background-color: #E0B112;
     color: $white !important;
   }
+  &.home-top {
+    width: 40%;
+    padding: 10px;
+  }
 }
 
 .footer-cta-block {
