@@ -1833,9 +1833,9 @@ talks:
     sid: 58
     title: 'This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT? Businessing the S*** out of Transformative Development!'
     type: 'talk'
-    day: 3
-    track: 2
-    slot: 3
+    day: 1
+    track: 3
+    slot: 7
     short:
       - "Cloud Native, containers, DevOps, microservices, etc.: we go to conferences & get excited about things that could revolutionize our development & change our organizational & professional lives! And then, we go home...and hit the wall. If you've ever asked yourself, 'This stuff is cool, but HOW CAN I GET MY COMPANY TO DO IT??!', this is the session for you."
       - "Learn from an experienced software developer (who also happens to have an MBA) how to make your case to leadership, presenting management-ready justifications for changes in 'your world' that will positively impact the business as a whole."
@@ -2078,9 +2078,9 @@ talks:
     sid: 26
     title: 'Complex State Handling in Modern Web Applications'
     type: 'talk'
-    day: 1
-    track: 3
-    slot: 7
+    day: 3
+    track: 2
+    slot: 3
     short:
       - "Flux architectures and why you should care. How to tame the application state and not go bananas. Examples from production applications with React.js and Redux."
     long:

@@ -331,6 +331,9 @@ h2 {
   font-weight: 700;
   font-size: 40px;
   color: $white;
+  @media (max-width: $screen-md) {
+    font-size: 32px;
+  }
 }
 
 h3 {
@@ -795,6 +798,9 @@ iframe {
   margin-bottom: 150px;
   &.logos {
     margin-bottom: 50px;
+    @media (max-width: $screen-sm) {
+      margin-top: 175px;
+    }
   }
 }
 
@@ -894,6 +900,10 @@ div.line-subtitle > h5 {
   &.home-top {
     width: 40%;
     padding: 10px;
+    @media (max-width: $screen-sm) {
+      width: 80%;
+      font-size: 32px;
+    }
   }
 }
 

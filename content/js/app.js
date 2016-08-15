@@ -168,7 +168,9 @@ $(document).ready(function() {
       }
     }
 
-    $('#home-mainscreen-holder').css('height', $(window).height());
+    if (winwidth > 1200) {
+      $('#home-mainscreen-holder').css('height', $(window).height());
+    }
 
     $('div.tagsort-tags-container').tagSort({
 		  items: '.speaker-tags',
