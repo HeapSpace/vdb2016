@@ -939,7 +939,7 @@ speakers:
       - security
     answers:
       - "When I was a kid I could only dream about flying RC planes with a live video feed and today this is available to anyone for an affordable price."
-      - "I think that with the rise of IoT most of the companies selling "things" today will shift their business model to sell software as a services to manage their products."
+      - "I think that with the rise of IoT most of the companies selling 'things' today will shift their business model to sell software as a services to manage their products."
       - "Follow your dreams and don't be afraid of failure."
   -
     sid: 48
