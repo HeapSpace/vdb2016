@@ -101,9 +101,9 @@ speakers:
     tags:
       - api
     answers:
-      -
-      -
-      -
+      - "I won an Xbox 360 at a college career fair once, because of my answer to a competition about creative uses for the Kinect sensor. Completely unexpected!"
+      - "Machine learning and robotics will become mainstream and accepted by society. Electric cars and trips to space will also become less exotic. Technology will be even more integrated with our lives than they already are."
+      - "Never stop learning, but learn one thing at a time."
   -
     sid: 64
     firstname: 'Mike'
@@ -199,9 +199,9 @@ speakers:
       - microservices
       - docker
     answers:
-      - ""
-      - ""
-      - ""
+      - "When working on a very old system, I suspected that a big part of it has no use and is maintained only out of fear that removing those programs will break something. One day, without telling anyone, I logged into the production system and removed all the suspects (around 25 of them). It turned out that those services were, indeed, not used. Ten years later, the customer still thinks that those services are running."
+      - "Just like hardware, everything will be smaller and smaller. We'll build smaller services (microservices, lambdas, etc), we'll work in smaller teams, and we'll use smaller (more specific) tools. As a result, smaller companies will prevail over big corporations. All that will be followed by more automation. It is a software equivalent of the industrial revolution. Machines (scripts) will take over a big chunk of what we do. Some professions will become obsolete or greatly reduced in numbers (manual testing, operations, and so on). Only creative (non-repetitive) jobs will stay."
+      - "Dear younger me. During the beginning of 2000, you'll be offered a job in a big corporation. Do not, under any circumstance, accept it. I cannot tell you the name of the company except that it starts with G and ends with Tech."
   -
     sid: 58
     firstname: 'Mark'
@@ -511,9 +511,9 @@ speakers:
       - db
       - scala
     answers:
-      - ""
-      - ""
-      - ""
+      - "A computer mouse so dirty that the middle button was automagically getting pressed at random."
+      - "There will be another bunch of new buzzwords for not-so-new concepts, but the bottomline will remain unchanged. And since 5 years is about 1800 days, there will probably be around 1800 new JavaScript frameworks available."
+      - "Don't be afraid of trying new things and leaving your comfort zone."
   -
     sid: 39
     firstname: 'Jakub'
@@ -528,9 +528,9 @@ speakers:
       - messaging
       - distributed systems
     answers:
-      - ""
-      - ""
-      - ""
+      - "For the last 3 years not being able to book a British Airways flight in Firefox because the Continue button on the last page of their booking process doesn't work."
+      - "More and more moving pieces, and ever-increasing complexity. To survive developers will need to understand much more about their infrastructure - cloud platforms, virtualisation, containers, databases, messaging etc. Devops will no longer be a choice, but a necessity."
+      - "Learn about the non-glamorous things that no one else wants to think about - they are usually the most practical. Really understand your day-to-day tools. Everything you learn will be useful at some point, and is cumulative. Don't chase shiny tech - most of it is a distraction."
   -
     sid: 45
     firstname: 'Jezen'
@@ -708,9 +708,9 @@ speakers:
     tags:
       - microservices
     answers:
-      - ""
-      - ""
-      - ""
+      - "I guess that’s the „enterprise“: Creating processes, technologies and tools that are incredibly heavy-weight and make us burn vast amounts of money for very little return. Sometimes it’s a shame, how much effort we have to spend in such environment to create some business value - especially if you look at how powerful the current lightweight approaches are ..."
+      - "I think that in the next five years we will see huge adoption of cloud technologies. There will be a phase where larger enterprises will start to build their own private clouds but I think eventually there will be a lot of migration to the major players like Amazon, Google and Microsoft. They way we operate our applications today simply does not match to the way we want to build our applications tomorrow."
+      - "Never. Stop. Learning. You decided to pick a great job where innovation is part of your daily life, that never ever can become boring. So keep up with new technologies, with new methodologies. Don’t get stuck with something only because it’s convenient. Continuously improve yourself and continuously improve whatever you create."
   -
     sid: 83
     firstname: 'Stjepan'
@@ -741,9 +741,9 @@ speakers:
     tags:
       - docker
     answers:
-      - ""
-      - ""
-      - ""
+      - "There are some crazy things which I've seen on Ustream, for example when thousands of viewers were watching live as a drop of paint dissolves in a glass of water. As for my personal experiences, one of my favourites is when at a previous company we locked out ourselves of our servers in China (with an incorrect firewall rule) and had to instruct a Chinese colleague via skype on how to fix it, despite he did speak very little English and did know nothing about linux. It took several hours and was quite grotesque."
+      - "I see Internet of Things, automated homes, self driving cars and things like this getting widespread. Communication is already transforming, I hope video (and thus Ustream) will play an important role in this. The biggest challenge will be security - with more and more devices connected, we open our lives more and more to potential hackers. The industry - and the users - must develop security conscience. And I hope we'll put a man on Mars or at least launch the expedition."
+      - "The results of some football games and other sports events happening in his future ;)"
   -
     sid: 31
     firstname: 'Gustavo'
@@ -938,9 +938,9 @@ speakers:
       - web
       - security
     answers:
-      - ""
-      - ""
-      - ""
+      - "When I was a kid I could only dream about flying RC planes with a live video feed and today this is available to anyone for an affordable price."
+      - "I think that with the rise of IoT most of the companies selling "things" today will shift their business model to sell software as a services to manage their products."
+      - "Follow your dreams and don't be afraid of failure."
   -
     sid: 48
     firstname: 'Kenan'
@@ -1108,9 +1108,9 @@ speakers:
       - security
       - metodologies
     answers:
-      - ""
-      - ""
-      - ""
+      - "The craziest thing for me is getting involved in technology, since I was just a “regular” girl who was more interested in shoes than the technology. Now, I’m a woman more interested in technology then the shoes."
+      - "I have a strong faith that the testing will be the most important part in tech, and that testers would be appreciated as a valuable team members."
+      - "I got into testing by accident, and I would definitely do it the same all over again. What I would suggest to my younger self is to be even more curious, to ask even more questions and to be more patient."
   -
     sid: 71
     firstname: 'Nikola'
@@ -1208,9 +1208,9 @@ speakers:
     tags:
       - messaging
     answers:
-      - ""
-      - ""
-      - ""
+      - "I don't recall anything crazy. Maybe putting on Oculus rift and trying out the roller coaster ride would qualify :)"
+      - "As far as the game industry goes I believe we will see the first VR hit game in the next three years, it will be fun to see which major game company will plunge into the market first. Also, I think we will see some significant investments into the Eastern markets such as China and India. On the Data Science side, with the popularization of deep learning frameworks, I expect to see more and more data scientists in gaming companies sharing their experiences with implementing deep neural networks to replace the more common models. I would say similar things apply for the tech industry in general, the breakthrough of VR/AR and the continued rise of machine learning."
+      - "Work harder."
   -
     sid: 84
     firstname: 'Vedran'
@@ -1408,9 +1408,9 @@ speakers:
     tags:
       - agile
     answers:
-      - ""
-      - ""
-      - ""
+      - "Getting a call from a product manager while I was doing a barbecue in spring 2007...he was trying out “some cool stuff” on Saturday morning on the production environment (well, God knows why, but he insisted to get admin rights), one of them being DROP DATABASE...To make a long story shorter, the database was restored rather quickly, but the grill sausages were irretrievably lost."
+      - "Well, this is more how I’d like to see it. Hopefully, the coming years will bring us mind-blowing tech innovations in how we cure diseases and make this world a better place. I’d like to see more of tech achievements in those areas and less of them towards ruining the way we interact with each others and distracting a mankind’s attention from its own weaknesses."
+      - "My dear younger self, dare more, experiment, take risks, break rules! That is where creativity starts. It is ok to be unconventional and impulsive."
   -
     sid: 78
     firstname: 'Robert'
@@ -1479,6 +1479,7 @@ speakers:
       - "It’s tech, so there’s no shortage of crazy, right. Probably the most memorable, though, was the day in 1993 when my boss walked over with a tarball containing a copy of the Mosaic browser. The change from newsgroups, telnet, and email was just insanely revolutionary."
       - "Take a look at how the world has changed over the past five years, and compare it with how technology changed the five years previously. The rate of change is accelerating at an incredible pace, and not all of the pivotal technologies that will get us there have been invented yet. The predictable stuff like cloud and IoT isn’t really worthy of note at this point.  For me, it’s more about our ability to react to changes and our outlook on the world than any specific new technologies per se, and I strongly believe that organizations that think this way will win over those that don’t."
       - "Younger Alex, you should trust yourself more: don’t wait for acceptance from others."
+
 
 
 
