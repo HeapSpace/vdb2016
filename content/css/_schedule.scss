@@ -84,6 +84,11 @@
       padding-left: 15px;
       padding-right: 0;
     }
+    &.col-md-6 {
+      @media (max-width: $screen-lg) {
+        clear: both;
+      }
+    }
     .track-name {
       position: absolute;
       top: 0;
@@ -94,7 +99,7 @@
       font-weight: 700;
       color: $brand-primary;
       background-color: $body-bg;
-      z-index: 10;
+      z-index: 9;
     }
   }
   .schedule-item {
@@ -199,6 +204,7 @@
 .day {
   display: none;
   margin-right: 5px;
+  margin-top: 5px;
 }
 .s-clock {
   position: relative;

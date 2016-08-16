@@ -47,7 +47,9 @@ def link_menu(text, target, attributes = {})
   end
 
   # Create link
-  "<li><a #{attributes} href=\"#{h path}\" data-toggle=\"collapse\" data-target=\"#mainmenu\">#{text}</a></li>"
+  # "<li><a #{attributes} href=\"#{h path}\" data-toggle=\"collapse\" data-target=\"#mainmenu\">#{text}</a></li>"
+  "<li class=\"menu_item\"><a #{attributes} href=\"#{h path}\" class=\"item_link \" data-toggle=\"collapse\" data-target=\"#mainmenu\">#{text}</a></li>"
+
 end
 
 def links_for_submenu(submenu_array)
@@ -56,7 +58,8 @@ def links_for_submenu(submenu_array)
     subtitle = subitem.gsub('-', ' ')
     itemlink = '/'+subitem+'/'
 
-    allitems += "<li><a href=\"#{itemlink}\" data-toggle=\"collapse\" data-target=\"#mainmenu\">#{subtitle.slice(0,1).capitalize + subtitle.slice(1..-1)}</a></li>"
+    # allitems += "<li><a href=\"#{itemlink}\" data-toggle=\"collapse\" data-target=\"#mainmenu\">#{subtitle.slice(0,1).capitalize + subtitle.slice(1..-1)}</a></li>"
+    allitems += "<li class=\"menu_item\"><a href=\"#{itemlink}\" class=\"item_link\" data-toggle=\"collapse\" data-target=\"#mainmenu\">#{subtitle.slice(0,1).capitalize + subtitle.slice(1..-1)}</a></li>"
   end
   return allitems
 end
@@ -101,16 +104,20 @@ def link_to_unless_current(text, target, submenu = [], attributes = {})
   end
 
   if submenu.kind_of?(Array) && submenu.any?
-    "<li class=\"has-sub #{itemclass}\">
-      <a href=\"#{target}\">#{itemtitle}</a>
-      <ul>
+    # "<li class=\"has-sub #{itemclass}\">
+    #   <a href=\"#{target}\">#{itemtitle}</a>
+    #   <ul>
+    "<li class=\"menu_item\">
+      <a href=\"#{target}\" class=\"item_link #{itemclass} dropdown-toggle\" data-toggle=\"dropdown\">#{itemtitle} <b class=\"caret\"></b></a>
+      <ul class=\"dropdown-menu multi-level\">
           #{links_for_submenu(submenu)}
       </ul>
     </li>"
   else
     if @item_rep && @item_rep.path == path
       # Create message
-      "<li class=\"active\"><a href=\"#\">#{text}</a></li>"
+      # "<li class=\"active\"><a href=\"#\">#{text}</a></li>"
+      "<li class=\"menu_item active\">#{text}</li>"
     else
 
       link_menu(text, target, attributes)

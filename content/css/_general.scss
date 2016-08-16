@@ -31,7 +31,7 @@ p {
     text-align:center;
     &.flex {
       @media (min-width: $screen-md) {
-        
+
       }
     }
     &.about-fix {
@@ -102,9 +102,9 @@ p {
 .mobile-menu-logo {
   float: left;
   height: 73px;
-  width: 85px;
-  padding-left: 10px;
-  background: rgba(27,23,19,0.9);
+  width: 97px;
+  padding-left: 20px;
+  background: rgba($bodybg,0.9);
   text-align: center;
   margin: 0;
   img {
@@ -845,7 +845,7 @@ iframe {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background: rgba(27,23,19,1);
+  background: $bodybg;
   text-align: center;
   img {
     opacity: 0.2;

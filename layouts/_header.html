@@ -1,4 +1,4 @@
-<div class="header-holder">
+<div class="header-holder flatmenu">
     <nav class="navbar navbar-default nav-collapse navbar-fixed-top" role="navigation">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainmenu" aria-expanded="false">
@@ -8,11 +8,11 @@
         </button>
         <a class="mobile-menu-logo visible-md-inline-block visible-sm-inline-block visible-xs-inline-block" href="/"><img src="/images/vx_logo_small_mono.png"></a>
       </div>
-      <div class="navbar-collapse collapse" id="mainmenu" aria-expanded="false" style="height: 0px;">
-          <div class="navcontainer">
+      <div class="navbar-collapse collapse" id="mainmenu" aria-expanded="false">
+          <!-- <div class="navcontainer">
               <div id="flatmenu" class="align-center">
                   <ul id="navmenu">
-                      <!-- <%= logo_unless_page('./none') %> -->
+
                       <%= link_to_unless_current('Home', '/') %>
                       <%= link_to_unless_current('Info', '', ['about-VDB16', 'speakers-kit', 'accomodation', 'volunteers', 'letters', 'press',
                       'about-us']) %>
@@ -25,7 +25,22 @@
                       <%= link_to_unless_current('Contact', '/contact/') %>
                   </ul>
               </div>
-          </div>
+          </div> -->
+          <div class="container">
+            <ul class="mainmenu primary-nav main-menu">
+              <%= link_to_unless_current('Home', '/') %>
+              <%= link_to_unless_current('Info', '', ['about-VDB16', 'speakers-kit', 'accomodation', 'volunteers', 'letters', 'press',
+              'about-us']) %>
+              <%= link_to_unless_current('Speakers', '/speakers/') %>
+              <%= link_to_unless_current('Schedule', '/schedule/') %>
+              <%= link_to_unless_current('Tickets', '/tickets/') %>
+              <%= link_to_unless_current('Sponsors', '/sponsors/') %>
+              <%= link_to_unless_current('Blog', '/blog/') %>
+              <%= link_to_unless_current('FAQ', '/faq-and-notes/') %>
+              <%= link_to_unless_current('Contact', '/contact/') %>
+          </ul>
+        </div>
+
       </div>
     </nav>
 

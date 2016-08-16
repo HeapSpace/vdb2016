@@ -10,10 +10,10 @@ $(document).ready(function() {
     	$(window).scroll(function() {
       	if ($(this).scrollTop() > offset) {
       	   $('#scroll-to-top').fadeIn(duration);
-           $('#flatmenu').addClass('flatmenu-dark');
+           $('.flatmenu').addClass('flatmenu-dark');
       	} else {
       	   $('#scroll-to-top').fadeOut(duration);
-           $('#flatmenu').removeClass('flatmenu-dark');
+           $('.flatmenu').removeClass('flatmenu-dark');
       	}
     	});
 
@@ -99,7 +99,7 @@ $(document).ready(function() {
 
         var trackPin3 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
         .setPin('.track3')
-        .setClassToggle("#flatmenu", "flatmenu-tall")
+        .setClassToggle(".flatmenu", "flatmenu-tall")
         .addTo(controller);
 
         var trackPin4 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
@@ -244,44 +244,44 @@ $(document).ready(function() {
     });
 
 
-    $("#flatmenu").menumaker({
-        title: "Menu",
-        breakpoint: 768,
-        format: "multitoggle"
-    });
-
-    $("#flatmenu").prepend("<div id='menu-line'></div>");
-
-    var foundActive = false, activeElement, linePosition = 0, menuLine = $("#flatmenu #menu-line"), lineWidth, defaultPosition, defaultWidth;
-
-    $("#flatmenu > ul > li").each(function() {
-        if ($(this).hasClass('active')) {
-            activeElement = $(this);
-            foundActive = true;
-        }
-    });
-
-    if (foundActive === false) {
-        activeElement = $("#flatmenu > ul > li").first();
-    }
-
-    defaultWidth = lineWidth = activeElement.width();
-
-    defaultPosition = linePosition = activeElement.position().left;
-
-    menuLine.css("width", lineWidth);
-    menuLine.css("left", linePosition);
-
-    $("#flatmenu > ul > li").hover(function() {
-        activeElement = $(this);
-        lineWidth = activeElement.width();
-        linePosition = activeElement.position().left;
-        menuLine.css("width", lineWidth);
-        menuLine.css("left", linePosition);
-    }, function() {
-        menuLine.css("left", defaultPosition);
-        menuLine.css("width", defaultWidth);
-    });
+    // $("#flatmenu").menumaker({
+    //     title: "Menu",
+    //     breakpoint: 768,
+    //     format: "multitoggle"
+    // });
+    //
+    // $("#flatmenu").prepend("<div id='menu-line'></div>");
+    //
+    // var foundActive = false, activeElement, linePosition = 0, menuLine = $("#flatmenu #menu-line"), lineWidth, defaultPosition, defaultWidth;
+    //
+    // $("#flatmenu > ul > li").each(function() {
+    //     if ($(this).hasClass('active')) {
+    //         activeElement = $(this);
+    //         foundActive = true;
+    //     }
+    // });
+    //
+    // if (foundActive === false) {
+    //     activeElement = $("#flatmenu > ul > li").first();
+    // }
+    //
+    // defaultWidth = lineWidth = activeElement.width();
+    //
+    // defaultPosition = linePosition = activeElement.position().left;
+    //
+    // menuLine.css("width", lineWidth);
+    // menuLine.css("left", linePosition);
+    //
+    // $("#flatmenu > ul > li").hover(function() {
+    //     activeElement = $(this);
+    //     lineWidth = activeElement.width();
+    //     linePosition = activeElement.position().left;
+    //     menuLine.css("width", lineWidth);
+    //     menuLine.css("left", linePosition);
+    // }, function() {
+    //     menuLine.css("left", defaultPosition);
+    //     menuLine.css("width", defaultWidth);
+    // });
 
     $('.navbar-toggle').on('click', function(){
         $('#navmenu').css('display', 'block');
