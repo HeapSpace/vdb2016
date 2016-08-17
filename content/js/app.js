@@ -74,9 +74,9 @@ $(document).ready(function() {
 
       $('.schedule-list').css('height', hourheight*totalduration);
 
+      var fiveminangle = 30;
       TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
       TweenMax.to($sclockhours, 0.1, {rotation: starttime*fiveminangle, ease:Linear.easeNone, transformOrigin: "center bottom"});
-      var fiveminangle = 30;
       var tweenminutes = TweenMax.to($sclockminutes, 0.1, {rotation: hourheight*totalduration,  ease:Linear.easeNone, transformOrigin: "center bottom"});
       var tweenhours = TweenMax.to($sclockhours, 0.1, {rotation: 300+(starttime*fiveminangle), ease:Linear.easeNone, transformOrigin: "center bottom"});
 
