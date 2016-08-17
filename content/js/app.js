@@ -68,46 +68,53 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop: 0}, 1);
       }
 
+      var starttime = 9; // starting hour from 24h format
+      var totalduration = 10; // total duration in hours
+      var hourheight = 360; // hour height in pixels
+
+      $('.schedule-list').css('height', hourheight*totalduration);
+
       TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
-      TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom"});
-      var tweenminutes = TweenMax.to($sclockminutes, 0.1, {rotation: 360*10,  ease:Linear.easeNone, transformOrigin: "center bottom"});
-      var tweenhours = TweenMax.to($sclockhours, 0.1, {rotation: 300+270, ease:Linear.easeNone, transformOrigin: "center bottom"});
+      TweenMax.to($sclockhours, 0.1, {rotation: starttime*fiveminangle, ease:Linear.easeNone, transformOrigin: "center bottom"});
+      var fiveminangle = 30;
+      var tweenminutes = TweenMax.to($sclockminutes, 0.1, {rotation: hourheight*totalduration,  ease:Linear.easeNone, transformOrigin: "center bottom"});
+      var tweenhours = TweenMax.to($sclockhours, 0.1, {rotation: 300+(starttime*fiveminangle), ease:Linear.easeNone, transformOrigin: "center bottom"});
 
       if (winwidth > 1200) {
 
-        var clockMinutes = new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: 3600})
+        var clockMinutes = new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: hourheight*totalduration})
         .setTween(tweenminutes)
         .addTo(controller);
 
-        var clockHours = new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: 3600})
+        var clockHours = new ScrollMagic.Scene({triggerElement: ".schedule-list",duration: hourheight*totalduration})
         .setTween(tweenhours)
         .addTo(controller);
 
-        var clockPin = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600})
+        var clockPin = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: hourheight*totalduration})
         .setPin('.s-clock')
         .addTo(controller);
 
-        var trackPin1 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
+        var trackPin1 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: hourheight*totalduration, triggerHook: 'onLeave', offset: -104})
         .setPin('.track1')
         .setClassToggle(".schedule-navbar", "bodybg")
         .addTo(controller);
 
-        var trackPin2 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
+        var trackPin2 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: hourheight*totalduration, triggerHook: 'onLeave', offset: -104})
         .setPin('.track2')
         .setClassToggle(".track-name", "more-z")
         .addTo(controller);
 
-        var trackPin3 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
+        var trackPin3 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: hourheight*totalduration, triggerHook: 'onLeave', offset: -104})
         .setPin('.track3')
         .setClassToggle(".flatmenu", "flatmenu-tall")
         .addTo(controller);
 
-        var trackPin4 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
+        var trackPin4 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: hourheight*totalduration, triggerHook: 'onLeave', offset: -104})
         .setPin('.track4')
         .setClassToggle(".day", "inline")
         .addTo(controller);
 
-        var trackPin5 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: 3600, triggerHook: 'onLeave', offset: -104})
+        var trackPin5 = new ScrollMagic.Scene({triggerElement: ".schedule-list", duration: hourheight*totalduration, triggerHook: 'onLeave', offset: -104})
         .setPin('.track5')
         .addTo(controller);
 
@@ -133,7 +140,7 @@ $(document).ready(function() {
           } else {
             $('html, body').animate({scrollTop: 0}, 1, function(){
               TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
-              TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom", onComplete: scrollToTalk});
+              TweenMax.to($sclockhours, 0.1, {rotation: starttime*fiveminangle, ease:Linear.easeNone, transformOrigin: "center bottom", onComplete: scrollToTalk});
               function scrollToTalk() {
                 $("."+highlightTalk+"").addClass('highlighted');
                   $('html, body').animate({
@@ -146,7 +153,7 @@ $(document).ready(function() {
           if ($(window).scrollTop() > $(window).height()/2-10) {
             $('html, body').animate({scrollTop: 0}, 1);
             TweenMax.to($sclockminutes, 0.1, {rotation: 0,  ease:Linear.easeNone, transformOrigin: "center bottom"});
-            TweenMax.to($sclockhours, 0.1, {rotation: 270, ease:Linear.easeNone, transformOrigin: "center bottom"});
+            TweenMax.to($sclockhours, 0.1, {rotation: starttime*fiveminangle, ease:Linear.easeNone, transformOrigin: "center bottom"});
           }
         }
       });
