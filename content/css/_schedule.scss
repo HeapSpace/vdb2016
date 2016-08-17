@@ -77,6 +77,9 @@
   position: relative;
   height: 3600px;
   padding: 0 30px;
+  @media (max-width: $screen-md) {
+    display: inline-block;
+  }
   .schedule-track {
     position: relative;
     padding-top: 52px;
