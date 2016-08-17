@@ -58,7 +58,7 @@
           <h6 class="lightning yellow bold"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h6>
         <% end %>
       <% end %>
-      <a href="/talk/<%= talk['tid'] %>/"><h6 class="lightning title"><%= lightning['title'] %></h6></a>
+      <a href="/talk/<%= lightning['tid'] %>/"><h6 class="lightning title"><%= lightning['title'] %></h6></a>
     <% end
     end %>
     <% if item_break[:name] == 'coffee break' %><span class="devicons devicons-java coffee"></span><% end %>
