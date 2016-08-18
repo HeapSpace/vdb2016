@@ -348,9 +348,9 @@ speakers:
       - ai
       - ux/ui
     answers:
-      - ""
-      - ""
-      - ""
+      - "I am always quite enthusiastic about technology which can augment our own skills, be it physically as ell as virtually. Arthur C. Clarke once famously remarked that any sufficiently advanced technology is indistinguishable from magic. Just the other day I had a call with an associate in Australia. It may seem trivial, but just realizing I was literally talking with someone on the other side of the earth made this feel like one of these magic moments."
+      - "I don't think it is about the next 5 years. To make progress as humanity we have to focus on how our tools can have an impact that lasts longer than just the next iteration of a new technology. Marshall McLuhan once famously said 'we shape our tools and thereafter our tools shape us'. We have to come up with better ways to collaborate, better metaphors, better tools and paradigms. That process will last longer than 5 years."
+      - "Relax, take more risks, trust your gut, set clear goals and most importantly have fun."
   -
     sid: 21
     firstname: 'David'
@@ -478,9 +478,9 @@ speakers:
       - ios
       - game
     answers:
-      - ""
-      - ""
-      - ""
+      - "I think it is the moment that I saw a very basic infrared remote control for the first time while I was at 5 or 6 in the mid of 80s. It was literally amazing. It might not sound as craziest thing as today's technological improvements, but it is the moment that makes me to want to be an engineer."
+      - "Things are changing a lot and very rapidly. It is very difficult to for see the future of today's top-notch technologies like Robotics, Driverless Cars, (fantastic) Artificial Intelligence, Machine Learning, etc... But I am sure we are going to see more and more software embedded bio-technological improvements."
+      - "Don't be a full time consumer, be a producer / maker."
   -
     sid: 34
     firstname: 'Ilija'
@@ -544,9 +544,9 @@ speakers:
     tags:
       - haskell
     answers:
-      - ""
-      - ""
-      - ""
+      - "My technology career took me from being almost homeless to driving a Porsche 911 in the space of five years. It completely changed my life."
+      - "Difficult to say; given mainstream programming is still struggling to understand software development ideas from 40 years ago, I'd say not much will fundamentally change. Functional Programming will slowly grow in popularity. For better or for worse, JavaScript will still be dominant. If I am allowed some wishful thinking, I would hope that medicine and gene editing move into the focus of more OSS developers. Watch the space around CRISPR. It could change the world."
+      - "I would tell my younger self the same things I tell other younger people: Constantly invest in yourself. Learn skills (don't just worry about formal credentials), and don't be afraid to get your hands dirty. Did the exhaust fall of your car? Reach for a spanner. It's not all about technical skills though; my first employer only kept me after my initial two-week trial not because I was any good at programming (I wasn't), but because I was enthusiastic and made everyone cups of coffee in the mornings."
   -
     sid: 42
     firstname: 'Jaroslaw'
@@ -725,9 +725,9 @@ speakers:
       - web
       - ruby
     answers:
-      - ""
-      - ""
-      - ""
+      - "Creating a webpage for my wedding for photo upload, and then my grandparents uploading a duckface selfie on it."
+      - "Still coding strong, but probably different language (elixir)."
+      - "Don't follow your heart completely. It is ok to listen to the brain from time to time."
   -
     sid: 92
     firstname: 'Zoltán'
@@ -1125,9 +1125,9 @@ speakers:
       - microservices
       - security
     answers:
-      - ""
-      - ""
-      - ""
+      - "Haunted Linux: I once wanted to switch over to Linux. I was working on a Scala/Java project and Windows+Eclipse was slowing me down. So, I thought to myself: 'Others are using Ubuntu and IDEA, perhaps I should, too'. So, I installed Linux. SUSE Linux. Which was my doom. Java compiler started reporting syntax errors on completely OK code. 'Hmm, maybe there is something buggy in that OpenJDK, let's try Sun JDK'. Sun JDK reported syntax errors in different parts of code than OpenJDK. And Eclipse was reporting also syntax errors in a completely different part of the project. EPILOGUE: I returned to Windows and lost 3 days."
+      - "Everything will be a service: I see services as the future. We will have most of 'skeleton stuff' provided as a service. We already have PaaS, IaaS and many more *aaS. It will only become the new norm."
+      - "Note to self: More physical activity. And all the advice from Baz Luhrmann - Everybody's Free To Wear Sunscreen."
   -
     sid: 72
     firstname: 'Nikola'
@@ -1492,9 +1492,9 @@ talks:
     tid: 41
     type: 'talk'
     empty: 1
-    day: 2
+    day: 3
     track: 4
-    slot: 5
+    slot: 7
 
   -
     tid: 42
@@ -1907,9 +1907,9 @@ talks:
     sid: 3
     title: 'Narrative Language of Virtual Reality'
     type: 'talk'
-    day: 3
+    day: 2
     track: 4
-    slot: 7
+    slot: 5
     short:
       - "VR is not just a 'cutting edge technology' but also a medium capable to immerse the viewer/player in another dimension and convey strong emotions. How to do so in the right way? Which techniques and tools content creators can use to convey such feelings? If the cinematic medium has a 'language', what's about VR? How to create contents with awareness?"
     long:
@@ -2193,7 +2193,20 @@ talks:
     short:
       - "At Peak Games, after developing 10+ iOS games natively, we have started to use Unity3D for the new games and develop 5 cross platform games so far. Unity3D has some very fundamental changes according to iOS platforms. And we have learnt a lot in this process. I want to share these experience from an iOS Developer point of view."
     long:
-      - "So as an iOS game developer I want to point out how to start working with Unity, best practices, tips and tricks to develop apps for iOS/tvOS (and also Android) devices. I am planning to cover these topics including demos/hands-on coding: * Development Process (Coding, Debugging, Testing, Profiling…) * Unit and Integration Testing * Network Management * Memory Management * Multi-Threaded Development * Integration with Native Libraries (StoreKit, CoreLocation…) * Integration with Platforms "
+      - "At Peak Games, after developing 10+ iOS games natively, we have started to use Unity3D for the new games and develop 5 cross platform games so far. Unity3D has some very fundamental changes according to iOS platforms. And we have learnt a lot in this process. I want to share these experience."
+      - "I want to point out how to start working with Unity, best practices, tips and tricks to develop apps for iOS and Android devices. I am planning to cover these topics including demos/hands-on coding: "
+      - ""
+      - "-Why we choose Unity3D"
+      - "-Development Process"
+      - "   Coding,"
+      - "   Debugging,"
+      - "   Testing,"
+      - "   Profiling"
+      - "-Unit and Integration Testing"
+      - "-Memory Management / Performance Optimization"
+      - "-Integration with Native Libraries (StoreKit, CoreLocation…)"
+      - "-Leverage Unity Editor"
+      - "-General Tips & Tricks"
 
   -
     tid: 260
