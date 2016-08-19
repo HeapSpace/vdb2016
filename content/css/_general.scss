@@ -74,7 +74,7 @@ p {
   background: url(../images/home-logo.png) center center no-repeat;
   background-size: contain;
   height: 95px;
-  margin-top: 90px;
+  margin-top: 290px;
 
   @media (max-device-width: $screen-xs) {
     margin-top: 180px;
@@ -1352,6 +1352,14 @@ a {
     to {
       top: 3px;
     }
+}
+
+#cepelin-trigger {
+  margin-top: 280px;
+
+  @media (max-device-width: $screen-xs) {
+    margin-top: 150px;
+  }
 }
 
 .cepelin {
