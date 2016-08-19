@@ -1169,7 +1169,7 @@ speakers:
     pageurl: 'radek-ostrowski'
     url: 'https://uk.linkedin.com/in/radekostrowski'
     photo: 'Radek Ostrowski.jpg'
-    company: 'Fast Data Ltd'
+    company: 'Toptal'
     talk:
       - '470'
     tags:
