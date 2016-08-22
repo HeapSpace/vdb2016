@@ -1447,9 +1447,9 @@ speakers:
       - ""
   -
     sid: 33
-    firstname: 'Igor'
-    lastname: 'Bogićević'
-    pageurl: 'igor-bogicevic'
+    firstname: 'Mladen'
+    lastname: 'Srdić'
+    pageurl: 'mladen-srdic'
     url: ''
     photo: 'user.png'
     company: 'Seven Bridges Genomics, Inc.'
@@ -1522,12 +1522,12 @@ talks:
     break: 0
 
   -
-    tid: 53
+    tid: 52
     empty: 1
     day: 1
     track: 0
     slot: 8
-    duration: 40
+    duration: 375
 
   -
     tid: 55
@@ -1611,14 +1611,6 @@ talks:
     day: 3
     track: 4
     slot: 8
-
-  -
-    tid: 75
-    empty: 1
-    day: 1
-    track: 0
-    slot: 3
-    duration: 95
 
   -
     tid: 101
@@ -1937,7 +1929,7 @@ talks:
     sid: 15
     title: 'Angular, Typescript and RequireJS: The great alltogether'
     type: 'talk'
-    day: 3
+    day: 2
     track: 1
     slot: 8
     short:
@@ -2153,34 +2145,6 @@ talks:
     long:
       - "Redux has proved very successful. Inspired by Flux and Elm, is used to handle Application state and bind it to the User Interface."
       - "Angular 2 has shifted from being just a framework to being a cross platform. This talk shows how everything fits together in this new paradigm."
-
-  -
-    tid: 250
-    sid: 28
-    title: 'Angular 2 Workshop'
-    type: 'workshop'
-    day: 1
-    track: 0
-    slot: 5
-    duration: 240
-    break: 0
-    form: "https://drive.google.com/open?id=1aAfBf2VWcJq0CwgO9tVlbOk2IcEqxZpMqStIcg4qGvk"
-    short:
-      - "Angular 2 is a revolutionary development platform for creating applications using modern web standards and powered by the Open Source Community following the success of AngularJS."
-    long:
-      - "Angular 2 introduces some major improvements over its predecessor. We are going to cover the main areas so you can start creating your own projects and enjoy its benefits Today."
-      - "Outline:"
-      - "• Introduction to Angular 2"
-      - "• ES5, ES6 and TypeScript"
-      - "• Dependency Injection"
-      - "• Templating"
-      - "• Components"
-      - "• Reactive Extensions"
-      - "• HTTP module"
-      - "• Component Router"
-      - "• Forms"
-      - "• Unit Testing"
-      - "• Migration to Angular 2"
 
   -
     tid: 255
@@ -3104,7 +3068,7 @@ talks:
     sid: 33
     title: 'TBA'
     type: 'talk'
-    day: 2
+    day: 3
     track: 1
     slot: 8
     short:

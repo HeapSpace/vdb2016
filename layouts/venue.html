@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_share %>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+	<div class="main-bg page"></div>
+	<div class="container">
+	  <h1 class="text-center pad-vertical-big">
+	    VDB16<br><span class="yellow">Venue</span>
+	  </h1>
+	</div>
+	<div class="steam-separator"></div>
+	<!-- map -->
+	<div class="map-holder">
+		<div class="map-info visible-lg">
+			<h3 class="yellow">BelExpoCentar</h3><br>
+			<h5>Address</h5>
+				<span class="brown">Španskih boraca 74A<br>Belgrade, Serbia</span><br><br>
+			<h5>Website</h5>
+				<a href="http://belexpocentar.rs" target="_blank">belexpocentar.rs</a>
+		</div>
+		<div id="venuemap" class="map"></div>
+	</div>
+	<!-- end map -->
+	<div class="steam-separator"></div>
+	<div class="footer-cta-block info margin-top-big">
+	  <%= render '/_footer_cta.html' %>
+	</div>
+
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+	<%= map_on_page('/venue/', 'venuemap', '44.809871', '20.413875', 'map-pin-vdb.png') %>
+</body>
+</html>
