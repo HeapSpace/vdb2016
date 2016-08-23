@@ -2,7 +2,7 @@
 <html>
 <head>
 	<%= render '/_head.html', :title => 'Default title' %>
-	<%= meta_share %>
+	<%= meta_share @item[:title], @item[:excerpt], "#{@config[:site][:base_url]}/images/#{@item[:image]}" %>
 	<%= meta_tag :keywords %>
 </head>
 <body>
