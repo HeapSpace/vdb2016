@@ -1668,7 +1668,7 @@ talks:
     type: 'talk'
     day: 1
     track: 2
-    slot: 3
+    slot: 5
     short:
       - "Continues delivery in the cloud, learn how you can automate build and test processes, that allow you to continuously deploy all code changes."
     long:
@@ -2137,7 +2137,7 @@ talks:
     sid: 28
     title: 'Building Cross-Platform Apps using Redux with Angular 2'
     type: 'talk'
-    day: 1
+    day: 3
     track: 3
     slot: 3
     short:
@@ -2372,7 +2372,7 @@ talks:
     type: 'talk'
     day: 1
     track: 2
-    slot: 5
+    slot: 3
     short:
       - "Why do we build applications based on microservices? To gain flexibility and resilience - that’s what everybody tells us. But building and application with a lot of microservices leads to a highly distributed system - and distribution hurts!"
     long:
@@ -2468,7 +2468,12 @@ talks:
     short:
       - "In the era of social networks and multimedia, TV that is sitting in our living room is becoming more and more like entertainment center, not just a device that we use to watch news, some sports event or our favorite series. Nowadays, people want to sit back in their couch, relax, and be able to do things that can be done on computers and smartphones, just on a large screen. From watching YouTube videos, sharing and posting on Facebook, or following latest trends on twitter, creators of Smart TV applications are struggling to make this possible and accessible by using only few remote controller buttons. Different solutions that enable user to interact with most popular internet services today, from Android and Apple TV, to standard Smart TVs are not available to everyone. Our wish was to bring this technology to every home that has domestic IPTV service. So, we rolled up our sleeves, took a leap into JavaScript world of different API’s, optimizations for TV box embedded operating systems, limitations of hardware, and interface specifics, and delivered a product that can match today’s most modern solutions in TV applications. This is our success story, one that tells how we took 80$ TV box, and put Facebook, twitter and YouTube inside it."
     long:
-      - "This talk will cover all aspects of delivering social networks experiences to lightweight TV box sets, but it will be concentrated around usage of JavaScript API that Facebook, twitter and Google provide for developing third party applications. In introduction we will be talking about apps development for TV boxes in general: specifics of TV interface, limitations of hardware, summary of TV box operating systems and web browsers and technologies that can be used. In implementation we will do short summary of all APIs needed for development, concentrating on explanation of key parts of code like login and authorization, data fetching, presentation of content, and posting users actions and feedback. We will also give parallel comparison of Google, Facebook and twitter API’s, and a small live coding demo of most interesting functionalities like sharing information about currently watched TV channel on Facebook and twitter, or playback of YouTube videos. In challenges and limitations, we will talk of things that are hard to be done, or cannot be done, such as long process of Facebook authorization, workarounds that enable simple and user friendly login to twitter, or videos that are allowed to be played only on YouTube web site. Also, we will say something more about functionalities that these companies do not enable to third party apps such as viewing your friends profile on Facebook, or adding previously watched video to YouTube history. At the end, in experience, we will give you a live demo of how it works, using real Set Top Box device. We will turn it on, and see some of its great features like: + Device login – enables us to avoid entering username and password using remote controller + YouTube auto play – user can search for its favorite video once, and enjoy similar videos playing one by one, for hours + Twitter and Facebook one-button share – when you watch your favorite TV show, and want your friends to know about it, you just need to enter Facebook or twitter app, and press a button to share it + Adaptive video quality – depending of quality of your internet connection, YouTube automatically chooses best possible video quality up to HD, without you ever needing to set it manually "
+      - "This talk will cover all aspects of delivering social networks experiences to lightweight TV box sets, but it will be concentrated around usage of JavaScript API that Facebook, twitter and Google provide for developing third party applications. In introduction we will be talking about apps development for TV boxes in general: specifics of TV interface, limitations of hardware, summary of TV box operating systems and web browsers and technologies that can be used. In implementation we will do short summary of all APIs needed for development, concentrating on explanation of key parts of code like login and authorization, data fetching, presentation of content, and posting users actions and feedback. We will also give parallel comparison of Google, Facebook and twitter API’s, and a small live coding demo of most interesting functionalities like sharing information about currently watched TV channel on Facebook and twitter, or playback of YouTube videos."
+      - "In challenges and limitations, we will talk of things that are hard to be done, or cannot be done, such as long process of Facebook authorization, workarounds that enable simple and user friendly login to twitter, or videos that are allowed to be played only on YouTube web site. Also, we will say something more about functionalities that these companies do not enable to third party apps such as viewing your friends profile on Facebook, or adding previously watched video to YouTube history. At the end, in experience, we will give you a live demo of how it works, using real Set Top Box device. We will turn it on, and see some of its great features like: "
+      - "* Device login – enables us to avoid entering username and password using remote controller"
+      - "* YouTube auto play – user can search for its favorite video once, and enjoy similar videos playing one by one, for hours"
+      - "* Twitter and Facebook one-button share – when you watch your favorite TV show, and want your friends to know about it, you just need to enter Facebook or twitter app, and press a button to share it"
+      - "* Adaptive video quality – depending of quality of your internet connection, YouTube automatically chooses best possible video quality up to HD, without you ever needing to set it manually"
 
   -
     tid: 360
@@ -2920,7 +2925,7 @@ talks:
     sid: 7
     title: '1, 2, 3, build - Continuous Integration for Mobile Apps'
     type: 'talk'
-    day: 3
+    day: 1
     track: 3
     slot: 3
     short:
@@ -3031,9 +3036,18 @@ talks:
     track: 3
     slot: 8
     short:
-      - "TBA"
+      - "Scrum is supposed to be a tool that can help organizations to leverage their agility. Cross-functional, self-organizing, and high-performing teams create valuable and releasable product increments. Sprint by sprint, release by release. And they welcome changes - of all kinds, at any time. This sounds great, for sure!"
+      - "What happens if we introduce some circumstances that may seem as obstacles on our way just because they are not aligned with well-known pre-conditions defined in Scrum? Those that can make people resistant and push them into an “it’s not possible” mode…"
     long:
-      - "TBA"
+      - "In a nutshell, a Scrum Team is composed of few roles, each with its own set of purposes.  There is a PO who is responsible for maximizing value, a SM who enables continuous improvement and a DT delivering high quality increments. Does it mean you only need to have these roles appointed and given a context so to make it a great experience?"
+      - "All around us Scrum is being adopted or practiced within IT companies. We are witnessing the scrumonization of the world as we know it. Of course, whenever there is a tool, methodology or framework that is proving a polarizing force, there will be numerous misconceptions around it."
+      - "Obviously, there is quite some rubbish going on around Scrum too. Whether it origins from insufficient understanding of the framework and its goals or from any other source, it creates some prevalent and toxic myths. In this talk, we will expose the hollowness of some of the common myths associated with Scrum teams."
+      - "Myth1: Only a self-designed team can reach a performing stage"
+      - "Researches tell us that people are highly motivated, enjoy the experience and get lots of work done when they self-select. They tend to form cross-functional teams and ensure there is a shared and compelling goal. What if you have a managerial selection in place?"
+      - "Myth2: Only 100% means success"
+      - "A lot of Scrum Teams have a conservative approach to a sprint success assessment - a sprint is a failure if the team doesn’t deliver their own forecast. Is there such a thing as a great team then? When obsessing over sprint failure can have a beneficial effect?"
+      - "Myth3: Scrum welcomes (any) change (at any time)"
+      - "A Scrum Team embraces changes, for sure. Any change at any time? Well, yes and no… No rules are universal (except this one). All rules need context."
 
   -
     tid: 555
