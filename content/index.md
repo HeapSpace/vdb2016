@@ -380,9 +380,9 @@ speakers:
     tags:
       - microservices
     answers:
-      - ""
-      - ""
-      - ""
+      - "With the pace of innovation accelerating every day, what appears to be crazy one day becomes the norm soon after. More recently for me, one of these was driving a Tesla on Autopilot behind a Google Self Driving Car on 101 (highway) in the San Francisco bay area."
+      - "The next 5 years will increasingly be based on shared economy, participatory systems, virtual reality, multi-modal experiences and artificial intelligence agents. The future is only more exciting!"
+      - "Balance professional education with liberal arts."
   -
     sid: 19
     firstname: 'Daniel'
@@ -461,9 +461,9 @@ speakers:
     tags:
       - javascript
     answers:
-      - ""
-      - ""
-      - ""
+      - "Pokemon Go ate my data package so now I have to survive on WiFi! =O"
+      - "I see a lot of JavaScript."
+      - "You are the best!"
   -
     sid: 32
     firstname: 'Hakan'
@@ -625,9 +625,9 @@ speakers:
       - bigdata
       - data analytics
     answers:
-      - ""
-      - ""
-      - ""
+      - "I got lost and almost arrested by completely trusting GPS device. These devices are smart but they still rely on humans mapping out the territory."
+      - "Tech industry is in focus for the whole civilization and as a result its the faster growing and developing industry. So much stuff changes every 6 months so you would really need to be fortune teller to foresee where it will be in the next 5 years. At the moment I see everything moving into the AI segment but its definitely an interesting time to live in if you are into tech."
+      - "Stop wasting time. Start coding. (at 13-14 year old)"
   -
     sid: 62
     firstname: 'Michał'
@@ -642,9 +642,9 @@ speakers:
       - web
       - game
     answers:
-      - ""
-      - ""
-      - ""
+      - "NullPointerException."
+      - "People will use more and more Haskell patterns without even knowing about that. JavaScript will still be there."
+      - "Always code first when learning a new technology. Read books later. Learn to do great code reviews. Tests are more important than production code."
   -
     sid: 51
     firstname: 'Luca'
@@ -808,9 +808,9 @@ speakers:
     tags:
       - javascript
     answers:
-      - ""
-      - ""
-      - ""
+      - "Nowadays, tech is integral part of our lives so I can’t recall anything in newer past that could qualify here. I guess that after some time you start to take a lot of things for granted, so this was a difficult one. But there was one experience in high school when I was visiting one tech university in Germany. In one moment we were entering an elevator in new building that was leaning towards old one in order to get three stories underground. And in blink of an eye after doors closed, I felt strong pulling force and doors opened: we were there. Later I heard that in that time students were prototyping high speed elevator mechanism to be used in 50 story building. It was really crazy to feel all that force when only travelling 3 stories, and thought my brain was blown out, my stomach wasn’t so keen to go for another ride J."
+      - "I really hope we would experience some new game changer until 2021. In my opinion, last was introduction of touch screen, and it really found way to everyday use in no time. Some are speaking of cloud, some about Virtual Reality, and others about Internet of Things. But I really hope that next really big thing would be beneficial for everyone, and that it wouldn’t be some fancy tech stuff that is too expensive for most of us. So my high hopes are in favor of free internet in cities and places in world where internet and information is inaccessible. Also, cheaper transportation and higher share of electrical and hybrid cars can be game changer for all of us, and this kind of tech in already in our reach, we just need to work hard to make it more affordable."
+      - "As I am still very young, I doubt that time travelling right now would be very beneficial: there is really not much to say to a teenager worrying about simple every day stuff like grades and girls J But even that teenager wanted do something that lot of people could see and use, so good for him. Only advice I would give him is the advice that I am trying to give this 25 year old guy right now: slow down sometimes. Take the moment. Enjoy coffee in peace. Enjoy in simple and small things. Take a day off to spend it with your family. Because pursuing your dreams and carrier, especially nowadays in crowded world is taking more and more from us, and sometimes we don’t even notice that."
   -
     sid: 89
     firstname: 'Željko'
@@ -1278,9 +1278,9 @@ speakers:
       - mobile
       - ci
     answers:
-      - ""
-      - ""
-      - ""
+      - "A while ago, I installed Ubuntu next to Windows on my girlfriends laptop. During that process, the bootloader got screwed up and refused to start Windows anymore. Upon restoring the computer from the backup (that I’ve made before starting the installation), I somehow messed up and destroyed the backup. Now I had an empty hard-disk where the backup was supposed to be and a broken system. Luckily, I was able to use forensic software to recover all of the data, and save me from being beheaded by my girlfriend ;-)."
+      - "I think the next five years in tech will bear many great opportunities to work with upcoming technologies, tools and devices. Augmented Reality might actually become something that people work with, even after the first wow-effect has gone and the one-trick ponies have galloped away."
+      - "Keep on going, you’re on the right track!"
   -
     sid: 25
     firstname: 'Doan'
@@ -1479,9 +1479,6 @@ speakers:
       - "It’s tech, so there’s no shortage of crazy, right. Probably the most memorable, though, was the day in 1993 when my boss walked over with a tarball containing a copy of the Mosaic browser. The change from newsgroups, telnet, and email was just insanely revolutionary."
       - "Take a look at how the world has changed over the past five years, and compare it with how technology changed the five years previously. The rate of change is accelerating at an incredible pace, and not all of the pivotal technologies that will get us there have been invented yet. The predictable stuff like cloud and IoT isn’t really worthy of note at this point.  For me, it’s more about our ability to react to changes and our outlook on the world than any specific new technologies per se, and I strongly believe that organizations that think this way will win over those that don’t."
       - "Younger Alex, you should trust yourself more: don’t wait for acceptance from others."
-
-
-
 
 
 
@@ -2484,7 +2481,7 @@ talks:
     type: 'talk'
     day: 3
     track: 2
-    slot: 8
+    slot: 5
     short:
       - "In this talk, we'll show how ordinary Internet of Things becomes extraordinary if they play well with other devices and/or services. Also, we'll show how smart lighting can play along with other device (TV or other audio device) using audio watermarking technology to sync those devices."
     long:
@@ -3018,7 +3015,7 @@ talks:
     type: 'talk'
     day: 3
     track: 2
-    slot: 5
+    slot: 8
     short:
       - "Security testing is imperative in web based software solutions, and seeing as the industry is striving towards the practice of continuous delivery, the need arises to include security testing in that process as much as possible."
     long:
