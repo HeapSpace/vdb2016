@@ -12,4 +12,4 @@ env:
     - "FTP_USER=admmin"
     - "FTP_PASSWORD=nemamnistapametno"
 after_success:
-    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftp://188.93.125.70:22/var/data/wordpress/test"
+    "curl --ftp-create-dirs -T output -u $FTP_USER:$FTP_PASSWORD ftp://188.93.125.70:22/var/data/wordpress/test"
