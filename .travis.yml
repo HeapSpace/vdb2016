@@ -1,5 +1,5 @@
 language: ruby
-rvm: 2.2.3
+rvm: 2.3.1
 install:
   - gem uninstall bundler
   - gem install -v 1.10.6 bundler --no-rdoc --no-ri
