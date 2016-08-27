@@ -1480,11 +1480,48 @@ speakers:
       - "Take a look at how the world has changed over the past five years, and compare it with how technology changed the five years previously. The rate of change is accelerating at an incredible pace, and not all of the pivotal technologies that will get us there have been invented yet. The predictable stuff like cloud and IoT isn’t really worthy of note at this point.  For me, it’s more about our ability to react to changes and our outlook on the world than any specific new technologies per se, and I strongly believe that organizations that think this way will win over those that don’t."
       - "Younger Alex, you should trust yourself more: don’t wait for acceptance from others."
 
+  -
+    sid: 96
+    firstname: 'Antonio'
+    lastname: 'Almeida'
+    pageurl: 'antonio-almeida'
+    url: 'https://de.linkedin.com/in/perusio'
+    photo: 'Antonio Almeida.png'
+    company: 'relayr'
+    talk:
+      - '437'
+    tags:
+      - IoT
+    answers:
+      - ""
+      - ""
+      - ""
+
+  -
+    sid: 97
+    firstname: 'Klemen'
+    lastname: 'Lilija'
+    pageurl: 'klemen-lilija'
+    url: 'https://si.linkedin.com/in/klemenlilija'
+    photo: 'Klemen Lilija.jpg'
+    company: 'relayr'
+    talk:
+      - '437'
+      - '438'
+    tags:
+      - IoT
+    answers:
+      - ""
+      - ""
+      - ""
+
 
 
 
 
 talks:
+
+
   -
     tid: 41
     type: 'talk'
@@ -1523,8 +1560,9 @@ talks:
     empty: 1
     day: 1
     track: 0
-    slot: 8
-    duration: 375
+    slot: 3
+    duration: 95
+    break: 0
 
   -
     tid: 55
@@ -1549,6 +1587,14 @@ talks:
     day: 3
     track: 4
     slot: 4
+
+  -
+    tid: 58
+    empty: 1
+    day: 1
+    track: 0
+    slot: 8
+    duration: 40
 
   -
     tid: 70
@@ -1592,14 +1638,6 @@ talks:
     day: 3
     track: 4
     slot: 2
-
-  -
-    tid: 62
-    type: 'talk'
-    empty: 1
-    day: 3
-    track: 4
-    slot: 5
 
   -
     tid: 65
@@ -2020,14 +2058,14 @@ talks:
     track: 1
     slot: 3
     short:
-      - "To survive today, companies are asking themselves ‘How can we be more agile in meeting customer needs?’ Wikipedia defines Agility as “The capability of rapidly and cost efficiently adapting to changes”. Gartner defines Agility as “The ability of an organization to sense environment change and to respond efficiently and effectively to it”."
+      - "To survive today, companies are asking themselves 'How can we be more agile in meeting customer needs?'' Wikipedia defines Agility as 'The capability of rapidly and cost efficiently adapting to changes'. Gartner defines Agility as 'The ability of an organization to sense environment change and to respond efficiently and effectively to it'."
     long:
       - "Agility is enabled by systems that are flexible and extensible. "
       - "IEEE Standard Glossary of Software Engineering Technology defines Flexibility as the ease with which a system or component can be modified for use in applications or environments other than those for which it was specifically designed. and Extensibility as the ease with which a system or component can be modified to increase its functional capacity."
       - "As customer needs evolve, flexibility helps with composing features and applications rapidly from using API, and extensibility helps in introducing the required changes quickly by making changes in services."
       - "The challenge many companies have today is that they have built systems primarily as monoliths during a stage of their evolution, or have several services but they are tightly coupled. Satisfying a customer need even though the functionality already exists can take significant effort and cost."
       - "Companies are therefore moving to APIs and microservices to address this business imperative. While many initiate this journey, most of them don’t end up with the intended outcomes - they falter or fail and go through many iterations."
-      - "This talk will share principles, best practices and approaches - across architecture, organizational and cultural - that have been applied in transforming companies such as eBay and PayPal to APIs and Microservices."
+      - "This talk will share principles, best practices and approaches - across architecture, organizational and cultural - that have been applied in transforming companies such as eBay, PayPal and Intuit to APIs and Microservices."
 
   -
     tid: 225
@@ -2711,6 +2749,40 @@ talks:
     long:
       - "Concurrent and distributed development has always been notoriously difficult to test. Methods like ad-hoc correctness proofs, temporal logic and model checking have been used for decades, but have always had downsides which prevented them from going mainstream. In this workshop we build on the theory presented in 'why are actors terrible' and teach a more efficient and effective method for building testable actor based systems. The approach presented uses some properties of the actor model and builds on TDD, property based testing and model checking in order to allow effective testing of distributed systems."
       - "The workshop will include some hands on development using java+akka (or scala+akka if preferred). Attendees will have to use their laptops or work in pairs. We will try to build and test a correct implementation of a simple distributed algorithm such as the two phase commit. Ideally it should be 4 hours but we can adapt. Attendees will learn how to take advantage of the benefits of the actor model."
+
+  -
+    tid: 437
+    sid:
+      - '96'
+      - '97'
+    title: 'Understanding IoT protocols using the ESP 8266: MQTT, CoAP, HTTP and WebSockets'
+    type: 'workshop'
+    day: 1
+    track: 0
+    slot: 5
+    duration: 240
+    break: 0
+    short:
+      - "In this workshop you’ll get a hands on experience with the protocols that power IoT. Chances are that you already know a few of them. If you’re curious about IoT and you’re looking for a way to get in, then this workshop is the perfect gateway."
+    long:
+      - "In this workshop you’ll get a hands on experience with the protocols that power IoT. Chances are that you already know a few of them. If you’re curious about IoT and you’re looking for a way to get in, then this workshop is the perfect gateway. It doesn’t matter if you have no plans to work in IoT. Knowing these protocols will make you a better developer, for there’s bound to be occasions in your work when they might come in handy."
+      - "We’ll use the development board, based on the ESP8266 micro controller and WiFi chip, for running the code examples. You only need a laptop we provide everything else."
+
+  -
+    tid: 438
+    sid: 97
+    title: 'Beehive monitoring as an application of Fog Computing'
+    type: 'talk'
+    day: 3
+    track: 4
+    slot: 5
+    short:
+      - "Fog Computing is a term gaining acceptance to stand for a new type of network and application architecture going beyond the centralized and distributed approaches. It represents a network where the smartness is not only in one of the edges, but rather on both edges. This turns the dumb client and smart server concept on its head."
+    long:
+      - "Fog Computing is a term gaining acceptance to stand for a new type of network and application architecture going beyond the centralized and distributed approaches. It represents a network where the smartness is not only in one of the edges, but rather on both edges. This turns the dumb client and smart server concept on its head."
+      - "The essential element in this new architecture is the gateway. This can range from a small router running OpenWRT to a server rack with high-performance CPU units housed on premise. Fog computing also brings into focus again the Private Cloud idea that lost ground when public clouds with PaaS approaches appeared on the IT scene."
+      - "Save the Bees is a Corporate Social Responsibility project from Cisco and relayr in cooperation with CSIRO in Australia that addresses the health issues affecting the global bee population."
+      - "Using the Save the Bees project as an use case we will share with you our approach in building the gateway component: focusing in re-using ideas from backend development, e.g., microservice based architectures, and also re-using the free software building blocks of a modern backend solution."
 
   -
     tid: 440
