@@ -1434,8 +1434,8 @@ speakers:
     firstname: 'Đurađ'
     lastname: 'Caranović'
     pageurl: 'djuradj-caranovic'
-    url: ''
-    photo: 'user.png'
+    url: 'https://rs.linkedin.com/in/djuradj'
+    photo: 'Djuradj Caranovic.jpg'
     company: 'Fundus Holding'
     talk:
       - '560'
@@ -1783,9 +1783,9 @@ talks:
     sid: 85
     title: 'The Art of Clean Code'
     type: 'talk'
-    day: 1
+    day: 2
     track: 1
-    slot: 5
+    slot: 2
     short:
       - "After 10 years of hard work experience in Java Enterprise applications, I started several years ago teaching various topics that I mastered (www.victorrentea.ro). Among all these topics, by far the most important topic, that I always include in all my training sessions is 'Clean Code'. It's essential to be able to keep 'alive' 100k-2M lines of code. And I was told that this module has the biggest impact in day-to-day life of the dev."
       - "Also, this talk will also show how a professional developer should behave in code, the 'ethics code' that ough to be followed by everyone. We will go from the most basic concerns like how should we choose our names, how should we write our functions, format and (not) comment them, to more advanced topics of true Objects. The entire presentation is spiced with numerous esay to understand examples and code snippets."
@@ -2225,9 +2225,9 @@ talks:
     sid: 36
     title: 'Reactive Database Mapping with Scala and Slick'
     type: 'talk'
-    day: 2
+    day: 1
     track: 1
-    slot: 2
+    slot: 5
     short:
       - "Are you familiar with Object-Relational Mapping? Let's get out of the comfort zone and meet a completely different approach to mapping database tables to domain objects using Scala's Slick library during this no-fluff-just-code live-coding session."
     long:
@@ -2762,6 +2762,7 @@ talks:
     slot: 5
     duration: 240
     break: 0
+    form: 'https://docs.google.com/a/heapspace.rs/forms/d/1quQ1fGBWfT5fsNqVj1mdEQUghAjym_QDwxehRP50_KQ/edit?ts=57c42cd5'
     short:
       - "In this workshop you’ll get a hands on experience with the protocols that power IoT. Chances are that you already know a few of them. If you’re curious about IoT and you’re looking for a way to get in, then this workshop is the perfect gateway."
     long:
@@ -3142,9 +3143,22 @@ talks:
     track: 4
     slot: 8
     short:
-      - "TBA"
+      - "Is it challenging to mention IT and agriculture in same sentence? Can we add cloud, drones, software development, robotics? Can we even say startup? Ok, now do you believe me, if it I said in Serbia?"
+      - "As you all know, IT has fast grown in our region, many of them software-export oriented, developing for big corporations. We tried to be more local and practical, but financial viable. As we are focused more, what we like to do, we like quality food, so we decided to do something, as a startup for agriculture. We thought maybe we can help to provide some solutions for them. As we learned on the way, we cannot do it alone. We need your help."
+      - "I will try to tease you, and point a direction, in return I expect though questions and knowledgeable debate."
     long:
-      - "TBA"
+      - IT has become a bridge for people from all over the world. You may be asking yourself, what is the importance of this when it comes to agriculture? Agriculture may be seen as a craft which has been handed down from generation to generation from the very first men who learned how to plow the fields and grow their own crops.
+      - "Agricultural practices and advancements differ globally—since plants have their own differences and the location plays a role on their development as well. But through the exchange of knowledge from different agriculturally-involved individuals from all over the world, improvement of techniques can be experienced as well."
+      - "Upon first glance, it may be challenging to see how such different sectors may work together. Agriculture has been around since men first learned to tend to his own crops and not depend on what just grows where he goes. IT, on the other hand, is a much younger advancement that man has developed. Hand in hand, IT and agriculture can make progress more visible, sharable, and measurable which are highly beneficial for all who are engaged in it."
+      - "Since IT encompasses a lot of disciplines, it can also be successfully integrated to many different sectors to help them become more efficient and productive. It may take some getting used to, but when IT is successfully integrated to agriculture, it helps a great deal and can definitely contribute to positive changes that farmers can prove with the growth of their output.
+      IT has made its way into the agricultural sector, and with positive results. To name a few, here are some of its effects:"
+      - "•	Software Development – By having the necessary information, farmers—big and small can make better and more informed decision concerning their agricultural activities.
+      In agriculture, time is everything. Than don’t be confused if I mention cloud, m-development and software development next to agriculture. (Big data, Analytics, Insurance….) These platforms will collect data from individual farms and process them in the cloud, allowing for the farm’s history, the known behavior of individual crops strains and the local weather forecast. They will then make recommendations to the farmer, perhaps pointing him towards some of the firm’s other products."
+      - "•	Hardware Development –  Many SMART mechanization and development of modular principles and robotics in agriculture. (Precise Agriculture, automatization of greenhouses, solar energy, switching machinery on electrics) Did we mention drones? We are currently developing a drone with unique features and tractor which both runs on solar energy."
+      - "•	Community involvement – Crowd Funding and direct sales, in last 3 years, there is 3500 new startups doing something for agriculture development community. (popup of e-commerce in Serbia is one way…) We have network of 63 cooperators which are growers and farmers, so we can test and share our knowledge in practice."
+      - "•	Agricultural breakthroughs – Moving forward using all IT sectors for and with agriculture. We can name any industry and you can correlate with agriculture and there need to track or forecast. "
+      - "•	Agriculture for everyone – Farmers have in-depth knowledge when it comes to their trade. However, interested individuals who may be called backyard farmers may also benefit from how modern technology has changed how agriculture is seen. Growing your own sustainable garden of herbs, fruit trees, and other agricultural produce can be possible in a smaller scale. Planting is beneficial in more ways than one, and having your own produce even helps assure the freshness and quality of the food your family eats."
+      - "People only have to open their minds to the endless possibilities that technological advancement can bring to agriculture. "
 
   -
     tid: 565
