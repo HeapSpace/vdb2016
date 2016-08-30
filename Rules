@@ -36,7 +36,7 @@ preprocess do
             speaker = schedule_speakers.select{ |item| item[:sid] == talk[:sid] }
             speakers << speaker
           end
-          @items.create('', {:title => talk[:title], :talkspeakers => speakers, :type => talk[:type], :short => talk[:short], :long => talk[:long], :day => talk[:day], :track => talk[:track], :slot => talk[:slot], :duration => talk[:duration], :venue => talk[:venue], :layout => '/talk_page.html'}, '/talk/'+talk[:tid].to_s+'/index.md')
+          @items.create('', {:title => talk[:title], :talkspeakers => speakers, :type => talk[:type], :short => talk[:short], :long => talk[:long], :day => talk[:day], :track => talk[:track], :slot => talk[:slot], :duration => talk[:duration], :form => talk[:form], :venue => talk[:venue], :layout => '/talk_page.html'}, '/talk/'+talk[:tid].to_s+'/index.md')
         end
       end
 

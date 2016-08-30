@@ -52,7 +52,7 @@
 						<img class="card-logo" src="/images/home-logo-small.png" /> 29. Sep <span class="yellow">/</span> 10:00 <span class="yellow">/</span> Track 2 <span class="yellow">/</span> Venue 3
 					</h4> -->
 					<% @item[:talkspeakers].flatten(1).each do |speaker| %>
-					<div class="talk-circle-links pull-right">
+					<div class="talk-circle-links">
 						<a href="https://twitter.com/intent/tweet?
 							text=Woot, Woot!! I'm watching <%= speaker[:firstname] %> <%= speaker[:lastname] %> at VoxxedDays Belgrade 2016
 							&hashtags=vdb16,awesome,tech,conference">
@@ -78,7 +78,7 @@
 					<% if !@item[:day].to_s.empty? %>
 						<a class="btn btn-primary btn-lg form-link btn-talk-schedule" role="button" href="/schedule/day<%= @item[:day] %>#<%= @item[:day] %>-<%= @item[:track] %>-<%= @item[:slot] %>"><i class="fa fa-calendar talk-schedule"></i> Day <%= @item[:day] %> &nbsp;&bull;&nbsp; Track <%= @item[:track] %> &nbsp;&bull;&nbsp; Slot <%= @item[:slot] %></a>
 					<% end %>
-
+					<% if !@item[:form].to_s.empty? %>&nbsp;&nbsp;&nbsp;<a href="<%= @item[:form] %>" class="btn btn-primary talk-form-link red" role="button" target="_blank"><i class="fa fa-check-circle"></i> apply now</a><% end %>
 				</div>
 
 

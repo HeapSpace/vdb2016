@@ -10,11 +10,14 @@
 }
 
 .btn-talk-schedule {
-  margin: -5px 0 0 0 !important;
   padding: 10px 25px !important;
   background-color: $blue;
   color: $white;
   font-family: "Roboto Slab";
+  margin: 10px 0px !important;
+  @media (min-width: $screen-lg) {
+    margin: -5px 0 0 0 !important;
+  }
   .fa-chevron-right {
     font-size: 16px;
   }
@@ -71,6 +74,13 @@
 	right: 10px;
 	opacity: 0.5;
 	font-size: 2.65em;
+}
+
+.talk-form-link {
+  background-color: $red;
+  padding: 6px 24px !important;
+  margin: -3px 0 0 0 !important;
+  font-size: 125%;
 }
 
 .schedule-list {
