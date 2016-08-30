@@ -695,22 +695,7 @@ speakers:
       - ""
       - ""
       - ""
-  -
-    sid: 77
-    firstname: 'Ralph'
-    lastname: 'Winzinger'
-    pageurl: 'ralph-winziger'
-    url: 'https://twitter.com/@rwinz'
-    photo: 'Ralph Winzinger.jpg'
-    company: 'Senacor Technologies'
-    talk:
-      - '325'
-    tags:
-      - microservices
-    answers:
-      - "I guess that’s the „enterprise“: Creating processes, technologies and tools that are incredibly heavy-weight and make us burn vast amounts of money for very little return. Sometimes it’s a shame, how much effort we have to spend in such environment to create some business value - especially if you look at how powerful the current lightweight approaches are ..."
-      - "I think that in the next five years we will see huge adoption of cloud technologies. There will be a phase where larger enterprises will start to build their own private clouds but I think eventually there will be a lot of migration to the major players like Amazon, Google and Microsoft. They way we operate our applications today simply does not match to the way we want to build our applications tomorrow."
-      - "Never. Stop. Learning. You decided to pick a great job where innovation is part of your daily life, that never ever can become boring. So keep up with new technologies, with new methodologies. Don’t get stuck with something only because it’s convenient. Continuously improve yourself and continuously improve whatever you create."
+
   -
     sid: 83
     firstname: 'Stjepan'
@@ -1565,6 +1550,16 @@ talks:
     break: 0
 
   -
+    tid: 53
+    type: 'talk'
+    empty: 1
+    day: 1
+    track: 2
+    slot: 3
+    duration: 75
+    break: 0
+
+  -
     tid: 55
     empty: 1
     day: 3
@@ -2399,19 +2394,6 @@ talks:
     long:
       - "Having conquered the worlds of app incubation (Palo Alto's Hacker Hostel), casual same-sex dating (Grindr), tech journalism (Code/Rag), and first but not least social media aggregation and management software for commercial airlines (Aviato), Erlich has purchased a controlling stake in the ground-breaking compression company Pied Piper, which he himself incubated like the tiny, featherless, hydrocephalic preemie of a chick that it was up through its current pivot, to what will no doubt be a powerhouse in the video-chat field. To the Skypes of the world say I, 'Look on my works, ye Mighty, and despair!'"
       - "In this talk Erlich will share the takeaways from his rich experience; as well some awesome H.T.M.L. practices"
-
-  -
-    tid: 325
-    sid: 77
-    title: 'Event Sourcing in Microservices'
-    type: 'talk'
-    day: 1
-    track: 2
-    slot: 3
-    short:
-      - "Why do we build applications based on microservices? To gain flexibility and resilience - that’s what everybody tells us. But building and application with a lot of microservices leads to a highly distributed system - and distribution hurts!"
-    long:
-      - "As soon as you start interacting with a remote process you will have to bear in mind that messages might get lost, the network might go down and you will experience that communication will surely increase the latency your users are about to experience while using your system. So how can we break a large application into small microservices while keeping dependencies between those services at the lowest possible level and how can we reduce communication in the overall system? We will have a look at „Event-Sourcing“ as a possible and very cool answer for these questions. The basic idea is that every component emits relevant (from a business point of view) state changes as events. Those events are used a technique for asynchronous communication and data exchange/replication between microservices. The talk will also include some code samples to demonstrate how to introduce event sourcing in Java-based microservices."
 
   -
     tid: 330
