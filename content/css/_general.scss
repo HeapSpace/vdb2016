@@ -687,16 +687,13 @@ iframe {
   padding-bottom: 10px;
   padding-top: 5px;
   .talk-circle-links {
-    float: right;
+    text-align: center;
+    margin-bottom: 30px;
     a {
-      margin-left: 10px;
+      margin: 0 5px;
     }
     @media (max-width: $screen-lg) {
-      float: left;
       width: 100%;
-      a {
-        margin-left: 0px;
-      }
     }
   }
   #talk-desc{
@@ -724,20 +721,20 @@ iframe {
     height: 55px;
     border: 1px solid $brand-primary;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 13px;
     @include round-corners(50%);
     &.fa-microphone, &.fa-bolt, &.fa-link {
       padding-top: 12px;
     }
     &.card {
       padding: 8px;
-      width: 45px;
-      height: 45px;
-      font-size: 180%;
+      width: 35px;
+      height: 35px;
+      font-size: 120%;
       color: $brand-secondary;
       border: 1px solid $brand-secondary;
       &.fa-link:before {
-        top: 3px;
+        top: 1px;
         position: relative;
       }
       &.fa-share-alt:before {
@@ -1136,7 +1133,7 @@ button, a[role="button"] {
 .speaker {
   text-align: center;
   color: $white;
-  margin: 0 0 30px 0;
+  margin: 0;
   h6, h5, h4 {
     margin: 10px 0 0 0;
   }

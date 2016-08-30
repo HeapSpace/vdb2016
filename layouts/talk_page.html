@@ -12,7 +12,7 @@
 	<div class="container">
 
 	  <div class="row-centered margin-top-huge">
-	    <div class="col-sm-3 col-centered">
+	    <div class="col-sm-3 col-centered single-talk">
 				<% @item[:talkspeakers].flatten(1).each do |speaker| %>
 	      <div class="speaker">
 					<div class="photo-frame">
@@ -25,6 +25,14 @@
 						<%= speaker[:company] %>
 					</h6>
 		  	</div>
+				<div class="talk-circle-links">
+					<a href="https://twitter.com/intent/tweet?
+						text=Woot, Woot!! I'm watching <%= speaker[:firstname] %> <%= speaker[:lastname] %> at VoxxedDays Belgrade 2016
+						&hashtags=vdb16,awesome,tech,conference">
+						<i class="fa fa-share-alt big-icon card"></i>
+					</a>
+					<a href="/speakers/<%= speaker[:pageurl] %>/"><i class="fa fa-user big-icon card"></i></a> <% if !speaker[:url].to_s.empty? then %><a href="<%= speaker[:url] %>" target="_blank"><i class="fa fa-link big-icon card"></i></a><% end %>
+				</div>
 				<% end %>
 	    </div>
 			<div class="col-sm-7 col-centered">
@@ -52,14 +60,7 @@
 						<img class="card-logo" src="/images/home-logo-small.png" /> 29. Sep <span class="yellow">/</span> 10:00 <span class="yellow">/</span> Track 2 <span class="yellow">/</span> Venue 3
 					</h4> -->
 					<% @item[:talkspeakers].flatten(1).each do |speaker| %>
-					<div class="talk-circle-links">
-						<a href="https://twitter.com/intent/tweet?
-							text=Woot, Woot!! I'm watching <%= speaker[:firstname] %> <%= speaker[:lastname] %> at VoxxedDays Belgrade 2016
-							&hashtags=vdb16,awesome,tech,conference">
-							<i class="fa fa-share-alt big-icon card"></i>
-						</a>
-						<a href="/speakers/<%= speaker[:pageurl] %>/"><i class="fa fa-user big-icon card"></i></a> <% if !speaker[:url].to_s.empty? then %><a href="<%= speaker[:url] %>" target="_blank"><i class="fa fa-link big-icon card"></i></a><% end %>
-					</div>
+
 					<% end %>
 				</div>
 				<div class="single-talk">
