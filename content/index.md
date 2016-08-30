@@ -1556,7 +1556,7 @@ talks:
     day: 1
     track: 2
     slot: 3
-    duration: 75
+    duration: 60
     break: 0
 
   -
