@@ -602,7 +602,7 @@ speakers:
     pageurl: 'marcin-szymaniuk'
     url: ''
     photo: 'Marcin Szymaniuk.jpg'
-    company: 'ProData Consult'
+    company: 'TantusData'
     talk:
       - '295'
     tags:
@@ -1403,7 +1403,7 @@ speakers:
     pageurl: 'robert-boxall'
     url: 'https://www.linkedin.com/in/robertboxall'
     photo: 'Robert Boxall.png'
-    company: 'Interventure/Gogo'
+    company: 'GOGO/InterVenture'
     talk:
       - '555'
     tags:
@@ -1453,7 +1453,7 @@ speakers:
     pageurl: 'alex-king'
     url: ''
     photo: 'Alex King.jpg'
-    company: 'Interventure/Gogo'
+    company: 'GOGO/InterVenture'
     talk:
       - '570'
     tags:
