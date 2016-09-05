@@ -352,6 +352,9 @@ h4 {
   &.bold {
     padding-bottom: 10px;
   }
+  &.tickets {
+    padding: 20px 0 0 0;
+  }
 }
 
 h5 {
@@ -979,6 +982,15 @@ button, a[role="button"] {
   position: absolute;
   top: 40px;
   right: 30px;
+}
+
+.last100 {
+  position: absolute;
+  top: 40px;
+  right: 30px;
+  &.home {
+    top: -10px;
+  }
 }
 
 .sold {
