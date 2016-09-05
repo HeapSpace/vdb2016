@@ -1436,7 +1436,7 @@ speakers:
     lastname: 'Srdić'
     pageurl: 'mladen-srdic'
     url: 'https://www.linkedin.com/in/msrdic'
-    photo: 'Mladen Srdic.png'
+    photo: 'Mladen Srdic.jpg'
     company: 'Seven Bridges Genomics, Inc.'
     talk:
       - '565'
