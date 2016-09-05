@@ -1435,8 +1435,8 @@ speakers:
     firstname: 'Mladen'
     lastname: 'Srdić'
     pageurl: 'mladen-srdic'
-    url: ''
-    photo: 'user.png'
+    url: 'https://www.linkedin.com/in/msrdic'
+    photo: 'Mladen Srdic.png'
     company: 'Seven Bridges Genomics, Inc.'
     talk:
       - '565'
@@ -3145,7 +3145,7 @@ talks:
   -
     tid: 565
     sid: 33
-    title: 'TBA'
+    title: 'Building bridges while walking on them'
     type: 'talk'
     day: 3
     track: 1
