@@ -982,14 +982,31 @@ button, a[role="button"] {
   position: absolute;
   top: 40px;
   right: 30px;
+  @media (max-width: $screen-sm) {
+    position: relative;
+    top: 20px;
+    right: 0;
+    margin: 10px auto;
+  }
 }
 
 .last100 {
   position: absolute;
   top: 40px;
   right: 30px;
+  @media (max-width: $screen-sm) {
+    position: relative;
+    top: 20px;
+    right: 0;
+    margin: 10px auto;
+  }
   &.home {
     top: -10px;
+    @media (max-width: $screen-sm) {
+      position: absolute;
+      top: -50px;
+      right: -10px;
+    }
   }
 }
 
