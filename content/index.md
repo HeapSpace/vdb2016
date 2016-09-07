@@ -1550,16 +1550,6 @@ talks:
     break: 0
 
   -
-    tid: 53
-    type: 'talk'
-    empty: 1
-    day: 1
-    track: 2
-    slot: 3
-    duration: 60
-    break: 0
-
-  -
     tid: 55
     empty: 1
     day: 3
@@ -2101,9 +2091,9 @@ talks:
     sid: 26
     title: 'Complex State Handling in Modern Web Applications'
     type: 'talk'
-    day: 3
-    track: 2
-    slot: 3
+    day: 2
+    track: 1
+    slot: 7
     short:
       - "Flux architectures and why you should care. How to tame the application state and not go bananas. Examples from production applications with React.js and Redux."
     long:
@@ -2153,9 +2143,9 @@ talks:
     sid: 30
     title: 'Herding Cats to a Firefight: The evolution of an engineering on-call team'
     type: 'talk'
-    day: 2
-    track: 1
-    slot: 7
+    day: 3
+    track: 2
+    slot: 3
     short:
       - "Production issues aren't an easy thing to learn to deal with. Yammer went from having one person on-call, to having the whole engineering team taking ownership of their code and services in production. This talk goes over what things worked, and what didn't, to get us there."
     long:
@@ -2871,9 +2861,9 @@ talks:
     sid: 75
     title: 'Finding Your Perfect Weather with Apache Spark and Docker'
     type: 'talk'
-    day: 2
+    day: 1
     track: 2
-    slot: 7
+    slot: 3
     short:
       - "This presentation tells a story of a hackathon project where mixing a cool idea with the latest technologies resulted in the grand prize and the fan favourite award of the IBM Sparkathon with nearly 600 participants. It will describe the key technologies used and how they were effectively combined in a short period of time. Psst... it will also share a secret recipe for a success in a hackathon... but don't tell anyone!"
     long:
@@ -3160,9 +3150,9 @@ talks:
     sid: 95
     title: 'Discovering DevOps: A 10k Foot View of Gogo DevOps'
     type: 'talk'
-    day:
-    track:
-    slot:
+    day: 2
+    track: 2
+    slot: 7
     short:
       - "A year ago, a single application change would take days or weeks to deploy and involve many hand-offs and inevitable mistakes. Now, we’re doing about ten application deployments to production a day, and far more to the non-production environments. Come along and learn about our journey to becoming an effective DevOps organization, and the pitfalls we learned along the way."
     long:
