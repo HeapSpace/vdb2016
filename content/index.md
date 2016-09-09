@@ -254,11 +254,11 @@ speakers:
       - ""
   -
     sid: 52
-    firstname: 'Luis'
-    lastname: 'Mineiro'
-    pageurl: 'luis-mineiro'
-    url: ''
-    photo: 'Luis Mineiro.jpg'
+    firstname: 'Moritz'
+    lastname: 'Grauel'
+    pageurl: 'moritz-grauel'
+    url: 'https://twitter.com/mo_gr'
+    photo: 'Moritz Grauel.jpg'
     company: 'Zalando'
     talk:
       - '185'
