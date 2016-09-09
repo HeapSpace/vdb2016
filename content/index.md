@@ -3141,9 +3141,9 @@ talks:
     track: 1
     slot: 8
     short:
-      - "TBA"
+      - "SevenBridges platform has been in development for 7 years now. This talk is about what it took, technology and organisation-wise, to get from prototype to multiple cloud-agnostic platforms used both commercially and for national programs."
     long:
-      - "TBA"
+      - "SevenBridges platform has been in development for 7 years now. This talk is about what it took, technology and organisation-wise, to get from prototype to multiple cloud-agnostic platforms used both commercially and for national programs. You will hear about the good stuff and, more importantly, about the bad stuff and lessons learned along the way."
 
   -
     tid: 570
