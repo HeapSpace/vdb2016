@@ -1,4 +1,4 @@
 ---
-title: Accomodation
-layout: '/accomodation.html'
+title: Accommodation
+layout: '/accommodation.html'
 ---
