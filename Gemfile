@@ -24,5 +24,6 @@ gem 'nanoc-external',	# :external filter
     :branch => 'nanoc4'
 gem 'guard-nanoc'
 gem 'icalendar'
+gem 'pry'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 #gem 'typogruby',	'~> 1.0.18'

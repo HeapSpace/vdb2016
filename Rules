@@ -41,6 +41,7 @@ preprocess do
         end
       end
 
+      allicals = []
       schedule_talks.each do |ical|
         if !ical[:tid].to_s.empty?
           speakers = []
@@ -48,7 +49,7 @@ preprocess do
             ical[:sid].each_with_index do |t, i|
               speaker = schedule_speakers.select{ |item| item[:sid] == t.to_i }
               if speaker.any?
-                speaker = speaker[0][:firstname].to_s + ' ' + speaker[0][:lastname].to_s
+                speaker = speaker[0][:firstname].to_s.gsub("\\","") + ' ' + speaker[0][:lastname].to_s.gsub("\\","")
                 speakers << speaker
               end
             end
@@ -56,33 +57,11 @@ preprocess do
           else
             speaker = schedule_speakers.select{ |item| item[:sid] == ical[:sid] }
             if speaker.any?
-              speaker = speaker[0][:firstname].to_s + ' ' + speaker[0][:lastname].to_s
+              speaker = speaker[0][:firstname].to_s.gsub("\\","") + ' ' + speaker[0][:lastname].to_s.gsub("\\","")
               speakers << speaker
             end
             speakers = speakers.join(", ")
           end
-
-          slots = {
-      		 1 => [:time => '9:00', :dur => 60],
-      		 2 => [:time => '10:15', :dur => 60],
-      		 3 => [:time => '11:30', :dur => 60],
-      		 4 => [:time => '12:30', :dur => 0],
-      		 5 => [:time => '13:20', :dur => 60],
-      		 6 => [:time => '14:30', :dur => 60],
-      		 7 => [:time => '15:50', :dur => 60],
-      		 8 => [:time => '17:00', :dur => 60]
-      		}
-
-      		breaks = {
-      		 1 => [:name => 'coffee break', :dur => 15],
-      		 2 => [:name => 'coffee break', :dur => 15],
-      		 3 => [:name => '', :dur => 0],
-      		 4 => [:name => 'lunch', :dur => 50],
-      		 5 => [:name => 'coffee break', :dur => 10],
-      		 6 => [:name => 'break', :dur => 20],
-      		 7 => [:name => 'coffee break', :dur => 10],
-      		 8 => [:name => 'chill out', :dur => 60]
-      		}
 
           case ical[:day]
             when 1 then icaldate = '2016-09-28'
@@ -117,14 +96,24 @@ preprocess do
               icalend = '18:00'
           end
 
+          case ical[:track]
+          when 1 then venue = 'Hall "Nikola Tesla"'
+            when 2 then venue = 'Hall "Mihajlo Pupin"'
+            when 3 then venue = 'Hall "Mileva Marić"'
+            when 4 then venue = 'Hall "Milutin Milankovic"'
+          end
           # puts icalstart
 
           if ical[:day].to_s != '0' && (ical[:type].to_s == 'talk' || ical[:type].to_s == 'lightning' || ical[:type].to_s == 'workshop')
-            @items.create('', {:ical => '1', :test => ical[:test], :title => ical[:title], :speakers => speakers, :icaldate => icaldate, :start => icalstart, :end => icalend, :short => ical[:short], :venue => ical[:venue]}, '/ical/' + ical[:day].to_s + '/' + ical[:tid].to_s + '.ics')
+            @items.create('', {:ical => '1', :test => ical[:test], :title => ical[:title], :speakers => speakers, :icaldate => icaldate, :start => icalstart, :end => icalend, :short => ical[:short], :venue => venue}, '/ical/' + ical[:day].to_s + '/' + ical[:tid].to_s + '.ics')
           end
-
+          if !ical[:title].to_s.empty? || !speakers.to_s.empty?
+            allicals << {:title => ical[:title].gsub("\n",""), :speakers => speakers, :icaldate => icaldate, :start => icalstart, :end => icalend, :venue => venue}
+          end
         end
       end
+      # puts allicals
+      @items.create('', {:allicals => allicals}, '/schedulecalendar.ics')
 
       schedule_speakers.each do |speaker|
         if !speaker[:sid].to_s.empty?
@@ -248,7 +237,12 @@ compile '/**/*.md' do
   #filter :htmlcompressor
 end
 
-# icalendar
+
+compile '/schedulecalendar.ics' do
+  filter :ical_all, :data => item[:allicals]
+end
+
+
 compile '/ical/**/*' do
   filter :erb
   filter :ical_events, :date => item[:icaldate], :timestart => item[:start], :timeend => item[:end], :speakers => item[:speakers], :title => item[:title], :venue => item[:venue]

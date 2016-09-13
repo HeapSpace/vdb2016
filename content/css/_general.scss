@@ -905,6 +905,17 @@ div.line-subtitle > h5 {
     background-color: #E0B112;
     color: $white !important;
   }
+  &.brown {
+    background-color: rgba($brand-secondary, 0.2);
+    color: $brand-secondary;
+    &:hover {
+      background-color: $brand-secondary;
+      color: $bodybg;
+    }
+    .fa {
+      margin: 0 5px;
+    }
+  }
   &.home-top {
     width: 40%;
     padding: 10px;
