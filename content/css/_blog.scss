@@ -7,9 +7,9 @@
     height: auto;
     display: block;
     margin: 0 auto;
-    border: 3px solid rgba(255, 255, 255, 0.1);
-    @include round-left-corners();
-    @include round-right-corners();
+    /*border: 3px solid rgba(255, 255, 255, 0.1);*/
+    /*@include round-left-corners();*/
+    /*@include round-right-corners();*/
   }
   p {
     color: $brand-secondary;

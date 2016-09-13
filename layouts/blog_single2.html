@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_share @item[:title], @item[:excerpt], "#{@config[:site][:base_url]}/blog/#{@item[:image]}" %>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+	<div class="main-bg page"></div>
+	<div class="container">
+	  <h1 class="text-center margin-top-huge">
+	    <%= @item[:title] %>
+	  </h1>
+	  <h5 class="text-center bold margin-top-big">
+			<span class="yellow"><%= @item[:created_at] %></span>&nbsp;&nbsp;&nbsp;<%= @item[:author] %>
+		</h5>
+		<div class="row-centered margin-top-med">
+			<div class="col-sm-8 col-centered blogpost">
+				<!-- <%= blog_image(@item) %> -->
+				<%= yield %>
+			</div>
+		</div>
+		<div class="text-center margin-top-small">
+			<a href="/blog/" class="btn btn-primary btn-lg blue" role="button">Back to list</a>
+		</div>
+	</div>
+	<div class="footer-cta-block info margin-top-big">
+	  <%= render '/_footer_cta.html' %>
+	</div>
+
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+
+</body>
+</html>
