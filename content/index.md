@@ -1624,13 +1624,6 @@ talks:
     slot: 4
 
   -
-    tid: 60
-    empty: 1
-    day: 3
-    track: 4
-    slot: 2
-
-  -
     tid: 65
     empty: 1
     day: 3
