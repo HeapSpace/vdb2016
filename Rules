@@ -36,9 +36,84 @@ preprocess do
             speaker = schedule_speakers.select{ |item| item[:sid] == talk[:sid] }
             speakers << speaker
           end
-          @items.create('', {:title => talk[:title], :talkspeakers => speakers, :type => talk[:type], :short => talk[:short], :long => talk[:long], :day => talk[:day], :track => talk[:track], :slot => talk[:slot], :duration => talk[:duration], :form => talk[:form], :venue => talk[:venue], :layout => '/talk_page.html'}, '/talk/'+talk[:tid].to_s+'/index.md')
+          @items.create('', {:title => talk[:title], :test => talk[:test], :talkspeakers => speakers, :type => talk[:type], :short => talk[:short], :long => talk[:long], :day => talk[:day], :track => talk[:track], :slot => talk[:slot], :duration => talk[:duration], :form => talk[:form], :venue => talk[:venue], :layout => '/talk_page.html'}, '/talk/'+talk[:tid].to_s+'/index.md')
+
         end
       end
+
+      allicals = []
+      schedule_talks.each do |ical|
+        if !ical[:tid].to_s.empty?
+          speakers = []
+          if ical[:sid].kind_of?(Array)
+            ical[:sid].each_with_index do |t, i|
+              speaker = schedule_speakers.select{ |item| item[:sid] == t.to_i }
+              if speaker.any?
+                speaker = speaker[0][:firstname].to_s.gsub("\\","") + ' ' + speaker[0][:lastname].to_s.gsub("\\","")
+                speakers << speaker
+              end
+            end
+            speakers = speakers.join(", ")
+          else
+            speaker = schedule_speakers.select{ |item| item[:sid] == ical[:sid] }
+            if speaker.any?
+              speaker = speaker[0][:firstname].to_s.gsub("\\","") + ' ' + speaker[0][:lastname].to_s.gsub("\\","")
+              speakers << speaker
+            end
+            speakers = speakers.join(", ")
+          end
+
+          case ical[:day]
+            when 1 then icaldate = '2016-09-28'
+            when 2 then icaldate = '2016-09-29'
+            when 3 then icaldate = '2016-09-30'
+          end
+
+          case ical[:slot]
+            when 1 then
+              icalstart = '9:00'
+              icalend = '10:00'
+            when 2 then
+              icalstart = '10:15'
+              icalend = '11:15'
+            when 3 then
+              icalstart = '11:30'
+              icalend = '12:30'
+            when 4 then
+              icalstart = '12:30'
+              icalend = '13:20'
+            when 5 then
+              icalstart = '13:20'
+              icalend = '14:20'
+            when 6 then
+              icalstart = '14:30'
+              icalend = '15:30'
+            when 7 then
+              icalstart = '15:50'
+              icalend = '16:50'
+            when 8 then
+              icalstart = '17:00'
+              icalend = '18:00'
+          end
+
+          case ical[:track]
+          when 1 then venue = 'Hall "Nikola Tesla"'
+            when 2 then venue = 'Hall "Mihajlo Pupin"'
+            when 3 then venue = 'Hall "Mileva Marić"'
+            when 4 then venue = 'Hall "Milutin Milankovic"'
+          end
+          # puts icalstart
+
+          if ical[:day].to_s != '0' && (ical[:type].to_s == 'talk' || ical[:type].to_s == 'lightning' || ical[:type].to_s == 'workshop')
+            @items.create('', {:ical => '1', :test => ical[:test], :title => ical[:title], :speakers => speakers, :icaldate => icaldate, :start => icalstart, :end => icalend, :short => ical[:short], :venue => venue}, '/ical/' + ical[:day].to_s + '/' + ical[:tid].to_s + '.ics')
+          end
+          if !ical[:title].to_s.empty? || !speakers.to_s.empty?
+            allicals << {:title => ical[:title].gsub("\n",""), :speakers => speakers, :icaldate => icaldate, :start => icalstart, :end => icalend, :venue => venue}
+          end
+        end
+      end
+      # puts allicals
+      @items.create('', {:allicals => allicals}, '/schedulecalendar.ics')
 
       schedule_speakers.each do |speaker|
         if !speaker[:sid].to_s.empty?
@@ -52,7 +127,7 @@ preprocess do
             talk = schedule_talks.select{ |item| item[:tid] == speaker[:talk].to_i }
             talks << talk
           end
-          @items.create('', {:photo => speaker[:photo], :firstname => speaker[:firstname], :lastname => speaker[:lastname], :url => speaker[:url], :company => speaker[:company], :speakertalks => talks, :tags => speaker[:tags], :answers => speaker[:answers], :layout => '/speaker_page.html'}, '/speakers/'+speaker[:pageurl]+'/index.md')
+          @items.create('', {:photo => speaker[:photo], :firstname => speaker[:firstname], :lastname => speaker[:lastname], :url => speaker[:url], :company => speaker[:company], :speakertalks => talks, :tags => speaker[:tags], :answers => speaker[:answers], :test => speaker[:test], :layout => '/speaker_page.html'}, '/speakers/'+speaker[:pageurl]+'/index.md')
         end
       end
 
@@ -160,6 +235,17 @@ compile '/**/*.md' do
   filter :md_links
   #filter :relativize_paths, :type => :html
   #filter :htmlcompressor
+end
+
+
+compile '/schedulecalendar.ics' do
+  filter :ical_all, :data => item[:allicals]
+end
+
+
+compile '/ical/**/*' do
+  filter :erb
+  filter :ical_events, :date => item[:icaldate], :timestart => item[:start], :timeend => item[:end], :speakers => item[:speakers], :title => item[:title], :venue => item[:venue]
 end
 
 compile '/**/*' do

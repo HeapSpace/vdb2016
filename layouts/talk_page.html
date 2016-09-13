@@ -76,7 +76,7 @@
 					<% end %>
 					</div> -->
 
-					<% if !@item[:day].to_s.empty? %>
+					<% if !@item[:day].to_s.empty? && @item[:day].to_s != '0' %>
 						<a class="btn btn-primary btn-lg form-link btn-talk-schedule" role="button" href="/schedule/day<%= @item[:day] %>#<%= @item[:day] %>-<%= @item[:track] %>-<%= @item[:slot] %>"><i class="fa fa-calendar talk-schedule"></i> Day <%= @item[:day] %> &nbsp;&bull;&nbsp; Track <%= @item[:track] %> &nbsp;&bull;&nbsp; Slot <%= @item[:slot] %></a>
 					<% end %>
 					<% if !@item[:form].to_s.empty? %>&nbsp;&nbsp;&nbsp;<a href="<%= @item[:form] %>" class="btn btn-primary talk-form-link red" role="button" target="_blank"><i class="fa fa-check-circle"></i> apply now</a><% end %>
