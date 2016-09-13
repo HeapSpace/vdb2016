@@ -1499,6 +1499,23 @@ speakers:
       - ""
       - ""
 
+  -
+    sid: 98
+    firstname: 'Nebojsa'
+    lastname: 'Bjelotomic'
+    pageurl: 'nebojsa-bjelotomic'
+    url: 'https://si.linkedin.com/in/klemenlilija'
+    photo: 'Nebojsa Bjelotomic.jpg'
+    company: 'Saga'
+    talk:
+      - '575'
+    tags:
+      - business
+    answers:
+      - ""
+      - ""
+      - ""
+
 
 
 
@@ -3149,5 +3166,17 @@ talks:
       - "At Gogo, we found that DevOps was a culture shift, and we embraced the paradigm where responsibility for successful change is placed directly in the hands of developers."
       - "During this session, Alex King will talk about Gogo's journey to this new world and will how our tooling, organization, and outlook have evolved over time. Join us to hear about the lessons we learned along the way."
 
+  -
+    tid: 575
+    sid: 98
+    title: 'TBA'
+    type: 'talk'
+    day: 3
+    track: 4
+    slot: 2
+    short:
+      - "TBA"
+    long:
+      - "TBA"
 
 ---
