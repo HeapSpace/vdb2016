@@ -97,10 +97,10 @@ preprocess do
           end
 
           case ical[:track]
-          when 1 then venue = 'Hall "Nikola Tesla"'
-            when 2 then venue = 'Hall "Mihajlo Pupin"'
-            when 3 then venue = 'Hall "Mileva Marić"'
-            when 4 then venue = 'Hall "Milutin Milankovic"'
+          when 1 then venue = 'Room "Nikola Tesla"'
+          when 2 then venue = 'Room "Mihajlo Pupin"'
+          when 3 then venue = 'Room "Mileva Marić"'
+          when 4 then venue = 'Room "Milutin Milankovic"'
           end
           # puts icalstart
 
