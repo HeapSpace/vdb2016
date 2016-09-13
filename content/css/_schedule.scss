@@ -174,6 +174,19 @@
       padding: 6px 12px;
       margin: 5px 0 10px 0;
     }
+    .ical-link {
+      background-color: transparent;
+      padding: 3px 12px;
+      margin: 0;
+      color: $brand-secondary;
+      .fa {
+        font-size: 0.9em;
+        &::before {
+          top: -2px;
+          position: relative;
+        }
+      }
+    }
     .item-content {
       padding: 0px 10px 10px 10px;
       width: 100%;

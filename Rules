@@ -37,6 +37,92 @@ preprocess do
             speakers << speaker
           end
           @items.create('', {:title => talk[:title], :talkspeakers => speakers, :type => talk[:type], :short => talk[:short], :long => talk[:long], :day => talk[:day], :track => talk[:track], :slot => talk[:slot], :duration => talk[:duration], :form => talk[:form], :venue => talk[:venue], :layout => '/talk_page.html'}, '/talk/'+talk[:tid].to_s+'/index.md')
+
+        end
+      end
+
+      schedule_talks.each do |ical|
+        if !ical[:tid].to_s.empty?
+          speakers = []
+          if ical[:sid].kind_of?(Array)
+            ical[:sid].each_with_index do |t, i|
+              speaker = schedule_speakers.select{ |item| item[:sid] == t.to_i }
+              if speaker.any?
+                speaker = speaker[0][:firstname].to_s + ' ' + speaker[0][:lastname].to_s
+                speakers << speaker
+              end
+            end
+            speakers = speakers.join(", ")
+          else
+            speaker = schedule_speakers.select{ |item| item[:sid] == ical[:sid] }
+            if speaker.any?
+              speaker = speaker[0][:firstname].to_s + ' ' + speaker[0][:lastname].to_s
+              speakers << speaker
+            end
+            speakers = speakers.join(", ")
+          end
+
+          slots = {
+      		 1 => [:time => '9:00', :dur => 60],
+      		 2 => [:time => '10:15', :dur => 60],
+      		 3 => [:time => '11:30', :dur => 60],
+      		 4 => [:time => '12:30', :dur => 0],
+      		 5 => [:time => '13:20', :dur => 60],
+      		 6 => [:time => '14:30', :dur => 60],
+      		 7 => [:time => '15:50', :dur => 60],
+      		 8 => [:time => '17:00', :dur => 60]
+      		}
+
+      		breaks = {
+      		 1 => [:name => 'coffee break', :dur => 15],
+      		 2 => [:name => 'coffee break', :dur => 15],
+      		 3 => [:name => '', :dur => 0],
+      		 4 => [:name => 'lunch', :dur => 50],
+      		 5 => [:name => 'coffee break', :dur => 10],
+      		 6 => [:name => 'break', :dur => 20],
+      		 7 => [:name => 'coffee break', :dur => 10],
+      		 8 => [:name => 'chill out', :dur => 60]
+      		}
+
+          case ical[:day]
+            when 1 then icaldate = '2016-09-28'
+            when 2 then icaldate = '2016-09-29'
+            when 3 then icaldate = '2016-09-30'
+          end
+
+          case ical[:slot]
+            when 1 then
+              icalstart = '9:00'
+              icalend = '10:00'
+            when 2 then
+              icalstart = '10:15'
+              icalend = '11:15'
+            when 3 then
+              icalstart = '11:30'
+              icalend = '12:30'
+            when 4 then
+              icalstart = '12:30'
+              icalend = '13:20'
+            when 5 then
+              icalstart = '13:20'
+              icalend = '14:20'
+            when 6 then
+              icalstart = '14:30'
+              icalend = '15:30'
+            when 7 then
+              icalstart = '15:50'
+              icalend = '16:50'
+            when 8 then
+              icalstart = '17:00'
+              icalend = '18:00'
+          end
+
+          # puts icalstart
+
+          if ical[:day].to_s != '0' && (ical[:type].to_s == 'talk' || ical[:type].to_s == 'lightning' || ical[:type].to_s == 'workshop')
+            @items.create('', {:ical => '1', :title => ical[:title], :speakers => speakers, :icaldate => icaldate, :start => icalstart, :end => icalend, :short => ical[:short], :venue => ical[:venue]}, '/ical/' + ical[:day].to_s + '/' + ical[:tid].to_s + '.ics')
+          end
+
         end
       end
 
@@ -160,6 +246,12 @@ compile '/**/*.md' do
   filter :md_links
   #filter :relativize_paths, :type => :html
   #filter :htmlcompressor
+end
+
+# icalendar
+compile '/ical/**/*' do
+  filter :erb
+  filter :ical_events, :date => item[:icaldate], :timestart => item[:start], :timeend => item[:end], :speakers => item[:speakers], :title => item[:title], :venue => item[:venue]
 end
 
 compile '/**/*' do

@@ -4,7 +4,6 @@
 layout: '/index.html'
 scheduledata: 1
 
-
 speakers:
 
   -
@@ -1509,7 +1508,6 @@ talks:
 
   -
     tid: 41
-    type: 'talk'
     empty: 1
     day: 3
     track: 4
@@ -1517,7 +1515,6 @@ talks:
 
   -
     tid: 42
-    type: 'talk'
     empty: 1
     day: 3
     track: 4
@@ -1525,7 +1522,6 @@ talks:
 
   -
     tid: 43
-    type: 'talk'
     empty: 1
     day: 3
     track: 4
@@ -1568,7 +1564,6 @@ talks:
 
   -
     tid: 57
-    type: 'lightning'
     day: 3
     track: 4
     slot: 4
@@ -1583,42 +1578,36 @@ talks:
 
   -
     tid: 70
-    type: 'lightning'
     day: 3
     track: 3
     slot: 4
 
   -
     tid: 67
-    type: 'lightning'
     day: 1
     track: 3
     slot: 4
 
   -
     tid: 66
-    type: 'lightning'
     day: 1
     track: 4
     slot: 4
 
   -
     tid: 68
-    type: 'lightning'
     day: 2
     track: 3
     slot: 4
 
   -
     tid: 69
-    type: 'lightning'
     day: 2
     track: 4
     slot: 4
 
   -
     tid: 60
-    type: 'talk'
     empty: 1
     day: 3
     track: 4
@@ -1626,7 +1615,6 @@ talks:
 
   -
     tid: 65
-    type: 'talk'
     empty: 1
     day: 3
     track: 4
@@ -2376,9 +2364,9 @@ talks:
     sid: 13
     title: 'Dont be the guy that always asks - what if?'
     type: 'talk'
-    day:
-    track:
-    slot:
+    day: 0
+    track: 0
+    slot: 0
     short:
       - "From Hacker Hostel to the TechCrunch Disrupt; from incubation to middle-out compression; learn the secrets of investment and major capitals."
     long:
@@ -2388,7 +2376,7 @@ talks:
   -
     tid: 330
     sid: 83
-    title: 'Blazingfast™ deployment with mina'
+    title: 'Blazingfast deployment with mina'
     type: 'talk'
     day: 2
     track: 4
@@ -3141,7 +3129,7 @@ talks:
     track: 1
     slot: 8
     short:
-      - "SevenBridges platform has been in development for 7 years now. This talk is about what it took, technology and organisation-wise, to get from prototype to multiple cloud-agnostic platforms used both commercially and for national programs."
+      - "TBA"
     long:
       - "SevenBridges platform has been in development for 7 years now. This talk is about what it took, technology and organisation-wise, to get from prototype to multiple cloud-agnostic platforms used both commercially and for national programs. You will hear about the good stuff and, more importantly, about the bad stuff and lessons learned along the way."
 
