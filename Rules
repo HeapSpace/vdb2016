@@ -41,7 +41,7 @@ preprocess do
             speaker = schedule_speakers.select{ |item| item[:sid] == talk[:sid] }
             speakers << speaker
           end
-          @items.create('', {:title => talk[:title], :test => talk[:test], :talkspeakers => speakers, :type => talk[:type], :short => talk[:short], :long => talk[:long], :day => talk[:day], :track => talk[:track], :slot => talk[:slot], :duration => talk[:duration], :form => talk[:form], :venue => talk[:venue], :layout => '/talk_page.html'}, '/talk/'+talk[:tid].to_s+'/index.md')
+          @items.create('', {:title => talk[:title], :talkspeakers => speakers, :type => talk[:type], :short => talk[:short], :long => talk[:long], :day => talk[:day], :track => talk[:track], :slot => talk[:slot], :duration => talk[:duration], :form => talk[:form], :venue => talk[:venue], :layout => '/talk_page.html'}, '/talk/'+talk[:tid].to_s+'/index.md')
 
         end
       end
@@ -110,7 +110,7 @@ preprocess do
           # puts icalstart
 
           if ical[:day].to_s != '0' && (ical[:type].to_s == 'talk' || ical[:type].to_s == 'lightning' || ical[:type].to_s == 'workshop')
-            @items.create('', {:ical => '1', :test => ical[:test], :title => ical[:title], :speakers => speakers, :icaldate => icaldate, :start => icalstart, :end => icalend, :short => ical[:short], :venue => venue}, '/ical/' + ical[:day].to_s + '/' + ical[:tid].to_s + '.ics')
+            @items.create('', {:ical => '1', :title => ical[:title], :speakers => speakers, :icaldate => icaldate, :start => icalstart, :end => icalend, :short => ical[:short], :venue => venue}, '/ical/' + ical[:day].to_s + '/' + ical[:tid].to_s + '.ics')
           end
           if !ical[:title].to_s.empty? || !speakers.to_s.empty?
             allicals << {:title => ical[:title].gsub("\n",""), :speakers => speakers, :icaldate => icaldate, :start => icalstart, :end => icalend, :venue => venue}
@@ -132,7 +132,7 @@ preprocess do
             talk = schedule_talks.select{ |item| item[:tid] == speaker[:talk].to_i }
             talks << talk
           end
-          @items.create('', {:photo => speaker[:photo], :firstname => speaker[:firstname], :lastname => speaker[:lastname], :url => speaker[:url], :company => speaker[:company], :speakertalks => talks, :tags => speaker[:tags], :answers => speaker[:answers], :test => speaker[:test], :layout => '/speaker_page.html'}, '/speakers/'+speaker[:pageurl]+'/index.md')
+          @items.create('', {:photo => speaker[:photo], :firstname => speaker[:firstname], :lastname => speaker[:lastname], :url => speaker[:url], :company => speaker[:company], :speakertalks => talks, :tags => speaker[:tags], :answers => speaker[:answers], :layout => '/speaker_page.html'}, '/speakers/'+speaker[:pageurl]+'/index.md')
         end
       end
 
