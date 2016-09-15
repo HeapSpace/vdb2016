@@ -1502,7 +1502,7 @@ speakers:
   -
     sid: 98
     firstname: 'Nebojsa'
-    lastname: 'Bjelotomic'
+    lastname: 'Bjelotomić'
     pageurl: 'nebojsa-bjelotomic'
     url: 'https://si.linkedin.com/in/klemenlilija'
     photo: 'Nebojsa Bjelotomic.jpg'
@@ -1515,6 +1515,24 @@ speakers:
       - ""
       - ""
       - ""
+
+  -
+    sid: 99
+    firstname: 'Branko'
+    lastname: 'Milutinović'
+    pageurl: 'branko-milutinovic'
+    url: 'https://twitter.com/BrankoMM'
+    photo: 'Branko Milutinovic.jpg'
+    company: 'Nordeus'
+    talk:
+      - '580'
+    tags:
+      - business
+    answers:
+      - ""
+      - ""
+      - ""
+
 
 config:
 
@@ -1549,13 +1567,6 @@ talks:
     day: 3
     track: 4
     slot: 3
-
-  -
-    tid: 43
-    empty: 1
-    day: 3
-    track: 4
-    slot: 1
 
   -
     tid: 51
@@ -1972,27 +1983,6 @@ talks:
       - "In this session I will explain how we used Angluar, TypeScript and RequireJs to create interactive web applications. You will learn how these three technologies work together and I will explain our best practices when building these front-ends. Iwill be showing some of our real life applications to explain the different concepts."
 
   -
-    tid: 205
-    sid: 16
-    title: 'Your Favourite New Language - The Future of Swift'
-    type: 'talk'
-    day: 2
-    track: 1
-    slot: 5
-    short:
-      - "Whilst open sourcing a language is nothing new, Apple's unprecedented step has caused massive excitement and activity for this new language, with a flurry of development and contributions."
-      - "In this presentation I would like to explore the current potential of Swift and what's going to be possible in the future."
-    long:
-      - "I will cover:"
-      - "• What can be accomplished with 'open' Swift"
-      - "• What's missing from 'open' Swift"
-      - "• Back end Swift and MVC"
-      - "• Swift on non-Mac desktops"
-      - "• Swift on non-iOS mobile devices"
-      - "• Extending Swift"
-      - "• What's next?"
-
-  -
     tid: 145
     sid: 41
     title: 'Microservices Without Servers'
@@ -2303,19 +2293,6 @@ talks:
     long:
       - "In the talk I’d like to clear things a bit to help listeners (and myself) decide – which of above fit particular needs and which ones are stable enough to be used without fear. We'll focus not on particular frameworks, but what problems arise in stream applications and how to deal with them. This includes subjects such as raw throughput, latency, window semantics, handling out of order events, storing state, processing guarantees and so on."
       - "As for solutions, the talk focuses on Apache Flink & Kafka Streams. Each will be discussed briefly together with short demo. The talk ends with few general tips on how to choose technology for different types of projects."
-
-  -
-    tid: 295
-    sid: 57
-    title: 'Apache Spark? If it only worked.'
-    type: 'talk'
-    day: 2
-    track: 2
-    slot: 5
-    short:
-      - "Spark has very nice API and it promises high performance of crunching large datasets. It’s really easy to write an app in Spark, unfortunately it’s also easy to write one which doesn’t perform the way you would expect or just fails for no obvious reason. The talk will introduce a practical framework for fixing most common problems with Spark applications."
-    long:
-      - "Do you have plans to start working with Apache Spark? Are you already working with Spark but you are not happy, you don’t get expected performance and stability and you not sure where to look for a fix? Spark has very nice API and it promises high performance of crunching large datasets. It’s really easy to write an app in Spark, unfortunately it’s also easy to write one which doesn’t perform the way you would expect or just fails for no obvious reason. This talk will consist of multiple common problems one might face when running spark at scale and solutions for them of course. Each of described problems will come with well described background and examples so it will be understood by people with no Spark experience, although people who are working with spark are the main audience. At the end the audience should get a practical framework for optimizing Spark and fixing most common problems with Spark applications. Class of problems in the presentation: Dealing with skewed data Spark on yarn and it’s memory model Caching Sizing executors Locality "
 
   -
     tid: 300
@@ -2872,9 +2849,9 @@ talks:
     sid: 75
     title: 'Finding Your Perfect Weather with Apache Spark and Docker'
     type: 'talk'
-    day: 1
-    track: 2
-    slot: 3
+    day: 3
+    track: 4
+    slot: 1
     short:
       - "This presentation tells a story of a hackathon project where mixing a cool idea with the latest technologies resulted in the grand prize and the fan favourite award of the IBM Sparkathon with nearly 600 participants. It will describe the key technologies used and how they were effectively combined in a short period of time. Psst... it will also share a secret recipe for a success in a hackathon... but don't tell anyone!"
     long:
@@ -3180,6 +3157,53 @@ talks:
     day: 3
     track: 4
     slot: 2
+    short:
+      - "TBA"
+    long:
+      - "TBA"
+
+  -
+    tid: 205
+    sid: 16
+    title: 'Your Favourite New Language - The Future of Swift'
+    type: 'talk'
+    day: 1
+    track: 2
+    slot: 3
+    short:
+      - "Whilst open sourcing a language is nothing new, Apple's unprecedented step has caused massive excitement and activity for this new language, with a flurry of development and contributions."
+      - "In this presentation I would like to explore the current potential of Swift and what's going to be possible in the future."
+    long:
+      - "I will cover:"
+      - "• What can be accomplished with 'open' Swift"
+      - "• What's missing from 'open' Swift"
+      - "• Back end Swift and MVC"
+      - "• Swift on non-Mac desktops"
+      - "• Swift on non-iOS mobile devices"
+      - "• Extending Swift"
+      - "• What's next?"
+
+  -
+    tid: 295
+    sid: 57
+    title: 'Apache Spark? If it only worked.'
+    type: 'talk'
+    day: 2
+    track: 2
+    slot: 5
+    short:
+      - "Spark has very nice API and it promises high performance of crunching large datasets. It’s really easy to write an app in Spark, unfortunately it’s also easy to write one which doesn’t perform the way you would expect or just fails for no obvious reason. The talk will introduce a practical framework for fixing most common problems with Spark applications."
+    long:
+      - "Do you have plans to start working with Apache Spark? Are you already working with Spark but you are not happy, you don’t get expected performance and stability and you not sure where to look for a fix? Spark has very nice API and it promises high performance of crunching large datasets. It’s really easy to write an app in Spark, unfortunately it’s also easy to write one which doesn’t perform the way you would expect or just fails for no obvious reason. This talk will consist of multiple common problems one might face when running spark at scale and solutions for them of course. Each of described problems will come with well described background and examples so it will be understood by people with no Spark experience, although people who are working with spark are the main audience. At the end the audience should get a practical framework for optimizing Spark and fixing most common problems with Spark applications. Class of problems in the presentation: Dealing with skewed data Spark on yarn and it’s memory model Caching Sizing executors Locality "
+
+  -
+    tid: 580
+    sid: 99
+    title: 'TBA'
+    type: 'talk'
+    day: 2
+    track: 1
+    slot: 5
     short:
       - "TBA"
     long:

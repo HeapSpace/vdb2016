@@ -31,7 +31,7 @@
 
 %>
   <% if talk['type'] != 'lightning' %>
-  <div class="<%= talk['day'] %>-<%= talk['track'] %>-<%= talk['slot'] %> schedule-item <% if !talk['empty'].to_s.empty? %>empty<% end %>" style="height: <%= talkduration*6 %>px">
+  <div class="sch <%= talk['day'] %>-<%= talk['track'] %>-<%= talk['slot'] %> schedule-item <% if !talk['empty'].to_s.empty? %>empty<% end %>" style="height: <%= talkduration*6 %>px">
     <% if talk['empty'].to_s.empty? %><h4 class=""><%= talktime %> <a href="/ical/<%= talk['day'] %>/<%= talk['tid'] %>.ics" class="btn btn-primary ical-link" role="button" target="_blank"><i class="fa fa-calendar-plus-o"></i> iCal</a></h4><% end %>
     <% if !talk['talkspeakers'].to_s.empty? %>
       <% talk['talkspeakers'].flatten(1).each do |speaker| %>
