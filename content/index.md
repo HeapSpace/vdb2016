@@ -1533,6 +1533,23 @@ speakers:
       - ""
       - ""
 
+  -
+    sid: 100
+    firstname: 'Elvin'
+    lastname: 'Guri'
+    pageurl: 'elvin-guri'
+    url: 'http://innovationexplorer.rs/#elvin_guri_2016'
+    photo: 'Elvin Guri.jpg'
+    company: 'Empower Capital'
+    talk:
+      - '585'
+    tags:
+      - business
+    answers:
+      - ""
+      - ""
+      - ""
+
 
 config:
 
@@ -1557,9 +1574,9 @@ talks:
   -
     tid: 41
     empty: 1
-    day: 3
-    track: 4
-    slot: 7
+    day: 2
+    track: 1
+    slot: 5
 
   -
     tid: 42
@@ -2391,9 +2408,9 @@ talks:
     sid: 92
     title: 'Scalable Service Architectures'
     type: 'talk'
-    day: 1
-    track: 2
-    slot: 6
+    day: 3
+    track: 4
+    slot: 3
     short:
       - "Service oriented architectures are getting more and more widespread popularity, because of the benefits they offer. They have some design requirements though, a very important one of them is designing services (and their combinations) for scalability and resilience. We at Ustream built a couple of these in the past years and learned a lot about how to do it and what open source tools are available to achieve the goal."
     long:
@@ -3167,9 +3184,9 @@ talks:
     sid: 16
     title: 'Your Favourite New Language - The Future of Swift'
     type: 'talk'
-    day: 1
-    track: 2
-    slot: 3
+    day: 3
+    track: 4
+    slot: 7
     short:
       - "Whilst open sourcing a language is nothing new, Apple's unprecedented step has caused massive excitement and activity for this new language, with a flurry of development and contributions."
       - "In this presentation I would like to explore the current potential of Swift and what's going to be possible in the future."
@@ -3201,12 +3218,26 @@ talks:
     sid: 99
     title: 'TBA'
     type: 'talk'
-    day: 2
-    track: 1
-    slot: 5
+    day: 1
+    track: 2
+    slot: 6
     short:
       - "TBA"
     long:
       - "TBA"
+
+  -
+    tid: 585
+    sid: 100
+    title: 'The Building Blocks of Innovation'
+    type: 'talk'
+    day: 1
+    track: 2
+    slot: 3
+    short:
+      - "Technological progress and invention is not sufficient to achieve innovation. Successful innovation requires 'system-building' skills i.e. ability to put together a coalition of investors, suppliers, customers, regulators etc."
+    long:
+      - "Invention is not the same as Innovation, just as a start-up or a small business are not by definition entrepreneurial activities. Indeed, entrepreneurial activities are not necessarily related to business. For a technological innovation to become more than a mere curiosity, it needs proper practical application i.e. it needs a well-defined market and/or demand, and it needs a set of organisational capabilities that would bring such technological innovation to the market."
+      - "It is the System Builders who play the key role in converting new technology into an innovation. These players, not necessarily cutting-edge-technology-proficient but certainly technology-aware, are the true innovators, as they are capable of bringing together the whole value chain (suppliers of technology, suppliers of complementary technology, potential users, sellers, financiers, and so on). To illustrate with Afuah's definition, the process of innovation is 'the use of new technological and market knowledge to offer a new product or service.' If an innovation can at all be called 'disruptive', it is in the ability of the System Builders to challenge the status quo: this makes the process of innovation an inherently political exercise, for which a specific set of skills is required."
 
 ---
