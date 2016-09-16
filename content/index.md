@@ -1581,9 +1581,9 @@ talks:
   -
     tid: 42
     empty: 1
-    day: 3
-    track: 4
-    slot: 3
+    day: 2
+    track: 2
+    slot: 5
 
   -
     tid: 51
@@ -1623,6 +1623,7 @@ talks:
   -
     tid: 57
     day: 3
+    empty: 1
     track: 4
     slot: 4
 
@@ -1638,87 +1639,105 @@ talks:
     tid: 70
     day: 3
     track: 3
+    empty: 1
     slot: 4
 
   -
     tid: 67
     day: 1
     track: 3
+    empty: 1
     slot: 4
 
   -
     tid: 66
     day: 1
     track: 4
+    empty: 1
     slot: 4
 
   -
     tid: 68
     day: 2
     track: 3
+    empty: 1
     slot: 4
 
   -
     tid: 69
     day: 2
     track: 4
-    slot: 4
-
-  -
-    tid: 65
     empty: 1
-    day: 3
-    track: 4
-    slot: 8
+    slot: 4
 
   -
     tid: 101
     sid: 79
-    title: 'Keynote'
+    title: 'AI Ambient Virtual Assistant Will Coordinate & Negotiate with the Network’s Edge'
     type: 'talk'
     day: 1
     track: 2
     slot: 1
     short:
-      - "TBA"
+      - "The Open Compute Project and the Telco Project for a new 5G IoT platform is one of many trends moving the industry from centralized cloud computing to decentralized edge computing. The low-latency, error-correcting 5G IoT networks will be capable of coordinating thousands of autonomous vehicles, robotic systems, drones, equipment and M2M sensors, designed to scale to 500 billion IoT devices."
     long:
-      - "TBA"
+      - "The Open Compute Project and the Telco Project for a new 5G IoT platform is one of many trends moving the industry from centralized cloud computing to decentralized edge computing. The low-latency, error-correcting 5G IoT networks will be capable of coordinating thousands of autonomous vehicles, robotic systems, drones, equipment and M2M sensors, designed to scale to 500 billion IoT devices."
+      - "Moreover, the Moore’s Law is driving the miniaturization of chips used to power the network’s edge. For instance, Intel’s Curie, the size of a shirt button, is equipped with a 32-bit Intel Quark system-on-a-chip (SoC) with 384kB of flash memory and 80kB SRAM. It’s capable of handling computing power for wearable devices."
+      - "At the International Solid State Circuits Conference (ISSCC), MIT researchers introduced a 168-core chip dubbed 'Eyeriss' that will enable IoT devices to run artificial intelligence algorithms locally without the need to have Internet connection or access to the cloud."
+      - "On privacy and security, blockchain or decentralized ledger systems will support trustless peer-to-peer messaging and secure distributed data sharing with a robust and scalable form of device coordination."
+      - "These fundamental shifts in the network, hardware and standards will mean that the future of data management will occur on the edge and we as human beings will be at the epicenter of these concentric circles."
+      - "AI/ machine learning is ever becoming pervasive and integrated into our daily lives, from Siri, Google Now, Microsoft Cortana to Amazon Echo’s Alexa. Cognitive science, affective computing, neural networks, natural language processing, computer vision, facial recognition detection, voice analysis, robotics and other AI disciplines and techniques are maturing towards strong AI. No longer will we need to interface one-to-many with apps and devices but rather we will have an intermediary -- an AI ambient virtual assistant that will coordinate and negotiate will apps and devices on the network’s edge on our behalf."
   -
     tid: 102
     sid: 79
-    title: 'Keynote'
+    title: 'AI Ambient Virtual Assistant Will Coordinate & Negotiate with the Network’s Edge'
     type: 'talk'
     day: 1
     track: 3
     slot: 1
     short:
-      - "TBA"
+      - "The Open Compute Project and the Telco Project for a new 5G IoT platform is one of many trends moving the industry from centralized cloud computing to decentralized edge computing. The low-latency, error-correcting 5G IoT networks will be capable of coordinating thousands of autonomous vehicles, robotic systems, drones, equipment and M2M sensors, designed to scale to 500 billion IoT devices."
     long:
-      - "TBA"
+      - "The Open Compute Project and the Telco Project for a new 5G IoT platform is one of many trends moving the industry from centralized cloud computing to decentralized edge computing. The low-latency, error-correcting 5G IoT networks will be capable of coordinating thousands of autonomous vehicles, robotic systems, drones, equipment and M2M sensors, designed to scale to 500 billion IoT devices."
+      - "Moreover, the Moore’s Law is driving the miniaturization of chips used to power the network’s edge. For instance, Intel’s Curie, the size of a shirt button, is equipped with a 32-bit Intel Quark system-on-a-chip (SoC) with 384kB of flash memory and 80kB SRAM. It’s capable of handling computing power for wearable devices."
+      - "At the International Solid State Circuits Conference (ISSCC), MIT researchers introduced a 168-core chip dubbed 'Eyeriss' that will enable IoT devices to run artificial intelligence algorithms locally without the need to have Internet connection or access to the cloud."
+      - "On privacy and security, blockchain or decentralized ledger systems will support trustless peer-to-peer messaging and secure distributed data sharing with a robust and scalable form of device coordination."
+      - "These fundamental shifts in the network, hardware and standards will mean that the future of data management will occur on the edge and we as human beings will be at the epicenter of these concentric circles."
+      - "AI/ machine learning is ever becoming pervasive and integrated into our daily lives, from Siri, Google Now, Microsoft Cortana to Amazon Echo’s Alexa. Cognitive science, affective computing, neural networks, natural language processing, computer vision, facial recognition detection, voice analysis, robotics and other AI disciplines and techniques are maturing towards strong AI. No longer will we need to interface one-to-many with apps and devices but rather we will have an intermediary -- an AI ambient virtual assistant that will coordinate and negotiate will apps and devices on the network’s edge on our behalf."
   -
     tid: 103
     sid: 79
-    title: 'Keynote'
+    title: 'AI Ambient Virtual Assistant Will Coordinate & Negotiate with the Network’s Edge'
     type: 'talk'
     day: 1
     track: 4
     slot: 1
     short:
-      - "TBA"
+      - "The Open Compute Project and the Telco Project for a new 5G IoT platform is one of many trends moving the industry from centralized cloud computing to decentralized edge computing. The low-latency, error-correcting 5G IoT networks will be capable of coordinating thousands of autonomous vehicles, robotic systems, drones, equipment and M2M sensors, designed to scale to 500 billion IoT devices."
     long:
-      - "TBA"
+      - "The Open Compute Project and the Telco Project for a new 5G IoT platform is one of many trends moving the industry from centralized cloud computing to decentralized edge computing. The low-latency, error-correcting 5G IoT networks will be capable of coordinating thousands of autonomous vehicles, robotic systems, drones, equipment and M2M sensors, designed to scale to 500 billion IoT devices."
+      - "Moreover, the Moore’s Law is driving the miniaturization of chips used to power the network’s edge. For instance, Intel’s Curie, the size of a shirt button, is equipped with a 32-bit Intel Quark system-on-a-chip (SoC) with 384kB of flash memory and 80kB SRAM. It’s capable of handling computing power for wearable devices."
+      - "At the International Solid State Circuits Conference (ISSCC), MIT researchers introduced a 168-core chip dubbed 'Eyeriss' that will enable IoT devices to run artificial intelligence algorithms locally without the need to have Internet connection or access to the cloud."
+      - "On privacy and security, blockchain or decentralized ledger systems will support trustless peer-to-peer messaging and secure distributed data sharing with a robust and scalable form of device coordination."
+      - "These fundamental shifts in the network, hardware and standards will mean that the future of data management will occur on the edge and we as human beings will be at the epicenter of these concentric circles."
+      - "AI/ machine learning is ever becoming pervasive and integrated into our daily lives, from Siri, Google Now, Microsoft Cortana to Amazon Echo’s Alexa. Cognitive science, affective computing, neural networks, natural language processing, computer vision, facial recognition detection, voice analysis, robotics and other AI disciplines and techniques are maturing towards strong AI. No longer will we need to interface one-to-many with apps and devices but rather we will have an intermediary -- an AI ambient virtual assistant that will coordinate and negotiate will apps and devices on the network’s edge on our behalf."
   -
     tid: 100
     sid: 79
-    title: 'Keynote'
+    title: 'AI Ambient Virtual Assistant Will Coordinate & Negotiate with the Network’s Edge'
     type: 'talk'
     day: 1
     track: 1
     slot: 1
     short:
-      - "TBA"
+      - "The Open Compute Project and the Telco Project for a new 5G IoT platform is one of many trends moving the industry from centralized cloud computing to decentralized edge computing. The low-latency, error-correcting 5G IoT networks will be capable of coordinating thousands of autonomous vehicles, robotic systems, drones, equipment and M2M sensors, designed to scale to 500 billion IoT devices."
     long:
-      - "TBA"
+      - "The Open Compute Project and the Telco Project for a new 5G IoT platform is one of many trends moving the industry from centralized cloud computing to decentralized edge computing. The low-latency, error-correcting 5G IoT networks will be capable of coordinating thousands of autonomous vehicles, robotic systems, drones, equipment and M2M sensors, designed to scale to 500 billion IoT devices."
+      - "Moreover, the Moore’s Law is driving the miniaturization of chips used to power the network’s edge. For instance, Intel’s Curie, the size of a shirt button, is equipped with a 32-bit Intel Quark system-on-a-chip (SoC) with 384kB of flash memory and 80kB SRAM. It’s capable of handling computing power for wearable devices."
+      - "At the International Solid State Circuits Conference (ISSCC), MIT researchers introduced a 168-core chip dubbed 'Eyeriss' that will enable IoT devices to run artificial intelligence algorithms locally without the need to have Internet connection or access to the cloud."
+      - "On privacy and security, blockchain or decentralized ledger systems will support trustless peer-to-peer messaging and secure distributed data sharing with a robust and scalable form of device coordination."
+      - "These fundamental shifts in the network, hardware and standards will mean that the future of data management will occur on the edge and we as human beings will be at the epicenter of these concentric circles."
+      - "AI/ machine learning is ever becoming pervasive and integrated into our daily lives, from Siri, Google Now, Microsoft Cortana to Amazon Echo’s Alexa. Cognitive science, affective computing, neural networks, natural language processing, computer vision, facial recognition detection, voice analysis, robotics and other AI disciplines and techniques are maturing towards strong AI. No longer will we need to interface one-to-many with apps and devices but rather we will have an intermediary -- an AI ambient virtual assistant that will coordinate and negotiate will apps and devices on the network’s edge on our behalf."
 
   -
     tid: 105
@@ -2133,19 +2152,22 @@ talks:
   -
     tid: 238
     sid: 79
-    title: 'Panel'
+    title: 'Why Internet of Things Will Eat Your Lunch'
     type: 'talk'
     day: 2
     track: 3
     slot: 2
     short:
-      - ""
+      - "According to an Accenture study of 1,000 large enterprises, big companies struggle with innovation. The biggest barrier is not a lack of vision but because, by definition, big companies are mature. Organizational structures and processes are in place to guide the company towards efficiency. Seasoned managers steer their employees from pursuing the art of discovery and towards engaging in the science of delivery."
     long:
-      - ""
+      - "According to an Accenture study of 1,000 large enterprises, big companies struggle with innovation. The biggest barrier is not a lack of vision but because, by definition, big companies are mature. Organizational structures and processes are in place to guide the company towards efficiency. Seasoned managers steer their employees from pursuing the art of discovery and towards engaging in the science of delivery. Employees are taught to seek efficiencies, leverage existing assets, and listen to their best customers. Such practices and policies ensure that executives can consistently deliver positive earnings to Wall Street, but they also minimize the types and scale of innovation that can be pursued successfully within an organization. No company ever created transformational growth by doing what they do a tiny bit better and a tiny bit cheaper."
+      - "Never before are startups well positioned to eat the lunch of big corporates through emerging technologies such as IoT and FinTech."
 
   -
     tid: 239
-    sid: 79
+    sid:
+      - '79'
+      - '99'
     title: 'Panel'
     type: 'talk'
     day: 2
@@ -3205,9 +3227,9 @@ talks:
     sid: 57
     title: 'Apache Spark? If it only worked.'
     type: 'talk'
-    day: 2
-    track: 2
-    slot: 5
+    day: 3
+    track: 4
+    slot: 8
     short:
       - "Spark has very nice API and it promises high performance of crunching large datasets. It’s really easy to write an app in Spark, unfortunately it’s also easy to write one which doesn’t perform the way you would expect or just fails for no obvious reason. The talk will introduce a practical framework for fixing most common problems with Spark applications."
     long:
