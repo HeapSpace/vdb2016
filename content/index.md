@@ -1601,22 +1601,22 @@ speakers:
       - ""
       - ""
 
-  -
-    sid: 104
-    firstname: 'Dr Constantine "Dino"'
-    lastname: 'Kiritsis'
-    pageurl: 'constantine-kiritsis'
-    url: 'http://innovationexplorer.rs/#elvin_guri_2016'
-    photo: 'Constantine Kiritsis.jpg'
-    company: 'PricewaterhouseCoopers CEE'
-    talk:
-      - '239'
-    tags:
-      - business
-    answers:
-      - ""
-      - ""
-      - ""
+  #-
+  #  sid: 104
+  #  firstname: 'Dr Constantine "Dino"'
+  #  lastname: 'Kiritsis'
+  #  pageurl: 'constantine-kiritsis'
+  #  url: 'http://innovationexplorer.rs/#elvin_guri_2016'
+  #  photo: 'Constantine Kiritsis.jpg'
+  #  company: 'PricewaterhouseCoopers CEE'
+  #  talk:
+  #    - '239'
+  #  tags:
+  #    - business
+  #  answers:
+  #    - ""
+  #    - ""
+  #    - ""
 
 config:
 
@@ -1852,8 +1852,8 @@ talks:
     title: 'Harry Potter dorm doors -- a wizarding approach to security'
     type: 'talk'
     day: 1
-    track: 3
-    slot: 5
+    track: 1
+    slot: 7
     short:
       - "The entranceways to the dorms at Hogwarts were guarded by paintings that talked and asked for passwords. What if that were real?! The recent availability of machine learning as an API opens up the door to an exponential growth in the possibilities for 'smart' devices. In this talk, we explore a Harry Potter style 'security' system that can both see and hear."
     long:
@@ -2207,7 +2207,7 @@ talks:
     sid:
       - '79'
       - '99'
-      - '104'
+      # - '104'
     title: 'Panel'
     type: 'talk'
     day: 2
@@ -2573,8 +2573,8 @@ talks:
     title: 'Beat Aliens with Akka Cluster'
     type: 'talk'
     day: 1
-    track: 1
-    slot: 7
+    track: 3
+    slot: 5
     short:
       - "Computer game run with 3 x Raspberry Pi, 1 x Router, 1x Laptop, => trying to kill game by disconnecting network cables or power source, testing if application is self healing"
     long:
@@ -3023,7 +3023,7 @@ talks:
     type: 'talk'
     day: 1
     track: 1
-    slot: 2
+    slot: 6
     short:
       - "Docker has evolved from a container engine, to a complete end-to-end solution for orchestrating cloud-native applications."
     long:
@@ -3336,7 +3336,7 @@ talks:
     type: 'talk'
     day: 1
     track: 1
-    slot: 6
+    slot: 2
     short:
       - "TBA"
     long:
