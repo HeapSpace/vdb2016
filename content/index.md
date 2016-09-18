@@ -3332,7 +3332,7 @@ talks:
   -
     tid: 600
     sid: 103
-    title: 'Sneak peak into Google culture and tips on how to foster the culture of innovation'
+    title: 'Sneak peek into Google culture and tips on how to foster the culture of innovation'
     type: 'talk'
     day: 1
     track: 1
