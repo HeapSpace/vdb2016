@@ -1663,7 +1663,6 @@ talks:
     track: 0
     slot: 8
     duration: 60
-    break: 0
 
   -
     tid: 56
@@ -2590,6 +2589,7 @@ talks:
     track: 0
     slot: 7
     duration: 480
+    break: 0
     time: '09:00'
     form: "https://drive.google.com/open?id=1hdCebZsMAo5kr97GAal-BHLzJCwv6CTBdXqjWY868LE"
     short:
