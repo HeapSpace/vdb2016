@@ -274,7 +274,7 @@ speakers:
     pageurl: 'aimone-bodini'
     url: 'https://www.linkedin.com/in/aimone-bodini-7a05b5a6'
     photo: 'Aimone Bodini.jpg'
-    company: 'Bully! Entertainment'
+    company: 'VR Creator'
     talk:
       - '190'
     tags:
@@ -1550,6 +1550,73 @@ speakers:
       - ""
       - ""
 
+  -
+    sid: 101
+    firstname: 'Saša'
+    lastname: 'Suša'
+    pageurl: 'sasa-susa'
+    url: 'https://rs.linkedin.com/in/sasa-susa-9484657'
+    photo: 'Sasa Susa.jpg'
+    company: 'Payoneer'
+    talk:
+      - '590'
+    tags:
+      - business
+    answers:
+      - ""
+      - ""
+      - ""
+
+  -
+    sid: 102
+    firstname: 'Anthony'
+    lastname: 'Christov'
+    pageurl: 'anthony-christov'
+    url: 'http://www.idea-academy.it/EN/Teachers/40/Anthony_Christov_en/164'
+    photo: 'Anthony Christov.jpg'
+    company: 'Pixar'
+    talk:
+      - '595'
+    tags:
+      - business
+    answers:
+      - ""
+      - ""
+      - ""
+
+  -
+    sid: 103
+    firstname: 'Karolina '
+    lastname: 'Lewandowska'
+    pageurl: 'karolina-lewandowska'
+    url: 'https://www.linkedin.com/in/karolinalewandowska'
+    photo: 'Karolina Lewandowska.jpg'
+    company: 'Google'
+    talk:
+      - '600'
+    tags:
+      - business
+    answers:
+      - ""
+      - ""
+      - ""
+
+  -
+    sid: 104
+    firstname: 'Dr Constantine "Dino"'
+    lastname: 'Kiritsis'
+    pageurl: 'constantine-kiritsis'
+    url: 'http://innovationexplorer.rs/#elvin_guri_2016'
+    photo: 'Constantine Kiritsis.jpg'
+    company: 'PricewaterhouseCoopers CEE'
+    talk:
+      - '239'
+    tags:
+      - business
+    answers:
+      - ""
+      - ""
+      - ""
 
 config:
 
@@ -1570,20 +1637,6 @@ config:
 
 
 talks:
-
-  -
-    tid: 41
-    empty: 1
-    day: 2
-    track: 1
-    slot: 5
-
-  -
-    tid: 42
-    empty: 1
-    day: 2
-    track: 2
-    slot: 5
 
   -
     tid: 51
@@ -1608,7 +1661,7 @@ talks:
     empty: 1
     day: 3
     track: 0
-    slot: 1
+    slot: 8
     duration: 60
     break: 0
 
@@ -1771,9 +1824,9 @@ talks:
     sid: 23
     title: 'Open stack for building end-to-end IoT solutions'
     type: 'talk'
-    day: 1
-    track: 1
-    slot: 6
+    day: 2
+    track: 2
+    slot: 5
     short:
       - "There's a lot of pieces needed to build a scalable IoT solution. Today most of these components exists as open source projects, which makes it easier than ever to connect large number devices to the cloud. This session will describe architecture and components of the scalable IoT solutions and open source projects that can be used to build them."
     long:
@@ -2137,19 +2190,6 @@ talks:
       - "This talk will go into details of the problems that modern application face. How to handle dozen components running on multiple screens at the same time and handling it's own state. "
 
   -
-    tid: 237
-    sid: 79
-    title: 'Panel'
-    type: 'talk'
-    day: 1
-    track: 3
-    slot: 8
-    short:
-      - ""
-    long:
-      - ""
-
-  -
     tid: 238
     sid: 79
     title: 'Why Internet of Things Will Eat Your Lunch'
@@ -2168,6 +2208,7 @@ talks:
     sid:
       - '79'
       - '99'
+      - '104'
     title: 'Panel'
     type: 'talk'
     day: 2
@@ -2250,7 +2291,7 @@ talks:
     sid: 36
     title: 'Reactive Database Mapping with Scala and Slick'
     type: 'talk'
-    day: 1
+    day: 2
     track: 1
     slot: 5
     short:
@@ -2547,9 +2588,9 @@ talks:
     type: 'workshop'
     day: 3
     track: 0
-    slot: 8
+    slot: 7
     duration: 480
-    time: '10:00'
+    time: '09:00'
     form: "https://drive.google.com/open?id=1hdCebZsMAo5kr97GAal-BHLzJCwv6CTBdXqjWY868LE"
     short:
       - "Lean Poker is a day long coding challenge that's not only fun, but also provides a safe environment in which you can practice continuous deployment and fast delivery of valuable software."
@@ -3085,8 +3126,8 @@ talks:
     sid: 68
     title: 'Continuous Security Testing - Automating your AppSec Program'
     type: 'talk'
-    day: 3
-    track: 2
+    day: 1
+    track: 3
     slot: 8
     short:
       - "Security testing is imperative in web based software solutions, and seeing as the industry is striving towards the practice of continuous delivery, the need arises to include security testing in that process as much as possible."
@@ -3261,5 +3302,46 @@ talks:
     long:
       - "Invention is not the same as Innovation, just as a start-up or a small business are not by definition entrepreneurial activities. Indeed, entrepreneurial activities are not necessarily related to business. For a technological innovation to become more than a mere curiosity, it needs proper practical application i.e. it needs a well-defined market and/or demand, and it needs a set of organisational capabilities that would bring such technological innovation to the market."
       - "It is the System Builders who play the key role in converting new technology into an innovation. These players, not necessarily cutting-edge-technology-proficient but certainly technology-aware, are the true innovators, as they are capable of bringing together the whole value chain (suppliers of technology, suppliers of complementary technology, potential users, sellers, financiers, and so on). To illustrate with Afuah's definition, the process of innovation is 'the use of new technological and market knowledge to offer a new product or service.' If an innovation can at all be called 'disruptive', it is in the ability of the System Builders to challenge the status quo: this makes the process of innovation an inherently political exercise, for which a specific set of skills is required."
+
+  -
+    tid: 590
+    sid: 101
+    title: 'TBA'
+    type: 'talk'
+    day: 3
+    track: 2
+    slot: 8
+    short:
+      - "TBA"
+    long:
+      - "TBA"
+
+  -
+    tid: 595
+    sid: 102
+    title: 'Blurring work and play in the corporate setting, as means of unleashing creativity'
+    type: 'talk'
+    day: 1
+    track: 1
+    slot: 5
+    short:
+      - "TBA"
+    long:
+      - "TBA"
+
+  -
+    tid: 600
+    sid: 103
+    title: 'Sneak peak into Google culture and tips on how to foster the culture of innovation'
+    type: 'talk'
+    day: 1
+    track: 1
+    slot: 6
+    short:
+      - "TBA"
+    long:
+      - "TBA"
+
+
 
 ---
