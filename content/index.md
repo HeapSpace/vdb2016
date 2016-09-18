@@ -2113,9 +2113,9 @@ talks:
     sid: 21
     title: 'Chatbots as new apps for mobile messengers'
     type: 'talk'
-    day: 3
+    day: 2
     track: 2
-    slot: 7
+    slot: 8
     short:
       - "Chatbots will be one of the next big evolutions of mobile messengers and they are changing the way how users interact with a service. I will give an overview on existing messenger and chatbot platforms and how they differentiate from each other, not only in terms of technical specifications but also in terms of which different UI elements they are providing to enrich the communication within a messenger."
     long:
@@ -2830,9 +2830,9 @@ talks:
     sid: 53
     title: 'Lift framework in 45 minutes'
     type: 'talk'
-    day: 2
+    day: 3
     track: 2
-    slot: 8
+    slot: 7
     short:
       - "In 45 minutes I want to build a full blown web app based on Lift framework to show of its key features."
     long:

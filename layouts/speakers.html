@@ -56,7 +56,7 @@
 								speaker_talks = speakers_raw['talks'].select{ |item| item['tid'] == talk.to_i }
 								speaker_talks.each do |t|
 								%>
-									<div class="single-talk testtalk">
+									<div class="single-talk">
 										<% if t['type'] == 'talk' %>
 										<i class="fa fa-microphone yellow"></i>
 										<% end %>
