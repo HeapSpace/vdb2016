@@ -76,6 +76,14 @@
 	font-size: 2.65em;
 }
 
+.cocktail-icon {
+	position: absolute;
+  top: 55px;
+  right: 5px;
+	opacity: 0.5;
+	font-size: 2.65em;
+}
+
 .talk-form-link {
   background-color: $red;
   padding: 6px 24px !important;
@@ -123,7 +131,7 @@
     border-top: 1px solid $brand-primary;
     &.highlighted {
       background-color: rgba($brand-primary, 0.85) !important;
-      h4, h6, .brown, .ical-link {
+      h4, h6, .brown, .ical-link, .duration-time {
         color: $body-bg;
       }
     }

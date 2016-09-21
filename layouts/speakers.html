@@ -35,8 +35,19 @@
 			<div class="margin-top-small"></div>
 			<%
 			speakers_raw = loadspeakersandtalks()
-			speakers_raw['speakers'].to_a.each { |s|
-				if !s['firstname'].to_s.empty? && !s['lastname'].to_s.empty?
+			speakersarray = speakers_raw['speakers'].to_a
+			speakersarray.each_with_index { |s, i|
+				if (['Pixar', 'Google', 'Atlassian', 'JetBrains', 'Pivotal', 'Pivotal Software, Inc.', 'Idea', 'Amazon', 'Redhat', 'IBM', 'IBM Global Business Services', 'IBM Bluemix'].include? s["company"])
+					speakersarray.insert(0,speakersarray.delete_at(i))
+				end
+			}
+			speakersarray.each_with_index { |s, i|
+				if (['Amyx+McKinsey'].include? s["company"])
+					speakersarray.insert(0,speakersarray.delete_at(i))
+				end
+			}
+			speakersarray.each { |s|
+				if !s['firstname'].to_s.empty? && !s['lastname'].to_s.empty? && s['skip'].to_s.empty?
 			%>
 			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-centered speaker-tags" data-item-tags="<%= s['tags'].to_a.join(', ') %>">
 				<div class="speaker">

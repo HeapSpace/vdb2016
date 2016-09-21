@@ -49,7 +49,7 @@
     <% if item_break[:name] == 'lunch' %>
       <h4 class=""><%= item_slot[:time] %></h4>
     <% else %>
-    <h6 class="break"><%= item_break[:name] %></h6>
+    <h6 class="break"><%= item_break[:name] %><% if item_break[:name] == 'chill out' %><br/> & cocktails<% end %></h6>
     <div class="duration"><%= breakduration.to_s %> min</div>
     <% end %>
     <% if item_break[:name] == 'lunch'
@@ -73,7 +73,7 @@
         </div>
       </div>
     <% end %>
-    <% if item_break[:name] == 'chill out' %><i class="fa fa-music chill-icon"></i><% end %>
+    <% if item_break[:name] == 'chill out' %><i class="fa fa-music chill-icon"></i><i class="fa fa-glass cocktail-icon"></i><% end %>
   </div>
   <% end %>
 <%

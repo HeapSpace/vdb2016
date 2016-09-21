@@ -1395,6 +1395,25 @@ speakers:
       - "Getting a call from a product manager while I was doing a barbecue in spring 2007...he was trying out “some cool stuff” on Saturday morning on the production environment (well, God knows why, but he insisted to get admin rights), one of them being DROP DATABASE...To make a long story shorter, the database was restored rather quickly, but the grill sausages were irretrievably lost."
       - "Well, this is more how I’d like to see it. Hopefully, the coming years will bring us mind-blowing tech innovations in how we cure diseases and make this world a better place. I’d like to see more of tech achievements in those areas and less of them towards ruining the way we interact with each others and distracting a mankind’s attention from its own weaknesses."
       - "My dear younger self, dare more, experiment, take risks, break rules! That is where creativity starts. It is ok to be unconventional and impulsive."
+
+  -
+    sid: 10
+    firstname: 'Ilija'
+    lastname: 'Nikolić'
+    pageurl: 'ilija-nikolic'
+    url: 'https://rs.linkedin.com/in/anamarijapetrovic'
+    photo: 'user.png'
+    company: 'Levi 9'
+    skip: 1
+    talk:
+      - '545'
+    tags:
+      - agile
+    answers:
+      - ""
+      - ""
+      - ""
+
   -
     sid: 78
     firstname: 'Robert'
@@ -3140,6 +3159,7 @@ talks:
     sid:
       - '10'
       - '11'
+      - '111'
     title: 'A Scrum Team – can it be great or is that a bait'
     type: 'talk'
     day: 3
