@@ -11,8 +11,8 @@ class IcalAll < Nanoc::Filter
         event = Icalendar::Event.new
         event.dtstart = Time.parse(a[:icaldate].to_s + ' ' + a[:start].to_s)
         event.dtend = Time.parse(a[:icaldate].to_s + ' ' + a[:end].to_s)
-        event.summary = a[:speakers].to_s
-        event.description = a[:title].to_s
+        event.summary = a[:title].to_s
+        event.description = a[:speakers].to_s
         if a[:venue] != nil
           event.location = a[:venue]
         end
