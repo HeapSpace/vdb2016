@@ -36,11 +36,12 @@
     <% if !talk['talkspeakers'].to_s.empty? %>
       <% talk['talkspeakers'].flatten(1).each do |speaker| %>
         <h6 class="bold yellow"><%= speaker['firstname'] %> <%= speaker['lastname'] %></h6>
+        <span class="brown"><%= speaker['company'] %></span>
       <% end %>
     <% end %>
     <a href="/talk/<%= talk['tid'] %>/"><h6 class=""><%= talk['title'] %></h6></a>
     <% if !talk['form'].to_s.empty? %><a href="<%= talk['form'] %>" class="btn btn-primary form-link" role="button" target="_blank"><i class="fa fa-check-circle"></i> apply now</a><% end %>
-    <% if !talk['title'].to_s.empty? %><div class="brown"><%= talkduration.to_s %> min</div><% end %>
+    <% if !talk['title'].to_s.empty? %><div class="duration-time"><%= talkduration.to_s %> min</div><% end %>
   </div>
   <% end %>
   <% if breakduration > 0 %>
