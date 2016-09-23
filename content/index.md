@@ -1575,7 +1575,7 @@ speakers:
   -
     sid: 101
     firstname: 'Saša'
-    lastname: 'Suša'
+    lastname: 'Šuša'
     pageurl: 'sasa-susa'
     url: 'https://rs.linkedin.com/in/sasa-susa-9484657'
     photo: 'Sasa Susa.jpg'
@@ -3369,9 +3369,9 @@ talks:
     track: 4
     slot: 8
     short:
-      - "TBA"
+      - "We will take a look about Payoneer services in Serbia, and how Payoneer can help to Going Global with a business"
     long:
-      - "TBA"
+      - "We will take a look about Payoneer services in Serbia, and how Payoneer can help to Going Global with a business"
 
   -
     tid: 595
