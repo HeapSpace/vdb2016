@@ -9,6 +9,8 @@
 	<%= render '/_header.html'%>
 	<%
 
+		date = '29. September, 2016'
+
 		slots = {
 		 1 => [:time => '9:00', :dur => 60],
 		 2 => [:time => '10:15', :dur => 60],
@@ -33,60 +35,7 @@
 
 	%>
 	<div class="main-bg page"></div>
-	<div class="container">
-	  <h1 class="text-center pad-vertical-big">
-	    Day 2<br><span class="yellow">29. September, 2016</span>
-	  </h1>
-	  <h4 class="text-center bold">Registration starts at <span class="yellow">7:45</span></h4>
-		<h4 class="text-center bold">Breakfast: <span class="yellow">8:00-9:00</span></h4>
-		<h4 class="text-center "><span class="yellow">Note: </span>Current schedule is subject to change</h4>
-		<div class="text-center">
-			<a href="/schedulecalendar.ics" class="btn btn-primary brown" role="button" target="_blank"><i class="fa fa-calendar-plus-o"></i>Download full schedule calendar in iCal format</a>
-		</div>
-
-		<div class="schedule-tabs-holder">
-		  <div class="container info-content ">
-			  <a class="btn btn-primary btn-lg blue" role="button" href="<%= @test %>/schedule/day1">Day 1</a>
-			  <a class="btn btn-primary btn-lg green" role="button" href="<%= @test %>/schedule/day2">Day 2</a>
-			  <a class="btn btn-primary btn-lg blue" role="button" href="<%= @test %>/schedule/day3">Day 3</a>
-			</div>
-		</div>
-
-		<div class="schedule-list">
-			<%= render '/_schedule_clock.html' %>
-			<div class="abs-holder">
-				<div class="row">
-					<div class="col-sm-12 col-md-4 col-lg-2 schedule-track">
-						<h5 class="track-name track1"><span class="accent day ">Day 2 / </span>Track 1</h5>
-				    <%= render '/_schedule_item.html', :day => 2, :track => 1, :slots => slots, :breaks => breaks %>
-				  </div>
-				  <div class="col-sm-12 col-md-4 col-lg-2 schedule-track">
-						<h5 class="track-name track2"><span class="accent day ">Day 2 / </span>Track 2</h5>
-				    <%= render '/_schedule_item.html', :day => 2, :track => 2, :slots => slots, :breaks => breaks %>
-				  </div>
-				  <div class="col-sm-12 col-md-4 col-lg-2 schedule-track">
-						<h5 class="track-name track3"><span class="accent day ">Day 2 / </span>Track 3</h5>
-				    <%= render '/_schedule_item.html', :day => 2, :track => 3, :slots => slots, :breaks => breaks %>
-				  </div>
-				  <div class="col-sm-12 col-md-6 col-lg-2 schedule-track">
-						<h5 class="track-name track4"><span class="accent day ">Day 2 / </span>Track 4</h5>
-				    <%= render '/_schedule_item.html', :day => 2, :track => 4, :slots => slots, :breaks => breaks %>
-				  </div>
-				  <div class="col-sm-12 col-md-5 col-lg-2 schedule-track">
-						<h5 class="track-name track5"><span class="accent day ">Day 2 / </span>Workshop</h5>
-				    <%= render '/_schedule_item.html', :day => 2, :track => 0, :slots => slots, :breaks => breaks %>
-				  </div>
-				</div>
-			</div>
-		</div>
-		<div class="margin-top-med">
-		  <div class="container info-content ">
-			  <a class="btn btn-primary btn-lg blue" role="button" href="<%= @test %>/schedule/day1">Day 1</a>
-			  <a class="btn btn-primary btn-lg green" role="button" href="<%= @test %>/schedule/day2">Day 2</a>
-			  <a class="btn btn-primary btn-lg blue" role="button" href="<%= @test %>/schedule/day3">Day 3</a>
-			</div>
-		</div>
-	</div>
+	<%= render '/_schedule_list.html', :day => 2, :slots => slots, :breaks => breaks, :date => date %>
 	<div class="info-block info margin-top-big">
 	  <%= render '/_footer_cta.html' %>
 	</div>

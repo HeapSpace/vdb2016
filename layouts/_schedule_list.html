@@ -1,0 +1,54 @@
+<div class="container">
+	<h1 class="text-center pad-vertical-big">
+		Day <%= @day %><br><span class="yellow"><%= @date %></span>
+	</h1>
+	<h4 class="text-center bold">Registration starts at <span class="yellow">7:45</span></h4>
+	<h4 class="text-center bold">Breakfast: <span class="yellow">8:00-9:00</span></h4>
+	<h4 class="text-center "><span class="yellow">Note: </span>Current schedule is subject to change</h4>
+	<div class="text-center">
+		<a href="/schedulecalendar.ics" class="btn btn-primary brown" role="button" target="_blank"><i class="fa fa-calendar-plus-o"></i>Download full schedule calendar in iCal format</a>
+	</div>
+
+	<div class="schedule-tabs-holder">
+		<div class="container info-content ">
+			<a class="btn btn-primary btn-lg <% if @day == 1 then %>green<% else %>blue<% end %>" role="button" href="<%= @test %>/schedule/day1">Day 1</a>
+			<a class="btn btn-primary btn-lg <% if @day == 2 then %>green<% else %>blue<% end %>" role="button" href="<%= @test %>/schedule/day2">Day 2</a>
+			<a class="btn btn-primary btn-lg <% if @day == 3 then %>green<% else %>blue<% end %>" role="button" href="<%= @test %>/schedule/day3">Day 3</a>
+		</div>
+	</div>
+
+	<div class="schedule-list">
+		<%= render '/_schedule_clock.html' %>
+		<div class="abs-holder">
+			<div class="row">
+				<div class="col-sm-12 col-md-4 col-lg-2 schedule-track">
+					<h5 class="track-name track1"><span class="accent day ">Day <%= @day %> / </span>Tesla</h5>
+					<%= render '/_schedule_item.html', :day => @day, :track => 1, :slots => @slots, :breaks => @breaks %>
+				</div>
+				<div class="col-sm-12 col-md-4 col-lg-2 schedule-track">
+					<h5 class="track-name track2"><span class="accent day ">Day <%= @day %> / </span>Pupin</h5>
+					<%= render '/_schedule_item.html', :day => @day, :track => 2, :slots => @slots, :breaks => @breaks %>
+				</div>
+				<div class="col-sm-12 col-md-4 col-lg-2 schedule-track">
+					<h5 class="track-name track3"><span class="accent day ">Day <%= @day %> / </span>Mileva</h5>
+					<%= render '/_schedule_item.html', :day => @day, :track => 3, :slots => @slots, :breaks => @breaks %>
+				</div>
+				<div class="col-sm-12 col-md-6 col-lg-2 schedule-track">
+					<h5 class="track-name track4"><span class="accent day ">Day <%= @day %> / </span>Milutin</h5>
+					<%= render '/_schedule_item.html', :day => @day, :track => 4, :slots => @slots, :breaks => @breaks %>
+				</div>
+				<div class="col-sm-12 col-md-5 col-lg-2 schedule-track">
+					<h5 class="track-name track5"><span class="accent day ">Day <%= @day %> / </span>Workshop</h5>
+					<%= render '/_schedule_item.html', :day => @day, :track => 0, :slots => @slots, :breaks => @breaks %>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="margin-top-med">
+		<div class="container info-content ">
+			<a class="btn btn-primary btn-lg <% if @day == 1 then %>green<% else %>blue<% end %>" role="button" href="<%= @test %>/schedule/day1">Day 1</a>
+			<a class="btn btn-primary btn-lg <% if @day == 2 then %>green<% else %>blue<% end %>" role="button" href="<%= @test %>/schedule/day2">Day 2</a>
+			<a class="btn btn-primary btn-lg <% if @day == 3 then %>green<% else %>blue<% end %>" role="button" href="<%= @test %>/schedule/day3">Day 3</a>
+		</div>
+	</div>
+</div>

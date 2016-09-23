@@ -120,6 +120,18 @@
       color: $brand-primary;
       background-color: $body-bg;
       z-index: 9;
+      &.track1 {
+        color: #00778C; // $blue;
+      }
+      &.track2 {
+        color: #B43D1F; // $red;
+      }
+      &.track3 {
+        color: $green;
+      }
+      &.track4 {
+        color: $brand-secondary;
+      }
     }
   }
   .schedule-item {

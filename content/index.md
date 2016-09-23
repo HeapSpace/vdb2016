@@ -1637,6 +1637,40 @@ speakers:
   #    - ""
   #    - ""
 
+  -
+    sid: 105
+    firstname: 'Stefan'
+    lastname: 'Ganchev'
+    pageurl: 'stefan-ganchev'
+    url: 'https://www.linkedin.com/in/sgantchev'
+    photo: 'Stefan Ganchev.jpg'
+    company: 'LAUNCHub'
+    talk:
+      - '239'
+    tags:
+      - business
+    answers:
+      - ""
+      - ""
+      - ""
+
+  -
+    sid: 106
+    firstname: 'Nikola'
+    lastname: 'Čavić'
+    pageurl: 'nikola-cavic'
+    url: 'https://www.linkedin.com/in/nikolacavic'
+    photo: 'Nikola Cavic.jpg'
+    company: 'Nordeus'
+    talk:
+      - '239'
+    tags:
+      - business
+    answers:
+      - "Couple of years ago, when I opened Google maps to look for the location of an airport and noticed that my flight date was displayed above the airport! On its own, it may not be crazy, but I was really amazed when I saw it for the first time. It was probably at that moment that I also accepted the fact that Google knows 'everything' about me and it is up to them to decide how and where they will use that data. Isn't that crazy?"
+      - "In the next 5 years, I would expect that lines the between the real and virtual world will become blurrier, and that similar progress will happen between the artificial and human intelligence. I can see advancement within those two fields redefining the world around us by 2022."
+      - "Playing games 5 hours a day will actually be valuable for my career. Also, the obligatory 'buy Apple stock'."
+
 config:
 
   day:
@@ -2201,7 +2235,7 @@ talks:
     type: 'talk'
     day: 3
     track: 3
-    slot: 1
+    slot: 3
     short:
       - "Flux architectures and why you should care. How to tame the application state and not go bananas. Examples from production applications with React.js and Redux."
     long:
@@ -2225,9 +2259,9 @@ talks:
     tid: 239
     sid:
       - '79'
-      - '99'
-      # - '104'
-    title: 'Panel'
+      - '105'
+      - '106'
+    title: 'Need for Innovation in Enterprise and Startups'
     type: 'talk'
     day: 2
     track: 4
@@ -2258,7 +2292,7 @@ talks:
     type: 'talk'
     day: 3
     track: 3
-    slot: 3
+    slot: 1
     short:
       - "In this talk we are going to use a basic application to showcase Redux while using Angular 2 across different platforms (web, mobile and desktop)."
     long:
