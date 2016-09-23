@@ -425,7 +425,9 @@ speakers:
     talk:
       - '235'
     tags:
-      - web
+      - redux
+      - javascript
+      - reactjs
     answers:
       - "It’s hard to say. Things somehow become too ordinary when you know how they work and are able to overthink everything about them. I’d say one of the craziest things that happened to me was creating a small Adobe Flash game in 2008 and showing to everyone at school. It was my first app that actually had a GUI and, in some ways, the first real “product” that I created. I remember being a bit embarrassed to share it with the world, as well as being very happy to be treated like a genius at school. I had kids, whom I've never met, texting me that they loved playing the game and adding their ideas on how to make it more fun."
       - "There’re quite a few things that I am excited about in the coming 5–10 years: AI research, the rise of autonomous vehicles, biotech, space travel research etc. While I don’t think that 5 years will be enough for any of these techs to disrupt our life or change the world completely, I believe that that this will be the time when important foundations will be set. I find that exciting, as it is a great time to be a pioneer in these fields."
@@ -459,6 +461,7 @@ speakers:
       - '250'
     tags:
       - javascript
+      - angular
     answers:
       - "Pokemon Go ate my data package so now I have to survive on WiFi! =O"
       - "I see a lot of JavaScript."
