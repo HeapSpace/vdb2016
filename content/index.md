@@ -1548,9 +1548,9 @@ speakers:
     tags:
       - business
     answers:
-      - ""
-      - ""
-      - ""
+      - "The first time I wrote code. It was love at first sight."
+      - "There will be big advancements in human health and longevity, all tech related. Space exploration and travel will be big again like in the sixties. And the way people consume entertainment and games will evolve significantly. Hopefully Nordeus will be at the epicenter of that."
+      - "No regrets, not my style ;)"
 
   -
     sid: 100
@@ -1893,7 +1893,7 @@ talks:
     track: 1
     slot: 6
     short:
-      - "TBA"
+      - "Despite being very new, spring boot has seen a spectacular start as an amazing kickstarter for spring-based application. You can now start your project in a matter of minutes, not days!"
     long:
       - "Despite being very new, spring boot has seen a spectacular start as an amazing kickstarter for spring-based application. You can now start your project in a matter of minutes, not days!"
       - "On the other hand, you're still using Java, with all its ceremony regarding code... Wouldn't it be great if we could pair Spring Boot with a powerful yet simple language?"
@@ -2401,7 +2401,7 @@ talks:
     type: 'talk'
     day: 2
     track: 3
-    slot: 3
+    slot: 2
     short:
       - "The proposal idea is the 'wherever SIM' that provides the network coverage wherever devices may roam – integrating 400+ radio networks in 160+ countries all around the world. SIM cards and endpoints can be easily managed in real-time via the intuitive user-interface or directly from the customer’s software application via an easy-to-integrate API."
     long:
@@ -2514,9 +2514,9 @@ talks:
     track: 3
     slot: 6
     short:
-      - "Developers deploy their applications several times a day. Therefore deployment needs to be fast, secure and, most important, easy. Many ruby developers use capistrano, and many more (PHP) are writing their own FTP scripts. With easy to write DSL, error resistant scripts and blazingfast execution time (even for rails application) Mina is making deployment fun again!"
+      - "Developers deploy their applications several times a day. Therefore deployment needs to be fast, secure and, most important, easy. Many ruby developers use capistrano, and many more (PHP) are writing their own FTP scripts."
     long:
-      - "TBA"
+      - "Developers deploy their applications several times a day. Therefore deployment needs to be fast, secure and, most important, easy. Many ruby developers use capistrano, and many more (PHP) are writing their own FTP scripts. With easy to write DSL, error resistant scripts and blazingfast execution time (even for rails application) Mina is making deployment fun again!"
 
   -
     tid: 335
@@ -3002,9 +3002,9 @@ talks:
     track: 3
     slot: 7
     short:
-      - "Nowdays, when someone mentions mobile and native development in the same sentence, there is an unpleasant thought that these two are not meant to be together. If you want to have portable code on every mobile platform, C++ can be a good choice. Large codebase, well tested libraries and small memory footprint are couple of reasons why we will discuss about C++ on mobile platforms. At the end, we will see small example using Android NDK."
+      - "Nowdays, when someone mentions mobile and native development in the same sentence, there is an unpleasant thought that these two are not meant to be together. If you want to have portable code on every mobile platform, C++ can be a good choice."
     long:
-      - "TBA"
+      - "Nowdays, when someone mentions mobile and native development in the same sentence, there is an unpleasant thought that these two are not meant to be together. If you want to have portable code on every mobile platform, C++ can be a good choice. Large codebase, well tested libraries and small memory footprint are couple of reasons why we will discuss about C++ on mobile platforms. At the end, we will see small example using Android NDK."
 
   -
     tid: 480
@@ -3036,11 +3036,11 @@ talks:
   -
     tid: 490
     sid: 35
-    title: 'Breaking bad with GitLab CI'
+    title: 'Reimagine the way you do Continuous Integration'
     type: 'talk'
     day: 2
     track: 3
-    slot: 2
+    slot: 3
     short:
       - "It is common to use CI as a tool to run your tests and build you builds. But GitLab has more to offer."
       - "I will show how GitLab uses its CI and how our clients use it. To give you a whole picture, I will demonstrate some crazy experiments. You would never think that something like this is possible to build with CI system"
@@ -3170,9 +3170,9 @@ talks:
     track: 2
     slot: 4
     short:
-      - "1000 tests running for hours on continuous integration services should be a thing of the past. Don't lose time waiting for your tests. "
+      - "1000 tests running for hours on continuous integration services should be a thing of the past. Don't lose time waiting for your tests."
     long:
-      - "TBA"
+      - "1000 tests running for hours on continuous integration services should be a thing of the past. Don't lose time waiting for your tests."
 
   -
     tid: 540
@@ -3263,7 +3263,7 @@ talks:
     track: 1
     slot: 8
     short:
-      - "TBA"
+      - "SevenBridges platform has been in development for 7 years now. This talk is about what it took, technology and organisation-wise, to get from prototype to multiple cloud-agnostic platforms used both commercially and for national programs."
     long:
       - "SevenBridges platform has been in development for 7 years now. This talk is about what it took, technology and organisation-wise, to get from prototype to multiple cloud-agnostic platforms used both commercially and for national programs. You will hear about the good stuff and, more importantly, about the bad stuff and lessons learned along the way."
 
@@ -3339,9 +3339,9 @@ talks:
     track: 2
     slot: 6
     short:
-      - "TBA"
+      - "During the interview with Branko Milutinovic, CEO and founder of Nordeus, we'll try to uncover how did one of the most successful European gaming studios got started in the first place and how their product - Top Eleven - managed to 'score' over 140 million registered users. "
     long:
-      - "TBA"
+      - "During the interview with Branko Milutinovic, CEO and founder of Nordeus, we'll try to uncover how did one of the most successful European gaming studios got started in the first place and how their product - Top Eleven - managed to 'score' over 140 million registered users. Branko will also give us an insight into Nordeus' company culture which attracts some of the most prominent developers and engineers in Serbia, as well as talented artists from all over the world. We'll look into the next 5 years of Nordeus, as well as talk about upcoming products and titles."
 
   -
     tid: 585
@@ -3360,7 +3360,7 @@ talks:
   -
     tid: 590
     sid: 101
-    title: 'TBA'
+    title: 'The Payoneer Solutions for Empowering Global Commerce'
     type: 'talk'
     day: 3
     track: 4

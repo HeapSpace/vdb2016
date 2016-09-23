@@ -1,3 +1,15 @@
+<%
+	case @day
+	when 1
+		track = 'A'
+	when 2
+		track = 'B'
+	when 3
+		track = 'C'
+	when 4
+		track = 'D'
+	end
+%>
 <div class="container">
 	<h1 class="text-center pad-vertical-big">
 		Day <%= @day %><br><span class="yellow"><%= @date %></span>
@@ -22,19 +34,19 @@
 		<div class="abs-holder">
 			<div class="row">
 				<div class="col-sm-12 col-md-4 col-lg-2 schedule-track">
-					<h5 class="track-name track1"><span class="accent day ">Day <%= @day %> / </span>Tesla</h5>
+					<h5 class="track-name track1"><span class="accent day ">Day <%= @day %> / </span>Tesla <span class=" track ">(A)</span></h5>
 					<%= render '/_schedule_item.html', :day => @day, :track => 1, :slots => @slots, :breaks => @breaks %>
 				</div>
 				<div class="col-sm-12 col-md-4 col-lg-2 schedule-track">
-					<h5 class="track-name track2"><span class="accent day ">Day <%= @day %> / </span>Pupin</h5>
+					<h5 class="track-name track2"><span class="accent day ">Day <%= @day %> / </span>Pupin <span class=" track ">(B)</span></h5>
 					<%= render '/_schedule_item.html', :day => @day, :track => 2, :slots => @slots, :breaks => @breaks %>
 				</div>
 				<div class="col-sm-12 col-md-4 col-lg-2 schedule-track">
-					<h5 class="track-name track3"><span class="accent day ">Day <%= @day %> / </span>Mileva</h5>
+					<h5 class="track-name track3"><span class="accent day ">Day <%= @day %> / </span>Mileva <span class=" track ">(C)</span></h5>
 					<%= render '/_schedule_item.html', :day => @day, :track => 3, :slots => @slots, :breaks => @breaks %>
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-2 schedule-track">
-					<h5 class="track-name track4"><span class="accent day ">Day <%= @day %> / </span>Milutin</h5>
+					<h5 class="track-name track4"><span class="accent day ">Day <%= @day %> / </span>Milutin <span class=" track ">(D)</span></h5>
 					<%= render '/_schedule_item.html', :day => @day, :track => 4, :slots => @slots, :breaks => @breaks %>
 				</div>
 				<div class="col-sm-12 col-md-5 col-lg-2 schedule-track">
