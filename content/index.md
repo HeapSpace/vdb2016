@@ -3333,7 +3333,7 @@ talks:
   -
     tid: 580
     sid: 99
-    title: 'TBA'
+    title: 'Envisioning the Future of South-East Europe’s Tech Scene with Branko Milutinović'
     type: 'talk'
     day: 1
     track: 2
