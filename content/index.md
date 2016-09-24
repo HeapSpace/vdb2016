@@ -16,6 +16,7 @@ speakers:
     company: 'Amyx+McKinsey'
     talk:
       - '100'
+      - '239'
     tags:
       - keynote
     answers:
