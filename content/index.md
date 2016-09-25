@@ -1406,9 +1406,8 @@ speakers:
     lastname: 'Nikolić'
     pageurl: 'ilija-nikolic'
     url: 'https://rs.linkedin.com/in/anamarijapetrovic'
-    photo: 'user.png'
+    photo: 'Ilija Nikolic.png'
     company: 'Levi 9'
-    skip: 1
     talk:
       - '545'
     tags:
