@@ -1401,11 +1401,11 @@ speakers:
       - "My dear younger self, dare more, experiment, take risks, break rules! That is where creativity starts. It is ok to be unconventional and impulsive."
 
   -
-    sid: 10
+    sid: 111
     firstname: 'Ilija'
     lastname: 'Nikolić'
     pageurl: 'ilija-nikolic'
-    url: 'https://rs.linkedin.com/in/anamarijapetrovic'
+    url: 'https://rs.linkedin.com/in/ilija-nikolic-a2511b21'
     photo: 'Ilija Nikolic.png'
     company: 'Levi 9'
     talk:
