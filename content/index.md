@@ -2755,9 +2755,9 @@ talks:
     track: 3
     slot: 2
     short:
-      - "In this session we will provide an overview on how is the Graal VM evolving from an Oracle research project to a potential candidate for subsequent JVM releases."
+      - "The Hotspot JVM already provides a lot of runtime optimizations for Java applications. However this is not the case when we want to execute Ruby or JavaScript code in the JVM, for example. The Graal VM is an Oracle Labs research project that aims to improve the runtime compilation of the JVM in order to bring the performance of Java to interpreted languages."
     long:
-      - "During the talk we will provide details on how does the Graal VM aim to improve the runtime compilation of the JVM in order to bring the performance of Java to interpreted languages. The first part of the talk discussed in general what is the Graal VM in general. The second part of the talk discusses details around the Graal VM along with some benchmark on how does it improve the performance of the JVM in some particular cases and how does the Graal compiler cooperate with the Java compiler API targeted for Java 9  (proposed as JEP243)."
+      - "The Hotspot JVM already provides a lot of runtime optimizations for Java applications. However this is not the case when we want to execute Ruby or JavaScript code in the JVM, for example. The Graal VM is an Oracle Labs research project that aims to improve the runtime compilation of the JVM in order to bring the performance of Java to interpreted languages. It also provides support for the Java compiler API targeted for Java 9 (proposed as JEP243). The talks dives into the Graal VM by examining its architecture and how it aims to boost the performance of the JVM. The Truffle API provided for developers willing to develop their own language running on Graal is detailed further along with some recent benchmarks on a few currently supported language implementations. The concepts are clarified with a few demos demonstrating how does the Graal VM work."
 
   -
     tid: 415
