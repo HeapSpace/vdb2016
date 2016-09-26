@@ -641,6 +641,7 @@ speakers:
     company: 'Ocado Technology  '
     talk:
       - '305'
+      - '370'
     tags:
       - web
       - game
@@ -831,22 +832,22 @@ speakers:
       - ""
       - ""
       - ""
-  -
-    sid: 49
-    firstname: 'Krzysztof'
-    lastname: 'Otrebski'
-    pageurl: 'krzysztof-otrebski'
-    url: 'https://twitter.com/kotrebski'
-    photo: 'Krzysztof Otrebski.jpg'
-    company: 'Ocado Technology'
-    talk:
-      - '370'
-    tags:
-      - scala
-    answers:
-      - ""
-      - ""
-      - ""
+#  -
+#    sid: 49
+#    firstname: 'Krzysztof'
+#    lastname: 'Otrebski'
+#    pageurl: 'krzysztof-otrebski'
+#    url: 'https://twitter.com/kotrebski'
+#    photo: 'Krzysztof Otrebski.jpg'
+#    company: 'Ocado Technology'
+#    talk:
+#      - '370'
+#    tags:
+#      - scala
+#    answers:
+#      - ""
+#      - ""
+#      - ""
   -
     sid: 76
     firstname: 'Rafael'
@@ -2625,16 +2626,16 @@ talks:
 
   -
     tid: 370
-    sid: 49
-    title: 'Beat Aliens with Akka Cluster'
+    sid: 62
+    title: 'Sane Sharding with Akka Cluster'
     type: 'talk'
     day: 1
     track: 2
     slot: 7
     short:
-      - "Computer game run with 3 x Raspberry Pi, 1 x Router, 1x Laptop, => trying to kill game by disconnecting network cables or power source, testing if application is self healing"
+      - "Writing distributed applications is very hard, especially when you start developing them as single-noded ones. Programmers tend to focus on functionalities first, leaving the scalability issues for later. Fortunately, Akka gives us many tools for scaling out and we can use them very early in the development process. I want to show you how to take advantage of these features. You will learn how to transform a single-noded app into a scalable one."
     long:
-      - "Does anyone remember the game 'Missile Command' on Atari? I bet you know it or played some kind of clone. I have also crated clone but with small difference, computer system is defending cities. During this session I would like to run missile defence system on a few Raspberry Pi's. Under the hood there will be Scala and Akka Cluster. You want to have defence system which is responsive and resilient, so do I. I will perform network and power failures to provide some idea how quickly it can recover, heal itself and prove that Akka application can be responsive and resilient."
+      - "Writing distributed applications is very hard, especially when you start developing them as single-noded ones. Programmers tend to focus on functionalities first, leaving the scalability issues for later. Fortunately, Akka gives us many tools for scaling out and we can use them very early in the development process. I want to show you how to take advantage of these features. You will learn how to transform a single-noded app into a scalable one. During live coding session I will create both versions from scratch and guide you through the most important architectural decisions. If you are interested in scalability and know basics of message-based concurrency, this talk is for you. First, you will see how to create a web service as a single-noded Akka app. Then we will talk about scalability and availability problems with this approach and introduce sharding as potential solution. We will use this knowledge and Akka Cluster module to make our app more scalable."
 
   -
     tid: 375
@@ -2763,8 +2764,8 @@ talks:
     sid: 70
     title: 'Easy scaling with Hazlecast'
     type: 'talk'
-    day: 2
-    track: 4
+    day: 3
+    track: 2
     slot: 7
     short:
       - "Hazelcast is popular data-grid implemented in Java. Presentation will cover road from monolith application to distributed system of microservices using Hazelcast as memory store, similar to https://www.youtube.com/watch?v=3bBtMrjD0zo"
@@ -2886,8 +2887,8 @@ talks:
     sid: 53
     title: 'Lift framework in 45 minutes'
     type: 'talk'
-    day: 3
-    track: 2
+    day: 2
+    track: 4
     slot: 7
     short:
       - "In 45 minutes I want to build a full blown web app based on Lift framework to show of its key features."
