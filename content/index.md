@@ -1482,6 +1482,7 @@ speakers:
       - infrastructure
       - cloud
       - microservices
+      - devoxx
     answers:
       - "It’s tech, so there’s no shortage of crazy, right. Probably the most memorable, though, was the day in 1993 when my boss walked over with a tarball containing a copy of the Mosaic browser. The change from newsgroups, telnet, and email was just insanely revolutionary."
       - "Take a look at how the world has changed over the past five years, and compare it with how technology changed the five years previously. The rate of change is accelerating at an incredible pace, and not all of the pivotal technologies that will get us there have been invented yet. The predictable stuff like cloud and IoT isn’t really worthy of note at this point.  For me, it’s more about our ability to react to changes and our outlook on the world than any specific new technologies per se, and I strongly believe that organizations that think this way will win over those that don’t."
