@@ -97,6 +97,9 @@ p {
     font-family: "Roboto Slab";
     font-weight: 300;
   }
+  .fa {
+    margin-right: 5px;
+  }
 }
 
 .mobile-menu-logo {
@@ -999,6 +1002,10 @@ button, a[role="button"] {
     right: 0;
     margin: 10px auto;
   }
+}
+
+.relative {
+  position: relative;
 }
 
 .lasttickets {
