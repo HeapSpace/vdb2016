@@ -1440,5 +1440,15 @@ a {
 }
 
 .gallery-intro {
-  border: 4px solid $brand-primary;
+  border: 3px solid $brand-primary;
+  @include round-corners(50%);
+  height: 250px;
+  width: 250px;
+  margin-top: 40px;
+  &.day1 {
+    background: url(../images/gallery1.jpg) center top no-repeat;
+  }
+  &.day2 {
+    background: url(../images/gallery2.jpg) center top no-repeat;
+  }
 }

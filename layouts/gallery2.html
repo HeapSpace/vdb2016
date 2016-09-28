@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<%= render '/_head.html', :title => 'Default title'%>
+	<%= meta_share %>
+	<%= meta_tag :keywords %>
+</head>
+<body>
+	<%= render '/_header.html'%>
+
+	<div class="main-bg page"></div>
+	<div class="container">
+	  <h1 class="text-center pad-vertical-big">
+	    #VDB16<br><span class="yellow">Day 1</span>
+	  </h1>
+	  <!-- <h4 class="text-center plain">VoxxedDays Belgrade 2016 returns bigger and brighter!<br>We can’t wait to start a new, 3-days round<br>of learning and sharing!</h4> -->
+
+	  <object width="1200" height="900"> <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F136891384%40N04%2Fsets%2F72157673307554472%2Fshow%2F&page_show_back_url=%2Fphotos%2F136891384%40N04%2Fsets%2F72157673307554472%2F&set_id=72157673307554472&jump_to="></param> <param name="movie" value="https://www.flickr.com/apps/slideshow/show.swf?v=261948265"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="https://www.flickr.com/apps/slideshow/show.swf?v=261948265" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2F136891384%40N04%2Fsets%2F72157673307554472%2Fshow%2F&page_show_back_url=%2Fphotos%2F136891384%40N04%2Fsets%2F72157673307554472%2F&set_id=72157673307554472&jump_to=" width="1200" height="900"></embed></object>
+
+	</div>
+	<div class="footer-cta-block info margin-top-big">
+	  <%= render '/_footer_cta.html', :template => 'contact' %>
+	</div>
+	<%= render '/_footer.html'%>
+	<%= render '/_bottomscripts.html'%>
+</body>
+</html>
