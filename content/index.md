@@ -3047,8 +3047,8 @@ talks:
     track: 3
     slot: 3
     short:
-      - "It is common to use CI as a tool to run your tests and build you builds. But GitLab has more to offer."
-      - "I will show how GitLab uses its CI and how our clients use it. To give you a whole picture, I will demonstrate some crazy experiments. You would never think that something like this is possible to build with CI system"
+      - "The talk is a walkthrough of the GitLab CI functionality and my goal is to help you to put this modern instrument in your software development toolset."
+      - "A lot of us got used to tools, which have been around for years. But the time doesn’t stand still, so new tools are appearing constantly.  I will tell you about next generation CI tool, which became a part of GitLab year ago.  It utilises “configuration as a code” principle: the whole CI configuration is specified in a single yaml file in your repository. It is very different from Jenkins, but you can find some similarities with Travis CI.  The talk is a walkthrough of the GitLab CI functionality and my goal is to help you to put this modern instrument in your software development toolset.   GitLab has started as an open source alternative to existing code hosting solution. These days the master plan of GitLab is to become a tool for the whole software development lifecycle - from idea to production."
     long:
       - "How do you like an idea to build a Docker container with a set of Ansible playbooks from another repo and run test inside generated container on the next step?"
       - "Other usages:"
