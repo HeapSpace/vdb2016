@@ -3050,7 +3050,12 @@ talks:
       - "The talk is a walkthrough of the GitLab CI functionality and my goal is to help you to put this modern instrument in your software development toolset."
 
     long:
-      - "A lot of us got used to tools, which have been around for years. But the time doesn’t stand still, so new tools are appearing constantly.  I will tell you about next generation CI tool, which became a part of GitLab year ago.  It utilises “configuration as a code” principle: the whole CI configuration is specified in a single yaml file in your repository. It is very different from Jenkins, but you can find some similarities with Travis CI.  The talk is a walkthrough of the GitLab CI functionality and my goal is to help you to put this modern instrument in your software development toolset.   GitLab has started as an open source alternative to existing code hosting solution. These days the master plan of GitLab is to become a tool for the whole software development lifecycle - from idea to production."
+      - "A lot of us got used to tools, which have been around for years."
+      - "But the time doesn’t stand still, so new tools are appearing constantly."
+      - "I will tell you about next generation CI tool, which became a part of GitLab year ago."
+      - "It utilises “configuration as a code” principle: the whole CI configuration is specified in a single yaml file in your repository. It is very different from Jenkins, but you can find some similarities with Travis CI."
+      - "The talk is a walkthrough of the GitLab CI functionality and my goal is to help you to put this modern instrument in your software development toolset."
+      - "GitLab has started as an open source alternative to existing code hosting solution. These days the master plan of GitLab is to become a tool for the whole software development lifecycle - from idea to production."
 
   -
     tid: 495
