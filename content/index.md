@@ -2662,7 +2662,7 @@ talks:
     sid:
       - '55'
       - '56'
-    title: 'Happiness at Work in IT World'  
+    title: 'Happiness at Work in IT World'
     type: 'workshop'
     day: 1
     track: 0
@@ -3048,17 +3048,9 @@ talks:
     slot: 3
     short:
       - "The talk is a walkthrough of the GitLab CI functionality and my goal is to help you to put this modern instrument in your software development toolset."
-      - "A lot of us got used to tools, which have been around for years. But the time doesn’t stand still, so new tools are appearing constantly.  I will tell you about next generation CI tool, which became a part of GitLab year ago.  It utilises “configuration as a code” principle: the whole CI configuration is specified in a single yaml file in your repository. It is very different from Jenkins, but you can find some similarities with Travis CI.  The talk is a walkthrough of the GitLab CI functionality and my goal is to help you to put this modern instrument in your software development toolset.   GitLab has started as an open source alternative to existing code hosting solution. These days the master plan of GitLab is to become a tool for the whole software development lifecycle - from idea to production."
+
     long:
-      - "How do you like an idea to build a Docker container with a set of Ansible playbooks from another repo and run test inside generated container on the next step?"
-      - "Other usages:"
-      - "- Build a build farm"
-      - "- Check spelling"
-      - "- Generate documentation"
-      - "- Run benchmarks"
-      - "- Set up your deployment pipeline"
-      - "- Use any static site generator"
-      - "- and so on"
+      - "A lot of us got used to tools, which have been around for years. But the time doesn’t stand still, so new tools are appearing constantly.  I will tell you about next generation CI tool, which became a part of GitLab year ago.  It utilises “configuration as a code” principle: the whole CI configuration is specified in a single yaml file in your repository. It is very different from Jenkins, but you can find some similarities with Travis CI.  The talk is a walkthrough of the GitLab CI functionality and my goal is to help you to put this modern instrument in your software development toolset.   GitLab has started as an open source alternative to existing code hosting solution. These days the master plan of GitLab is to become a tool for the whole software development lifecycle - from idea to production."
 
   -
     tid: 495
