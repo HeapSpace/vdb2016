@@ -2101,7 +2101,7 @@ talks:
 
   -
     tid: 195
-    sid: 43
+    sid: 42
     title: 'DROP DATABASE - galactic story'
     type: 'talk'
     day: 3
