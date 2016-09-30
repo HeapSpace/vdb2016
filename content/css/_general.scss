@@ -1413,8 +1413,6 @@ a {
 }
 
 #cepelin-trigger {
-  margin-top: 280px;
-
   @media (max-device-width: $screen-xs) {
     margin-top: 150px;
   }
@@ -1450,5 +1448,8 @@ a {
   }
   &.day2 {
     background: url(../images/gallery2.jpg) center top no-repeat;
+  }
+  &.day3 {
+    background: url(../images/gallery3.jpg) center top no-repeat;
   }
 }
