@@ -2101,16 +2101,22 @@ talks:
 
   -
     tid: 195
-    sid: 8
-    title: 'Automate the Mobile'
+    sid: 42
+    title: 'DROP DATABASE - galactic story'
     type: 'talk'
     day: 3
     track: 4
     slot: 5
     short:
-      - "If you are starting serious with Mobile development for multiple platforms you need to have a plan! Let's discuss what could you use to setup a Mobile Infrastructure Landscape."
+      - "So you thought databases might be useful. I will show you why this is ridiculous idea."
     long:
-      - "If you are starting serious with Mobile development for multiple platforms you need to have a plan! Let’s discuss what components you can set up in your Mobile DevOps landscape, how an application would travel from each state to another, and what do you need to do to setup it. In the talk we will talk about CI, automation testing, provisioning, automatic AppStore deployments, device labs and more."
+      - "So you thought databases might be useful. I will show you why this is ridiculous idea."
+      - "Database is just the thing that kill performance of you system (100 times), destroys design and pollutes code. Besides it causes a great loss of information."
+      - "Really, if you care about your data do not make a mistake and do not put them into Tables, JSONs or whatever. You can do it better."
+      - "During the presentations you will see how to code systems NORMALLY and compare it to weird things such as Hibernate or JPA. You will learn that best place for your data is RAM !!! :-)"
+      - "And this all from the guy who was writing JEE systems with SQL (and not only) for the last 15 years. This guy (me) was even kind of evangelist for JEE, and introduced Hibernate and JPA in a few companies. (I am do sorry for that)."
+      - "And we will be talking about facts. Code is here:"
+      - "https://github.com/airomem/galakpizza"
 
   -
     tid: 200
