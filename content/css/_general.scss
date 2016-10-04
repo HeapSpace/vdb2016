@@ -1453,3 +1453,17 @@ a {
     background: url(../images/gallery3.jpg) center top no-repeat;
   }
 }
+
+.slick-slide {
+  blockquote, iframe {
+    margin: 10px auto !important;
+  }
+}
+
+#slidernav {
+  button {
+    -moz-border-radius: 24px !important;
+    -webkit-border-radius: 24px !important;
+    border-radius: 24px !important;
+  }
+}
