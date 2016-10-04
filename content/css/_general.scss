@@ -1454,10 +1454,8 @@ a {
   }
 }
 
-.slick-slide {
-  blockquote, iframe {
-    margin: 10px auto !important;
-  }
+#tweetslider {
+  min-height: 210px;
 }
 
 #slidernav {
@@ -1466,4 +1464,9 @@ a {
     -webkit-border-radius: 24px !important;
     border-radius: 24px !important;
   }
+}
+
+.twitter-tweet {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
